@@ -16,3 +16,10 @@ to preserve access. No body scroll lock conceals controls.
 navigation, not browser layout. Package and deployment receipts accompany the
 release. The browser bridge remains unavailable, so current desktop/mobile
 pixel rendering and real-device playback are not claimed as observed.
+
+Production: https://cartan.danielwahnich.dev/ now serves the matched-frame release.
+332 package, 156 candidate HTTP and 239 unauthenticated public HTTP/TLS checks
+passed. Public readback at 2026-11-16T14:25:28.091701+00:00 verified exact deployed
+bytes, canonical routes, HTTPS, private-file exclusion and all video byte ranges.
+Receipts: `opening-frame-2026-11-16/`. GitHub main includes UI dcc8d8e via merge
+2104ed2; integrated frontend tree exactly matches the tested release source.

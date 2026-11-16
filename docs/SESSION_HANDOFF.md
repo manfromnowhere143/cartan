@@ -2,13 +2,15 @@
 
 ## Current research state: block 4 and local integration
 
-Latest continuity check: all research work is committed and published. The parallel
-UI lane has since advanced to `a75f1d62101ebb4498cd1ae48196b3aac536441f` with a
-new presentation/deployment revision; that commit is local and not yet integrated
-into GitHub `main`. All three worktrees were clean at inspection. See the
-[continuity checkpoint](../memory/checkpoints/research-20261116T134817Z-continuity-check.md) for its exact location,
-UI-reported checks and the remaining integration step. Do not treat the older
-published UI snapshot as the latest UI work.
+Latest UI release is integrated into GitHub main: UI `dcc8d8e`, merge `2104ed2`.
+It adds matched opening-frame posters, identical poster/video framing, compact
+viewport composition, and the earlier focus/mobile looping improvements. The
+public site https://cartan.danielwahnich.dev/ serves that exact frontend tree.
+43 frontend regressions, 332 package assertions, 156 candidate HTTP checks and
+239 public HTTP/TLS checks passed. Browser rendering access remains unavailable.
+See [UI release checkpoint](../memory/checkpoints/ui-20261116-opening-frame.md)
+and its linked receipts. Research/setup worktrees and scientific files were
+preserved. This supersedes the earlier pending UI integration status only.
 
 Read [block 4 results](../research/block-4/results.md),
 [recovery prior art](../research/block-4/source-followup.md),

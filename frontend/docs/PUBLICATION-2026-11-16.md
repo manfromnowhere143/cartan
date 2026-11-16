@@ -121,3 +121,10 @@ manual release, not recurring deployment or a new model session.
 Build and check instructions are in `frontend/README.md`. Retained receipts are
 under `frontend/qa/publication-2026-11-16/`. Architecture and current primary-source
 references are in `ADR-UI-003-publication-seo.md`.
+
+## Matched opening-frame release, 14:25 UTC
+
+Current public alias: `cartan-kh5l1bwtq-daniels-projects-ca65133a.vercel.app`.
+UI dcc8d8e / main merge 2104ed2. 156 candidate and 239 public checks passed;
+see ../qa/opening-frame-2026-11-16/. Prior alias rh1a4gali remains the rollback.
+Original media remains unchanged. Browser/device visual acceptance is pending.
