@@ -1,3 +1,4 @@
+import {SITE,pathFor,viewFromURL,linkedView,updateMetadata} from './routes.mjs';
 import {evidenceState} from './adapter.mjs';
 import {loadPinnedV1, formatV1, CONTRACT_COMMIT} from './contract-adapter.mjs';
 
@@ -70,7 +71,7 @@ const hero = $('#hero-video'), dialog = $('#film-dialog'), film = $('#film-video
 const motionButton=$('#motion-toggle'), motionPreference=matchMedia('(prefers-reduced-motion: reduce)');
 const mobilePreference=matchMedia('(max-width: 767px)'), connection=navigator.connection;
 const heroSection=$('.hero'), heroStatus=$('#hero-status');
-let inView=false, activeHero=(!location.hash||location.hash==='#top'), filmTrigger=null;
+let inView=false, activeHero=viewFromURL(location)==='home', filmTrigger=null;
 let measuredHeroAspect=innerWidth/Math.max(680,innerHeight);
 function heroAspect(){
   // display:none removes layout dimensions; it must not erase a paused timeline.
@@ -155,8 +156,7 @@ const routes = {
   vision:{label:'LONG-TERM CONCEPT',parent:'home',section:null},
 };
 let currentView='home', currentTransition=null;
-const hashFor = view=>view==='home' ? '#top' : `#${view}`;
-const viewFromHash = hash=>hash==='#top'||!hash ? 'home' : hash.slice(1);
+const hashFor=pathFor;
 
 function transform(update) {
   currentTransition?.cancel();
@@ -186,7 +186,7 @@ function showView(view,{focus=true,animate=true}={}) {
     }
     heroMedia.sync();
     for (const link of document.querySelectorAll('.site-header nav a')) {
-      if (link.hash===`#${routes[view].section}`) link.setAttribute('aria-current','page');
+      if (routes[view].section&&linkedView(new URL(link.href))===routes[view].section) link.setAttribute('aria-current','page');
       else link.removeAttribute('aria-current');
     }
     const back=$('#view-back');
@@ -195,7 +195,7 @@ function showView(view,{focus=true,animate=true}={}) {
     back.textContent=routes[view].parent==='home' ? '← Overview' : routes[view].parent==='laboratory' ? '← Laboratory' : routes[view].parent==='question' ? '← Research' : '← Evidence';
     $('#view-context').textContent=routes[view].label;
     const heading=surfaces.get(view).querySelector('h1,h2');
-    document.title=view==='home' ? 'CARTAN — Spacecraft that can change' : `CARTAN — ${heading.innerText.replace(/\s+/g,' ')}`;
+    updateMetadata(view);
     window.scrollTo({top:0,left:0,behavior:'instant'});
     if (focus) {heading.tabIndex=-1;heading.focus({preventScroll:true});}
   };
@@ -208,16 +208,18 @@ function navigate(view) {
 }
 document.addEventListener('click',event=>{
   if (event.defaultPrevented||event.button!==0||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey) return;
-  const link=event.target.closest('a[href^="#"]');
-  if (!link) return;
-  const view=viewFromHash(link.hash);
+  const link=event.target.closest('a[href]');
+  if (!link||link.target||link.hasAttribute('download')) return;
+  const url=new URL(link.href);if(url.origin!==location.origin)return;
+  const view=linkedView(url);
   if (!routes[view]) return;
   event.preventDefault();
   navigate(view);
 });
-window.addEventListener('popstate',()=>showView(viewFromHash(location.hash)));
+window.addEventListener('popstate',()=>showView(viewFromURL(location)));
 window.addEventListener('hashchange',()=>{
-  const view=viewFromHash(location.hash);
+  const view=viewFromURL(location);
+  if(location.hash==='#top'||Object.hasOwn(SITE.pages,location.hash.slice(1)))history.replaceState({cartanView:view},'',pathFor(view));
   if (view!==currentView) showView(view);
 });
 document.addEventListener('keydown',event=>{
@@ -225,4 +227,6 @@ document.addEventListener('keydown',event=>{
   event.preventDefault();navigate(routes[currentView].parent);
 });
 document.documentElement.classList.add('has-router');
-showView(viewFromHash(location.hash),{focus:Boolean(location.hash&&location.hash!=='#top'),animate:false});
+const initialView=viewFromURL(location);
+if(location.hash==='#top'||Object.hasOwn(SITE.pages,location.hash.slice(1)))history.replaceState({cartanView:initialView},'',pathFor(initialView));
+showView(initialView,{focus:false,animate:false});

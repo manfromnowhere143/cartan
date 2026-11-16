@@ -32,7 +32,7 @@ export function projectV1(bundle) {
   return structuredClone({bundle,run,belief,truth:run.truth_series.at(-1),observation:run.observation_series.at(-1),command:run.command_series.at(-1)});
 }
 export async function loadPinnedV1(fetcher=fetch) {
-  const response=await fetcher('vendor/cartan/v1/fixture.json');
+  const response=await fetcher('/vendor/cartan/v1/fixture.json');
   if (!response.ok) throw new Error('Engineering fixture unavailable');
   const bytes=await response.arrayBuffer();
   const digest=Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',bytes)),b=>b.toString(16).padStart(2,'0')).join('');

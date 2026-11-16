@@ -1,0 +1,7 @@
+{
+  "path": "/assets/cartan/cartan-hero-desktop-720p.mp4",
+  "request_range": "bytes=0-1023",
+  "status_observed": 206,
+  "bytes": 1024,
+  "exact_first_1024_bytes": true
+}

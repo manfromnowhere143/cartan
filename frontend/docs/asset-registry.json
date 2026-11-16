@@ -130,5 +130,6 @@
     "Editable CAD or glTF",
     "Validated physical data"
   ],
-  "audio": "Both current video files have only a video stream. No soundtrack added."
+  "audio": "Both current video files have only a video stream. No soundtrack added.",
+  "publication_authorization": "Daniel explicitly requested public CARTAN domain and SEO on 2026-11-16; prior local-only approval labels are historical. No scientific validation is implied."
 }
