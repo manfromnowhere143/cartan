@@ -1,6 +1,27 @@
 # CARTAN session handoff
 
-## Current research state — 16 November 2026
+## Current research state — block 2, 16 November 2026
+
+Start with [block 2 results](../research/block-2/results.md),
+[roadmap](../research/ROADMAP.md) and
+[checkpoint](../memory/checkpoints/research-20261116T115404Z-certificates.md).
+Design/source/proof/protocol commit: `22e725b`; code: `7c37511`; full evidence:
+`994f97c`. B0/C matched on 42 declared histories and 186 prefixes. Twelve new unit
+tests passed; replay was byte-identical. The scalar electrical and interval checks
+remain conditional model results. No physical or mission advantage is established.
+
+Public preliminary interface documentation now partly closes the earlier access
+gap; current fault mapping/calibration and owner limits remain missing. Continue
+evidence verification and physical observation-model research. The counting-only
+observer supplies no differentiating advantage in this subproblem.
+
+UI `8c34d1c` reports v1 consumption, and research verified all five committed vendor
+files match frozen v1 exactly. Runtime/browser QA was not repeated. New analytical
+artifacts have no UI adapter yet. Setup `70456b0` records newer launcher policy;
+research read it without changing/relaunching this session or merging setup config.
+Setup retains ownership. Current tool permissions remain authoritative.
+
+## Previous research state — block 1
 
 Research block 1 is complete on `research/architecture`. Start with
 [results and recommendation](../research/results.md) and the

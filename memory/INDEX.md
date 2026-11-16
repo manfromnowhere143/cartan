@@ -20,3 +20,6 @@ its lifecycle, privacy and maintenance cost.
   contract commit, hash manifest, validator and UI consumption rules.
 - [Research verification block](checkpoints/research-20261116T101534Z-verification.md):
   source/evidence commits, executed checks, limits, gaps and next study.
+- [Evidence comparison and certificates](checkpoints/research-20261116T115404Z-certificates.md):
+  new primary sources, B0/C null result, conditional mathematical checks and verified
+  UI contract consumption. Supersedes the earlier access/consumption gaps in part.

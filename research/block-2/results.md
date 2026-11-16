@@ -105,6 +105,10 @@ limit; enforcement is not claimed. Initial paired output files total 316,496 byt
 new reading scratch used 3,188 KiB of allocated blocks. No dependency, service,
 GPU, paid job, physical action or nested model was used. No check failed.
 
+Measurement clarification: those timings cover study evaluation before final JSON
+export and exclude interpreter/import startup. RSS is the process high-water mark
+sampled at that point. They are not end-to-end latency or flight-runtime benchmarks.
+
 Full evidence: [first core](../evidence/certificate-v1/attempt-01/core.json),
 [summary](../evidence/certificate-v1/attempt-01/summary.json),
 [replay](../evidence/certificate-v1/replay-02/core.json), and
