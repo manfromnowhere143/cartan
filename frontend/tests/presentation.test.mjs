@@ -49,3 +49,18 @@ test('explorer and horizon avoid the rejected imagery without removing concept l
   assert.match(html,/assets\/scenes\/assembly\.png/);assert.doesNotMatch(html,/assets\/vision\.jpg/);
   assert.match(html,/GENERATED ASSEMBLY CONCEPT \/ UNVALIDATED/);
 });
+
+test('only actual pointer-marked focus suppresses an outline, with forced colors preserved',()=>{
+  const suppress=parsed.filter(r=>r.selector.includes('[data-pointer-focus="true"]'));
+  assert.equal(suppress.length,1);assert.match(suppress[0].selector,/:focus/);
+  assert.ok(suppress[0].parents.includes('@media(forced-colors:none)'));
+  assert.match(read('focus-presentation.mjs'),/pointerdown/);assert.doesNotMatch(read('focus-presentation.mjs'),/\.blur\s*\(/);
+  assert.match(app,/installFocusPresentation\(document\)/);
+});
+test('mobile cinema cannot be hidden by a width rule or crop the supplied action',()=>{
+  for(const r of parsed.filter(r=>r.selector.includes('video')&&r.body.includes('display:none'))){
+    assert.ok(r.parents.some(p=>p.includes('prefers-reduced-motion')));
+  }
+  assert.match(css,/aspect-ratio:16\/9/);assert.match(css,/object-fit:contain/);
+  assert.match(html,/<video id="hero-video"[^>]* playsinline loop preload="none"/);
+});

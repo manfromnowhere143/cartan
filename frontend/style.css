@@ -11,7 +11,7 @@ h1,h2,h3,p{margin:0}
 h1,h2,h3{font-weight:400}
 img{max-width:100%;display:block}
 [hidden]{display:none!important}
-a:focus-visible,button:focus-visible,summary:focus-visible,.table-wrap:focus-visible{outline:2px solid #b7cbd7;outline-offset:5px}
+a:focus-visible,button:focus-visible,summary:focus-visible,.table-wrap:focus-visible,:root[data-focus-modality="keyboard"] :is(a,button,summary,.table-wrap):focus{outline:2px solid #b7cbd7;outline-offset:5px}
 .skip{position:fixed;top:16px;left:24px;padding:14px 20px;background:var(--ink);color:var(--bg);z-index:50;transform:translateY(-180%)}
 .skip:focus{transform:none}
 #main:focus,h1:focus,h2:focus{outline:none}
@@ -205,7 +205,6 @@ body:has(dialog[open]){overflow:hidden}
 .hero-intro{font-size:15px;max-width:320px}
 .hero-detail{font-size:13px;max-width:340px}
 .hero-poster img{object-position:center}
-.hero-picture>video{display:none}
 .hero-picture::after{background:linear-gradient(90deg,#000000de,#000000bf 75%,#000000b8),linear-gradient(0deg,#030405 0%,#030405d9 18%,transparent 50%),linear-gradient(180deg,#000000b8,transparent 28%)}
 .hero-bottom{flex-wrap:wrap;gap:10px 28px}
 .hero-bottom p{flex:1;font-size:10px}
@@ -286,7 +285,7 @@ dialog{padding:20px}
 ::view-transition-old(root),::view-transition-new(root){animation:none!important}
 }
 
-@media(forced-colors:active){a:focus-visible,button:focus-visible,summary:focus-visible,.table-wrap:focus-visible{outline:2px solid Highlight;outline-offset:4px}
+@media(forced-colors:active){a:focus-visible,button:focus-visible,summary:focus-visible,.table-wrap:focus-visible,:root[data-focus-modality="keyboard"] :is(a,button,summary,.table-wrap):focus{outline:2px solid Highlight;outline-offset:4px}
 .hero-picture,.vision>img{opacity:.1}
 .component-list button[aria-pressed=true],.evidence-controls button[aria-pressed=true]{outline:2px solid Highlight}
 .site-header nav a[aria-current]{text-decoration:underline}
@@ -299,14 +298,13 @@ dialog{padding:20px}
 
 
 @media(max-width:767px){.hero{min-height:100svh}
-.hero-picture>video{display:none}
 .hero-poster img{object-position:center}
 .hero h1{font-size:34px}
 .hero-picture::after{background:linear-gradient(90deg,#000000de,#000000bf 75%,#000000b8),linear-gradient(0deg,#030405 0%,#030405d9 18%,transparent 50%),linear-gradient(180deg,#000000b8,transparent 28%)}
 }
 
 
-/* A portrait tablet uses a still: keep the longer text measure equally legible. */
+/* Keep tablet copy legible over every supplied scene. */
 @media(min-width:768px) and (max-width:1050px){.hero-picture::after{background:linear-gradient(90deg,#000000e0,#000000c7 65%,#00000073),linear-gradient(0deg,#030405,#030405e6 12%,transparent 38%),linear-gradient(180deg,#000000d9,#000000b8 12%,transparent 26%)}
 }
 
@@ -333,7 +331,7 @@ a,button,summary{touch-action:manipulation}
 @media(hover:hover) and (pointer:fine){
   .site-header nav a:hover,.component-list button:hover,.evidence-controls button:hover{color:var(--ink)}
 
-  .text-action:hover,.action:hover,.film-open:hover,.quiet:hover,.edition:hover,#view-back:hover{color:#fff;text-decoration:underline;text-underline-offset:6px;text-decoration-thickness:1px}
+  .text-action:hover,.action:hover,.film-open:hover,.quiet:hover,.edition:hover,#view-back:hover{color:#fff}
 
   .source-list a:hover h3{color:#d8e5ec}
 
@@ -351,4 +349,21 @@ a,button,summary{touch-action:manipulation}
 .hero-copy .eyebrow{letter-spacing:.14em}
 .hero-links{gap:24px}
 .vision .tag{font-size:9px;letter-spacing:.03em}
+}
+
+/* Input presentation follows actual pointer events, including dialog autofocus
+   and restoration. The native focus location is never blurred or replaced. */
+@media(forced-colors:none){
+  :root [data-pointer-focus="true"]:focus{outline:none}
+}
+/* Mobile cinema keeps the complete working area, with readable copy below it.
+   Poster and video reserve identical geometry before any source is attached. */
+@media(max-width:767px){
+  .hero{padding-top:calc(104px + 56.25vw);min-height:100svh}
+  .hero-picture{inset:88px 0 auto;aspect-ratio:16/9;background:#030405}
+  .hero-poster img{object-fit:contain;object-position:center}
+  .hero-picture::after{background:linear-gradient(0deg,#030405 0%,transparent 20%,transparent 92%,#030405 100%)}
+  .hero-copy{margin-block:0;padding-bottom:24px}
+  .hero-copy .eyebrow{margin-bottom:16px}
+  .hero-bottom{margin-top:auto}
 }

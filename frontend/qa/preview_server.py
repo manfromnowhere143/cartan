@@ -48,12 +48,13 @@ addEventListener('DOMContentLoaded',()=>{
    return
   super().do_GET()
  def do_POST(self):
-  if self.path not in ['/qa/report','/qa/stability-report']:self.send_error(404);return
+  if self.path not in ['/qa/report','/qa/stability-report','/qa/focus-motion-report']:self.send_error(404);return
   length=int(self.headers.get('Content-Length','0'))
   if length>300000:self.send_error(413);return
-  report=json.loads(self.rfile.read(length));path=ROOT/'qa'/('stability-browser-results.json' if self.path=='/qa/stability-report' else 'revised-hero-browser-results.json')
+  names={'/qa/report':'revised-hero-browser-results.json','/qa/stability-report':'stability-browser-results.json','/qa/focus-motion-report':'focus-motion-browser-results.json'}
+  report=json.loads(self.rfile.read(length));path=ROOT/'qa'/names[self.path]
   path.write_text(json.dumps(report,indent=2)+'\n');self.send_response(204);self.end_headers()
 if __name__=='__main__':
  port=int(sys.argv[1]) if len(sys.argv)>1 else 4178
- print(f'CARTAN local review http://127.0.0.1:{port}/qa/hero-review.html',flush=True)
+ print(f'CARTAN local review http://127.0.0.1:{port}/qa/stability-review.html',flush=True)
  http.server.ThreadingHTTPServer(('127.0.0.1',port),Handler).serve_forever()

@@ -1,98 +1,102 @@
-// Presentation media only. This controller has no scientific or hardware authority.
-export function staticReason({width, aspect, reducedMotion, saveData}) {
-  if (reducedMotion) return 'reduced-motion';
-  if (saveData) return 'save-data';
-  if (width < 768) return 'mobile';
-  // Landscape video is contained, so ultrawide windows cannot crop the action.
-  // Portrait tablets retain the supplied still instead of letterboxing a film.
-  if (aspect < 1) return 'framing';
+// Presentation media only. No scientific or hardware authority.
+export function staticReason({reducedMotion,saveData,effectiveType}) {
+  if(reducedMotion)return 'reduced-motion';
+  if(saveData)return 'save-data';
+  if(/^(slow-)?2g$/.test(effectiveType??''))return 'slow-connection';
   return null;
 }
-export function createHeroController({video, source, policy, render}) {
-  let phase='poster', reason=null, attempted=false, token=0, hasFrame=false, frameRequest=null;
-  const active=()=>{const p=policy();return !staticReason(p)&&p.visible&&p.inView&&!p.filmOpen;};
+export function heroSourceFor({width,effectiveType}) {
+  return width<768||effectiveType==='3g'
+    ? '/assets/cartan/cartan-hero-mobile-540p.mp4'
+    : '/assets/cartan/cartan-hero-desktop-720p.mp4';
+}
+export function createHeroController({video,source,policy,render}) {
+  let phase='poster',reason=null,token=0,hasFrame=false,frameRequest=null;
+  let userPaused=false,blocked=false,disposed=false;
+  const active=()=>{const p=policy();return !disposed&&!staticReason(p)&&p.visible&&p.inView&&!p.filmOpen;};
   const publish=()=>render({phase,reason,hasFrame,attached:video.hasAttribute('src')});
-  const cancelFrame=()=>{if(frameRequest!==null) video.cancelVideoFrameCallback?.(frameRequest);frameRequest=null;};
+  const cancelFrame=()=>{if(frameRequest!==null)video.cancelVideoFrameCallback?.(frameRequest);frameRequest=null;};
   const stop=()=>{token++;cancelFrame();video.autoplay=false;video.pause();};
-  function revealFrame() {
-    if(hasFrame) {phase='playing';publish();return;}
-    if(frameRequest!==null) return;
+  function revealFrame(){
+    if(hasFrame){phase='playing';publish();return;}
+    if(frameRequest!==null)return;
     const epoch=token;
     const reveal=()=>{
-      if(epoch!==token) return;
+      if(epoch!==token)return;
       frameRequest=null;
-      if(!active()||!['loading','playing'].includes(phase)) return;
+      if(!active()||userPaused||!['loading','playing'].includes(phase))return;
       phase='playing';hasFrame=true;publish();
     };
-    // Keep the poster underneath until the decoder actually submits a frame.
-    if(typeof video.requestVideoFrameCallback==='function') frameRequest=video.requestVideoFrameCallback(reveal);
+    if(typeof video.requestVideoFrameCallback==='function')frameRequest=video.requestVideoFrameCallback(reveal);
     else reveal();
   }
-  function unload() {
+  function unload(){
     stop();hasFrame=false;
-    if(video.hasAttribute('src')) {video.removeAttribute('src');video.load();}
+    if(video.hasAttribute('src')){video.removeAttribute('src');video.load();}
   }
-  function pause() {
-    if(phase==='playing'||phase==='loading') {phase='paused';stop();publish();}
+  function suspend(){
+    if(phase==='playing'||phase==='loading'){phase='paused';stop();publish();}
   }
-  async function play({replay=false}={}) {
-    if(!active()) {sync();return;}
-    if(phase==='ended'&&!replay) return;
-    attempted=true;reason=null;phase='loading';
-    const epoch=++token;
-    video.muted=true;video.defaultMuted=true;video.loop=false;video.playbackRate=1;
-    if(replay) {hasFrame=false;video.currentTime=0;}
-    video.autoplay=true;
-    if(!video.hasAttribute('src')) video.src=source;
+  function pause(){userPaused=true;suspend();}
+  async function play({restart=false}={}){
+    if(!active()||userPaused)return;
+    reason=null;phase='loading';const epoch=++token;
+    video.muted=true;video.defaultMuted=true;video.loop=true;video.playbackRate=1;video.autoplay=true;
+    if(!video.hasAttribute('src'))video.src=typeof source==='function'?source(policy()):source;
+    // Native loop normally handles this. The ended fallback keeps the painted
+    // layer in place; it never crossfades to a poster between repetitions.
+    if(restart)video.currentTime=0;
     publish();
-    try {
+    try{
       await video.play();
-      if(epoch!==token) return;
-      if(!active()||phase==='paused') {pause();return;}
+      if(epoch!==token)return;
+      if(!active()||userPaused){suspend();return;}
       revealFrame();
-    } catch {
-      if(epoch!==token) return;
-      phase='blocked';reason='playback-unavailable';unload();publish();
+    }catch{
+      if(epoch!==token)return;
+      blocked=true;phase='blocked';reason='playback-unavailable';unload();publish();
     }
   }
-  function sync() {
-    const p=policy(), exclusion=staticReason(p);
-    if(exclusion) {phase='static';reason=exclusion;unload();publish();return;}
+  function sync(){
+    if(disposed)return;
+    const p=policy(),exclusion=staticReason(p);
+    if(exclusion){phase='static';reason=exclusion;unload();publish();return;}
     reason=null;
-    if(phase==='static') {phase='poster';publish();}
-    if(!active()) {pause();return;}
-    if(!attempted) {
-      // Where exposed, a denied policy can avoid even the metadata request.
-      if(p.autoplayDenied) {attempted=true;phase='blocked';reason='autoplay-denied';publish();}
-      else void play();
-    }
+    if(phase==='static'){phase=userPaused?'paused':'poster';publish();}
+    if(!active()){suspend();return;}
+    if(userPaused||blocked||phase==='playing'||phase==='loading')return;
+    if(p.autoplayDenied){blocked=true;phase='blocked';reason='autoplay-denied';publish();return;}
+    void play({restart:video.ended||phase==='ended'});
   }
-  function toggle() {
-    if(phase==='playing'||phase==='loading') pause();
-    else void play({replay:phase==='ended'});
+  function toggle(){
+    if(disposed||staticReason(policy()))return;
+    if(phase==='playing'||phase==='loading')pause();
+    else{userPaused=false;blocked=false;void play({restart:video.ended||phase==='ended'});}
   }
   const ended=()=>{
-    if(phase==='static'||!video.hasAttribute('src')) return;
-    phase='ended';reason=null;stop();hasFrame=false;publish();
+    if(phase==='static'||!video.hasAttribute('src')||disposed)return;
+    phase='ended';reason=null;
+    if(active()&&!userPaused&&!blocked)void play({restart:true});
+    else publish();
   };
   const nativePlaying=()=>{
-    if(!active()||!['loading','playing'].includes(phase)) {video.pause();return;}
+    if(!active()||userPaused||!['loading','playing'].includes(phase)){video.pause();return;}
     revealFrame();
   };
   const nativePause=()=>{
-    if(!['loading','playing'].includes(phase)||video.ended) return;
+    if(!video.paused||!['loading','playing'].includes(phase)||video.ended)return;
+    // A pause requested by the browser while visible is also respected.
+    if(active())userPaused=true;
     phase='paused';token++;cancelFrame();video.autoplay=false;publish();
   };
   const failure=()=>{
-    if(!video.hasAttribute('src')) return;
-    phase='blocked';reason='media-unavailable';unload();publish();
+    if(!video.hasAttribute('src')||disposed)return;
+    blocked=true;phase='blocked';reason='media-unavailable';unload();publish();
   };
-  video.addEventListener('ended',ended);
-  video.addEventListener('playing',nativePlaying);
-  video.addEventListener('pause',nativePause);
-  video.addEventListener('error',failure);
-  video.autoplay=false;video.muted=true;publish();
-  return {sync,pause,toggle,
-    dispose(){unload();video.removeEventListener('ended',ended);video.removeEventListener('playing',nativePlaying);video.removeEventListener('pause',nativePause);video.removeEventListener('error',failure);},
+  video.addEventListener('ended',ended);video.addEventListener('playing',nativePlaying);
+  video.addEventListener('pause',nativePause);video.addEventListener('error',failure);
+  video.autoplay=false;video.muted=true;video.defaultMuted=true;video.loop=true;publish();
+  return {sync,pause,suspend,toggle,
+    dispose(){disposed=true;phase='disposed';unload();video.removeEventListener('ended',ended);video.removeEventListener('playing',nativePlaying);video.removeEventListener('pause',nativePause);video.removeEventListener('error',failure);},
   };
 }

@@ -2,7 +2,11 @@ import {SITE,pathFor,viewFromURL,linkedView,updateMetadata} from './routes.mjs';
 import {evidenceState} from './adapter.mjs';
 import {loadPinnedV1, formatV1, CONTRACT_COMMIT} from './contract-adapter.mjs';
 
-import {createHeroController} from './hero-controller.mjs';
+import {createHeroController,heroSourceFor} from './hero-controller.mjs';
+import {installFocusPresentation} from './focus-presentation.mjs';
+
+// Capture actual input before native dialog autofocus or application focus moves.
+installFocusPresentation(document);
 
 const $ = selector => document.querySelector(selector);
 const components = {
@@ -68,20 +72,14 @@ void loadFixture();
 
 const hero = $('#hero-video'), dialog = $('#film-dialog'), film = $('#film-video');
 const motionButton=$('#motion-toggle'), motionPreference=matchMedia('(prefers-reduced-motion: reduce)');
-const mobilePreference=matchMedia('(max-width: 767px)'), connection=navigator.connection;
+const connection=navigator.connection;
 const heroSection=$('.hero'), heroStatus=$('#hero-status');
 let inView=false, activeHero=viewFromURL(location)==='home', filmTrigger=null;
-let measuredHeroAspect=innerWidth/Math.max(680,innerHeight);
-function heroAspect(){
-  // display:none removes layout dimensions; it must not erase a paused timeline.
-  if(heroSection.clientWidth&&heroSection.clientHeight) measuredHeroAspect=heroSection.clientWidth/heroSection.clientHeight;
-  return measuredHeroAspect;
-}
 const heroMedia=createHeroController({
   video:hero,
-  source:'/assets/cartan/cartan-hero-desktop-720p.mp4',
+  source:heroSourceFor,
   policy:()=>({
-    width:innerWidth,aspect:heroAspect(),
+    width:innerWidth,effectiveType:connection?.effectiveType,
     reducedMotion:motionPreference.matches,saveData:Boolean(connection?.saveData),
     visible:!document.hidden,inView:inView&&activeHero,filmOpen:dialog.open,
     autoplayDenied:typeof navigator.getAutoplayPolicy==='function'&&navigator.getAutoplayPolicy(hero)==='disallowed',
@@ -96,40 +94,41 @@ const heroMedia=createHeroController({
     motionButton.querySelector('.control-label').textContent=playing ? 'Pause motion' : phase==='ended' ? 'Replay motion' : 'Play motion';
     motionButton.querySelector('path').setAttribute('d',playing ? 'M8 5v14M16 5v14' : phase==='ended' ? 'M5 9a8 8 0 1 1-1 7M5 3v6h6' : 'm8 5 11 7-11 7Z');
     motionButton.setAttribute('aria-label',label);
-    heroStatus.textContent=staticView ? 'Static concept image.' : phase==='ended' ? 'Concept sequence complete. Still image shown; replay is optional.' : phase==='blocked' ? 'Background motion unavailable. Concept still shown.' : phase==='paused' ? 'Background motion paused.' : '';
+    heroStatus.textContent=staticView ? 'Static concept image.' : phase==='ended' ? 'Background motion paused at the end.' : phase==='blocked' ? 'Background motion unavailable. Concept still shown.' : phase==='paused' ? 'Background motion paused.' : '';
     if(reason==='reduced-motion') document.getAnimations().forEach(animation=>animation.cancel());
   },
 });
 motionButton.addEventListener('click',()=>heroMedia.toggle());
-for(const preference of [motionPreference,mobilePreference]) preference.addEventListener('change',()=>heroMedia.sync());
+motionPreference.addEventListener('change',()=>heroMedia.sync());
 connection?.addEventListener?.('change',()=>heroMedia.sync());
 window.addEventListener('resize',()=>heroMedia.sync());
 if('ResizeObserver' in window) new ResizeObserver(()=>heroMedia.sync()).observe(heroSection);
 if('IntersectionObserver' in window) {
   new IntersectionObserver(entries=>{
-    inView=entries.some(entry=>entry.isIntersecting&&entry.intersectionRatio>=0.35);
+    inView=entries.some(entry=>entry.isIntersecting&&entry.intersectionRatio>0.1);
     heroMedia.sync();
-  },{threshold:[0,0.35]}).observe(heroSection);
+  },{threshold:[0,0.1]}).observe($('.hero-picture'));
 } else {inView=true;}
 document.addEventListener('visibilitychange',()=>{
   heroMedia.sync();
   if(document.hidden) film.pause();
 });
-window.addEventListener('pagehide',()=>{heroMedia.pause();film.pause();});
+window.addEventListener('pagehide',()=>{heroMedia.suspend();film.pause();});
+window.addEventListener('pageshow',()=>heroMedia.sync());
 
 const filmSource='/assets/cartan/CARTAN-Built-to-Change-Revised-Silent-21s-1080p.mp4';
 for(const button of document.querySelectorAll('.film-open')) {
   button.hidden=false;
   button.addEventListener('click',()=>{
-    filmTrigger=button;heroMedia.pause();
+    filmTrigger=button;
     if(typeof dialog.showModal!=='function') {location.href=filmSource;return;}
-    dialog.showModal();$('#film-close').focus();
+    dialog.showModal();heroMedia.sync();$('#film-close').focus({preventScroll:true});
     film.muted=true;film.autoplay=false;film.src=filmSource;
     $('#film-status').textContent='Paused. Use Play to watch the silent concept film.';
   });
 }
 $('#film-close').addEventListener('click',()=>dialog.close());
-dialog.addEventListener('close',()=>{film.pause();film.removeAttribute('src');film.load();filmTrigger?.focus();});
+dialog.addEventListener('close',()=>{film.pause();film.removeAttribute('src');film.load();filmTrigger?.focus({preventScroll:true});heroMedia.sync();});
 film.addEventListener('play',()=>{$('#film-status').textContent='';});
 film.addEventListener('error',()=>{if(film.hasAttribute('src')) $('#film-status').textContent='Film unavailable. The poster and visual description remain available.';});
 for (const img of document.images) {
@@ -162,7 +161,7 @@ function showView(view,{focus=true}={}) {
   if (!routes[view]) view='home';
   // Stop decoding before the outgoing view is hidden, not after animation.
   activeHero=view==='home';
-  if(!activeHero) heroMedia.pause();
+  if(!activeHero) heroMedia.sync();
   const update=()=>{
     currentView=view;
     document.documentElement.dataset.view=view;

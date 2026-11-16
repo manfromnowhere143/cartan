@@ -1,5 +1,16 @@
 # CARTAN public release — 16 November 2026
 
+## Current pointer/media revision
+
+The pointer-focus fix and mobile/native-looping hero are live at the canonical
+origin. Daniel explicitly replaced the original mobile-still and single-play
+requirements. 33 core tests, 10 isolated-DOM tests, 328 package assertions, 148
+candidate HTTP checks and 227 unauthenticated public checks pass. Actual browser
+and device acceptance remains pending because the control host is unavailable.
+See `../qa/REVIEW-FOCUS-MOTION-2026-11-16.md` for scope, exact deployment and
+receipts. Prior snapshots below remain historical.
+
+
 ## Live-status correction
 
 The canonical origin **https://cartan.danielwahnich.dev/** is live. Daniel added

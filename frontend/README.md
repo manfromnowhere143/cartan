@@ -36,15 +36,16 @@ view, especially at large zoom. Inactive views are hidden and inert. Each public
 hash links still resolve when JavaScript runs. Browser navigation changes the
 active view, address and metadata without replacing the document.
 
-The eligible desktop hero plays the supplied silent 19-second sequence once,
-forward, then fades to its poster over 250ms. Pause preserves the position; Replay
-is explicit. Hidden/offscreen media pauses without automatic resumption. Mobile
-below 768px, portrait framing, reduced motion and Save-Data attach no hero
-video source. Mobile uses the supplied portrait poster. Autoplay failure leaves
-the poster and an optional Play control; browsers without a policy query may have
-requested metadata before rejecting play. The 21.5-second full film loads only
-when its viewer opens, remains paused until Play, and includes its disclaimer in
-HTML. No audio track is present. Daniel selects any future soundtrack.
+The hero plays muted and inline on desktop and mobile, repeating forward with
+native looping. Small screens/3G receive a 1.83MB 960×540 rendition of the same
+19s sequence; desktop retains the supplied 720p original. The video layer stays
+painted through loop boundaries. Pause persists during navigation; temporary
+visibility/route/dialog suspension resumes only if the user had not paused.
+Reduced motion, Save-Data and 2G attach no background source. Autoplay denial
+keeps the poster and exposes explicit Play without retrying unrelated gestures.
+Mobile presents the full frame above readable copy rather than cropping its
+working area. The 21.5s full film remains independent and paused on opening.
+No audio is added; Daniel selects any future soundtrack.
 
 Page and component changes apply immediately without opacity or transform
 animations. A consistent dark canvas and stable dark explorer artwork avoid
@@ -82,3 +83,15 @@ Current refinement: `docs/ADR-UI-004-stable-surface.md` and
 `qa/REVIEW-STABILITY-2026-11-16.md`. The local browser matrix is
 `http://127.0.0.1:4178/qa/stability-review.html` using the preview server above.
 No browser results are implied merely by providing this harness.
+
+Current focus/media policy: `docs/ADR-UI-005-pointer-focus-and-responsive-motion.md`
+and `qa/REVIEW-FOCUS-MOTION-2026-11-16.md`. These supersede earlier mobile-still
+and single-play instructions per Daniel's current request. `focus-presentation.mjs`
+tracks actual pointer/keyboard/assistive activation without removing native focus.
+The optional isolated-DOM checks use an existing jsdom installation, for example:
+
+```sh
+CARTAN_JSDOM_MODULE=/absolute/path/to/jsdom node --experimental-vm-modules --test frontend/qa/focus-dom.test.mjs
+```
+
+jsdom is QA-only and is not a runtime dependency or a substitute for device QA.

@@ -1,0 +1,35 @@
+{
+  "source_sha256": "e4d4b16548381a29aa0d6805091a8b43f55d3c9855e3a30a8fe5de7dddc0f113",
+  "derivative_sha256": "41ca5105e4f70751c4371ff52d8e90d89db6ba42993d0b7c47748bb812cb6625",
+  "bytes": 1834726,
+  "smaller_percent": 54.6,
+  "probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 960,
+        "height": 540,
+        "pix_fmt": "yuv420p",
+        "r_frame_rate": "24/1",
+        "nb_frames": "456"
+      }
+    ],
+    "format": {
+      "duration": "19.000000",
+      "size": "1834726"
+    }
+  },
+  "mp4_box_order": [
+    "ftyp",
+    "moov",
+    "free",
+    "mdat"
+  ],
+  "decode": "entire delivery file decoded without ffmpeg errors",
+  "sequence": "same complete source; scale/encode only; no cuts, reversal, crop, audio or interpolation",
+  "encode": "ffmpeg: scale=960:540:flags=lanczos, libx264 medium CRF25 Main Level3.1 yuv420p, threads2, -an, +faststart",
+  "visual_inspection": "six contact-sheet samples viewed; this is media review, not browser UI verification"
+}

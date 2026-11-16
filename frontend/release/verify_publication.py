@@ -53,7 +53,7 @@ def verify(package):
             rows.append({'path':path,'status':status,'checks':{'canonical_redirect':status==308 and headers.get('location')==route}})
     status,headers,_=fetch('/',origin='http://cartan.danielwahnich.dev')
     rows.append({'path':'http://cartan.danielwahnich.dev/','status':status,'checks':{'redirect_to_https':status in [301,308] and headers.get('location')==ORIGIN+'/'}})
-    for name in ['cartan-hero-desktop-720p.mp4','CARTAN-Built-to-Change-Revised-Silent-21s-1080p.mp4']:
+    for name in ['cartan-hero-desktop-720p.mp4','cartan-hero-mobile-540p.mp4','CARTAN-Built-to-Change-Revised-Silent-21s-1080p.mp4']:
         path='/assets/cartan/'+name;status,headers,data=fetch(path,'bytes=0-1023')
         rows.append({'path':path,'range':'bytes=0-1023','status':status,'checks':{
             'partial_content':status==206,'content_range':headers.get('content-range','').startswith('bytes 0-1023/'),

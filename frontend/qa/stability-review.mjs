@@ -14,7 +14,7 @@ async function check(){
   const click=selector=>{const n=d.querySelector(selector);if(!n)throw Error('Missing '+selector);n.click();};
   const routeLinks={laboratory:'/laboratory/',question:'/research/',evidence:'/evidence/',interruption:'/interruption/',comparison:'/comparison/',sources:'/sources/',vision:'/vision/'};
   const rect=n=>{const r=n.getBoundingClientRect();return {x:r.x,y:r.y,width:r.width,height:r.height};};
-  const hero=d.querySelector('#hero-video'),staticPolicy=w.innerWidth<768||w.innerWidth/w.innerHeight<1||['reduced','save-data'].includes($('#mode').value);
+  const hero=d.querySelector('#hero-video'),staticPolicy=['reduced','save-data'].includes($('#mode').value);
   if(staticPolicy)add('Excluded policy has no hero source or attachments',!hero.hasAttribute('src')&&w.__qa.requests.length===0);
   if(!d.querySelector('#motion-toggle').hidden&&['playing','loading'].includes(d.querySelector('.hero').dataset.playback))click('#motion-toggle');
   const initialTime=hero.currentTime;
@@ -35,12 +35,17 @@ async function check(){
     if(view==='evidence'){for(const b of d.querySelectorAll('[data-evidence]')){b.click();add('Honest '+b.dataset.evidence,d.querySelectorAll('.outcome-line b').length===3&&[...d.querySelectorAll('.outcome-line b')].every(n=>n.textContent==='Not measured'));}}
   }
   click('.brand');add('Returning home preserves pause',hero.paused&&Math.abs(hero.currentTime-initialTime)<.1);
-  click('.film-open');add('Film opens paused with focus',d.querySelector('#film-dialog').open&&d.querySelector('#film-video').paused&&d.activeElement.id==='film-close');
-  click('#film-close');add('Film close restores trigger focus',d.activeElement.matches('.film-open'));
+  const pointerClick=node=>{node.dispatchEvent(new w.Event('pointerdown',{bubbles:true}));node.focus();node.dispatchEvent(new w.MouseEvent('click',{detail:1,bubbles:true,cancelable:true}));};
+  pointerClick(d.querySelector('.film-open'));add('Film opens paused with focus',d.querySelector('#film-dialog').open&&d.querySelector('#film-video').paused&&d.activeElement.id==='film-close');
+  if(!w.matchMedia('(forced-colors:active)').matches)add('Pointer-opened Close has no outline',w.getComputedStyle(d.activeElement).outlineStyle==='none');
+  d.activeElement.dispatchEvent(new w.KeyboardEvent('keydown',{key:'Tab',bubbles:true}));
+  add('Keyboard focus is visible',w.getComputedStyle(d.activeElement).outlineStyle!=='none'&&!d.activeElement.dataset.pointerFocus);
+  pointerClick(d.querySelector('#film-close'));add('Film close restores trigger focus',d.activeElement.matches('.film-open'));
+  if(!w.matchMedia('(forced-colors:active)').matches)add('Pointer-restored trigger has no outline',w.getComputedStyle(d.activeElement).outlineStyle==='none');
   add('No runtime errors',w.__qa.errors.length===0,w.__qa.errors);
   const report={at:new Date().toISOString(),viewport:$('#size').value,mode:$('#mode').value,checks,cls:w.__qa.shifts,ua:navigator.userAgent};reports.push(report);
   $('#results').textContent=JSON.stringify(report,null,2);$('#status').textContent=checks.filter(c=>c.pass).length+'/'+checks.length+' passed';
-  await fetch('/qa/stability-report',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({reports})});
+  await fetch('/qa/focus-motion-report',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({reports})});
 }
 $('#load').onclick=load;$('#check').onclick=check;
 $('#matrix').onclick=async()=>{for(const [size,mode] of [['1440x900','normal'],['1280x720','normal'],['768x1024','normal'],['390x844','normal'],['320x740','normal'],['3440x1440','normal'],['1440x900','reduced'],['1440x900','save-data'],['1440x900','denied'],['1440x900','missing']]){$('#size').value=size;$('#mode').value=mode;await load();await check();}};
