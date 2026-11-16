@@ -16,3 +16,5 @@ index is installed. Add infrastructure only after an actual requirement justifie
 its lifecycle, privacy and maintenance cost.
 
 - `notes/2026-11-16-environment-decisions.md`: setup boundaries and architecture.
+- `notes/2026-11-16-setup-comparison.md`: comparative review, native resume,
+  current setup discovery and limits of automation/tool verification.

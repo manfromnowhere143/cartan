@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Non-destructive launcher tests using temporary Git worktrees and local stubs.
 
-Never starts Codex/Claude inference. Real client calls are --version only.
+Never starts Codex/Claude inference. Real client calls inspect versions,
+local auth and effective MCP configuration; auth/MCP checks deny network.
 """
 import contextlib
 import fcntl
@@ -82,12 +83,66 @@ class EnvironmentTests(unittest.TestCase):
 
     def test_default_and_aliases(self):
         for name, client in launch.CLIENT_NAMES.items():
-            self.assertEqual(launch.parse_args(name, []), (client, "research", False))
-            self.assertEqual(launch.parse_args(name, ["ui", "--check"]), (client, "ui", True))
+            self.assertEqual(launch.parse_args(name, []), (client, "research", False, "start"))
+            self.assertEqual(launch.parse_args(name, ["ui", "--check"]), (client, "ui", True, "start"))
+            self.assertEqual(launch.parse_args(name, ["resume"]), (client, "research", False, "resume"))
+            self.assertEqual(launch.parse_args(name, ["ui", "resume", "--check"]), (client, "ui", True, "resume"))
+
+    def test_resume_plans_keep_scope_without_injecting_a_new_task(self):
+        for client in ("codex", "claude"):
+            for lane in ("research", "ui"):
+                with self.subTest(client=client, lane=lane):
+                    plan = launch.make_plan(client, lane, self.root, action="resume")
+                    argv = plan["argv"]
+                    self.assertEqual(plan["cwd"], str(getattr(self, lane)))
+                    self.assertEqual(plan["action"], "resume")
+                    self.assertFalse(any("CARTAN-01" in arg or "CARTAN-02" in arg for arg in argv))
+                    self.assertFalse(any(arg in ("--last", "--all", "--continue") for arg in argv))
+                    if client == "codex":
+                        self.assertEqual(argv[1], "resume")
+                        self.assertEqual(argv[argv.index("-C") + 1], plan["cwd"])
+                        self.assertEqual(argv[argv.index("--sandbox") + 1], "workspace-write")
+                        self.assertEqual(argv[argv.index("--ask-for-approval") + 1], "on-request")
+                    else:
+                        self.assertEqual(argv[-1], "--resume")
+                        self.assertEqual(argv[argv.index("--permission-mode") + 1], "manual")
+                        self.assertIn("--strict-mcp-config", argv)
+
+    def test_start_reads_current_canonical_setup_without_changing_lane(self):
+        before = (self.research / "docs/SESSION_HANDOFF.md").read_bytes()
+        plan = launch.make_plan("codex", "research", self.root)
+        for path in plan["current_setup_context"]:
+            self.assertIn(path, plan["argv"][-1])
+        self.assertEqual((self.research / "docs/SESSION_HANDOFF.md").read_bytes(), before)
+
+    def test_missing_current_setup_context_fails(self):
+        path = self.root / "docs/SESSION-OPERATIONS.md"
+        content = path.read_bytes()
+        path.unlink()
+        try:
+            with self.assertRaises(launch.PreflightError):
+                launch.make_plan("codex", "research", self.root)
+        finally:
+            path.write_bytes(content)
+
+    def test_claude_reports_only_its_configured_mcp(self):
+        plan = launch.make_plan("claude", "research", self.root)
+        self.assertEqual(plan["configured_mcp_allowlist"], ["openaiDeveloperDocs"])
+
+    def test_native_inspection_never_invokes_resume_or_an_initial_prompt(self):
+        base = ["codex", "--strict-config", "-C", str(self.research)]
+        servers = [{"name": n, "enabled": True} for n in ("cua_repl", "node_repl", "openaiDeveloperDocs")]
+        with patch.object(launch, "run", return_value=json.dumps(servers)) as run:
+            launch.validate_native_codex(base, self.research)
+        invoked = run.call_args.args[0]
+        self.assertEqual(invoked[-5:], ["-C", str(self.research), "mcp", "list", "--json"])
+        self.assertNotIn("--strict-config", invoked)
+        self.assertNotIn("resume", invoked)
 
     def test_unknown_flags_and_secret_arguments_not_echoed(self):
         for args in [["--dangerously-skip-permissions"], ["--config", "SECRET_CANARY"],
-                     ["--workspace", "/tmp/foreign"], ["ui", "research"], ["--check", "--check"]]:
+                     ["--workspace", "/tmp/foreign"], ["ui", "research"], ["--check", "--check"],
+                     ["resume", "resume"], ["resume", "SECRET_CANARY"], ["resume", "--all"]]:
             with self.assertRaises(launch.PreflightError) as error:
                 launch.parse_args("cartancodes", args)
             self.assertNotIn("SECRET_CANARY", str(error.exception))

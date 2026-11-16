@@ -83,17 +83,21 @@ def parse_args(name, args):
     if client is None:
         raise PreflightError("Use cartancodes or cartanclaudes, optionally followed by research or ui.")
     if args == ["--help"]:
-        return client, None, False
+        return client, None, False, "start"
     check = False
     if "--check" in args:
         args.remove("--check")
         check = True
+    action = "start"
+    if "resume" in args:
+        args.remove("resume")
+        action = "resume"
     if not args:
-        return client, "research", check
+        return client, "research", check, action
     if len(args) == 1 and args[0] in ("research", "ui"):
-        return client, args[0], check
+        return client, args[0], check, action
     # Do not echo unknown arguments: a mistaken argument could be a secret.
-    raise PreflightError("Unsupported arguments. Use [research|ui] [--check]; no raw client flags are accepted.")
+    raise PreflightError("Unsupported arguments. Use [research|ui] [resume] [--check]; no raw client flags are accepted.")
 
 
 def validate_identity(root, config, lane):
@@ -215,10 +219,10 @@ def local_auth(client, executable, workspace):
             "remote_access": "untested"}
 
 
-def validate_native_codex(argv, workspace):
+def validate_native_codex(base_argv, workspace):
     # Native mcp list reads effective config. Deny all network for this check.
     # --strict-config is supported by interactive launch, not this subcommand.
-    inspect = [arg for arg in argv[:-1] if arg != "--strict-config"] + ["mcp", "list", "--json"]
+    inspect = [arg for arg in base_argv if arg != "--strict-config"] + ["mcp", "list", "--json"]
     raw = run(["/usr/bin/sandbox-exec", "-p", "(version 1)(allow default)(deny network*)", *inspect], cwd=workspace)
     try:
         servers = json.loads(raw)
@@ -231,7 +235,9 @@ def validate_native_codex(argv, workspace):
             "network": "denied by OS during inspection", "remote_connection": "not tested"}
 
 
-def make_plan(client, lane, root=ROOT):
+def make_plan(client, lane, root=ROOT, action="start"):
+    if action not in ("start", "resume"):
+        raise PreflightError("Unsupported session action.")
     config = load_json(root / "config/environment.json")
     workspace, branch = validate_identity(root, config, lane)
     inputs = validate_inputs(root)
@@ -244,32 +250,45 @@ def make_plan(client, lane, root=ROOT):
     if version != spec["version"]:
         raise PreflightError("Client version changed; rerun compatibility checks before updating its pin.")
     prompt = inputs / config["lanes"][lane]["prompt"]
+    setup_context = [root / "docs/SESSION_HANDOFF.md", root / "docs/SESSION-OPERATIONS.md"]
+    if any(not path.is_file() or path.is_symlink() for path in setup_context):
+        raise PreflightError("Current canonical setup context is missing or redirected.")
     initial = (f"CARTAN {lane} session. Read AGENTS.md, docs/SESSION_HANDOFF.md, "
-               "docs/COORDINATION.md and memory/INDEX.md first. Then read and follow "
+               "docs/COORDINATION.md and memory/INDEX.md first. For current launch behavior "
+               f"and setup status, also read {setup_context[0]} and {setup_context[1]}; "
+               "these setup records supersede older setup notes in this worktree, not "
+               "lane research findings or current operator instructions. Then read and follow "
                f"the exact assigned prompt at {prompt}. Research and explicit architecture "
                "decisions precede implementation. Setup owns launch configuration; do not "
                "edit global shell/MCP settings or start another model session.")
     if client == "codex":
-        argv = [str(executable), "--no-daemon", "--strict-config", "-C", str(workspace),
+        base_argv = [str(executable), "--no-daemon", "--strict-config", "-C", str(workspace),
                 "--sandbox", "workspace-write", "--ask-for-approval", "on-request",
-                *codex_overrides(root, project), initial]
+                *codex_overrides(root, project)]
+        argv = ([base_argv[0], "resume", *base_argv[1:]] if action == "resume"
+                else [*base_argv, initial])
     else:
-        argv = [str(executable), "--permission-mode", "manual", "--no-chrome",
+        base_argv = [str(executable), "--permission-mode", "manual", "--no-chrome",
                 "--settings", str(root / ".claude/settings.json"),
                 "--mcp-config", str(root / "config/claude-mcp.json"),
-                "--strict-mcp-config", initial]
-    native = validate_native_codex(argv, workspace) if client == "codex" else {
+                "--strict-mcp-config"]
+        argv = [*base_argv, "--resume"] if action == "resume" else [*base_argv, initial]
+    native = validate_native_codex(base_argv, workspace) if client == "codex" else {
         "parser": "JSON/TOML plus installed CLI version/flags",
         "interactive_settings_and_mcp": "not tested; claude mcp list ignores launch-only config"}
     auth = local_auth(client, executable, workspace)
-    return {"client": client, "lane": lane, "cwd": str(workspace), "branch": branch,
+    return {"client": client, "lane": lane, "action": action, "cwd": str(workspace), "branch": branch,
             "version": version, "executable": str(executable),
             "resolved_executable": str(executable.resolve()), "argv": argv,
             "prompt_file": str(prompt), "input_hashes": "verified",
             "instructions": [str(workspace / n) for n in REQUIRED[:7]],
+            "current_setup_context": [str(path) for path in setup_context],
+            "resume_behavior": "native picker; no new task prompt or automatic session selection",
             "worktree_state": "dirty (preserved)" if git(workspace, "status", "--porcelain=v1") else "clean",
-            "configured_mcp_allowlist": ["openaiDeveloperDocs", "node_repl", "cua_repl"],
-            "inherited_runtime_adapters": "node_repl and plugin-provided cua_repl retained for lifecycle hooks; UI use requires task authority",
+            "configured_mcp_allowlist": (config["mcp_allowlist"] if client == "codex"
+                                         else ["openaiDeveloperDocs"]),
+            "inherited_runtime_adapters": ("node_repl and plugin-provided cua_repl retained for lifecycle hooks; UI use requires task authority"
+                                          if client == "codex" else "none added by CARTAN; native tools require live verification"),
             "authentication": auth, "native_configuration_check": native,
             "launch_prerequisites_met": auth["local_login_detected"],
             "remote_connectivity": "not checked by dry-run",
@@ -284,6 +303,9 @@ def launch_interactive(plan):
         raise PreflightError("Interactive terminal required; unattended model launches are not supported.")
     print(f"CARTAN {plan['lane']} | {plan['client']} | {plan['cwd']}\n"
           "Approvals retained. No setup command authorizes spend or publication.", flush=True)
+    if plan.get("action") == "resume":
+        print("Select the intended existing session; current setup notes: "
+              f"{ROOT / 'docs/SESSION_HANDOFF.md'}", flush=True)
     process = subprocess.Popen(plan["argv"], cwd=plan["cwd"], env=child_env())
     while True:
         try:
@@ -295,12 +317,13 @@ def launch_interactive(plan):
 
 
 def main():
-    client, lane, check = parse_args(Path(sys.argv[0]).name, sys.argv[1:])
+    client, lane, check, action = parse_args(Path(sys.argv[0]).name, sys.argv[1:])
     if lane is None:
-        print("Usage: cartancodes|cartanclaudes [research|ui] [--check]\n"
-              "Default: research. --check validates local prerequisites without a model launch.")
+        print("Usage: cartancodes|cartanclaudes [research|ui] [resume] [--check]\n"
+              "Default: new research session. resume opens the native session picker.\n"
+              "--check validates local prerequisites without a model launch.")
         return
-    plan = make_plan(client, lane)
+    plan = make_plan(client, lane, action=action)
     if check:
         print(json.dumps(plan, indent=2))
         return 0 if plan.get("launch_prerequisites_met", False) else 2

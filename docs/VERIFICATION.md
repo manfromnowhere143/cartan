@@ -1,5 +1,32 @@
 # Environment verification
 
+Latest comparison review, 16 November 2026: **30 tests passed in 5.646 seconds**.
+All four installed command names were checked in fresh interactive login shells
+from `/private/tmp`, for both start and resume plans. Codex returned 0 and the
+correct lane; Claude returned 2 with missing local authentication. Both clients'
+installed help parsers accepted the full resume argv with network denied. Native
+conversation restoration remains untested; no model was started.
+
+A separate bounded public HTTP probe from the setup process received 200 for MCP
+initialization and `tools/list` at `https://developers.openai.com/mcp`, protocol
+2025-03-26, listing five documentation tools. No credentials were supplied. This
+proves endpoint reachability from this Mac, not future CLI discovery or UI bridge
+operation. The ordinary launcher `--check` remains offline.
+
+The latest preservation comparison found 36 of 37 recorded pre-existing files
+unchanged; `~/.codex/config.toml` has changed since the original snapshot. No
+manual edit or restoration of that file was performed by this review. The hash-only
+baseline cannot attribute the difference. Its current safe-to-report settings
+and CARTAN's native effective MCP set were rechecked; explicit launch controls
+still pass. Do not overwrite concurrent user/client state to restore an old hash.
+Receipts are `comparison-entrypoints.json`, `comparison-preservation.json` and
+`comparison-review.json` in the private receipt directory listed below.
+
+See `SETUP-COMPARISON-2026-11-16.md` for the assessment and remaining capability
+work, and `SESSION-OPERATIONS.md` for recovery. Existing lanes were not rewritten.
+
+## Earlier setup and lock-correction record
+
 Operator correction, 16 November 2026: removed the one-session-per-lane lock.
 The installed `cartancodes --check` passed from outside the repository, and all
 25 updated tests passed (4.727 seconds), including launching harmless local
@@ -19,6 +46,8 @@ In an ordinary interactive terminal, from any directory:
 cartancodes --check       # local preflight, no model session
 cartancodes               # research / backend architecture session
 cartancodes ui            # separate UI / visual-laboratory session
+cartancodes resume        # native research conversation picker
+cartancodes ui resume     # native UI conversation picker
 ```
 
 Equivalent Codex name: `cartan-codex`. No shell file needs sourcing; the commands
@@ -127,8 +156,11 @@ docs/COORDINATION.md
 docs/ENVIRONMENT-AUDIT.md
 docs/SESSION_HANDOFF.md
 docs/VERIFICATION.md
+docs/SESSION-OPERATIONS.md
+docs/SETUP-COMPARISON-2026-11-16.md
 memory/INDEX.md
 memory/notes/2026-11-16-environment-decisions.md
+memory/notes/2026-11-16-setup-comparison.md
 scripts/install_launchers.py
 scripts/launch.py
 scripts/test_environment.py

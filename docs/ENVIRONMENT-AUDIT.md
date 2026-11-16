@@ -4,6 +4,9 @@ Date: 16 November 2026. Owner: the existing setup session. Scope: read-only
 inspection of established launch architecture, followed by additive CARTAN setup.
 No existing project launchers, credentials, active sessions or research originals
 were intentionally changed. See `VERIFICATION.md` for executed checks and limits.
+The subsequent comparison and resume improvement are recorded in
+`SETUP-COMPARISON-2026-11-16.md`. Follow canonical `SESSION-OPERATIONS.md` for
+current launch/resume behavior; active lane setup snapshots can be older.
 
 ## Discovery and provenance
 
