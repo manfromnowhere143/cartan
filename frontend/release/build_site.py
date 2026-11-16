@@ -41,20 +41,20 @@ def build(target):
   text=re.sub(r'<title>.*?</title>|<meta name="description"[^>]*>|<link rel="icon"[^>]*>','',text)
   text=text.replace('</head>',metadata+'\n</head>')
   path=static/p['path'].lstrip('/')/'index.html';path.parent.mkdir(parents=True,exist_ok=True);path.write_text(text)
- assets=['style.css','app.mjs','adapter.mjs','contract-adapter.mjs','hero-controller.mjs','routes.mjs','assets/cartan-logo.png','assets/module.jpg','assets/vision.jpg','assets/icons/favicon.svg','vendor/cartan/v1/fixture.json']
- assets += ['assets/cartan/'+n for n in ['cartan-hero-desktop-720p.mp4','cartan-hero-poster.jpg','cartan-hero-poster-mobile.jpg','CARTAN-Built-to-Change-Revised-Silent-21s-1080p.mp4']]
+ assets=['style.css','app.mjs','adapter.mjs','contract-adapter.mjs','hero-controller.mjs','focus-presentation.mjs','routes.mjs','assets/cartan-logo.png','assets/scenes/assembly.png','assets/icons/favicon.svg','vendor/cartan/v1/fixture.json']
+ assets += ['assets/cartan/'+n for n in ['cartan-hero-desktop-720p.mp4','cartan-hero-mobile-540p.mp4','cartan-hero-poster.jpg','cartan-hero-poster-mobile.jpg','cartan-hero-opening-720p.webp','cartan-hero-opening-540p.webp','CARTAN-Built-to-Change-Revised-Silent-21s-1080p.mp4']]
  for rel in assets:
   dest=static/rel;dest.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(ROOT/rel,dest)
  (static/'robots.txt').write_text('User-agent: *\nAllow: /\n\nSitemap: '+origin+'/sitemap.xml\n')
  (static/'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+''.join('<url><loc>'+origin+p['path']+'</loc></url>\n' for p in pages.values())+'</urlset>\n')
  (static/'site.webmanifest').write_text(json.dumps({'id':'/','name':'CARTAN — Spacecraft serviceability research','short_name':'CARTAN','start_url':'/','scope':'/','display':'browser','background_color':'#07090b','theme_color':'#07090b','icons':[{'src':'/assets/icons/favicon.svg','sizes':'any','type':'image/svg+xml','purpose':'any'}]},indent=2)+'\n')
  (static/'llms.txt').write_text('# CARTAN\n\n> Spacecraft serviceability research by Daniel Wahnich.\n\n## Research boundaries\n\nThe public interface presents proposed methods, concept imagery and an explicitly synthetic fixture. It does not establish flight hardware, validated mechanics, physical safety or comparative performance. Missing and unmeasured outcomes are not zero.\n\n## Pages\n\n'+''.join('- ['+p['title']+']('+origin+p['path']+'): '+p['description']+'\n' for p in pages.values())+'\nThis optional machine-readable guide is not a ranking mechanism or evidence source.\n')
- (static/'404.html').write_text('<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Page not found — CARTAN</title><meta name="robots" content="noindex"><link rel="stylesheet" href="/style.css"></head><body><main class="workspace"><p class="eyebrow">CARTAN / 404</p><h1>This page is not here.</h1><p><a class="action" href="/">Return to CARTAN ↗</a></p></main></body></html>')
+ (static/'404.html').write_text('<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Page not found — CARTAN</title><meta name="robots" content="noindex"><link rel="stylesheet" href="/style.css"></head><body><main class="workspace"><p class="eyebrow">CARTAN / 404</p><h1>This page is not here.</h1><p><a class="action" href="/">Return to CARTAN</a></p></main></body></html>')
  csp="default-src 'none'; script-src 'self' "+' '.join(hashes)+"; style-src 'self'; img-src 'self' data:; media-src 'self'; connect-src 'self'; font-src 'self'; manifest-src 'self'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'; object-src 'none'; upgrade-insecure-requests"
  routes=[{'src':'/.*','headers':{'Content-Security-Policy':csp,'X-Content-Type-Options':'nosniff','Referrer-Policy':'strict-origin-when-cross-origin','Permissions-Policy':'camera=(), microphone=(), geolocation=(), payment=()','Strict-Transport-Security':'max-age=31536000','Cache-Control':'public, max-age=0, must-revalidate'},'continue':True},
  {'src':'/.*','missing':[{'type':'host','value':'cartan.danielwahnich.dev'}],'headers':{'X-Robots-Tag':'noindex, nofollow'},'continue':True},
  {'src':'/vendor/.*','headers':{'X-Robots-Tag':'noindex','Cache-Control':'public, max-age=3600'},'continue':True},
- {'src':'/assets/.*','headers':{'Cache-Control':'public, max-age=86400'},'continue':True}]
+ {'src':'/assets/.*','headers':{'Cache-Control':'public, max-age=0, must-revalidate'},'continue':True}]
  for p in pages.values():
   path=p['path'];routes.append({'src':path+'index\\.html','status':308,'headers':{'Location':path}})
   if path!='/':routes.append({'src':path.rstrip('/'),'status':308,'headers':{'Location':path}})

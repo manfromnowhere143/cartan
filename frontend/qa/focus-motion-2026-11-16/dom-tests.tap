@@ -1,0 +1,62 @@
+TAP version 13
+# (node:59403) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: touch-open and touch-close preserve focus without pointer-outline eligibility
+ok 1 - touch-open and touch-close preserve focus without pointer-outline eligibility
+  ---
+  duration_ms: 124.457541
+  ...
+# Subtest: a typed zero-count touch click does not become keyboard focus
+ok 2 - a typed zero-count touch click does not become keyboard focus
+  ---
+  duration_ms: 61.048167
+  ...
+# Subtest: a webview zero-count MouseEvent after a completed touch stays pointer-originated
+ok 3 - a webview zero-count MouseEvent after a completed touch stays pointer-originated
+  ---
+  duration_ms: 56.376583
+  ...
+# Subtest: cancelled gestures do not mask a later assistive activation
+ok 4 - cancelled gestures do not mask a later assistive activation
+  ---
+  duration_ms: 50.436167
+  ...
+# Subtest: keyboard and assistive opening retain visible-focus eligibility
+ok 5 - keyboard and assistive opening retain visible-focus eligibility
+  ---
+  duration_ms: 101.862375
+  ...
+# Subtest: Safari Option+Tab restores keyboard indication synchronously
+ok 6 - Safari Option+Tab restores keyboard indication synchronously
+  ---
+  duration_ms: 51.722333
+  ...
+# Subtest: pointer presentation covers routes, component/evidence controls and restored focus
+ok 7 - pointer presentation covers routes, component/evidence controls and restored focus
+  ---
+  duration_ms: 62.351417
+  ...
+# Subtest: native media controls and text inputs are not subject to pointer-outline suppression
+ok 8 - native media controls and text inputs are not subject to pointer-outline suppression
+  ---
+  duration_ms: 53.269167
+  ...
+# Subtest: real app selects mobile looping media and resumes temporary navigation suspension
+ok 9 - real app selects mobile looping media and resumes temporary navigation suspension
+  ---
+  duration_ms: 57.961125
+  ...
+# Subtest: real app respects reduced motion and Save-Data without attaching a source
+ok 10 - real app respects reduced motion and Save-Data without attaching a source
+  ---
+  duration_ms: 87.448334
+  ...
+1..10
+# tests 10
+# suites 0
+# pass 10
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1124.355959

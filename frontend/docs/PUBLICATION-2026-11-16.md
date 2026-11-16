@@ -1,5 +1,33 @@
 # CARTAN public release — 16 November 2026
 
+## Current pointer/media revision
+
+The pointer-focus fix and mobile/native-looping hero are live at the canonical
+origin. Daniel explicitly replaced the original mobile-still and single-play
+requirements. 33 core tests, 10 isolated-DOM tests, 328 package assertions, 148
+candidate HTTP checks and 227 unauthenticated public checks pass. Actual browser
+and device acceptance remains pending because the control host is unavailable.
+See `../qa/REVIEW-FOCUS-MOTION-2026-11-16.md` for scope, exact deployment and
+receipts. Prior snapshots below remain historical.
+
+
+## Live-status correction
+
+The canonical origin **https://cartan.danielwahnich.dev/** is live. Daniel added
+the CNAME; exact alias assignment and certificate issuance succeeded. At
+2026-11-16T13:18:46Z, 201 unauthenticated HTTP/TLS checks passed against the
+original publication manifest, including all page/file hashes and media ranges.
+See `qa/publication-2026-11-16/public-http-initial.json` and
+`vercel-domain-live.json`. The DNS-blocked state below is historical, superseded
+by this readback. Google Search Console authorization remains pending.
+
+The subsequent stability/design refinement is recorded in
+`../qa/REVIEW-STABILITY-2026-11-16.md`; the refinement is also live, with 212 fresh unauthenticated checks passing.
+Consult that report for the current release and remaining browser-check limit.
+
+## Historical pre-DNS snapshot
+
+
 Status: Vercel deployment READY and qualified through authenticated HTTP. The
 custom origin https://cartan.danielwahnich.dev/ is **not yet live**. GoDaddy has no
 `cartan` CNAME, and custom-domain alias/certificate issuance failed while that

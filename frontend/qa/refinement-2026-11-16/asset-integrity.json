@@ -1,0 +1,79 @@
+[
+  {
+    "asset": "assets/hero.jpg",
+    "bytes": 220752,
+    "sha256": "c5ac63b0758406418e1f9627df4f3aad6af525d9827876e5b8d2b6dcd40cc816",
+    "original_match": true,
+    "registry_match": true
+  },
+  {
+    "asset": "assets/module.jpg",
+    "bytes": 168913,
+    "sha256": "1c824515427acaf88093a527c47ab914845fabc3da9135657c7cadeb3ea7d9fc",
+    "original_match": true,
+    "registry_match": true
+  },
+  {
+    "asset": "assets/vision.jpg",
+    "bytes": 194676,
+    "sha256": "c8e3e4724494b91320115039b63e263da3c6fb8ac4e36f5fe6d9cb7117c6753c",
+    "original_match": true,
+    "registry_match": true
+  },
+  {
+    "asset": "assets/hero-loop.mp4",
+    "bytes": 3047614,
+    "sha256": "bc323738390b18cb42e610d08ec8e962d5c20c54719113cfa0d2736b22153312",
+    "original_match": true,
+    "registry_match": true
+  },
+  {
+    "asset": "assets/film-review.mp4",
+    "bytes": 4375571,
+    "sha256": "22d4bce9d5489a488daec8bb76be942e109c6cab042c1fea04fb41858b25a416",
+    "original_match": true,
+    "registry_match": true
+  },
+  {
+    "asset": "assets/cartan-logo.png",
+    "bytes": 603552,
+    "sha256": "7f3b27e6dae623358c0761793d96af5eee1310e9177ab711c4cf3afc1b3ca3ee",
+    "original_match": true,
+    "registry_match": true
+  },
+  {
+    "asset": "assets/cartan/cartan-hero-desktop-720p.mp4",
+    "bytes": 4039148,
+    "sha256": "e4d4b16548381a29aa0d6805091a8b43f55d3c9855e3a30a8fe5de7dddc0f113",
+    "original_match": true,
+    "registry_match": true
+  },
+  {
+    "asset": "assets/cartan/cartan-hero-poster.jpg",
+    "bytes": 218870,
+    "sha256": "5b31a39ac5844fc77d649fd3cb74905e1dfe2fd27615091d1907274873afd7d1",
+    "original_match": true,
+    "registry_match": true
+  },
+  {
+    "asset": "assets/cartan/cartan-hero-poster-mobile.jpg",
+    "bytes": 137698,
+    "sha256": "2e836745e1c3c5c99fe937dc9e78c7ead8d080e3dd2c160896e6b6f70b0844b0",
+    "original_match": true,
+    "registry_match": true
+  },
+  {
+    "asset": "assets/cartan/CARTAN-Built-to-Change-Revised-Silent-21s-1080p.mp4",
+    "bytes": 19481715,
+    "sha256": "d4d00b3a4bd62e166396828d89e9eb9d3fb6056f31ebe960b89b2b2df7030ec0",
+    "original_match": true,
+    "registry_match": true
+  },
+  {
+    "asset": "assets/scenes/assembly.png",
+    "bytes": 2459429,
+    "sha256": "da669be21c8fbeded42e8b76e4cf7b553f804a1e9228f7d7f7fa832c0ded9246",
+    "original_match": true,
+    "registry_match": true
+  }
+]
