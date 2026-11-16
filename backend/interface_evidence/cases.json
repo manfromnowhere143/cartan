@@ -1,0 +1,27 @@
+{
+  "schema_version": "cartan-interface-analysis/1.0.0",
+  "model_version": "interface-evidence/0.1.0",
+  "cases": [
+    {"id":"no-reports","action":"release_support","reports":[],"expected":"unresolved"},
+    {"id":"receipt-is-not-retention","action":"release_support","reports":[{"quantity":"receipt_ack","value":true}],"expected":"unresolved"},
+    {"id":"processed-is-not-retention","action":"release_support","reports":[{"quantity":"processed_ack","value":true}],"expected":"unresolved"},
+    {"id":"zero-voltage-is-not-isolation","action":"disconnect","reports":[{"quantity":"bus_voltage","value":0,"unit":"V"}],"expected":"unresolved"},
+    {"id":"controller-off-is-not-isolation","action":"disconnect","reports":[{"quantity":"controller_power","value":"off"}],"expected":"unresolved"},
+    {"id":"ring-position-is-not-load-path","action":"release_support","reports":[{"quantity":"locking_ring_position","value":255,"unit":"raw"}],"expected":"unresolved"},
+    {"id":"assumed-retention","action":"release_support","profile":"synthetic_direct","reports":[{"quantity":"retained","value":true}],"expected":"admissible"},
+    {"id":"assumed-disconnect","action":"disconnect","profile":"synthetic_direct","reports":[{"quantity":"retained","value":true},{"quantity":"support_secured","value":true},{"quantity":"controller_on","value":true},{"quantity":"source_isolated","value":true},{"quantity":"voltage_below_limit","value":true}],"expected":"admissible"},
+    {"id":"latched-module-cannot-remove","action":"remove_module","profile":"synthetic_direct","reports":[{"quantity":"retained","value":true}],"expected":"refuted"},
+    {"id":"conflicting-retention","action":"release_support","profile":"synthetic_direct","reports":[{"quantity":"retained","value":true},{"quantity":"retained","value":false}],"expected":"inconsistent"},
+    {"id":"stale-retention","action":"release_support","profile":"synthetic_direct","now":2,"reports":[{"quantity":"retained","value":true}],"expected":"unresolved"},
+    {"id":"prior-epoch-retention","action":"release_support","profile":"synthetic_direct","epoch":1,"reports":[{"quantity":"retained","value":true}],"expected":"unresolved"},
+    {"id":"duplicate-acquisition","action":"release_support","profile":"synthetic_direct","reports":[{"id":"same","quantity":"retained","value":true},{"id":"same","quantity":"retained","value":true}],"expected":"admissible"},
+    {"id":"conflicting-identity","action":"release_support","profile":"synthetic_direct","reports":[{"id":"same","quantity":"retained","value":true},{"id":"same","quantity":"retained","value":false}],"expected":"inconsistent"},
+    {"id":"missing-retention","action":"release_support","profile":"synthetic_direct","reports":[{"quantity":"retained","status":"missing","value":null}],"expected":"unresolved"},
+    {"id":"known-false","action":"release_support","profile":"synthetic_direct","reports":[{"quantity":"retained","value":false}],"expected":"refuted"},
+    {"id":"known-zero","action":"energize","reports":[{"quantity":"bus_voltage","value":0,"unit":"V"}],"expected":"unresolved"},
+    {"id":"reject-physical-mode","action":"release_support","reports":[{"quantity":"retained","value":true,"mode":"physical_test"}],"expected_error":"Only constructed reports"},
+    {"id":"future-arrival","action":"release_support","profile":"synthetic_direct","reports":[{"quantity":"retained","value":true,"received_at":1}],"expected":"unresolved"},
+    {"id":"unknown-binding","action":"release_support","profile":"claimed_vendor_driver","reports":[],"expected_error":"Unsupported action or interpretation profile"},
+    {"id":"numeric-is-not-boolean","action":"release_support","profile":"synthetic_direct","reports":[{"quantity":"retained","value":1}],"expected_error":"Direct logical proposition requires a Boolean"}
+  ]
+}

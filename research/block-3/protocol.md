@@ -43,6 +43,12 @@ future, stale, old-epoch, invalid and missing observations. Repeated acquisition
 IDs add no evidence; conflicting reuse is inconsistent. Unknown/missing/null
 remain distinct from known zero or false.
 
+Pre-execution clarification: “reject” here excludes a report from inference and
+retains its disposition; it does not reject the entire query. Physical mode,
+unknown profiles and malformed direct Boolean facts reject the input. Acquisition
+identity consistency is checked even for excluded reports. A later valid delivery
+is not suppressed by an earlier invalid delivery of the same acquisition.
+
 The `preliminary_vocabulary` profile retains observed values but does not bind
 physical predicates. It does not decode CAN bytes or validate a current ICD.
 `receipt_ack` and `processed_ack` are command-report quantities under every profile.
