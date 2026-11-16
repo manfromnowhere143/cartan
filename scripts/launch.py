@@ -7,7 +7,6 @@ local prerequisite failed, never a request to weaken a safeguard.
 """
 
 import hashlib
-import fcntl
 import json
 import os
 import re
@@ -26,7 +25,6 @@ REQUIRED = (
 OWNED_CONFIG = (
     "cartan.json", "config/environment.json", "config/inputs.json",
     ".codex/config.toml", ".claude/settings.json", "config/claude-mcp.json",
-    "scripts/launch.py",
 )
 CLIENT_NAMES = {
     "cartan-codex": "codex", "cartancodes": "codex",
@@ -284,28 +282,16 @@ def launch_interactive(plan):
         raise PreflightError("Nested launch refused. Daniel should use an ordinary terminal.")
     if not sys.stdin.isatty() or not sys.stdout.isatty():
         raise PreflightError("Interactive terminal required; unattended model launches are not supported.")
-    runtime = Path(plan["cwd"]) / ".cartan"
-    if runtime.is_symlink():
-        raise PreflightError("Runtime directory must not be a symlink.")
-    runtime.mkdir(exist_ok=True, mode=0o700)
-    # Hold a kernel advisory lock in the foreground supervisor, even when the
-    # Codex Node wrapper spawns its native binary. No stale PID or lock deletion.
-    fd = os.open(runtime / "launch.lock", os.O_CREAT | os.O_RDWR | os.O_NOFOLLOW, 0o600)
-    with os.fdopen(fd, "w") as lock:
+    print(f"CARTAN {plan['lane']} | {plan['client']} | {plan['cwd']}\n"
+          "Approvals retained. No setup command authorizes spend or publication.", flush=True)
+    process = subprocess.Popen(plan["argv"], cwd=plan["cwd"], env=child_env())
+    while True:
         try:
-            fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
-        except BlockingIOError:
-            raise PreflightError("This CARTAN lane already has a launcher session. Use the other lane or finish that session.") from None
-        print(f"CARTAN {plan['lane']} | {plan['client']} | {plan['cwd']}\n"
-              "Approvals retained. No setup command authorizes spend or publication.", flush=True)
-        process = subprocess.Popen(plan["argv"], cwd=plan["cwd"], env=child_env())
-        while True:
-            try:
-                return process.wait()
-            except KeyboardInterrupt:
-                # Terminal SIGINT also reaches the foreground child. Keep the
-                # lock until that process exits; never touch unrelated sessions.
-                continue
+            return process.wait()
+        except KeyboardInterrupt:
+            # Terminal SIGINT also reaches this foreground child. Never signal
+            # another launcher or inspect/delete an older session's lock.
+            continue
 
 
 def main():

@@ -19,7 +19,8 @@ Canonical spellings: `cartan-codex` and `cartan-claude`. Compatibility spellings
 to research. `--check` never starts a model, installs packages or connects MCP.
 It checks stored local authentication with network denied and returns exit 2 if
 login is missing. Codex also parses its effective MCP configuration offline.
-Use a normal interactive terminal to launch. Do not run two clients in one lane.
+Use a normal interactive terminal to launch. Multiple terminals are supported;
+coordinate file ownership when sessions share a worktree.
 
 Claude requires its own login; the setup check found none. Use the installed
 client's ordinary authentication flow before choosing it. Existing Codex login

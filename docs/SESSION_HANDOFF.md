@@ -1,5 +1,10 @@
 # CARTAN environment handoff
 
+16 November operator correction: the unsolicited one-session-per-lane lock has
+been removed. `cartancodes` can open another terminal session while an existing
+session runs. Installed commands use the updated canonical launcher; active lane
+files and processes were not changed. Approval/sandbox settings are unchanged.
+
 Prepared 16 November 2026. Environment setup only; no research or UI build session
 has been started. Read `docs/ENVIRONMENT-AUDIT.md` and `docs/VERIFICATION.md` for
 the inspected architecture, actual checks and limits.

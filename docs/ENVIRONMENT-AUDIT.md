@@ -119,7 +119,7 @@ flowchart LR
   N --> L[One canonical Python launcher]
   L --> G[Identity, branch, input and config checks]
   G --> C[Read-only check report]
-  G --> K[Per-lane foreground lock]
+  G --> K[Independent foreground session]
   K --> R[Research worktree]
   K --> U[UI worktree]
   R --> V[Versioned scientific contract]
@@ -140,8 +140,11 @@ Authentication/config diagnostics run with OS network denial; no MCP server,
 model, install, hook or daemon is started. Missing auth returns exit 2 with the
 rest of the local plan still reviewable. Real launches
 require Daniel's interactive terminal, refuse known nested-agent environments,
-and hold an OS advisory lock until the foreground client exits. The lock protects
-CARTAN-launcher users, not people bypassing it with raw client commands.
+and open independent foreground clients. Multiple terminals may select the same
+lane. The initial single-session lock was removed at Daniel's request on
+16 November 2026; no existing process or lock file was touched. Installed command
+symlinks use the canonical launcher, so branch-local launcher snapshots need not
+be rewritten in active worktrees. Other setup configuration equality checks remain.
 
 | Dimension | Configuration / limitation |
 |---|---|

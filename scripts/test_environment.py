@@ -210,23 +210,25 @@ class EnvironmentTests(unittest.TestCase):
             with self.assertRaises(launch.PreflightError):
                 launch.launch_interactive({})
 
-    def test_same_lane_lock_refuses_second_writer(self):
+    def test_existing_lane_lock_does_not_block_another_terminal(self):
         runtime = self.research / ".cartan"
         runtime.mkdir(exist_ok=True)
         with (runtime / "launch.lock").open("w") as lock:
             fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
+            plan = {"cwd": str(self.research), "lane": "research", "client": "local-probe",
+                    "argv": ["/usr/bin/true"]}
             with patch.dict(os.environ, {}, clear=True), \
+                 contextlib.redirect_stdout(io.StringIO()), \
                  patch.object(sys.stdin, "isatty", return_value=True), \
-                 patch.object(sys.stdout, "isatty", return_value=True), \
-                 patch.object(launch.subprocess, "Popen", side_effect=AssertionError("must not spawn")):
-                with self.assertRaises(launch.PreflightError):
-                    launch.launch_interactive({"cwd": str(self.research)})
+                 patch.object(sys.stdout, "isatty", return_value=True):
+                self.assertEqual(launch.launch_interactive(plan), 0)
+                self.assertEqual(launch.launch_interactive(plan), 0)
 
-    def test_foreground_supervisor_uses_selected_cwd_and_releases_lock(self):
+    def test_foreground_supervisor_uses_selected_cwd(self):
         # Exercise the real foreground boundary with a harmless local Python
         # process, not a model client. Only a temporary fixture gets a file.
         program = ("import json,os; from pathlib import Path; "
-                   "Path('.cartan/probe.json').write_text(json.dumps({"
+                   "Path('probe.json').write_text(json.dumps({"
                    "'cwd':str(Path.cwd()),'key_present':'OPENAI_API_KEY' in os.environ}))")
         plan = {"cwd": str(self.ui), "lane": "ui", "client": "local-probe",
                 "argv": [sys.executable, "-c", program]}
@@ -235,10 +237,13 @@ class EnvironmentTests(unittest.TestCase):
              patch.object(sys.stdin, "isatty", return_value=True), \
              patch.object(sys.stdout, "isatty", return_value=True):
             self.assertEqual(launch.launch_interactive(plan), 0)
-        result = json.loads((self.ui / ".cartan/probe.json").read_text())
+        result = json.loads((self.ui / "probe.json").read_text())
         self.assertEqual(result, {"cwd": str(self.ui), "key_present": False})
-        with (self.ui / ".cartan/launch.lock").open("w") as lock:
-            fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
+
+    def test_canonical_launcher_does_not_require_rewriting_active_lane_copy(self):
+        path = self.research / "scripts/launch.py"
+        with changed(path, b"# Older branch-local snapshot; installed commands use the canonical script.\n"):
+            launch.validate_identity(self.root, self.config, "research")
 
     def test_installer_refuses_collision_without_overwrite(self):
         spec = importlib.util.spec_from_file_location("cartan_install", SOURCE / "scripts/install_launchers.py")

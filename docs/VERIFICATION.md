@@ -1,5 +1,12 @@
 # Environment verification
 
+Operator correction, 16 November 2026: removed the one-session-per-lane lock.
+The installed `cartancodes --check` passed from outside the repository, and all
+25 updated tests passed (4.727 seconds), including launching harmless local
+processes while an older lane lock is held. No model was launched, active
+worktree updated, existing session stopped, or permission setting changed.
+The original setup results below are retained with the concurrency correction.
+
 Date: 16 November 2026. **Codex is prepared for Daniel's first interactive
 session. Claude is configured but blocked on authentication.** This is a local
 environment verdict, not an end-to-end model-session or product-readiness claim.
@@ -19,7 +26,7 @@ are executable symlinks in the already-resolved `~/.local/bin` directory. If an
 older zsh has cached command lookup, `rehash` refreshes it. The absolute fallback
 is `/Users/danielwahnich/.local/bin/cartancodes`.
 
-Claude is an alternative client for a lane, not a third simultaneous writer:
+Claude uses the same lane selection:
 
 ```sh
 claude auth login        # Daniel performs the normal client login himself
@@ -28,8 +35,8 @@ cartanclaudes            # research lane, after login
 cartanclaudes ui          # UI lane, after login
 ```
 
-Equivalent Claude name: `cartan-claude`. Do not run Codex and Claude in the same
-lane concurrently; the launcher lock rejects a second launcher session. Neither
+Equivalent Claude name: `cartan-claude`. Multiple terminal sessions are allowed,
+including the same lane. Coordinate file ownership for shared worktrees. Neither
 client is recursively started by setup or by the other session.
 
 ## Verified local results
@@ -41,7 +48,7 @@ client is recursively started by setup or by the other session.
 | `python3 scripts/test_environment.py` | 24 tests passed; final retained log reports 6.529 seconds |
 | Guard positive/negative controls | Correct client/lane plans; wrong Git family, wrong/detached branch, remote drift, missing/symlinked instructions, config/input drift, corrupt JSON, missing client and version drift rejected |
 | Credential and environment behavior | Synthetic canaries not echoed/forwarded; Git-routing and shell-injection environment variables filtered; existing terminal proxy settings retained |
-| Work preservation and concurrency | Dirty work preserved; second writer refused by OS advisory lock; harmless temporary Python probe ran in selected cwd and lock released at exit |
+| Work preservation and concurrency | Dirty work preserved; the initial exclusive lock was removed following Daniel's correction. Regression checks use harmless local processes with an older lock held; no model is launched |
 | Installer collision | Existing command file preserved; no partial overwrite |
 | Dry-run behavior | No model launch path entered; no MCP adapter started; native config/auth diagnostics run with OS network denied |
 | Native Codex effective config | Parsed successfully in actual research and UI worktrees; enabled `openaiDeveloperDocs`, `node_repl`, `cua_repl`; Aweb, email, research Google, legacy computer-use and codex_app disabled |
