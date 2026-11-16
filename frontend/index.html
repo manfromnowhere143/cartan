@@ -20,8 +20,8 @@
 <main id="main" tabindex="-1"><section class="surface hero active" data-view="home" id="top" aria-labelledby="hero-title">
   <div class="hero-picture">
     <div class="poster-fallback" aria-hidden="true"><span></span><span></span><span></span></div>
-    <img id="hero-poster" src="assets/hero.jpg" width="1920" height="1080" fetchpriority="high" alt="Concept illustration of a robotic arm holding a module beside an open spacecraft service bay. Geometry is unverified.">
-    <video id="hero-video" muted playsinline loop preload="none" aria-hidden="true" tabindex="-1" disablepictureinpicture></video>
+    <picture class="hero-poster"><source media="(max-width: 767px)" srcset="/assets/cartan/cartan-hero-poster-mobile.jpg" width="720" height="1280"><img id="hero-poster" src="/assets/cartan/cartan-hero-poster.jpg" width="1920" height="1080" fetchpriority="high" alt="Concept illustration of a service bay and gripped cartridge. Geometry and hardware are unverified."></picture>
+    <video id="hero-video" muted playsinline autoplay preload="metadata" poster="/assets/cartan/cartan-hero-poster.jpg" width="1280" height="720" aria-hidden="true" tabindex="-1" disablepictureinpicture></video>
   </div>
   <div class="hero-copy">
     <p class="eyebrow">SPACE SYSTEMS / SERVICEABILITY</p>
@@ -32,9 +32,9 @@
     <div class="hero-links"><a class="text-action" href="#question">Read the research <span aria-hidden="true">↗</span></a><a class="text-action" href="#vision">The longer horizon <span aria-hidden="true">↗</span></a></div>
   </div>
   <div class="hero-bottom">
-    <p id="hero-caption">Concept visualization <span>Unverified hardware geometry</span></p>
+    <p id="hero-caption">Concept visualization <span>Unverified hardware geometry</span></p><span id="hero-status" class="sr-only" role="status"></span>
     <button id="motion-toggle" class="quiet" hidden>Play motion <span aria-hidden="true">▷</span></button>
-    <button class="film-open" hidden><span>Watch the concept film<small>SILENT REVIEW / 00:48</small></span><span class="play" aria-hidden="true">▷</span></button>
+    <button class="film-open" hidden><span>Watch the concept film<small>SILENT CONCEPT FILM / 00:21</small></span><span class="play" aria-hidden="true">▷</span></button>
   </div>
 </section>
 <section class="surface question workspace" data-view="question" id="question" aria-labelledby="question-title">
@@ -85,5 +85,5 @@
   <section class="surface vision" data-view="vision" id="vision" aria-labelledby="vision-title"><img src="assets/vision.jpg" width="1920" height="1080" loading="lazy" alt="Long-term concept artwork of a modular spacecraft near the Moon, with solar arrays and servicing arms. No flight architecture is established."><div class="vision-copy"><p class="eyebrow">THE LONGER HORIZON</p><h2 id="vision-title">Spacecraft that<br>can change.</h2><p>Maintenance, upgrades and reconfiguration.<br>An ambition earned one tested step at a time.</p><span class="tag">LONG-TERM CONCEPT / UNVALIDATED</span></div></section>
 </main>
 <footer class="workspace-footer"><a href="#top" id="view-back" hidden>← Overview</a><span id="view-context">SPACE SYSTEMS RESEARCH</span><span>Daniel Wahnich · CARTAN</span></footer>
-<dialog id="film-dialog" aria-labelledby="film-title" aria-describedby="film-description"><div class="film-header"><div><p class="eyebrow">CARTAN / CONCEPT FILM</p><h2 id="film-title">The mission continues.</h2></div><button id="film-close" aria-label="Close concept film">Close <span aria-hidden="true">×</span></button></div><video id="film-video" controls playsinline preload="none" poster="assets/hero.jpg" aria-label="Silent CARTAN concept film, 48 seconds"></video><p id="film-description">Silent concept review. Generated imagery and editorial motion; no operational footage, simulation results or validated hardware. Soundtrack selection remains with Daniel.</p><p id="film-status" role="status"></p><details><summary>Read the film’s visual description</summary><p>An open spacecraft service bay introduces the maintenance ambition. An exploded module illustrates the study object. An interrupted approach asks what is held, what is isolated and what can be verified. A larger modular craft closes the long-term vision. Geometry is conceptual; the hold and reverse loop are editorial effects.</p></details></dialog>
+<dialog id="film-dialog" aria-labelledby="film-title" aria-describedby="film-description"><div class="film-header"><div><p class="eyebrow">CARTAN / CONCEPT FILM</p><h2 id="film-title">The mission continues.</h2></div><button id="film-close" aria-label="Close concept film">Close <span aria-hidden="true">×</span></button></div><video id="film-video" controls playsinline preload="none" poster="/assets/cartan/cartan-hero-poster.jpg" aria-label="Silent CARTAN concept film, 21.5 seconds"></video><p id="film-description">Concept imagery: orbital assembly, an exploded-module study and a service-bay exchange. These depict different proposed systems, not one verified machine or a validated sequence. Ending notice: “AI-generated design concepts. Not engineering validation.”</p><p id="film-status" role="status"></p><details><summary>Read the film’s visual description</summary><p>Orbital construction opens the ambition. A white-background exploded module follows. A gripped cartridge approaches a service bay, followed by an editorial close-up. Orbital assembly then continues. The final card shows the CARTAN logo, “Built to change,” and “AI-generated design concepts. Not engineering validation.” No footage validates a connection, retention or recovery; the systems are different concept illustrations.</p></details></dialog>
 <noscript><style>.surface{display:block!important;position:relative!important;min-height:100svh}.site-header{position:relative}.workspace-footer{position:relative}</style><p>Interactive views require JavaScript. All research remains readable above.</p></noscript></body></html>

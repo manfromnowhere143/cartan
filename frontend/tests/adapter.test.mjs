@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {readFixture, formatDatum, evidenceState, mayPlayHero} from '../adapter.mjs';
+import {readFixture, formatDatum, evidenceState} from '../adapter.mjs';
 const fixture = JSON.parse(readFileSync(new URL('../data/fixture.json', import.meta.url)));
 test('fixture survives without evidence promotion', () => {
   const result = readFixture(fixture); assert.notEqual(result, fixture);
@@ -28,10 +28,4 @@ test('missing and inconclusive views cannot imply success', () => {
   assert.match(evidenceState('physical_test')[0],/No physical/);
   assert.match(evidenceState('inconclusive')[1],/Presentation example only/);
   assert.throws(()=>evidenceState('success'));
-});
-test('hero needs intent and stops for each lifecycle constraint', () => {
-  const allowed={available:true,reducedMotion:false,visible:true,inView:true,filmOpen:false,requested:true};
-  assert.equal(mayPlayHero(allowed),true);
-  for (const key of ['available','visible','inView','requested']) assert.equal(mayPlayHero({...allowed,[key]:false}),false);
-  for (const key of ['reducedMotion','filmOpen']) assert.equal(mayPlayHero({...allowed,[key]:true}),false);
 });

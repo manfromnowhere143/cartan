@@ -37,6 +37,3 @@ export function evidenceState(mode) {
   if (!Object.hasOwn(states, mode)) throw new Error('Unknown evidence view');
   return states[mode];
 }
-export function mayPlayHero({available, reducedMotion, visible, inView, filmOpen, requested}) {
-  return Boolean(available && requested && !reducedMotion && visible && inView && !filmOpen);
-}

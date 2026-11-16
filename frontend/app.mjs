@@ -1,5 +1,7 @@
-import {evidenceState, mayPlayHero} from './adapter.mjs';
+import {evidenceState} from './adapter.mjs';
 import {loadPinnedV1, formatV1, CONTRACT_COMMIT} from './contract-adapter.mjs';
+
+import {createHeroController} from './hero-controller.mjs';
 
 const $ = selector => document.querySelector(selector);
 const components = {
@@ -65,63 +67,70 @@ async function loadFixture() {
 void loadFixture();
 
 const hero = $('#hero-video'), dialog = $('#film-dialog'), film = $('#film-video');
-const motionButton = $('#motion-toggle'), motionPreference = matchMedia('(prefers-reduced-motion: reduce)');
-let requested=false, inView=true, filmTrigger=null, heroFailed=false, playEpoch=0;
-motionButton.hidden=false;
-for (const button of document.querySelectorAll('.film-open')) button.hidden=false;
-
-function buttonLabel() {
-  motionButton.disabled=motionPreference.matches;
-  motionButton.textContent = motionPreference.matches ? 'Reduced motion · still' : requested ? 'Pause motion Ⅱ' : heroFailed ? 'Retry motion ▷' : 'Play motion ▷';
-  motionButton.setAttribute('aria-label',motionPreference.matches ? 'Hero stays still with reduced motion enabled' : requested ? 'Pause background motion' : 'Play background motion');
+const motionButton=$('#motion-toggle'), motionPreference=matchMedia('(prefers-reduced-motion: reduce)');
+const mobilePreference=matchMedia('(max-width: 767px)'), connection=navigator.connection;
+const heroSection=$('.hero'), heroStatus=$('#hero-status');
+let inView=false, activeHero=(!location.hash||location.hash==='#top'), filmTrigger=null;
+let measuredHeroAspect=innerWidth/Math.max(680,innerHeight);
+function heroAspect(){
+  // display:none removes layout dimensions; it must not erase a paused timeline.
+  if(heroSection.clientWidth&&heroSection.clientHeight) measuredHeroAspect=heroSection.clientWidth/heroSection.clientHeight;
+  return measuredHeroAspect;
 }
-function stopHero({release=false}={}) {
-  playEpoch++; requested=false; hero.pause();
-  if (release) {hero.classList.remove('playing'); hero.removeAttribute('src'); hero.load();}
-  buttonLabel();
-}
-async function startHero() {
-  requested=true; heroFailed=false; buttonLabel();
-  if (!mayPlayHero({available:true,reducedMotion:motionPreference.matches,visible:!document.hidden,inView,filmOpen:dialog.open,requested})) {stopHero();return;}
-  const epoch=++playEpoch;
-  hero.muted=true;
-  if (!hero.hasAttribute('src')) hero.src='assets/hero-loop.mp4';
-  try {await hero.play(); if (epoch !== playEpoch) return; hero.classList.add('playing');}
-  catch {if (epoch !== playEpoch) return; heroFailed=true; stopHero({release:true}); $('#hero-caption').firstChild.textContent='Motion unavailable · concept still ';}
-}
-hero.addEventListener('error', () => {
-  if (!hero.hasAttribute('src')) return;
-  heroFailed=true; stopHero({release:true}); $('#hero-caption').firstChild.textContent='Motion unavailable · concept still ';
+const heroMedia=createHeroController({
+  video:hero,
+  source:'/assets/cartan/cartan-hero-desktop-720p.mp4',
+  policy:()=>({
+    width:innerWidth,aspect:heroAspect(),
+    reducedMotion:motionPreference.matches,saveData:Boolean(connection?.saveData),
+    visible:!document.hidden,inView:inView&&activeHero,filmOpen:dialog.open,
+    autoplayDenied:typeof navigator.getAutoplayPolicy==='function'&&navigator.getAutoplayPolicy(hero)==='disallowed',
+  }),
+  render:({phase,reason,hasFrame})=>{
+    heroSection.dataset.playback=phase;
+    hero.classList.toggle('playing',hasFrame);
+    const staticView=phase==='static';
+    motionButton.hidden=staticView;
+    const playing=phase==='playing'||phase==='loading';
+    const label=playing ? 'Pause background motion' : phase==='ended' ? 'Replay background motion' : 'Play background motion';
+    motionButton.textContent=playing ? 'Pause motion Ⅱ' : phase==='ended' ? 'Replay motion ↻' : 'Play motion ▷';
+    motionButton.setAttribute('aria-label',label);
+    heroStatus.textContent=staticView ? 'Static concept image.' : phase==='ended' ? 'Concept sequence complete. Still image shown; replay is optional.' : phase==='blocked' ? 'Background motion unavailable. Concept still shown.' : phase==='paused' ? 'Background motion paused.' : '';
+    if(reason==='reduced-motion') document.getAnimations().forEach(animation=>animation.cancel());
+  },
 });
-motionButton.addEventListener('click', () => requested ? stopHero() : void startHero());
-motionPreference.addEventListener('change', () => {if (motionPreference.matches) {stopHero({release:true}); document.getAnimations().forEach(animation=>animation.cancel());} buttonLabel();});
-buttonLabel();
-
-if ('IntersectionObserver' in window) {
-  const observer=new IntersectionObserver(entries => {
-    inView=entries.some(entry => entry.isIntersecting);
-    if (!inView) stopHero({release:true});
-  },{threshold:0.05});
-  observer.observe($('.hero'));
-}
-document.addEventListener('visibilitychange', () => {
-  if (document.hidden) {stopHero({release:true}); film.pause();}
+motionButton.addEventListener('click',()=>heroMedia.toggle());
+for(const preference of [motionPreference,mobilePreference]) preference.addEventListener('change',()=>heroMedia.sync());
+connection?.addEventListener?.('change',()=>heroMedia.sync());
+window.addEventListener('resize',()=>heroMedia.sync());
+if('ResizeObserver' in window) new ResizeObserver(()=>heroMedia.sync()).observe(heroSection);
+if('IntersectionObserver' in window) {
+  new IntersectionObserver(entries=>{
+    inView=entries.some(entry=>entry.isIntersecting&&entry.intersectionRatio>=0.35);
+    heroMedia.sync();
+  },{threshold:[0,0.35]}).observe(heroSection);
+} else {inView=true;}
+document.addEventListener('visibilitychange',()=>{
+  heroMedia.sync();
+  if(document.hidden) film.pause();
 });
-window.addEventListener('pagehide', () => {stopHero({release:true}); film.pause(); film.removeAttribute('src'); film.load();});
+window.addEventListener('pagehide',()=>{heroMedia.pause();film.pause();});
 
-async function openFilm(button) {
-  filmTrigger=button; stopHero({release:true});
-  if (typeof dialog.showModal !== 'function') {location.href='assets/film-review.mp4';return;}
-  dialog.showModal(); $('#film-close').focus();
-  film.muted=true; film.src='assets/film-review.mp4'; $('#film-status').textContent='';
-  if (!motionPreference.matches) {
-    try {await film.play();} catch {$('#film-status').textContent='Press play to watch the silent concept review.';}
-  } else {$('#film-status').textContent='Reduced motion is enabled. The film is paused; use its controls if you choose to watch.';}
+const filmSource='/assets/cartan/CARTAN-Built-to-Change-Revised-Silent-21s-1080p.mp4';
+for(const button of document.querySelectorAll('.film-open')) {
+  button.hidden=false;
+  button.addEventListener('click',()=>{
+    filmTrigger=button;heroMedia.pause();
+    if(typeof dialog.showModal!=='function') {location.href=filmSource;return;}
+    dialog.showModal();$('#film-close').focus();
+    film.muted=true;film.autoplay=false;film.src=filmSource;
+    $('#film-status').textContent='Paused. Use Play to watch the silent concept film.';
+  });
 }
-for (const button of document.querySelectorAll('.film-open')) button.addEventListener('click',()=>void openFilm(button));
 $('#film-close').addEventListener('click',()=>dialog.close());
 dialog.addEventListener('close',()=>{film.pause();film.removeAttribute('src');film.load();filmTrigger?.focus();});
-film.addEventListener('error',()=>{if (film.hasAttribute('src')) $('#film-status').textContent='Film unavailable. The poster and visual description remain available.';});
+film.addEventListener('play',()=>{$('#film-status').textContent='';});
+film.addEventListener('error',()=>{if(film.hasAttribute('src')) $('#film-status').textContent='Film unavailable. The poster and visual description remain available.';});
 for (const img of document.images) {
   const handle=()=>{
     img.hidden=true;
@@ -164,8 +173,8 @@ function transform(update) {
 function showView(view,{focus=true,animate=true}={}) {
   if (!routes[view]) view='home';
   // Stop decoding before the outgoing view is hidden, not after animation.
-  if (view!=='home') stopHero({release:true});
-  inView=view==='home';
+  activeHero=view==='home';
+  if(!activeHero) heroMedia.pause();
   const update=()=>{
     currentView=view;
     document.documentElement.dataset.view=view;
@@ -175,6 +184,7 @@ function showView(view,{focus=true,animate=true}={}) {
       node.hidden=!active;
       node.inert=!active;
     }
+    heroMedia.sync();
     for (const link of document.querySelectorAll('.site-header nav a')) {
       if (link.hash===`#${routes[view].section}`) link.setAttribute('aria-current','page');
       else link.removeAttribute('aria-current');

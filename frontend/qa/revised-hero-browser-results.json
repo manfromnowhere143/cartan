@@ -1,0 +1,5467 @@
+{
+  "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Safari/605.1.15",
+  "checked": "2026-11-16T11:09:59.628Z",
+  "reports": [
+    {
+      "kind": "playback",
+      "samples": [
+        {
+          "time": 0.774732458,
+          "phase": "loading",
+          "paused": false
+        },
+        {
+          "time": 1.2786941246695307,
+          "phase": "playing",
+          "paused": false
+        },
+        {
+          "time": 1.7792062489880716,
+          "phase": "playing",
+          "paused": false
+        },
+        {
+          "time": 2.2795105410234844,
+          "phase": "playing",
+          "paused": false
+        },
+        {
+          "time": 2.7800318330088682,
+          "phase": "playing",
+          "paused": false
+        },
+        {
+          "time": 3.2805335413468923,
+          "phase": "playing",
+          "paused": false
+        },
+        {
+          "time": 3.780854040679131,
+          "phase": "playing",
+          "paused": false
+        },
+        {
+          "time": 4.2820366663378655,
+          "phase": "playing",
+          "paused": false
+        },
+        {
+          "time": 4.78261345801247,
+          "phase": "playing",
+          "paused": false
+        },
+        {
+          "time": 5.283857333002615,
+          "phase": "playing",
+          "paused": false
+        },
+        {
+          "time": 5.784279415665505,
+          "phase": "playing",
+          "paused": false
+        },
+        {
+          "time": 6.285422874670447,
+          "phase": "playing",
+          "paused": false
+        },
+        {
+          "time": 6.786568957339367,
+          "phase": "playing",
+          "paused": false
+        },
+        {
+          "time": 7.2876467493368615,
+          "phase": "playing",
+          "paused": false
+        },
+        {
+          "time": 7.788391749336374,
+          "phase": "playing",
+          "paused": false
+        },
+        {
+          "time": 8.28972516634789,
+          "phase": "playing",
+          "paused": false
+        },
+        {
+          "time": 8.790809457378524,
+          "phase": "playing",
+          "paused": false
+        },
+        {
+          "time": 9.291812749708974,
+          "phase": "playing",
+          "paused": false
+        },
+        {
+          "time": 9.792554708022333,
+          "phase": "playing",
+          "paused": false
+        },
+        {
+          "time": 10.293818207679696,
+          "phase": "playing",
+          "paused": false
+        },
+        {
+          "time": 10.79412004099411,
+          "phase": "playing",
+          "paused": false
+        },
+        {
+          "time": 11.294797583020548,
+          "phase": "playing",
+          "paused": false
+        },
+        {
+          "time": 11.795936499337472,
+          "phase": "playing",
+          "paused": false
+        },
+        {
+          "time": 12.29666358268597,
+          "phase": "playing",
+          "paused": false
+        },
+        {
+          "time": 12.797287832642345,
+          "phase": "playing",
+          "paused": false
+        },
+        {
+          "time": 13.29798054098842,
+          "phase": "playing",
+          "paused": false
+        },
+        {
+          "time": 13.799207374690504,
+          "phase": "playing",
+          "paused": false
+        },
+        {
+          "time": 14.300488124676205,
+          "phase": "playing",
+          "paused": false
+        },
+        {
+          "time": 14.80132779131183,
+          "phase": "playing",
+          "paused": false
+        },
+        {
+          "time": 15.302495582685355,
+          "phase": "playing",
+          "paused": false
+        },
+        {
+          "time": 15.803762374004009,
+          "phase": "playing",
+          "paused": false
+        },
+        {
+          "time": 16.305071874324817,
+          "phase": "playing",
+          "paused": false
+        },
+        {
+          "time": 16.806428082998536,
+          "phase": "playing",
+          "paused": false
+        },
+        {
+          "time": 17.30747616600212,
+          "phase": "playing",
+          "paused": false
+        },
+        {
+          "time": 17.807818291024013,
+          "phase": "playing",
+          "paused": false
+        },
+        {
+          "time": 18.309036833024134,
+          "phase": "playing",
+          "paused": false
+        },
+        {
+          "time": 18.810057707335844,
+          "phase": "playing",
+          "paused": false
+        },
+        {
+          "time": 19,
+          "phase": "ended",
+          "paused": true
+        }
+      ],
+      "forwardOnly": true,
+      "completed": true,
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "normal",
+      "phase": "ended",
+      "hero": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900,
+        "bottom": 900,
+        "right": 1440
+      },
+      "overflow": false,
+      "copyAndControlsWithinHero": true,
+      "text": [
+        {
+          "text": "CARTAN",
+          "x": 64.796875,
+          "y": 20,
+          "width": 120,
+          "height": 60,
+          "bottom": 80,
+          "right": 184.796875,
+          "font": "16px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Research",
+          "x": 597.125,
+          "y": 28,
+          "width": 51.359375,
+          "height": 44,
+          "bottom": 72,
+          "right": 648.484375,
+          "font": "12px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Laboratory",
+          "x": 678.484375,
+          "y": 28,
+          "width": 57.375,
+          "height": 44,
+          "bottom": 72,
+          "right": 735.859375,
+          "font": "12px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Evidence",
+          "x": 765.859375,
+          "y": 28,
+          "width": 49.375,
+          "height": 44,
+          "bottom": 72,
+          "right": 815.234375,
+          "font": "12px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "The longer horizon \u2197",
+          "x": 1227.5625,
+          "y": 28,
+          "width": 147.640625,
+          "height": 44,
+          "bottom": 72,
+          "right": 1375.203125,
+          "font": "10px",
+          "color": "rgb(182, 190, 195)"
+        },
+        {
+          "text": "SPACE SYSTEMS / SERVICEABILITY",
+          "x": 86.390625,
+          "y": 227,
+          "width": 440,
+          "height": 14,
+          "bottom": 241,
+          "right": 526.390625,
+          "font": "9px",
+          "color": "rgb(212, 219, 223)"
+        },
+        {
+          "text": "The missioncontinues.",
+          "x": 86.390625,
+          "y": 267,
+          "width": 440,
+          "height": 122,
+          "bottom": 389,
+          "right": 526.390625,
+          "font": "57.599998px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Spacecraft that can be maintained, upgraded, and useful for longer.",
+          "x": 86.390625,
+          "y": 414,
+          "width": 385,
+          "height": 54,
+          "bottom": 468,
+          "right": 471.390625,
+          "font": "18px",
+          "color": "rgb(238, 240, 241)"
+        },
+        {
+          "text": "Beginning with one question: what is safe to do when a module exchange is interrupted?",
+          "x": 86.390625,
+          "y": 488,
+          "width": 365,
+          "height": 46,
+          "bottom": 534,
+          "right": 451.390625,
+          "font": "13px",
+          "color": "rgb(200, 208, 213)"
+        },
+        {
+          "text": "Explore the architecture \u2197",
+          "x": 86.390625,
+          "y": 558,
+          "width": 200.296875,
+          "height": 56,
+          "bottom": 614,
+          "right": 286.6875,
+          "font": "13px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Read the research \u2197",
+          "x": 86.390625,
+          "y": 616,
+          "width": 134.734375,
+          "height": 44,
+          "bottom": 660,
+          "right": 221.125,
+          "font": "12px",
+          "color": "rgb(208, 215, 219)"
+        },
+        {
+          "text": "The longer horizon \u2197",
+          "x": 249.125,
+          "y": 616,
+          "width": 136.0625,
+          "height": 44,
+          "bottom": 660,
+          "right": 385.1875,
+          "font": "12px",
+          "color": "rgb(208, 215, 219)"
+        },
+        {
+          "text": "Replay motion \u21bb",
+          "x": 985.09375,
+          "y": 771,
+          "width": 110,
+          "height": 44,
+          "bottom": 815,
+          "right": 1095.09375,
+          "font": "11px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Watch the concept filmSILENT CONCEPT FILM / 00:21\u25b7",
+          "x": 1131.09375,
+          "y": 768,
+          "width": 222.515625,
+          "height": 50,
+          "bottom": 818,
+          "right": 1353.609375,
+          "font": "13px",
+          "color": "rgb(247, 248, 247)"
+        }
+      ],
+      "poster": "http://127.0.0.1:4178/assets/cartan/cartan-hero-poster.jpg",
+      "imageState": {
+        "complete": true,
+        "naturalWidth": 1920,
+        "hidden": false,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900,
+          "bottom": 900,
+          "right": 1440
+        },
+        "parent": "<picture class=\"hero-poster\"><source media=\"(max-width: 767px)\" srcset=\"/assets/cartan/cartan-hero-poster-mobile.jpg\" width=\"720\" height=\"1280\"><img id=\"hero-poster\" src=\"/assets/cartan/cartan-hero-poster.jpg\" width=\"1920\" height=\"1080\" fetchpriority=\"high\" alt=\"Concept illustration of a service bay and gripped cartridge. Geometry and hardware are unverified.\"></picture>"
+      },
+      "visibility": {
+        "hidden": false,
+        "state": "visible",
+        "focus": false
+      },
+      "videoDOM": "<video id=\"hero-video\" muted=\"\" playsinline=\"\" preload=\"metadata\" poster=\"/assets/cartan/cartan-hero-poster.jpg\" width=\"1280\" height=\"720\" aria-hidden=\"true\" tabindex=\"-1\" disablepictureinpicture=\"\" src=\"/assets/cartan/cartan-hero-desktop-720p.mp4\" class=\"\"></video>",
+      "videoParent": "hero-picture",
+      "video": {
+        "attached": true,
+        "currentTime": 19,
+        "duration": 19,
+        "muted": true,
+        "paused": true,
+        "loop": false,
+        "opacity": "0",
+        "transition": "0.25s"
+      },
+      "scrim": "linear-gradient(90deg, rgba(0, 0, 0, 0.88) 0%, rgba(0, 0, 0, 0.82) 38%, rgba(0, 0, 0, 0.72) 54%, rgba(0, 0, 0, 0.45) 67%, rgba(0, 0, 0, 0.12) 100%), linear-gradient(0deg, rgb(3, 4, 5) 0%, rgba(3, 4, 5, 0.9) 12%, rgba(0, 0, 0, 0) 38%), linear-gradient(rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.72) 12%, rgba(0, 0, 0, 0) 26%)",
+      "network": [
+        {
+          "url": "http://127.0.0.1:4178/qa/frame?mode=normal&review=1794826124122",
+          "bytes": 18061
+        },
+        {
+          "url": "http://127.0.0.1:4178/style.css",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/app.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/assets/cartan-logo.png",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/assets/cartan/cartan-hero-poster.jpg",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/adapter.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/contract-adapter.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/hero-controller.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/vendor/cartan/v1/fixture.json",
+          "bytes": 300
+        },
+        {
+          "url": "http://127.0.0.1:4178/assets/cartan/cartan-hero-desktop-720p.mp4",
+          "bytes": 302
+        },
+        {
+          "url": "http://127.0.0.1:4178/assets/cartan/cartan-hero-desktop-720p.mp4",
+          "bytes": 4039448
+        },
+        {
+          "url": "http://127.0.0.1:4178/assets/module.jpg",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/assets/vision.jpg",
+          "bytes": 0
+        }
+      ],
+      "errors": [],
+      "sourceAttachments": [
+        "/assets/cartan/cartan-hero-desktop-720p.mp4",
+        "/assets/cartan/CARTAN-Built-to-Change-Revised-Silent-21s-1080p.mp4"
+      ],
+      "events": [
+        {
+          "name": "play",
+          "time": 0,
+          "at": 53,
+          "muted": true
+        },
+        {
+          "name": "playing",
+          "time": 0,
+          "at": 107,
+          "muted": true
+        },
+        {
+          "name": "pause",
+          "time": 0.7730952500019316,
+          "at": 887,
+          "muted": true
+        },
+        {
+          "name": "play",
+          "time": 0.774732458,
+          "at": 18903,
+          "muted": true
+        },
+        {
+          "name": "playing",
+          "time": 0.774732458,
+          "at": 18903,
+          "muted": true
+        },
+        {
+          "name": "pause",
+          "time": 19,
+          "at": 37136,
+          "muted": true
+        },
+        {
+          "name": "ended",
+          "time": 19,
+          "at": 37142,
+          "muted": true
+        }
+      ],
+      "cls": 0
+    },
+    {
+      "kind": "matrix-layout",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "normal",
+      "phase": "playing",
+      "hero": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900,
+        "bottom": 900,
+        "right": 1440
+      },
+      "overflow": false,
+      "copyAndControlsWithinHero": true,
+      "text": [
+        {
+          "text": "CARTAN",
+          "x": 64.796875,
+          "y": 20,
+          "width": 120,
+          "height": 60,
+          "bottom": 80,
+          "right": 184.796875,
+          "font": "16px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Research",
+          "x": 597.125,
+          "y": 28,
+          "width": 51.359375,
+          "height": 44,
+          "bottom": 72,
+          "right": 648.484375,
+          "font": "12px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Laboratory",
+          "x": 678.484375,
+          "y": 28,
+          "width": 57.375,
+          "height": 44,
+          "bottom": 72,
+          "right": 735.859375,
+          "font": "12px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Evidence",
+          "x": 765.859375,
+          "y": 28,
+          "width": 49.375,
+          "height": 44,
+          "bottom": 72,
+          "right": 815.234375,
+          "font": "12px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "The longer horizon \u2197",
+          "x": 1227.5625,
+          "y": 28,
+          "width": 147.640625,
+          "height": 44,
+          "bottom": 72,
+          "right": 1375.203125,
+          "font": "10px",
+          "color": "rgb(182, 190, 195)"
+        },
+        {
+          "text": "SPACE SYSTEMS / SERVICEABILITY",
+          "x": 86.390625,
+          "y": 227,
+          "width": 440,
+          "height": 14,
+          "bottom": 241,
+          "right": 526.390625,
+          "font": "9px",
+          "color": "rgb(212, 219, 223)"
+        },
+        {
+          "text": "The missioncontinues.",
+          "x": 86.390625,
+          "y": 267,
+          "width": 440,
+          "height": 122,
+          "bottom": 389,
+          "right": 526.390625,
+          "font": "57.599998px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Spacecraft that can be maintained, upgraded, and useful for longer.",
+          "x": 86.390625,
+          "y": 414,
+          "width": 385,
+          "height": 54,
+          "bottom": 468,
+          "right": 471.390625,
+          "font": "18px",
+          "color": "rgb(238, 240, 241)"
+        },
+        {
+          "text": "Beginning with one question: what is safe to do when a module exchange is interrupted?",
+          "x": 86.390625,
+          "y": 488,
+          "width": 365,
+          "height": 46,
+          "bottom": 534,
+          "right": 451.390625,
+          "font": "13px",
+          "color": "rgb(200, 208, 213)"
+        },
+        {
+          "text": "Explore the architecture \u2197",
+          "x": 86.390625,
+          "y": 558,
+          "width": 200.296875,
+          "height": 56,
+          "bottom": 614,
+          "right": 286.6875,
+          "font": "13px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Read the research \u2197",
+          "x": 86.390625,
+          "y": 616,
+          "width": 134.734375,
+          "height": 44,
+          "bottom": 660,
+          "right": 221.125,
+          "font": "12px",
+          "color": "rgb(208, 215, 219)"
+        },
+        {
+          "text": "The longer horizon \u2197",
+          "x": 249.125,
+          "y": 616,
+          "width": 136.0625,
+          "height": 44,
+          "bottom": 660,
+          "right": 385.1875,
+          "font": "12px",
+          "color": "rgb(208, 215, 219)"
+        },
+        {
+          "text": "Pause motion \u2161",
+          "x": 985.09375,
+          "y": 771,
+          "width": 110,
+          "height": 44,
+          "bottom": 815,
+          "right": 1095.09375,
+          "font": "11px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Watch the concept filmSILENT CONCEPT FILM / 00:21\u25b7",
+          "x": 1131.09375,
+          "y": 768,
+          "width": 222.515625,
+          "height": 50,
+          "bottom": 818,
+          "right": 1353.609375,
+          "font": "13px",
+          "color": "rgb(247, 248, 247)"
+        }
+      ],
+      "poster": "http://127.0.0.1:4178/assets/cartan/cartan-hero-poster.jpg",
+      "imageState": {
+        "complete": true,
+        "naturalWidth": 1920,
+        "hidden": false,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900,
+          "bottom": 900,
+          "right": 1440
+        },
+        "parent": "<picture class=\"hero-poster\"><source media=\"(max-width: 767px)\" srcset=\"/assets/cartan/cartan-hero-poster-mobile.jpg\" width=\"720\" height=\"1280\"><img id=\"hero-poster\" src=\"/assets/cartan/cartan-hero-poster.jpg\" width=\"1920\" height=\"1080\" fetchpriority=\"high\" alt=\"Concept illustration of a service bay and gripped cartridge. Geometry and hardware are unverified.\"></picture>"
+      },
+      "visibility": {
+        "hidden": false,
+        "state": "visible",
+        "focus": false
+      },
+      "videoDOM": "<video id=\"hero-video\" muted=\"\" playsinline=\"\" preload=\"metadata\" poster=\"/assets/cartan/cartan-hero-poster.jpg\" width=\"1280\" height=\"720\" aria-hidden=\"true\" tabindex=\"-1\" disablepictureinpicture=\"\" autoplay=\"\" src=\"/assets/cartan/cartan-hero-desktop-720p.mp4\" class=\"playing\"></video>",
+      "videoParent": "hero-picture",
+      "video": {
+        "attached": true,
+        "currentTime": 0.9804463743126157,
+        "duration": 19,
+        "muted": true,
+        "paused": false,
+        "loop": false,
+        "opacity": "1",
+        "transition": "0.25s"
+      },
+      "scrim": "linear-gradient(90deg, rgba(0, 0, 0, 0.88) 0%, rgba(0, 0, 0, 0.82) 38%, rgba(0, 0, 0, 0.72) 54%, rgba(0, 0, 0, 0.45) 67%, rgba(0, 0, 0, 0.12) 100%), linear-gradient(0deg, rgb(3, 4, 5) 0%, rgba(3, 4, 5, 0.9) 12%, rgba(0, 0, 0, 0) 38%), linear-gradient(rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.72) 12%, rgba(0, 0, 0, 0) 26%)",
+      "network": [
+        {
+          "url": "http://127.0.0.1:4178/qa/frame?mode=normal&review=1794826211574",
+          "bytes": 18379
+        },
+        {
+          "url": "http://127.0.0.1:4178/style.css",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/app.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/assets/cartan-logo.png",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/assets/cartan/cartan-hero-poster.jpg",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/contract-adapter.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/hero-controller.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/adapter.mjs",
+          "bytes": 300
+        },
+        {
+          "url": "http://127.0.0.1:4178/vendor/cartan/v1/fixture.json",
+          "bytes": 300
+        },
+        {
+          "url": "http://127.0.0.1:4178/assets/cartan/cartan-hero-desktop-720p.mp4",
+          "bytes": 302
+        },
+        {
+          "url": "http://127.0.0.1:4178/assets/cartan/cartan-hero-desktop-720p.mp4",
+          "bytes": 4039448
+        }
+      ],
+      "errors": [],
+      "sourceAttachments": [
+        "/assets/cartan/cartan-hero-desktop-720p.mp4"
+      ],
+      "requestContexts": [
+        {
+          "src": "/assets/cartan/cartan-hero-desktop-720p.mp4",
+          "width": 1440,
+          "clientWidth": 1440,
+          "visualWidth": 1440,
+          "mobile": false,
+          "heroWidth": 1440,
+          "heroHeight": 900
+        }
+      ],
+      "events": [
+        {
+          "name": "play",
+          "time": 0,
+          "at": 64,
+          "muted": true
+        },
+        {
+          "name": "playing",
+          "time": 0,
+          "at": 110,
+          "muted": true
+        }
+      ],
+      "cls": 0
+    },
+    {
+      "kind": "matrix-layout",
+      "viewport": [
+        1280,
+        720
+      ],
+      "mode": "normal",
+      "phase": "playing",
+      "hero": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720,
+        "bottom": 720,
+        "right": 1280
+      },
+      "overflow": false,
+      "copyAndControlsWithinHero": true,
+      "text": [
+        {
+          "text": "CARTAN",
+          "x": 57.59375,
+          "y": 20,
+          "width": 120,
+          "height": 60,
+          "bottom": 80,
+          "right": 177.59375,
+          "font": "16px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Research",
+          "x": 517.125,
+          "y": 28,
+          "width": 51.359375,
+          "height": 44,
+          "bottom": 72,
+          "right": 568.484375,
+          "font": "12px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Laboratory",
+          "x": 598.484375,
+          "y": 28,
+          "width": 57.375,
+          "height": 44,
+          "bottom": 72,
+          "right": 655.859375,
+          "font": "12px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Evidence",
+          "x": 685.859375,
+          "y": 28,
+          "width": 49.375,
+          "height": 44,
+          "bottom": 72,
+          "right": 735.234375,
+          "font": "12px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "The longer horizon \u2197",
+          "x": 1074.765625,
+          "y": 28,
+          "width": 147.640625,
+          "height": 44,
+          "bottom": 72,
+          "right": 1222.40625,
+          "font": "10px",
+          "color": "rgb(182, 190, 195)"
+        },
+        {
+          "text": "SPACE SYSTEMS / SERVICEABILITY",
+          "x": 76.796875,
+          "y": 163,
+          "width": 440,
+          "height": 14,
+          "bottom": 177,
+          "right": 516.796875,
+          "font": "9px",
+          "color": "rgb(212, 219, 223)"
+        },
+        {
+          "text": "The missioncontinues.",
+          "x": 76.796875,
+          "y": 195,
+          "width": 440,
+          "height": 106,
+          "bottom": 301,
+          "right": 516.796875,
+          "font": "50px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Spacecraft that can be maintained, upgraded, and useful for longer.",
+          "x": 76.796875,
+          "y": 326,
+          "width": 385,
+          "height": 54,
+          "bottom": 380,
+          "right": 461.796875,
+          "font": "18px",
+          "color": "rgb(238, 240, 241)"
+        },
+        {
+          "text": "Beginning with one question: what is safe to do when a module exchange is interrupted?",
+          "x": 76.796875,
+          "y": 392,
+          "width": 365,
+          "height": 46,
+          "bottom": 438,
+          "right": 441.796875,
+          "font": "13px",
+          "color": "rgb(200, 208, 213)"
+        },
+        {
+          "text": "Explore the architecture \u2197",
+          "x": 76.796875,
+          "y": 450,
+          "width": 200.296875,
+          "height": 56,
+          "bottom": 506,
+          "right": 277.09375,
+          "font": "13px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Read the research \u2197",
+          "x": 76.796875,
+          "y": 508,
+          "width": 134.734375,
+          "height": 44,
+          "bottom": 552,
+          "right": 211.53125,
+          "font": "12px",
+          "color": "rgb(208, 215, 219)"
+        },
+        {
+          "text": "The longer horizon \u2197",
+          "x": 239.53125,
+          "y": 508,
+          "width": 136.0625,
+          "height": 44,
+          "bottom": 552,
+          "right": 375.59375,
+          "font": "12px",
+          "color": "rgb(208, 215, 219)"
+        },
+        {
+          "text": "Pause motion \u2161",
+          "x": 834.6875,
+          "y": 591,
+          "width": 110,
+          "height": 44,
+          "bottom": 635,
+          "right": 944.6875,
+          "font": "11px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Watch the concept filmSILENT CONCEPT FILM / 00:21\u25b7",
+          "x": 980.6875,
+          "y": 588,
+          "width": 222.515625,
+          "height": 50,
+          "bottom": 638,
+          "right": 1203.203125,
+          "font": "13px",
+          "color": "rgb(247, 248, 247)"
+        }
+      ],
+      "poster": "http://127.0.0.1:4178/assets/cartan/cartan-hero-poster.jpg",
+      "imageState": {
+        "complete": true,
+        "naturalWidth": 1920,
+        "hidden": false,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 1280,
+          "height": 720,
+          "bottom": 720,
+          "right": 1280
+        },
+        "parent": "<picture class=\"hero-poster\"><source media=\"(max-width: 767px)\" srcset=\"/assets/cartan/cartan-hero-poster-mobile.jpg\" width=\"720\" height=\"1280\"><img id=\"hero-poster\" src=\"/assets/cartan/cartan-hero-poster.jpg\" width=\"1920\" height=\"1080\" fetchpriority=\"high\" alt=\"Concept illustration of a service bay and gripped cartridge. Geometry and hardware are unverified.\"></picture>"
+      },
+      "visibility": {
+        "hidden": false,
+        "state": "visible",
+        "focus": false
+      },
+      "videoDOM": "<video id=\"hero-video\" muted=\"\" playsinline=\"\" preload=\"metadata\" poster=\"/assets/cartan/cartan-hero-poster.jpg\" width=\"1280\" height=\"720\" aria-hidden=\"true\" tabindex=\"-1\" disablepictureinpicture=\"\" autoplay=\"\" src=\"/assets/cartan/cartan-hero-desktop-720p.mp4\" class=\"playing\"></video>",
+      "videoParent": "hero-picture",
+      "video": {
+        "attached": true,
+        "currentTime": 0.8076163753486467,
+        "duration": 19,
+        "muted": true,
+        "paused": false,
+        "loop": false,
+        "opacity": "1",
+        "transition": "0.25s"
+      },
+      "scrim": "linear-gradient(90deg, rgba(0, 0, 0, 0.88) 0%, rgba(0, 0, 0, 0.82) 38%, rgba(0, 0, 0, 0.72) 54%, rgba(0, 0, 0, 0.45) 67%, rgba(0, 0, 0, 0.12) 100%), linear-gradient(0deg, rgb(3, 4, 5) 0%, rgba(3, 4, 5, 0.9) 12%, rgba(0, 0, 0, 0) 38%), linear-gradient(rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.72) 12%, rgba(0, 0, 0, 0) 26%)",
+      "network": [
+        {
+          "url": "http://127.0.0.1:4178/qa/frame?mode=normal&review=1794826212702",
+          "bytes": 18379
+        },
+        {
+          "url": "http://127.0.0.1:4178/style.css",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/app.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/assets/cartan-logo.png",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/assets/cartan/cartan-hero-poster.jpg",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/adapter.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/contract-adapter.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/hero-controller.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/vendor/cartan/v1/fixture.json",
+          "bytes": 300
+        },
+        {
+          "url": "http://127.0.0.1:4178/assets/cartan/cartan-hero-desktop-720p.mp4",
+          "bytes": 302
+        },
+        {
+          "url": "http://127.0.0.1:4178/assets/cartan/cartan-hero-desktop-720p.mp4",
+          "bytes": 4039448
+        }
+      ],
+      "errors": [],
+      "sourceAttachments": [
+        "/assets/cartan/cartan-hero-desktop-720p.mp4"
+      ],
+      "requestContexts": [
+        {
+          "src": "/assets/cartan/cartan-hero-desktop-720p.mp4",
+          "width": 1280,
+          "clientWidth": 1280,
+          "visualWidth": 1280,
+          "mobile": false,
+          "heroWidth": 1280,
+          "heroHeight": 720
+        }
+      ],
+      "events": [
+        {
+          "name": "play",
+          "time": 0,
+          "at": 225,
+          "muted": true
+        },
+        {
+          "name": "playing",
+          "time": 0,
+          "at": 272,
+          "muted": true
+        }
+      ],
+      "cls": 0
+    },
+    {
+      "kind": "matrix-layout",
+      "viewport": [
+        768,
+        1024
+      ],
+      "mode": "normal",
+      "phase": "static",
+      "hero": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 1024,
+        "bottom": 1024,
+        "right": 768
+      },
+      "overflow": false,
+      "copyAndControlsWithinHero": true,
+      "text": [
+        {
+          "text": "CARTAN",
+          "x": 28,
+          "y": 20,
+          "width": 120,
+          "height": 60,
+          "bottom": 80,
+          "right": 148,
+          "font": "16px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Research",
+          "x": 505.890625,
+          "y": 28,
+          "width": 51.359375,
+          "height": 44,
+          "bottom": 72,
+          "right": 557.25,
+          "font": "12px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Laboratory",
+          "x": 583.25,
+          "y": 28,
+          "width": 57.375,
+          "height": 44,
+          "bottom": 72,
+          "right": 640.625,
+          "font": "12px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Evidence",
+          "x": 666.625,
+          "y": 28,
+          "width": 49.375,
+          "height": 44,
+          "bottom": 72,
+          "right": 716,
+          "font": "12px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "SPACE SYSTEMS / SERVICEABILITY",
+          "x": 46.078125,
+          "y": 306,
+          "width": 420,
+          "height": 14,
+          "bottom": 320,
+          "right": 466.078125,
+          "font": "9px",
+          "color": "rgb(212, 219, 223)"
+        },
+        {
+          "text": "The missioncontinues.",
+          "x": 46.078125,
+          "y": 346,
+          "width": 420,
+          "height": 88,
+          "bottom": 434,
+          "right": 466.078125,
+          "font": "42px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Spacecraft that can be maintained, upgraded, and useful for longer.",
+          "x": 46.078125,
+          "y": 459,
+          "width": 385,
+          "height": 54,
+          "bottom": 513,
+          "right": 431.078125,
+          "font": "18px",
+          "color": "rgb(238, 240, 241)"
+        },
+        {
+          "text": "Beginning with one question: what is safe to do when a module exchange is interrupted?",
+          "x": 46.078125,
+          "y": 533,
+          "width": 365,
+          "height": 46,
+          "bottom": 579,
+          "right": 411.078125,
+          "font": "13px",
+          "color": "rgb(200, 208, 213)"
+        },
+        {
+          "text": "Explore the architecture \u2197",
+          "x": 46.078125,
+          "y": 603,
+          "width": 200.296875,
+          "height": 56,
+          "bottom": 659,
+          "right": 246.375,
+          "font": "13px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Read the research \u2197",
+          "x": 46.078125,
+          "y": 661,
+          "width": 134.734375,
+          "height": 44,
+          "bottom": 705,
+          "right": 180.8125,
+          "font": "12px",
+          "color": "rgb(208, 215, 219)"
+        },
+        {
+          "text": "The longer horizon \u2197",
+          "x": 208.8125,
+          "y": 661,
+          "width": 136.0625,
+          "height": 44,
+          "bottom": 705,
+          "right": 344.875,
+          "font": "12px",
+          "color": "rgb(208, 215, 219)"
+        },
+        {
+          "text": "Watch the concept filmSILENT CONCEPT FILM / 00:21\u25b7",
+          "x": 499.40625,
+          "y": 892,
+          "width": 222.515625,
+          "height": 50,
+          "bottom": 942,
+          "right": 721.921875,
+          "font": "13px",
+          "color": "rgb(247, 248, 247)"
+        }
+      ],
+      "poster": "http://127.0.0.1:4178/assets/cartan/cartan-hero-poster.jpg",
+      "imageState": {
+        "complete": true,
+        "naturalWidth": 1920,
+        "hidden": false,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 768,
+          "height": 1024,
+          "bottom": 1024,
+          "right": 768
+        },
+        "parent": "<picture class=\"hero-poster\"><source media=\"(max-width: 767px)\" srcset=\"/assets/cartan/cartan-hero-poster-mobile.jpg\" width=\"720\" height=\"1280\"><img id=\"hero-poster\" src=\"/assets/cartan/cartan-hero-poster.jpg\" width=\"1920\" height=\"1080\" fetchpriority=\"high\" alt=\"Concept illustration of a service bay and gripped cartridge. Geometry and hardware are unverified.\"></picture>"
+      },
+      "visibility": {
+        "hidden": false,
+        "state": "visible",
+        "focus": false
+      },
+      "videoDOM": "<video id=\"hero-video\" muted=\"\" playsinline=\"\" preload=\"metadata\" poster=\"/assets/cartan/cartan-hero-poster.jpg\" width=\"1280\" height=\"720\" aria-hidden=\"true\" tabindex=\"-1\" disablepictureinpicture=\"\"></video>",
+      "videoParent": "hero-picture",
+      "video": {
+        "attached": false,
+        "currentTime": 0,
+        "duration": null,
+        "muted": true,
+        "paused": true,
+        "loop": false,
+        "opacity": "0",
+        "transition": "0.25s"
+      },
+      "scrim": "linear-gradient(90deg, rgba(0, 0, 0, 0.88) 0%, rgba(0, 0, 0, 0.82) 38%, rgba(0, 0, 0, 0.72) 54%, rgba(0, 0, 0, 0.45) 67%, rgba(0, 0, 0, 0.12) 100%), linear-gradient(0deg, rgb(3, 4, 5) 0%, rgba(3, 4, 5, 0.9) 12%, rgba(0, 0, 0, 0) 38%), linear-gradient(rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.72) 12%, rgba(0, 0, 0, 0) 26%)",
+      "network": [
+        {
+          "url": "http://127.0.0.1:4178/qa/frame?mode=normal&review=1794826213817",
+          "bytes": 18379
+        },
+        {
+          "url": "http://127.0.0.1:4178/style.css",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/assets/cartan-logo.png",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/assets/cartan/cartan-hero-poster.jpg",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/app.mjs",
+          "bytes": 300
+        },
+        {
+          "url": "http://127.0.0.1:4178/adapter.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/contract-adapter.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/hero-controller.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/vendor/cartan/v1/fixture.json",
+          "bytes": 300
+        }
+      ],
+      "errors": [],
+      "sourceAttachments": [],
+      "requestContexts": [],
+      "events": [],
+      "cls": 0
+    },
+    {
+      "kind": "matrix-layout",
+      "viewport": [
+        390,
+        844
+      ],
+      "mode": "normal",
+      "phase": "static",
+      "hero": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 843.984375,
+        "bottom": 843.984375,
+        "right": 390
+      },
+      "overflow": false,
+      "copyAndControlsWithinHero": true,
+      "text": [
+        {
+          "text": "CARTAN",
+          "x": 18,
+          "y": 17,
+          "width": 92,
+          "height": 46,
+          "bottom": 63,
+          "right": 110,
+          "font": "16px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Research",
+          "x": 173.0625,
+          "y": 18,
+          "width": 47.078125,
+          "height": 44,
+          "bottom": 62,
+          "right": 220.140625,
+          "font": "11px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Laboratory",
+          "x": 239.140625,
+          "y": 18,
+          "width": 52.59375,
+          "height": 44,
+          "bottom": 62,
+          "right": 291.734375,
+          "font": "11px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Evidence",
+          "x": 310.734375,
+          "y": 18,
+          "width": 45.265625,
+          "height": 44,
+          "bottom": 62,
+          "right": 356,
+          "font": "11px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "SPACE SYSTEMS / SERVICEABILITY",
+          "x": 24,
+          "y": 183.984375,
+          "width": 342,
+          "height": 14,
+          "bottom": 197.984375,
+          "right": 366,
+          "font": "9px",
+          "color": "rgb(212, 219, 223)"
+        },
+        {
+          "text": "The missioncontinues.",
+          "x": 24,
+          "y": 219.984375,
+          "width": 342,
+          "height": 84,
+          "bottom": 303.984375,
+          "right": 366,
+          "font": "40px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Spacecraft that can be maintained, upgraded, and useful for longer.",
+          "x": 24,
+          "y": 325.984375,
+          "width": 320,
+          "height": 52,
+          "bottom": 377.984375,
+          "right": 344,
+          "font": "17px",
+          "color": "rgb(238, 240, 241)"
+        },
+        {
+          "text": "Beginning with one question: what is safe to do when a module exchange is interrupted?",
+          "x": 24,
+          "y": 397.984375,
+          "width": 340,
+          "height": 46,
+          "bottom": 443.984375,
+          "right": 364,
+          "font": "13px",
+          "color": "rgb(200, 208, 213)"
+        },
+        {
+          "text": "Explore the architecture \u2197",
+          "x": 24,
+          "y": 467.984375,
+          "width": 200.296875,
+          "height": 56,
+          "bottom": 523.984375,
+          "right": 224.296875,
+          "font": "13px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Read the research \u2197",
+          "x": 24,
+          "y": 525.984375,
+          "width": 134.734375,
+          "height": 44,
+          "bottom": 569.984375,
+          "right": 158.734375,
+          "font": "12px",
+          "color": "rgb(208, 215, 219)"
+        },
+        {
+          "text": "The longer horizon \u2197",
+          "x": 186.734375,
+          "y": 525.984375,
+          "width": 136.0625,
+          "height": 44,
+          "bottom": 569.984375,
+          "right": 322.796875,
+          "font": "12px",
+          "color": "rgb(208, 215, 219)"
+        },
+        {
+          "text": "Watch the concept filmSILENT CONCEPT FILM / 00:21\u25b7",
+          "x": 24,
+          "y": 723.96875,
+          "width": 342,
+          "height": 50,
+          "bottom": 773.96875,
+          "right": 366,
+          "font": "12px",
+          "color": "rgb(247, 248, 247)"
+        }
+      ],
+      "poster": "http://127.0.0.1:4178/assets/cartan/cartan-hero-poster-mobile.jpg",
+      "imageState": {
+        "complete": true,
+        "naturalWidth": 720,
+        "hidden": false,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 843.984375,
+          "bottom": 843.984375,
+          "right": 390
+        },
+        "parent": "<picture class=\"hero-poster\"><source media=\"(max-width: 767px)\" srcset=\"/assets/cartan/cartan-hero-poster-mobile.jpg\" width=\"720\" height=\"1280\"><img id=\"hero-poster\" src=\"/assets/cartan/cartan-hero-poster.jpg\" width=\"1920\" height=\"1080\" fetchpriority=\"high\" alt=\"Concept illustration of a service bay and gripped cartridge. Geometry and hardware are unverified.\"></picture>"
+      },
+      "visibility": {
+        "hidden": false,
+        "state": "visible",
+        "focus": false
+      },
+      "videoDOM": "<video id=\"hero-video\" muted=\"\" playsinline=\"\" preload=\"metadata\" poster=\"/assets/cartan/cartan-hero-poster.jpg\" width=\"1280\" height=\"720\" aria-hidden=\"true\" tabindex=\"-1\" disablepictureinpicture=\"\"></video>",
+      "videoParent": "hero-picture",
+      "video": {
+        "attached": false,
+        "currentTime": 0,
+        "duration": null,
+        "muted": true,
+        "paused": true,
+        "loop": false,
+        "opacity": "0",
+        "transition": "0.25s"
+      },
+      "scrim": "linear-gradient(90deg, rgba(0, 0, 0, 0.87), rgba(0, 0, 0, 0.75) 75%, rgba(0, 0, 0, 0.72)), linear-gradient(0deg, rgb(3, 4, 5) 0%, rgba(3, 4, 5, 0.85) 18%, rgba(0, 0, 0, 0) 50%), linear-gradient(rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0) 28%)",
+      "network": [
+        {
+          "url": "http://127.0.0.1:4178/qa/frame?mode=normal&review=1794826214924",
+          "bytes": 18379
+        },
+        {
+          "url": "http://127.0.0.1:4178/app.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/assets/cartan-logo.png",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/assets/cartan/cartan-hero-poster-mobile.jpg",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/assets/cartan/cartan-hero-poster.jpg",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/style.css",
+          "bytes": 18380
+        },
+        {
+          "url": "http://127.0.0.1:4178/adapter.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/contract-adapter.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/hero-controller.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/vendor/cartan/v1/fixture.json",
+          "bytes": 300
+        }
+      ],
+      "errors": [],
+      "sourceAttachments": [
+        "/assets/cartan/cartan-hero-desktop-720p.mp4"
+      ],
+      "requestContexts": [
+        {
+          "src": "/assets/cartan/cartan-hero-desktop-720p.mp4",
+          "width": 1440,
+          "clientWidth": 1440,
+          "visualWidth": 1440,
+          "mobile": false,
+          "heroWidth": 1440,
+          "heroHeight": 900
+        }
+      ],
+      "events": [
+        {
+          "name": "play",
+          "time": 0,
+          "at": 1107,
+          "muted": true
+        },
+        {
+          "name": "playing",
+          "time": 0,
+          "at": 1163,
+          "muted": true
+        }
+      ],
+      "cls": 0
+    },
+    {
+      "kind": "matrix-layout",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "reduced",
+      "phase": "static",
+      "hero": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900,
+        "bottom": 900,
+        "right": 1440
+      },
+      "overflow": false,
+      "copyAndControlsWithinHero": true,
+      "text": [
+        {
+          "text": "CARTAN",
+          "x": 64.796875,
+          "y": 20,
+          "width": 120,
+          "height": 60,
+          "bottom": 80,
+          "right": 184.796875,
+          "font": "16px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Research",
+          "x": 597.125,
+          "y": 28,
+          "width": 51.359375,
+          "height": 44,
+          "bottom": 72,
+          "right": 648.484375,
+          "font": "12px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Laboratory",
+          "x": 678.484375,
+          "y": 28,
+          "width": 57.375,
+          "height": 44,
+          "bottom": 72,
+          "right": 735.859375,
+          "font": "12px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Evidence",
+          "x": 765.859375,
+          "y": 28,
+          "width": 49.375,
+          "height": 44,
+          "bottom": 72,
+          "right": 815.234375,
+          "font": "12px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "The longer horizon \u2197",
+          "x": 1227.5625,
+          "y": 28,
+          "width": 147.640625,
+          "height": 44,
+          "bottom": 72,
+          "right": 1375.203125,
+          "font": "10px",
+          "color": "rgb(182, 190, 195)"
+        },
+        {
+          "text": "SPACE SYSTEMS / SERVICEABILITY",
+          "x": 86.390625,
+          "y": 227,
+          "width": 440,
+          "height": 14,
+          "bottom": 241,
+          "right": 526.390625,
+          "font": "9px",
+          "color": "rgb(212, 219, 223)"
+        },
+        {
+          "text": "The missioncontinues.",
+          "x": 86.390625,
+          "y": 267,
+          "width": 440,
+          "height": 122,
+          "bottom": 389,
+          "right": 526.390625,
+          "font": "57.599998px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Spacecraft that can be maintained, upgraded, and useful for longer.",
+          "x": 86.390625,
+          "y": 414,
+          "width": 385,
+          "height": 54,
+          "bottom": 468,
+          "right": 471.390625,
+          "font": "18px",
+          "color": "rgb(238, 240, 241)"
+        },
+        {
+          "text": "Beginning with one question: what is safe to do when a module exchange is interrupted?",
+          "x": 86.390625,
+          "y": 488,
+          "width": 365,
+          "height": 46,
+          "bottom": 534,
+          "right": 451.390625,
+          "font": "13px",
+          "color": "rgb(200, 208, 213)"
+        },
+        {
+          "text": "Explore the architecture \u2197",
+          "x": 86.390625,
+          "y": 558,
+          "width": 200.296875,
+          "height": 56,
+          "bottom": 614,
+          "right": 286.6875,
+          "font": "13px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Read the research \u2197",
+          "x": 86.390625,
+          "y": 616,
+          "width": 134.734375,
+          "height": 44,
+          "bottom": 660,
+          "right": 221.125,
+          "font": "12px",
+          "color": "rgb(208, 215, 219)"
+        },
+        {
+          "text": "The longer horizon \u2197",
+          "x": 249.125,
+          "y": 616,
+          "width": 136.0625,
+          "height": 44,
+          "bottom": 660,
+          "right": 385.1875,
+          "font": "12px",
+          "color": "rgb(208, 215, 219)"
+        },
+        {
+          "text": "Watch the concept filmSILENT CONCEPT FILM / 00:21\u25b7",
+          "x": 1131.09375,
+          "y": 768,
+          "width": 222.515625,
+          "height": 50,
+          "bottom": 818,
+          "right": 1353.609375,
+          "font": "13px",
+          "color": "rgb(247, 248, 247)"
+        }
+      ],
+      "poster": "http://127.0.0.1:4178/assets/cartan/cartan-hero-poster.jpg",
+      "imageState": {
+        "complete": true,
+        "naturalWidth": 1920,
+        "hidden": false,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900,
+          "bottom": 900,
+          "right": 1440
+        },
+        "parent": "<picture class=\"hero-poster\"><source media=\"(max-width: 767px)\" srcset=\"/assets/cartan/cartan-hero-poster-mobile.jpg\" width=\"720\" height=\"1280\"><img id=\"hero-poster\" src=\"/assets/cartan/cartan-hero-poster.jpg\" width=\"1920\" height=\"1080\" fetchpriority=\"high\" alt=\"Concept illustration of a service bay and gripped cartridge. Geometry and hardware are unverified.\"></picture>"
+      },
+      "visibility": {
+        "hidden": false,
+        "state": "visible",
+        "focus": false
+      },
+      "videoDOM": "<video id=\"hero-video\" muted=\"\" playsinline=\"\" preload=\"metadata\" poster=\"/assets/cartan/cartan-hero-poster.jpg\" width=\"1280\" height=\"720\" aria-hidden=\"true\" tabindex=\"-1\" disablepictureinpicture=\"\"></video>",
+      "videoParent": "hero-picture",
+      "video": {
+        "attached": false,
+        "currentTime": 0,
+        "duration": null,
+        "muted": true,
+        "paused": true,
+        "loop": false,
+        "opacity": "0",
+        "transition": "0.25s"
+      },
+      "scrim": "linear-gradient(90deg, rgba(0, 0, 0, 0.88) 0%, rgba(0, 0, 0, 0.82) 38%, rgba(0, 0, 0, 0.72) 54%, rgba(0, 0, 0, 0.45) 67%, rgba(0, 0, 0, 0.12) 100%), linear-gradient(0deg, rgb(3, 4, 5) 0%, rgba(3, 4, 5, 0.9) 12%, rgba(0, 0, 0, 0) 38%), linear-gradient(rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.72) 12%, rgba(0, 0, 0, 0) 26%)",
+      "network": [
+        {
+          "url": "http://127.0.0.1:4178/qa/frame?mode=reduced&review=1794826216029",
+          "bytes": 18380
+        },
+        {
+          "url": "http://127.0.0.1:4178/style.css",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/app.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/assets/cartan-logo.png",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/assets/cartan/cartan-hero-poster.jpg",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/adapter.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/contract-adapter.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/hero-controller.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/vendor/cartan/v1/fixture.json",
+          "bytes": 300
+        }
+      ],
+      "errors": [],
+      "sourceAttachments": [],
+      "requestContexts": [],
+      "events": [],
+      "cls": 0
+    },
+    {
+      "kind": "matrix-layout",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "save-data",
+      "phase": "static",
+      "hero": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900,
+        "bottom": 900,
+        "right": 1440
+      },
+      "overflow": false,
+      "copyAndControlsWithinHero": true,
+      "text": [
+        {
+          "text": "CARTAN",
+          "x": 64.796875,
+          "y": 20,
+          "width": 120,
+          "height": 60,
+          "bottom": 80,
+          "right": 184.796875,
+          "font": "16px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Research",
+          "x": 597.125,
+          "y": 28,
+          "width": 51.359375,
+          "height": 44,
+          "bottom": 72,
+          "right": 648.484375,
+          "font": "12px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Laboratory",
+          "x": 678.484375,
+          "y": 28,
+          "width": 57.375,
+          "height": 44,
+          "bottom": 72,
+          "right": 735.859375,
+          "font": "12px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Evidence",
+          "x": 765.859375,
+          "y": 28,
+          "width": 49.375,
+          "height": 44,
+          "bottom": 72,
+          "right": 815.234375,
+          "font": "12px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "The longer horizon \u2197",
+          "x": 1227.5625,
+          "y": 28,
+          "width": 147.640625,
+          "height": 44,
+          "bottom": 72,
+          "right": 1375.203125,
+          "font": "10px",
+          "color": "rgb(182, 190, 195)"
+        },
+        {
+          "text": "SPACE SYSTEMS / SERVICEABILITY",
+          "x": 86.390625,
+          "y": 227,
+          "width": 440,
+          "height": 14,
+          "bottom": 241,
+          "right": 526.390625,
+          "font": "9px",
+          "color": "rgb(212, 219, 223)"
+        },
+        {
+          "text": "The missioncontinues.",
+          "x": 86.390625,
+          "y": 267,
+          "width": 440,
+          "height": 122,
+          "bottom": 389,
+          "right": 526.390625,
+          "font": "57.599998px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Spacecraft that can be maintained, upgraded, and useful for longer.",
+          "x": 86.390625,
+          "y": 414,
+          "width": 385,
+          "height": 54,
+          "bottom": 468,
+          "right": 471.390625,
+          "font": "18px",
+          "color": "rgb(238, 240, 241)"
+        },
+        {
+          "text": "Beginning with one question: what is safe to do when a module exchange is interrupted?",
+          "x": 86.390625,
+          "y": 488,
+          "width": 365,
+          "height": 46,
+          "bottom": 534,
+          "right": 451.390625,
+          "font": "13px",
+          "color": "rgb(200, 208, 213)"
+        },
+        {
+          "text": "Explore the architecture \u2197",
+          "x": 86.390625,
+          "y": 558,
+          "width": 200.296875,
+          "height": 56,
+          "bottom": 614,
+          "right": 286.6875,
+          "font": "13px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Read the research \u2197",
+          "x": 86.390625,
+          "y": 616,
+          "width": 134.734375,
+          "height": 44,
+          "bottom": 660,
+          "right": 221.125,
+          "font": "12px",
+          "color": "rgb(208, 215, 219)"
+        },
+        {
+          "text": "The longer horizon \u2197",
+          "x": 249.125,
+          "y": 616,
+          "width": 136.0625,
+          "height": 44,
+          "bottom": 660,
+          "right": 385.1875,
+          "font": "12px",
+          "color": "rgb(208, 215, 219)"
+        },
+        {
+          "text": "Watch the concept filmSILENT CONCEPT FILM / 00:21\u25b7",
+          "x": 1131.09375,
+          "y": 768,
+          "width": 222.515625,
+          "height": 50,
+          "bottom": 818,
+          "right": 1353.609375,
+          "font": "13px",
+          "color": "rgb(247, 248, 247)"
+        }
+      ],
+      "poster": "http://127.0.0.1:4178/assets/cartan/cartan-hero-poster.jpg",
+      "imageState": {
+        "complete": true,
+        "naturalWidth": 1920,
+        "hidden": false,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900,
+          "bottom": 900,
+          "right": 1440
+        },
+        "parent": "<picture class=\"hero-poster\"><source media=\"(max-width: 767px)\" srcset=\"/assets/cartan/cartan-hero-poster-mobile.jpg\" width=\"720\" height=\"1280\"><img id=\"hero-poster\" src=\"/assets/cartan/cartan-hero-poster.jpg\" width=\"1920\" height=\"1080\" fetchpriority=\"high\" alt=\"Concept illustration of a service bay and gripped cartridge. Geometry and hardware are unverified.\"></picture>"
+      },
+      "visibility": {
+        "hidden": false,
+        "state": "visible",
+        "focus": false
+      },
+      "videoDOM": "<video id=\"hero-video\" muted=\"\" playsinline=\"\" preload=\"metadata\" poster=\"/assets/cartan/cartan-hero-poster.jpg\" width=\"1280\" height=\"720\" aria-hidden=\"true\" tabindex=\"-1\" disablepictureinpicture=\"\"></video>",
+      "videoParent": "hero-picture",
+      "video": {
+        "attached": false,
+        "currentTime": 0,
+        "duration": null,
+        "muted": true,
+        "paused": true,
+        "loop": false,
+        "opacity": "0",
+        "transition": "0.25s"
+      },
+      "scrim": "linear-gradient(90deg, rgba(0, 0, 0, 0.88) 0%, rgba(0, 0, 0, 0.82) 38%, rgba(0, 0, 0, 0.72) 54%, rgba(0, 0, 0, 0.45) 67%, rgba(0, 0, 0, 0.12) 100%), linear-gradient(0deg, rgb(3, 4, 5) 0%, rgba(3, 4, 5, 0.9) 12%, rgba(0, 0, 0, 0) 38%), linear-gradient(rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.72) 12%, rgba(0, 0, 0, 0) 26%)",
+      "network": [
+        {
+          "url": "http://127.0.0.1:4178/qa/frame?mode=save-data&review=1794826218035",
+          "bytes": 18382
+        },
+        {
+          "url": "http://127.0.0.1:4178/style.css",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/app.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/assets/cartan-logo.png",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/assets/cartan/cartan-hero-poster.jpg",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/adapter.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/contract-adapter.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/hero-controller.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/vendor/cartan/v1/fixture.json",
+          "bytes": 300
+        }
+      ],
+      "errors": [],
+      "sourceAttachments": [],
+      "requestContexts": [],
+      "events": [],
+      "cls": 0
+    },
+    {
+      "kind": "matrix-layout",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "denied",
+      "phase": "blocked",
+      "hero": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900,
+        "bottom": 900,
+        "right": 1440
+      },
+      "overflow": false,
+      "copyAndControlsWithinHero": true,
+      "text": [
+        {
+          "text": "CARTAN",
+          "x": 64.796875,
+          "y": 20,
+          "width": 120,
+          "height": 60,
+          "bottom": 80,
+          "right": 184.796875,
+          "font": "16px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Research",
+          "x": 597.125,
+          "y": 28,
+          "width": 51.359375,
+          "height": 44,
+          "bottom": 72,
+          "right": 648.484375,
+          "font": "12px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Laboratory",
+          "x": 678.484375,
+          "y": 28,
+          "width": 57.375,
+          "height": 44,
+          "bottom": 72,
+          "right": 735.859375,
+          "font": "12px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Evidence",
+          "x": 765.859375,
+          "y": 28,
+          "width": 49.375,
+          "height": 44,
+          "bottom": 72,
+          "right": 815.234375,
+          "font": "12px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "The longer horizon \u2197",
+          "x": 1227.5625,
+          "y": 28,
+          "width": 147.640625,
+          "height": 44,
+          "bottom": 72,
+          "right": 1375.203125,
+          "font": "10px",
+          "color": "rgb(182, 190, 195)"
+        },
+        {
+          "text": "SPACE SYSTEMS / SERVICEABILITY",
+          "x": 86.390625,
+          "y": 227,
+          "width": 440,
+          "height": 14,
+          "bottom": 241,
+          "right": 526.390625,
+          "font": "9px",
+          "color": "rgb(212, 219, 223)"
+        },
+        {
+          "text": "The missioncontinues.",
+          "x": 86.390625,
+          "y": 267,
+          "width": 440,
+          "height": 122,
+          "bottom": 389,
+          "right": 526.390625,
+          "font": "57.599998px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Spacecraft that can be maintained, upgraded, and useful for longer.",
+          "x": 86.390625,
+          "y": 414,
+          "width": 385,
+          "height": 54,
+          "bottom": 468,
+          "right": 471.390625,
+          "font": "18px",
+          "color": "rgb(238, 240, 241)"
+        },
+        {
+          "text": "Beginning with one question: what is safe to do when a module exchange is interrupted?",
+          "x": 86.390625,
+          "y": 488,
+          "width": 365,
+          "height": 46,
+          "bottom": 534,
+          "right": 451.390625,
+          "font": "13px",
+          "color": "rgb(200, 208, 213)"
+        },
+        {
+          "text": "Explore the architecture \u2197",
+          "x": 86.390625,
+          "y": 558,
+          "width": 200.296875,
+          "height": 56,
+          "bottom": 614,
+          "right": 286.6875,
+          "font": "13px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Read the research \u2197",
+          "x": 86.390625,
+          "y": 616,
+          "width": 134.734375,
+          "height": 44,
+          "bottom": 660,
+          "right": 221.125,
+          "font": "12px",
+          "color": "rgb(208, 215, 219)"
+        },
+        {
+          "text": "The longer horizon \u2197",
+          "x": 249.125,
+          "y": 616,
+          "width": 136.0625,
+          "height": 44,
+          "bottom": 660,
+          "right": 385.1875,
+          "font": "12px",
+          "color": "rgb(208, 215, 219)"
+        },
+        {
+          "text": "Play motion \u25b7",
+          "x": 985.09375,
+          "y": 771,
+          "width": 110,
+          "height": 44,
+          "bottom": 815,
+          "right": 1095.09375,
+          "font": "11px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Watch the concept filmSILENT CONCEPT FILM / 00:21\u25b7",
+          "x": 1131.09375,
+          "y": 768,
+          "width": 222.515625,
+          "height": 50,
+          "bottom": 818,
+          "right": 1353.609375,
+          "font": "13px",
+          "color": "rgb(247, 248, 247)"
+        }
+      ],
+      "poster": "http://127.0.0.1:4178/assets/cartan/cartan-hero-poster.jpg",
+      "imageState": {
+        "complete": true,
+        "naturalWidth": 1920,
+        "hidden": false,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900,
+          "bottom": 900,
+          "right": 1440
+        },
+        "parent": "<picture class=\"hero-poster\"><source media=\"(max-width: 767px)\" srcset=\"/assets/cartan/cartan-hero-poster-mobile.jpg\" width=\"720\" height=\"1280\"><img id=\"hero-poster\" src=\"/assets/cartan/cartan-hero-poster.jpg\" width=\"1920\" height=\"1080\" fetchpriority=\"high\" alt=\"Concept illustration of a service bay and gripped cartridge. Geometry and hardware are unverified.\"></picture>"
+      },
+      "visibility": {
+        "hidden": false,
+        "state": "visible",
+        "focus": false
+      },
+      "videoDOM": "<video id=\"hero-video\" muted=\"\" playsinline=\"\" preload=\"metadata\" poster=\"/assets/cartan/cartan-hero-poster.jpg\" width=\"1280\" height=\"720\" aria-hidden=\"true\" tabindex=\"-1\" disablepictureinpicture=\"\"></video>",
+      "videoParent": "hero-picture",
+      "video": {
+        "attached": false,
+        "currentTime": 0,
+        "duration": null,
+        "muted": true,
+        "paused": true,
+        "loop": false,
+        "opacity": "0",
+        "transition": "0.25s"
+      },
+      "scrim": "linear-gradient(90deg, rgba(0, 0, 0, 0.88) 0%, rgba(0, 0, 0, 0.82) 38%, rgba(0, 0, 0, 0.72) 54%, rgba(0, 0, 0, 0.45) 67%, rgba(0, 0, 0, 0.12) 100%), linear-gradient(0deg, rgb(3, 4, 5) 0%, rgba(3, 4, 5, 0.9) 12%, rgba(0, 0, 0, 0) 38%), linear-gradient(rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.72) 12%, rgba(0, 0, 0, 0) 26%)",
+      "network": [
+        {
+          "url": "http://127.0.0.1:4178/qa/frame?mode=denied&review=1794826219150",
+          "bytes": 18379
+        },
+        {
+          "url": "http://127.0.0.1:4178/style.css",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/app.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/assets/cartan-logo.png",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/assets/cartan/cartan-hero-poster.jpg",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/adapter.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/contract-adapter.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/hero-controller.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/vendor/cartan/v1/fixture.json",
+          "bytes": 300
+        }
+      ],
+      "errors": [],
+      "sourceAttachments": [
+        "/assets/cartan/cartan-hero-desktop-720p.mp4"
+      ],
+      "requestContexts": [
+        {
+          "src": "/assets/cartan/cartan-hero-desktop-720p.mp4",
+          "width": 1440,
+          "clientWidth": 1440,
+          "visualWidth": 1440,
+          "mobile": false,
+          "heroWidth": 1440,
+          "heroHeight": 900
+        }
+      ],
+      "events": [],
+      "cls": 0
+    },
+    {
+      "kind": "matrix-layout",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "missing",
+      "phase": "blocked",
+      "hero": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900,
+        "bottom": 900,
+        "right": 1440
+      },
+      "overflow": false,
+      "copyAndControlsWithinHero": true,
+      "text": [
+        {
+          "text": "CARTAN",
+          "x": 64.796875,
+          "y": 20,
+          "width": 120,
+          "height": 60,
+          "bottom": 80,
+          "right": 184.796875,
+          "font": "16px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Research",
+          "x": 597.125,
+          "y": 28,
+          "width": 51.359375,
+          "height": 44,
+          "bottom": 72,
+          "right": 648.484375,
+          "font": "12px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Laboratory",
+          "x": 678.484375,
+          "y": 28,
+          "width": 57.375,
+          "height": 44,
+          "bottom": 72,
+          "right": 735.859375,
+          "font": "12px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Evidence",
+          "x": 765.859375,
+          "y": 28,
+          "width": 49.375,
+          "height": 44,
+          "bottom": 72,
+          "right": 815.234375,
+          "font": "12px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "The longer horizon \u2197",
+          "x": 1227.5625,
+          "y": 28,
+          "width": 147.640625,
+          "height": 44,
+          "bottom": 72,
+          "right": 1375.203125,
+          "font": "10px",
+          "color": "rgb(182, 190, 195)"
+        },
+        {
+          "text": "SPACE SYSTEMS / SERVICEABILITY",
+          "x": 86.390625,
+          "y": 227,
+          "width": 440,
+          "height": 14,
+          "bottom": 241,
+          "right": 526.390625,
+          "font": "9px",
+          "color": "rgb(212, 219, 223)"
+        },
+        {
+          "text": "The missioncontinues.",
+          "x": 86.390625,
+          "y": 267,
+          "width": 440,
+          "height": 122,
+          "bottom": 389,
+          "right": 526.390625,
+          "font": "57.599998px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Spacecraft that can be maintained, upgraded, and useful for longer.",
+          "x": 86.390625,
+          "y": 414,
+          "width": 385,
+          "height": 54,
+          "bottom": 468,
+          "right": 471.390625,
+          "font": "18px",
+          "color": "rgb(238, 240, 241)"
+        },
+        {
+          "text": "Beginning with one question: what is safe to do when a module exchange is interrupted?",
+          "x": 86.390625,
+          "y": 488,
+          "width": 365,
+          "height": 46,
+          "bottom": 534,
+          "right": 451.390625,
+          "font": "13px",
+          "color": "rgb(200, 208, 213)"
+        },
+        {
+          "text": "Explore the architecture \u2197",
+          "x": 86.390625,
+          "y": 558,
+          "width": 200.296875,
+          "height": 56,
+          "bottom": 614,
+          "right": 286.6875,
+          "font": "13px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Read the research \u2197",
+          "x": 86.390625,
+          "y": 616,
+          "width": 134.734375,
+          "height": 44,
+          "bottom": 660,
+          "right": 221.125,
+          "font": "12px",
+          "color": "rgb(208, 215, 219)"
+        },
+        {
+          "text": "The longer horizon \u2197",
+          "x": 249.125,
+          "y": 616,
+          "width": 136.0625,
+          "height": 44,
+          "bottom": 660,
+          "right": 385.1875,
+          "font": "12px",
+          "color": "rgb(208, 215, 219)"
+        },
+        {
+          "text": "Play motion \u25b7",
+          "x": 985.09375,
+          "y": 771,
+          "width": 110,
+          "height": 44,
+          "bottom": 815,
+          "right": 1095.09375,
+          "font": "11px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Watch the concept filmSILENT CONCEPT FILM / 00:21\u25b7",
+          "x": 1131.09375,
+          "y": 768,
+          "width": 222.515625,
+          "height": 50,
+          "bottom": 818,
+          "right": 1353.609375,
+          "font": "13px",
+          "color": "rgb(247, 248, 247)"
+        }
+      ],
+      "poster": "http://127.0.0.1:4178/assets/cartan/cartan-hero-poster.jpg",
+      "imageState": {
+        "complete": true,
+        "naturalWidth": 1920,
+        "hidden": false,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900,
+          "bottom": 900,
+          "right": 1440
+        },
+        "parent": "<picture class=\"hero-poster\"><source media=\"(max-width: 767px)\" srcset=\"/assets/cartan/cartan-hero-poster-mobile.jpg\" width=\"720\" height=\"1280\"><img id=\"hero-poster\" src=\"/assets/cartan/cartan-hero-poster.jpg\" width=\"1920\" height=\"1080\" fetchpriority=\"high\" alt=\"Concept illustration of a service bay and gripped cartridge. Geometry and hardware are unverified.\"></picture>"
+      },
+      "visibility": {
+        "hidden": false,
+        "state": "visible",
+        "focus": false
+      },
+      "videoDOM": "<video id=\"hero-video\" muted=\"\" playsinline=\"\" preload=\"metadata\" poster=\"/assets/cartan/cartan-hero-poster.jpg\" width=\"1280\" height=\"720\" aria-hidden=\"true\" tabindex=\"-1\" disablepictureinpicture=\"\"></video>",
+      "videoParent": "hero-picture",
+      "video": {
+        "attached": false,
+        "currentTime": 0,
+        "duration": null,
+        "muted": true,
+        "paused": true,
+        "loop": false,
+        "opacity": "0",
+        "transition": "0.25s"
+      },
+      "scrim": "linear-gradient(90deg, rgba(0, 0, 0, 0.88) 0%, rgba(0, 0, 0, 0.82) 38%, rgba(0, 0, 0, 0.72) 54%, rgba(0, 0, 0, 0.45) 67%, rgba(0, 0, 0, 0.12) 100%), linear-gradient(0deg, rgb(3, 4, 5) 0%, rgba(3, 4, 5, 0.9) 12%, rgba(0, 0, 0, 0) 38%), linear-gradient(rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.72) 12%, rgba(0, 0, 0, 0) 26%)",
+      "network": [
+        {
+          "url": "http://127.0.0.1:4178/qa/frame?mode=missing&review=1794826220252",
+          "bytes": 18380
+        },
+        {
+          "url": "http://127.0.0.1:4178/style.css",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/app.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/assets/cartan-logo.png",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/assets/cartan/cartan-hero-poster.jpg",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/adapter.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/contract-adapter.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/hero-controller.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/vendor/cartan/v1/fixture.json",
+          "bytes": 300
+        },
+        {
+          "url": "http://127.0.0.1:4178/qa/missing-video.mp4",
+          "bytes": 760
+        }
+      ],
+      "errors": [],
+      "sourceAttachments": [
+        "/assets/cartan/cartan-hero-desktop-720p.mp4"
+      ],
+      "requestContexts": [
+        {
+          "src": "/assets/cartan/cartan-hero-desktop-720p.mp4",
+          "width": 1440,
+          "clientWidth": 1440,
+          "visualWidth": 1440,
+          "mobile": false,
+          "heroWidth": 1440,
+          "heroHeight": 900
+        }
+      ],
+      "events": [
+        {
+          "name": "play",
+          "time": 0,
+          "at": 294,
+          "muted": true
+        }
+      ],
+      "cls": 0
+    },
+    {
+      "kind": "controls-and-routes",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "normal",
+      "checks": [
+        {
+          "name": "Pause control pauses media",
+          "pass": true
+        },
+        {
+          "name": "Return does not resume or reset user pause",
+          "pass": true
+        },
+        {
+          "name": "Route question",
+          "pass": true
+        },
+        {
+          "name": "Route laboratory",
+          "pass": true
+        },
+        {
+          "name": "Route evidence",
+          "pass": true
+        },
+        {
+          "name": "Route vision",
+          "pass": true
+        },
+        {
+          "name": "Film opens paused",
+          "pass": true
+        },
+        {
+          "name": "Dialog initial focus",
+          "pass": true
+        },
+        {
+          "name": "Disclaimer is HTML",
+          "pass": true
+        },
+        {
+          "name": "Film close restores focus",
+          "pass": true
+        },
+        {
+          "name": "Film close removes source",
+          "pass": true
+        }
+      ],
+      "phase": "paused",
+      "hero": {
+        "x": 0,
+        "y": 12,
+        "width": 1440,
+        "height": 900,
+        "bottom": 912,
+        "right": 1440
+      },
+      "overflow": false,
+      "copyAndControlsWithinHero": true,
+      "text": [
+        {
+          "text": "CARTAN",
+          "x": 64.796875,
+          "y": 20,
+          "width": 120,
+          "height": 60,
+          "bottom": 80,
+          "right": 184.796875,
+          "font": "16px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Research",
+          "x": 597.125,
+          "y": 28,
+          "width": 51.359375,
+          "height": 44,
+          "bottom": 72,
+          "right": 648.484375,
+          "font": "12px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Laboratory",
+          "x": 678.484375,
+          "y": 28,
+          "width": 57.375,
+          "height": 44,
+          "bottom": 72,
+          "right": 735.859375,
+          "font": "12px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Evidence",
+          "x": 765.859375,
+          "y": 28,
+          "width": 49.375,
+          "height": 44,
+          "bottom": 72,
+          "right": 815.234375,
+          "font": "12px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "The longer horizon \u2197",
+          "x": 1227.5625,
+          "y": 28,
+          "width": 147.640625,
+          "height": 44,
+          "bottom": 72,
+          "right": 1375.203125,
+          "font": "10px",
+          "color": "rgb(182, 190, 195)"
+        },
+        {
+          "text": "SPACE SYSTEMS / SERVICEABILITY",
+          "x": 86.390625,
+          "y": 239,
+          "width": 440,
+          "height": 14,
+          "bottom": 253,
+          "right": 526.390625,
+          "font": "9px",
+          "color": "rgb(212, 219, 223)"
+        },
+        {
+          "text": "The missioncontinues.",
+          "x": 86.390625,
+          "y": 279,
+          "width": 440,
+          "height": 122,
+          "bottom": 401,
+          "right": 526.390625,
+          "font": "57.599998px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Spacecraft that can be maintained, upgraded, and useful for longer.",
+          "x": 86.390625,
+          "y": 426,
+          "width": 385,
+          "height": 54,
+          "bottom": 480,
+          "right": 471.390625,
+          "font": "18px",
+          "color": "rgb(238, 240, 241)"
+        },
+        {
+          "text": "Beginning with one question: what is safe to do when a module exchange is interrupted?",
+          "x": 86.390625,
+          "y": 500,
+          "width": 365,
+          "height": 46,
+          "bottom": 546,
+          "right": 451.390625,
+          "font": "13px",
+          "color": "rgb(200, 208, 213)"
+        },
+        {
+          "text": "Explore the architecture \u2197",
+          "x": 86.390625,
+          "y": 570,
+          "width": 200.296875,
+          "height": 56,
+          "bottom": 626,
+          "right": 286.6875,
+          "font": "13px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Read the research \u2197",
+          "x": 86.390625,
+          "y": 628,
+          "width": 134.734375,
+          "height": 44,
+          "bottom": 672,
+          "right": 221.125,
+          "font": "12px",
+          "color": "rgb(208, 215, 219)"
+        },
+        {
+          "text": "The longer horizon \u2197",
+          "x": 249.125,
+          "y": 628,
+          "width": 136.0625,
+          "height": 44,
+          "bottom": 672,
+          "right": 385.1875,
+          "font": "12px",
+          "color": "rgb(208, 215, 219)"
+        },
+        {
+          "text": "Play motion \u25b7",
+          "x": 985.09375,
+          "y": 783,
+          "width": 110,
+          "height": 44,
+          "bottom": 827,
+          "right": 1095.09375,
+          "font": "11px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Watch the concept filmSILENT CONCEPT FILM / 00:21\u25b7",
+          "x": 1131.09375,
+          "y": 780,
+          "width": 222.515625,
+          "height": 50,
+          "bottom": 830,
+          "right": 1353.609375,
+          "font": "13px",
+          "color": "rgb(7, 9, 11)"
+        }
+      ],
+      "poster": "http://127.0.0.1:4178/assets/cartan/cartan-hero-poster.jpg",
+      "imageState": {
+        "complete": true,
+        "naturalWidth": 1920,
+        "hidden": false,
+        "rect": {
+          "x": 0,
+          "y": 12,
+          "width": 1440,
+          "height": 900,
+          "bottom": 912,
+          "right": 1440
+        },
+        "parent": "<picture class=\"hero-poster\"><source media=\"(max-width: 767px)\" srcset=\"/assets/cartan/cartan-hero-poster-mobile.jpg\" width=\"720\" height=\"1280\"><img id=\"hero-poster\" src=\"/assets/cartan/cartan-hero-poster.jpg\" width=\"1920\" height=\"1080\" fetchpriority=\"high\" alt=\"Concept illustration of a service bay and gripped cartridge. Geometry and hardware are unverified.\"></picture>"
+      },
+      "visibility": {
+        "hidden": false,
+        "state": "visible",
+        "focus": true
+      },
+      "videoDOM": "<video id=\"hero-video\" muted=\"\" playsinline=\"\" preload=\"metadata\" poster=\"/assets/cartan/cartan-hero-poster.jpg\" width=\"1280\" height=\"720\" aria-hidden=\"true\" tabindex=\"-1\" disablepictureinpicture=\"\" src=\"/assets/cartan/cartan-hero-desktop-720p.mp4\" class=\"playing\"></video>",
+      "videoParent": "hero-picture",
+      "video": {
+        "attached": true,
+        "currentTime": 0.2450694166668523,
+        "duration": 19,
+        "muted": true,
+        "paused": true,
+        "loop": false,
+        "opacity": "1",
+        "transition": "0.25s"
+      },
+      "scrim": "linear-gradient(90deg, rgba(0, 0, 0, 0.88) 0%, rgba(0, 0, 0, 0.82) 38%, rgba(0, 0, 0, 0.72) 54%, rgba(0, 0, 0, 0.45) 67%, rgba(0, 0, 0, 0.12) 100%), linear-gradient(0deg, rgb(3, 4, 5) 0%, rgba(3, 4, 5, 0.9) 12%, rgba(0, 0, 0, 0) 38%), linear-gradient(rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.72) 12%, rgba(0, 0, 0, 0) 26%)",
+      "network": [
+        {
+          "url": "http://127.0.0.1:4178/qa/frame?mode=normal&review=1794826221359",
+          "bytes": 18379
+        },
+        {
+          "url": "http://127.0.0.1:4178/app.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/assets/cartan-logo.png",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/assets/cartan/cartan-hero-poster.jpg",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/style.css",
+          "bytes": 300
+        },
+        {
+          "url": "http://127.0.0.1:4178/adapter.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/contract-adapter.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/hero-controller.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/vendor/cartan/v1/fixture.json",
+          "bytes": 300
+        },
+        {
+          "url": "http://127.0.0.1:4178/assets/cartan/cartan-hero-desktop-720p.mp4",
+          "bytes": 302
+        },
+        {
+          "url": "http://127.0.0.1:4178/assets/cartan/cartan-hero-desktop-720p.mp4",
+          "bytes": 4039448
+        },
+        {
+          "url": "http://127.0.0.1:4178/assets/module.jpg",
+          "bytes": 0
+        }
+      ],
+      "errors": [],
+      "sourceAttachments": [
+        "/assets/cartan/cartan-hero-desktop-720p.mp4",
+        "/assets/cartan/CARTAN-Built-to-Change-Revised-Silent-21s-1080p.mp4"
+      ],
+      "requestContexts": [
+        {
+          "src": "/assets/cartan/cartan-hero-desktop-720p.mp4",
+          "width": 1440,
+          "clientWidth": 1440,
+          "visualWidth": 1440,
+          "mobile": false,
+          "heroWidth": 1440,
+          "heroHeight": 900
+        },
+        {
+          "src": "/assets/cartan/CARTAN-Built-to-Change-Revised-Silent-21s-1080p.mp4",
+          "width": 1440,
+          "clientWidth": 1440,
+          "visualWidth": 1440,
+          "mobile": false,
+          "heroWidth": 1440,
+          "heroHeight": 900
+        }
+      ],
+      "events": [
+        {
+          "name": "play",
+          "time": 0,
+          "at": 591,
+          "muted": true
+        },
+        {
+          "name": "playing",
+          "time": 0,
+          "at": 636,
+          "muted": true
+        },
+        {
+          "name": "pause",
+          "time": 0.2450694166668523,
+          "at": 890,
+          "muted": true
+        }
+      ],
+      "cls": 0
+    },
+    {
+      "kind": "matrix-layout",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "normal",
+      "phase": "poster",
+      "hero": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900,
+        "bottom": 900,
+        "right": 1440
+      },
+      "overflow": false,
+      "copyAndControlsWithinHero": true,
+      "text": [
+        {
+          "text": "CARTAN",
+          "x": 64.796875,
+          "y": 20,
+          "width": 120,
+          "height": 60,
+          "bottom": 80,
+          "right": 184.796875,
+          "font": "16px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Research",
+          "x": 597.125,
+          "y": 28,
+          "width": 51.359375,
+          "height": 44,
+          "bottom": 72,
+          "right": 648.484375,
+          "font": "12px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Laboratory",
+          "x": 678.484375,
+          "y": 28,
+          "width": 57.375,
+          "height": 44,
+          "bottom": 72,
+          "right": 735.859375,
+          "font": "12px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Evidence",
+          "x": 765.859375,
+          "y": 28,
+          "width": 49.375,
+          "height": 44,
+          "bottom": 72,
+          "right": 815.234375,
+          "font": "12px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "The longer horizon \u2197",
+          "x": 1227.5625,
+          "y": 28,
+          "width": 147.640625,
+          "height": 44,
+          "bottom": 72,
+          "right": 1375.203125,
+          "font": "10px",
+          "color": "rgb(182, 190, 195)"
+        },
+        {
+          "text": "SPACE SYSTEMS / SERVICEABILITY",
+          "x": 86.390625,
+          "y": 227,
+          "width": 440,
+          "height": 14,
+          "bottom": 241,
+          "right": 526.390625,
+          "font": "9px",
+          "color": "rgb(212, 219, 223)"
+        },
+        {
+          "text": "The missioncontinues.",
+          "x": 86.390625,
+          "y": 267,
+          "width": 440,
+          "height": 122,
+          "bottom": 389,
+          "right": 526.390625,
+          "font": "57.599998px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Spacecraft that can be maintained, upgraded, and useful for longer.",
+          "x": 86.390625,
+          "y": 414,
+          "width": 385,
+          "height": 54,
+          "bottom": 468,
+          "right": 471.390625,
+          "font": "18px",
+          "color": "rgb(238, 240, 241)"
+        },
+        {
+          "text": "Beginning with one question: what is safe to do when a module exchange is interrupted?",
+          "x": 86.390625,
+          "y": 488,
+          "width": 365,
+          "height": 46,
+          "bottom": 534,
+          "right": 451.390625,
+          "font": "13px",
+          "color": "rgb(200, 208, 213)"
+        },
+        {
+          "text": "Explore the architecture \u2197",
+          "x": 86.390625,
+          "y": 558,
+          "width": 200.296875,
+          "height": 56,
+          "bottom": 614,
+          "right": 286.6875,
+          "font": "13px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Read the research \u2197",
+          "x": 86.390625,
+          "y": 616,
+          "width": 134.734375,
+          "height": 44,
+          "bottom": 660,
+          "right": 221.125,
+          "font": "12px",
+          "color": "rgb(208, 215, 219)"
+        },
+        {
+          "text": "The longer horizon \u2197",
+          "x": 249.125,
+          "y": 616,
+          "width": 136.0625,
+          "height": 44,
+          "bottom": 660,
+          "right": 385.1875,
+          "font": "12px",
+          "color": "rgb(208, 215, 219)"
+        },
+        {
+          "text": "Play motion \u25b7",
+          "x": 985.09375,
+          "y": 771,
+          "width": 110,
+          "height": 44,
+          "bottom": 815,
+          "right": 1095.09375,
+          "font": "11px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Watch the concept filmSILENT CONCEPT FILM / 00:21\u25b7",
+          "x": 1131.09375,
+          "y": 768,
+          "width": 222.515625,
+          "height": 50,
+          "bottom": 818,
+          "right": 1353.609375,
+          "font": "13px",
+          "color": "rgb(247, 248, 247)"
+        }
+      ],
+      "poster": "http://127.0.0.1:4178/assets/cartan/cartan-hero-poster.jpg",
+      "imageState": {
+        "complete": true,
+        "naturalWidth": 1920,
+        "hidden": false,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900,
+          "bottom": 900,
+          "right": 1440
+        },
+        "parent": "<picture class=\"hero-poster\"><source media=\"(max-width: 767px)\" srcset=\"/assets/cartan/cartan-hero-poster-mobile.jpg\" width=\"720\" height=\"1280\"><img id=\"hero-poster\" src=\"/assets/cartan/cartan-hero-poster.jpg\" width=\"1920\" height=\"1080\" fetchpriority=\"high\" alt=\"Concept illustration of a service bay and gripped cartridge. Geometry and hardware are unverified.\"></picture>"
+      },
+      "visibility": {
+        "hidden": true,
+        "state": "hidden",
+        "focus": false
+      },
+      "videoDOM": "<video id=\"hero-video\" muted=\"\" playsinline=\"\" preload=\"metadata\" poster=\"/assets/cartan/cartan-hero-poster.jpg\" width=\"1280\" height=\"720\" aria-hidden=\"true\" tabindex=\"-1\" disablepictureinpicture=\"\"></video>",
+      "videoParent": "hero-picture",
+      "video": {
+        "attached": false,
+        "currentTime": 0,
+        "duration": null,
+        "muted": true,
+        "paused": true,
+        "loop": false,
+        "opacity": "0",
+        "transition": "0.25s"
+      },
+      "scrim": "linear-gradient(90deg, rgba(0, 0, 0, 0.88) 0%, rgba(0, 0, 0, 0.82) 38%, rgba(0, 0, 0, 0.72) 54%, rgba(0, 0, 0, 0.45) 67%, rgba(0, 0, 0, 0.12) 100%), linear-gradient(0deg, rgb(3, 4, 5) 0%, rgba(3, 4, 5, 0.9) 12%, rgba(0, 0, 0, 0) 38%), linear-gradient(rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.72) 12%, rgba(0, 0, 0, 0) 26%)",
+      "network": [
+        {
+          "url": "http://127.0.0.1:4178/qa/frame?mode=normal&review=1794827374542",
+          "bytes": 18379
+        },
+        {
+          "url": "http://127.0.0.1:4178/style.css",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/app.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/assets/cartan-logo.png",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/assets/cartan/cartan-hero-poster.jpg",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/adapter.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/contract-adapter.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/hero-controller.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/vendor/cartan/v1/fixture.json",
+          "bytes": 300
+        }
+      ],
+      "errors": [],
+      "sourceAttachments": [],
+      "requestContexts": [],
+      "events": [],
+      "cls": 0,
+      "capturedAt": "2026-11-16T11:09:35.899Z",
+      "snapshotVersion": 2
+    },
+    {
+      "kind": "matrix-layout",
+      "viewport": [
+        1280,
+        720
+      ],
+      "mode": "normal",
+      "phase": "poster",
+      "hero": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720,
+        "bottom": 720,
+        "right": 1280
+      },
+      "overflow": false,
+      "copyAndControlsWithinHero": true,
+      "text": [
+        {
+          "text": "CARTAN",
+          "x": 57.59375,
+          "y": 20,
+          "width": 120,
+          "height": 60,
+          "bottom": 80,
+          "right": 177.59375,
+          "font": "16px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Research",
+          "x": 517.125,
+          "y": 28,
+          "width": 51.359375,
+          "height": 44,
+          "bottom": 72,
+          "right": 568.484375,
+          "font": "12px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Laboratory",
+          "x": 598.484375,
+          "y": 28,
+          "width": 57.375,
+          "height": 44,
+          "bottom": 72,
+          "right": 655.859375,
+          "font": "12px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Evidence",
+          "x": 685.859375,
+          "y": 28,
+          "width": 49.375,
+          "height": 44,
+          "bottom": 72,
+          "right": 735.234375,
+          "font": "12px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "The longer horizon \u2197",
+          "x": 1074.765625,
+          "y": 28,
+          "width": 147.640625,
+          "height": 44,
+          "bottom": 72,
+          "right": 1222.40625,
+          "font": "10px",
+          "color": "rgb(182, 190, 195)"
+        },
+        {
+          "text": "SPACE SYSTEMS / SERVICEABILITY",
+          "x": 76.796875,
+          "y": 163,
+          "width": 440,
+          "height": 14,
+          "bottom": 177,
+          "right": 516.796875,
+          "font": "9px",
+          "color": "rgb(212, 219, 223)"
+        },
+        {
+          "text": "The missioncontinues.",
+          "x": 76.796875,
+          "y": 195,
+          "width": 440,
+          "height": 106,
+          "bottom": 301,
+          "right": 516.796875,
+          "font": "50px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Spacecraft that can be maintained, upgraded, and useful for longer.",
+          "x": 76.796875,
+          "y": 326,
+          "width": 385,
+          "height": 54,
+          "bottom": 380,
+          "right": 461.796875,
+          "font": "18px",
+          "color": "rgb(238, 240, 241)"
+        },
+        {
+          "text": "Beginning with one question: what is safe to do when a module exchange is interrupted?",
+          "x": 76.796875,
+          "y": 392,
+          "width": 365,
+          "height": 46,
+          "bottom": 438,
+          "right": 441.796875,
+          "font": "13px",
+          "color": "rgb(200, 208, 213)"
+        },
+        {
+          "text": "Explore the architecture \u2197",
+          "x": 76.796875,
+          "y": 450,
+          "width": 200.296875,
+          "height": 56,
+          "bottom": 506,
+          "right": 277.09375,
+          "font": "13px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Read the research \u2197",
+          "x": 76.796875,
+          "y": 508,
+          "width": 134.734375,
+          "height": 44,
+          "bottom": 552,
+          "right": 211.53125,
+          "font": "12px",
+          "color": "rgb(208, 215, 219)"
+        },
+        {
+          "text": "The longer horizon \u2197",
+          "x": 239.53125,
+          "y": 508,
+          "width": 136.0625,
+          "height": 44,
+          "bottom": 552,
+          "right": 375.59375,
+          "font": "12px",
+          "color": "rgb(208, 215, 219)"
+        },
+        {
+          "text": "Play motion \u25b7",
+          "x": 834.6875,
+          "y": 591,
+          "width": 110,
+          "height": 44,
+          "bottom": 635,
+          "right": 944.6875,
+          "font": "11px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Watch the concept filmSILENT CONCEPT FILM / 00:21\u25b7",
+          "x": 980.6875,
+          "y": 588,
+          "width": 222.515625,
+          "height": 50,
+          "bottom": 638,
+          "right": 1203.203125,
+          "font": "13px",
+          "color": "rgb(247, 248, 247)"
+        }
+      ],
+      "poster": "http://127.0.0.1:4178/assets/cartan/cartan-hero-poster.jpg",
+      "imageState": {
+        "complete": true,
+        "naturalWidth": 1920,
+        "hidden": false,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 1280,
+          "height": 720,
+          "bottom": 720,
+          "right": 1280
+        },
+        "parent": "<picture class=\"hero-poster\"><source media=\"(max-width: 767px)\" srcset=\"/assets/cartan/cartan-hero-poster-mobile.jpg\" width=\"720\" height=\"1280\"><img id=\"hero-poster\" src=\"/assets/cartan/cartan-hero-poster.jpg\" width=\"1920\" height=\"1080\" fetchpriority=\"high\" alt=\"Concept illustration of a service bay and gripped cartridge. Geometry and hardware are unverified.\"></picture>"
+      },
+      "visibility": {
+        "hidden": true,
+        "state": "hidden",
+        "focus": false
+      },
+      "videoDOM": "<video id=\"hero-video\" muted=\"\" playsinline=\"\" preload=\"metadata\" poster=\"/assets/cartan/cartan-hero-poster.jpg\" width=\"1280\" height=\"720\" aria-hidden=\"true\" tabindex=\"-1\" disablepictureinpicture=\"\"></video>",
+      "videoParent": "hero-picture",
+      "video": {
+        "attached": false,
+        "currentTime": 0,
+        "duration": null,
+        "muted": true,
+        "paused": true,
+        "loop": false,
+        "opacity": "0",
+        "transition": "0.25s"
+      },
+      "scrim": "linear-gradient(90deg, rgba(0, 0, 0, 0.88) 0%, rgba(0, 0, 0, 0.82) 38%, rgba(0, 0, 0, 0.72) 54%, rgba(0, 0, 0, 0.45) 67%, rgba(0, 0, 0, 0.12) 100%), linear-gradient(0deg, rgb(3, 4, 5) 0%, rgba(3, 4, 5, 0.9) 12%, rgba(0, 0, 0, 0) 38%), linear-gradient(rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.72) 12%, rgba(0, 0, 0, 0) 26%)",
+      "network": [
+        {
+          "url": "http://127.0.0.1:4178/qa/frame?mode=normal&review=1794827375920",
+          "bytes": 18379
+        },
+        {
+          "url": "http://127.0.0.1:4178/style.css",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/app.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/assets/cartan-logo.png",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/assets/cartan/cartan-hero-poster.jpg",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/adapter.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/contract-adapter.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/hero-controller.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/vendor/cartan/v1/fixture.json",
+          "bytes": 300
+        }
+      ],
+      "errors": [],
+      "sourceAttachments": [],
+      "requestContexts": [],
+      "events": [],
+      "cls": 0,
+      "capturedAt": "2026-11-16T11:09:37.273Z",
+      "snapshotVersion": 2
+    },
+    {
+      "kind": "matrix-layout",
+      "viewport": [
+        768,
+        1024
+      ],
+      "mode": "normal",
+      "phase": "static",
+      "hero": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 1024,
+        "bottom": 1024,
+        "right": 768
+      },
+      "overflow": false,
+      "copyAndControlsWithinHero": true,
+      "text": [
+        {
+          "text": "CARTAN",
+          "x": 28,
+          "y": 20,
+          "width": 120,
+          "height": 60,
+          "bottom": 80,
+          "right": 148,
+          "font": "16px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Research",
+          "x": 505.890625,
+          "y": 28,
+          "width": 51.359375,
+          "height": 44,
+          "bottom": 72,
+          "right": 557.25,
+          "font": "12px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Laboratory",
+          "x": 583.25,
+          "y": 28,
+          "width": 57.375,
+          "height": 44,
+          "bottom": 72,
+          "right": 640.625,
+          "font": "12px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Evidence",
+          "x": 666.625,
+          "y": 28,
+          "width": 49.375,
+          "height": 44,
+          "bottom": 72,
+          "right": 716,
+          "font": "12px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "SPACE SYSTEMS / SERVICEABILITY",
+          "x": 46.078125,
+          "y": 306,
+          "width": 420,
+          "height": 14,
+          "bottom": 320,
+          "right": 466.078125,
+          "font": "9px",
+          "color": "rgb(212, 219, 223)"
+        },
+        {
+          "text": "The missioncontinues.",
+          "x": 46.078125,
+          "y": 346,
+          "width": 420,
+          "height": 88,
+          "bottom": 434,
+          "right": 466.078125,
+          "font": "42px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Spacecraft that can be maintained, upgraded, and useful for longer.",
+          "x": 46.078125,
+          "y": 459,
+          "width": 385,
+          "height": 54,
+          "bottom": 513,
+          "right": 431.078125,
+          "font": "18px",
+          "color": "rgb(238, 240, 241)"
+        },
+        {
+          "text": "Beginning with one question: what is safe to do when a module exchange is interrupted?",
+          "x": 46.078125,
+          "y": 533,
+          "width": 365,
+          "height": 46,
+          "bottom": 579,
+          "right": 411.078125,
+          "font": "13px",
+          "color": "rgb(200, 208, 213)"
+        },
+        {
+          "text": "Explore the architecture \u2197",
+          "x": 46.078125,
+          "y": 603,
+          "width": 200.296875,
+          "height": 56,
+          "bottom": 659,
+          "right": 246.375,
+          "font": "13px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Read the research \u2197",
+          "x": 46.078125,
+          "y": 661,
+          "width": 134.734375,
+          "height": 44,
+          "bottom": 705,
+          "right": 180.8125,
+          "font": "12px",
+          "color": "rgb(208, 215, 219)"
+        },
+        {
+          "text": "The longer horizon \u2197",
+          "x": 208.8125,
+          "y": 661,
+          "width": 136.0625,
+          "height": 44,
+          "bottom": 705,
+          "right": 344.875,
+          "font": "12px",
+          "color": "rgb(208, 215, 219)"
+        },
+        {
+          "text": "Watch the concept filmSILENT CONCEPT FILM / 00:21\u25b7",
+          "x": 499.40625,
+          "y": 892,
+          "width": 222.515625,
+          "height": 50,
+          "bottom": 942,
+          "right": 721.921875,
+          "font": "13px",
+          "color": "rgb(247, 248, 247)"
+        }
+      ],
+      "poster": "http://127.0.0.1:4178/assets/cartan/cartan-hero-poster.jpg",
+      "imageState": {
+        "complete": true,
+        "naturalWidth": 1920,
+        "hidden": false,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 768,
+          "height": 1024,
+          "bottom": 1024,
+          "right": 768
+        },
+        "parent": "<picture class=\"hero-poster\"><source media=\"(max-width: 767px)\" srcset=\"/assets/cartan/cartan-hero-poster-mobile.jpg\" width=\"720\" height=\"1280\"><img id=\"hero-poster\" src=\"/assets/cartan/cartan-hero-poster.jpg\" width=\"1920\" height=\"1080\" fetchpriority=\"high\" alt=\"Concept illustration of a service bay and gripped cartridge. Geometry and hardware are unverified.\"></picture>"
+      },
+      "visibility": {
+        "hidden": true,
+        "state": "hidden",
+        "focus": false
+      },
+      "videoDOM": "<video id=\"hero-video\" muted=\"\" playsinline=\"\" preload=\"metadata\" poster=\"/assets/cartan/cartan-hero-poster.jpg\" width=\"1280\" height=\"720\" aria-hidden=\"true\" tabindex=\"-1\" disablepictureinpicture=\"\"></video>",
+      "videoParent": "hero-picture",
+      "video": {
+        "attached": false,
+        "currentTime": 0,
+        "duration": null,
+        "muted": true,
+        "paused": true,
+        "loop": false,
+        "opacity": "0",
+        "transition": "0.25s"
+      },
+      "scrim": "linear-gradient(90deg, rgba(0, 0, 0, 0.88), rgba(0, 0, 0, 0.78) 65%, rgba(0, 0, 0, 0.45)), linear-gradient(0deg, rgb(3, 4, 5), rgba(3, 4, 5, 0.9) 12%, rgba(0, 0, 0, 0) 38%), linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.72) 12%, rgba(0, 0, 0, 0) 26%)",
+      "network": [
+        {
+          "url": "http://127.0.0.1:4178/qa/frame?mode=normal&review=1794827377293",
+          "bytes": 18379
+        },
+        {
+          "url": "http://127.0.0.1:4178/style.css",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/app.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/assets/cartan-logo.png",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/assets/cartan/cartan-hero-poster.jpg",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/adapter.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/contract-adapter.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/hero-controller.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/vendor/cartan/v1/fixture.json",
+          "bytes": 300
+        }
+      ],
+      "errors": [],
+      "sourceAttachments": [],
+      "requestContexts": [],
+      "events": [],
+      "cls": 0,
+      "capturedAt": "2026-11-16T11:09:38.691Z",
+      "snapshotVersion": 2
+    },
+    {
+      "kind": "matrix-layout",
+      "viewport": [
+        390,
+        844
+      ],
+      "mode": "normal",
+      "phase": "static",
+      "hero": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 843.984375,
+        "bottom": 843.984375,
+        "right": 390
+      },
+      "overflow": false,
+      "copyAndControlsWithinHero": true,
+      "text": [
+        {
+          "text": "CARTAN",
+          "x": 18,
+          "y": 17,
+          "width": 92,
+          "height": 46,
+          "bottom": 63,
+          "right": 110,
+          "font": "16px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Research",
+          "x": 173.0625,
+          "y": 18,
+          "width": 47.078125,
+          "height": 44,
+          "bottom": 62,
+          "right": 220.140625,
+          "font": "11px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Laboratory",
+          "x": 239.140625,
+          "y": 18,
+          "width": 52.59375,
+          "height": 44,
+          "bottom": 62,
+          "right": 291.734375,
+          "font": "11px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Evidence",
+          "x": 310.734375,
+          "y": 18,
+          "width": 45.265625,
+          "height": 44,
+          "bottom": 62,
+          "right": 356,
+          "font": "11px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "SPACE SYSTEMS / SERVICEABILITY",
+          "x": 24,
+          "y": 183.984375,
+          "width": 342,
+          "height": 14,
+          "bottom": 197.984375,
+          "right": 366,
+          "font": "9px",
+          "color": "rgb(212, 219, 223)"
+        },
+        {
+          "text": "The missioncontinues.",
+          "x": 24,
+          "y": 219.984375,
+          "width": 342,
+          "height": 84,
+          "bottom": 303.984375,
+          "right": 366,
+          "font": "40px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Spacecraft that can be maintained, upgraded, and useful for longer.",
+          "x": 24,
+          "y": 325.984375,
+          "width": 320,
+          "height": 52,
+          "bottom": 377.984375,
+          "right": 344,
+          "font": "17px",
+          "color": "rgb(238, 240, 241)"
+        },
+        {
+          "text": "Beginning with one question: what is safe to do when a module exchange is interrupted?",
+          "x": 24,
+          "y": 397.984375,
+          "width": 340,
+          "height": 46,
+          "bottom": 443.984375,
+          "right": 364,
+          "font": "13px",
+          "color": "rgb(200, 208, 213)"
+        },
+        {
+          "text": "Explore the architecture \u2197",
+          "x": 24,
+          "y": 467.984375,
+          "width": 200.296875,
+          "height": 56,
+          "bottom": 523.984375,
+          "right": 224.296875,
+          "font": "13px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Read the research \u2197",
+          "x": 24,
+          "y": 525.984375,
+          "width": 134.734375,
+          "height": 44,
+          "bottom": 569.984375,
+          "right": 158.734375,
+          "font": "12px",
+          "color": "rgb(208, 215, 219)"
+        },
+        {
+          "text": "The longer horizon \u2197",
+          "x": 186.734375,
+          "y": 525.984375,
+          "width": 136.0625,
+          "height": 44,
+          "bottom": 569.984375,
+          "right": 322.796875,
+          "font": "12px",
+          "color": "rgb(208, 215, 219)"
+        },
+        {
+          "text": "Watch the concept filmSILENT CONCEPT FILM / 00:21\u25b7",
+          "x": 24,
+          "y": 723.96875,
+          "width": 342,
+          "height": 50,
+          "bottom": 773.96875,
+          "right": 366,
+          "font": "12px",
+          "color": "rgb(247, 248, 247)"
+        }
+      ],
+      "poster": "http://127.0.0.1:4178/assets/cartan/cartan-hero-poster-mobile.jpg",
+      "imageState": {
+        "complete": true,
+        "naturalWidth": 720,
+        "hidden": false,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 843.984375,
+          "bottom": 843.984375,
+          "right": 390
+        },
+        "parent": "<picture class=\"hero-poster\"><source media=\"(max-width: 767px)\" srcset=\"/assets/cartan/cartan-hero-poster-mobile.jpg\" width=\"720\" height=\"1280\"><img id=\"hero-poster\" src=\"/assets/cartan/cartan-hero-poster.jpg\" width=\"1920\" height=\"1080\" fetchpriority=\"high\" alt=\"Concept illustration of a service bay and gripped cartridge. Geometry and hardware are unverified.\"></picture>"
+      },
+      "visibility": {
+        "hidden": true,
+        "state": "hidden",
+        "focus": false
+      },
+      "videoDOM": "<video id=\"hero-video\" muted=\"\" playsinline=\"\" preload=\"metadata\" poster=\"/assets/cartan/cartan-hero-poster.jpg\" width=\"1280\" height=\"720\" aria-hidden=\"true\" tabindex=\"-1\" disablepictureinpicture=\"\"></video>",
+      "videoParent": "hero-picture",
+      "video": {
+        "attached": false,
+        "currentTime": 0,
+        "duration": null,
+        "muted": true,
+        "paused": true,
+        "loop": false,
+        "opacity": "0",
+        "transition": "0.25s"
+      },
+      "scrim": "linear-gradient(90deg, rgba(0, 0, 0, 0.87), rgba(0, 0, 0, 0.75) 75%, rgba(0, 0, 0, 0.72)), linear-gradient(0deg, rgb(3, 4, 5) 0%, rgba(3, 4, 5, 0.85) 18%, rgba(0, 0, 0, 0) 50%), linear-gradient(rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0) 28%)",
+      "network": [
+        {
+          "url": "http://127.0.0.1:4178/qa/frame?mode=normal&review=1794827378714",
+          "bytes": 18379
+        },
+        {
+          "url": "http://127.0.0.1:4178/style.css",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/app.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/assets/cartan-logo.png",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/assets/cartan/cartan-hero-poster-mobile.jpg",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/assets/cartan/cartan-hero-poster.jpg",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/adapter.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/contract-adapter.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/hero-controller.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/vendor/cartan/v1/fixture.json",
+          "bytes": 300
+        }
+      ],
+      "errors": [],
+      "sourceAttachments": [],
+      "requestContexts": [],
+      "events": [],
+      "cls": 0,
+      "capturedAt": "2026-11-16T11:09:40.070Z",
+      "snapshotVersion": 2
+    },
+    {
+      "kind": "matrix-layout",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "reduced",
+      "phase": "static",
+      "hero": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900,
+        "bottom": 900,
+        "right": 1440
+      },
+      "overflow": false,
+      "copyAndControlsWithinHero": true,
+      "text": [
+        {
+          "text": "CARTAN",
+          "x": 64.796875,
+          "y": 20,
+          "width": 120,
+          "height": 60,
+          "bottom": 80,
+          "right": 184.796875,
+          "font": "16px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Research",
+          "x": 597.125,
+          "y": 28,
+          "width": 51.359375,
+          "height": 44,
+          "bottom": 72,
+          "right": 648.484375,
+          "font": "12px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Laboratory",
+          "x": 678.484375,
+          "y": 28,
+          "width": 57.375,
+          "height": 44,
+          "bottom": 72,
+          "right": 735.859375,
+          "font": "12px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Evidence",
+          "x": 765.859375,
+          "y": 28,
+          "width": 49.375,
+          "height": 44,
+          "bottom": 72,
+          "right": 815.234375,
+          "font": "12px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "The longer horizon \u2197",
+          "x": 1227.5625,
+          "y": 28,
+          "width": 147.640625,
+          "height": 44,
+          "bottom": 72,
+          "right": 1375.203125,
+          "font": "10px",
+          "color": "rgb(182, 190, 195)"
+        },
+        {
+          "text": "SPACE SYSTEMS / SERVICEABILITY",
+          "x": 86.390625,
+          "y": 227,
+          "width": 440,
+          "height": 14,
+          "bottom": 241,
+          "right": 526.390625,
+          "font": "9px",
+          "color": "rgb(212, 219, 223)"
+        },
+        {
+          "text": "The missioncontinues.",
+          "x": 86.390625,
+          "y": 267,
+          "width": 440,
+          "height": 122,
+          "bottom": 389,
+          "right": 526.390625,
+          "font": "57.599998px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Spacecraft that can be maintained, upgraded, and useful for longer.",
+          "x": 86.390625,
+          "y": 414,
+          "width": 385,
+          "height": 54,
+          "bottom": 468,
+          "right": 471.390625,
+          "font": "18px",
+          "color": "rgb(238, 240, 241)"
+        },
+        {
+          "text": "Beginning with one question: what is safe to do when a module exchange is interrupted?",
+          "x": 86.390625,
+          "y": 488,
+          "width": 365,
+          "height": 46,
+          "bottom": 534,
+          "right": 451.390625,
+          "font": "13px",
+          "color": "rgb(200, 208, 213)"
+        },
+        {
+          "text": "Explore the architecture \u2197",
+          "x": 86.390625,
+          "y": 558,
+          "width": 200.296875,
+          "height": 56,
+          "bottom": 614,
+          "right": 286.6875,
+          "font": "13px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Read the research \u2197",
+          "x": 86.390625,
+          "y": 616,
+          "width": 134.734375,
+          "height": 44,
+          "bottom": 660,
+          "right": 221.125,
+          "font": "12px",
+          "color": "rgb(208, 215, 219)"
+        },
+        {
+          "text": "The longer horizon \u2197",
+          "x": 249.125,
+          "y": 616,
+          "width": 136.0625,
+          "height": 44,
+          "bottom": 660,
+          "right": 385.1875,
+          "font": "12px",
+          "color": "rgb(208, 215, 219)"
+        },
+        {
+          "text": "Watch the concept filmSILENT CONCEPT FILM / 00:21\u25b7",
+          "x": 1131.09375,
+          "y": 768,
+          "width": 222.515625,
+          "height": 50,
+          "bottom": 818,
+          "right": 1353.609375,
+          "font": "13px",
+          "color": "rgb(247, 248, 247)"
+        }
+      ],
+      "poster": "http://127.0.0.1:4178/assets/cartan/cartan-hero-poster.jpg",
+      "imageState": {
+        "complete": true,
+        "naturalWidth": 1920,
+        "hidden": false,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900,
+          "bottom": 900,
+          "right": 1440
+        },
+        "parent": "<picture class=\"hero-poster\"><source media=\"(max-width: 767px)\" srcset=\"/assets/cartan/cartan-hero-poster-mobile.jpg\" width=\"720\" height=\"1280\"><img id=\"hero-poster\" src=\"/assets/cartan/cartan-hero-poster.jpg\" width=\"1920\" height=\"1080\" fetchpriority=\"high\" alt=\"Concept illustration of a service bay and gripped cartridge. Geometry and hardware are unverified.\"></picture>"
+      },
+      "visibility": {
+        "hidden": true,
+        "state": "hidden",
+        "focus": false
+      },
+      "videoDOM": "<video id=\"hero-video\" muted=\"\" playsinline=\"\" preload=\"metadata\" poster=\"/assets/cartan/cartan-hero-poster.jpg\" width=\"1280\" height=\"720\" aria-hidden=\"true\" tabindex=\"-1\" disablepictureinpicture=\"\"></video>",
+      "videoParent": "hero-picture",
+      "video": {
+        "attached": false,
+        "currentTime": 0,
+        "duration": null,
+        "muted": true,
+        "paused": true,
+        "loop": false,
+        "opacity": "0",
+        "transition": "0.25s"
+      },
+      "scrim": "linear-gradient(90deg, rgba(0, 0, 0, 0.88) 0%, rgba(0, 0, 0, 0.82) 38%, rgba(0, 0, 0, 0.72) 54%, rgba(0, 0, 0, 0.45) 67%, rgba(0, 0, 0, 0.12) 100%), linear-gradient(0deg, rgb(3, 4, 5) 0%, rgba(3, 4, 5, 0.9) 12%, rgba(0, 0, 0, 0) 38%), linear-gradient(rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.72) 12%, rgba(0, 0, 0, 0) 26%)",
+      "network": [
+        {
+          "url": "http://127.0.0.1:4178/qa/frame?mode=reduced&review=1794827380095",
+          "bytes": 18380
+        },
+        {
+          "url": "http://127.0.0.1:4178/style.css",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/app.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/assets/cartan-logo.png",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/assets/cartan/cartan-hero-poster.jpg",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/adapter.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/contract-adapter.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/hero-controller.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/vendor/cartan/v1/fixture.json",
+          "bytes": 300
+        }
+      ],
+      "errors": [],
+      "sourceAttachments": [],
+      "requestContexts": [],
+      "events": [],
+      "cls": 0,
+      "capturedAt": "2026-11-16T11:09:41.412Z",
+      "snapshotVersion": 2
+    },
+    {
+      "kind": "matrix-layout",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "save-data",
+      "phase": "static",
+      "hero": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900,
+        "bottom": 900,
+        "right": 1440
+      },
+      "overflow": false,
+      "copyAndControlsWithinHero": true,
+      "text": [
+        {
+          "text": "CARTAN",
+          "x": 64.796875,
+          "y": 20,
+          "width": 120,
+          "height": 60,
+          "bottom": 80,
+          "right": 184.796875,
+          "font": "16px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Research",
+          "x": 597.125,
+          "y": 28,
+          "width": 51.359375,
+          "height": 44,
+          "bottom": 72,
+          "right": 648.484375,
+          "font": "12px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Laboratory",
+          "x": 678.484375,
+          "y": 28,
+          "width": 57.375,
+          "height": 44,
+          "bottom": 72,
+          "right": 735.859375,
+          "font": "12px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Evidence",
+          "x": 765.859375,
+          "y": 28,
+          "width": 49.375,
+          "height": 44,
+          "bottom": 72,
+          "right": 815.234375,
+          "font": "12px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "The longer horizon \u2197",
+          "x": 1227.5625,
+          "y": 28,
+          "width": 147.640625,
+          "height": 44,
+          "bottom": 72,
+          "right": 1375.203125,
+          "font": "10px",
+          "color": "rgb(182, 190, 195)"
+        },
+        {
+          "text": "SPACE SYSTEMS / SERVICEABILITY",
+          "x": 86.390625,
+          "y": 227,
+          "width": 440,
+          "height": 14,
+          "bottom": 241,
+          "right": 526.390625,
+          "font": "9px",
+          "color": "rgb(212, 219, 223)"
+        },
+        {
+          "text": "The missioncontinues.",
+          "x": 86.390625,
+          "y": 267,
+          "width": 440,
+          "height": 122,
+          "bottom": 389,
+          "right": 526.390625,
+          "font": "57.599998px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Spacecraft that can be maintained, upgraded, and useful for longer.",
+          "x": 86.390625,
+          "y": 414,
+          "width": 385,
+          "height": 54,
+          "bottom": 468,
+          "right": 471.390625,
+          "font": "18px",
+          "color": "rgb(238, 240, 241)"
+        },
+        {
+          "text": "Beginning with one question: what is safe to do when a module exchange is interrupted?",
+          "x": 86.390625,
+          "y": 488,
+          "width": 365,
+          "height": 46,
+          "bottom": 534,
+          "right": 451.390625,
+          "font": "13px",
+          "color": "rgb(200, 208, 213)"
+        },
+        {
+          "text": "Explore the architecture \u2197",
+          "x": 86.390625,
+          "y": 558,
+          "width": 200.296875,
+          "height": 56,
+          "bottom": 614,
+          "right": 286.6875,
+          "font": "13px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Read the research \u2197",
+          "x": 86.390625,
+          "y": 616,
+          "width": 134.734375,
+          "height": 44,
+          "bottom": 660,
+          "right": 221.125,
+          "font": "12px",
+          "color": "rgb(208, 215, 219)"
+        },
+        {
+          "text": "The longer horizon \u2197",
+          "x": 249.125,
+          "y": 616,
+          "width": 136.0625,
+          "height": 44,
+          "bottom": 660,
+          "right": 385.1875,
+          "font": "12px",
+          "color": "rgb(208, 215, 219)"
+        },
+        {
+          "text": "Watch the concept filmSILENT CONCEPT FILM / 00:21\u25b7",
+          "x": 1131.09375,
+          "y": 768,
+          "width": 222.515625,
+          "height": 50,
+          "bottom": 818,
+          "right": 1353.609375,
+          "font": "13px",
+          "color": "rgb(247, 248, 247)"
+        }
+      ],
+      "poster": "http://127.0.0.1:4178/assets/cartan/cartan-hero-poster.jpg",
+      "imageState": {
+        "complete": true,
+        "naturalWidth": 1920,
+        "hidden": false,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900,
+          "bottom": 900,
+          "right": 1440
+        },
+        "parent": "<picture class=\"hero-poster\"><source media=\"(max-width: 767px)\" srcset=\"/assets/cartan/cartan-hero-poster-mobile.jpg\" width=\"720\" height=\"1280\"><img id=\"hero-poster\" src=\"/assets/cartan/cartan-hero-poster.jpg\" width=\"1920\" height=\"1080\" fetchpriority=\"high\" alt=\"Concept illustration of a service bay and gripped cartridge. Geometry and hardware are unverified.\"></picture>"
+      },
+      "visibility": {
+        "hidden": true,
+        "state": "hidden",
+        "focus": false
+      },
+      "videoDOM": "<video id=\"hero-video\" muted=\"\" playsinline=\"\" preload=\"metadata\" poster=\"/assets/cartan/cartan-hero-poster.jpg\" width=\"1280\" height=\"720\" aria-hidden=\"true\" tabindex=\"-1\" disablepictureinpicture=\"\"></video>",
+      "videoParent": "hero-picture",
+      "video": {
+        "attached": false,
+        "currentTime": 0,
+        "duration": null,
+        "muted": true,
+        "paused": true,
+        "loop": false,
+        "opacity": "0",
+        "transition": "0.25s"
+      },
+      "scrim": "linear-gradient(90deg, rgba(0, 0, 0, 0.88) 0%, rgba(0, 0, 0, 0.82) 38%, rgba(0, 0, 0, 0.72) 54%, rgba(0, 0, 0, 0.45) 67%, rgba(0, 0, 0, 0.12) 100%), linear-gradient(0deg, rgb(3, 4, 5) 0%, rgba(3, 4, 5, 0.9) 12%, rgba(0, 0, 0, 0) 38%), linear-gradient(rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.72) 12%, rgba(0, 0, 0, 0) 26%)",
+      "network": [
+        {
+          "url": "http://127.0.0.1:4178/qa/frame?mode=save-data&review=1794827381432",
+          "bytes": 18382
+        },
+        {
+          "url": "http://127.0.0.1:4178/style.css",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/app.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/assets/cartan-logo.png",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/assets/cartan/cartan-hero-poster.jpg",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/adapter.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/contract-adapter.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/hero-controller.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/vendor/cartan/v1/fixture.json",
+          "bytes": 300
+        }
+      ],
+      "errors": [],
+      "sourceAttachments": [],
+      "requestContexts": [],
+      "events": [],
+      "cls": 0,
+      "capturedAt": "2026-11-16T11:09:42.821Z",
+      "snapshotVersion": 2
+    },
+    {
+      "kind": "matrix-layout",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "denied",
+      "phase": "poster",
+      "hero": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900,
+        "bottom": 900,
+        "right": 1440
+      },
+      "overflow": false,
+      "copyAndControlsWithinHero": true,
+      "text": [
+        {
+          "text": "CARTAN",
+          "x": 64.796875,
+          "y": 20,
+          "width": 120,
+          "height": 60,
+          "bottom": 80,
+          "right": 184.796875,
+          "font": "16px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Research",
+          "x": 597.125,
+          "y": 28,
+          "width": 51.359375,
+          "height": 44,
+          "bottom": 72,
+          "right": 648.484375,
+          "font": "12px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Laboratory",
+          "x": 678.484375,
+          "y": 28,
+          "width": 57.375,
+          "height": 44,
+          "bottom": 72,
+          "right": 735.859375,
+          "font": "12px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Evidence",
+          "x": 765.859375,
+          "y": 28,
+          "width": 49.375,
+          "height": 44,
+          "bottom": 72,
+          "right": 815.234375,
+          "font": "12px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "The longer horizon \u2197",
+          "x": 1227.5625,
+          "y": 28,
+          "width": 147.640625,
+          "height": 44,
+          "bottom": 72,
+          "right": 1375.203125,
+          "font": "10px",
+          "color": "rgb(182, 190, 195)"
+        },
+        {
+          "text": "SPACE SYSTEMS / SERVICEABILITY",
+          "x": 86.390625,
+          "y": 227,
+          "width": 440,
+          "height": 14,
+          "bottom": 241,
+          "right": 526.390625,
+          "font": "9px",
+          "color": "rgb(212, 219, 223)"
+        },
+        {
+          "text": "The missioncontinues.",
+          "x": 86.390625,
+          "y": 267,
+          "width": 440,
+          "height": 122,
+          "bottom": 389,
+          "right": 526.390625,
+          "font": "57.599998px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Spacecraft that can be maintained, upgraded, and useful for longer.",
+          "x": 86.390625,
+          "y": 414,
+          "width": 385,
+          "height": 54,
+          "bottom": 468,
+          "right": 471.390625,
+          "font": "18px",
+          "color": "rgb(238, 240, 241)"
+        },
+        {
+          "text": "Beginning with one question: what is safe to do when a module exchange is interrupted?",
+          "x": 86.390625,
+          "y": 488,
+          "width": 365,
+          "height": 46,
+          "bottom": 534,
+          "right": 451.390625,
+          "font": "13px",
+          "color": "rgb(200, 208, 213)"
+        },
+        {
+          "text": "Explore the architecture \u2197",
+          "x": 86.390625,
+          "y": 558,
+          "width": 200.296875,
+          "height": 56,
+          "bottom": 614,
+          "right": 286.6875,
+          "font": "13px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Read the research \u2197",
+          "x": 86.390625,
+          "y": 616,
+          "width": 134.734375,
+          "height": 44,
+          "bottom": 660,
+          "right": 221.125,
+          "font": "12px",
+          "color": "rgb(208, 215, 219)"
+        },
+        {
+          "text": "The longer horizon \u2197",
+          "x": 249.125,
+          "y": 616,
+          "width": 136.0625,
+          "height": 44,
+          "bottom": 660,
+          "right": 385.1875,
+          "font": "12px",
+          "color": "rgb(208, 215, 219)"
+        },
+        {
+          "text": "Play motion \u25b7",
+          "x": 985.09375,
+          "y": 771,
+          "width": 110,
+          "height": 44,
+          "bottom": 815,
+          "right": 1095.09375,
+          "font": "11px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Watch the concept filmSILENT CONCEPT FILM / 00:21\u25b7",
+          "x": 1131.09375,
+          "y": 768,
+          "width": 222.515625,
+          "height": 50,
+          "bottom": 818,
+          "right": 1353.609375,
+          "font": "13px",
+          "color": "rgb(247, 248, 247)"
+        }
+      ],
+      "poster": "http://127.0.0.1:4178/assets/cartan/cartan-hero-poster.jpg",
+      "imageState": {
+        "complete": true,
+        "naturalWidth": 1920,
+        "hidden": false,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900,
+          "bottom": 900,
+          "right": 1440
+        },
+        "parent": "<picture class=\"hero-poster\"><source media=\"(max-width: 767px)\" srcset=\"/assets/cartan/cartan-hero-poster-mobile.jpg\" width=\"720\" height=\"1280\"><img id=\"hero-poster\" src=\"/assets/cartan/cartan-hero-poster.jpg\" width=\"1920\" height=\"1080\" fetchpriority=\"high\" alt=\"Concept illustration of a service bay and gripped cartridge. Geometry and hardware are unverified.\"></picture>"
+      },
+      "visibility": {
+        "hidden": true,
+        "state": "hidden",
+        "focus": false
+      },
+      "videoDOM": "<video id=\"hero-video\" muted=\"\" playsinline=\"\" preload=\"metadata\" poster=\"/assets/cartan/cartan-hero-poster.jpg\" width=\"1280\" height=\"720\" aria-hidden=\"true\" tabindex=\"-1\" disablepictureinpicture=\"\"></video>",
+      "videoParent": "hero-picture",
+      "video": {
+        "attached": false,
+        "currentTime": 0,
+        "duration": null,
+        "muted": true,
+        "paused": true,
+        "loop": false,
+        "opacity": "0",
+        "transition": "0.25s"
+      },
+      "scrim": "linear-gradient(90deg, rgba(0, 0, 0, 0.88) 0%, rgba(0, 0, 0, 0.82) 38%, rgba(0, 0, 0, 0.72) 54%, rgba(0, 0, 0, 0.45) 67%, rgba(0, 0, 0, 0.12) 100%), linear-gradient(0deg, rgb(3, 4, 5) 0%, rgba(3, 4, 5, 0.9) 12%, rgba(0, 0, 0, 0) 38%), linear-gradient(rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.72) 12%, rgba(0, 0, 0, 0) 26%)",
+      "network": [
+        {
+          "url": "http://127.0.0.1:4178/qa/frame?mode=denied&review=1794827382839",
+          "bytes": 18379
+        },
+        {
+          "url": "http://127.0.0.1:4178/style.css",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/app.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/assets/cartan-logo.png",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/assets/cartan/cartan-hero-poster.jpg",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/adapter.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/contract-adapter.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/hero-controller.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/vendor/cartan/v1/fixture.json",
+          "bytes": 300
+        }
+      ],
+      "errors": [],
+      "sourceAttachments": [],
+      "requestContexts": [],
+      "events": [],
+      "cls": 0,
+      "capturedAt": "2026-11-16T11:09:44.216Z",
+      "snapshotVersion": 2
+    },
+    {
+      "kind": "matrix-layout",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "missing",
+      "phase": "poster",
+      "hero": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900,
+        "bottom": 900,
+        "right": 1440
+      },
+      "overflow": false,
+      "copyAndControlsWithinHero": true,
+      "text": [
+        {
+          "text": "CARTAN",
+          "x": 64.796875,
+          "y": 20,
+          "width": 120,
+          "height": 60,
+          "bottom": 80,
+          "right": 184.796875,
+          "font": "16px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Research",
+          "x": 597.125,
+          "y": 28,
+          "width": 51.359375,
+          "height": 44,
+          "bottom": 72,
+          "right": 648.484375,
+          "font": "12px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Laboratory",
+          "x": 678.484375,
+          "y": 28,
+          "width": 57.375,
+          "height": 44,
+          "bottom": 72,
+          "right": 735.859375,
+          "font": "12px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Evidence",
+          "x": 765.859375,
+          "y": 28,
+          "width": 49.375,
+          "height": 44,
+          "bottom": 72,
+          "right": 815.234375,
+          "font": "12px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "The longer horizon \u2197",
+          "x": 1227.5625,
+          "y": 28,
+          "width": 147.640625,
+          "height": 44,
+          "bottom": 72,
+          "right": 1375.203125,
+          "font": "10px",
+          "color": "rgb(182, 190, 195)"
+        },
+        {
+          "text": "SPACE SYSTEMS / SERVICEABILITY",
+          "x": 86.390625,
+          "y": 227,
+          "width": 440,
+          "height": 14,
+          "bottom": 241,
+          "right": 526.390625,
+          "font": "9px",
+          "color": "rgb(212, 219, 223)"
+        },
+        {
+          "text": "The missioncontinues.",
+          "x": 86.390625,
+          "y": 267,
+          "width": 440,
+          "height": 122,
+          "bottom": 389,
+          "right": 526.390625,
+          "font": "57.599998px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Spacecraft that can be maintained, upgraded, and useful for longer.",
+          "x": 86.390625,
+          "y": 414,
+          "width": 385,
+          "height": 54,
+          "bottom": 468,
+          "right": 471.390625,
+          "font": "18px",
+          "color": "rgb(238, 240, 241)"
+        },
+        {
+          "text": "Beginning with one question: what is safe to do when a module exchange is interrupted?",
+          "x": 86.390625,
+          "y": 488,
+          "width": 365,
+          "height": 46,
+          "bottom": 534,
+          "right": 451.390625,
+          "font": "13px",
+          "color": "rgb(200, 208, 213)"
+        },
+        {
+          "text": "Explore the architecture \u2197",
+          "x": 86.390625,
+          "y": 558,
+          "width": 200.296875,
+          "height": 56,
+          "bottom": 614,
+          "right": 286.6875,
+          "font": "13px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Read the research \u2197",
+          "x": 86.390625,
+          "y": 616,
+          "width": 134.734375,
+          "height": 44,
+          "bottom": 660,
+          "right": 221.125,
+          "font": "12px",
+          "color": "rgb(208, 215, 219)"
+        },
+        {
+          "text": "The longer horizon \u2197",
+          "x": 249.125,
+          "y": 616,
+          "width": 136.0625,
+          "height": 44,
+          "bottom": 660,
+          "right": 385.1875,
+          "font": "12px",
+          "color": "rgb(208, 215, 219)"
+        },
+        {
+          "text": "Play motion \u25b7",
+          "x": 985.09375,
+          "y": 771,
+          "width": 110,
+          "height": 44,
+          "bottom": 815,
+          "right": 1095.09375,
+          "font": "11px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Watch the concept filmSILENT CONCEPT FILM / 00:21\u25b7",
+          "x": 1131.09375,
+          "y": 768,
+          "width": 222.515625,
+          "height": 50,
+          "bottom": 818,
+          "right": 1353.609375,
+          "font": "13px",
+          "color": "rgb(247, 248, 247)"
+        }
+      ],
+      "poster": "http://127.0.0.1:4178/assets/cartan/cartan-hero-poster.jpg",
+      "imageState": {
+        "complete": true,
+        "naturalWidth": 1920,
+        "hidden": false,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900,
+          "bottom": 900,
+          "right": 1440
+        },
+        "parent": "<picture class=\"hero-poster\"><source media=\"(max-width: 767px)\" srcset=\"/assets/cartan/cartan-hero-poster-mobile.jpg\" width=\"720\" height=\"1280\"><img id=\"hero-poster\" src=\"/assets/cartan/cartan-hero-poster.jpg\" width=\"1920\" height=\"1080\" fetchpriority=\"high\" alt=\"Concept illustration of a service bay and gripped cartridge. Geometry and hardware are unverified.\"></picture>"
+      },
+      "visibility": {
+        "hidden": true,
+        "state": "hidden",
+        "focus": false
+      },
+      "videoDOM": "<video id=\"hero-video\" muted=\"\" playsinline=\"\" preload=\"metadata\" poster=\"/assets/cartan/cartan-hero-poster.jpg\" width=\"1280\" height=\"720\" aria-hidden=\"true\" tabindex=\"-1\" disablepictureinpicture=\"\"></video>",
+      "videoParent": "hero-picture",
+      "video": {
+        "attached": false,
+        "currentTime": 0,
+        "duration": null,
+        "muted": true,
+        "paused": true,
+        "loop": false,
+        "opacity": "0",
+        "transition": "0.25s"
+      },
+      "scrim": "linear-gradient(90deg, rgba(0, 0, 0, 0.88) 0%, rgba(0, 0, 0, 0.82) 38%, rgba(0, 0, 0, 0.72) 54%, rgba(0, 0, 0, 0.45) 67%, rgba(0, 0, 0, 0.12) 100%), linear-gradient(0deg, rgb(3, 4, 5) 0%, rgba(3, 4, 5, 0.9) 12%, rgba(0, 0, 0, 0) 38%), linear-gradient(rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.72) 12%, rgba(0, 0, 0, 0) 26%)",
+      "network": [
+        {
+          "url": "http://127.0.0.1:4178/qa/frame?mode=missing&review=1794827384231",
+          "bytes": 18380
+        },
+        {
+          "url": "http://127.0.0.1:4178/style.css",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/app.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/assets/cartan-logo.png",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/assets/cartan/cartan-hero-poster.jpg",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/adapter.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/contract-adapter.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/hero-controller.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/vendor/cartan/v1/fixture.json",
+          "bytes": 300
+        }
+      ],
+      "errors": [],
+      "sourceAttachments": [],
+      "requestContexts": [],
+      "events": [],
+      "cls": 0,
+      "capturedAt": "2026-11-16T11:09:45.633Z",
+      "snapshotVersion": 2
+    },
+    {
+      "kind": "controls-and-routes",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "normal",
+      "checks": [
+        {
+          "name": "Pause control pauses media",
+          "pass": true
+        },
+        {
+          "name": "Return does not resume or reset user pause",
+          "pass": true
+        },
+        {
+          "name": "Route question",
+          "pass": true
+        },
+        {
+          "name": "Route laboratory",
+          "pass": true
+        },
+        {
+          "name": "Route evidence",
+          "pass": true
+        },
+        {
+          "name": "Route vision",
+          "pass": true
+        },
+        {
+          "name": "Film opens paused",
+          "pass": true
+        },
+        {
+          "name": "Dialog initial focus",
+          "pass": true
+        },
+        {
+          "name": "Disclaimer is HTML",
+          "pass": true
+        },
+        {
+          "name": "Film close restores focus",
+          "pass": true
+        },
+        {
+          "name": "Film close removes source",
+          "pass": true
+        }
+      ],
+      "phase": "loading",
+      "hero": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900,
+        "bottom": 900,
+        "right": 1440
+      },
+      "overflow": false,
+      "copyAndControlsWithinHero": true,
+      "text": [
+        {
+          "text": "CARTAN",
+          "x": 64.796875,
+          "y": 20,
+          "width": 120,
+          "height": 60,
+          "bottom": 80,
+          "right": 184.796875,
+          "font": "16px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Research",
+          "x": 597.125,
+          "y": 28,
+          "width": 51.359375,
+          "height": 44,
+          "bottom": 72,
+          "right": 648.484375,
+          "font": "12px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Laboratory",
+          "x": 678.484375,
+          "y": 28,
+          "width": 57.375,
+          "height": 44,
+          "bottom": 72,
+          "right": 735.859375,
+          "font": "12px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Evidence",
+          "x": 765.859375,
+          "y": 28,
+          "width": 49.375,
+          "height": 44,
+          "bottom": 72,
+          "right": 815.234375,
+          "font": "12px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "The longer horizon \u2197",
+          "x": 1227.5625,
+          "y": 28,
+          "width": 147.640625,
+          "height": 44,
+          "bottom": 72,
+          "right": 1375.203125,
+          "font": "10px",
+          "color": "rgb(182, 190, 195)"
+        },
+        {
+          "text": "SPACE SYSTEMS / SERVICEABILITY",
+          "x": 86.390625,
+          "y": 227,
+          "width": 440,
+          "height": 14,
+          "bottom": 241,
+          "right": 526.390625,
+          "font": "9px",
+          "color": "rgb(212, 219, 223)"
+        },
+        {
+          "text": "The missioncontinues.",
+          "x": 86.390625,
+          "y": 267,
+          "width": 440,
+          "height": 122,
+          "bottom": 389,
+          "right": 526.390625,
+          "font": "57.599998px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Spacecraft that can be maintained, upgraded, and useful for longer.",
+          "x": 86.390625,
+          "y": 414,
+          "width": 385,
+          "height": 54,
+          "bottom": 468,
+          "right": 471.390625,
+          "font": "18px",
+          "color": "rgb(238, 240, 241)"
+        },
+        {
+          "text": "Beginning with one question: what is safe to do when a module exchange is interrupted?",
+          "x": 86.390625,
+          "y": 488,
+          "width": 365,
+          "height": 46,
+          "bottom": 534,
+          "right": 451.390625,
+          "font": "13px",
+          "color": "rgb(200, 208, 213)"
+        },
+        {
+          "text": "Explore the architecture \u2197",
+          "x": 86.390625,
+          "y": 558,
+          "width": 200.296875,
+          "height": 56,
+          "bottom": 614,
+          "right": 286.6875,
+          "font": "13px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Read the research \u2197",
+          "x": 86.390625,
+          "y": 616,
+          "width": 134.734375,
+          "height": 44,
+          "bottom": 660,
+          "right": 221.125,
+          "font": "12px",
+          "color": "rgb(208, 215, 219)"
+        },
+        {
+          "text": "The longer horizon \u2197",
+          "x": 249.125,
+          "y": 616,
+          "width": 136.0625,
+          "height": 44,
+          "bottom": 660,
+          "right": 385.1875,
+          "font": "12px",
+          "color": "rgb(208, 215, 219)"
+        },
+        {
+          "text": "Pause motion \u2161",
+          "x": 985.09375,
+          "y": 771,
+          "width": 110,
+          "height": 44,
+          "bottom": 815,
+          "right": 1095.09375,
+          "font": "11px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Watch the concept filmSILENT CONCEPT FILM / 00:21\u25b7",
+          "x": 1131.09375,
+          "y": 768,
+          "width": 222.515625,
+          "height": 50,
+          "bottom": 818,
+          "right": 1353.609375,
+          "font": "13px",
+          "color": "rgb(7, 9, 11)"
+        }
+      ],
+      "poster": "http://127.0.0.1:4178/assets/cartan/cartan-hero-poster.jpg",
+      "imageState": {
+        "complete": true,
+        "naturalWidth": 1920,
+        "hidden": false,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900,
+          "bottom": 900,
+          "right": 1440
+        },
+        "parent": "<picture class=\"hero-poster\"><source media=\"(max-width: 767px)\" srcset=\"/assets/cartan/cartan-hero-poster-mobile.jpg\" width=\"720\" height=\"1280\"><img id=\"hero-poster\" src=\"/assets/cartan/cartan-hero-poster.jpg\" width=\"1920\" height=\"1080\" fetchpriority=\"high\" alt=\"Concept illustration of a service bay and gripped cartridge. Geometry and hardware are unverified.\"></picture>"
+      },
+      "visibility": {
+        "hidden": false,
+        "state": "visible",
+        "focus": true
+      },
+      "videoDOM": "<video id=\"hero-video\" muted=\"\" playsinline=\"\" preload=\"metadata\" poster=\"/assets/cartan/cartan-hero-poster.jpg\" width=\"1280\" height=\"720\" aria-hidden=\"true\" tabindex=\"-1\" disablepictureinpicture=\"\" autoplay=\"\" src=\"/assets/cartan/cartan-hero-desktop-720p.mp4\"></video>",
+      "videoParent": "hero-picture",
+      "video": {
+        "attached": true,
+        "currentTime": 0,
+        "duration": 19,
+        "muted": true,
+        "paused": false,
+        "loop": false,
+        "opacity": "0",
+        "transition": "0.25s"
+      },
+      "scrim": "linear-gradient(90deg, rgba(0, 0, 0, 0.88) 0%, rgba(0, 0, 0, 0.82) 38%, rgba(0, 0, 0, 0.72) 54%, rgba(0, 0, 0, 0.45) 67%, rgba(0, 0, 0, 0.12) 100%), linear-gradient(0deg, rgb(3, 4, 5) 0%, rgba(3, 4, 5, 0.9) 12%, rgba(0, 0, 0, 0) 38%), linear-gradient(rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.72) 12%, rgba(0, 0, 0, 0) 26%)",
+      "network": [
+        {
+          "url": "http://127.0.0.1:4178/qa/frame?mode=normal&review=1794827385653",
+          "bytes": 18379
+        },
+        {
+          "url": "http://127.0.0.1:4178/style.css",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/app.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/assets/cartan-logo.png",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/assets/cartan/cartan-hero-poster.jpg",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/adapter.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/contract-adapter.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/hero-controller.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/vendor/cartan/v1/fixture.json",
+          "bytes": 300
+        },
+        {
+          "url": "http://127.0.0.1:4178/assets/cartan/cartan-hero-desktop-720p.mp4",
+          "bytes": 302
+        },
+        {
+          "url": "http://127.0.0.1:4178/assets/cartan/cartan-hero-desktop-720p.mp4",
+          "bytes": 4039448
+        }
+      ],
+      "errors": [],
+      "sourceAttachments": [
+        "/assets/cartan/CARTAN-Built-to-Change-Revised-Silent-21s-1080p.mp4",
+        "/assets/cartan/cartan-hero-desktop-720p.mp4"
+      ],
+      "requestContexts": [
+        {
+          "src": "/assets/cartan/CARTAN-Built-to-Change-Revised-Silent-21s-1080p.mp4",
+          "width": 1440,
+          "clientWidth": 1440,
+          "visualWidth": 1440,
+          "mobile": false,
+          "heroWidth": 1440,
+          "heroHeight": 900
+        },
+        {
+          "src": "/assets/cartan/cartan-hero-desktop-720p.mp4",
+          "width": 1440,
+          "clientWidth": 1440,
+          "visualWidth": 1440,
+          "mobile": false,
+          "heroWidth": 1440,
+          "heroHeight": 900
+        }
+      ],
+      "events": [
+        {
+          "name": "play",
+          "time": 0,
+          "at": 2746,
+          "muted": true
+        }
+      ],
+      "cls": 0,
+      "capturedAt": "2026-11-16T11:09:48.462Z",
+      "snapshotVersion": 2
+    },
+    {
+      "kind": "layout",
+      "viewport": [
+        390,
+        844
+      ],
+      "mode": "normal",
+      "phase": "static",
+      "hero": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 843.984375,
+        "bottom": 843.984375,
+        "right": 390
+      },
+      "overflow": false,
+      "copyAndControlsWithinHero": true,
+      "text": [
+        {
+          "text": "CARTAN",
+          "x": 18,
+          "y": 17,
+          "width": 92,
+          "height": 46,
+          "bottom": 63,
+          "right": 110,
+          "font": "16px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Research",
+          "x": 173.0625,
+          "y": 18,
+          "width": 47.078125,
+          "height": 44,
+          "bottom": 62,
+          "right": 220.140625,
+          "font": "11px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Laboratory",
+          "x": 239.140625,
+          "y": 18,
+          "width": 52.59375,
+          "height": 44,
+          "bottom": 62,
+          "right": 291.734375,
+          "font": "11px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Evidence",
+          "x": 310.734375,
+          "y": 18,
+          "width": 45.265625,
+          "height": 44,
+          "bottom": 62,
+          "right": 356,
+          "font": "11px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "SPACE SYSTEMS / SERVICEABILITY",
+          "x": 24,
+          "y": 183.984375,
+          "width": 342,
+          "height": 14,
+          "bottom": 197.984375,
+          "right": 366,
+          "font": "9px",
+          "color": "rgb(212, 219, 223)"
+        },
+        {
+          "text": "The missioncontinues.",
+          "x": 24,
+          "y": 219.984375,
+          "width": 342,
+          "height": 84,
+          "bottom": 303.984375,
+          "right": 366,
+          "font": "40px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Spacecraft that can be maintained, upgraded, and useful for longer.",
+          "x": 24,
+          "y": 325.984375,
+          "width": 320,
+          "height": 52,
+          "bottom": 377.984375,
+          "right": 344,
+          "font": "17px",
+          "color": "rgb(238, 240, 241)"
+        },
+        {
+          "text": "Beginning with one question: what is safe to do when a module exchange is interrupted?",
+          "x": 24,
+          "y": 397.984375,
+          "width": 340,
+          "height": 46,
+          "bottom": 443.984375,
+          "right": 364,
+          "font": "13px",
+          "color": "rgb(200, 208, 213)"
+        },
+        {
+          "text": "Explore the architecture \u2197",
+          "x": 24,
+          "y": 467.984375,
+          "width": 200.296875,
+          "height": 56,
+          "bottom": 523.984375,
+          "right": 224.296875,
+          "font": "13px",
+          "color": "rgb(247, 248, 247)"
+        },
+        {
+          "text": "Read the research \u2197",
+          "x": 24,
+          "y": 525.984375,
+          "width": 134.734375,
+          "height": 44,
+          "bottom": 569.984375,
+          "right": 158.734375,
+          "font": "12px",
+          "color": "rgb(208, 215, 219)"
+        },
+        {
+          "text": "The longer horizon \u2197",
+          "x": 186.734375,
+          "y": 525.984375,
+          "width": 136.0625,
+          "height": 44,
+          "bottom": 569.984375,
+          "right": 322.796875,
+          "font": "12px",
+          "color": "rgb(208, 215, 219)"
+        },
+        {
+          "text": "Watch the concept filmSILENT CONCEPT FILM / 00:21\u25b7",
+          "x": 24,
+          "y": 723.96875,
+          "width": 342,
+          "height": 50,
+          "bottom": 773.96875,
+          "right": 366,
+          "font": "12px",
+          "color": "rgb(247, 248, 247)"
+        }
+      ],
+      "poster": "http://127.0.0.1:4178/assets/cartan/cartan-hero-poster-mobile.jpg",
+      "imageState": {
+        "complete": true,
+        "naturalWidth": 720,
+        "hidden": false,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 843.984375,
+          "bottom": 843.984375,
+          "right": 390
+        },
+        "parent": "<picture class=\"hero-poster\"><source media=\"(max-width: 767px)\" srcset=\"/assets/cartan/cartan-hero-poster-mobile.jpg\" width=\"720\" height=\"1280\"><img id=\"hero-poster\" src=\"/assets/cartan/cartan-hero-poster.jpg\" width=\"1920\" height=\"1080\" fetchpriority=\"high\" alt=\"Concept illustration of a service bay and gripped cartridge. Geometry and hardware are unverified.\"></picture>"
+      },
+      "visibility": {
+        "hidden": true,
+        "state": "hidden",
+        "focus": false
+      },
+      "videoDOM": "<video id=\"hero-video\" muted=\"\" playsinline=\"\" preload=\"metadata\" poster=\"/assets/cartan/cartan-hero-poster.jpg\" width=\"1280\" height=\"720\" aria-hidden=\"true\" tabindex=\"-1\" disablepictureinpicture=\"\"></video>",
+      "videoParent": "hero-picture",
+      "video": {
+        "attached": false,
+        "currentTime": 0,
+        "duration": null,
+        "muted": true,
+        "paused": true,
+        "loop": false,
+        "opacity": "0",
+        "transition": "0.25s"
+      },
+      "scrim": "linear-gradient(90deg, rgba(0, 0, 0, 0.87), rgba(0, 0, 0, 0.75) 75%, rgba(0, 0, 0, 0.72)), linear-gradient(0deg, rgb(3, 4, 5) 0%, rgba(3, 4, 5, 0.85) 18%, rgba(0, 0, 0, 0) 50%), linear-gradient(rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0) 28%)",
+      "network": [
+        {
+          "url": "http://127.0.0.1:4178/qa/frame?mode=normal&review=1794827397972",
+          "bytes": 18379
+        },
+        {
+          "url": "http://127.0.0.1:4178/style.css",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/app.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/assets/cartan-logo.png",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/assets/cartan/cartan-hero-poster-mobile.jpg",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/assets/cartan/cartan-hero-poster.jpg",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/adapter.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/contract-adapter.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/hero-controller.mjs",
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4178/vendor/cartan/v1/fixture.json",
+          "bytes": 300
+        }
+      ],
+      "errors": [],
+      "sourceAttachments": [],
+      "requestContexts": [],
+      "events": [],
+      "cls": 0,
+      "capturedAt": "2026-11-16T11:09:59.628Z",
+      "snapshotVersion": 2
+    }
+  ]
+}
