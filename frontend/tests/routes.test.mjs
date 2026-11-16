@@ -1,0 +1,5 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {SITE,pathFor,viewFromURL,linkedView,graphFor} from '../routes.mjs';
+test('every public route has a stable identity independent of query tracking',()=>{for(const [view,p] of Object.entries(SITE.pages)){assert.equal(viewFromURL(new URL(SITE.origin+p.path+'?utm_source=review')),view);assert.equal(pathFor(view),p.path);assert.equal(graphFor(view)['@graph'].at(-1).url,SITE.origin+p.path);}});
+test('legacy deep links remain meaningful',()=>{assert.equal(viewFromURL(new URL(SITE.origin+'/#question')),'question');assert.equal(viewFromURL(new URL(SITE.origin+'/#top')),'home');assert.equal(viewFromURL(new URL(SITE.origin+'/evidence/#main')),'evidence');});
+test('skip links and unknown destinations are not intercepted',()=>{assert.equal(linkedView(new URL(SITE.origin+'/#main')),null);assert.equal(linkedView(new URL(SITE.origin+'/not-a-route/')),null);assert.equal(linkedView(new URL(SITE.origin+'/sources/')),'sources');});

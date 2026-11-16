@@ -1,0 +1,48 @@
+{
+  "origin": "https://cartan.danielwahnich.dev",
+  "name": "CARTAN",
+  "image": "/assets/cartan/cartan-hero-poster.jpg",
+  "imageAlt": "AI-generated CARTAN service-bay concept. Not validated hardware or engineering evidence.",
+  "pages": {
+    "home": {
+      "path": "/",
+      "title": "CARTAN — Spacecraft serviceability research",
+      "description": "CARTAN investigates interrupted spacecraft module exchange, uncertain retention and electrical isolation. Explore the research question, concepts and evidence boundaries."
+    },
+    "question": {
+      "path": "/research/",
+      "title": "The research question — CARTAN",
+      "description": "What is safe to do when a spacecraft module exchange is interrupted? CARTAN separates physical state, observation, command and inferred belief."
+    },
+    "laboratory": {
+      "path": "/laboratory/",
+      "title": "Module exchange concepts — CARTAN Laboratory",
+      "description": "Explore the proposed module, retention, electrical isolation and transfer support in CARTAN’s component study. Concept geometry is not validated hardware."
+    },
+    "interruption": {
+      "path": "/interruption/",
+      "title": "Interrupted exchange and uncertain state — CARTAN",
+      "description": "Inspect physical state, observations, commands and belief in an explicitly synthetic CARTAN fixture. The example is not a measured experiment or hardware result."
+    },
+    "evidence": {
+      "path": "/evidence/",
+      "title": "Evidence and explicit unknowns — CARTAN",
+      "description": "Understand what CARTAN’s public interface does and does not establish. Missing records, planned work and inconclusive examples remain distinct from evidence."
+    },
+    "comparison": {
+      "path": "/comparison/",
+      "title": "Baseline comparison protocol — CARTAN",
+      "description": "CARTAN’s proposed comparison considers conventional control, additional sensing and passive interlocks. No comparative performance result is claimed."
+    },
+    "sources": {
+      "path": "/sources/",
+      "title": "Primary research sources — CARTAN",
+      "description": "Follow the primary sources informing CARTAN’s spacecraft serviceability research, with explicit distinctions between published methods and CARTAN’s own evidence."
+    },
+    "vision": {
+      "path": "/vision/",
+      "title": "Spacecraft that can change — CARTAN vision",
+      "description": "CARTAN’s long-term ambition is spacecraft maintenance, upgrades and reconfiguration. The imagery is conceptual; no flight architecture or capability is established."
+    }
+  }
+}

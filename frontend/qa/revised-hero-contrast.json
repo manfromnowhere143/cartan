@@ -1,0 +1,322 @@
+[
+  {
+    "viewport": [
+      1440,
+      900
+    ],
+    "worst_case_white_frame": [
+      {
+        "text": "Research",
+        "ratio_lower_bound": 9.08,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "text": "Laboratory",
+        "ratio_lower_bound": 9.01,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "text": "Evidence",
+        "ratio_lower_bound": 8.83,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "text": "The longer horizon \u2197",
+        "ratio_lower_bound": 6.8,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "text": "SPACE SYSTEMS / SERVICEABILITY",
+        "ratio_lower_bound": 9.78,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "text": "The missioncontinues.",
+        "ratio_lower_bound": 12.86,
+        "required": 3,
+        "pass": true
+      },
+      {
+        "text": "Spacecraft that can be maintained, upgraded, and useful for longer.",
+        "ratio_lower_bound": 12.23,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "text": "Beginning with one question: what is safe to do when a module exchange is interrupted?",
+        "ratio_lower_bound": 9.01,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "text": "Explore the architecture \u2197",
+        "ratio_lower_bound": 14.06,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "text": "Read the research \u2197",
+        "ratio_lower_bound": 11.59,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "text": "The longer horizon \u2197",
+        "ratio_lower_bound": 11.13,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "text": "Play motion \u25b7",
+        "ratio_lower_bound": 15.34,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "text": "Watch the concept filmSILENT CONCEPT FILM / 00:21\u25b7",
+        "ratio_lower_bound": 8.77,
+        "required": 4.5,
+        "pass": true
+      }
+    ]
+  },
+  {
+    "viewport": [
+      1280,
+      720
+    ],
+    "worst_case_white_frame": [
+      {
+        "text": "Research",
+        "ratio_lower_bound": 9.05,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "text": "Laboratory",
+        "ratio_lower_bound": 8.95,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "text": "Evidence",
+        "ratio_lower_bound": 8.68,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "text": "The longer horizon \u2197",
+        "ratio_lower_bound": 6.35,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "text": "SPACE SYSTEMS / SERVICEABILITY",
+        "ratio_lower_bound": 9.69,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "text": "The missioncontinues.",
+        "ratio_lower_bound": 12.09,
+        "required": 3,
+        "pass": true
+      },
+      {
+        "text": "Spacecraft that can be maintained, upgraded, and useful for longer.",
+        "ratio_lower_bound": 12.01,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "text": "Beginning with one question: what is safe to do when a module exchange is interrupted?",
+        "ratio_lower_bound": 8.86,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "text": "Explore the architecture \u2197",
+        "ratio_lower_bound": 14.05,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "text": "Read the research \u2197",
+        "ratio_lower_bound": 11.88,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "text": "The longer horizon \u2197",
+        "ratio_lower_bound": 11.43,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "text": "Play motion \u25b7",
+        "ratio_lower_bound": 12.07,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "text": "Watch the concept filmSILENT CONCEPT FILM / 00:21\u25b7",
+        "ratio_lower_bound": 5.93,
+        "required": 4.5,
+        "pass": true
+      }
+    ]
+  },
+  {
+    "viewport": [
+      768,
+      1024
+    ],
+    "worst_case_white_frame": [
+      {
+        "text": "Research",
+        "ratio_lower_bound": 8.97,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "text": "Laboratory",
+        "ratio_lower_bound": 8.7,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "text": "Evidence",
+        "ratio_lower_bound": 8.4,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "text": "SPACE SYSTEMS / SERVICEABILITY",
+        "ratio_lower_bound": 8.59,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "text": "The missioncontinues.",
+        "ratio_lower_bound": 11.29,
+        "required": 3,
+        "pass": true
+      },
+      {
+        "text": "Spacecraft that can be maintained, upgraded, and useful for longer.",
+        "ratio_lower_bound": 10.8,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "text": "Beginning with one question: what is safe to do when a module exchange is interrupted?",
+        "ratio_lower_bound": 8.02,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "text": "Explore the architecture \u2197",
+        "ratio_lower_bound": 13.24,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "text": "Read the research \u2197",
+        "ratio_lower_bound": 10.59,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "text": "The longer horizon \u2197",
+        "ratio_lower_bound": 9.58,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "text": "Watch the concept filmSILENT CONCEPT FILM / 00:21\u25b7",
+        "ratio_lower_bound": 11.58,
+        "required": 4.5,
+        "pass": true
+      }
+    ]
+  },
+  {
+    "viewport": [
+      390,
+      844
+    ],
+    "worst_case_white_frame": [
+      {
+        "text": "Research",
+        "ratio_lower_bound": 8.49,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "text": "Laboratory",
+        "ratio_lower_bound": 8.26,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "text": "Evidence",
+        "ratio_lower_bound": 8.12,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "text": "SPACE SYSTEMS / SERVICEABILITY",
+        "ratio_lower_bound": 7.74,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "text": "The missioncontinues.",
+        "ratio_lower_bound": 8.97,
+        "required": 3,
+        "pass": true
+      },
+      {
+        "text": "Spacecraft that can be maintained, upgraded, and useful for longer.",
+        "ratio_lower_bound": 8.56,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "text": "Beginning with one question: what is safe to do when a module exchange is interrupted?",
+        "ratio_lower_bound": 6.12,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "text": "Explore the architecture \u2197",
+        "ratio_lower_bound": 12.27,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "text": "Read the research \u2197",
+        "ratio_lower_bound": 10.95,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "text": "The longer horizon \u2197",
+        "ratio_lower_bound": 9.47,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "text": "Watch the concept filmSILENT CONCEPT FILM / 00:21\u25b7",
+        "ratio_lower_bound": 12.32,
+        "required": 4.5,
+        "pass": true
+      }
+    ]
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "checked": "2026-11-16",
+  "unique_ids": 46,
+  "routes": [
+    "home",
+    "question",
+    "laboratory",
+    "interruption",
+    "evidence",
+    "comparison",
+    "sources",
+    "vision"
+  ],
+  "fragment_targets_and_local_html_resources": "pass",
+  "image_alt_and_dimensions": "pass",
+  "video_initial_sources": "none",
+  "asset_hashes_and_original_bytes_verified": 6,
+  "canonical_vendor_bytes_match_commit": "2a4083ac15e64fbf3f6f57355827efd5d2ff0a7a",
+  "syntax": "pass",
+  "initial_declared_resource_bytes": 887200,
+  "initial_plus_other_posters_bytes": 1250789,
+  "site_bytes": 8743950,
+  "performance_measurement": "Static byte budget only. No field Web Vitals or browser trace."
+}

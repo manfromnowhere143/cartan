@@ -1,0 +1,53 @@
+{
+  "dns": {
+    "configuredBy": null,
+    "nameservers": [
+      "ns07.domaincontrol.com",
+      "ns08.domaincontrol.com"
+    ],
+    "serviceType": "external",
+    "cnames": [],
+    "aValues": [],
+    "conflicts": [],
+    "acceptedChallenges": [],
+    "recommendedIPv4": [
+      {
+        "rank": 1,
+        "value": [
+          "216.150.1.1",
+          "216.150.16.1"
+        ]
+      },
+      {
+        "rank": 2,
+        "value": [
+          "76.76.21.21"
+        ]
+      }
+    ],
+    "recommendedCNAME": [
+      {
+        "rank": 1,
+        "value": "272ba31a057624de.vercel-dns-016.com."
+      },
+      {
+        "rank": 2,
+        "value": "cname.vercel-dns.com."
+      }
+    ],
+    "ipStatus": null,
+    "misconfigured": true
+  },
+  "domain": {
+    "name": "cartan.danielwahnich.dev",
+    "apexName": "danielwahnich.dev",
+    "projectId": "prj_yxSRyqClUe89HnLu7H2oQ39TPV5I",
+    "redirect": null,
+    "redirectStatusCode": null,
+    "gitBranch": null,
+    "customEnvironmentId": null,
+    "updatedAt": 1794830380495,
+    "createdAt": 1794830380495,
+    "verified": true
+  }
+}
