@@ -1,0 +1,19 @@
+flowchart TB
+    accTitle: Implemented research architecture and UI boundary
+    accDescr: Versioned assumptions feed three separate research modules. The exchange model has separate truth scoring. All modules retain evidence for scoped assessment. A UI adapter for the newer studies remains proposed.
+    A["Versioned research inputs<br/>Sources · assumptions · protocols · cases"]
+    A --> X["Abstract exchange model<br/>Plant · observation · belief guard"]
+    A --> C["Evidence certificates<br/>Fault bounds · interval witnesses"]
+    A --> I["Interface evaluator<br/>Reports · worlds · action predicates"]
+    X --> O["Separate truth scorer<br/>Declared hazards and completion"]
+    O --> R["Retained evidence<br/>Inputs · traces · limits · hashes"]
+    C --> R
+    I --> R
+    R --> D["Scoped assessment<br/>Supported result · limits · next test"]
+    R -. "New-study adapter pending" .-> U["Visual laboratory boundary<br/>Frozen v1 fixture consumed"]
+    classDef implemented fill:#edf3f8,stroke:#34566e,color:#142f43,stroke-width:1.5px;
+    classDef record fill:#edf6f2,stroke:#3c6c5b,color:#163e30,stroke-width:1.5px;
+    classDef proposed fill:#fff4e8,stroke:#9a6230,color:#61390f,stroke-dasharray:5 4;
+    class A,X,C,I,O implemented;
+    class R,D record;
+    class U proposed;

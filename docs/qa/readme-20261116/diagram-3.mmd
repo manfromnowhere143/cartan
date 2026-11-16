@@ -1,0 +1,20 @@
+flowchart TB
+    accTitle: Evidence required to advance CARTAN
+    accDescr: Software checks are complete within declared scopes. A reviewed physical observation model, an equal-information study design, and a contained physical study remain future gates. Existing methods are preferred when they meet the requirement. Mission qualification is separate.
+    S["CURRENT<br/>Reproducible<br/>software checks"]
+    O["NEXT<br/>Reviewed physical<br/>observation model"]
+    C["PROPOSED<br/>Equal-information<br/>study design"]
+    P["PROPOSED<br/>Contained physical<br/>study and review"]
+    F["LONG TERM<br/>Mission-specific<br/>validation"]
+    S -.-> O
+    O -. "Useful gap survives" .-> C
+    C -. "Limits and review agreed" .-> P
+    P -. "Further evidence" .-> F
+    O -. "Ordinary evidence suffices" .-> N["NARROW OR STOP<br/>Prefer the simpler system"]
+    C -. "No discriminating test" .-> N
+    classDef current fill:#edf6f2,stroke:#3c6c5b,color:#163e30,stroke-width:2px;
+    classDef pending fill:#edf3f8,stroke:#34566e,color:#142f43,stroke-dasharray:5 4;
+    classDef decision fill:#fff4e8,stroke:#9a6230,color:#61390f,stroke-width:1.5px;
+    class S current;
+    class O,C,P,F pending;
+    class N decision;

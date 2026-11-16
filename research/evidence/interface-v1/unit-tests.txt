@@ -1,0 +1,17 @@
+{'workers': 1, 'cpu_limit_s': 5, 'address_space_requested_bytes': 268435456, 'address_space_limit_set': False, 'note': 'current limit exceeds maximum limit'}
+test_acknowledgements_never_bind_physical_facts (test_engine.EvidenceBoundaryTests.test_acknowledgements_never_bind_physical_facts) ... ok
+test_caller_cannot_mutate_declared_predicate_through_result (test_engine.EvidenceBoundaryTests.test_caller_cannot_mutate_declared_predicate_through_result) ... ok
+test_caps_and_world_validation (test_engine.EvidenceBoundaryTests.test_caps_and_world_validation) ... ok
+test_conflicting_identity_is_inconsistent_even_when_stale (test_engine.EvidenceBoundaryTests.test_conflicting_identity_is_inconsistent_even_when_stale) ... ok
+test_distinct_mechanical_electrical_controller_facts (test_engine.EvidenceBoundaryTests.test_distinct_mechanical_electrical_controller_facts) ... ok
+test_duplicate_arrivals_add_no_information (test_engine.EvidenceBoundaryTests.test_duplicate_arrivals_add_no_information) ... ok
+test_freshness_and_epoch_revoke_logical_support (test_engine.EvidenceBoundaryTests.test_freshness_and_epoch_revoke_logical_support) ... ok
+test_raw_telemetry_has_no_unvalidated_mapping (test_engine.EvidenceBoundaryTests.test_raw_telemetry_has_no_unvalidated_mapping) ... ok
+test_rejects_scope_and_malformed_reports (test_engine.EvidenceBoundaryTests.test_rejects_scope_and_malformed_reports) ... ok
+test_witnesses_explain_unresolved_and_empty_domains (test_engine.EvidenceBoundaryTests.test_witnesses_explain_unresolved_and_empty_domains) ... ok
+test_zero_false_and_null_are_distinct (test_engine.EvidenceBoundaryTests.test_zero_false_and_null_are_distinct) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.009s
+
+OK

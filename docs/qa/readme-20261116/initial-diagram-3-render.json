@@ -1,0 +1,24 @@
+{
+  "command": [
+    "/usr/bin/time",
+    "-l",
+    "/Users/danielwahnich/.nvm/versions/node/v20.18.3/bin/mmdc",
+    "-p",
+    "/private/tmp/cartan-readme-20261116/puppeteer.json",
+    "-i",
+    "/private/tmp/cartan-readme-20261116/diagram-3.mmd",
+    "-o",
+    "/private/tmp/cartan-readme-20261116/diagram-3.png",
+    "-w",
+    "1180",
+    "-b",
+    "white"
+  ],
+  "returncode": 0,
+  "timeout_s": 60,
+  "timed_out": false,
+  "wall_s": 2.8655458340072073,
+  "stdout": "Generating single mermaid chart\n",
+  "stderr": "[@zenuml/core] Store is a function and is not initiated in 1 second.\n        2.86 real         1.97 user         0.73 sys\n           289161216  maximum resident set size\n                   0  average shared memory size\n                   0  average unshared data size\n                   0  average unshared stack size\n              114548  page reclaims\n                1510  page faults\n                   0  swaps\n                   0  block input operations\n                   0  block output operations\n                 413  messages sent\n                 271  messages received\n                   8  signals received\n                 816  voluntary context switches\n               34225  involuntary context switches\n          2934711521  instructions retired\n          1295563259  cycles elapsed\n           116582592  peak memory footprint\n",
+  "resource_note": "time -l reports command resource observations, not a cap or sum of concurrent browser memory"
+}

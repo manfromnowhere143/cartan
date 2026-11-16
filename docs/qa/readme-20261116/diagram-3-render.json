@@ -1,0 +1,24 @@
+{
+  "command": [
+    "/usr/bin/time",
+    "-l",
+    "/Users/danielwahnich/.nvm/versions/node/v20.18.3/bin/mmdc",
+    "-p",
+    "/private/tmp/cartan-readme-20261116/puppeteer.json",
+    "-i",
+    "/private/tmp/cartan-readme-20261116/diagram-3.mmd",
+    "-o",
+    "/private/tmp/cartan-readme-20261116/diagram-3.png",
+    "-w",
+    "1180",
+    "-b",
+    "white"
+  ],
+  "returncode": 0,
+  "timeout_s": 60,
+  "timed_out": false,
+  "wall_s": 1.7770057920133695,
+  "stdout": "Generating single mermaid chart\n",
+  "stderr": "        1.77 real         1.84 user         0.70 sys\n           283623424  maximum resident set size\n                   0  average shared memory size\n                   0  average unshared data size\n                   0  average unshared stack size\n              114555  page reclaims\n                1534  page faults\n                   0  swaps\n                   0  block input operations\n                   0  block output operations\n                 394  messages sent\n                 324  messages received\n                   8  signals received\n                1275  voluntary context switches\n               26094  involuntary context switches\n          2952713912  instructions retired\n          1299539143  cycles elapsed\n           114878784  peak memory footprint\n",
+  "resource_note": "time -l reports command resource observations, not a cap or sum of concurrent browser memory"
+}

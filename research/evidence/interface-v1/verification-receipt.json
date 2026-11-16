@@ -1,0 +1,67 @@
+{
+  "recorded_at": "2026-11-16T12:22:27.016562+00:00",
+  "owner": "research",
+  "design_commit": "2ad0651d7897ad2ac3ba095dd6ee12c90a981aab",
+  "code_commit": "3d286e43c96072b7390da32772c7c77754cfffb2",
+  "model_version": "interface-evidence/0.1.0",
+  "scope": "Constructed logical software verification; no physical authorization",
+  "commands": [
+    {
+      "command": "python3 -B backend/interface_evidence/run_analysis.py --output research/evidence/interface-v1/attempt-01",
+      "exit_code": 0
+    },
+    {
+      "command": "python3 -B backend/interface_evidence/run_analysis.py --output research/evidence/interface-v1/replay-02",
+      "exit_code": 0
+    }
+  ],
+  "unit_tests": {
+    "execution_record": "unit-test-execution.json",
+    "retained_log": "unit-tests.txt",
+    "passed": 11,
+    "reported_s": 0.009,
+    "test_sha256": "f5db7b98e5478a3ae12f8e64a00e2e44c5a9751adee9239dd6030869a6597307"
+  },
+  "replay": {
+    "byte_identical_core": true,
+    "identical_input_hashes": true,
+    "both_output_manifests_verified": true,
+    "canonical_core_sha256": "911ad944d618e888e6af83d0eddde43b89ce15c53ee135159b5935017959eec6"
+  },
+  "checks": {
+    "cases": 21,
+    "reference_classifications": 256,
+    "expected_input_rejections": 3,
+    "assessment_counts": {
+      "admissible": 3,
+      "refuted": 2,
+      "unresolved": 11,
+      "inconsistent": 2
+    }
+  },
+  "preservation": {
+    "packet_hashes_and_sizes_matched": 12,
+    "frozen_prior_files_compared_to_f592075": 38,
+    "UI_commit": "de81efb35cf4fdf4c9c89377bfe9a856e96ef4d5",
+    "contract_and_UI_vendor_hashes": {
+      "README.md": "6b1846d07fb98bbdbc48dc344eec10eeec4770f39cb9ddd76bdac23726beda7b",
+      "SHA256SUMS.json": "6a20a83c78b8f763a4bc83d7f01e819191b1af162f8a484683841962dcf63697",
+      "fixture.json": "b231fa24f057ce647dbf282ed8233fc88d0bbbed579995213306edac30e65d44",
+      "schema.json": "a3b80883a7ce92bea4dcac44ff50103b8acdd66018f9cbe2105237c9ff7e01fd",
+      "validate.py": "76cad93c36725d8358d2b9373702d29f1fcc175178ddb2ca78125691f85ba7a2"
+    },
+    "UI_runtime_retested": false
+  },
+  "resources": {
+    "initial_run_file_bytes": 1380069,
+    "memory_cap_supported": false,
+    "CPU_cap_s": 5,
+    "paid_jobs": 0
+  },
+  "limitations": [
+    "Constructed domain; no validated physical coverage or fault envelope",
+    "Synthetic direct Boolean binding assumes fault-free interpretation",
+    "Incomplete physical action predicates",
+    "No comparative recovery performance or hardware validation"
+  ]
+}

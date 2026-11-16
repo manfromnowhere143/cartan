@@ -1,0 +1,54 @@
+{
+  "recorded_at": "2026-11-16T12:24:16.359102+00:00",
+  "scope": "README presentation only; no scientific or hardware validation",
+  "README_sha256": "895d34e3bab56adb1510ed403cacc36b7787afdb2f594a97a7d9e5bf5806ff2d",
+  "Mermaid_CLI": "11.4.2",
+  "Node": "20.18.3",
+  "browser": "Existing Google Chrome, temporary headless profile; no added browser installation or security-disabling flags",
+  "rendering": "Sequential; 60-second timeout on each successful render invocation",
+  "diagrams": [
+    {
+      "diagram": 1,
+      "source_sha256": "dade8ba7606f7c10bbea678413581b9105896d92f54699e9d6238cb4d532e420",
+      "PNG_sha256": "ddaf4449be33f2778577b12406779a30e3bb692909f5b7b75cf07f455a074035",
+      "width": 1164,
+      "height": 532,
+      "visually_inspected": true,
+      "accessible_title_and_description_in_source": true
+    },
+    {
+      "diagram": 2,
+      "source_sha256": "37095c7d9de12a160f439296373fa4a5faa6ab6248ed86efb8f3ffbcc7153e1b",
+      "PNG_sha256": "728b4064c5a23dc8dbaec47ac4d366ef3195f62b5d84dd0ba215f7e7e0dc8f1b",
+      "width": 896,
+      "height": 750,
+      "visually_inspected": true,
+      "accessible_title_and_description_in_source": true
+    },
+    {
+      "diagram": 3,
+      "source_sha256": "5f2dc2c7a9ecf079cdee123cbee939041264ab594ca498160102af939b57a38c",
+      "PNG_sha256": "acb8a7465bf7423a38302213c75687d816e13231d00429d140d2a3e659183ccd",
+      "width": 600,
+      "height": 798,
+      "visually_inspected": true,
+      "accessible_title_and_description_in_source": true
+    }
+  ],
+  "initial_failure": {
+    "exit_code": 1,
+    "reason": "Bundled Chrome 131.0.6778.204 absent from Puppeteer cache; time -l also reported sandbox-denied clockrate read",
+    "resolution": "Existing installed Chrome used with approved execution; no download"
+  },
+  "revisions": [
+    "Shortened clipped diagram-1 group title, replaced default group color, clarified result labels",
+    "Changed diagram-3 from a wide horizontal graph to a readable vertical graph",
+    "Changed diagram-3 labels to distinguish study design and review from physical outcomes"
+  ],
+  "limitations": [
+    "Native GitHub rendering not exercised; no remote configured",
+    "Screen-reader behavior and mobile native rendering not tested",
+    "PNG checks do not establish scientific correctness",
+    "Reported browser command memory is not a total concurrent process-tree memory bound"
+  ]
+}

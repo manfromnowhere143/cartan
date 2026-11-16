@@ -1,0 +1,21 @@
+flowchart TB
+    accTitle: Distinct facts behind an interrupted exchange
+    accDescr: Mechanical, connection and energy propositions remain separate. Reports constrain possible worlds only through an explicit interpretation. Command acknowledgements alone provide no physical binding.
+    subgraph FACTS["Six distinct propositions"]
+        M["Mechanical retention<br/>Retained? · Support secured?"]
+        C["Connection and control<br/>Contacts made? · Controller on?"]
+        E["Energy condition<br/>Source isolated? · Voltage below limit?"]
+    end
+    M --> W["Remaining possible worlds"]
+    C --> W
+    E --> W
+    R["Reports<br/>Identity · time · source · value"] --> B["Explicit interpretation<br/>Default: no physical binding"]
+    B --> W
+    W --> Q["Action assessment<br/>Admissible · refuted<br/>Unresolved · inconsistent"]
+    style FACTS fill:#f8fafc,stroke:#b7c4ce,color:#142f43;
+    classDef fact fill:#edf3f8,stroke:#34566e,color:#142f43,stroke-width:1.5px;
+    classDef evidence fill:#edf6f2,stroke:#3c6c5b,color:#163e30,stroke-width:1.5px;
+    classDef boundary fill:#fff4e8,stroke:#9a6230,color:#61390f,stroke-width:1.5px;
+    class M,C,E fact;
+    class R,W evidence;
+    class B,Q boundary;

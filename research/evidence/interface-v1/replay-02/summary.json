@@ -1,0 +1,60 @@
+{
+  "checks_passed": true,
+  "cases": 21,
+  "predicate_checks": 256,
+  "expected_rejections": 3,
+  "assessment_counts": {
+    "admissible": 3,
+    "refuted": 2,
+    "unresolved": 11,
+    "inconsistent": 2
+  },
+  "evidence_scope": "constructed_logical_model_only",
+  "physical_authorization": "not_assessed",
+  "core_sha256": "911ad944d618e888e6af83d0eddde43b89ce15c53ee135159b5935017959eec6",
+  "input_hashes": [
+    {
+      "path": "research/decisions/ADR-003.md",
+      "sha256": "9d563fcce6770a8664b451d7f460c0134c2bead03a57957fca32811260fb9936"
+    },
+    {
+      "path": "research/block-3/protocol.md",
+      "sha256": "3450476ffe63ea7c81a58a8cb7343fde4a25c3ea992af0631972da8781976995"
+    },
+    {
+      "path": "research/block-2/sources.md",
+      "sha256": "02dcea8083b3b98de056fc2135555b10f6dd638840c12b2f9a5bcc7cb0551a59"
+    },
+    {
+      "path": "backend/interface_evidence/engine.py",
+      "sha256": "b7948e4bfa64fbcd3bcbc66d8f5e476675ce529b75854272ac72b8333fde2e45"
+    },
+    {
+      "path": "backend/interface_evidence/cases.json",
+      "sha256": "87ec66a8ba03010febff6c6e8b2e2e5497ccc9547d460b269ea95c8fe615d73d"
+    },
+    {
+      "path": "backend/interface_evidence/run_analysis.py",
+      "sha256": "463ae7146af5f2975948c638bb5462d53f74f7f4ee8a87ccbecfdf67be5e375f"
+    },
+    {
+      "path": "backend/interface_evidence/test_engine.py",
+      "sha256": "f5db7b98e5478a3ae12f8e64a00e2e44c5a9751adee9239dd6030869a6597307"
+    }
+  ],
+  "limits": {
+    "workers": 1,
+    "cpu_limit_s": 5,
+    "address_space_requested_bytes": 268435456,
+    "address_space_limit_set": false,
+    "note": "current limit exceeds maximum limit"
+  },
+  "started_at": "2026-11-16T12:12:17.752480+00:00",
+  "ended_at": "2026-11-16T12:12:17.775103+00:00",
+  "evaluation_cpu_s": 0.02233700000000001,
+  "evaluation_wall_s": 0.02255695901112631,
+  "rss_high_water_bytes_at_sample": 25968640,
+  "measurement_scope": "Imports and final summary/manifest export excluded; RSS sampled after core export",
+  "python": "3.14.2",
+  "platform": "macOS-14.4-arm64-arm-64bit-Mach-O"
+}
