@@ -2,6 +2,14 @@
 
 ## Current research state: block 4 and local integration
 
+Latest continuity check: all research work is committed and published. The parallel
+UI lane has since advanced to `a75f1d62101ebb4498cd1ae48196b3aac536441f` with a
+new presentation/deployment revision; that commit is local and not yet integrated
+into GitHub `main`. All three worktrees were clean at inspection. See the
+[continuity checkpoint](../memory/checkpoints/research-20261116T134817Z-continuity-check.md) for its exact location,
+UI-reported checks and the remaining integration step. Do not treat the older
+published UI snapshot as the latest UI work.
+
 Read [block 4 results](../research/block-4/results.md),
 [recovery prior art](../research/block-4/source-followup.md),
 [release preparation](RELEASE-PREPARATION.md) and

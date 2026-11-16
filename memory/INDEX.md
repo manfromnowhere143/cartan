@@ -36,3 +36,7 @@ summary while preserving its evidence.
 [Verified GitHub publication](checkpoints/research-20261116T134432Z-github-publication.md) records the public
 repository, Apache-2.0 scope, immutable first publication commit, remote readback
 and browser-review limitation. It resolves the prior pending publication choices.
+
+[Post-publication continuity check](checkpoints/research-20261116T134817Z-continuity-check.md) confirms
+research/GitHub synchronization and clean worktrees, and records the newer UI
+commit that still needs review and integration into the public main branch.
