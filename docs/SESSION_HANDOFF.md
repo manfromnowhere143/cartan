@@ -22,4 +22,7 @@ Pending: research architecture and contract v1; UI asset and rights inventory;
 remote/repository visibility decision; any additional MCP approval; an explicit
 resource budget for paid work. Claude's local authentication check reported not
 logged in. Codex reports a stored ChatGPT login; remote model access and quota
-are not tested. See the final verification record before declaring readiness.
+are not tested. Local Codex preflight and both terminal spellings passed; 24 guard
+tests passed. Claude preflight returns an explicit auth-required exit. The next
+operator action can be `cartancodes` in a normal terminal, or `cartancodes ui`
+for the UI lane. See `docs/VERIFICATION.md` for the exact readiness limits.
