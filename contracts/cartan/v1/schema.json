@@ -1,0 +1,1051 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:cartan:contract:1.0.0",
+  "title": "CARTAN static research interchange 1.0.0",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/Source"
+      },
+      "minItems": 1
+    },
+    "components": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/Component"
+      },
+      "minItems": 1
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/Claim"
+      },
+      "minItems": 1
+    },
+    "assets": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/Asset"
+      },
+      "minItems": 1
+    },
+    "scenarios": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/Scenario"
+      },
+      "minItems": 1
+    },
+    "runs": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/Run"
+      },
+      "minItems": 1
+    }
+  },
+  "required": [
+    "schema_version",
+    "sources",
+    "components",
+    "claims",
+    "assets",
+    "scenarios",
+    "runs"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "Datum": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "enum": [
+            "known",
+            "unknown",
+            "missing",
+            "unmeasured",
+            "not_applicable",
+            "explicit_null"
+          ]
+        },
+        "value": {
+          "type": [
+            "string",
+            "number",
+            "boolean",
+            "null"
+          ]
+        },
+        "unit": {
+          "type": "string",
+          "minLength": 1
+        },
+        "basis": {
+          "enum": [
+            "assumed",
+            "source_reported",
+            "computed",
+            "measured",
+            "synthetic",
+            "unknown"
+          ]
+        }
+      },
+      "required": [
+        "status",
+        "value",
+        "unit",
+        "basis"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "known"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "type": [
+                  "string",
+                  "number",
+                  "boolean"
+                ]
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "value": {
+                "type": "null"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "SourceRef": {
+      "type": "object",
+      "properties": {
+        "source_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "location": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "source_id",
+        "location"
+      ],
+      "additionalProperties": false
+    },
+    "Source": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "uri": {
+          "type": "string",
+          "minLength": 1
+        },
+        "publication_date": {
+          "$ref": "#/$defs/Datum"
+        },
+        "accessed_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "reading_scope": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "id",
+        "title",
+        "uri",
+        "publication_date",
+        "accessed_at",
+        "reading_scope"
+      ],
+      "additionalProperties": false
+    },
+    "State": {
+      "type": "object",
+      "properties": {
+        "host": {
+          "enum": [
+            "open",
+            "partial",
+            "locked"
+          ]
+        },
+        "support": {
+          "enum": [
+            "secured",
+            "released"
+          ]
+        },
+        "connector": {
+          "enum": [
+            "mated",
+            "separated"
+          ]
+        },
+        "source": {
+          "enum": [
+            "connected",
+            "isolated"
+          ]
+        },
+        "energy_fraction": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "contact": {
+          "enum": [
+            "clear",
+            "unexpected"
+          ]
+        }
+      },
+      "required": [
+        "host",
+        "support",
+        "connector",
+        "source",
+        "energy_fraction",
+        "contact"
+      ],
+      "additionalProperties": false
+    },
+    "Component": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "function": {
+          "type": "string",
+          "minLength": 1
+        },
+        "relationships": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "kind": {
+                "type": "string",
+                "minLength": 1
+              },
+              "target_id": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "kind",
+              "target_id"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 0
+        },
+        "parameters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "minLength": 1
+              },
+              "quantity": {
+                "$ref": "#/$defs/Datum"
+              }
+            },
+            "required": [
+              "name",
+              "quantity"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 0
+        },
+        "geometry_asset_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "state_status": {
+          "enum": [
+            "assumed",
+            "measured",
+            "unknown"
+          ]
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/SourceRef"
+          },
+          "minItems": 1
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "function",
+        "relationships",
+        "parameters",
+        "geometry_asset_id",
+        "state_status",
+        "source_refs"
+      ],
+      "additionalProperties": false
+    },
+    "Claim": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "assertion": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evidence_class": {
+          "enum": [
+            "hypothesis",
+            "source_reported",
+            "derived",
+            "simulation",
+            "physical_test",
+            "unknown",
+            "synthetic_fixture"
+          ]
+        },
+        "status": {
+          "enum": [
+            "proposed",
+            "exploratory",
+            "supported",
+            "contradicted",
+            "null",
+            "inconclusive",
+            "failed",
+            "corrected",
+            "retracted",
+            "unknown"
+          ]
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/SourceRef"
+          },
+          "minItems": 1
+        },
+        "limitations": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1
+        }
+      },
+      "required": [
+        "id",
+        "assertion",
+        "evidence_class",
+        "status",
+        "source_refs",
+        "limitations"
+      ],
+      "additionalProperties": false
+    },
+    "Asset": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "availability": {
+          "enum": [
+            "available",
+            "missing",
+            "unverified"
+          ]
+        },
+        "sha256": {
+          "$ref": "#/$defs/Datum"
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/SourceRef"
+          },
+          "minItems": 1
+        },
+        "rights": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "enum": [
+                "unknown",
+                "cleared",
+                "restricted"
+              ]
+            },
+            "description": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "status",
+            "description"
+          ],
+          "additionalProperties": false
+        },
+        "approval": {
+          "enum": [
+            "unknown",
+            "pending",
+            "approved",
+            "rejected"
+          ]
+        },
+        "scientific_status": {
+          "enum": [
+            "illustration",
+            "synthetic_fixture",
+            "simulation",
+            "physical_test",
+            "unknown"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "availability",
+        "sha256",
+        "source_refs",
+        "rights",
+        "approval",
+        "scientific_status"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "availability": {
+                "const": "missing"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "sha256": {
+                "properties": {
+                  "status": {
+                    "const": "missing"
+                  },
+                  "value": {
+                    "type": "null"
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "availability": {
+                "const": "available"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "sha256": {
+                "properties": {
+                  "status": {
+                    "const": "known"
+                  },
+                  "value": {
+                    "type": "string",
+                    "pattern": "^[a-f0-9]{64}$"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "Scenario": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "model_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "physical_state_definition": {
+          "type": "string",
+          "minLength": 1
+        },
+        "initial_state": {
+          "$ref": "#/$defs/State"
+        },
+        "observation_definition": {
+          "type": "string",
+          "minLength": 1
+        },
+        "controls": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1
+        },
+        "fault_assumptions": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1
+        },
+        "safe_state_rules": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1
+        },
+        "parameters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "minLength": 1
+              },
+              "quantity": {
+                "$ref": "#/$defs/Datum"
+              }
+            },
+            "required": [
+              "name",
+              "quantity"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 0
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/SourceRef"
+          },
+          "minItems": 1
+        },
+        "limitations": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1
+        }
+      },
+      "required": [
+        "id",
+        "model_version",
+        "physical_state_definition",
+        "initial_state",
+        "observation_definition",
+        "controls",
+        "fault_assumptions",
+        "safe_state_rules",
+        "parameters",
+        "source_refs",
+        "limitations"
+      ],
+      "additionalProperties": false
+    },
+    "Observation": {
+      "type": "object",
+      "properties": {
+        "t_s": {
+          "type": "number",
+          "minimum": 0
+        },
+        "sampled_at_s": {
+          "type": "number",
+          "minimum": 0
+        },
+        "received_at_s": {
+          "type": "number",
+          "minimum": 0
+        },
+        "epoch": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "source_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "variable": {
+          "type": "string",
+          "minLength": 1
+        },
+        "reading": {
+          "$ref": "#/$defs/Datum"
+        },
+        "validity": {
+          "enum": [
+            "valid",
+            "stale",
+            "missing",
+            "invalid"
+          ]
+        }
+      },
+      "required": [
+        "t_s",
+        "sampled_at_s",
+        "received_at_s",
+        "epoch",
+        "source_id",
+        "variable",
+        "reading",
+        "validity"
+      ],
+      "additionalProperties": false
+    },
+    "Command": {
+      "type": "object",
+      "properties": {
+        "t_s": {
+          "type": "number",
+          "minimum": 0
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "duration_s": {
+          "type": "number",
+          "minimum": 0
+        },
+        "accepted": {
+          "type": "boolean"
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "t_s",
+        "name",
+        "duration_s",
+        "accepted",
+        "reason"
+      ],
+      "additionalProperties": false
+    },
+    "Hash": {
+      "type": "object",
+      "properties": {
+        "path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        }
+      },
+      "required": [
+        "path",
+        "sha256"
+      ],
+      "additionalProperties": false
+    },
+    "Run": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "scenario_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "mode": {
+          "enum": [
+            "illustration",
+            "synthetic_fixture",
+            "simulation",
+            "physical_test"
+          ]
+        },
+        "schema_version": {
+          "const": "1.0.0"
+        },
+        "model_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "controller_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "display_notice": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evidence_scope": {
+          "enum": [
+            "none",
+            "model_only",
+            "physical_only"
+          ]
+        },
+        "input_hashes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Hash"
+          },
+          "minItems": 1
+        },
+        "configuration_hashes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Hash"
+          },
+          "minItems": 1
+        },
+        "seed": {
+          "$ref": "#/$defs/Datum"
+        },
+        "started_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "ended_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "units": {
+          "type": "object",
+          "properties": {
+            "time": {
+              "const": "s"
+            },
+            "energy": {
+              "const": "1"
+            },
+            "load": {
+              "const": "N"
+            }
+          },
+          "required": [
+            "time",
+            "energy",
+            "load"
+          ],
+          "additionalProperties": false
+        },
+        "truth_series": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "t_s": {
+                "type": "number",
+                "minimum": 0
+              },
+              "state": {
+                "$ref": "#/$defs/State"
+              }
+            },
+            "required": [
+              "t_s",
+              "state"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 1
+        },
+        "observation_series": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Observation"
+          },
+          "minItems": 0
+        },
+        "command_series": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Command"
+          },
+          "minItems": 0
+        },
+        "belief_series": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "t_s": {
+                "type": "number",
+                "minimum": 0
+              },
+              "candidates": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/State"
+                },
+                "minItems": 0
+              },
+              "status": {
+                "enum": [
+                  "consistent",
+                  "inconsistent",
+                  "unknown"
+                ]
+              }
+            },
+            "required": [
+              "t_s",
+              "candidates",
+              "status"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 0
+        },
+        "outcomes": {
+          "type": "object",
+          "properties": {
+            "retention_loss": {
+              "$ref": "#/$defs/Datum"
+            },
+            "unsafe_energization": {
+              "$ref": "#/$defs/Datum"
+            },
+            "unsafe_connector_transition": {
+              "$ref": "#/$defs/Datum"
+            },
+            "exceeded_load_limits": {
+              "$ref": "#/$defs/Datum"
+            },
+            "unrecoverable": {
+              "$ref": "#/$defs/Datum"
+            },
+            "task_completed": {
+              "$ref": "#/$defs/Datum"
+            },
+            "acceptable_completion": {
+              "$ref": "#/$defs/Datum"
+            },
+            "safe_abort": {
+              "$ref": "#/$defs/Datum"
+            },
+            "interventions": {
+              "$ref": "#/$defs/Datum"
+            },
+            "elapsed_s": {
+              "$ref": "#/$defs/Datum"
+            }
+          },
+          "required": [
+            "retention_loss",
+            "unsafe_energization",
+            "unsafe_connector_transition",
+            "exceeded_load_limits",
+            "unrecoverable",
+            "task_completed",
+            "acceptable_completion",
+            "safe_abort",
+            "interventions",
+            "elapsed_s"
+          ],
+          "additionalProperties": false
+        },
+        "exclusions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "reason": {
+                "type": "string",
+                "minLength": 1
+              },
+              "scope": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "reason",
+              "scope"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 0
+        },
+        "provenance": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/SourceRef"
+          },
+          "minItems": 1
+        },
+        "limitations": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1
+        }
+      },
+      "required": [
+        "id",
+        "scenario_id",
+        "mode",
+        "schema_version",
+        "model_version",
+        "controller_version",
+        "display_notice",
+        "evidence_scope",
+        "input_hashes",
+        "configuration_hashes",
+        "seed",
+        "started_at",
+        "ended_at",
+        "units",
+        "truth_series",
+        "observation_series",
+        "command_series",
+        "belief_series",
+        "outcomes",
+        "exclusions",
+        "provenance",
+        "limitations"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "mode": {
+                "const": "synthetic_fixture"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "display_notice": {
+                "const": "SYNTHETIC FIXTURE — NOT EVIDENCE"
+              },
+              "evidence_scope": {
+                "const": "none"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "mode": {
+                "const": "illustration"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "evidence_scope": {
+                "const": "none"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "mode": {
+                "const": "simulation"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "evidence_scope": {
+                "const": "model_only"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "mode": {
+                "const": "physical_test"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "evidence_scope": {
+                "const": "physical_only"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
