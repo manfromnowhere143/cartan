@@ -1,0 +1,11 @@
+[project]
+name = "cartan-research-verification"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = []
+description = "Offline abstract-model verification, not a hardware controller"
+
+[project.optional-dependencies]
+verification = ["jsonschema==4.26.0"]
+
+# No installation/build is required. Run the documented Python commands directly.
