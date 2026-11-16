@@ -1,0 +1,145 @@
+TAP version 13
+# Subtest: fixture survives without evidence promotion
+ok 1 - fixture survives without evidence promotion
+  ---
+  duration_ms: 0.895666
+  ...
+# Subtest: unknown, absence, null, zero and false remain distinct
+ok 2 - unknown, absence, null, zero and false remain distinct
+  ---
+  duration_ms: 0.123666
+  ...
+# Subtest: fabricated outcomes and incomplete provenance are rejected
+ok 3 - fabricated outcomes and incomplete provenance are rejected
+  ---
+  duration_ms: 0.113375
+  ...
+# Subtest: missing and inconclusive views cannot imply success
+ok 4 - missing and inconclusive views cannot imply success
+  ---
+  duration_ms: 0.134458
+  ...
+# Subtest: canonical fixture preserves four series and source IDs
+ok 5 - canonical fixture preserves four series and source IDs
+  ---
+  duration_ms: 1.952375
+  ...
+# Subtest: canonical absent tags retain units and zero/false
+ok 6 - canonical absent tags retain units and zero/false
+  ---
+  duration_ms: 0.634958
+  ...
+# Subtest: immutable fixture bytes are checked before consumption
+ok 7 - immutable fixture bytes are checked before consumption
+  ---
+  duration_ms: 5.412417
+  ...
+# Subtest: unsupported evidence, missing references and inconsistent belief fail closed
+ok 8 - unsupported evidence, missing references and inconsistent belief fail closed
+  ---
+  duration_ms: 0.446541
+  ...
+# Subtest: mobile, reduced motion, Save-Data and portrait framing never attach media
+ok 9 - mobile, reduced motion, Save-Data and portrait framing never attach media
+  ---
+  duration_ms: 1.00075
+  ...
+# Subtest: contained landscape video remains eligible on ultrawide and compact desktop windows
+ok 10 - contained landscape video remains eligible on ultrawide and compact desktop windows
+  ---
+  duration_ms: 0.21425
+  ...
+# Subtest: poster remains visible until a decoded video frame, with one pending callback
+ok 11 - poster remains visible until a decoded video frame, with one pending callback
+  ---
+  duration_ms: 2.767416
+  ...
+# Subtest: late decoded frames cannot reveal video after pause, route exit or reduced motion
+ok 12 - late decoded frames cannot reveal video after pause, route exit or reduced motion
+  ---
+  duration_ms: 1.748709
+  ...
+# Subtest: eligible desktop starts muted once; ended stays at the end until explicit Replay
+ok 13 - eligible desktop starts muted once; ended stays at the end until explicit Replay
+  ---
+  duration_ms: 0.497541
+  ...
+# Subtest: explicit pause survives visibility, viewport updates and film close without resetting time
+ok 14 - explicit pause survives visibility, viewport updates and film close without resetting time
+  ---
+  duration_ms: 0.440875
+  ...
+# Subtest: tab hiding and leaving hero pause without automatic resumption
+ok 15 - tab hiding and leaving hero pause without automatic resumption
+  ---
+  duration_ms: 0.693667
+  ...
+# Subtest: pending play cannot override Pause or eligibility loss
+ok 16 - pending play cannot override Pause or eligibility loss
+  ---
+  duration_ms: 1.148084
+  ...
+# Subtest: autoplay rejection unloads source, exposes poster and does not retry itself
+ok 17 - autoplay rejection unloads source, exposes poster and does not retry itself
+  ---
+  duration_ms: 0.572
+  ...
+# Subtest: media failure unloads and eligibility changes never force a mid-action restart
+ok 18 - media failure unloads and eligibility changes never force a mid-action restart
+  ---
+  duration_ms: 0.45025
+  ...
+# Subtest: hidden initial route defers video until the hero is entered
+ok 19 - hidden initial route defers video until the hero is entered
+  ---
+  duration_ms: 0.107416
+  ...
+# Subtest: route and component changes cannot blank, translate or animate a surface
+ok 20 - route and component changes cannot blank, translate or animate a surface
+  ---
+  duration_ms: 1.425917
+  ...
+# Subtest: keyboard focus stays visible without a white fill, shadow or geometry change
+ok 21 - keyboard focus stays visible without a white fill, shadow or geometry change
+  ---
+  duration_ms: 0.212917
+  ...
+# Subtest: hover is restricted to fine pointers and never moves or fills controls
+ok 22 - hover is restricted to fine pointers and never moves or fills controls
+  ---
+  duration_ms: 0.22275
+  ...
+# Subtest: public controls use bounded decorative SVGs, with no glyph pictograms
+ok 23 - public controls use bounded decorative SVGs, with no glyph pictograms
+  ---
+  duration_ms: 0.287084
+  ...
+# Subtest: explorer and horizon avoid the rejected imagery without removing concept labels
+ok 24 - explorer and horizon avoid the rejected imagery without removing concept labels
+  ---
+  duration_ms: 0.131334
+  ...
+# Subtest: every public route has a stable identity independent of query tracking
+ok 25 - every public route has a stable identity independent of query tracking
+  ---
+  duration_ms: 0.853833
+  ...
+# Subtest: legacy deep links remain meaningful
+ok 26 - legacy deep links remain meaningful
+  ---
+  duration_ms: 0.149
+  ...
+# Subtest: skip links and unknown destinations are not intercepted
+ok 27 - skip links and unknown destinations are not intercepted
+  ---
+  duration_ms: 0.09875
+  ...
+1..27
+# tests 27
+# suites 0
+# pass 27
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 65.935917

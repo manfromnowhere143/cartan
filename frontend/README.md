@@ -39,15 +39,17 @@ active view, address and metadata without replacing the document.
 The eligible desktop hero plays the supplied silent 19-second sequence once,
 forward, then fades to its poster over 250ms. Pause preserves the position; Replay
 is explicit. Hidden/offscreen media pauses without automatic resumption. Mobile
-below 768px, portrait/narrow framing, reduced motion and Save-Data attach no hero
+below 768px, portrait framing, reduced motion and Save-Data attach no hero
 video source. Mobile uses the supplied portrait poster. Autoplay failure leaves
 the poster and an optional Play control; browsers without a policy query may have
 requested metadata before rejecting play. The 21.5-second full film loads only
 when its viewer opens, remains paused until Play, and includes its disclaimer in
 HTML. No audio track is present. Daniel selects any future soundtrack.
 
-Page changes apply immediately and add a brief reveal only in a focused, visible
-window. Missing media retains text and navigation. This is a concept presentation,
+Page and component changes apply immediately without opacity or transform
+animations. A consistent dark canvas and stable dark explorer artwork avoid
+large luminance changes. Custom line icons and restrained keyboard indicators
+replace glyph controls and the former filled focus state. Missing media retains text and navigation. This is a concept presentation,
 not one continuous validated mechanism. The engineering contract is unchanged.
 
 Engineering v1 is pinned to commit
@@ -75,3 +77,8 @@ are concept review assets; final human approval remains open. No CAD/glTF,
 validated kinematics, flight hardware or measured advantage is claimed.
 Daniel subsequently authorized public hosting and SEO; this does not validate
 any depicted hardware. No generation, soundtrack, analytics or backend is added.
+
+Current refinement: `docs/ADR-UI-004-stable-surface.md` and
+`qa/REVIEW-STABILITY-2026-11-16.md`. The local browser matrix is
+`http://127.0.0.1:4178/qa/stability-review.html` using the preview server above.
+No browser results are implied merely by providing this harness.

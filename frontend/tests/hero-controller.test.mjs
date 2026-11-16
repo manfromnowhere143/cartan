@@ -16,9 +16,33 @@ function fixture(overrides={}) {
   return {video,controller,get state(){return last;},setPolicy:value=>{p={...p,...value};controller.sync();},event:name=>listeners.get(name)?.(),resolve:()=>pending.shift()?.resolve(),reject:()=>pending.shift()?.reject(new Error('denied'))};
 }
 test('mobile, reduced motion, Save-Data and portrait framing never attach media',()=>{
-  for(const p of [{width:390},{reducedMotion:true},{saveData:true},{width:768,aspect:.75},{aspect:2.5}]) {
+  for(const p of [{width:390},{reducedMotion:true},{saveData:true},{width:768,aspect:.75}]) {
     const f=fixture(p);f.controller.sync();f.controller.toggle();f.controller.sync();
     assert.equal(f.video.attachments,0);assert.equal(f.video.plays,0);assert.equal(f.state.phase,'static');assert.ok(staticReason({...{width:1440,aspect:1.6},...p}));
+  }
+});
+test('contained landscape video remains eligible on ultrawide and compact desktop windows',()=>{
+  for(const p of [{width:3440,aspect:2.5},{width:1280,aspect:1280/720},{width:1440,aspect:1.6},{width:1024,aspect:4/3}]) {
+    const f=fixture(p);f.controller.sync();assert.equal(f.video.attachments,1);assert.equal(f.video.plays,1);assert.equal(f.state.phase,'loading');
+  }
+});
+test('poster remains visible until a decoded video frame, with one pending callback',async()=>{
+  const f=fixture();let submitted,requests=0;
+  f.video.requestVideoFrameCallback=fn=>{submitted=fn;return ++requests;};
+  f.controller.sync();f.event('playing');f.resolve();await tick();
+  assert.equal(f.state.hasFrame,false);assert.equal(requests,1);
+  submitted();assert.equal(f.state.hasFrame,true);assert.equal(f.state.phase,'playing');
+});
+test('late decoded frames cannot reveal video after pause, route exit or reduced motion',async()=>{
+  for(const change of ['pause','route','reduced']) {
+    const f=fixture();let submitted,cancelled=0;
+    f.video.requestVideoFrameCallback=fn=>{submitted=fn;return 42;};
+    f.video.cancelVideoFrameCallback=id=>{assert.equal(id,42);cancelled++;};
+    f.controller.sync();f.resolve();await tick();
+    if(change==='pause') f.controller.pause();
+    else f.setPolicy(change==='route'?{inView:false}:{reducedMotion:true});
+    submitted();assert.equal(f.state.hasFrame,false);assert.equal(cancelled,1);
+    assert.equal(f.video.paused,true);assert.notEqual(f.state.phase,'playing');
   }
 });
 test('eligible desktop starts muted once; ended stays at the end until explicit Replay',async()=>{

@@ -1,5 +1,5 @@
 {
-  "version": "ui-intake/0.2",
+  "version": "ui-intake/0.3",
   "inspected_on": "2026-11-16",
   "assets": [
     {
@@ -25,7 +25,8 @@
       "producer": "Existing CARTAN production packet",
       "rights_status": "source_reported; independent clearance not established",
       "approval_status": "local review; final playback/pacing approval pending",
-      "modified": false
+      "modified": false,
+      "usage": "historical still preserved; omitted from public surface to avoid bright explorer entry; module remains in supplied film"
     },
     {
       "id": "vision.jpg",
@@ -37,7 +38,8 @@
       "producer": "Existing CARTAN production packet",
       "rights_status": "source_reported; independent clearance not established",
       "approval_status": "local review; final playback/pacing approval pending",
-      "modified": false
+      "modified": false,
+      "usage": "operator-rejected idle-arm horizon composition; preserved historically, omitted from public package"
     },
     {
       "id": "hero-loop.mp4",
@@ -99,7 +101,8 @@
       "producer": "CARTAN revised edit supplied by Daniel",
       "rights_status": "source_reported; independent clearance not established",
       "approval_status": "operator-authorized local integration; publication not authorized",
-      "modified": false
+      "modified": false,
+      "usage": "hero fallback and stable architecture-explorer illustration"
     },
     {
       "id": "cartan-hero-poster-mobile.jpg",
@@ -124,6 +127,19 @@
       "rights_status": "source_reported; independent clearance not established",
       "approval_status": "operator-authorized local integration; publication not authorized",
       "modified": false
+    },
+    {
+      "id": "assembly.png",
+      "path": "assets/scenes/assembly.png",
+      "source_path": "/Users/danielwahnich/Documents/CARTAN-Film-2026-11-16/motion-proofs/sources/assembly.png",
+      "sha256": "da669be21c8fbeded42e8b76e4cf7b553f804a1e9228f7d7f7fa832c0ded9246",
+      "bytes": 2459429,
+      "scientific_status": "concept_image",
+      "producer": "Existing CARTAN motion-proofs source packet",
+      "rights_status": "source_reported; independent clearance not established",
+      "approval_status": "operator requested replacement of idle-arm imagery and use of supplied concepts",
+      "modified": false,
+      "usage": "longer horizon; arms engage the truss in the illustration; no physical assembly validation"
     }
   ],
   "missing": [

@@ -41,8 +41,8 @@ def verify(package):
  check('preview noindex',any(r.get('missing') and r.get('headers',{}).get('X-Robots-Tag')=='noindex, nofollow' for r in config['routes']))
  check('no private/obsolete artifacts',not any(p in '/'.join(receipt['files']) for p in ['qa/','docs/','.env','memory/','hero-loop','film-review.mp4','validate.py']))
  for rel,value in receipt['files'].items():check('sealed bytes '+rel,hashlib.sha256((static/rel).read_bytes()).hexdigest()==value['sha256'])
- for rel in ['vendor/cartan/v1/fixture.json','assets/cartan-logo.png']+[str(p.relative_to(ROOT)) for p in (ROOT/'assets/cartan').glob('*')]:check('original bytes '+rel,(ROOT/rel).read_bytes()==(static/rel).read_bytes())
- check('artifact bound',receipt['bytes']<26*1024**2)
+ for rel in ['vendor/cartan/v1/fixture.json','assets/cartan-logo.png','assets/scenes/assembly.png']+[str(p.relative_to(ROOT)) for p in (ROOT/'assets/cartan').glob('*')]:check('original bytes '+rel,(ROOT/rel).read_bytes()==(static/rel).read_bytes())
+ check('artifact bound',receipt['bytes']<29*1024**2)
  return checks
 if __name__=='__main__':
  p=argparse.ArgumentParser();p.add_argument('package',type=Path);a=p.parse_args();checks=verify(a.package);(a.package/'package-verification.json').write_text(json.dumps(checks,indent=2)+'\n');print(f'{len(checks)} package assertions passed')

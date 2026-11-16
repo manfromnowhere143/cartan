@@ -48,10 +48,10 @@ addEventListener('DOMContentLoaded',()=>{
    return
   super().do_GET()
  def do_POST(self):
-  if self.path!='/qa/report':self.send_error(404);return
+  if self.path not in ['/qa/report','/qa/stability-report']:self.send_error(404);return
   length=int(self.headers.get('Content-Length','0'))
   if length>300000:self.send_error(413);return
-  report=json.loads(self.rfile.read(length));path=ROOT/'qa/revised-hero-browser-results.json'
+  report=json.loads(self.rfile.read(length));path=ROOT/'qa'/('stability-browser-results.json' if self.path=='/qa/stability-report' else 'revised-hero-browser-results.json')
   path.write_text(json.dumps(report,indent=2)+'\n');self.send_response(204);self.end_headers()
 if __name__=='__main__':
  port=int(sys.argv[1]) if len(sys.argv)>1 else 4178

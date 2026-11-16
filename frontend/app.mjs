@@ -20,7 +20,6 @@ for (const button of document.querySelectorAll('[data-component]')) {
     $('#component-description').textContent = description;
     $('#component-definition').textContent = definition;
     $('#component-measurement').textContent = measurement;
-    if (!motionPreference.matches && !document.hidden && document.hasFocus()) $('#component-title').animate([{opacity:0,transform:'translateY(6px)'},{opacity:1,transform:'none'}],{duration:240});
   });
 }
 for (const button of document.querySelectorAll('[data-evidence]')) {
@@ -94,7 +93,8 @@ const heroMedia=createHeroController({
     motionButton.hidden=staticView;
     const playing=phase==='playing'||phase==='loading';
     const label=playing ? 'Pause background motion' : phase==='ended' ? 'Replay background motion' : 'Play background motion';
-    motionButton.textContent=playing ? 'Pause motion Ⅱ' : phase==='ended' ? 'Replay motion ↻' : 'Play motion ▷';
+    motionButton.querySelector('.control-label').textContent=playing ? 'Pause motion' : phase==='ended' ? 'Replay motion' : 'Play motion';
+    motionButton.querySelector('path').setAttribute('d',playing ? 'M8 5v14M16 5v14' : phase==='ended' ? 'M5 9a8 8 0 1 1-1 7M5 3v6h6' : 'm8 5 11 7-11 7Z');
     motionButton.setAttribute('aria-label',label);
     heroStatus.textContent=staticView ? 'Static concept image.' : phase==='ended' ? 'Concept sequence complete. Still image shown; replay is optional.' : phase==='blocked' ? 'Background motion unavailable. Concept still shown.' : phase==='paused' ? 'Background motion paused.' : '';
     if(reason==='reduced-motion') document.getAnimations().forEach(animation=>animation.cancel());
@@ -155,22 +155,10 @@ const routes = {
   sources:{label:'RESEARCH / PRIMARY SOURCES',parent:'question',section:'question'},
   vision:{label:'LONG-TERM CONCEPT',parent:'home',section:null},
 };
-let currentView='home', currentTransition=null;
+let currentView='home';
 const hashFor=pathFor;
 
-function transform(update) {
-  currentTransition?.cancel();
-  update();
-  const surface=surfaces.get(currentView);
-  if (!motionPreference.matches && !document.hidden && document.hasFocus() && typeof surface.animate==='function') {
-    currentTransition=surface.animate([
-      {opacity:0,transform:'translateY(12px)'},
-      {opacity:1,transform:'translateY(0)'},
-    ],{duration:340,easing:'cubic-bezier(.2,.7,.2,1)'});
-  }
-}
-
-function showView(view,{focus=true,animate=true}={}) {
+function showView(view,{focus=true}={}) {
   if (!routes[view]) view='home';
   // Stop decoding before the outgoing view is hidden, not after animation.
   activeHero=view==='home';
@@ -192,14 +180,14 @@ function showView(view,{focus=true,animate=true}={}) {
     const back=$('#view-back');
     back.hidden=view==='home';
     back.href=hashFor(routes[view].parent);
-    back.textContent=routes[view].parent==='home' ? '← Overview' : routes[view].parent==='laboratory' ? '← Laboratory' : routes[view].parent==='question' ? '← Research' : '← Evidence';
+    back.querySelector('.control-label').textContent=routes[view].parent==='home' ? 'Overview' : routes[view].parent==='laboratory' ? 'Laboratory' : routes[view].parent==='question' ? 'Research' : 'Evidence';
     $('#view-context').textContent=routes[view].label;
     const heading=surfaces.get(view).querySelector('h1,h2');
     updateMetadata(view);
     window.scrollTo({top:0,left:0,behavior:'instant'});
     if (focus) {heading.tabIndex=-1;heading.focus({preventScroll:true});}
   };
-  if (animate && view!==currentView) transform(update); else update();
+  update();
 }
 function navigate(view) {
   if (!routes[view]) return;
@@ -229,4 +217,4 @@ document.addEventListener('keydown',event=>{
 document.documentElement.classList.add('has-router');
 const initialView=viewFromURL(location);
 if(location.hash==='#top'||Object.hasOwn(SITE.pages,location.hash.slice(1)))history.replaceState({cartanView:initialView},'',pathFor(initialView));
-showView(initialView,{focus:false,animate:false});
+showView(initialView,{focus:false});
