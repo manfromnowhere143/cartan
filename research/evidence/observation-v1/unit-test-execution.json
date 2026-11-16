@@ -1,0 +1,10 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.14/bin/python3.14",
+    "-B",
+    "-c",
+    "import sys,unittest; sys.path.insert(0,'backend/observation_model'); from run_study import limits; print(limits(),flush=True); suite=unittest.defaultTestLoader.discover('backend/observation_model'); result=unittest.TextTestRunner(verbosity=2).run(suite); sys.exit(not result.wasSuccessful())"
+  ],
+  "exit_code": 0,
+  "wall_timeout_s": 15
+}

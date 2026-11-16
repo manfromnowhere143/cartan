@@ -1,0 +1,29 @@
+{
+  "recorded_at": "2026-11-16T12:59:20.183933+00:00",
+  "scope": "Post-run primary-source retrievals; not frozen study inputs",
+  "files": [
+    {
+      "file": "hotdock-product.pdf",
+      "url": "https://www.spaceapplications.com/wp-content/uploads/2019/05/7_Product-Sheet_-HOTDOCK-1.pdf",
+      "bytes": 315346,
+      "sha256": "e9bf62c6a669a3684f5d459ef1cc4fb48c3370f54368158bd9d85a5b6394f204",
+      "retained_in_git": false
+    },
+    {
+      "file": "period-method-2022.pdf",
+      "url": "https://zenodo.org/api/records/7319796/files/2022_Astra_Period.pdf/content",
+      "bytes": 1091511,
+      "sha256": "18db054d008c9760532c98563e5ea93afaa2200d7bd84a40a3de5384936c310f",
+      "retained_in_git": false
+    },
+    {
+      "file": "period-benchmark-2022.pdf",
+      "url": "https://zenodo.org/api/records/7064066/files/IAC-22,A6,IPB,1,x69295.pdf/content",
+      "bytes": 1142517,
+      "sha256": "5bdb1cfdf26a15221b8da7608bd5a25f35685ffc0e620e2c2d3eeabf46110306",
+      "retained_in_git": false
+    }
+  ],
+  "publisher_html": "https://www.mdpi.com/2673-4591/133/1/194",
+  "publisher_html_scope": "Read through browser; no local raw-HTML digest claimed"
+}

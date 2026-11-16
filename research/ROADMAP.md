@@ -1,52 +1,85 @@
-# CARTAN research priorities after block 3
+# CARTAN research priorities after block 4
 
-16 November 2026. Long-term aim: spacecraft and orbital infrastructure that can
-be maintained, upgraded and reconfigured robotically. Current status: a research
-concept with source reviews, explicit models and reproducible software studies.
-The program has no established flight capability, customer, commercial advantage
-or accepted physical safety envelope. This roadmap replaces a request for every
-advanced technique with a sequence of answerable engineering questions.
+16 November 2026. The destination is spacecraft and orbital infrastructure that
+can be maintained, upgraded and reconfigured robotically. Current evidence covers
+source reviews, explicit models and reproducible software studies. Physical
+recovery, comparative value and flight capability remain unproven.
 
-Block 3 implements distinct logical interface propositions and report provenance,
-with retained witnesses and reproducible checks. That advances the software
-boundary of Priority 1; it does not complete its physical observation/calibration
-gate. The next priority remains the same. See [the findings](block-3/results.md).
+The [observation study](block-4/results.md) now separates sensor inversion from
+source connectivity. The [additional primary-source review](block-4/source-followup.md)
+shows that interface interruption tests and counterpart recovery already have
+substantial prior art. This supersedes the block 3 roadmap's description of public
+material as only preliminary. It does not close the current-unit evidence gap.
 
-| Priority | Concrete deliverable | Evidence needed to move forward | Stop/narrow rule |
-|---|---|---|---|
-| 1. Physical meaning of observations | One reviewed interface/circuit revision; mapping from telemetry and acquisition provenance to actual retention/isolation predicates | Current ICD, mechanism/load-path explanation, measurement locations and uncertainty, failure/common-cause coverage, restart behavior | Do not substitute motor position or ACK for physical retention. If ordinary evidence already suffices, prefer the existing procedure |
-| 2. Fault envelope | Versioned allowed histories, disturbances and source-dependence model, with counterexamples outside it | Real traces, calibration or engineering bounds; not assumed error frequencies | Unknown bounds stay unknown. Do not turn a consistent inference into a safety claim |
-| 3. Useful comparative recovery | Competent interlocked B0, operator B1, hardware/procedure B2, explicit C and null arm with matched information and resources | Owner-backed endpoints, allowed diagnostics, hold limits and a frozen protocol | If B0 is equivalent, retain it. If B2 is simpler at acceptable burden, prefer it. Do not disable protections to produce a win |
-| 4. Physics fidelity | Validated circuit envelope; constrained contact/retention model only where it changes the decision | Geometry, material/compliance, load, source/backfeed and actuator data; independent reference cases | No active probing or free-body claim from a fixed-host or scalar model |
-| 5. Algorithm complexity | A justified planner/estimator plus separate certificate checks, bounded latency and meaningful ablations | A demonstrated decision problem that simpler procedures cannot solve within the same information/resources | Do not add learning, differentiable reachability or belief planning solely because it is recent |
-| 6. Contained physical study | Reviewed fixture, independent truth instrumentation, predeclared trial/stop rules and complete results | Qualified safety review, explicit physical authorization, realistic time/cost limits and reproducible measurements | Preserve failed/null trials; a lab success does not qualify space operation |
-| 7. Scale and dissemination | Reviewable evidence package and clearly scoped claims | Independent review/replication; separately authorized publication or deployment | No organizational endorsement, mission heritage or universal superiority inferred from local checks |
+## First priority: establish what observations mean
 
-The [first-study protocol](experiments/first-study.md) remains the physical-study
-design. Public preliminary interface material now supports its desk review, but
-does not complete the current-hardware or fault-mapping gate. A current operational
-revision and credible measurement bounds are the next highest-value inputs.
+Identify one mechanical, circuit and firmware revision. Map each channel to its
+physical sensing location, acquisition time, operating domain and uncertainty.
+Establish which faults break the relationship between motor position, engagement
+and load capacity. Inventory source and return paths, including module-side
+supplies and stored energy. Unknown bounds remain unknown.
 
-For Priority 1, make these questions explicit in the eventual interface record:
+Current documentation, credible calibration, qualified load/electrical limits and
+restart traces are the next useful inputs. No supplied numerical fixture is a
+measured vendor parameter. If ordinary sensing, interlocks and reviewed procedures
+already justify the decision, retain the simpler system.
 
-- What physical predicate does each channel actually measure, and which faults
-  can decouple that measurement from the required load path or isolation state?
-- Which channels share mechanics, power, wiring, clocks or software? What is a
-  fresh independent acquisition, rather than a new delivery of old data?
-- What survives a restart, and what evidence must be reacquired?
-- Where is residual energy measured, which sources/backfeed remain possible,
-  and which limits have an identified engineering authority?
-- Can a permitted passive reread/retry or operator procedure resolve the decision
-  within the hold limit? If not, what one additional measurement changes it?
+## Second priority: define the fault envelope
 
-These are research obligations, not invented facts about any vendor. Open-source
-discovery and analysis can continue without contacting third parties. Procurement,
-physical operation, paid compute, deployment and publication remain separate
-actions; nothing in this roadmap silently starts them.
+Preserve shared mechanics, supplies, wiring, clocks, calibration and software as
+possible common causes. Distinguish a new acquisition from delivery of an old
+sample. Record what survives a restart and what must be reacquired. Use real
+traces or engineering bounds; do not assign fault frequencies to make a model
+appear complete. A consistent belief is only as sound as its coverage of reality.
 
-Software structure stays small: immutable source/assumption records; independent
-plant, observation, inference and scoring boundaries; versioned static artifacts;
-bounded reproducibility checks. UI consumes stable reviewed contracts and exposes
-unknowns. Setup retains launcher/global/MCP ownership. No whole-repository rewrite,
-new model session, recurring mission or fashionable dependency stack is required
-to answer the next scientific question.
+## Third priority: establish a useful comparison
+
+The [first-study protocol](experiments/first-study.md) requires competent B0
+interlocks and recovery, a trained B1 operator, B2 sensing or passive changes,
+explicit C inference and a hold/abort arm. Existing counterpart-release capability
+belongs in the selected unit's baseline. Algorithm comparisons receive the same
+information. Changed hardware carries its integration and lifecycle burden.
+
+Freeze allowed diagnostics, owner-backed limits, endpoints and trial rules before
+scoring. Preserve safe aborts and unresolved outcomes. An unsafe baseline failure
+is not required. Prefer B0 when equivalent and B2 when it resolves the problem
+more simply at acceptable cost. If no consequential gap or owner-backed need can
+be established, stop product expansion and retain the research record.
+
+## Fourth priority: increase physical fidelity where needed
+
+A validated circuit envelope or constrained contact model is justified when it
+changes the decision. Geometry, compliance, materials, loads, source paths and
+actuator behavior need independently checked inputs. A scalar electrical fixture
+or fixed-host model cannot establish a free-body servicing result. Contact and
+load-capacity qualification remain separate from logical engagement.
+
+## Fifth priority: justify algorithmic complexity
+
+Only a demonstrated decision problem can justify an additional planner or
+estimator. It needs bounded latency, separate certificate checks and meaningful
+ablations. The completed counting comparison found no advantage over its simple
+baseline. The latest exact calculations also agree with conventional references.
+Learning or advanced reachability methods do not gain priority merely by being new.
+
+## Sixth priority: conduct a contained physical study
+
+A qualified fixture, independent truth instrumentation and predeclared stop rules
+must precede any physical trial. Separate calibration from validation, balance
+trial order and retain all attempts. Measure recovery, safety, interventions,
+time and cost separately. A laboratory result would still not qualify operation
+in space. No physical study has been performed by CARTAN.
+
+## Seventh priority: publish an inspectable record
+
+Daniel has authorized GitHub publication when the repository is ready. License
+and visibility choices remain pending. Prepare the complete candidate, preserve
+third-party attribution and media rights, and verify the exact contents before
+publishing. Publication does not supply independent review or replication.
+UI deployment remains owned by the UI lane; research does not change its DNS or
+hosting configuration.
+
+The implementation remains a set of independent offline studies, with immutable
+inputs, explicit observation/inference/scoring boundaries and bounded execution.
+UI consumes frozen v1 fixtures; the newer analytical records need a reviewed
+adapter. Setup retains launcher, shared configuration and MCP ownership.

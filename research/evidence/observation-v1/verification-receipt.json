@@ -1,0 +1,46 @@
+{
+  "recorded_at": "2026-11-16T12:51:09.596334+00:00",
+  "design_commit": "f08f288",
+  "code_commit": "198f7fe",
+  "owner": "research",
+  "scope": "Constructed observation-model verification, not physical calibration",
+  "checks": {
+    "case_count": 34,
+    "input_rejections": 7,
+    "voltage_comparisons": 8,
+    "topology_reference_checks": 269,
+    "assessment_counts": {
+      "supported": 5,
+      "refuted": 5,
+      "unresolved": 17
+    }
+  },
+  "unit_tests": {
+    "passed": 11,
+    "reported_s": 0.002,
+    "execution_record": "unit-test-execution.json",
+    "log": "unit-tests.txt"
+  },
+  "replay": {
+    "byte_identical_core": true,
+    "input_hashes_identical": true,
+    "all_manifest_hashes_verified": true,
+    "core_file_sha256": "a692226cf27950f5e4a3ebb7c29605716eca92f660cfe4a39cb80e8e8a674d89"
+  },
+  "preservation": {
+    "prior_files_identical_to_73030a9": 54,
+    "original_packet_files_verified": 12
+  },
+  "resources": {
+    "initial_paired_output_bytes": 766951,
+    "CPU_limit_s": 5,
+    "address_space_limit_supported": false,
+    "paid_jobs": 0
+  },
+  "limitations": [
+    "No calibrated sensor, hardware actuation or current firmware validation",
+    "Physical retention mapping remains incomplete",
+    "Source inventory and rate/fault bounds are assumptions",
+    "Conventional methods agree; no algorithmic or physical advantage claimed"
+  ]
+}

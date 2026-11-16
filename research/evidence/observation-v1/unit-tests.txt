@@ -1,0 +1,17 @@
+{'workers': 1, 'cpu_limit_s': 5, 'address_space_requested_bytes': 268435456, 'address_space_limit_set': False, 'note': 'current limit exceeds maximum limit'}
+test_bad_numeric_inputs_fail_without_float_tolerance (test_model.ObservationBoundaries.test_bad_numeric_inputs_fail_without_float_tolerance) ... ok
+test_clock_uncertainty_uses_oldest_possible_acquisition (test_model.ObservationBoundaries.test_clock_uncertainty_uses_oldest_possible_acquisition) ... ok
+test_connected_witness_is_an_actual_declared_path (test_model.ObservationBoundaries.test_connected_witness_is_an_actual_declared_path) ... ok
+test_incomplete_inventory_and_common_closure_are_preserved (test_model.ObservationBoundaries.test_incomplete_inventory_and_common_closure_are_preserved) ... ok
+test_interval_contains_interior_gain_bias_error_time_values (test_model.ObservationBoundaries.test_interval_contains_interior_gain_bias_error_time_values) ... ok
+test_missing_statuses_remain_distinct (test_model.ObservationBoundaries.test_missing_statuses_remain_distinct) ... ok
+test_negative_polarity_limit_is_not_missed (test_model.ObservationBoundaries.test_negative_polarity_limit_is_not_missed) ... ok
+test_no_state_aliasing_or_physical_clearance (test_model.ObservationBoundaries.test_no_state_aliasing_or_physical_clearance) ... ok
+test_topology_caps_and_boolean_domains (test_model.ObservationBoundaries.test_topology_caps_and_boolean_domains) ... ok
+test_unknown_rate_coverage_and_fault_never_become_zero_error (test_model.ObservationBoundaries.test_unknown_rate_coverage_and_fault_never_become_zero_error) ... ok
+test_zero_is_known_and_has_no_isolation_implication (test_model.ObservationBoundaries.test_zero_is_known_and_has_no_isolation_implication) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.002s
+
+OK

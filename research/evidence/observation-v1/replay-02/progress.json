@@ -1,0 +1,7579 @@
+{
+  "schema_version": "cartan-observation-analysis/1.0.0",
+  "model_version": "physical-observation/0.1.0",
+  "scope": "constructed_verification_not_calibration",
+  "physical_authorization": "not_assessed",
+  "cases": [
+    {
+      "id": "low-indication",
+      "kind": "voltage",
+      "input": {
+        "mode": "synthetic_fixture",
+        "report": {
+          "status": "known",
+          "value_V": [
+            "0",
+            "0"
+          ],
+          "unit": "V",
+          "point": "connector_pair_A",
+          "epoch": 0,
+          "sampled_s": [
+            "0",
+            "0"
+          ],
+          "received_s": "0",
+          "acquisition_id": "constructed-a",
+          "source": "constructed-sensor"
+        },
+        "model": {
+          "gain": [
+            "1",
+            "1"
+          ],
+          "bias_V": [
+            "0",
+            "0"
+          ],
+          "error_V": "1/10",
+          "rate_V_per_s": "0",
+          "kind": "hard_bound",
+          "fault": "bounded",
+          "basis": "synthetic_assumption",
+          "epoch": 0,
+          "point": "connector_pair_A",
+          "max_age_s": "1"
+        },
+        "query": {
+          "time_s": "0",
+          "epoch": 0,
+          "limit_V": "1",
+          "point": "connector_pair_A"
+        }
+      },
+      "execution": "evaluated",
+      "result": {
+        "model_version": "physical-observation/0.1.0",
+        "kind": "terminal_voltage",
+        "input": {
+          "mode": "synthetic_fixture",
+          "report": {
+            "status": "known",
+            "value_V": [
+              "0",
+              "0"
+            ],
+            "unit": "V",
+            "point": "connector_pair_A",
+            "epoch": 0,
+            "sampled_s": [
+              "0",
+              "0"
+            ],
+            "received_s": "0",
+            "acquisition_id": "constructed-a",
+            "source": "constructed-sensor"
+          },
+          "model": {
+            "gain": [
+              "1",
+              "1"
+            ],
+            "bias_V": [
+              "0",
+              "0"
+            ],
+            "error_V": "1/10",
+            "rate_V_per_s": "0",
+            "kind": "hard_bound",
+            "fault": "bounded",
+            "basis": "synthetic_assumption",
+            "epoch": 0,
+            "point": "connector_pair_A",
+            "max_age_s": "1"
+          },
+          "query": {
+            "time_s": "0",
+            "epoch": 0,
+            "limit_V": "1",
+            "point": "connector_pair_A"
+          }
+        },
+        "scope": "conditional_model_with_constructed_inputs",
+        "physical_authorization": "not_assessed",
+        "status": "supported",
+        "interval_V": [
+          "-1/10",
+          "1/10"
+        ],
+        "reason": "conditional_inverse_and_time_enclosure",
+        "source_isolation": "not_assessed",
+        "stored_energy": "not_assessed",
+        "maximum_age_s": "0",
+        "assumptions": [
+          "Sensor relation and rate envelope cover the query interval.",
+          "Gain, bias and error bounds are assumed, not calibrated.",
+          "No unmodeled switching, saturation or shared failure invalidates the bounds."
+        ]
+      },
+      "conventional_reference": {
+        "interval_V": [
+          "-1/10",
+          "1/10"
+        ],
+        "status": "supported",
+        "corner_substitution_values_V": [
+          "1/10",
+          "1/10",
+          "-1/10",
+          "-1/10",
+          "1/10",
+          "1/10",
+          "-1/10",
+          "-1/10",
+          "1/10",
+          "1/10",
+          "-1/10",
+          "-1/10",
+          "1/10",
+          "1/10",
+          "-1/10",
+          "-1/10",
+          "1/10",
+          "1/10",
+          "-1/10",
+          "-1/10",
+          "1/10",
+          "1/10",
+          "-1/10",
+          "-1/10",
+          "1/10",
+          "1/10",
+          "-1/10",
+          "-1/10",
+          "1/10",
+          "1/10",
+          "-1/10",
+          "-1/10"
+        ]
+      }
+    },
+    {
+      "id": "straddles-limit",
+      "kind": "voltage",
+      "input": {
+        "mode": "synthetic_fixture",
+        "report": {
+          "status": "known",
+          "value_V": [
+            "9/10",
+            "11/10"
+          ],
+          "unit": "V",
+          "point": "connector_pair_A",
+          "epoch": 0,
+          "sampled_s": [
+            "0",
+            "0"
+          ],
+          "received_s": "0",
+          "acquisition_id": "constructed-a",
+          "source": "constructed-sensor"
+        },
+        "model": {
+          "gain": [
+            "1",
+            "1"
+          ],
+          "bias_V": [
+            "0",
+            "0"
+          ],
+          "error_V": "1/10",
+          "rate_V_per_s": "0",
+          "kind": "hard_bound",
+          "fault": "bounded",
+          "basis": "synthetic_assumption",
+          "epoch": 0,
+          "point": "connector_pair_A",
+          "max_age_s": "1"
+        },
+        "query": {
+          "time_s": "0",
+          "epoch": 0,
+          "limit_V": "1",
+          "point": "connector_pair_A"
+        }
+      },
+      "execution": "evaluated",
+      "result": {
+        "model_version": "physical-observation/0.1.0",
+        "kind": "terminal_voltage",
+        "input": {
+          "mode": "synthetic_fixture",
+          "report": {
+            "status": "known",
+            "value_V": [
+              "9/10",
+              "11/10"
+            ],
+            "unit": "V",
+            "point": "connector_pair_A",
+            "epoch": 0,
+            "sampled_s": [
+              "0",
+              "0"
+            ],
+            "received_s": "0",
+            "acquisition_id": "constructed-a",
+            "source": "constructed-sensor"
+          },
+          "model": {
+            "gain": [
+              "1",
+              "1"
+            ],
+            "bias_V": [
+              "0",
+              "0"
+            ],
+            "error_V": "1/10",
+            "rate_V_per_s": "0",
+            "kind": "hard_bound",
+            "fault": "bounded",
+            "basis": "synthetic_assumption",
+            "epoch": 0,
+            "point": "connector_pair_A",
+            "max_age_s": "1"
+          },
+          "query": {
+            "time_s": "0",
+            "epoch": 0,
+            "limit_V": "1",
+            "point": "connector_pair_A"
+          }
+        },
+        "scope": "conditional_model_with_constructed_inputs",
+        "physical_authorization": "not_assessed",
+        "status": "unresolved",
+        "interval_V": [
+          "4/5",
+          "6/5"
+        ],
+        "reason": "conditional_inverse_and_time_enclosure",
+        "source_isolation": "not_assessed",
+        "stored_energy": "not_assessed",
+        "maximum_age_s": "0",
+        "assumptions": [
+          "Sensor relation and rate envelope cover the query interval.",
+          "Gain, bias and error bounds are assumed, not calibrated.",
+          "No unmodeled switching, saturation or shared failure invalidates the bounds."
+        ]
+      },
+      "conventional_reference": {
+        "interval_V": [
+          "4/5",
+          "6/5"
+        ],
+        "status": "unresolved",
+        "corner_substitution_values_V": [
+          "1",
+          "1",
+          "4/5",
+          "4/5",
+          "1",
+          "1",
+          "4/5",
+          "4/5",
+          "1",
+          "1",
+          "4/5",
+          "4/5",
+          "1",
+          "1",
+          "4/5",
+          "4/5",
+          "6/5",
+          "6/5",
+          "1",
+          "1",
+          "6/5",
+          "6/5",
+          "1",
+          "1",
+          "6/5",
+          "6/5",
+          "1",
+          "1",
+          "6/5",
+          "6/5",
+          "1",
+          "1"
+        ]
+      }
+    },
+    {
+      "id": "reverse-polarity",
+      "kind": "voltage",
+      "input": {
+        "mode": "synthetic_fixture",
+        "report": {
+          "status": "known",
+          "value_V": [
+            "-2",
+            "-2"
+          ],
+          "unit": "V",
+          "point": "connector_pair_A",
+          "epoch": 0,
+          "sampled_s": [
+            "0",
+            "0"
+          ],
+          "received_s": "0",
+          "acquisition_id": "constructed-a",
+          "source": "constructed-sensor"
+        },
+        "model": {
+          "gain": [
+            "1",
+            "1"
+          ],
+          "bias_V": [
+            "0",
+            "0"
+          ],
+          "error_V": "1/10",
+          "rate_V_per_s": "0",
+          "kind": "hard_bound",
+          "fault": "bounded",
+          "basis": "synthetic_assumption",
+          "epoch": 0,
+          "point": "connector_pair_A",
+          "max_age_s": "1"
+        },
+        "query": {
+          "time_s": "0",
+          "epoch": 0,
+          "limit_V": "1",
+          "point": "connector_pair_A"
+        }
+      },
+      "execution": "evaluated",
+      "result": {
+        "model_version": "physical-observation/0.1.0",
+        "kind": "terminal_voltage",
+        "input": {
+          "mode": "synthetic_fixture",
+          "report": {
+            "status": "known",
+            "value_V": [
+              "-2",
+              "-2"
+            ],
+            "unit": "V",
+            "point": "connector_pair_A",
+            "epoch": 0,
+            "sampled_s": [
+              "0",
+              "0"
+            ],
+            "received_s": "0",
+            "acquisition_id": "constructed-a",
+            "source": "constructed-sensor"
+          },
+          "model": {
+            "gain": [
+              "1",
+              "1"
+            ],
+            "bias_V": [
+              "0",
+              "0"
+            ],
+            "error_V": "1/10",
+            "rate_V_per_s": "0",
+            "kind": "hard_bound",
+            "fault": "bounded",
+            "basis": "synthetic_assumption",
+            "epoch": 0,
+            "point": "connector_pair_A",
+            "max_age_s": "1"
+          },
+          "query": {
+            "time_s": "0",
+            "epoch": 0,
+            "limit_V": "1",
+            "point": "connector_pair_A"
+          }
+        },
+        "scope": "conditional_model_with_constructed_inputs",
+        "physical_authorization": "not_assessed",
+        "status": "refuted",
+        "interval_V": [
+          "-21/10",
+          "-19/10"
+        ],
+        "reason": "conditional_inverse_and_time_enclosure",
+        "source_isolation": "not_assessed",
+        "stored_energy": "not_assessed",
+        "maximum_age_s": "0",
+        "assumptions": [
+          "Sensor relation and rate envelope cover the query interval.",
+          "Gain, bias and error bounds are assumed, not calibrated.",
+          "No unmodeled switching, saturation or shared failure invalidates the bounds."
+        ]
+      },
+      "conventional_reference": {
+        "interval_V": [
+          "-21/10",
+          "-19/10"
+        ],
+        "status": "refuted",
+        "corner_substitution_values_V": [
+          "-19/10",
+          "-19/10",
+          "-21/10",
+          "-21/10",
+          "-19/10",
+          "-19/10",
+          "-21/10",
+          "-21/10",
+          "-19/10",
+          "-19/10",
+          "-21/10",
+          "-21/10",
+          "-19/10",
+          "-19/10",
+          "-21/10",
+          "-21/10",
+          "-19/10",
+          "-19/10",
+          "-21/10",
+          "-21/10",
+          "-19/10",
+          "-19/10",
+          "-21/10",
+          "-21/10",
+          "-19/10",
+          "-19/10",
+          "-21/10",
+          "-21/10",
+          "-19/10",
+          "-19/10",
+          "-21/10",
+          "-21/10"
+        ]
+      }
+    },
+    {
+      "id": "positive-exceedance",
+      "kind": "voltage",
+      "input": {
+        "mode": "synthetic_fixture",
+        "report": {
+          "status": "known",
+          "value_V": [
+            "2",
+            "2"
+          ],
+          "unit": "V",
+          "point": "connector_pair_A",
+          "epoch": 0,
+          "sampled_s": [
+            "0",
+            "0"
+          ],
+          "received_s": "0",
+          "acquisition_id": "constructed-a",
+          "source": "constructed-sensor"
+        },
+        "model": {
+          "gain": [
+            "1",
+            "1"
+          ],
+          "bias_V": [
+            "0",
+            "0"
+          ],
+          "error_V": "1/10",
+          "rate_V_per_s": "0",
+          "kind": "hard_bound",
+          "fault": "bounded",
+          "basis": "synthetic_assumption",
+          "epoch": 0,
+          "point": "connector_pair_A",
+          "max_age_s": "1"
+        },
+        "query": {
+          "time_s": "0",
+          "epoch": 0,
+          "limit_V": "1",
+          "point": "connector_pair_A"
+        }
+      },
+      "execution": "evaluated",
+      "result": {
+        "model_version": "physical-observation/0.1.0",
+        "kind": "terminal_voltage",
+        "input": {
+          "mode": "synthetic_fixture",
+          "report": {
+            "status": "known",
+            "value_V": [
+              "2",
+              "2"
+            ],
+            "unit": "V",
+            "point": "connector_pair_A",
+            "epoch": 0,
+            "sampled_s": [
+              "0",
+              "0"
+            ],
+            "received_s": "0",
+            "acquisition_id": "constructed-a",
+            "source": "constructed-sensor"
+          },
+          "model": {
+            "gain": [
+              "1",
+              "1"
+            ],
+            "bias_V": [
+              "0",
+              "0"
+            ],
+            "error_V": "1/10",
+            "rate_V_per_s": "0",
+            "kind": "hard_bound",
+            "fault": "bounded",
+            "basis": "synthetic_assumption",
+            "epoch": 0,
+            "point": "connector_pair_A",
+            "max_age_s": "1"
+          },
+          "query": {
+            "time_s": "0",
+            "epoch": 0,
+            "limit_V": "1",
+            "point": "connector_pair_A"
+          }
+        },
+        "scope": "conditional_model_with_constructed_inputs",
+        "physical_authorization": "not_assessed",
+        "status": "refuted",
+        "interval_V": [
+          "19/10",
+          "21/10"
+        ],
+        "reason": "conditional_inverse_and_time_enclosure",
+        "source_isolation": "not_assessed",
+        "stored_energy": "not_assessed",
+        "maximum_age_s": "0",
+        "assumptions": [
+          "Sensor relation and rate envelope cover the query interval.",
+          "Gain, bias and error bounds are assumed, not calibrated.",
+          "No unmodeled switching, saturation or shared failure invalidates the bounds."
+        ]
+      },
+      "conventional_reference": {
+        "interval_V": [
+          "19/10",
+          "21/10"
+        ],
+        "status": "refuted",
+        "corner_substitution_values_V": [
+          "21/10",
+          "21/10",
+          "19/10",
+          "19/10",
+          "21/10",
+          "21/10",
+          "19/10",
+          "19/10",
+          "21/10",
+          "21/10",
+          "19/10",
+          "19/10",
+          "21/10",
+          "21/10",
+          "19/10",
+          "19/10",
+          "21/10",
+          "21/10",
+          "19/10",
+          "19/10",
+          "21/10",
+          "21/10",
+          "19/10",
+          "19/10",
+          "21/10",
+          "21/10",
+          "19/10",
+          "19/10",
+          "21/10",
+          "21/10",
+          "19/10",
+          "19/10"
+        ]
+      }
+    },
+    {
+      "id": "gain-and-bias",
+      "kind": "voltage",
+      "input": {
+        "mode": "synthetic_fixture",
+        "report": {
+          "status": "known",
+          "value_V": [
+            "2",
+            "2"
+          ],
+          "unit": "V",
+          "point": "connector_pair_A",
+          "epoch": 0,
+          "sampled_s": [
+            "0",
+            "0"
+          ],
+          "received_s": "0",
+          "acquisition_id": "constructed-a",
+          "source": "constructed-sensor"
+        },
+        "model": {
+          "gain": [
+            "1",
+            "2"
+          ],
+          "bias_V": [
+            "0",
+            "1"
+          ],
+          "error_V": "0",
+          "rate_V_per_s": "0",
+          "kind": "hard_bound",
+          "fault": "bounded",
+          "basis": "synthetic_assumption",
+          "epoch": 0,
+          "point": "connector_pair_A",
+          "max_age_s": "1"
+        },
+        "query": {
+          "time_s": "0",
+          "epoch": 0,
+          "limit_V": "1",
+          "point": "connector_pair_A"
+        }
+      },
+      "execution": "evaluated",
+      "result": {
+        "model_version": "physical-observation/0.1.0",
+        "kind": "terminal_voltage",
+        "input": {
+          "mode": "synthetic_fixture",
+          "report": {
+            "status": "known",
+            "value_V": [
+              "2",
+              "2"
+            ],
+            "unit": "V",
+            "point": "connector_pair_A",
+            "epoch": 0,
+            "sampled_s": [
+              "0",
+              "0"
+            ],
+            "received_s": "0",
+            "acquisition_id": "constructed-a",
+            "source": "constructed-sensor"
+          },
+          "model": {
+            "gain": [
+              "1",
+              "2"
+            ],
+            "bias_V": [
+              "0",
+              "1"
+            ],
+            "error_V": "0",
+            "rate_V_per_s": "0",
+            "kind": "hard_bound",
+            "fault": "bounded",
+            "basis": "synthetic_assumption",
+            "epoch": 0,
+            "point": "connector_pair_A",
+            "max_age_s": "1"
+          },
+          "query": {
+            "time_s": "0",
+            "epoch": 0,
+            "limit_V": "1",
+            "point": "connector_pair_A"
+          }
+        },
+        "scope": "conditional_model_with_constructed_inputs",
+        "physical_authorization": "not_assessed",
+        "status": "unresolved",
+        "interval_V": [
+          "1/2",
+          "2"
+        ],
+        "reason": "conditional_inverse_and_time_enclosure",
+        "source_isolation": "not_assessed",
+        "stored_energy": "not_assessed",
+        "maximum_age_s": "0",
+        "assumptions": [
+          "Sensor relation and rate envelope cover the query interval.",
+          "Gain, bias and error bounds are assumed, not calibrated.",
+          "No unmodeled switching, saturation or shared failure invalidates the bounds."
+        ]
+      },
+      "conventional_reference": {
+        "interval_V": [
+          "1/2",
+          "2"
+        ],
+        "status": "unresolved",
+        "corner_substitution_values_V": [
+          "2",
+          "2",
+          "2",
+          "2",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1/2",
+          "1/2",
+          "1/2",
+          "1/2",
+          "2",
+          "2",
+          "2",
+          "2",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1/2",
+          "1/2",
+          "1/2",
+          "1/2"
+        ]
+      }
+    },
+    {
+      "id": "uncertain-acquisition-time",
+      "kind": "voltage",
+      "input": {
+        "mode": "synthetic_fixture",
+        "report": {
+          "status": "known",
+          "value_V": [
+            "0",
+            "0"
+          ],
+          "unit": "V",
+          "point": "connector_pair_A",
+          "epoch": 0,
+          "sampled_s": [
+            "0",
+            "1"
+          ],
+          "received_s": "1",
+          "acquisition_id": "constructed-a",
+          "source": "constructed-sensor"
+        },
+        "model": {
+          "gain": [
+            "1",
+            "1"
+          ],
+          "bias_V": [
+            "0",
+            "0"
+          ],
+          "error_V": "1/10",
+          "rate_V_per_s": "1",
+          "kind": "hard_bound",
+          "fault": "bounded",
+          "basis": "synthetic_assumption",
+          "epoch": 0,
+          "point": "connector_pair_A",
+          "max_age_s": "3"
+        },
+        "query": {
+          "time_s": "2",
+          "epoch": 0,
+          "limit_V": "1",
+          "point": "connector_pair_A"
+        }
+      },
+      "execution": "evaluated",
+      "result": {
+        "model_version": "physical-observation/0.1.0",
+        "kind": "terminal_voltage",
+        "input": {
+          "mode": "synthetic_fixture",
+          "report": {
+            "status": "known",
+            "value_V": [
+              "0",
+              "0"
+            ],
+            "unit": "V",
+            "point": "connector_pair_A",
+            "epoch": 0,
+            "sampled_s": [
+              "0",
+              "1"
+            ],
+            "received_s": "1",
+            "acquisition_id": "constructed-a",
+            "source": "constructed-sensor"
+          },
+          "model": {
+            "gain": [
+              "1",
+              "1"
+            ],
+            "bias_V": [
+              "0",
+              "0"
+            ],
+            "error_V": "1/10",
+            "rate_V_per_s": "1",
+            "kind": "hard_bound",
+            "fault": "bounded",
+            "basis": "synthetic_assumption",
+            "epoch": 0,
+            "point": "connector_pair_A",
+            "max_age_s": "3"
+          },
+          "query": {
+            "time_s": "2",
+            "epoch": 0,
+            "limit_V": "1",
+            "point": "connector_pair_A"
+          }
+        },
+        "scope": "conditional_model_with_constructed_inputs",
+        "physical_authorization": "not_assessed",
+        "status": "unresolved",
+        "interval_V": [
+          "-21/10",
+          "21/10"
+        ],
+        "reason": "conditional_inverse_and_time_enclosure",
+        "source_isolation": "not_assessed",
+        "stored_energy": "not_assessed",
+        "maximum_age_s": "2",
+        "assumptions": [
+          "Sensor relation and rate envelope cover the query interval.",
+          "Gain, bias and error bounds are assumed, not calibrated.",
+          "No unmodeled switching, saturation or shared failure invalidates the bounds."
+        ]
+      },
+      "conventional_reference": {
+        "interval_V": [
+          "-21/10",
+          "21/10"
+        ],
+        "status": "unresolved",
+        "corner_substitution_values_V": [
+          "-19/10",
+          "21/10",
+          "-21/10",
+          "19/10",
+          "-19/10",
+          "21/10",
+          "-21/10",
+          "19/10",
+          "-19/10",
+          "21/10",
+          "-21/10",
+          "19/10",
+          "-19/10",
+          "21/10",
+          "-21/10",
+          "19/10",
+          "-19/10",
+          "21/10",
+          "-21/10",
+          "19/10",
+          "-19/10",
+          "21/10",
+          "-21/10",
+          "19/10",
+          "-19/10",
+          "21/10",
+          "-21/10",
+          "19/10",
+          "-19/10",
+          "21/10",
+          "-21/10",
+          "19/10"
+        ]
+      }
+    },
+    {
+      "id": "bounded-delay",
+      "kind": "voltage",
+      "input": {
+        "mode": "synthetic_fixture",
+        "report": {
+          "status": "known",
+          "value_V": [
+            "0",
+            "0"
+          ],
+          "unit": "V",
+          "point": "connector_pair_A",
+          "epoch": 0,
+          "sampled_s": [
+            "0",
+            "0"
+          ],
+          "received_s": "0",
+          "acquisition_id": "constructed-a",
+          "source": "constructed-sensor"
+        },
+        "model": {
+          "gain": [
+            "1",
+            "1"
+          ],
+          "bias_V": [
+            "0",
+            "0"
+          ],
+          "error_V": "1/10",
+          "rate_V_per_s": "1",
+          "kind": "hard_bound",
+          "fault": "bounded",
+          "basis": "synthetic_assumption",
+          "epoch": 0,
+          "point": "connector_pair_A",
+          "max_age_s": "1"
+        },
+        "query": {
+          "time_s": "1/2",
+          "epoch": 0,
+          "limit_V": "1",
+          "point": "connector_pair_A"
+        }
+      },
+      "execution": "evaluated",
+      "result": {
+        "model_version": "physical-observation/0.1.0",
+        "kind": "terminal_voltage",
+        "input": {
+          "mode": "synthetic_fixture",
+          "report": {
+            "status": "known",
+            "value_V": [
+              "0",
+              "0"
+            ],
+            "unit": "V",
+            "point": "connector_pair_A",
+            "epoch": 0,
+            "sampled_s": [
+              "0",
+              "0"
+            ],
+            "received_s": "0",
+            "acquisition_id": "constructed-a",
+            "source": "constructed-sensor"
+          },
+          "model": {
+            "gain": [
+              "1",
+              "1"
+            ],
+            "bias_V": [
+              "0",
+              "0"
+            ],
+            "error_V": "1/10",
+            "rate_V_per_s": "1",
+            "kind": "hard_bound",
+            "fault": "bounded",
+            "basis": "synthetic_assumption",
+            "epoch": 0,
+            "point": "connector_pair_A",
+            "max_age_s": "1"
+          },
+          "query": {
+            "time_s": "1/2",
+            "epoch": 0,
+            "limit_V": "1",
+            "point": "connector_pair_A"
+          }
+        },
+        "scope": "conditional_model_with_constructed_inputs",
+        "physical_authorization": "not_assessed",
+        "status": "supported",
+        "interval_V": [
+          "-3/5",
+          "3/5"
+        ],
+        "reason": "conditional_inverse_and_time_enclosure",
+        "source_isolation": "not_assessed",
+        "stored_energy": "not_assessed",
+        "maximum_age_s": "1/2",
+        "assumptions": [
+          "Sensor relation and rate envelope cover the query interval.",
+          "Gain, bias and error bounds are assumed, not calibrated.",
+          "No unmodeled switching, saturation or shared failure invalidates the bounds."
+        ]
+      },
+      "conventional_reference": {
+        "interval_V": [
+          "-3/5",
+          "3/5"
+        ],
+        "status": "supported",
+        "corner_substitution_values_V": [
+          "-2/5",
+          "3/5",
+          "-3/5",
+          "2/5",
+          "-2/5",
+          "3/5",
+          "-3/5",
+          "2/5",
+          "-2/5",
+          "3/5",
+          "-3/5",
+          "2/5",
+          "-2/5",
+          "3/5",
+          "-3/5",
+          "2/5",
+          "-2/5",
+          "3/5",
+          "-3/5",
+          "2/5",
+          "-2/5",
+          "3/5",
+          "-3/5",
+          "2/5",
+          "-2/5",
+          "3/5",
+          "-3/5",
+          "2/5",
+          "-2/5",
+          "3/5",
+          "-3/5",
+          "2/5"
+        ]
+      }
+    },
+    {
+      "id": "unknown-rate",
+      "kind": "voltage",
+      "input": {
+        "mode": "synthetic_fixture",
+        "report": {
+          "status": "known",
+          "value_V": [
+            "0",
+            "0"
+          ],
+          "unit": "V",
+          "point": "connector_pair_A",
+          "epoch": 0,
+          "sampled_s": [
+            "0",
+            "0"
+          ],
+          "received_s": "0",
+          "acquisition_id": "constructed-a",
+          "source": "constructed-sensor"
+        },
+        "model": {
+          "gain": [
+            "1",
+            "1"
+          ],
+          "bias_V": [
+            "0",
+            "0"
+          ],
+          "error_V": "1/10",
+          "rate_V_per_s": null,
+          "kind": "hard_bound",
+          "fault": "bounded",
+          "basis": "synthetic_assumption",
+          "epoch": 0,
+          "point": "connector_pair_A",
+          "max_age_s": "1"
+        },
+        "query": {
+          "time_s": "0",
+          "epoch": 0,
+          "limit_V": "1",
+          "point": "connector_pair_A"
+        }
+      },
+      "execution": "evaluated",
+      "result": {
+        "model_version": "physical-observation/0.1.0",
+        "kind": "terminal_voltage",
+        "input": {
+          "mode": "synthetic_fixture",
+          "report": {
+            "status": "known",
+            "value_V": [
+              "0",
+              "0"
+            ],
+            "unit": "V",
+            "point": "connector_pair_A",
+            "epoch": 0,
+            "sampled_s": [
+              "0",
+              "0"
+            ],
+            "received_s": "0",
+            "acquisition_id": "constructed-a",
+            "source": "constructed-sensor"
+          },
+          "model": {
+            "gain": [
+              "1",
+              "1"
+            ],
+            "bias_V": [
+              "0",
+              "0"
+            ],
+            "error_V": "1/10",
+            "rate_V_per_s": null,
+            "kind": "hard_bound",
+            "fault": "bounded",
+            "basis": "synthetic_assumption",
+            "epoch": 0,
+            "point": "connector_pair_A",
+            "max_age_s": "1"
+          },
+          "query": {
+            "time_s": "0",
+            "epoch": 0,
+            "limit_V": "1",
+            "point": "connector_pair_A"
+          }
+        },
+        "scope": "conditional_model_with_constructed_inputs",
+        "physical_authorization": "not_assessed",
+        "status": "unresolved",
+        "interval_V": null,
+        "reason": "missing_bound",
+        "source_isolation": "not_assessed",
+        "stored_energy": "not_assessed",
+        "maximum_age_s": "0",
+        "assumptions": [
+          "Sensor relation and rate envelope cover the query interval.",
+          "Gain, bias and error bounds are assumed, not calibrated.",
+          "No unmodeled switching, saturation or shared failure invalidates the bounds."
+        ]
+      }
+    },
+    {
+      "id": "stale",
+      "kind": "voltage",
+      "input": {
+        "mode": "synthetic_fixture",
+        "report": {
+          "status": "known",
+          "value_V": [
+            "0",
+            "0"
+          ],
+          "unit": "V",
+          "point": "connector_pair_A",
+          "epoch": 0,
+          "sampled_s": [
+            "0",
+            "0"
+          ],
+          "received_s": "0",
+          "acquisition_id": "constructed-a",
+          "source": "constructed-sensor"
+        },
+        "model": {
+          "gain": [
+            "1",
+            "1"
+          ],
+          "bias_V": [
+            "0",
+            "0"
+          ],
+          "error_V": "1/10",
+          "rate_V_per_s": "0",
+          "kind": "hard_bound",
+          "fault": "bounded",
+          "basis": "synthetic_assumption",
+          "epoch": 0,
+          "point": "connector_pair_A",
+          "max_age_s": "1"
+        },
+        "query": {
+          "time_s": "2",
+          "epoch": 0,
+          "limit_V": "1",
+          "point": "connector_pair_A"
+        }
+      },
+      "execution": "evaluated",
+      "result": {
+        "model_version": "physical-observation/0.1.0",
+        "kind": "terminal_voltage",
+        "input": {
+          "mode": "synthetic_fixture",
+          "report": {
+            "status": "known",
+            "value_V": [
+              "0",
+              "0"
+            ],
+            "unit": "V",
+            "point": "connector_pair_A",
+            "epoch": 0,
+            "sampled_s": [
+              "0",
+              "0"
+            ],
+            "received_s": "0",
+            "acquisition_id": "constructed-a",
+            "source": "constructed-sensor"
+          },
+          "model": {
+            "gain": [
+              "1",
+              "1"
+            ],
+            "bias_V": [
+              "0",
+              "0"
+            ],
+            "error_V": "1/10",
+            "rate_V_per_s": "0",
+            "kind": "hard_bound",
+            "fault": "bounded",
+            "basis": "synthetic_assumption",
+            "epoch": 0,
+            "point": "connector_pair_A",
+            "max_age_s": "1"
+          },
+          "query": {
+            "time_s": "2",
+            "epoch": 0,
+            "limit_V": "1",
+            "point": "connector_pair_A"
+          }
+        },
+        "scope": "conditional_model_with_constructed_inputs",
+        "physical_authorization": "not_assessed",
+        "status": "unresolved",
+        "interval_V": null,
+        "reason": "stale",
+        "source_isolation": "not_assessed",
+        "stored_energy": "not_assessed",
+        "maximum_age_s": "2",
+        "assumptions": [
+          "Sensor relation and rate envelope cover the query interval.",
+          "Gain, bias and error bounds are assumed, not calibrated.",
+          "No unmodeled switching, saturation or shared failure invalidates the bounds."
+        ]
+      }
+    },
+    {
+      "id": "wrong-epoch",
+      "kind": "voltage",
+      "input": {
+        "mode": "synthetic_fixture",
+        "report": {
+          "status": "known",
+          "value_V": [
+            "0",
+            "0"
+          ],
+          "unit": "V",
+          "point": "connector_pair_A",
+          "epoch": 0,
+          "sampled_s": [
+            "0",
+            "0"
+          ],
+          "received_s": "0",
+          "acquisition_id": "constructed-a",
+          "source": "constructed-sensor"
+        },
+        "model": {
+          "gain": [
+            "1",
+            "1"
+          ],
+          "bias_V": [
+            "0",
+            "0"
+          ],
+          "error_V": "1/10",
+          "rate_V_per_s": "0",
+          "kind": "hard_bound",
+          "fault": "bounded",
+          "basis": "synthetic_assumption",
+          "epoch": 0,
+          "point": "connector_pair_A",
+          "max_age_s": "1"
+        },
+        "query": {
+          "time_s": "0",
+          "epoch": 1,
+          "limit_V": "1",
+          "point": "connector_pair_A"
+        }
+      },
+      "execution": "evaluated",
+      "result": {
+        "model_version": "physical-observation/0.1.0",
+        "kind": "terminal_voltage",
+        "input": {
+          "mode": "synthetic_fixture",
+          "report": {
+            "status": "known",
+            "value_V": [
+              "0",
+              "0"
+            ],
+            "unit": "V",
+            "point": "connector_pair_A",
+            "epoch": 0,
+            "sampled_s": [
+              "0",
+              "0"
+            ],
+            "received_s": "0",
+            "acquisition_id": "constructed-a",
+            "source": "constructed-sensor"
+          },
+          "model": {
+            "gain": [
+              "1",
+              "1"
+            ],
+            "bias_V": [
+              "0",
+              "0"
+            ],
+            "error_V": "1/10",
+            "rate_V_per_s": "0",
+            "kind": "hard_bound",
+            "fault": "bounded",
+            "basis": "synthetic_assumption",
+            "epoch": 0,
+            "point": "connector_pair_A",
+            "max_age_s": "1"
+          },
+          "query": {
+            "time_s": "0",
+            "epoch": 1,
+            "limit_V": "1",
+            "point": "connector_pair_A"
+          }
+        },
+        "scope": "conditional_model_with_constructed_inputs",
+        "physical_authorization": "not_assessed",
+        "status": "unresolved",
+        "interval_V": null,
+        "reason": "epoch_mismatch",
+        "source_isolation": "not_assessed",
+        "stored_energy": "not_assessed",
+        "maximum_age_s": "0",
+        "assumptions": [
+          "Sensor relation and rate envelope cover the query interval.",
+          "Gain, bias and error bounds are assumed, not calibrated.",
+          "No unmodeled switching, saturation or shared failure invalidates the bounds."
+        ]
+      }
+    },
+    {
+      "id": "wrong-terminal-pair",
+      "kind": "voltage",
+      "input": {
+        "mode": "synthetic_fixture",
+        "report": {
+          "status": "known",
+          "value_V": [
+            "0",
+            "0"
+          ],
+          "unit": "V",
+          "point": "connector_pair_A",
+          "epoch": 0,
+          "sampled_s": [
+            "0",
+            "0"
+          ],
+          "received_s": "0",
+          "acquisition_id": "constructed-a",
+          "source": "constructed-sensor"
+        },
+        "model": {
+          "gain": [
+            "1",
+            "1"
+          ],
+          "bias_V": [
+            "0",
+            "0"
+          ],
+          "error_V": "1/10",
+          "rate_V_per_s": "0",
+          "kind": "hard_bound",
+          "fault": "bounded",
+          "basis": "synthetic_assumption",
+          "epoch": 0,
+          "point": "connector_pair_A",
+          "max_age_s": "1"
+        },
+        "query": {
+          "time_s": "0",
+          "epoch": 0,
+          "limit_V": "1",
+          "point": "remote_pair_B"
+        }
+      },
+      "execution": "evaluated",
+      "result": {
+        "model_version": "physical-observation/0.1.0",
+        "kind": "terminal_voltage",
+        "input": {
+          "mode": "synthetic_fixture",
+          "report": {
+            "status": "known",
+            "value_V": [
+              "0",
+              "0"
+            ],
+            "unit": "V",
+            "point": "connector_pair_A",
+            "epoch": 0,
+            "sampled_s": [
+              "0",
+              "0"
+            ],
+            "received_s": "0",
+            "acquisition_id": "constructed-a",
+            "source": "constructed-sensor"
+          },
+          "model": {
+            "gain": [
+              "1",
+              "1"
+            ],
+            "bias_V": [
+              "0",
+              "0"
+            ],
+            "error_V": "1/10",
+            "rate_V_per_s": "0",
+            "kind": "hard_bound",
+            "fault": "bounded",
+            "basis": "synthetic_assumption",
+            "epoch": 0,
+            "point": "connector_pair_A",
+            "max_age_s": "1"
+          },
+          "query": {
+            "time_s": "0",
+            "epoch": 0,
+            "limit_V": "1",
+            "point": "remote_pair_B"
+          }
+        },
+        "scope": "conditional_model_with_constructed_inputs",
+        "physical_authorization": "not_assessed",
+        "status": "unresolved",
+        "interval_V": null,
+        "reason": "measurement_point_mismatch",
+        "source_isolation": "not_assessed",
+        "stored_energy": "not_assessed",
+        "maximum_age_s": "0",
+        "assumptions": [
+          "Sensor relation and rate envelope cover the query interval.",
+          "Gain, bias and error bounds are assumed, not calibrated.",
+          "No unmodeled switching, saturation or shared failure invalidates the bounds."
+        ]
+      }
+    },
+    {
+      "id": "missing-value",
+      "kind": "voltage",
+      "input": {
+        "mode": "synthetic_fixture",
+        "report": {
+          "status": "missing",
+          "value_V": null,
+          "unit": "V",
+          "point": "connector_pair_A",
+          "epoch": 0,
+          "sampled_s": [
+            "0",
+            "0"
+          ],
+          "received_s": "0",
+          "acquisition_id": "constructed-a",
+          "source": "constructed-sensor"
+        },
+        "model": {
+          "gain": [
+            "1",
+            "1"
+          ],
+          "bias_V": [
+            "0",
+            "0"
+          ],
+          "error_V": "1/10",
+          "rate_V_per_s": "0",
+          "kind": "hard_bound",
+          "fault": "bounded",
+          "basis": "synthetic_assumption",
+          "epoch": 0,
+          "point": "connector_pair_A",
+          "max_age_s": "1"
+        },
+        "query": {
+          "time_s": "0",
+          "epoch": 0,
+          "limit_V": "1",
+          "point": "connector_pair_A"
+        }
+      },
+      "execution": "evaluated",
+      "result": {
+        "model_version": "physical-observation/0.1.0",
+        "kind": "terminal_voltage",
+        "input": {
+          "mode": "synthetic_fixture",
+          "report": {
+            "status": "missing",
+            "value_V": null,
+            "unit": "V",
+            "point": "connector_pair_A",
+            "epoch": 0,
+            "sampled_s": [
+              "0",
+              "0"
+            ],
+            "received_s": "0",
+            "acquisition_id": "constructed-a",
+            "source": "constructed-sensor"
+          },
+          "model": {
+            "gain": [
+              "1",
+              "1"
+            ],
+            "bias_V": [
+              "0",
+              "0"
+            ],
+            "error_V": "1/10",
+            "rate_V_per_s": "0",
+            "kind": "hard_bound",
+            "fault": "bounded",
+            "basis": "synthetic_assumption",
+            "epoch": 0,
+            "point": "connector_pair_A",
+            "max_age_s": "1"
+          },
+          "query": {
+            "time_s": "0",
+            "epoch": 0,
+            "limit_V": "1",
+            "point": "connector_pair_A"
+          }
+        },
+        "scope": "conditional_model_with_constructed_inputs",
+        "physical_authorization": "not_assessed",
+        "status": "unresolved",
+        "interval_V": null,
+        "reason": "no_known_observation",
+        "source_isolation": "not_assessed",
+        "stored_energy": "not_assessed",
+        "maximum_age_s": "0",
+        "assumptions": [
+          "Sensor relation and rate envelope cover the query interval.",
+          "Gain, bias and error bounds are assumed, not calibrated.",
+          "No unmodeled switching, saturation or shared failure invalidates the bounds."
+        ]
+      }
+    },
+    {
+      "id": "coverage-is-not-bound",
+      "kind": "voltage",
+      "input": {
+        "mode": "synthetic_fixture",
+        "report": {
+          "status": "known",
+          "value_V": [
+            "0",
+            "0"
+          ],
+          "unit": "V",
+          "point": "connector_pair_A",
+          "epoch": 0,
+          "sampled_s": [
+            "0",
+            "0"
+          ],
+          "received_s": "0",
+          "acquisition_id": "constructed-a",
+          "source": "constructed-sensor"
+        },
+        "model": {
+          "gain": [
+            "1",
+            "1"
+          ],
+          "bias_V": [
+            "0",
+            "0"
+          ],
+          "error_V": "1/10",
+          "rate_V_per_s": "0",
+          "kind": "coverage",
+          "fault": "bounded",
+          "basis": "synthetic_assumption",
+          "epoch": 0,
+          "point": "connector_pair_A",
+          "max_age_s": "1"
+        },
+        "query": {
+          "time_s": "0",
+          "epoch": 0,
+          "limit_V": "1",
+          "point": "connector_pair_A"
+        }
+      },
+      "execution": "evaluated",
+      "result": {
+        "model_version": "physical-observation/0.1.0",
+        "kind": "terminal_voltage",
+        "input": {
+          "mode": "synthetic_fixture",
+          "report": {
+            "status": "known",
+            "value_V": [
+              "0",
+              "0"
+            ],
+            "unit": "V",
+            "point": "connector_pair_A",
+            "epoch": 0,
+            "sampled_s": [
+              "0",
+              "0"
+            ],
+            "received_s": "0",
+            "acquisition_id": "constructed-a",
+            "source": "constructed-sensor"
+          },
+          "model": {
+            "gain": [
+              "1",
+              "1"
+            ],
+            "bias_V": [
+              "0",
+              "0"
+            ],
+            "error_V": "1/10",
+            "rate_V_per_s": "0",
+            "kind": "coverage",
+            "fault": "bounded",
+            "basis": "synthetic_assumption",
+            "epoch": 0,
+            "point": "connector_pair_A",
+            "max_age_s": "1"
+          },
+          "query": {
+            "time_s": "0",
+            "epoch": 0,
+            "limit_V": "1",
+            "point": "connector_pair_A"
+          }
+        },
+        "scope": "conditional_model_with_constructed_inputs",
+        "physical_authorization": "not_assessed",
+        "status": "unresolved",
+        "interval_V": null,
+        "reason": "coverage_is_not_a_hard_bound",
+        "source_isolation": "not_assessed",
+        "stored_energy": "not_assessed",
+        "maximum_age_s": "0",
+        "assumptions": [
+          "Sensor relation and rate envelope cover the query interval.",
+          "Gain, bias and error bounds are assumed, not calibrated.",
+          "No unmodeled switching, saturation or shared failure invalidates the bounds."
+        ]
+      }
+    },
+    {
+      "id": "arbitrary-fault-possible",
+      "kind": "voltage",
+      "input": {
+        "mode": "synthetic_fixture",
+        "report": {
+          "status": "known",
+          "value_V": [
+            "0",
+            "0"
+          ],
+          "unit": "V",
+          "point": "connector_pair_A",
+          "epoch": 0,
+          "sampled_s": [
+            "0",
+            "0"
+          ],
+          "received_s": "0",
+          "acquisition_id": "constructed-a",
+          "source": "constructed-sensor"
+        },
+        "model": {
+          "gain": [
+            "1",
+            "1"
+          ],
+          "bias_V": [
+            "0",
+            "0"
+          ],
+          "error_V": "1/10",
+          "rate_V_per_s": "0",
+          "kind": "hard_bound",
+          "fault": "arbitrary",
+          "basis": "synthetic_assumption",
+          "epoch": 0,
+          "point": "connector_pair_A",
+          "max_age_s": "1"
+        },
+        "query": {
+          "time_s": "0",
+          "epoch": 0,
+          "limit_V": "1",
+          "point": "connector_pair_A"
+        }
+      },
+      "execution": "evaluated",
+      "result": {
+        "model_version": "physical-observation/0.1.0",
+        "kind": "terminal_voltage",
+        "input": {
+          "mode": "synthetic_fixture",
+          "report": {
+            "status": "known",
+            "value_V": [
+              "0",
+              "0"
+            ],
+            "unit": "V",
+            "point": "connector_pair_A",
+            "epoch": 0,
+            "sampled_s": [
+              "0",
+              "0"
+            ],
+            "received_s": "0",
+            "acquisition_id": "constructed-a",
+            "source": "constructed-sensor"
+          },
+          "model": {
+            "gain": [
+              "1",
+              "1"
+            ],
+            "bias_V": [
+              "0",
+              "0"
+            ],
+            "error_V": "1/10",
+            "rate_V_per_s": "0",
+            "kind": "hard_bound",
+            "fault": "arbitrary",
+            "basis": "synthetic_assumption",
+            "epoch": 0,
+            "point": "connector_pair_A",
+            "max_age_s": "1"
+          },
+          "query": {
+            "time_s": "0",
+            "epoch": 0,
+            "limit_V": "1",
+            "point": "connector_pair_A"
+          }
+        },
+        "scope": "conditional_model_with_constructed_inputs",
+        "physical_authorization": "not_assessed",
+        "status": "unresolved",
+        "interval_V": null,
+        "reason": "unbounded_fault_possible",
+        "source_isolation": "not_assessed",
+        "stored_energy": "not_assessed",
+        "maximum_age_s": "0",
+        "assumptions": [
+          "Sensor relation and rate envelope cover the query interval.",
+          "Gain, bias and error bounds are assumed, not calibrated.",
+          "No unmodeled switching, saturation or shared failure invalidates the bounds."
+        ]
+      }
+    },
+    {
+      "id": "missing-gain",
+      "kind": "voltage",
+      "input": {
+        "mode": "synthetic_fixture",
+        "report": {
+          "status": "known",
+          "value_V": [
+            "0",
+            "0"
+          ],
+          "unit": "V",
+          "point": "connector_pair_A",
+          "epoch": 0,
+          "sampled_s": [
+            "0",
+            "0"
+          ],
+          "received_s": "0",
+          "acquisition_id": "constructed-a",
+          "source": "constructed-sensor"
+        },
+        "model": {
+          "gain": null,
+          "bias_V": [
+            "0",
+            "0"
+          ],
+          "error_V": "1/10",
+          "rate_V_per_s": "0",
+          "kind": "hard_bound",
+          "fault": "bounded",
+          "basis": "synthetic_assumption",
+          "epoch": 0,
+          "point": "connector_pair_A",
+          "max_age_s": "1"
+        },
+        "query": {
+          "time_s": "0",
+          "epoch": 0,
+          "limit_V": "1",
+          "point": "connector_pair_A"
+        }
+      },
+      "execution": "evaluated",
+      "result": {
+        "model_version": "physical-observation/0.1.0",
+        "kind": "terminal_voltage",
+        "input": {
+          "mode": "synthetic_fixture",
+          "report": {
+            "status": "known",
+            "value_V": [
+              "0",
+              "0"
+            ],
+            "unit": "V",
+            "point": "connector_pair_A",
+            "epoch": 0,
+            "sampled_s": [
+              "0",
+              "0"
+            ],
+            "received_s": "0",
+            "acquisition_id": "constructed-a",
+            "source": "constructed-sensor"
+          },
+          "model": {
+            "gain": null,
+            "bias_V": [
+              "0",
+              "0"
+            ],
+            "error_V": "1/10",
+            "rate_V_per_s": "0",
+            "kind": "hard_bound",
+            "fault": "bounded",
+            "basis": "synthetic_assumption",
+            "epoch": 0,
+            "point": "connector_pair_A",
+            "max_age_s": "1"
+          },
+          "query": {
+            "time_s": "0",
+            "epoch": 0,
+            "limit_V": "1",
+            "point": "connector_pair_A"
+          }
+        },
+        "scope": "conditional_model_with_constructed_inputs",
+        "physical_authorization": "not_assessed",
+        "status": "unresolved",
+        "interval_V": null,
+        "reason": "missing_bound",
+        "source_isolation": "not_assessed",
+        "stored_energy": "not_assessed",
+        "maximum_age_s": "0",
+        "assumptions": [
+          "Sensor relation and rate envelope cover the query interval.",
+          "Gain, bias and error bounds are assumed, not calibrated.",
+          "No unmodeled switching, saturation or shared failure invalidates the bounds."
+        ]
+      }
+    },
+    {
+      "id": "wrong-unit",
+      "kind": "voltage",
+      "input": {
+        "mode": "synthetic_fixture",
+        "report": {
+          "status": "known",
+          "value_V": [
+            "0",
+            "0"
+          ],
+          "unit": "mV",
+          "point": "connector_pair_A",
+          "epoch": 0,
+          "sampled_s": [
+            "0",
+            "0"
+          ],
+          "received_s": "0",
+          "acquisition_id": "constructed-a",
+          "source": "constructed-sensor"
+        },
+        "model": {
+          "gain": [
+            "1",
+            "1"
+          ],
+          "bias_V": [
+            "0",
+            "0"
+          ],
+          "error_V": "1/10",
+          "rate_V_per_s": "0",
+          "kind": "hard_bound",
+          "fault": "bounded",
+          "basis": "synthetic_assumption",
+          "epoch": 0,
+          "point": "connector_pair_A",
+          "max_age_s": "1"
+        },
+        "query": {
+          "time_s": "0",
+          "epoch": 0,
+          "limit_V": "1",
+          "point": "connector_pair_A"
+        }
+      },
+      "execution": "evaluated",
+      "result": {
+        "model_version": "physical-observation/0.1.0",
+        "kind": "terminal_voltage",
+        "input": {
+          "mode": "synthetic_fixture",
+          "report": {
+            "status": "known",
+            "value_V": [
+              "0",
+              "0"
+            ],
+            "unit": "mV",
+            "point": "connector_pair_A",
+            "epoch": 0,
+            "sampled_s": [
+              "0",
+              "0"
+            ],
+            "received_s": "0",
+            "acquisition_id": "constructed-a",
+            "source": "constructed-sensor"
+          },
+          "model": {
+            "gain": [
+              "1",
+              "1"
+            ],
+            "bias_V": [
+              "0",
+              "0"
+            ],
+            "error_V": "1/10",
+            "rate_V_per_s": "0",
+            "kind": "hard_bound",
+            "fault": "bounded",
+            "basis": "synthetic_assumption",
+            "epoch": 0,
+            "point": "connector_pair_A",
+            "max_age_s": "1"
+          },
+          "query": {
+            "time_s": "0",
+            "epoch": 0,
+            "limit_V": "1",
+            "point": "connector_pair_A"
+          }
+        },
+        "scope": "conditional_model_with_constructed_inputs",
+        "physical_authorization": "not_assessed",
+        "status": "unresolved",
+        "interval_V": null,
+        "reason": "wrong_unit",
+        "source_isolation": "not_assessed",
+        "stored_energy": "not_assessed",
+        "maximum_age_s": "0",
+        "assumptions": [
+          "Sensor relation and rate envelope cover the query interval.",
+          "Gain, bias and error bounds are assumed, not calibrated.",
+          "No unmodeled switching, saturation or shared failure invalidates the bounds."
+        ]
+      }
+    },
+    {
+      "id": "exact-zero",
+      "kind": "voltage",
+      "input": {
+        "mode": "synthetic_fixture",
+        "report": {
+          "status": "known",
+          "value_V": [
+            "0",
+            "0"
+          ],
+          "unit": "V",
+          "point": "connector_pair_A",
+          "epoch": 0,
+          "sampled_s": [
+            "0",
+            "0"
+          ],
+          "received_s": "0",
+          "acquisition_id": "constructed-a",
+          "source": "constructed-sensor"
+        },
+        "model": {
+          "gain": [
+            "1",
+            "1"
+          ],
+          "bias_V": [
+            "0",
+            "0"
+          ],
+          "error_V": "0",
+          "rate_V_per_s": "0",
+          "kind": "hard_bound",
+          "fault": "bounded",
+          "basis": "synthetic_assumption",
+          "epoch": 0,
+          "point": "connector_pair_A",
+          "max_age_s": "1"
+        },
+        "query": {
+          "time_s": "0",
+          "epoch": 0,
+          "limit_V": "0",
+          "point": "connector_pair_A"
+        }
+      },
+      "execution": "evaluated",
+      "result": {
+        "model_version": "physical-observation/0.1.0",
+        "kind": "terminal_voltage",
+        "input": {
+          "mode": "synthetic_fixture",
+          "report": {
+            "status": "known",
+            "value_V": [
+              "0",
+              "0"
+            ],
+            "unit": "V",
+            "point": "connector_pair_A",
+            "epoch": 0,
+            "sampled_s": [
+              "0",
+              "0"
+            ],
+            "received_s": "0",
+            "acquisition_id": "constructed-a",
+            "source": "constructed-sensor"
+          },
+          "model": {
+            "gain": [
+              "1",
+              "1"
+            ],
+            "bias_V": [
+              "0",
+              "0"
+            ],
+            "error_V": "0",
+            "rate_V_per_s": "0",
+            "kind": "hard_bound",
+            "fault": "bounded",
+            "basis": "synthetic_assumption",
+            "epoch": 0,
+            "point": "connector_pair_A",
+            "max_age_s": "1"
+          },
+          "query": {
+            "time_s": "0",
+            "epoch": 0,
+            "limit_V": "0",
+            "point": "connector_pair_A"
+          }
+        },
+        "scope": "conditional_model_with_constructed_inputs",
+        "physical_authorization": "not_assessed",
+        "status": "supported",
+        "interval_V": [
+          "0",
+          "0"
+        ],
+        "reason": "conditional_inverse_and_time_enclosure",
+        "source_isolation": "not_assessed",
+        "stored_energy": "not_assessed",
+        "maximum_age_s": "0",
+        "assumptions": [
+          "Sensor relation and rate envelope cover the query interval.",
+          "Gain, bias and error bounds are assumed, not calibrated.",
+          "No unmodeled switching, saturation or shared failure invalidates the bounds."
+        ]
+      },
+      "conventional_reference": {
+        "interval_V": [
+          "0",
+          "0"
+        ],
+        "status": "supported",
+        "corner_substitution_values_V": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      }
+    },
+    {
+      "id": "nonpositive-gain",
+      "kind": "voltage",
+      "input": {
+        "mode": "synthetic_fixture",
+        "report": {
+          "status": "known",
+          "value_V": [
+            "0",
+            "0"
+          ],
+          "unit": "V",
+          "point": "connector_pair_A",
+          "epoch": 0,
+          "sampled_s": [
+            "0",
+            "0"
+          ],
+          "received_s": "0",
+          "acquisition_id": "constructed-a",
+          "source": "constructed-sensor"
+        },
+        "model": {
+          "gain": [
+            "0",
+            "1"
+          ],
+          "bias_V": [
+            "0",
+            "0"
+          ],
+          "error_V": "1/10",
+          "rate_V_per_s": "0",
+          "kind": "hard_bound",
+          "fault": "bounded",
+          "basis": "synthetic_assumption",
+          "epoch": 0,
+          "point": "connector_pair_A",
+          "max_age_s": "1"
+        },
+        "query": {
+          "time_s": "0",
+          "epoch": 0,
+          "limit_V": "1",
+          "point": "connector_pair_A"
+        }
+      },
+      "execution": "rejected",
+      "error": "Gain interval must be strictly positive"
+    },
+    {
+      "id": "reversed-gain",
+      "kind": "voltage",
+      "input": {
+        "mode": "synthetic_fixture",
+        "report": {
+          "status": "known",
+          "value_V": [
+            "0",
+            "0"
+          ],
+          "unit": "V",
+          "point": "connector_pair_A",
+          "epoch": 0,
+          "sampled_s": [
+            "0",
+            "0"
+          ],
+          "received_s": "0",
+          "acquisition_id": "constructed-a",
+          "source": "constructed-sensor"
+        },
+        "model": {
+          "gain": [
+            "2",
+            "1"
+          ],
+          "bias_V": [
+            "0",
+            "0"
+          ],
+          "error_V": "1/10",
+          "rate_V_per_s": "0",
+          "kind": "hard_bound",
+          "fault": "bounded",
+          "basis": "synthetic_assumption",
+          "epoch": 0,
+          "point": "connector_pair_A",
+          "max_age_s": "1"
+        },
+        "query": {
+          "time_s": "0",
+          "epoch": 0,
+          "limit_V": "1",
+          "point": "connector_pair_A"
+        }
+      },
+      "execution": "rejected",
+      "error": "Reversed interval"
+    },
+    {
+      "id": "negative-rate",
+      "kind": "voltage",
+      "input": {
+        "mode": "synthetic_fixture",
+        "report": {
+          "status": "known",
+          "value_V": [
+            "0",
+            "0"
+          ],
+          "unit": "V",
+          "point": "connector_pair_A",
+          "epoch": 0,
+          "sampled_s": [
+            "0",
+            "0"
+          ],
+          "received_s": "0",
+          "acquisition_id": "constructed-a",
+          "source": "constructed-sensor"
+        },
+        "model": {
+          "gain": [
+            "1",
+            "1"
+          ],
+          "bias_V": [
+            "0",
+            "0"
+          ],
+          "error_V": "1/10",
+          "rate_V_per_s": "-1",
+          "kind": "hard_bound",
+          "fault": "bounded",
+          "basis": "synthetic_assumption",
+          "epoch": 0,
+          "point": "connector_pair_A",
+          "max_age_s": "1"
+        },
+        "query": {
+          "time_s": "0",
+          "epoch": 0,
+          "limit_V": "1",
+          "point": "connector_pair_A"
+        }
+      },
+      "execution": "rejected",
+      "error": "Negative error or rate bound"
+    },
+    {
+      "id": "future-acquisition",
+      "kind": "voltage",
+      "input": {
+        "mode": "synthetic_fixture",
+        "report": {
+          "status": "known",
+          "value_V": [
+            "0",
+            "0"
+          ],
+          "unit": "V",
+          "point": "connector_pair_A",
+          "epoch": 0,
+          "sampled_s": [
+            "0",
+            "1"
+          ],
+          "received_s": "0",
+          "acquisition_id": "constructed-a",
+          "source": "constructed-sensor"
+        },
+        "model": {
+          "gain": [
+            "1",
+            "1"
+          ],
+          "bias_V": [
+            "0",
+            "0"
+          ],
+          "error_V": "1/10",
+          "rate_V_per_s": "0",
+          "kind": "hard_bound",
+          "fault": "bounded",
+          "basis": "synthetic_assumption",
+          "epoch": 0,
+          "point": "connector_pair_A",
+          "max_age_s": "1"
+        },
+        "query": {
+          "time_s": "0",
+          "epoch": 0,
+          "limit_V": "1",
+          "point": "connector_pair_A"
+        }
+      },
+      "execution": "rejected",
+      "error": "Invalid time order"
+    },
+    {
+      "id": "physical-mode",
+      "kind": "voltage",
+      "input": {
+        "mode": "physical_test",
+        "report": {
+          "status": "known",
+          "value_V": [
+            "0",
+            "0"
+          ],
+          "unit": "V",
+          "point": "connector_pair_A",
+          "epoch": 0,
+          "sampled_s": [
+            "0",
+            "0"
+          ],
+          "received_s": "0",
+          "acquisition_id": "constructed-a",
+          "source": "constructed-sensor"
+        },
+        "model": {
+          "gain": [
+            "1",
+            "1"
+          ],
+          "bias_V": [
+            "0",
+            "0"
+          ],
+          "error_V": "1/10",
+          "rate_V_per_s": "0",
+          "kind": "hard_bound",
+          "fault": "bounded",
+          "basis": "synthetic_assumption",
+          "epoch": 0,
+          "point": "connector_pair_A",
+          "max_age_s": "1"
+        },
+        "query": {
+          "time_s": "0",
+          "epoch": 0,
+          "limit_V": "1",
+          "point": "connector_pair_A"
+        }
+      },
+      "execution": "rejected",
+      "error": "Only constructed inputs admitted"
+    },
+    {
+      "id": "open-cut",
+      "kind": "topology",
+      "input": {
+        "mode": "synthetic_fixture",
+        "nodes": [
+          "host",
+          "pin"
+        ],
+        "sources": [
+          "host"
+        ],
+        "target": "pin",
+        "edges": [
+          {
+            "id": "relay",
+            "a": "host",
+            "b": "pin",
+            "closed_states": [
+              false
+            ]
+          }
+        ],
+        "inventory_complete": true
+      },
+      "execution": "evaluated",
+      "result": {
+        "model_version": "physical-observation/0.1.0",
+        "kind": "source_connectivity",
+        "input": {
+          "mode": "synthetic_fixture",
+          "nodes": [
+            "host",
+            "pin"
+          ],
+          "sources": [
+            "host"
+          ],
+          "target": "pin",
+          "edges": [
+            {
+              "id": "relay",
+              "a": "host",
+              "b": "pin",
+              "closed_states": [
+                false
+              ]
+            }
+          ],
+          "inventory_complete": true
+        },
+        "scope": "conditional_model_with_constructed_inputs",
+        "physical_authorization": "not_assessed",
+        "status": "supported",
+        "reason": "conditional_connectivity_enumeration",
+        "worlds": [
+          {
+            "assignment": {
+              "relay": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          }
+        ],
+        "isolated_witness": {
+          "assignment": {
+            "relay": false
+          },
+          "source_path": null,
+          "isolated": true,
+          "reference_isolated": true
+        },
+        "connected_witness": null,
+        "voltage_limit": "not_assessed",
+        "stored_energy": "not_assessed",
+        "assumptions": [
+          "All relevant sources and conductive paths are declared.",
+          "Edge-state alternatives cover the physical topology.",
+          "No omitted leakage, parasitic or breakdown path bypasses an open edge."
+        ]
+      }
+    },
+    {
+      "id": "uncertain-relay",
+      "kind": "topology",
+      "input": {
+        "mode": "synthetic_fixture",
+        "nodes": [
+          "host",
+          "pin"
+        ],
+        "sources": [
+          "host"
+        ],
+        "target": "pin",
+        "edges": [
+          {
+            "id": "relay",
+            "a": "host",
+            "b": "pin",
+            "closed_states": [
+              false,
+              true
+            ]
+          }
+        ],
+        "inventory_complete": true
+      },
+      "execution": "evaluated",
+      "result": {
+        "model_version": "physical-observation/0.1.0",
+        "kind": "source_connectivity",
+        "input": {
+          "mode": "synthetic_fixture",
+          "nodes": [
+            "host",
+            "pin"
+          ],
+          "sources": [
+            "host"
+          ],
+          "target": "pin",
+          "edges": [
+            {
+              "id": "relay",
+              "a": "host",
+              "b": "pin",
+              "closed_states": [
+                false,
+                true
+              ]
+            }
+          ],
+          "inventory_complete": true
+        },
+        "scope": "conditional_model_with_constructed_inputs",
+        "physical_authorization": "not_assessed",
+        "status": "unresolved",
+        "reason": "conditional_connectivity_enumeration",
+        "worlds": [
+          {
+            "assignment": {
+              "relay": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "relay": true
+            },
+            "source_path": [
+              "host",
+              "pin"
+            ],
+            "isolated": false,
+            "reference_isolated": false
+          }
+        ],
+        "isolated_witness": {
+          "assignment": {
+            "relay": false
+          },
+          "source_path": null,
+          "isolated": true,
+          "reference_isolated": true
+        },
+        "connected_witness": {
+          "assignment": {
+            "relay": true
+          },
+          "source_path": [
+            "host",
+            "pin"
+          ],
+          "isolated": false,
+          "reference_isolated": false
+        },
+        "voltage_limit": "not_assessed",
+        "stored_energy": "not_assessed",
+        "assumptions": [
+          "All relevant sources and conductive paths are declared.",
+          "Edge-state alternatives cover the physical topology.",
+          "No omitted leakage, parasitic or breakdown path bypasses an open edge."
+        ]
+      }
+    },
+    {
+      "id": "closed-path",
+      "kind": "topology",
+      "input": {
+        "mode": "synthetic_fixture",
+        "nodes": [
+          "host",
+          "pin"
+        ],
+        "sources": [
+          "host"
+        ],
+        "target": "pin",
+        "edges": [
+          {
+            "id": "relay",
+            "a": "host",
+            "b": "pin",
+            "closed_states": [
+              true
+            ]
+          }
+        ],
+        "inventory_complete": true
+      },
+      "execution": "evaluated",
+      "result": {
+        "model_version": "physical-observation/0.1.0",
+        "kind": "source_connectivity",
+        "input": {
+          "mode": "synthetic_fixture",
+          "nodes": [
+            "host",
+            "pin"
+          ],
+          "sources": [
+            "host"
+          ],
+          "target": "pin",
+          "edges": [
+            {
+              "id": "relay",
+              "a": "host",
+              "b": "pin",
+              "closed_states": [
+                true
+              ]
+            }
+          ],
+          "inventory_complete": true
+        },
+        "scope": "conditional_model_with_constructed_inputs",
+        "physical_authorization": "not_assessed",
+        "status": "refuted",
+        "reason": "conditional_connectivity_enumeration",
+        "worlds": [
+          {
+            "assignment": {
+              "relay": true
+            },
+            "source_path": [
+              "host",
+              "pin"
+            ],
+            "isolated": false,
+            "reference_isolated": false
+          }
+        ],
+        "isolated_witness": null,
+        "connected_witness": {
+          "assignment": {
+            "relay": true
+          },
+          "source_path": [
+            "host",
+            "pin"
+          ],
+          "isolated": false,
+          "reference_isolated": false
+        },
+        "voltage_limit": "not_assessed",
+        "stored_energy": "not_assessed",
+        "assumptions": [
+          "All relevant sources and conductive paths are declared.",
+          "Edge-state alternatives cover the physical topology.",
+          "No omitted leakage, parasitic or breakdown path bypasses an open edge."
+        ]
+      }
+    },
+    {
+      "id": "module-backfeed",
+      "kind": "topology",
+      "input": {
+        "mode": "synthetic_fixture",
+        "nodes": [
+          "host",
+          "module_battery",
+          "pin"
+        ],
+        "sources": [
+          "host",
+          "module_battery"
+        ],
+        "target": "pin",
+        "edges": [
+          {
+            "id": "relay",
+            "a": "host",
+            "b": "pin",
+            "closed_states": [
+              false
+            ]
+          },
+          {
+            "id": "backfeed",
+            "a": "module_battery",
+            "b": "pin",
+            "closed_states": [
+              true
+            ]
+          }
+        ],
+        "inventory_complete": true
+      },
+      "execution": "evaluated",
+      "result": {
+        "model_version": "physical-observation/0.1.0",
+        "kind": "source_connectivity",
+        "input": {
+          "mode": "synthetic_fixture",
+          "nodes": [
+            "host",
+            "module_battery",
+            "pin"
+          ],
+          "sources": [
+            "host",
+            "module_battery"
+          ],
+          "target": "pin",
+          "edges": [
+            {
+              "id": "relay",
+              "a": "host",
+              "b": "pin",
+              "closed_states": [
+                false
+              ]
+            },
+            {
+              "id": "backfeed",
+              "a": "module_battery",
+              "b": "pin",
+              "closed_states": [
+                true
+              ]
+            }
+          ],
+          "inventory_complete": true
+        },
+        "scope": "conditional_model_with_constructed_inputs",
+        "physical_authorization": "not_assessed",
+        "status": "refuted",
+        "reason": "conditional_connectivity_enumeration",
+        "worlds": [
+          {
+            "assignment": {
+              "relay": false,
+              "backfeed": true
+            },
+            "source_path": [
+              "module_battery",
+              "pin"
+            ],
+            "isolated": false,
+            "reference_isolated": false
+          }
+        ],
+        "isolated_witness": null,
+        "connected_witness": {
+          "assignment": {
+            "relay": false,
+            "backfeed": true
+          },
+          "source_path": [
+            "module_battery",
+            "pin"
+          ],
+          "isolated": false,
+          "reference_isolated": false
+        },
+        "voltage_limit": "not_assessed",
+        "stored_energy": "not_assessed",
+        "assumptions": [
+          "All relevant sources and conductive paths are declared.",
+          "Edge-state alternatives cover the physical topology.",
+          "No omitted leakage, parasitic or breakdown path bypasses an open edge."
+        ]
+      }
+    },
+    {
+      "id": "two-open-barriers",
+      "kind": "topology",
+      "input": {
+        "mode": "synthetic_fixture",
+        "nodes": [
+          "host",
+          "mid",
+          "pin"
+        ],
+        "sources": [
+          "host"
+        ],
+        "target": "pin",
+        "edges": [
+          {
+            "id": "relay1",
+            "a": "host",
+            "b": "mid",
+            "closed_states": [
+              false
+            ]
+          },
+          {
+            "id": "relay2",
+            "a": "mid",
+            "b": "pin",
+            "closed_states": [
+              false
+            ]
+          }
+        ],
+        "inventory_complete": true
+      },
+      "execution": "evaluated",
+      "result": {
+        "model_version": "physical-observation/0.1.0",
+        "kind": "source_connectivity",
+        "input": {
+          "mode": "synthetic_fixture",
+          "nodes": [
+            "host",
+            "mid",
+            "pin"
+          ],
+          "sources": [
+            "host"
+          ],
+          "target": "pin",
+          "edges": [
+            {
+              "id": "relay1",
+              "a": "host",
+              "b": "mid",
+              "closed_states": [
+                false
+              ]
+            },
+            {
+              "id": "relay2",
+              "a": "mid",
+              "b": "pin",
+              "closed_states": [
+                false
+              ]
+            }
+          ],
+          "inventory_complete": true
+        },
+        "scope": "conditional_model_with_constructed_inputs",
+        "physical_authorization": "not_assessed",
+        "status": "supported",
+        "reason": "conditional_connectivity_enumeration",
+        "worlds": [
+          {
+            "assignment": {
+              "relay1": false,
+              "relay2": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          }
+        ],
+        "isolated_witness": {
+          "assignment": {
+            "relay1": false,
+            "relay2": false
+          },
+          "source_path": null,
+          "isolated": true,
+          "reference_isolated": true
+        },
+        "connected_witness": null,
+        "voltage_limit": "not_assessed",
+        "stored_energy": "not_assessed",
+        "assumptions": [
+          "All relevant sources and conductive paths are declared.",
+          "Edge-state alternatives cover the physical topology.",
+          "No omitted leakage, parasitic or breakdown path bypasses an open edge."
+        ]
+      }
+    },
+    {
+      "id": "common-closure-retained",
+      "kind": "topology",
+      "input": {
+        "mode": "synthetic_fixture",
+        "nodes": [
+          "host",
+          "mid",
+          "pin"
+        ],
+        "sources": [
+          "host"
+        ],
+        "target": "pin",
+        "edges": [
+          {
+            "id": "relay1",
+            "a": "host",
+            "b": "mid",
+            "closed_states": [
+              false,
+              true
+            ]
+          },
+          {
+            "id": "relay2",
+            "a": "mid",
+            "b": "pin",
+            "closed_states": [
+              false,
+              true
+            ]
+          }
+        ],
+        "inventory_complete": true
+      },
+      "execution": "evaluated",
+      "result": {
+        "model_version": "physical-observation/0.1.0",
+        "kind": "source_connectivity",
+        "input": {
+          "mode": "synthetic_fixture",
+          "nodes": [
+            "host",
+            "mid",
+            "pin"
+          ],
+          "sources": [
+            "host"
+          ],
+          "target": "pin",
+          "edges": [
+            {
+              "id": "relay1",
+              "a": "host",
+              "b": "mid",
+              "closed_states": [
+                false,
+                true
+              ]
+            },
+            {
+              "id": "relay2",
+              "a": "mid",
+              "b": "pin",
+              "closed_states": [
+                false,
+                true
+              ]
+            }
+          ],
+          "inventory_complete": true
+        },
+        "scope": "conditional_model_with_constructed_inputs",
+        "physical_authorization": "not_assessed",
+        "status": "unresolved",
+        "reason": "conditional_connectivity_enumeration",
+        "worlds": [
+          {
+            "assignment": {
+              "relay1": false,
+              "relay2": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "relay1": false,
+              "relay2": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "relay1": true,
+              "relay2": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "relay1": true,
+              "relay2": true
+            },
+            "source_path": [
+              "host",
+              "mid",
+              "pin"
+            ],
+            "isolated": false,
+            "reference_isolated": false
+          }
+        ],
+        "isolated_witness": {
+          "assignment": {
+            "relay1": false,
+            "relay2": false
+          },
+          "source_path": null,
+          "isolated": true,
+          "reference_isolated": true
+        },
+        "connected_witness": {
+          "assignment": {
+            "relay1": true,
+            "relay2": true
+          },
+          "source_path": [
+            "host",
+            "mid",
+            "pin"
+          ],
+          "isolated": false,
+          "reference_isolated": false
+        },
+        "voltage_limit": "not_assessed",
+        "stored_energy": "not_assessed",
+        "assumptions": [
+          "All relevant sources and conductive paths are declared.",
+          "Edge-state alternatives cover the physical topology.",
+          "No omitted leakage, parasitic or breakdown path bypasses an open edge."
+        ]
+      }
+    },
+    {
+      "id": "empty-inventory",
+      "kind": "topology",
+      "input": {
+        "mode": "synthetic_fixture",
+        "nodes": [
+          "host",
+          "pin"
+        ],
+        "sources": [],
+        "target": "pin",
+        "edges": [
+          {
+            "id": "relay",
+            "a": "host",
+            "b": "pin",
+            "closed_states": [
+              false
+            ]
+          }
+        ],
+        "inventory_complete": true
+      },
+      "execution": "evaluated",
+      "result": {
+        "model_version": "physical-observation/0.1.0",
+        "kind": "source_connectivity",
+        "input": {
+          "mode": "synthetic_fixture",
+          "nodes": [
+            "host",
+            "pin"
+          ],
+          "sources": [],
+          "target": "pin",
+          "edges": [
+            {
+              "id": "relay",
+              "a": "host",
+              "b": "pin",
+              "closed_states": [
+                false
+              ]
+            }
+          ],
+          "inventory_complete": true
+        },
+        "scope": "conditional_model_with_constructed_inputs",
+        "physical_authorization": "not_assessed",
+        "status": "unresolved",
+        "reason": "source_or_path_inventory_incomplete",
+        "worlds": [
+          {
+            "assignment": {
+              "relay": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          }
+        ],
+        "isolated_witness": {
+          "assignment": {
+            "relay": false
+          },
+          "source_path": null,
+          "isolated": true,
+          "reference_isolated": true
+        },
+        "connected_witness": null,
+        "voltage_limit": "not_assessed",
+        "stored_energy": "not_assessed",
+        "assumptions": [
+          "All relevant sources and conductive paths are declared.",
+          "Edge-state alternatives cover the physical topology.",
+          "No omitted leakage, parasitic or breakdown path bypasses an open edge."
+        ]
+      }
+    },
+    {
+      "id": "incomplete-inventory",
+      "kind": "topology",
+      "input": {
+        "mode": "synthetic_fixture",
+        "nodes": [
+          "host",
+          "pin"
+        ],
+        "sources": [
+          "host"
+        ],
+        "target": "pin",
+        "edges": [
+          {
+            "id": "relay",
+            "a": "host",
+            "b": "pin",
+            "closed_states": [
+              false
+            ]
+          }
+        ],
+        "inventory_complete": null
+      },
+      "execution": "evaluated",
+      "result": {
+        "model_version": "physical-observation/0.1.0",
+        "kind": "source_connectivity",
+        "input": {
+          "mode": "synthetic_fixture",
+          "nodes": [
+            "host",
+            "pin"
+          ],
+          "sources": [
+            "host"
+          ],
+          "target": "pin",
+          "edges": [
+            {
+              "id": "relay",
+              "a": "host",
+              "b": "pin",
+              "closed_states": [
+                false
+              ]
+            }
+          ],
+          "inventory_complete": null
+        },
+        "scope": "conditional_model_with_constructed_inputs",
+        "physical_authorization": "not_assessed",
+        "status": "unresolved",
+        "reason": "source_or_path_inventory_incomplete",
+        "worlds": [
+          {
+            "assignment": {
+              "relay": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          }
+        ],
+        "isolated_witness": {
+          "assignment": {
+            "relay": false
+          },
+          "source_path": null,
+          "isolated": true,
+          "reference_isolated": true
+        },
+        "connected_witness": null,
+        "voltage_limit": "not_assessed",
+        "stored_energy": "not_assessed",
+        "assumptions": [
+          "All relevant sources and conductive paths are declared.",
+          "Edge-state alternatives cover the physical topology.",
+          "No omitted leakage, parasitic or breakdown path bypasses an open edge."
+        ]
+      }
+    },
+    {
+      "id": "target-is-source",
+      "kind": "topology",
+      "input": {
+        "mode": "synthetic_fixture",
+        "nodes": [
+          "pin"
+        ],
+        "sources": [
+          "pin"
+        ],
+        "target": "pin",
+        "edges": [],
+        "inventory_complete": true
+      },
+      "execution": "evaluated",
+      "result": {
+        "model_version": "physical-observation/0.1.0",
+        "kind": "source_connectivity",
+        "input": {
+          "mode": "synthetic_fixture",
+          "nodes": [
+            "pin"
+          ],
+          "sources": [
+            "pin"
+          ],
+          "target": "pin",
+          "edges": [],
+          "inventory_complete": true
+        },
+        "scope": "conditional_model_with_constructed_inputs",
+        "physical_authorization": "not_assessed",
+        "status": "refuted",
+        "reason": "conditional_connectivity_enumeration",
+        "worlds": [
+          {
+            "assignment": {},
+            "source_path": [
+              "pin"
+            ],
+            "isolated": false,
+            "reference_isolated": false
+          }
+        ],
+        "isolated_witness": null,
+        "connected_witness": {
+          "assignment": {},
+          "source_path": [
+            "pin"
+          ],
+          "isolated": false,
+          "reference_isolated": false
+        },
+        "voltage_limit": "not_assessed",
+        "stored_energy": "not_assessed",
+        "assumptions": [
+          "All relevant sources and conductive paths are declared.",
+          "Edge-state alternatives cover the physical topology.",
+          "No omitted leakage, parasitic or breakdown path bypasses an open edge."
+        ]
+      }
+    },
+    {
+      "id": "eight-uncertain-edges",
+      "kind": "topology",
+      "input": {
+        "mode": "synthetic_fixture",
+        "nodes": [
+          "n0",
+          "n1",
+          "n2",
+          "n3",
+          "n4",
+          "n5",
+          "n6",
+          "n7",
+          "n8"
+        ],
+        "sources": [
+          "n0"
+        ],
+        "target": "n8",
+        "edges": [
+          {
+            "id": "e0",
+            "a": "n0",
+            "b": "n1",
+            "closed_states": [
+              false,
+              true
+            ]
+          },
+          {
+            "id": "e1",
+            "a": "n1",
+            "b": "n2",
+            "closed_states": [
+              false,
+              true
+            ]
+          },
+          {
+            "id": "e2",
+            "a": "n2",
+            "b": "n3",
+            "closed_states": [
+              false,
+              true
+            ]
+          },
+          {
+            "id": "e3",
+            "a": "n3",
+            "b": "n4",
+            "closed_states": [
+              false,
+              true
+            ]
+          },
+          {
+            "id": "e4",
+            "a": "n4",
+            "b": "n5",
+            "closed_states": [
+              false,
+              true
+            ]
+          },
+          {
+            "id": "e5",
+            "a": "n5",
+            "b": "n6",
+            "closed_states": [
+              false,
+              true
+            ]
+          },
+          {
+            "id": "e6",
+            "a": "n6",
+            "b": "n7",
+            "closed_states": [
+              false,
+              true
+            ]
+          },
+          {
+            "id": "e7",
+            "a": "n7",
+            "b": "n8",
+            "closed_states": [
+              false,
+              true
+            ]
+          }
+        ],
+        "inventory_complete": true
+      },
+      "execution": "evaluated",
+      "result": {
+        "model_version": "physical-observation/0.1.0",
+        "kind": "source_connectivity",
+        "input": {
+          "mode": "synthetic_fixture",
+          "nodes": [
+            "n0",
+            "n1",
+            "n2",
+            "n3",
+            "n4",
+            "n5",
+            "n6",
+            "n7",
+            "n8"
+          ],
+          "sources": [
+            "n0"
+          ],
+          "target": "n8",
+          "edges": [
+            {
+              "id": "e0",
+              "a": "n0",
+              "b": "n1",
+              "closed_states": [
+                false,
+                true
+              ]
+            },
+            {
+              "id": "e1",
+              "a": "n1",
+              "b": "n2",
+              "closed_states": [
+                false,
+                true
+              ]
+            },
+            {
+              "id": "e2",
+              "a": "n2",
+              "b": "n3",
+              "closed_states": [
+                false,
+                true
+              ]
+            },
+            {
+              "id": "e3",
+              "a": "n3",
+              "b": "n4",
+              "closed_states": [
+                false,
+                true
+              ]
+            },
+            {
+              "id": "e4",
+              "a": "n4",
+              "b": "n5",
+              "closed_states": [
+                false,
+                true
+              ]
+            },
+            {
+              "id": "e5",
+              "a": "n5",
+              "b": "n6",
+              "closed_states": [
+                false,
+                true
+              ]
+            },
+            {
+              "id": "e6",
+              "a": "n6",
+              "b": "n7",
+              "closed_states": [
+                false,
+                true
+              ]
+            },
+            {
+              "id": "e7",
+              "a": "n7",
+              "b": "n8",
+              "closed_states": [
+                false,
+                true
+              ]
+            }
+          ],
+          "inventory_complete": true
+        },
+        "scope": "conditional_model_with_constructed_inputs",
+        "physical_authorization": "not_assessed",
+        "status": "unresolved",
+        "reason": "conditional_connectivity_enumeration",
+        "worlds": [
+          {
+            "assignment": {
+              "e0": false,
+              "e1": false,
+              "e2": false,
+              "e3": false,
+              "e4": false,
+              "e5": false,
+              "e6": false,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": false,
+              "e2": false,
+              "e3": false,
+              "e4": false,
+              "e5": false,
+              "e6": false,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": false,
+              "e2": false,
+              "e3": false,
+              "e4": false,
+              "e5": false,
+              "e6": true,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": false,
+              "e2": false,
+              "e3": false,
+              "e4": false,
+              "e5": false,
+              "e6": true,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": false,
+              "e2": false,
+              "e3": false,
+              "e4": false,
+              "e5": true,
+              "e6": false,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": false,
+              "e2": false,
+              "e3": false,
+              "e4": false,
+              "e5": true,
+              "e6": false,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": false,
+              "e2": false,
+              "e3": false,
+              "e4": false,
+              "e5": true,
+              "e6": true,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": false,
+              "e2": false,
+              "e3": false,
+              "e4": false,
+              "e5": true,
+              "e6": true,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": false,
+              "e2": false,
+              "e3": false,
+              "e4": true,
+              "e5": false,
+              "e6": false,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": false,
+              "e2": false,
+              "e3": false,
+              "e4": true,
+              "e5": false,
+              "e6": false,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": false,
+              "e2": false,
+              "e3": false,
+              "e4": true,
+              "e5": false,
+              "e6": true,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": false,
+              "e2": false,
+              "e3": false,
+              "e4": true,
+              "e5": false,
+              "e6": true,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": false,
+              "e2": false,
+              "e3": false,
+              "e4": true,
+              "e5": true,
+              "e6": false,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": false,
+              "e2": false,
+              "e3": false,
+              "e4": true,
+              "e5": true,
+              "e6": false,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": false,
+              "e2": false,
+              "e3": false,
+              "e4": true,
+              "e5": true,
+              "e6": true,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": false,
+              "e2": false,
+              "e3": false,
+              "e4": true,
+              "e5": true,
+              "e6": true,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": false,
+              "e2": false,
+              "e3": true,
+              "e4": false,
+              "e5": false,
+              "e6": false,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": false,
+              "e2": false,
+              "e3": true,
+              "e4": false,
+              "e5": false,
+              "e6": false,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": false,
+              "e2": false,
+              "e3": true,
+              "e4": false,
+              "e5": false,
+              "e6": true,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": false,
+              "e2": false,
+              "e3": true,
+              "e4": false,
+              "e5": false,
+              "e6": true,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": false,
+              "e2": false,
+              "e3": true,
+              "e4": false,
+              "e5": true,
+              "e6": false,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": false,
+              "e2": false,
+              "e3": true,
+              "e4": false,
+              "e5": true,
+              "e6": false,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": false,
+              "e2": false,
+              "e3": true,
+              "e4": false,
+              "e5": true,
+              "e6": true,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": false,
+              "e2": false,
+              "e3": true,
+              "e4": false,
+              "e5": true,
+              "e6": true,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": false,
+              "e2": false,
+              "e3": true,
+              "e4": true,
+              "e5": false,
+              "e6": false,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": false,
+              "e2": false,
+              "e3": true,
+              "e4": true,
+              "e5": false,
+              "e6": false,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": false,
+              "e2": false,
+              "e3": true,
+              "e4": true,
+              "e5": false,
+              "e6": true,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": false,
+              "e2": false,
+              "e3": true,
+              "e4": true,
+              "e5": false,
+              "e6": true,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": false,
+              "e2": false,
+              "e3": true,
+              "e4": true,
+              "e5": true,
+              "e6": false,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": false,
+              "e2": false,
+              "e3": true,
+              "e4": true,
+              "e5": true,
+              "e6": false,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": false,
+              "e2": false,
+              "e3": true,
+              "e4": true,
+              "e5": true,
+              "e6": true,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": false,
+              "e2": false,
+              "e3": true,
+              "e4": true,
+              "e5": true,
+              "e6": true,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": false,
+              "e2": true,
+              "e3": false,
+              "e4": false,
+              "e5": false,
+              "e6": false,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": false,
+              "e2": true,
+              "e3": false,
+              "e4": false,
+              "e5": false,
+              "e6": false,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": false,
+              "e2": true,
+              "e3": false,
+              "e4": false,
+              "e5": false,
+              "e6": true,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": false,
+              "e2": true,
+              "e3": false,
+              "e4": false,
+              "e5": false,
+              "e6": true,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": false,
+              "e2": true,
+              "e3": false,
+              "e4": false,
+              "e5": true,
+              "e6": false,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": false,
+              "e2": true,
+              "e3": false,
+              "e4": false,
+              "e5": true,
+              "e6": false,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": false,
+              "e2": true,
+              "e3": false,
+              "e4": false,
+              "e5": true,
+              "e6": true,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": false,
+              "e2": true,
+              "e3": false,
+              "e4": false,
+              "e5": true,
+              "e6": true,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": false,
+              "e2": true,
+              "e3": false,
+              "e4": true,
+              "e5": false,
+              "e6": false,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": false,
+              "e2": true,
+              "e3": false,
+              "e4": true,
+              "e5": false,
+              "e6": false,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": false,
+              "e2": true,
+              "e3": false,
+              "e4": true,
+              "e5": false,
+              "e6": true,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": false,
+              "e2": true,
+              "e3": false,
+              "e4": true,
+              "e5": false,
+              "e6": true,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": false,
+              "e2": true,
+              "e3": false,
+              "e4": true,
+              "e5": true,
+              "e6": false,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": false,
+              "e2": true,
+              "e3": false,
+              "e4": true,
+              "e5": true,
+              "e6": false,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": false,
+              "e2": true,
+              "e3": false,
+              "e4": true,
+              "e5": true,
+              "e6": true,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": false,
+              "e2": true,
+              "e3": false,
+              "e4": true,
+              "e5": true,
+              "e6": true,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": false,
+              "e2": true,
+              "e3": true,
+              "e4": false,
+              "e5": false,
+              "e6": false,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": false,
+              "e2": true,
+              "e3": true,
+              "e4": false,
+              "e5": false,
+              "e6": false,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": false,
+              "e2": true,
+              "e3": true,
+              "e4": false,
+              "e5": false,
+              "e6": true,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": false,
+              "e2": true,
+              "e3": true,
+              "e4": false,
+              "e5": false,
+              "e6": true,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": false,
+              "e2": true,
+              "e3": true,
+              "e4": false,
+              "e5": true,
+              "e6": false,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": false,
+              "e2": true,
+              "e3": true,
+              "e4": false,
+              "e5": true,
+              "e6": false,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": false,
+              "e2": true,
+              "e3": true,
+              "e4": false,
+              "e5": true,
+              "e6": true,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": false,
+              "e2": true,
+              "e3": true,
+              "e4": false,
+              "e5": true,
+              "e6": true,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": false,
+              "e2": true,
+              "e3": true,
+              "e4": true,
+              "e5": false,
+              "e6": false,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": false,
+              "e2": true,
+              "e3": true,
+              "e4": true,
+              "e5": false,
+              "e6": false,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": false,
+              "e2": true,
+              "e3": true,
+              "e4": true,
+              "e5": false,
+              "e6": true,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": false,
+              "e2": true,
+              "e3": true,
+              "e4": true,
+              "e5": false,
+              "e6": true,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": false,
+              "e2": true,
+              "e3": true,
+              "e4": true,
+              "e5": true,
+              "e6": false,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": false,
+              "e2": true,
+              "e3": true,
+              "e4": true,
+              "e5": true,
+              "e6": false,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": false,
+              "e2": true,
+              "e3": true,
+              "e4": true,
+              "e5": true,
+              "e6": true,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": false,
+              "e2": true,
+              "e3": true,
+              "e4": true,
+              "e5": true,
+              "e6": true,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": true,
+              "e2": false,
+              "e3": false,
+              "e4": false,
+              "e5": false,
+              "e6": false,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": true,
+              "e2": false,
+              "e3": false,
+              "e4": false,
+              "e5": false,
+              "e6": false,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": true,
+              "e2": false,
+              "e3": false,
+              "e4": false,
+              "e5": false,
+              "e6": true,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": true,
+              "e2": false,
+              "e3": false,
+              "e4": false,
+              "e5": false,
+              "e6": true,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": true,
+              "e2": false,
+              "e3": false,
+              "e4": false,
+              "e5": true,
+              "e6": false,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": true,
+              "e2": false,
+              "e3": false,
+              "e4": false,
+              "e5": true,
+              "e6": false,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": true,
+              "e2": false,
+              "e3": false,
+              "e4": false,
+              "e5": true,
+              "e6": true,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": true,
+              "e2": false,
+              "e3": false,
+              "e4": false,
+              "e5": true,
+              "e6": true,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": true,
+              "e2": false,
+              "e3": false,
+              "e4": true,
+              "e5": false,
+              "e6": false,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": true,
+              "e2": false,
+              "e3": false,
+              "e4": true,
+              "e5": false,
+              "e6": false,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": true,
+              "e2": false,
+              "e3": false,
+              "e4": true,
+              "e5": false,
+              "e6": true,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": true,
+              "e2": false,
+              "e3": false,
+              "e4": true,
+              "e5": false,
+              "e6": true,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": true,
+              "e2": false,
+              "e3": false,
+              "e4": true,
+              "e5": true,
+              "e6": false,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": true,
+              "e2": false,
+              "e3": false,
+              "e4": true,
+              "e5": true,
+              "e6": false,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": true,
+              "e2": false,
+              "e3": false,
+              "e4": true,
+              "e5": true,
+              "e6": true,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": true,
+              "e2": false,
+              "e3": false,
+              "e4": true,
+              "e5": true,
+              "e6": true,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": true,
+              "e2": false,
+              "e3": true,
+              "e4": false,
+              "e5": false,
+              "e6": false,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": true,
+              "e2": false,
+              "e3": true,
+              "e4": false,
+              "e5": false,
+              "e6": false,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": true,
+              "e2": false,
+              "e3": true,
+              "e4": false,
+              "e5": false,
+              "e6": true,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": true,
+              "e2": false,
+              "e3": true,
+              "e4": false,
+              "e5": false,
+              "e6": true,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": true,
+              "e2": false,
+              "e3": true,
+              "e4": false,
+              "e5": true,
+              "e6": false,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": true,
+              "e2": false,
+              "e3": true,
+              "e4": false,
+              "e5": true,
+              "e6": false,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": true,
+              "e2": false,
+              "e3": true,
+              "e4": false,
+              "e5": true,
+              "e6": true,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": true,
+              "e2": false,
+              "e3": true,
+              "e4": false,
+              "e5": true,
+              "e6": true,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": true,
+              "e2": false,
+              "e3": true,
+              "e4": true,
+              "e5": false,
+              "e6": false,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": true,
+              "e2": false,
+              "e3": true,
+              "e4": true,
+              "e5": false,
+              "e6": false,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": true,
+              "e2": false,
+              "e3": true,
+              "e4": true,
+              "e5": false,
+              "e6": true,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": true,
+              "e2": false,
+              "e3": true,
+              "e4": true,
+              "e5": false,
+              "e6": true,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": true,
+              "e2": false,
+              "e3": true,
+              "e4": true,
+              "e5": true,
+              "e6": false,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": true,
+              "e2": false,
+              "e3": true,
+              "e4": true,
+              "e5": true,
+              "e6": false,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": true,
+              "e2": false,
+              "e3": true,
+              "e4": true,
+              "e5": true,
+              "e6": true,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": true,
+              "e2": false,
+              "e3": true,
+              "e4": true,
+              "e5": true,
+              "e6": true,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": true,
+              "e2": true,
+              "e3": false,
+              "e4": false,
+              "e5": false,
+              "e6": false,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": true,
+              "e2": true,
+              "e3": false,
+              "e4": false,
+              "e5": false,
+              "e6": false,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": true,
+              "e2": true,
+              "e3": false,
+              "e4": false,
+              "e5": false,
+              "e6": true,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": true,
+              "e2": true,
+              "e3": false,
+              "e4": false,
+              "e5": false,
+              "e6": true,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": true,
+              "e2": true,
+              "e3": false,
+              "e4": false,
+              "e5": true,
+              "e6": false,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": true,
+              "e2": true,
+              "e3": false,
+              "e4": false,
+              "e5": true,
+              "e6": false,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": true,
+              "e2": true,
+              "e3": false,
+              "e4": false,
+              "e5": true,
+              "e6": true,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": true,
+              "e2": true,
+              "e3": false,
+              "e4": false,
+              "e5": true,
+              "e6": true,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": true,
+              "e2": true,
+              "e3": false,
+              "e4": true,
+              "e5": false,
+              "e6": false,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": true,
+              "e2": true,
+              "e3": false,
+              "e4": true,
+              "e5": false,
+              "e6": false,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": true,
+              "e2": true,
+              "e3": false,
+              "e4": true,
+              "e5": false,
+              "e6": true,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": true,
+              "e2": true,
+              "e3": false,
+              "e4": true,
+              "e5": false,
+              "e6": true,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": true,
+              "e2": true,
+              "e3": false,
+              "e4": true,
+              "e5": true,
+              "e6": false,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": true,
+              "e2": true,
+              "e3": false,
+              "e4": true,
+              "e5": true,
+              "e6": false,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": true,
+              "e2": true,
+              "e3": false,
+              "e4": true,
+              "e5": true,
+              "e6": true,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": true,
+              "e2": true,
+              "e3": false,
+              "e4": true,
+              "e5": true,
+              "e6": true,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": true,
+              "e2": true,
+              "e3": true,
+              "e4": false,
+              "e5": false,
+              "e6": false,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": true,
+              "e2": true,
+              "e3": true,
+              "e4": false,
+              "e5": false,
+              "e6": false,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": true,
+              "e2": true,
+              "e3": true,
+              "e4": false,
+              "e5": false,
+              "e6": true,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": true,
+              "e2": true,
+              "e3": true,
+              "e4": false,
+              "e5": false,
+              "e6": true,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": true,
+              "e2": true,
+              "e3": true,
+              "e4": false,
+              "e5": true,
+              "e6": false,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": true,
+              "e2": true,
+              "e3": true,
+              "e4": false,
+              "e5": true,
+              "e6": false,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": true,
+              "e2": true,
+              "e3": true,
+              "e4": false,
+              "e5": true,
+              "e6": true,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": true,
+              "e2": true,
+              "e3": true,
+              "e4": false,
+              "e5": true,
+              "e6": true,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": true,
+              "e2": true,
+              "e3": true,
+              "e4": true,
+              "e5": false,
+              "e6": false,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": true,
+              "e2": true,
+              "e3": true,
+              "e4": true,
+              "e5": false,
+              "e6": false,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": true,
+              "e2": true,
+              "e3": true,
+              "e4": true,
+              "e5": false,
+              "e6": true,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": true,
+              "e2": true,
+              "e3": true,
+              "e4": true,
+              "e5": false,
+              "e6": true,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": true,
+              "e2": true,
+              "e3": true,
+              "e4": true,
+              "e5": true,
+              "e6": false,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": true,
+              "e2": true,
+              "e3": true,
+              "e4": true,
+              "e5": true,
+              "e6": false,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": true,
+              "e2": true,
+              "e3": true,
+              "e4": true,
+              "e5": true,
+              "e6": true,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": false,
+              "e1": true,
+              "e2": true,
+              "e3": true,
+              "e4": true,
+              "e5": true,
+              "e6": true,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": false,
+              "e2": false,
+              "e3": false,
+              "e4": false,
+              "e5": false,
+              "e6": false,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": false,
+              "e2": false,
+              "e3": false,
+              "e4": false,
+              "e5": false,
+              "e6": false,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": false,
+              "e2": false,
+              "e3": false,
+              "e4": false,
+              "e5": false,
+              "e6": true,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": false,
+              "e2": false,
+              "e3": false,
+              "e4": false,
+              "e5": false,
+              "e6": true,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": false,
+              "e2": false,
+              "e3": false,
+              "e4": false,
+              "e5": true,
+              "e6": false,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": false,
+              "e2": false,
+              "e3": false,
+              "e4": false,
+              "e5": true,
+              "e6": false,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": false,
+              "e2": false,
+              "e3": false,
+              "e4": false,
+              "e5": true,
+              "e6": true,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": false,
+              "e2": false,
+              "e3": false,
+              "e4": false,
+              "e5": true,
+              "e6": true,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": false,
+              "e2": false,
+              "e3": false,
+              "e4": true,
+              "e5": false,
+              "e6": false,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": false,
+              "e2": false,
+              "e3": false,
+              "e4": true,
+              "e5": false,
+              "e6": false,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": false,
+              "e2": false,
+              "e3": false,
+              "e4": true,
+              "e5": false,
+              "e6": true,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": false,
+              "e2": false,
+              "e3": false,
+              "e4": true,
+              "e5": false,
+              "e6": true,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": false,
+              "e2": false,
+              "e3": false,
+              "e4": true,
+              "e5": true,
+              "e6": false,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": false,
+              "e2": false,
+              "e3": false,
+              "e4": true,
+              "e5": true,
+              "e6": false,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": false,
+              "e2": false,
+              "e3": false,
+              "e4": true,
+              "e5": true,
+              "e6": true,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": false,
+              "e2": false,
+              "e3": false,
+              "e4": true,
+              "e5": true,
+              "e6": true,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": false,
+              "e2": false,
+              "e3": true,
+              "e4": false,
+              "e5": false,
+              "e6": false,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": false,
+              "e2": false,
+              "e3": true,
+              "e4": false,
+              "e5": false,
+              "e6": false,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": false,
+              "e2": false,
+              "e3": true,
+              "e4": false,
+              "e5": false,
+              "e6": true,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": false,
+              "e2": false,
+              "e3": true,
+              "e4": false,
+              "e5": false,
+              "e6": true,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": false,
+              "e2": false,
+              "e3": true,
+              "e4": false,
+              "e5": true,
+              "e6": false,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": false,
+              "e2": false,
+              "e3": true,
+              "e4": false,
+              "e5": true,
+              "e6": false,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": false,
+              "e2": false,
+              "e3": true,
+              "e4": false,
+              "e5": true,
+              "e6": true,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": false,
+              "e2": false,
+              "e3": true,
+              "e4": false,
+              "e5": true,
+              "e6": true,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": false,
+              "e2": false,
+              "e3": true,
+              "e4": true,
+              "e5": false,
+              "e6": false,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": false,
+              "e2": false,
+              "e3": true,
+              "e4": true,
+              "e5": false,
+              "e6": false,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": false,
+              "e2": false,
+              "e3": true,
+              "e4": true,
+              "e5": false,
+              "e6": true,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": false,
+              "e2": false,
+              "e3": true,
+              "e4": true,
+              "e5": false,
+              "e6": true,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": false,
+              "e2": false,
+              "e3": true,
+              "e4": true,
+              "e5": true,
+              "e6": false,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": false,
+              "e2": false,
+              "e3": true,
+              "e4": true,
+              "e5": true,
+              "e6": false,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": false,
+              "e2": false,
+              "e3": true,
+              "e4": true,
+              "e5": true,
+              "e6": true,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": false,
+              "e2": false,
+              "e3": true,
+              "e4": true,
+              "e5": true,
+              "e6": true,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": false,
+              "e2": true,
+              "e3": false,
+              "e4": false,
+              "e5": false,
+              "e6": false,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": false,
+              "e2": true,
+              "e3": false,
+              "e4": false,
+              "e5": false,
+              "e6": false,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": false,
+              "e2": true,
+              "e3": false,
+              "e4": false,
+              "e5": false,
+              "e6": true,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": false,
+              "e2": true,
+              "e3": false,
+              "e4": false,
+              "e5": false,
+              "e6": true,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": false,
+              "e2": true,
+              "e3": false,
+              "e4": false,
+              "e5": true,
+              "e6": false,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": false,
+              "e2": true,
+              "e3": false,
+              "e4": false,
+              "e5": true,
+              "e6": false,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": false,
+              "e2": true,
+              "e3": false,
+              "e4": false,
+              "e5": true,
+              "e6": true,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": false,
+              "e2": true,
+              "e3": false,
+              "e4": false,
+              "e5": true,
+              "e6": true,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": false,
+              "e2": true,
+              "e3": false,
+              "e4": true,
+              "e5": false,
+              "e6": false,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": false,
+              "e2": true,
+              "e3": false,
+              "e4": true,
+              "e5": false,
+              "e6": false,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": false,
+              "e2": true,
+              "e3": false,
+              "e4": true,
+              "e5": false,
+              "e6": true,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": false,
+              "e2": true,
+              "e3": false,
+              "e4": true,
+              "e5": false,
+              "e6": true,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": false,
+              "e2": true,
+              "e3": false,
+              "e4": true,
+              "e5": true,
+              "e6": false,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": false,
+              "e2": true,
+              "e3": false,
+              "e4": true,
+              "e5": true,
+              "e6": false,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": false,
+              "e2": true,
+              "e3": false,
+              "e4": true,
+              "e5": true,
+              "e6": true,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": false,
+              "e2": true,
+              "e3": false,
+              "e4": true,
+              "e5": true,
+              "e6": true,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": false,
+              "e2": true,
+              "e3": true,
+              "e4": false,
+              "e5": false,
+              "e6": false,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": false,
+              "e2": true,
+              "e3": true,
+              "e4": false,
+              "e5": false,
+              "e6": false,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": false,
+              "e2": true,
+              "e3": true,
+              "e4": false,
+              "e5": false,
+              "e6": true,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": false,
+              "e2": true,
+              "e3": true,
+              "e4": false,
+              "e5": false,
+              "e6": true,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": false,
+              "e2": true,
+              "e3": true,
+              "e4": false,
+              "e5": true,
+              "e6": false,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": false,
+              "e2": true,
+              "e3": true,
+              "e4": false,
+              "e5": true,
+              "e6": false,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": false,
+              "e2": true,
+              "e3": true,
+              "e4": false,
+              "e5": true,
+              "e6": true,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": false,
+              "e2": true,
+              "e3": true,
+              "e4": false,
+              "e5": true,
+              "e6": true,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": false,
+              "e2": true,
+              "e3": true,
+              "e4": true,
+              "e5": false,
+              "e6": false,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": false,
+              "e2": true,
+              "e3": true,
+              "e4": true,
+              "e5": false,
+              "e6": false,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": false,
+              "e2": true,
+              "e3": true,
+              "e4": true,
+              "e5": false,
+              "e6": true,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": false,
+              "e2": true,
+              "e3": true,
+              "e4": true,
+              "e5": false,
+              "e6": true,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": false,
+              "e2": true,
+              "e3": true,
+              "e4": true,
+              "e5": true,
+              "e6": false,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": false,
+              "e2": true,
+              "e3": true,
+              "e4": true,
+              "e5": true,
+              "e6": false,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": false,
+              "e2": true,
+              "e3": true,
+              "e4": true,
+              "e5": true,
+              "e6": true,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": false,
+              "e2": true,
+              "e3": true,
+              "e4": true,
+              "e5": true,
+              "e6": true,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": true,
+              "e2": false,
+              "e3": false,
+              "e4": false,
+              "e5": false,
+              "e6": false,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": true,
+              "e2": false,
+              "e3": false,
+              "e4": false,
+              "e5": false,
+              "e6": false,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": true,
+              "e2": false,
+              "e3": false,
+              "e4": false,
+              "e5": false,
+              "e6": true,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": true,
+              "e2": false,
+              "e3": false,
+              "e4": false,
+              "e5": false,
+              "e6": true,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": true,
+              "e2": false,
+              "e3": false,
+              "e4": false,
+              "e5": true,
+              "e6": false,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": true,
+              "e2": false,
+              "e3": false,
+              "e4": false,
+              "e5": true,
+              "e6": false,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": true,
+              "e2": false,
+              "e3": false,
+              "e4": false,
+              "e5": true,
+              "e6": true,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": true,
+              "e2": false,
+              "e3": false,
+              "e4": false,
+              "e5": true,
+              "e6": true,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": true,
+              "e2": false,
+              "e3": false,
+              "e4": true,
+              "e5": false,
+              "e6": false,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": true,
+              "e2": false,
+              "e3": false,
+              "e4": true,
+              "e5": false,
+              "e6": false,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": true,
+              "e2": false,
+              "e3": false,
+              "e4": true,
+              "e5": false,
+              "e6": true,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": true,
+              "e2": false,
+              "e3": false,
+              "e4": true,
+              "e5": false,
+              "e6": true,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": true,
+              "e2": false,
+              "e3": false,
+              "e4": true,
+              "e5": true,
+              "e6": false,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": true,
+              "e2": false,
+              "e3": false,
+              "e4": true,
+              "e5": true,
+              "e6": false,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": true,
+              "e2": false,
+              "e3": false,
+              "e4": true,
+              "e5": true,
+              "e6": true,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": true,
+              "e2": false,
+              "e3": false,
+              "e4": true,
+              "e5": true,
+              "e6": true,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": true,
+              "e2": false,
+              "e3": true,
+              "e4": false,
+              "e5": false,
+              "e6": false,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": true,
+              "e2": false,
+              "e3": true,
+              "e4": false,
+              "e5": false,
+              "e6": false,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": true,
+              "e2": false,
+              "e3": true,
+              "e4": false,
+              "e5": false,
+              "e6": true,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": true,
+              "e2": false,
+              "e3": true,
+              "e4": false,
+              "e5": false,
+              "e6": true,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": true,
+              "e2": false,
+              "e3": true,
+              "e4": false,
+              "e5": true,
+              "e6": false,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": true,
+              "e2": false,
+              "e3": true,
+              "e4": false,
+              "e5": true,
+              "e6": false,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": true,
+              "e2": false,
+              "e3": true,
+              "e4": false,
+              "e5": true,
+              "e6": true,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": true,
+              "e2": false,
+              "e3": true,
+              "e4": false,
+              "e5": true,
+              "e6": true,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": true,
+              "e2": false,
+              "e3": true,
+              "e4": true,
+              "e5": false,
+              "e6": false,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": true,
+              "e2": false,
+              "e3": true,
+              "e4": true,
+              "e5": false,
+              "e6": false,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": true,
+              "e2": false,
+              "e3": true,
+              "e4": true,
+              "e5": false,
+              "e6": true,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": true,
+              "e2": false,
+              "e3": true,
+              "e4": true,
+              "e5": false,
+              "e6": true,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": true,
+              "e2": false,
+              "e3": true,
+              "e4": true,
+              "e5": true,
+              "e6": false,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": true,
+              "e2": false,
+              "e3": true,
+              "e4": true,
+              "e5": true,
+              "e6": false,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": true,
+              "e2": false,
+              "e3": true,
+              "e4": true,
+              "e5": true,
+              "e6": true,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": true,
+              "e2": false,
+              "e3": true,
+              "e4": true,
+              "e5": true,
+              "e6": true,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": true,
+              "e2": true,
+              "e3": false,
+              "e4": false,
+              "e5": false,
+              "e6": false,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": true,
+              "e2": true,
+              "e3": false,
+              "e4": false,
+              "e5": false,
+              "e6": false,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": true,
+              "e2": true,
+              "e3": false,
+              "e4": false,
+              "e5": false,
+              "e6": true,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": true,
+              "e2": true,
+              "e3": false,
+              "e4": false,
+              "e5": false,
+              "e6": true,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": true,
+              "e2": true,
+              "e3": false,
+              "e4": false,
+              "e5": true,
+              "e6": false,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": true,
+              "e2": true,
+              "e3": false,
+              "e4": false,
+              "e5": true,
+              "e6": false,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": true,
+              "e2": true,
+              "e3": false,
+              "e4": false,
+              "e5": true,
+              "e6": true,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": true,
+              "e2": true,
+              "e3": false,
+              "e4": false,
+              "e5": true,
+              "e6": true,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": true,
+              "e2": true,
+              "e3": false,
+              "e4": true,
+              "e5": false,
+              "e6": false,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": true,
+              "e2": true,
+              "e3": false,
+              "e4": true,
+              "e5": false,
+              "e6": false,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": true,
+              "e2": true,
+              "e3": false,
+              "e4": true,
+              "e5": false,
+              "e6": true,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": true,
+              "e2": true,
+              "e3": false,
+              "e4": true,
+              "e5": false,
+              "e6": true,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": true,
+              "e2": true,
+              "e3": false,
+              "e4": true,
+              "e5": true,
+              "e6": false,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": true,
+              "e2": true,
+              "e3": false,
+              "e4": true,
+              "e5": true,
+              "e6": false,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": true,
+              "e2": true,
+              "e3": false,
+              "e4": true,
+              "e5": true,
+              "e6": true,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": true,
+              "e2": true,
+              "e3": false,
+              "e4": true,
+              "e5": true,
+              "e6": true,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": true,
+              "e2": true,
+              "e3": true,
+              "e4": false,
+              "e5": false,
+              "e6": false,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": true,
+              "e2": true,
+              "e3": true,
+              "e4": false,
+              "e5": false,
+              "e6": false,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": true,
+              "e2": true,
+              "e3": true,
+              "e4": false,
+              "e5": false,
+              "e6": true,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": true,
+              "e2": true,
+              "e3": true,
+              "e4": false,
+              "e5": false,
+              "e6": true,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": true,
+              "e2": true,
+              "e3": true,
+              "e4": false,
+              "e5": true,
+              "e6": false,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": true,
+              "e2": true,
+              "e3": true,
+              "e4": false,
+              "e5": true,
+              "e6": false,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": true,
+              "e2": true,
+              "e3": true,
+              "e4": false,
+              "e5": true,
+              "e6": true,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": true,
+              "e2": true,
+              "e3": true,
+              "e4": false,
+              "e5": true,
+              "e6": true,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": true,
+              "e2": true,
+              "e3": true,
+              "e4": true,
+              "e5": false,
+              "e6": false,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": true,
+              "e2": true,
+              "e3": true,
+              "e4": true,
+              "e5": false,
+              "e6": false,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": true,
+              "e2": true,
+              "e3": true,
+              "e4": true,
+              "e5": false,
+              "e6": true,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": true,
+              "e2": true,
+              "e3": true,
+              "e4": true,
+              "e5": false,
+              "e6": true,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": true,
+              "e2": true,
+              "e3": true,
+              "e4": true,
+              "e5": true,
+              "e6": false,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": true,
+              "e2": true,
+              "e3": true,
+              "e4": true,
+              "e5": true,
+              "e6": false,
+              "e7": true
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": true,
+              "e2": true,
+              "e3": true,
+              "e4": true,
+              "e5": true,
+              "e6": true,
+              "e7": false
+            },
+            "source_path": null,
+            "isolated": true,
+            "reference_isolated": true
+          },
+          {
+            "assignment": {
+              "e0": true,
+              "e1": true,
+              "e2": true,
+              "e3": true,
+              "e4": true,
+              "e5": true,
+              "e6": true,
+              "e7": true
+            },
+            "source_path": [
+              "n0",
+              "n1",
+              "n2",
+              "n3",
+              "n4",
+              "n5",
+              "n6",
+              "n7",
+              "n8"
+            ],
+            "isolated": false,
+            "reference_isolated": false
+          }
+        ],
+        "isolated_witness": {
+          "assignment": {
+            "e0": false,
+            "e1": false,
+            "e2": false,
+            "e3": false,
+            "e4": false,
+            "e5": false,
+            "e6": false,
+            "e7": false
+          },
+          "source_path": null,
+          "isolated": true,
+          "reference_isolated": true
+        },
+        "connected_witness": {
+          "assignment": {
+            "e0": true,
+            "e1": true,
+            "e2": true,
+            "e3": true,
+            "e4": true,
+            "e5": true,
+            "e6": true,
+            "e7": true
+          },
+          "source_path": [
+            "n0",
+            "n1",
+            "n2",
+            "n3",
+            "n4",
+            "n5",
+            "n6",
+            "n7",
+            "n8"
+          ],
+          "isolated": false,
+          "reference_isolated": false
+        },
+        "voltage_limit": "not_assessed",
+        "stored_energy": "not_assessed",
+        "assumptions": [
+          "All relevant sources and conductive paths are declared.",
+          "Edge-state alternatives cover the physical topology.",
+          "No omitted leakage, parasitic or breakdown path bypasses an open edge."
+        ]
+      }
+    },
+    {
+      "id": "reject-nine-uncertain-edges",
+      "kind": "topology",
+      "input": {
+        "mode": "synthetic_fixture",
+        "nodes": [
+          "n0",
+          "n1",
+          "n2",
+          "n3",
+          "n4",
+          "n5",
+          "n6",
+          "n7",
+          "n8",
+          "n9"
+        ],
+        "sources": [
+          "n0"
+        ],
+        "target": "n9",
+        "edges": [
+          {
+            "id": "e0",
+            "a": "n0",
+            "b": "n1",
+            "closed_states": [
+              false,
+              true
+            ]
+          },
+          {
+            "id": "e1",
+            "a": "n1",
+            "b": "n2",
+            "closed_states": [
+              false,
+              true
+            ]
+          },
+          {
+            "id": "e2",
+            "a": "n2",
+            "b": "n3",
+            "closed_states": [
+              false,
+              true
+            ]
+          },
+          {
+            "id": "e3",
+            "a": "n3",
+            "b": "n4",
+            "closed_states": [
+              false,
+              true
+            ]
+          },
+          {
+            "id": "e4",
+            "a": "n4",
+            "b": "n5",
+            "closed_states": [
+              false,
+              true
+            ]
+          },
+          {
+            "id": "e5",
+            "a": "n5",
+            "b": "n6",
+            "closed_states": [
+              false,
+              true
+            ]
+          },
+          {
+            "id": "e6",
+            "a": "n6",
+            "b": "n7",
+            "closed_states": [
+              false,
+              true
+            ]
+          },
+          {
+            "id": "e7",
+            "a": "n7",
+            "b": "n8",
+            "closed_states": [
+              false,
+              true
+            ]
+          },
+          {
+            "id": "e8",
+            "a": "n8",
+            "b": "n9",
+            "closed_states": [
+              false,
+              true
+            ]
+          }
+        ],
+        "inventory_complete": true
+      },
+      "execution": "rejected",
+      "error": "Topology assignment cap exceeded"
+    },
+    {
+      "id": "duplicate-edge-id",
+      "kind": "topology",
+      "input": {
+        "mode": "synthetic_fixture",
+        "nodes": [
+          "host",
+          "pin"
+        ],
+        "sources": [
+          "host"
+        ],
+        "target": "pin",
+        "edges": [
+          {
+            "id": "relay",
+            "a": "host",
+            "b": "pin",
+            "closed_states": [
+              false
+            ]
+          },
+          {
+            "id": "relay",
+            "a": "host",
+            "b": "pin",
+            "closed_states": [
+              true
+            ]
+          }
+        ],
+        "inventory_complete": true
+      },
+      "execution": "rejected",
+      "error": "Duplicate or invalid edge ID"
+    }
+  ],
+  "exclusions": []
+}

@@ -1,0 +1,62 @@
+{
+  "checks_passed": true,
+  "case_count": 34,
+  "input_rejections": 7,
+  "voltage_comparisons": 8,
+  "topology_reference_checks": 269,
+  "assessment_counts": {
+    "supported": 5,
+    "refuted": 5,
+    "unresolved": 17
+  },
+  "core_file_sha256": "a692226cf27950f5e4a3ebb7c29605716eca92f660cfe4a39cb80e8e8a674d89",
+  "input_hashes": [
+    {
+      "path": "research/decisions/ADR-004.md",
+      "sha256": "ba422edb69f79551f1c6d198477311cc2d192017b5ffeb0325b8e84a195e9f44"
+    },
+    {
+      "path": "research/block-4/specification.md",
+      "sha256": "92efc14934d01b37e5538d9c9a52710d185e4b59d988ecfcd7345c0b0e47d2a1"
+    },
+    {
+      "path": "research/block-4/sources.md",
+      "sha256": "56ab0c13fa8a972116859a8fa7c7cb1f77483f41d4fddb8e2f7dea53be936558"
+    },
+    {
+      "path": "backend/observation_model/model.py",
+      "sha256": "fd7ab4bc648c3619c1a468f0f3edda1fbe4cd47b9074fc8d0e9663874ec88cee"
+    },
+    {
+      "path": "backend/observation_model/run_study.py",
+      "sha256": "412fca3746659da478e006d11281b218e3e47f58d4e5d4b0c92e3070a8da5952"
+    },
+    {
+      "path": "backend/observation_model/test_model.py",
+      "sha256": "1609cdbc49eb37c0c29100b8f6747b38d0d18b83819f7c3374b7bb8d61a1396b"
+    },
+    {
+      "path": "backend/observation_model/cases.json",
+      "sha256": "39ff8ef68b555330fd996c3eb03453f18011be4188c502efd28db0225d27cfe2"
+    },
+    {
+      "path": "backend/observation_model/interface-profile.json",
+      "sha256": "44734a550233cb94468e9e3dcb755a6c14d9023d2433360420ba3d12c80e48af"
+    }
+  ],
+  "limits": {
+    "workers": 1,
+    "cpu_limit_s": 5,
+    "address_space_requested_bytes": 268435456,
+    "address_space_limit_set": false,
+    "note": "current limit exceeds maximum limit"
+  },
+  "started_at": "2026-11-16T12:50:08.422790+00:00",
+  "ended_at": "2026-11-16T12:50:08.447526+00:00",
+  "evaluation_cpu_s": 0.024479,
+  "evaluation_wall_s": 0.024613290996057913,
+  "rss_high_water_bytes_at_sample": 24690688,
+  "measurement_scope": "Imports and final summary/manifest export excluded; RSS sampled after core export",
+  "python": "3.14.2",
+  "platform": "macOS-14.4-arm64-arm-64bit-Mach-O"
+}

@@ -1,0 +1,37 @@
+{
+  "recorded_at": "2026-11-16T12:59:20.188724+00:00",
+  "README_sha256": "561e7b3afb741c60e4f00c7ec931a47e970ebef73d7add6d9895806e05a9e5a1",
+  "diagrams": [
+    {
+      "diagram": 1,
+      "source_sha256": "dade8ba7606f7c10bbea678413581b9105896d92f54699e9d6238cb4d532e420",
+      "PNG_sha256": "ddaf4449be33f2778577b12406779a30e3bb692909f5b7b75cf07f455a074035",
+      "width": 1164,
+      "height": 532,
+      "render": "unchanged source; previous render reused",
+      "visually_inspected": true
+    },
+    {
+      "diagram": 2,
+      "source_sha256": "d577c42d280a2271a4d71a44d2f7ab14e3f9b3763a1a29919727b98f95e5a48a",
+      "PNG_sha256": "5089ac1e06c81200e1149f08f7c152e0dc31499a96a4aa5c00634be017bfe088",
+      "width": 896,
+      "height": 774,
+      "render": "new",
+      "visually_inspected": true
+    },
+    {
+      "diagram": 3,
+      "source_sha256": "5f2dc2c7a9ecf079cdee123cbee939041264ab594ca498160102af939b57a38c",
+      "PNG_sha256": "acb8a7465bf7423a38302213c75687d816e13231d00429d140d2a3e659183ccd",
+      "width": 600,
+      "height": 798,
+      "render": "unchanged source; previous render reused",
+      "visually_inspected": true
+    }
+  ],
+  "local_links_checked": 32,
+  "missing_local_links": [],
+  "prose_style_check": "No asterisks or horizontal rules; Mermaid syntax retained",
+  "scope": "Presentation only; external links and GitHub renderer not certified"
+}
