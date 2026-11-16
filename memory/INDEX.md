@@ -23,3 +23,7 @@ its lifecycle, privacy and maintenance cost.
 - [Evidence comparison and certificates](checkpoints/research-20261116T115404Z-certificates.md):
   new primary sources, B0/C null result, conditional mathematical checks and verified
   UI contract consumption. Supersedes the earlier access/consumption gaps in part.
+- [Interface evidence and research front page](checkpoints/research-20261116T122500Z-interface-readme.md):
+  six distinct propositions, witnesses and report gates; frozen study/replay;
+  root README, rendered Mermaid diagrams and immutable UI handoff. Earlier models
+  and their evidence remain unchanged.

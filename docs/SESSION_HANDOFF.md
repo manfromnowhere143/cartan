@@ -1,6 +1,30 @@
 # CARTAN session handoff
 
-## Current research state — block 2, 16 November 2026
+## Current research state — block 3, 16 November 2026
+
+Read the [research front page](../README.md), [block 3 results](../research/block-3/results.md)
+and [checkpoint](../memory/checkpoints/research-20261116T122500Z-interface-readme.md).
+Design: `2ad0651`; frozen code/cases: `3d286e4`; evidence, README and presentation
+QA: `ca2971f`. The new logical interface evaluator preserves six separate facts,
+report provenance and four decision statuses. Twenty-one cases, 256 reference
+classifications and 11 boundary tests passed; replay cores and input hashes match.
+These are constructed software checks, not physical recovery evidence.
+
+The root README now explains the mission, actual architecture, null results and
+next experiment with three rendered/inspected Mermaid diagrams. Rendering found
+and corrected clipping/readability issues; presentation QA retains the records.
+No live GitHub or screen-reader acceptance was performed.
+
+Continue physical observation-model research before expanding the planner. Public
+preliminary interface semantics are useful, but current fault mappings, calibration,
+owner limits and qualified physical preconditions remain missing. The new records
+are `cartan-interface-analysis/1.0.0`, not v1 UI runs. No adapter exists yet.
+UI `de81efb` still matches all five frozen v1 vendor files; runtime QA was not
+repeated. Research/setup/UI ownership is unchanged. No cloud job, deployment,
+physical action or new model session occurred. The operator authorized cloud use
+if useful; this bounded block needed no cloud infrastructure.
+
+## Previous research state — block 2
 
 Start with [block 2 results](../research/block-2/results.md),
 [roadmap](../research/ROADMAP.md) and

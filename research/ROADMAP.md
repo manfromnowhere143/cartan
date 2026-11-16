@@ -1,4 +1,4 @@
-# CARTAN research priorities after block 2
+# CARTAN research priorities after block 3
 
 16 November 2026. Long-term aim: spacecraft and orbital infrastructure that can
 be maintained, upgraded and reconfigured robotically. Current status: a research
@@ -6,6 +6,11 @@ concept with source reviews, explicit models and reproducible software studies.
 The program has no established flight capability, customer, commercial advantage
 or accepted physical safety envelope. This roadmap replaces a request for every
 advanced technique with a sequence of answerable engineering questions.
+
+Block 3 implements distinct logical interface propositions and report provenance,
+with retained witnesses and reproducible checks. That advances the software
+boundary of Priority 1; it does not complete its physical observation/calibration
+gate. The next priority remains the same. See [the findings](block-3/results.md).
 
 | Priority | Concrete deliverable | Evidence needed to move forward | Stop/narrow rule |
 |---|---|---|---|
