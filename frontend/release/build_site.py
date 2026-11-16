@@ -42,7 +42,7 @@ def build(target):
   text=text.replace('</head>',metadata+'\n</head>')
   path=static/p['path'].lstrip('/')/'index.html';path.parent.mkdir(parents=True,exist_ok=True);path.write_text(text)
  assets=['style.css','app.mjs','adapter.mjs','contract-adapter.mjs','hero-controller.mjs','focus-presentation.mjs','routes.mjs','assets/cartan-logo.png','assets/scenes/assembly.png','assets/icons/favicon.svg','vendor/cartan/v1/fixture.json']
- assets += ['assets/cartan/'+n for n in ['cartan-hero-desktop-720p.mp4','cartan-hero-mobile-540p.mp4','cartan-hero-poster.jpg','cartan-hero-poster-mobile.jpg','CARTAN-Built-to-Change-Revised-Silent-21s-1080p.mp4']]
+ assets += ['assets/cartan/'+n for n in ['cartan-hero-desktop-720p.mp4','cartan-hero-mobile-540p.mp4','cartan-hero-poster.jpg','cartan-hero-poster-mobile.jpg','cartan-hero-opening-720p.webp','cartan-hero-opening-540p.webp','CARTAN-Built-to-Change-Revised-Silent-21s-1080p.mp4']]
  for rel in assets:
   dest=static/rel;dest.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(ROOT/rel,dest)
  (static/'robots.txt').write_text('User-agent: *\nAllow: /\n\nSitemap: '+origin+'/sitemap.xml\n')

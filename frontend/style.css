@@ -44,11 +44,12 @@ h3{font-size:22px;line-height:1.2;letter-spacing:-.03em}
 .workspace-footer>span:last-child{margin-left:auto}
 html[data-view=home] .workspace-footer{background:linear-gradient(0deg,#030405,transparent);opacity:1;color:#bac4cb}
 
-.hero{position:relative;flex-direction:column;isolation:isolate;min-height:max(680px,100svh);padding:140px clamp(24px,6vw,100px) 75px;overflow:hidden;background:#030405}
+.hero{position:relative;flex-direction:column;isolation:isolate;height:100svh;min-height:0;padding:110px clamp(24px,6vw,100px) 75px;background:#030405}
 .hero-picture{position:absolute;inset:0;z-index:-1;overflow:hidden}
 .hero-poster,.hero-picture>video{position:absolute;inset:0;width:100%;height:100%}
-.hero-poster img{width:100%;height:100%;object-fit:cover;object-position:55% center}
-.hero-picture>video{object-fit:contain;object-position:center;opacity:0;pointer-events:none;transition:opacity 250ms linear}
+.hero-poster img{width:100%;height:100%}
+.hero-poster img,.hero-picture>video{object-fit:contain;object-position:center;background:#030405}
+.hero-picture>video{opacity:0;pointer-events:none}
 .hero-picture>video.playing{opacity:1}
 .hero-picture::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,#000000eb 0%,#000000db 38%,#000000b8 54%,#00000073 67%,#00000047 100%),linear-gradient(0deg,#030405 0%,#030405e6 12%,transparent 38%),linear-gradient(180deg,#000000d9 0%,#000000b8 12%,transparent 26%)}
 .hero-copy{margin-block:auto;max-width:400px;padding:34px 0 48px}
@@ -356,14 +357,48 @@ a,button,summary{touch-action:manipulation}
 @media(forced-colors:none){
   :root [data-pointer-focus="true"]:focus{outline:none}
 }
-/* Mobile cinema keeps the complete working area, with readable copy below it.
-   Poster and video reserve identical geometry before any source is attached. */
+/* Viewport composition: full-frame cinema, compact copy, reachable controls. */
+.hero{padding-top:clamp(88px,12svh,120px);padding-bottom:64px}
+.hero-copy{padding:0;margin-block:auto}
+.hero-copy .eyebrow{margin-bottom:14px}
+.hero h1{margin-bottom:16px}
+.hero-actions{display:flex;align-items:center;gap:24px;margin-top:18px;flex-wrap:wrap}
+.hero-actions .primary{margin:0;padding:0;min-height:44px;gap:12px}
+.hero-actions .text-action{gap:12px;font-size:12px}
 @media(max-width:767px){
-  .hero{padding-top:calc(104px + 56.25vw);min-height:100svh}
-  .hero-picture{inset:88px 0 auto;aspect-ratio:16/9;background:#030405}
-  .hero-poster img{object-fit:contain;object-position:center}
+  .hero{--cinema-height:min(56.25vw,max(64px,calc(100svh - 460px)));padding-top:calc(96px + var(--cinema-height));min-height:0}
+  .hero-picture{inset:84px 0 auto;height:var(--cinema-height);background:#030405}
   .hero-picture::after{background:linear-gradient(0deg,#030405 0%,transparent 20%,transparent 92%,#030405 100%)}
-  .hero-copy{margin-block:0;padding-bottom:24px}
-  .hero-copy .eyebrow{margin-bottom:16px}
-  .hero-bottom{margin-top:auto}
+  .hero-copy{padding:0;margin-block:auto;max-width:100%}
+  .hero-actions{gap:16px;margin-top:12px;flex-wrap:nowrap}
+  .hero-actions .primary,.hero-actions .text-action{font-size:12px;gap:8px;white-space:nowrap}
+  .hero-bottom{display:grid;grid-template-columns:1fr auto;gap:4px 16px;min-height:76px;margin-top:12px}
+  .hero-bottom p{grid-column:1/-1}
+  .hero-bottom .quiet{min-width:0}
+  .hero-bottom .film-open{width:auto;min-height:44px;margin:0;gap:12px}
+  .film-open small{display:none}
+}
+@media(max-height:540px){
+  .hero-copy .eyebrow,.hero-intro{display:none}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero-actions{margin-top:0}
+  .hero{padding-bottom:54px}
+}
+@media(max-width:767px) and (max-height:480px){
+  .hero{--cinema-height:48px}
+  .hero-bottom p span{display:none}
+  .hero-bottom{min-height:64px;margin-top:8px}
+}
+/* At extreme magnification preserve access instead of clipping content. */
+@media(max-width:299px){
+  .hero{height:auto;min-height:100svh}
+  .hero-actions{flex-wrap:wrap}
+  .site-header{flex-wrap:wrap}
+}
+
+@media(min-width:480px) and (max-width:767px) and (max-height:480px){
+  .hero{padding-top:80px;padding-bottom:50px}
+  .hero-picture{inset:0;height:100%}
+  .hero-picture::after{background:linear-gradient(90deg,#030405ed,#030405a8),linear-gradient(0deg,#030405,transparent)}
+  .hero h1 br{display:none}
 }

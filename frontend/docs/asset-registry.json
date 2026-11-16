@@ -157,6 +157,30 @@
       "modified": true,
       "transformation": "960x540 delivery encode only; original source unchanged; full 19s/456 frames, silent",
       "usage": "small-screen/3G hero; native forward loop with accessible Pause"
+    },
+    {
+      "id": "cartan-hero-opening-720p.webp",
+      "path": "assets/cartan/cartan-hero-opening-720p.webp",
+      "source_path": "assets/cartan/cartan-hero-desktop-720p.mp4",
+      "source_sha256": "e4d4b16548381a29aa0d6805091a8b43f55d3c9855e3a30a8fe5de7dddc0f113",
+      "sha256": "1ab8fd2dc4a5ede1081c823d210a9ad118d28c6d36229b7c3cea46da212cb7fa",
+      "bytes": 170212,
+      "scientific_status": "concept_image",
+      "modified": true,
+      "derivation": "Decoded frame 0; ffmpeg libwebp quality 86 compression_level 5; original film unchanged",
+      "usage": "Matched opening-frame poster; same contain/center framing as video"
+    },
+    {
+      "id": "cartan-hero-opening-540p.webp",
+      "path": "assets/cartan/cartan-hero-opening-540p.webp",
+      "source_path": "assets/cartan/cartan-hero-mobile-540p.mp4",
+      "source_sha256": "41ca5105e4f70751c4371ff52d8e90d89db6ba42993d0b7c47748bb812cb6625",
+      "sha256": "d5d2dc31999c8c8c87160735561d9c85d4a1b2ba94f15a0e54c39eae2d2d0e44",
+      "bytes": 103756,
+      "scientific_status": "concept_image",
+      "modified": true,
+      "derivation": "Decoded frame 0; ffmpeg libwebp quality 86 compression_level 5; original film unchanged",
+      "usage": "Matched opening-frame poster; same contain/center framing as video"
     }
   ],
   "missing": [
