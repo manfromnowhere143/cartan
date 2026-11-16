@@ -2,7 +2,8 @@
 
 Reviewed 16 November 2026. This extends the earlier ledgers. It corrects an access
 gap rather than establishing a vendor defect or a CARTAN capability. Source PDFs
-and rendered pages remain outside Git; the repository retains citations, hashes,+reading scope and original analysis. No source publication is relicensed here.
+and rendered pages remain outside Git; the repository retains citations, hashes,
+reading scope and original analysis. No source publication is relicensed here.
 
 ## S22. HOTDOCK design definition
 

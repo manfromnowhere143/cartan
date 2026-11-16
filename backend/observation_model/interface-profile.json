@@ -1,0 +1,58 @@
+{
+  "profile_id": "hotdock-public-ddf-2020-observation-dossier/1.0.0",
+  "source": {
+    "ledger_id": "S22",
+    "reference": "MOSAR-WP3-D3.7-SA",
+    "revision": "1.1.0",
+    "document_date": "2020-08-25",
+    "sha256": "6512139427e740501c02cd3c7e2c237b67cf201cb6171e19603163fb42a9560d"
+  },
+  "current_hardware_applicability": "unverified",
+  "physical_authorization": "not_assessed",
+  "binary_protocol_decoder": "not_implemented",
+  "quantities": [
+    {
+      "predicate": "retained",
+      "observable": "cam_position_and_proximity",
+      "mapping_status": "partial",
+      "required_missing_evidence": ["calibration", "cam_to_engagement_relation", "downstream_fault_coverage", "qualified_load_capacity", "demanded_wrench"]
+    },
+    {
+      "predicate": "support_secured",
+      "observable": "external_support_state",
+      "mapping_status": "not_established",
+      "required_missing_evidence": ["support_interface", "grasp_or_fixture_state", "capacity_and_demand", "independent_observation"]
+    },
+    {
+      "predicate": "contacts_made",
+      "observable": "cam_position_and_electrical_response",
+      "mapping_status": "partial",
+      "required_missing_evidence": ["connector_stroke_mapping", "pin_contact_and_continuity", "mating_configuration", "contact_fault_coverage"]
+    },
+    {
+      "predicate": "controller_on",
+      "observable": "fresh_controller_response_and_supply_measurement",
+      "mapping_status": "partial",
+      "required_missing_evidence": ["acquisition_time", "supply_thresholds", "restart_behavior", "stale_response_rejection"]
+    },
+    {
+      "predicate": "source_isolated",
+      "observable": "physical_switch_state_and_complete_source_topology",
+      "mapping_status": "not_established",
+      "required_missing_evidence": ["unit_schematic", "all_source_and_return_paths", "actual_switch_state", "bypass_and_failure_coverage", "hold_interval"]
+    },
+    {
+      "predicate": "voltage_below_limit",
+      "observable": "connector_side_voltage",
+      "mapping_status": "partial",
+      "required_missing_evidence": ["exact_terminal_pair_and_reference", "gain_bias_error_bounds", "fault_coverage", "acquisition_timing", "rate_or_transient_envelope", "owner_limit"]
+    }
+  ],
+  "mechanical_projection": {
+    "cam_angle_to_ring_and_plate_displacement": null,
+    "per_pin_engagement_model": null,
+    "qualified_capacity_model": null,
+    "missing_value_meaning": "unmeasured_or_unavailable_not_zero"
+  },
+  "implementation_boundary": "The numerical fixtures illustrate general observation calculations; they are not calibrated instances of this vendor dossier."
+}

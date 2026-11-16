@@ -1,0 +1,1549 @@
+{
+  "schema_version": "cartan-observation-analysis/1.0.0",
+  "model_version": "physical-observation/0.1.0",
+  "voltage_cases": [
+    {
+      "id": "low-indication",
+      "input": {
+        "mode": "synthetic_fixture",
+        "report": {
+          "status": "known",
+          "value_V": [
+            "0",
+            "0"
+          ],
+          "unit": "V",
+          "point": "connector_pair_A",
+          "epoch": 0,
+          "sampled_s": [
+            "0",
+            "0"
+          ],
+          "received_s": "0",
+          "acquisition_id": "constructed-a",
+          "source": "constructed-sensor"
+        },
+        "model": {
+          "gain": [
+            "1",
+            "1"
+          ],
+          "bias_V": [
+            "0",
+            "0"
+          ],
+          "error_V": "1/10",
+          "rate_V_per_s": "0",
+          "kind": "hard_bound",
+          "fault": "bounded",
+          "basis": "synthetic_assumption",
+          "epoch": 0,
+          "point": "connector_pair_A",
+          "max_age_s": "1"
+        },
+        "query": {
+          "time_s": "0",
+          "epoch": 0,
+          "limit_V": "1",
+          "point": "connector_pair_A"
+        }
+      },
+      "expected": "supported"
+    },
+    {
+      "id": "straddles-limit",
+      "input": {
+        "mode": "synthetic_fixture",
+        "report": {
+          "status": "known",
+          "value_V": [
+            "9/10",
+            "11/10"
+          ],
+          "unit": "V",
+          "point": "connector_pair_A",
+          "epoch": 0,
+          "sampled_s": [
+            "0",
+            "0"
+          ],
+          "received_s": "0",
+          "acquisition_id": "constructed-a",
+          "source": "constructed-sensor"
+        },
+        "model": {
+          "gain": [
+            "1",
+            "1"
+          ],
+          "bias_V": [
+            "0",
+            "0"
+          ],
+          "error_V": "1/10",
+          "rate_V_per_s": "0",
+          "kind": "hard_bound",
+          "fault": "bounded",
+          "basis": "synthetic_assumption",
+          "epoch": 0,
+          "point": "connector_pair_A",
+          "max_age_s": "1"
+        },
+        "query": {
+          "time_s": "0",
+          "epoch": 0,
+          "limit_V": "1",
+          "point": "connector_pair_A"
+        }
+      },
+      "expected": "unresolved"
+    },
+    {
+      "id": "reverse-polarity",
+      "input": {
+        "mode": "synthetic_fixture",
+        "report": {
+          "status": "known",
+          "value_V": [
+            "-2",
+            "-2"
+          ],
+          "unit": "V",
+          "point": "connector_pair_A",
+          "epoch": 0,
+          "sampled_s": [
+            "0",
+            "0"
+          ],
+          "received_s": "0",
+          "acquisition_id": "constructed-a",
+          "source": "constructed-sensor"
+        },
+        "model": {
+          "gain": [
+            "1",
+            "1"
+          ],
+          "bias_V": [
+            "0",
+            "0"
+          ],
+          "error_V": "1/10",
+          "rate_V_per_s": "0",
+          "kind": "hard_bound",
+          "fault": "bounded",
+          "basis": "synthetic_assumption",
+          "epoch": 0,
+          "point": "connector_pair_A",
+          "max_age_s": "1"
+        },
+        "query": {
+          "time_s": "0",
+          "epoch": 0,
+          "limit_V": "1",
+          "point": "connector_pair_A"
+        }
+      },
+      "expected": "refuted"
+    },
+    {
+      "id": "positive-exceedance",
+      "input": {
+        "mode": "synthetic_fixture",
+        "report": {
+          "status": "known",
+          "value_V": [
+            "2",
+            "2"
+          ],
+          "unit": "V",
+          "point": "connector_pair_A",
+          "epoch": 0,
+          "sampled_s": [
+            "0",
+            "0"
+          ],
+          "received_s": "0",
+          "acquisition_id": "constructed-a",
+          "source": "constructed-sensor"
+        },
+        "model": {
+          "gain": [
+            "1",
+            "1"
+          ],
+          "bias_V": [
+            "0",
+            "0"
+          ],
+          "error_V": "1/10",
+          "rate_V_per_s": "0",
+          "kind": "hard_bound",
+          "fault": "bounded",
+          "basis": "synthetic_assumption",
+          "epoch": 0,
+          "point": "connector_pair_A",
+          "max_age_s": "1"
+        },
+        "query": {
+          "time_s": "0",
+          "epoch": 0,
+          "limit_V": "1",
+          "point": "connector_pair_A"
+        }
+      },
+      "expected": "refuted"
+    },
+    {
+      "id": "gain-and-bias",
+      "input": {
+        "mode": "synthetic_fixture",
+        "report": {
+          "status": "known",
+          "value_V": [
+            "2",
+            "2"
+          ],
+          "unit": "V",
+          "point": "connector_pair_A",
+          "epoch": 0,
+          "sampled_s": [
+            "0",
+            "0"
+          ],
+          "received_s": "0",
+          "acquisition_id": "constructed-a",
+          "source": "constructed-sensor"
+        },
+        "model": {
+          "gain": [
+            "1",
+            "2"
+          ],
+          "bias_V": [
+            "0",
+            "1"
+          ],
+          "error_V": "0",
+          "rate_V_per_s": "0",
+          "kind": "hard_bound",
+          "fault": "bounded",
+          "basis": "synthetic_assumption",
+          "epoch": 0,
+          "point": "connector_pair_A",
+          "max_age_s": "1"
+        },
+        "query": {
+          "time_s": "0",
+          "epoch": 0,
+          "limit_V": "1",
+          "point": "connector_pair_A"
+        }
+      },
+      "expected": "unresolved"
+    },
+    {
+      "id": "uncertain-acquisition-time",
+      "input": {
+        "mode": "synthetic_fixture",
+        "report": {
+          "status": "known",
+          "value_V": [
+            "0",
+            "0"
+          ],
+          "unit": "V",
+          "point": "connector_pair_A",
+          "epoch": 0,
+          "sampled_s": [
+            "0",
+            "1"
+          ],
+          "received_s": "1",
+          "acquisition_id": "constructed-a",
+          "source": "constructed-sensor"
+        },
+        "model": {
+          "gain": [
+            "1",
+            "1"
+          ],
+          "bias_V": [
+            "0",
+            "0"
+          ],
+          "error_V": "1/10",
+          "rate_V_per_s": "1",
+          "kind": "hard_bound",
+          "fault": "bounded",
+          "basis": "synthetic_assumption",
+          "epoch": 0,
+          "point": "connector_pair_A",
+          "max_age_s": "3"
+        },
+        "query": {
+          "time_s": "2",
+          "epoch": 0,
+          "limit_V": "1",
+          "point": "connector_pair_A"
+        }
+      },
+      "expected": "unresolved"
+    },
+    {
+      "id": "bounded-delay",
+      "input": {
+        "mode": "synthetic_fixture",
+        "report": {
+          "status": "known",
+          "value_V": [
+            "0",
+            "0"
+          ],
+          "unit": "V",
+          "point": "connector_pair_A",
+          "epoch": 0,
+          "sampled_s": [
+            "0",
+            "0"
+          ],
+          "received_s": "0",
+          "acquisition_id": "constructed-a",
+          "source": "constructed-sensor"
+        },
+        "model": {
+          "gain": [
+            "1",
+            "1"
+          ],
+          "bias_V": [
+            "0",
+            "0"
+          ],
+          "error_V": "1/10",
+          "rate_V_per_s": "1",
+          "kind": "hard_bound",
+          "fault": "bounded",
+          "basis": "synthetic_assumption",
+          "epoch": 0,
+          "point": "connector_pair_A",
+          "max_age_s": "1"
+        },
+        "query": {
+          "time_s": "1/2",
+          "epoch": 0,
+          "limit_V": "1",
+          "point": "connector_pair_A"
+        }
+      },
+      "expected": "supported"
+    },
+    {
+      "id": "unknown-rate",
+      "input": {
+        "mode": "synthetic_fixture",
+        "report": {
+          "status": "known",
+          "value_V": [
+            "0",
+            "0"
+          ],
+          "unit": "V",
+          "point": "connector_pair_A",
+          "epoch": 0,
+          "sampled_s": [
+            "0",
+            "0"
+          ],
+          "received_s": "0",
+          "acquisition_id": "constructed-a",
+          "source": "constructed-sensor"
+        },
+        "model": {
+          "gain": [
+            "1",
+            "1"
+          ],
+          "bias_V": [
+            "0",
+            "0"
+          ],
+          "error_V": "1/10",
+          "rate_V_per_s": null,
+          "kind": "hard_bound",
+          "fault": "bounded",
+          "basis": "synthetic_assumption",
+          "epoch": 0,
+          "point": "connector_pair_A",
+          "max_age_s": "1"
+        },
+        "query": {
+          "time_s": "0",
+          "epoch": 0,
+          "limit_V": "1",
+          "point": "connector_pair_A"
+        }
+      },
+      "expected": "unresolved"
+    },
+    {
+      "id": "stale",
+      "input": {
+        "mode": "synthetic_fixture",
+        "report": {
+          "status": "known",
+          "value_V": [
+            "0",
+            "0"
+          ],
+          "unit": "V",
+          "point": "connector_pair_A",
+          "epoch": 0,
+          "sampled_s": [
+            "0",
+            "0"
+          ],
+          "received_s": "0",
+          "acquisition_id": "constructed-a",
+          "source": "constructed-sensor"
+        },
+        "model": {
+          "gain": [
+            "1",
+            "1"
+          ],
+          "bias_V": [
+            "0",
+            "0"
+          ],
+          "error_V": "1/10",
+          "rate_V_per_s": "0",
+          "kind": "hard_bound",
+          "fault": "bounded",
+          "basis": "synthetic_assumption",
+          "epoch": 0,
+          "point": "connector_pair_A",
+          "max_age_s": "1"
+        },
+        "query": {
+          "time_s": "2",
+          "epoch": 0,
+          "limit_V": "1",
+          "point": "connector_pair_A"
+        }
+      },
+      "expected": "unresolved"
+    },
+    {
+      "id": "wrong-epoch",
+      "input": {
+        "mode": "synthetic_fixture",
+        "report": {
+          "status": "known",
+          "value_V": [
+            "0",
+            "0"
+          ],
+          "unit": "V",
+          "point": "connector_pair_A",
+          "epoch": 0,
+          "sampled_s": [
+            "0",
+            "0"
+          ],
+          "received_s": "0",
+          "acquisition_id": "constructed-a",
+          "source": "constructed-sensor"
+        },
+        "model": {
+          "gain": [
+            "1",
+            "1"
+          ],
+          "bias_V": [
+            "0",
+            "0"
+          ],
+          "error_V": "1/10",
+          "rate_V_per_s": "0",
+          "kind": "hard_bound",
+          "fault": "bounded",
+          "basis": "synthetic_assumption",
+          "epoch": 0,
+          "point": "connector_pair_A",
+          "max_age_s": "1"
+        },
+        "query": {
+          "time_s": "0",
+          "epoch": 1,
+          "limit_V": "1",
+          "point": "connector_pair_A"
+        }
+      },
+      "expected": "unresolved"
+    },
+    {
+      "id": "wrong-terminal-pair",
+      "input": {
+        "mode": "synthetic_fixture",
+        "report": {
+          "status": "known",
+          "value_V": [
+            "0",
+            "0"
+          ],
+          "unit": "V",
+          "point": "connector_pair_A",
+          "epoch": 0,
+          "sampled_s": [
+            "0",
+            "0"
+          ],
+          "received_s": "0",
+          "acquisition_id": "constructed-a",
+          "source": "constructed-sensor"
+        },
+        "model": {
+          "gain": [
+            "1",
+            "1"
+          ],
+          "bias_V": [
+            "0",
+            "0"
+          ],
+          "error_V": "1/10",
+          "rate_V_per_s": "0",
+          "kind": "hard_bound",
+          "fault": "bounded",
+          "basis": "synthetic_assumption",
+          "epoch": 0,
+          "point": "connector_pair_A",
+          "max_age_s": "1"
+        },
+        "query": {
+          "time_s": "0",
+          "epoch": 0,
+          "limit_V": "1",
+          "point": "remote_pair_B"
+        }
+      },
+      "expected": "unresolved"
+    },
+    {
+      "id": "missing-value",
+      "input": {
+        "mode": "synthetic_fixture",
+        "report": {
+          "status": "missing",
+          "value_V": null,
+          "unit": "V",
+          "point": "connector_pair_A",
+          "epoch": 0,
+          "sampled_s": [
+            "0",
+            "0"
+          ],
+          "received_s": "0",
+          "acquisition_id": "constructed-a",
+          "source": "constructed-sensor"
+        },
+        "model": {
+          "gain": [
+            "1",
+            "1"
+          ],
+          "bias_V": [
+            "0",
+            "0"
+          ],
+          "error_V": "1/10",
+          "rate_V_per_s": "0",
+          "kind": "hard_bound",
+          "fault": "bounded",
+          "basis": "synthetic_assumption",
+          "epoch": 0,
+          "point": "connector_pair_A",
+          "max_age_s": "1"
+        },
+        "query": {
+          "time_s": "0",
+          "epoch": 0,
+          "limit_V": "1",
+          "point": "connector_pair_A"
+        }
+      },
+      "expected": "unresolved"
+    },
+    {
+      "id": "coverage-is-not-bound",
+      "input": {
+        "mode": "synthetic_fixture",
+        "report": {
+          "status": "known",
+          "value_V": [
+            "0",
+            "0"
+          ],
+          "unit": "V",
+          "point": "connector_pair_A",
+          "epoch": 0,
+          "sampled_s": [
+            "0",
+            "0"
+          ],
+          "received_s": "0",
+          "acquisition_id": "constructed-a",
+          "source": "constructed-sensor"
+        },
+        "model": {
+          "gain": [
+            "1",
+            "1"
+          ],
+          "bias_V": [
+            "0",
+            "0"
+          ],
+          "error_V": "1/10",
+          "rate_V_per_s": "0",
+          "kind": "coverage",
+          "fault": "bounded",
+          "basis": "synthetic_assumption",
+          "epoch": 0,
+          "point": "connector_pair_A",
+          "max_age_s": "1"
+        },
+        "query": {
+          "time_s": "0",
+          "epoch": 0,
+          "limit_V": "1",
+          "point": "connector_pair_A"
+        }
+      },
+      "expected": "unresolved"
+    },
+    {
+      "id": "arbitrary-fault-possible",
+      "input": {
+        "mode": "synthetic_fixture",
+        "report": {
+          "status": "known",
+          "value_V": [
+            "0",
+            "0"
+          ],
+          "unit": "V",
+          "point": "connector_pair_A",
+          "epoch": 0,
+          "sampled_s": [
+            "0",
+            "0"
+          ],
+          "received_s": "0",
+          "acquisition_id": "constructed-a",
+          "source": "constructed-sensor"
+        },
+        "model": {
+          "gain": [
+            "1",
+            "1"
+          ],
+          "bias_V": [
+            "0",
+            "0"
+          ],
+          "error_V": "1/10",
+          "rate_V_per_s": "0",
+          "kind": "hard_bound",
+          "fault": "arbitrary",
+          "basis": "synthetic_assumption",
+          "epoch": 0,
+          "point": "connector_pair_A",
+          "max_age_s": "1"
+        },
+        "query": {
+          "time_s": "0",
+          "epoch": 0,
+          "limit_V": "1",
+          "point": "connector_pair_A"
+        }
+      },
+      "expected": "unresolved"
+    },
+    {
+      "id": "missing-gain",
+      "input": {
+        "mode": "synthetic_fixture",
+        "report": {
+          "status": "known",
+          "value_V": [
+            "0",
+            "0"
+          ],
+          "unit": "V",
+          "point": "connector_pair_A",
+          "epoch": 0,
+          "sampled_s": [
+            "0",
+            "0"
+          ],
+          "received_s": "0",
+          "acquisition_id": "constructed-a",
+          "source": "constructed-sensor"
+        },
+        "model": {
+          "gain": null,
+          "bias_V": [
+            "0",
+            "0"
+          ],
+          "error_V": "1/10",
+          "rate_V_per_s": "0",
+          "kind": "hard_bound",
+          "fault": "bounded",
+          "basis": "synthetic_assumption",
+          "epoch": 0,
+          "point": "connector_pair_A",
+          "max_age_s": "1"
+        },
+        "query": {
+          "time_s": "0",
+          "epoch": 0,
+          "limit_V": "1",
+          "point": "connector_pair_A"
+        }
+      },
+      "expected": "unresolved"
+    },
+    {
+      "id": "wrong-unit",
+      "input": {
+        "mode": "synthetic_fixture",
+        "report": {
+          "status": "known",
+          "value_V": [
+            "0",
+            "0"
+          ],
+          "unit": "mV",
+          "point": "connector_pair_A",
+          "epoch": 0,
+          "sampled_s": [
+            "0",
+            "0"
+          ],
+          "received_s": "0",
+          "acquisition_id": "constructed-a",
+          "source": "constructed-sensor"
+        },
+        "model": {
+          "gain": [
+            "1",
+            "1"
+          ],
+          "bias_V": [
+            "0",
+            "0"
+          ],
+          "error_V": "1/10",
+          "rate_V_per_s": "0",
+          "kind": "hard_bound",
+          "fault": "bounded",
+          "basis": "synthetic_assumption",
+          "epoch": 0,
+          "point": "connector_pair_A",
+          "max_age_s": "1"
+        },
+        "query": {
+          "time_s": "0",
+          "epoch": 0,
+          "limit_V": "1",
+          "point": "connector_pair_A"
+        }
+      },
+      "expected": "unresolved"
+    },
+    {
+      "id": "exact-zero",
+      "input": {
+        "mode": "synthetic_fixture",
+        "report": {
+          "status": "known",
+          "value_V": [
+            "0",
+            "0"
+          ],
+          "unit": "V",
+          "point": "connector_pair_A",
+          "epoch": 0,
+          "sampled_s": [
+            "0",
+            "0"
+          ],
+          "received_s": "0",
+          "acquisition_id": "constructed-a",
+          "source": "constructed-sensor"
+        },
+        "model": {
+          "gain": [
+            "1",
+            "1"
+          ],
+          "bias_V": [
+            "0",
+            "0"
+          ],
+          "error_V": "0",
+          "rate_V_per_s": "0",
+          "kind": "hard_bound",
+          "fault": "bounded",
+          "basis": "synthetic_assumption",
+          "epoch": 0,
+          "point": "connector_pair_A",
+          "max_age_s": "1"
+        },
+        "query": {
+          "time_s": "0",
+          "epoch": 0,
+          "limit_V": "0",
+          "point": "connector_pair_A"
+        }
+      },
+      "expected": "supported"
+    },
+    {
+      "id": "nonpositive-gain",
+      "input": {
+        "mode": "synthetic_fixture",
+        "report": {
+          "status": "known",
+          "value_V": [
+            "0",
+            "0"
+          ],
+          "unit": "V",
+          "point": "connector_pair_A",
+          "epoch": 0,
+          "sampled_s": [
+            "0",
+            "0"
+          ],
+          "received_s": "0",
+          "acquisition_id": "constructed-a",
+          "source": "constructed-sensor"
+        },
+        "model": {
+          "gain": [
+            "0",
+            "1"
+          ],
+          "bias_V": [
+            "0",
+            "0"
+          ],
+          "error_V": "1/10",
+          "rate_V_per_s": "0",
+          "kind": "hard_bound",
+          "fault": "bounded",
+          "basis": "synthetic_assumption",
+          "epoch": 0,
+          "point": "connector_pair_A",
+          "max_age_s": "1"
+        },
+        "query": {
+          "time_s": "0",
+          "epoch": 0,
+          "limit_V": "1",
+          "point": "connector_pair_A"
+        }
+      },
+      "expected_error": "strictly positive"
+    },
+    {
+      "id": "reversed-gain",
+      "input": {
+        "mode": "synthetic_fixture",
+        "report": {
+          "status": "known",
+          "value_V": [
+            "0",
+            "0"
+          ],
+          "unit": "V",
+          "point": "connector_pair_A",
+          "epoch": 0,
+          "sampled_s": [
+            "0",
+            "0"
+          ],
+          "received_s": "0",
+          "acquisition_id": "constructed-a",
+          "source": "constructed-sensor"
+        },
+        "model": {
+          "gain": [
+            "2",
+            "1"
+          ],
+          "bias_V": [
+            "0",
+            "0"
+          ],
+          "error_V": "1/10",
+          "rate_V_per_s": "0",
+          "kind": "hard_bound",
+          "fault": "bounded",
+          "basis": "synthetic_assumption",
+          "epoch": 0,
+          "point": "connector_pair_A",
+          "max_age_s": "1"
+        },
+        "query": {
+          "time_s": "0",
+          "epoch": 0,
+          "limit_V": "1",
+          "point": "connector_pair_A"
+        }
+      },
+      "expected_error": "Reversed interval"
+    },
+    {
+      "id": "negative-rate",
+      "input": {
+        "mode": "synthetic_fixture",
+        "report": {
+          "status": "known",
+          "value_V": [
+            "0",
+            "0"
+          ],
+          "unit": "V",
+          "point": "connector_pair_A",
+          "epoch": 0,
+          "sampled_s": [
+            "0",
+            "0"
+          ],
+          "received_s": "0",
+          "acquisition_id": "constructed-a",
+          "source": "constructed-sensor"
+        },
+        "model": {
+          "gain": [
+            "1",
+            "1"
+          ],
+          "bias_V": [
+            "0",
+            "0"
+          ],
+          "error_V": "1/10",
+          "rate_V_per_s": "-1",
+          "kind": "hard_bound",
+          "fault": "bounded",
+          "basis": "synthetic_assumption",
+          "epoch": 0,
+          "point": "connector_pair_A",
+          "max_age_s": "1"
+        },
+        "query": {
+          "time_s": "0",
+          "epoch": 0,
+          "limit_V": "1",
+          "point": "connector_pair_A"
+        }
+      },
+      "expected_error": "Negative error or rate"
+    },
+    {
+      "id": "future-acquisition",
+      "input": {
+        "mode": "synthetic_fixture",
+        "report": {
+          "status": "known",
+          "value_V": [
+            "0",
+            "0"
+          ],
+          "unit": "V",
+          "point": "connector_pair_A",
+          "epoch": 0,
+          "sampled_s": [
+            "0",
+            "1"
+          ],
+          "received_s": "0",
+          "acquisition_id": "constructed-a",
+          "source": "constructed-sensor"
+        },
+        "model": {
+          "gain": [
+            "1",
+            "1"
+          ],
+          "bias_V": [
+            "0",
+            "0"
+          ],
+          "error_V": "1/10",
+          "rate_V_per_s": "0",
+          "kind": "hard_bound",
+          "fault": "bounded",
+          "basis": "synthetic_assumption",
+          "epoch": 0,
+          "point": "connector_pair_A",
+          "max_age_s": "1"
+        },
+        "query": {
+          "time_s": "0",
+          "epoch": 0,
+          "limit_V": "1",
+          "point": "connector_pair_A"
+        }
+      },
+      "expected_error": "Invalid time order"
+    },
+    {
+      "id": "physical-mode",
+      "input": {
+        "mode": "physical_test",
+        "report": {
+          "status": "known",
+          "value_V": [
+            "0",
+            "0"
+          ],
+          "unit": "V",
+          "point": "connector_pair_A",
+          "epoch": 0,
+          "sampled_s": [
+            "0",
+            "0"
+          ],
+          "received_s": "0",
+          "acquisition_id": "constructed-a",
+          "source": "constructed-sensor"
+        },
+        "model": {
+          "gain": [
+            "1",
+            "1"
+          ],
+          "bias_V": [
+            "0",
+            "0"
+          ],
+          "error_V": "1/10",
+          "rate_V_per_s": "0",
+          "kind": "hard_bound",
+          "fault": "bounded",
+          "basis": "synthetic_assumption",
+          "epoch": 0,
+          "point": "connector_pair_A",
+          "max_age_s": "1"
+        },
+        "query": {
+          "time_s": "0",
+          "epoch": 0,
+          "limit_V": "1",
+          "point": "connector_pair_A"
+        }
+      },
+      "expected_error": "Only constructed inputs"
+    }
+  ],
+  "topology_cases": [
+    {
+      "id": "open-cut",
+      "input": {
+        "mode": "synthetic_fixture",
+        "nodes": [
+          "host",
+          "pin"
+        ],
+        "sources": [
+          "host"
+        ],
+        "target": "pin",
+        "edges": [
+          {
+            "id": "relay",
+            "a": "host",
+            "b": "pin",
+            "closed_states": [
+              false
+            ]
+          }
+        ],
+        "inventory_complete": true
+      },
+      "expected": "supported"
+    },
+    {
+      "id": "uncertain-relay",
+      "input": {
+        "mode": "synthetic_fixture",
+        "nodes": [
+          "host",
+          "pin"
+        ],
+        "sources": [
+          "host"
+        ],
+        "target": "pin",
+        "edges": [
+          {
+            "id": "relay",
+            "a": "host",
+            "b": "pin",
+            "closed_states": [
+              false,
+              true
+            ]
+          }
+        ],
+        "inventory_complete": true
+      },
+      "expected": "unresolved"
+    },
+    {
+      "id": "closed-path",
+      "input": {
+        "mode": "synthetic_fixture",
+        "nodes": [
+          "host",
+          "pin"
+        ],
+        "sources": [
+          "host"
+        ],
+        "target": "pin",
+        "edges": [
+          {
+            "id": "relay",
+            "a": "host",
+            "b": "pin",
+            "closed_states": [
+              true
+            ]
+          }
+        ],
+        "inventory_complete": true
+      },
+      "expected": "refuted"
+    },
+    {
+      "id": "module-backfeed",
+      "input": {
+        "mode": "synthetic_fixture",
+        "nodes": [
+          "host",
+          "module_battery",
+          "pin"
+        ],
+        "sources": [
+          "host",
+          "module_battery"
+        ],
+        "target": "pin",
+        "edges": [
+          {
+            "id": "relay",
+            "a": "host",
+            "b": "pin",
+            "closed_states": [
+              false
+            ]
+          },
+          {
+            "id": "backfeed",
+            "a": "module_battery",
+            "b": "pin",
+            "closed_states": [
+              true
+            ]
+          }
+        ],
+        "inventory_complete": true
+      },
+      "expected": "refuted"
+    },
+    {
+      "id": "two-open-barriers",
+      "input": {
+        "mode": "synthetic_fixture",
+        "nodes": [
+          "host",
+          "mid",
+          "pin"
+        ],
+        "sources": [
+          "host"
+        ],
+        "target": "pin",
+        "edges": [
+          {
+            "id": "relay1",
+            "a": "host",
+            "b": "mid",
+            "closed_states": [
+              false
+            ]
+          },
+          {
+            "id": "relay2",
+            "a": "mid",
+            "b": "pin",
+            "closed_states": [
+              false
+            ]
+          }
+        ],
+        "inventory_complete": true
+      },
+      "expected": "supported"
+    },
+    {
+      "id": "common-closure-retained",
+      "input": {
+        "mode": "synthetic_fixture",
+        "nodes": [
+          "host",
+          "mid",
+          "pin"
+        ],
+        "sources": [
+          "host"
+        ],
+        "target": "pin",
+        "edges": [
+          {
+            "id": "relay1",
+            "a": "host",
+            "b": "mid",
+            "closed_states": [
+              false,
+              true
+            ]
+          },
+          {
+            "id": "relay2",
+            "a": "mid",
+            "b": "pin",
+            "closed_states": [
+              false,
+              true
+            ]
+          }
+        ],
+        "inventory_complete": true
+      },
+      "expected": "unresolved"
+    },
+    {
+      "id": "empty-inventory",
+      "input": {
+        "mode": "synthetic_fixture",
+        "nodes": [
+          "host",
+          "pin"
+        ],
+        "sources": [],
+        "target": "pin",
+        "edges": [
+          {
+            "id": "relay",
+            "a": "host",
+            "b": "pin",
+            "closed_states": [
+              false
+            ]
+          }
+        ],
+        "inventory_complete": true
+      },
+      "expected": "unresolved"
+    },
+    {
+      "id": "incomplete-inventory",
+      "input": {
+        "mode": "synthetic_fixture",
+        "nodes": [
+          "host",
+          "pin"
+        ],
+        "sources": [
+          "host"
+        ],
+        "target": "pin",
+        "edges": [
+          {
+            "id": "relay",
+            "a": "host",
+            "b": "pin",
+            "closed_states": [
+              false
+            ]
+          }
+        ],
+        "inventory_complete": null
+      },
+      "expected": "unresolved"
+    },
+    {
+      "id": "target-is-source",
+      "input": {
+        "mode": "synthetic_fixture",
+        "nodes": [
+          "pin"
+        ],
+        "sources": [
+          "pin"
+        ],
+        "target": "pin",
+        "edges": [],
+        "inventory_complete": true
+      },
+      "expected": "refuted"
+    },
+    {
+      "id": "eight-uncertain-edges",
+      "input": {
+        "mode": "synthetic_fixture",
+        "nodes": [
+          "n0",
+          "n1",
+          "n2",
+          "n3",
+          "n4",
+          "n5",
+          "n6",
+          "n7",
+          "n8"
+        ],
+        "sources": [
+          "n0"
+        ],
+        "target": "n8",
+        "edges": [
+          {
+            "id": "e0",
+            "a": "n0",
+            "b": "n1",
+            "closed_states": [
+              false,
+              true
+            ]
+          },
+          {
+            "id": "e1",
+            "a": "n1",
+            "b": "n2",
+            "closed_states": [
+              false,
+              true
+            ]
+          },
+          {
+            "id": "e2",
+            "a": "n2",
+            "b": "n3",
+            "closed_states": [
+              false,
+              true
+            ]
+          },
+          {
+            "id": "e3",
+            "a": "n3",
+            "b": "n4",
+            "closed_states": [
+              false,
+              true
+            ]
+          },
+          {
+            "id": "e4",
+            "a": "n4",
+            "b": "n5",
+            "closed_states": [
+              false,
+              true
+            ]
+          },
+          {
+            "id": "e5",
+            "a": "n5",
+            "b": "n6",
+            "closed_states": [
+              false,
+              true
+            ]
+          },
+          {
+            "id": "e6",
+            "a": "n6",
+            "b": "n7",
+            "closed_states": [
+              false,
+              true
+            ]
+          },
+          {
+            "id": "e7",
+            "a": "n7",
+            "b": "n8",
+            "closed_states": [
+              false,
+              true
+            ]
+          }
+        ],
+        "inventory_complete": true
+      },
+      "expected": "unresolved"
+    },
+    {
+      "id": "reject-nine-uncertain-edges",
+      "input": {
+        "mode": "synthetic_fixture",
+        "nodes": [
+          "n0",
+          "n1",
+          "n2",
+          "n3",
+          "n4",
+          "n5",
+          "n6",
+          "n7",
+          "n8",
+          "n9"
+        ],
+        "sources": [
+          "n0"
+        ],
+        "target": "n9",
+        "edges": [
+          {
+            "id": "e0",
+            "a": "n0",
+            "b": "n1",
+            "closed_states": [
+              false,
+              true
+            ]
+          },
+          {
+            "id": "e1",
+            "a": "n1",
+            "b": "n2",
+            "closed_states": [
+              false,
+              true
+            ]
+          },
+          {
+            "id": "e2",
+            "a": "n2",
+            "b": "n3",
+            "closed_states": [
+              false,
+              true
+            ]
+          },
+          {
+            "id": "e3",
+            "a": "n3",
+            "b": "n4",
+            "closed_states": [
+              false,
+              true
+            ]
+          },
+          {
+            "id": "e4",
+            "a": "n4",
+            "b": "n5",
+            "closed_states": [
+              false,
+              true
+            ]
+          },
+          {
+            "id": "e5",
+            "a": "n5",
+            "b": "n6",
+            "closed_states": [
+              false,
+              true
+            ]
+          },
+          {
+            "id": "e6",
+            "a": "n6",
+            "b": "n7",
+            "closed_states": [
+              false,
+              true
+            ]
+          },
+          {
+            "id": "e7",
+            "a": "n7",
+            "b": "n8",
+            "closed_states": [
+              false,
+              true
+            ]
+          },
+          {
+            "id": "e8",
+            "a": "n8",
+            "b": "n9",
+            "closed_states": [
+              false,
+              true
+            ]
+          }
+        ],
+        "inventory_complete": true
+      },
+      "expected_error": "assignment cap"
+    },
+    {
+      "id": "duplicate-edge-id",
+      "input": {
+        "mode": "synthetic_fixture",
+        "nodes": [
+          "host",
+          "pin"
+        ],
+        "sources": [
+          "host"
+        ],
+        "target": "pin",
+        "edges": [
+          {
+            "id": "relay",
+            "a": "host",
+            "b": "pin",
+            "closed_states": [
+              false
+            ]
+          },
+          {
+            "id": "relay",
+            "a": "host",
+            "b": "pin",
+            "closed_states": [
+              true
+            ]
+          }
+        ],
+        "inventory_complete": true
+      },
+      "expected_error": "Duplicate or invalid edge ID"
+    }
+  ]
+}
