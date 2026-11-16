@@ -1,0 +1,385 @@
+{
+  "schema_version": "1.0.0",
+  "sources": [
+    {
+      "id": "src-model-proposal",
+      "title": "CARTAN abstract exchange specification, proposed",
+      "uri": "research/specification.md",
+      "publication_date": {
+        "status": "known",
+        "value": "2026-11-16",
+        "unit": "date",
+        "basis": "assumed"
+      },
+      "accessed_at": "2026-11-16T09:42:24Z",
+      "reading_scope": "Mission assumptions and state/guard definitions; not physical evidence"
+    }
+  ],
+  "components": [
+    {
+      "id": "component-host",
+      "name": "Fixed host",
+      "function": "Prepared support for the dummy cartridge",
+      "relationships": [
+        {
+          "kind": "receives",
+          "target_id": "component-module"
+        }
+      ],
+      "parameters": [
+        {
+          "name": "mass",
+          "quantity": {
+            "status": "unmeasured",
+            "value": null,
+            "unit": "kg",
+            "basis": "synthetic"
+          }
+        }
+      ],
+      "geometry_asset_id": "asset-geometry-missing",
+      "state_status": "assumed",
+      "source_refs": [
+        {
+          "source_id": "src-model-proposal",
+          "location": "A01-A05"
+        }
+      ]
+    },
+    {
+      "id": "component-module",
+      "name": "Dummy cartridge",
+      "function": "Illustrate interrupted capture",
+      "relationships": [
+        {
+          "kind": "mates_to",
+          "target_id": "component-host"
+        }
+      ],
+      "parameters": [
+        {
+          "name": "mass",
+          "quantity": {
+            "status": "unmeasured",
+            "value": null,
+            "unit": "kg",
+            "basis": "synthetic"
+          }
+        }
+      ],
+      "geometry_asset_id": "asset-geometry-missing",
+      "state_status": "assumed",
+      "source_refs": [
+        {
+          "source_id": "src-model-proposal",
+          "location": "A01-A05"
+        }
+      ]
+    },
+    {
+      "id": "component-support",
+      "name": "Transfer support",
+      "function": "Retain cartridge during exchange",
+      "relationships": [
+        {
+          "kind": "supports",
+          "target_id": "component-module"
+        }
+      ],
+      "parameters": [
+        {
+          "name": "mass",
+          "quantity": {
+            "status": "unmeasured",
+            "value": null,
+            "unit": "kg",
+            "basis": "synthetic"
+          }
+        }
+      ],
+      "geometry_asset_id": "asset-geometry-missing",
+      "state_status": "assumed",
+      "source_refs": [
+        {
+          "source_id": "src-model-proposal",
+          "location": "A01-A05"
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "claim-h1",
+      "assertion": "Whether explicit uncertain-state recovery improves a real exchange remains untested.",
+      "evidence_class": "hypothesis",
+      "status": "proposed",
+      "source_refs": [
+        {
+          "source_id": "src-model-proposal",
+          "location": "Candidate requirement R1"
+        }
+      ],
+      "limitations": [
+        "No measured advantage, owner requirement or physical validation."
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "id": "asset-geometry-missing",
+      "availability": "missing",
+      "sha256": {
+        "status": "missing",
+        "value": null,
+        "unit": "sha256",
+        "basis": "unknown"
+      },
+      "source_refs": [
+        {
+          "source_id": "src-model-proposal",
+          "location": "A11"
+        }
+      ],
+      "rights": {
+        "status": "unknown",
+        "description": "No geometry asset supplied or cleared."
+      },
+      "approval": "unknown",
+      "scientific_status": "unknown"
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "scenario-interrupted-capture",
+      "model_version": "abstract-exchange/0.1.0",
+      "physical_state_definition": "research/specification.md#state-observations-and-commands",
+      "initial_state": {
+        "host": "partial",
+        "support": "secured",
+        "connector": "mated",
+        "source": "isolated",
+        "energy_fraction": 0.0,
+        "contact": "clear"
+      },
+      "observation_definition": "Command receipt is distinct from current physical state; reports have epochs and timestamps.",
+      "controls": [
+        "hold",
+        "lock",
+        "release_support",
+        "energize"
+      ],
+      "fault_assumptions": [
+        "Incomplete capture can coexist with a stale acknowledgement; reachability requires mechanism review."
+      ],
+      "safe_state_rules": [
+        "Keep transfer support until host retention is established.",
+        "Do not restore power without verified mating and retention."
+      ],
+      "parameters": [
+        {
+          "name": "physical_load_limit",
+          "quantity": {
+            "status": "unknown",
+            "value": null,
+            "unit": "N",
+            "basis": "synthetic"
+          }
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "src-model-proposal",
+          "location": "Guarded transitions"
+        }
+      ],
+      "limitations": [
+        "Hand-authored UI example, not an experiment."
+      ]
+    }
+  ],
+  "runs": [
+    {
+      "id": "run-ui-fixture-001",
+      "scenario_id": "scenario-interrupted-capture",
+      "mode": "synthetic_fixture",
+      "schema_version": "1.0.0",
+      "model_version": "abstract-exchange/0.1.0",
+      "controller_version": "none-hand-authored",
+      "display_notice": "SYNTHETIC FIXTURE — NOT EVIDENCE",
+      "evidence_scope": "none",
+      "input_hashes": [
+        {
+          "path": "research/specification.md",
+          "sha256": "6c6807f3003140564a6011e4b31c57c55d10610c7d076e32836ea5f3cdceb3e9"
+        }
+      ],
+      "configuration_hashes": [
+        {
+          "path": "research/protocol.md",
+          "sha256": "f9b34f06e9e266360abf381174f9b6093b9f2ad2305dc1dbbe922c751a066864"
+        }
+      ],
+      "seed": {
+        "status": "not_applicable",
+        "value": null,
+        "unit": "count",
+        "basis": "synthetic"
+      },
+      "started_at": "2026-11-16T09:42:24Z",
+      "ended_at": "2026-11-16T09:42:25Z",
+      "units": {
+        "time": "s",
+        "energy": "1",
+        "load": "N"
+      },
+      "truth_series": [
+        {
+          "t_s": 0,
+          "state": {
+            "host": "partial",
+            "support": "secured",
+            "connector": "mated",
+            "source": "isolated",
+            "energy_fraction": 0.0,
+            "contact": "clear"
+          }
+        },
+        {
+          "t_s": 1,
+          "state": {
+            "host": "partial",
+            "support": "secured",
+            "connector": "mated",
+            "source": "isolated",
+            "energy_fraction": 0.0,
+            "contact": "clear"
+          }
+        }
+      ],
+      "observation_series": [
+        {
+          "t_s": 1,
+          "sampled_at_s": 0,
+          "received_at_s": 1,
+          "epoch": 0,
+          "source_id": "src-model-proposal",
+          "variable": "lock_ack",
+          "reading": {
+            "status": "known",
+            "value": "received",
+            "unit": "category",
+            "basis": "synthetic"
+          },
+          "validity": "stale"
+        }
+      ],
+      "command_series": [
+        {
+          "t_s": 1,
+          "name": "hold",
+          "duration_s": 0,
+          "accepted": true,
+          "reason": "Illustrative hold; no command was executed."
+        }
+      ],
+      "belief_series": [
+        {
+          "t_s": 1,
+          "candidates": [
+            {
+              "host": "partial",
+              "support": "secured",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 0.0,
+              "contact": "clear"
+            },
+            {
+              "host": "locked",
+              "support": "secured",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 0.0,
+              "contact": "clear"
+            }
+          ],
+          "status": "consistent"
+        }
+      ],
+      "outcomes": {
+        "retention_loss": {
+          "status": "unmeasured",
+          "value": null,
+          "unit": "category",
+          "basis": "synthetic"
+        },
+        "unsafe_energization": {
+          "status": "unmeasured",
+          "value": null,
+          "unit": "category",
+          "basis": "synthetic"
+        },
+        "unsafe_connector_transition": {
+          "status": "unmeasured",
+          "value": null,
+          "unit": "category",
+          "basis": "synthetic"
+        },
+        "exceeded_load_limits": {
+          "status": "unmeasured",
+          "value": null,
+          "unit": "category",
+          "basis": "synthetic"
+        },
+        "unrecoverable": {
+          "status": "unmeasured",
+          "value": null,
+          "unit": "category",
+          "basis": "synthetic"
+        },
+        "task_completed": {
+          "status": "unmeasured",
+          "value": null,
+          "unit": "category",
+          "basis": "synthetic"
+        },
+        "acceptable_completion": {
+          "status": "unmeasured",
+          "value": null,
+          "unit": "category",
+          "basis": "synthetic"
+        },
+        "safe_abort": {
+          "status": "unmeasured",
+          "value": null,
+          "unit": "category",
+          "basis": "synthetic"
+        },
+        "interventions": {
+          "status": "unmeasured",
+          "value": null,
+          "unit": "count",
+          "basis": "synthetic"
+        },
+        "elapsed_s": {
+          "status": "unmeasured",
+          "value": null,
+          "unit": "s",
+          "basis": "synthetic"
+        }
+      },
+      "exclusions": [],
+      "provenance": [
+        {
+          "source_id": "src-model-proposal",
+          "location": "Synthetic UI fixture authored from proposed definitions"
+        }
+      ],
+      "limitations": [
+        "All values and timestamps are synthetic.",
+        "No controller or plant ran to produce this file.",
+        "Unknown outcomes must not render as zero or success."
+      ]
+    }
+  ]
+}

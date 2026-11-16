@@ -1,0 +1,9 @@
+{
+  "schema_version": "1.0.0",
+  "source_commit": "2a4083ac15e64fbf3f6f57355827efd5d2ff0a7a",
+  "manifest_sha256": "6a20a83c78b8f763a4bc83d7f01e819191b1af162f8a484683841962dcf63697",
+  "fixture_sha256": "b231fa24f057ce647dbf282ed8233fc88d0bbbed579995213306edac30e65d44",
+  "fixture_url": "vendor/cartan/v1/fixture.json",
+  "source_root": "docs/engineering/",
+  "evidence_scope": "none"
+}

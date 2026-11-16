@@ -1,0 +1,84 @@
+{
+  "version": "ui-intake/0.1",
+  "inspected_on": "2026-11-16",
+  "assets": [
+    {
+      "id": "hero.jpg",
+      "path": "assets/hero.jpg",
+      "source_path": "/Users/danielwahnich/Documents/CARTAN-Film-2026-11-16/deliverables/CARTAN-Hero-Service-Bay-Clean-8s-poster.jpg",
+      "sha256": "c5ac63b0758406418e1f9627df4f3aad6af525d9827876e5b8d2b6dcd40cc816",
+      "bytes": 220752,
+      "scientific_status": "concept_image",
+      "producer": "Existing CARTAN production packet",
+      "rights_status": "source_reported; independent clearance not established",
+      "approval_status": "local review; final playback/pacing approval pending",
+      "modified": false
+    },
+    {
+      "id": "module.jpg",
+      "path": "assets/module.jpg",
+      "source_path": "/Users/danielwahnich/Documents/CARTAN-Film-2026-11-16/deliverables/CARTAN-Module-Study-Clean-8s-poster.jpg",
+      "sha256": "1c824515427acaf88093a527c47ab914845fabc3da9135657c7cadeb3ea7d9fc",
+      "bytes": 168913,
+      "scientific_status": "concept_image",
+      "producer": "Existing CARTAN production packet",
+      "rights_status": "source_reported; independent clearance not established",
+      "approval_status": "local review; final playback/pacing approval pending",
+      "modified": false
+    },
+    {
+      "id": "vision.jpg",
+      "path": "assets/vision.jpg",
+      "source_path": "/Users/danielwahnich/Documents/CARTAN-Film-2026-11-16/deliverables/CARTAN-Long-Term-Vision-Clean-8s-poster.jpg",
+      "sha256": "c8e3e4724494b91320115039b63e263da3c6fb8ac4e36f5fe6d9cb7117c6753c",
+      "bytes": 194676,
+      "scientific_status": "concept_image",
+      "producer": "Existing CARTAN production packet",
+      "rights_status": "source_reported; independent clearance not established",
+      "approval_status": "local review; final playback/pacing approval pending",
+      "modified": false
+    },
+    {
+      "id": "hero-loop.mp4",
+      "path": "assets/hero-loop.mp4",
+      "source_path": "/Users/danielwahnich/Documents/CARTAN-Film-2026-11-16/deliverables/CARTAN-Hero-Web-Loop-720p.mp4",
+      "sha256": "bc323738390b18cb42e610d08ec8e962d5c20c54719113cfa0d2736b22153312",
+      "bytes": 3047614,
+      "scientific_status": "concept_film",
+      "producer": "Existing CARTAN production packet",
+      "rights_status": "source_reported; independent clearance not established",
+      "approval_status": "local review; final playback/pacing approval pending",
+      "modified": false
+    },
+    {
+      "id": "film-review.mp4",
+      "path": "assets/film-review.mp4",
+      "source_path": "/Users/danielwahnich/Documents/CARTAN-Film-2026-11-16/deliverables/CARTAN-Silent-Phone-Review-720p.mp4",
+      "sha256": "22d4bce9d5489a488daec8bb76be942e109c6cab042c1fea04fb41858b25a416",
+      "bytes": 4375571,
+      "scientific_status": "concept_film",
+      "producer": "Existing CARTAN production packet",
+      "rights_status": "source_reported; independent clearance not established",
+      "approval_status": "local review; final playback/pacing approval pending",
+      "modified": false
+    },
+    {
+      "id": "cartan-logo.png",
+      "path": "assets/cartan-logo.png",
+      "source_path": "/Users/danielwahnich/Documents/CARTAN-Email-2026-11-15/v3/CARTAN-Email-Identity-v3/cartan-original-logo.png",
+      "sha256": "7f3b27e6dae623358c0761793d96af5eee1310e9177ab711c4cf3afc1b3ca3ee",
+      "bytes": 603552,
+      "scientific_status": "brand_mark",
+      "producer": "Existing CARTAN production packet",
+      "rights_status": "source_reported; independent clearance not established",
+      "approval_status": "approved mark per provenance record",
+      "modified": false
+    }
+  ],
+  "missing": [
+    "Editable CAD or glTF",
+    "Frozen engineering v1 at intake",
+    "Validated physical data"
+  ],
+  "audio": "No audio streams in selected media. No soundtrack selected."
+}

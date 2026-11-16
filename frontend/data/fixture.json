@@ -1,0 +1,23 @@
+{
+  "schema": "cartan-ui-fixture/0.1",
+  "mode": "synthetic_fixture",
+  "id": "ui-interruption-example-001",
+  "label": "Synthetic interface example — not an experiment",
+  "source": "CARTAN handoff v3, section 4; illustrative UI text, 16 November 2026",
+  "model_version": {"state": "not_applicable"},
+  "controller_version": {"state": "not_applicable"},
+  "run_timestamp": {"state": "not_applicable"},
+  "seed": {"state": "not_applicable"},
+  "command": "Request capture",
+  "observation": "Last acknowledgement is stale",
+  "physical_state": {"state": "unknown"},
+  "belief": "Capture may be complete or incomplete. Neither is established by this report.",
+  "outcomes": {
+    "retention_loss": {"state": "unmeasured"},
+    "unsafe_energization": {"state": "unmeasured"},
+    "exceeded_limits": {"state": "unmeasured"},
+    "completion": {"state": "unmeasured"},
+    "elapsed_time": {"state": "unmeasured", "unit": "s"}
+  },
+  "limitations": ["No plant, controller or numerical simulation executed.", "This example does not prescribe a physical action.", "No measured outcome or accepted safety level is supplied."]
+}
