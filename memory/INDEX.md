@@ -16,3 +16,7 @@ index is installed. Add infrastructure only after an actual requirement justifie
 its lifecycle, privacy and maintenance cost.
 
 - `notes/2026-11-16-environment-decisions.md`: setup boundaries and architecture.
+- [Frozen research contract v1](checkpoints/research-20261116T095000Z-contract-v1.md):
+  contract commit, hash manifest, validator and UI consumption rules.
+- [Research verification block](checkpoints/research-20261116T101534Z-verification.md):
+  source/evidence commits, executed checks, limits, gaps and next study.

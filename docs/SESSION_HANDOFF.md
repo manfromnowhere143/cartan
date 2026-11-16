@@ -1,4 +1,33 @@
-# CARTAN environment handoff
+# CARTAN session handoff
+
+## Current research state — 16 November 2026
+
+Research block 1 is complete on `research/architecture`. Start with
+[results and recommendation](../research/results.md) and the
+[research checkpoint](../memory/checkpoints/research-20261116T101534Z-verification.md).
+The audit/source/architecture commit is `191b4be`, frozen contract v1 is `2a4083a`,
+model and frozen verification cases are `aee96ea`, and full retained evidence and
+next-study design are `e162351`. Read the architecture before extending the code.
+
+Executed: 15 known verification scenarios, 27 toy sensitivities, 12 unit tests,
+contract validation/16 negative controls, and one identical-core replay. Some
+scenarios intentionally contain hazards. This is abstract model verification,
+not comparative performance, physical validation or flight evidence. Physical
+limits, operator requirements and economic burden remain unknown. Recommendation:
+narrow to whether an actual interface's ambiguity survives ordinary sensing,
+interlocks and recovery; the first study is designed but unexecuted.
+
+The contract handoff checkpoint identifies immutable bytes and consumption steps.
+UI was read-only inspected, clean at the original setup commit; consumption and
+integration are unverified. Setup retains launch/MCP/config ownership. No root
+dependency or integration-ownership handoff occurred. No new model session,
+service, paid job, hardware activity or external publication was started.
+
+## Historical setup snapshot
+
+The following records the state at setup completion, before the research block
+above. Its pending research items are superseded by the current research state;
+launcher/authentication facts were not rerun by research.
 
 Prepared 16 November 2026. Environment setup only; no research or UI build session
 has been started. Read `docs/ENVIRONMENT-AUDIT.md` and `docs/VERIFICATION.md` for
