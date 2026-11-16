@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "canonical_root": "/Users/danielwahnich/workspace/cartan",
+  "expected_remotes": {},
+  "lanes": {
+    "research": {"path": "../cartan-worktrees/research", "branch": "research/architecture", "prompt": "CARTAN-01-Backend-Research-Prompt.txt"},
+    "ui": {"path": "../cartan-worktrees/ui", "branch": "ui/visual-laboratory", "prompt": "CARTAN-02-Frontend-Visual-Laboratory-Prompt.txt"}
+  },
+  "clients": {
+    "codex": {"path": "/Users/danielwahnich/.local/bin/codex", "version": "codex-cli 0.169.0"},
+    "claude": {"path": "/Users/danielwahnich/.local/bin/claude", "version": "2.1.302 (Claude Code)"}
+  },
+  "mcp_allowlist": ["openaiDeveloperDocs", "node_repl", "cua_repl"],
+  "setup_owner": "existing CARTAN environment-setup session",
+  "remote_state": "local-only; remote and visibility undecided"
+}

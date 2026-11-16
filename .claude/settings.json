@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "defaultMode": "manual",
+    "ask": ["Bash", "Edit", "Write", "WebFetch", "WebSearch"]
+  },
+  "sandbox": {
+    "enabled": true,
+    "failIfUnavailable": true,
+    "autoAllowBashIfSandboxed": false,
+    "allowUnsandboxedCommands": false
+  },
+  "attribution": {"commit": "", "pr": ""}
+}

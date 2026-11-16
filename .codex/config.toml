@@ -1,0 +1,18 @@
+# Local defaults; launch.py repeats critical settings as CLI overrides because
+# untrusted repositories do not load project config. Trust is never auto-granted.
+approval_policy = "on-request"
+sandbox_mode = "workspace-write"
+
+[sandbox_workspace_write]
+network_access = false
+writable_roots = []
+
+[shell_environment_policy]
+inherit = "core"
+
+[apps._default]
+enabled = false
+
+[mcp_servers.openaiDeveloperDocs]
+url = "https://developers.openai.com/mcp"
+enabled = true
