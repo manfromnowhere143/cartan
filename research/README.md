@@ -1,4 +1,11 @@
-# CARTAN research block 1
+# CARTAN research
+
+Latest: [block 2 results](block-2/results.md), [new primary sources](block-2/sources.md),
+and [prioritized roadmap](ROADMAP.md). The first observer comparison returned an
+equal-information null result. Current direction: establish which evidence actually
+supports recovery before adding controller complexity.
+
+## Preserved block 1 introduction
 
 16 November 2026. Owner: research, `research/architecture`. Status: exploratory.
 

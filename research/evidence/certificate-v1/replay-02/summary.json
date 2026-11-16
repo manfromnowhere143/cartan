@@ -1,0 +1,87 @@
+{
+  "checks_passed": true,
+  "schema_version": "cartan-certificate-study/1.0.0",
+  "model_version": "recovery-evidence/0.1.0",
+  "mode": "analytical_model_study",
+  "evidence_scope": "declared_models_only",
+  "physical_validation": false,
+  "histories": 42,
+  "all_prefixes_equal": true,
+  "false_singletons_within_model": 0,
+  "B0_C_algorithmic_advantage": "none_in_this_declared_model",
+  "acquisition_ranges": {
+    "0": {
+      "min": 1,
+      "max": 1
+    },
+    "1": {
+      "min": 2,
+      "max": 3
+    },
+    "2": {
+      "min": 3,
+      "max": 5
+    }
+  },
+  "zero_volume_counterexamples": 3,
+  "voltage_cases": 9,
+  "finite_wait_certificates": 6,
+  "core_sha256": "264ae9a10b2063d48be280a2dcb228e57d2e200b9a0dd488ae2f406a011b8a2e",
+  "input_hashes": [
+    {
+      "path": "research/decisions/ADR-002.md",
+      "sha256": "31f90f9874ba08f1e62e5e038e3ed05941373298f83ccdb0d977263566d0473a"
+    },
+    {
+      "path": "research/block-2/mathematics.md",
+      "sha256": "4d70f9984195cd716851eaad42cc4c7bdc00ffdb8a2287a10d5355af7cd7da35"
+    },
+    {
+      "path": "research/block-2/protocol.md",
+      "sha256": "afb0d0bf2e83057798875a7e12f9df96a4b0a9576a6f47ca50ed99e5959c724b"
+    },
+    {
+      "path": "research/block-2/sources.md",
+      "sha256": "02dcea8083b3b98de056fc2135555b10f6dd638840c12b2f9a5bcc7cb0551a59"
+    },
+    {
+      "path": "backend/certificates/study.json",
+      "sha256": "cd4ed3a032c316b044d082a9a379ab4ec2ae59ac36977ea53045a3e09b259c37"
+    },
+    {
+      "path": "backend/certificates/evidence.py",
+      "sha256": "d1956a876a08c5c4bd1cebd62dfe317163ff21249448ac73fb7c9a8975b1dc72"
+    },
+    {
+      "path": "backend/certificates/bounds.py",
+      "sha256": "cdc71eab9c51d5c7374d5617d21417ae78b51de0314b4bca833f491cc019c6a6"
+    },
+    {
+      "path": "backend/certificates/run_study.py",
+      "sha256": "71dba7d3900a96c21cd96793f83b69f9c4fc7bdfadc4f8bad825e60d35d1b395"
+    }
+  ],
+  "started_at": "2026-11-16T11:49:31.969455+00:00",
+  "ended_at": "2026-11-16T11:49:31.976728+00:00",
+  "limits": {
+    "workers": 1,
+    "cpu_limit_seconds": 5,
+    "requested_address_space_bytes": 268435456,
+    "address_space_limit_set": false,
+    "note": "current limit exceeds maximum limit"
+  },
+  "cpu_seconds": 0.005027000000000004,
+  "wall_seconds": 0.007186625007307157,
+  "peak_rss_bytes": 23625728,
+  "python": "3.14.2",
+  "platform": "macOS-14.4-arm64-arm-64bit-Mach-O",
+  "unmeasured": [
+    "physical_safety",
+    "recovery_time",
+    "operator_workload",
+    "hardware_cost",
+    "mass",
+    "power",
+    "mission_superiority"
+  ]
+}

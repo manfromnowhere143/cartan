@@ -1,0 +1,7176 @@
+{
+  "schema_version": "cartan-certificate-study/1.0.0",
+  "model_version": "recovery-evidence/0.1.0",
+  "evidence_scope": "declared_models_only",
+  "physical_mapping": "unverified",
+  "histories": [
+    {
+      "truth": 0,
+      "k": 0,
+      "word": [
+        0
+      ],
+      "trace": [
+        {
+          "report": {
+            "acquisition_id": "1",
+            "value": 0,
+            "sampled_at": 1,
+            "received_at": 1,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0
+          ],
+          "C_states": [
+            [
+              0,
+              0
+            ]
+          ],
+          "B0_fact": "not_locked",
+          "C_fact": "not_locked",
+          "truth_retained": true,
+          "equal": true
+        }
+      ],
+      "first_decision_acquisitions": {
+        "B0": 1,
+        "C": 1
+      },
+      "passed": true
+    },
+    {
+      "truth": 1,
+      "k": 0,
+      "word": [
+        1
+      ],
+      "trace": [
+        {
+          "report": {
+            "acquisition_id": "1",
+            "value": 1,
+            "sampled_at": 1,
+            "received_at": 1,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            1
+          ],
+          "C_states": [
+            [
+              1,
+              0
+            ]
+          ],
+          "B0_fact": "locked",
+          "C_fact": "locked",
+          "truth_retained": true,
+          "equal": true
+        }
+      ],
+      "first_decision_acquisitions": {
+        "B0": 1,
+        "C": 1
+      },
+      "passed": true
+    },
+    {
+      "truth": 0,
+      "k": 1,
+      "word": [
+        0,
+        0,
+        0
+      ],
+      "trace": [
+        {
+          "report": {
+            "acquisition_id": "1",
+            "value": 0,
+            "sampled_at": 1,
+            "received_at": 1,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "2",
+            "value": 0,
+            "sampled_at": 2,
+            "received_at": 2,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0
+          ],
+          "C_states": [
+            [
+              0,
+              0
+            ]
+          ],
+          "B0_fact": "not_locked",
+          "C_fact": "not_locked",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "3",
+            "value": 0,
+            "sampled_at": 3,
+            "received_at": 3,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0
+          ],
+          "C_states": [
+            [
+              0,
+              0
+            ]
+          ],
+          "B0_fact": "not_locked",
+          "C_fact": "not_locked",
+          "truth_retained": true,
+          "equal": true
+        }
+      ],
+      "first_decision_acquisitions": {
+        "B0": 2,
+        "C": 2
+      },
+      "passed": true
+    },
+    {
+      "truth": 0,
+      "k": 1,
+      "word": [
+        0,
+        0,
+        1
+      ],
+      "trace": [
+        {
+          "report": {
+            "acquisition_id": "1",
+            "value": 0,
+            "sampled_at": 1,
+            "received_at": 1,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "2",
+            "value": 0,
+            "sampled_at": 2,
+            "received_at": 2,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0
+          ],
+          "C_states": [
+            [
+              0,
+              0
+            ]
+          ],
+          "B0_fact": "not_locked",
+          "C_fact": "not_locked",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "3",
+            "value": 1,
+            "sampled_at": 3,
+            "received_at": 3,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0
+          ],
+          "C_states": [
+            [
+              0,
+              1
+            ]
+          ],
+          "B0_fact": "not_locked",
+          "C_fact": "not_locked",
+          "truth_retained": true,
+          "equal": true
+        }
+      ],
+      "first_decision_acquisitions": {
+        "B0": 2,
+        "C": 2
+      },
+      "passed": true
+    },
+    {
+      "truth": 0,
+      "k": 1,
+      "word": [
+        0,
+        1,
+        0
+      ],
+      "trace": [
+        {
+          "report": {
+            "acquisition_id": "1",
+            "value": 0,
+            "sampled_at": 1,
+            "received_at": 1,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "2",
+            "value": 1,
+            "sampled_at": 2,
+            "received_at": 2,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "3",
+            "value": 0,
+            "sampled_at": 3,
+            "received_at": 3,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0
+          ],
+          "C_states": [
+            [
+              0,
+              1
+            ]
+          ],
+          "B0_fact": "not_locked",
+          "C_fact": "not_locked",
+          "truth_retained": true,
+          "equal": true
+        }
+      ],
+      "first_decision_acquisitions": {
+        "B0": 3,
+        "C": 3
+      },
+      "passed": true
+    },
+    {
+      "truth": 0,
+      "k": 1,
+      "word": [
+        1,
+        0,
+        0
+      ],
+      "trace": [
+        {
+          "report": {
+            "acquisition_id": "1",
+            "value": 1,
+            "sampled_at": 1,
+            "received_at": 1,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "2",
+            "value": 0,
+            "sampled_at": 2,
+            "received_at": 2,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "3",
+            "value": 0,
+            "sampled_at": 3,
+            "received_at": 3,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0
+          ],
+          "C_states": [
+            [
+              0,
+              1
+            ]
+          ],
+          "B0_fact": "not_locked",
+          "C_fact": "not_locked",
+          "truth_retained": true,
+          "equal": true
+        }
+      ],
+      "first_decision_acquisitions": {
+        "B0": 3,
+        "C": 3
+      },
+      "passed": true
+    },
+    {
+      "truth": 1,
+      "k": 1,
+      "word": [
+        0,
+        1,
+        1
+      ],
+      "trace": [
+        {
+          "report": {
+            "acquisition_id": "1",
+            "value": 0,
+            "sampled_at": 1,
+            "received_at": 1,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "2",
+            "value": 1,
+            "sampled_at": 2,
+            "received_at": 2,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "3",
+            "value": 1,
+            "sampled_at": 3,
+            "received_at": 3,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            1
+          ],
+          "C_states": [
+            [
+              1,
+              1
+            ]
+          ],
+          "B0_fact": "locked",
+          "C_fact": "locked",
+          "truth_retained": true,
+          "equal": true
+        }
+      ],
+      "first_decision_acquisitions": {
+        "B0": 3,
+        "C": 3
+      },
+      "passed": true
+    },
+    {
+      "truth": 1,
+      "k": 1,
+      "word": [
+        1,
+        0,
+        1
+      ],
+      "trace": [
+        {
+          "report": {
+            "acquisition_id": "1",
+            "value": 1,
+            "sampled_at": 1,
+            "received_at": 1,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "2",
+            "value": 0,
+            "sampled_at": 2,
+            "received_at": 2,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "3",
+            "value": 1,
+            "sampled_at": 3,
+            "received_at": 3,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            1
+          ],
+          "C_states": [
+            [
+              1,
+              1
+            ]
+          ],
+          "B0_fact": "locked",
+          "C_fact": "locked",
+          "truth_retained": true,
+          "equal": true
+        }
+      ],
+      "first_decision_acquisitions": {
+        "B0": 3,
+        "C": 3
+      },
+      "passed": true
+    },
+    {
+      "truth": 1,
+      "k": 1,
+      "word": [
+        1,
+        1,
+        0
+      ],
+      "trace": [
+        {
+          "report": {
+            "acquisition_id": "1",
+            "value": 1,
+            "sampled_at": 1,
+            "received_at": 1,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "2",
+            "value": 1,
+            "sampled_at": 2,
+            "received_at": 2,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            1
+          ],
+          "C_states": [
+            [
+              1,
+              0
+            ]
+          ],
+          "B0_fact": "locked",
+          "C_fact": "locked",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "3",
+            "value": 0,
+            "sampled_at": 3,
+            "received_at": 3,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            1
+          ],
+          "C_states": [
+            [
+              1,
+              1
+            ]
+          ],
+          "B0_fact": "locked",
+          "C_fact": "locked",
+          "truth_retained": true,
+          "equal": true
+        }
+      ],
+      "first_decision_acquisitions": {
+        "B0": 2,
+        "C": 2
+      },
+      "passed": true
+    },
+    {
+      "truth": 1,
+      "k": 1,
+      "word": [
+        1,
+        1,
+        1
+      ],
+      "trace": [
+        {
+          "report": {
+            "acquisition_id": "1",
+            "value": 1,
+            "sampled_at": 1,
+            "received_at": 1,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "2",
+            "value": 1,
+            "sampled_at": 2,
+            "received_at": 2,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            1
+          ],
+          "C_states": [
+            [
+              1,
+              0
+            ]
+          ],
+          "B0_fact": "locked",
+          "C_fact": "locked",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "3",
+            "value": 1,
+            "sampled_at": 3,
+            "received_at": 3,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            1
+          ],
+          "C_states": [
+            [
+              1,
+              0
+            ]
+          ],
+          "B0_fact": "locked",
+          "C_fact": "locked",
+          "truth_retained": true,
+          "equal": true
+        }
+      ],
+      "first_decision_acquisitions": {
+        "B0": 2,
+        "C": 2
+      },
+      "passed": true
+    },
+    {
+      "truth": 0,
+      "k": 2,
+      "word": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trace": [
+        {
+          "report": {
+            "acquisition_id": "1",
+            "value": 0,
+            "sampled_at": 1,
+            "received_at": 1,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "2",
+            "value": 0,
+            "sampled_at": 2,
+            "received_at": 2,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "3",
+            "value": 0,
+            "sampled_at": 3,
+            "received_at": 3,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0
+          ],
+          "C_states": [
+            [
+              0,
+              0
+            ]
+          ],
+          "B0_fact": "not_locked",
+          "C_fact": "not_locked",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "4",
+            "value": 0,
+            "sampled_at": 4,
+            "received_at": 4,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0
+          ],
+          "C_states": [
+            [
+              0,
+              0
+            ]
+          ],
+          "B0_fact": "not_locked",
+          "C_fact": "not_locked",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "5",
+            "value": 0,
+            "sampled_at": 5,
+            "received_at": 5,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0
+          ],
+          "C_states": [
+            [
+              0,
+              0
+            ]
+          ],
+          "B0_fact": "not_locked",
+          "C_fact": "not_locked",
+          "truth_retained": true,
+          "equal": true
+        }
+      ],
+      "first_decision_acquisitions": {
+        "B0": 3,
+        "C": 3
+      },
+      "passed": true
+    },
+    {
+      "truth": 0,
+      "k": 2,
+      "word": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "trace": [
+        {
+          "report": {
+            "acquisition_id": "1",
+            "value": 0,
+            "sampled_at": 1,
+            "received_at": 1,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "2",
+            "value": 0,
+            "sampled_at": 2,
+            "received_at": 2,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "3",
+            "value": 0,
+            "sampled_at": 3,
+            "received_at": 3,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0
+          ],
+          "C_states": [
+            [
+              0,
+              0
+            ]
+          ],
+          "B0_fact": "not_locked",
+          "C_fact": "not_locked",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "4",
+            "value": 0,
+            "sampled_at": 4,
+            "received_at": 4,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0
+          ],
+          "C_states": [
+            [
+              0,
+              0
+            ]
+          ],
+          "B0_fact": "not_locked",
+          "C_fact": "not_locked",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "5",
+            "value": 1,
+            "sampled_at": 5,
+            "received_at": 5,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0
+          ],
+          "C_states": [
+            [
+              0,
+              1
+            ]
+          ],
+          "B0_fact": "not_locked",
+          "C_fact": "not_locked",
+          "truth_retained": true,
+          "equal": true
+        }
+      ],
+      "first_decision_acquisitions": {
+        "B0": 3,
+        "C": 3
+      },
+      "passed": true
+    },
+    {
+      "truth": 0,
+      "k": 2,
+      "word": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "trace": [
+        {
+          "report": {
+            "acquisition_id": "1",
+            "value": 0,
+            "sampled_at": 1,
+            "received_at": 1,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "2",
+            "value": 0,
+            "sampled_at": 2,
+            "received_at": 2,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "3",
+            "value": 0,
+            "sampled_at": 3,
+            "received_at": 3,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0
+          ],
+          "C_states": [
+            [
+              0,
+              0
+            ]
+          ],
+          "B0_fact": "not_locked",
+          "C_fact": "not_locked",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "4",
+            "value": 1,
+            "sampled_at": 4,
+            "received_at": 4,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0
+          ],
+          "C_states": [
+            [
+              0,
+              1
+            ]
+          ],
+          "B0_fact": "not_locked",
+          "C_fact": "not_locked",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "5",
+            "value": 0,
+            "sampled_at": 5,
+            "received_at": 5,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0
+          ],
+          "C_states": [
+            [
+              0,
+              1
+            ]
+          ],
+          "B0_fact": "not_locked",
+          "C_fact": "not_locked",
+          "truth_retained": true,
+          "equal": true
+        }
+      ],
+      "first_decision_acquisitions": {
+        "B0": 3,
+        "C": 3
+      },
+      "passed": true
+    },
+    {
+      "truth": 0,
+      "k": 2,
+      "word": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "trace": [
+        {
+          "report": {
+            "acquisition_id": "1",
+            "value": 0,
+            "sampled_at": 1,
+            "received_at": 1,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "2",
+            "value": 0,
+            "sampled_at": 2,
+            "received_at": 2,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "3",
+            "value": 0,
+            "sampled_at": 3,
+            "received_at": 3,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0
+          ],
+          "C_states": [
+            [
+              0,
+              0
+            ]
+          ],
+          "B0_fact": "not_locked",
+          "C_fact": "not_locked",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "4",
+            "value": 1,
+            "sampled_at": 4,
+            "received_at": 4,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0
+          ],
+          "C_states": [
+            [
+              0,
+              1
+            ]
+          ],
+          "B0_fact": "not_locked",
+          "C_fact": "not_locked",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "5",
+            "value": 1,
+            "sampled_at": 5,
+            "received_at": 5,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0
+          ],
+          "C_states": [
+            [
+              0,
+              2
+            ]
+          ],
+          "B0_fact": "not_locked",
+          "C_fact": "not_locked",
+          "truth_retained": true,
+          "equal": true
+        }
+      ],
+      "first_decision_acquisitions": {
+        "B0": 3,
+        "C": 3
+      },
+      "passed": true
+    },
+    {
+      "truth": 0,
+      "k": 2,
+      "word": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "trace": [
+        {
+          "report": {
+            "acquisition_id": "1",
+            "value": 0,
+            "sampled_at": 1,
+            "received_at": 1,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "2",
+            "value": 0,
+            "sampled_at": 2,
+            "received_at": 2,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "3",
+            "value": 1,
+            "sampled_at": 3,
+            "received_at": 3,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "4",
+            "value": 0,
+            "sampled_at": 4,
+            "received_at": 4,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0
+          ],
+          "C_states": [
+            [
+              0,
+              1
+            ]
+          ],
+          "B0_fact": "not_locked",
+          "C_fact": "not_locked",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "5",
+            "value": 0,
+            "sampled_at": 5,
+            "received_at": 5,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0
+          ],
+          "C_states": [
+            [
+              0,
+              1
+            ]
+          ],
+          "B0_fact": "not_locked",
+          "C_fact": "not_locked",
+          "truth_retained": true,
+          "equal": true
+        }
+      ],
+      "first_decision_acquisitions": {
+        "B0": 4,
+        "C": 4
+      },
+      "passed": true
+    },
+    {
+      "truth": 0,
+      "k": 2,
+      "word": [
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "trace": [
+        {
+          "report": {
+            "acquisition_id": "1",
+            "value": 0,
+            "sampled_at": 1,
+            "received_at": 1,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "2",
+            "value": 0,
+            "sampled_at": 2,
+            "received_at": 2,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "3",
+            "value": 1,
+            "sampled_at": 3,
+            "received_at": 3,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "4",
+            "value": 0,
+            "sampled_at": 4,
+            "received_at": 4,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0
+          ],
+          "C_states": [
+            [
+              0,
+              1
+            ]
+          ],
+          "B0_fact": "not_locked",
+          "C_fact": "not_locked",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "5",
+            "value": 1,
+            "sampled_at": 5,
+            "received_at": 5,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0
+          ],
+          "C_states": [
+            [
+              0,
+              2
+            ]
+          ],
+          "B0_fact": "not_locked",
+          "C_fact": "not_locked",
+          "truth_retained": true,
+          "equal": true
+        }
+      ],
+      "first_decision_acquisitions": {
+        "B0": 4,
+        "C": 4
+      },
+      "passed": true
+    },
+    {
+      "truth": 0,
+      "k": 2,
+      "word": [
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "trace": [
+        {
+          "report": {
+            "acquisition_id": "1",
+            "value": 0,
+            "sampled_at": 1,
+            "received_at": 1,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "2",
+            "value": 0,
+            "sampled_at": 2,
+            "received_at": 2,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "3",
+            "value": 1,
+            "sampled_at": 3,
+            "received_at": 3,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "4",
+            "value": 1,
+            "sampled_at": 4,
+            "received_at": 4,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "5",
+            "value": 0,
+            "sampled_at": 5,
+            "received_at": 5,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0
+          ],
+          "C_states": [
+            [
+              0,
+              2
+            ]
+          ],
+          "B0_fact": "not_locked",
+          "C_fact": "not_locked",
+          "truth_retained": true,
+          "equal": true
+        }
+      ],
+      "first_decision_acquisitions": {
+        "B0": 5,
+        "C": 5
+      },
+      "passed": true
+    },
+    {
+      "truth": 0,
+      "k": 2,
+      "word": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "trace": [
+        {
+          "report": {
+            "acquisition_id": "1",
+            "value": 0,
+            "sampled_at": 1,
+            "received_at": 1,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "2",
+            "value": 1,
+            "sampled_at": 2,
+            "received_at": 2,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "3",
+            "value": 0,
+            "sampled_at": 3,
+            "received_at": 3,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "4",
+            "value": 0,
+            "sampled_at": 4,
+            "received_at": 4,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0
+          ],
+          "C_states": [
+            [
+              0,
+              1
+            ]
+          ],
+          "B0_fact": "not_locked",
+          "C_fact": "not_locked",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "5",
+            "value": 0,
+            "sampled_at": 5,
+            "received_at": 5,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0
+          ],
+          "C_states": [
+            [
+              0,
+              1
+            ]
+          ],
+          "B0_fact": "not_locked",
+          "C_fact": "not_locked",
+          "truth_retained": true,
+          "equal": true
+        }
+      ],
+      "first_decision_acquisitions": {
+        "B0": 4,
+        "C": 4
+      },
+      "passed": true
+    },
+    {
+      "truth": 0,
+      "k": 2,
+      "word": [
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "trace": [
+        {
+          "report": {
+            "acquisition_id": "1",
+            "value": 0,
+            "sampled_at": 1,
+            "received_at": 1,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "2",
+            "value": 1,
+            "sampled_at": 2,
+            "received_at": 2,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "3",
+            "value": 0,
+            "sampled_at": 3,
+            "received_at": 3,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "4",
+            "value": 0,
+            "sampled_at": 4,
+            "received_at": 4,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0
+          ],
+          "C_states": [
+            [
+              0,
+              1
+            ]
+          ],
+          "B0_fact": "not_locked",
+          "C_fact": "not_locked",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "5",
+            "value": 1,
+            "sampled_at": 5,
+            "received_at": 5,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0
+          ],
+          "C_states": [
+            [
+              0,
+              2
+            ]
+          ],
+          "B0_fact": "not_locked",
+          "C_fact": "not_locked",
+          "truth_retained": true,
+          "equal": true
+        }
+      ],
+      "first_decision_acquisitions": {
+        "B0": 4,
+        "C": 4
+      },
+      "passed": true
+    },
+    {
+      "truth": 0,
+      "k": 2,
+      "word": [
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "trace": [
+        {
+          "report": {
+            "acquisition_id": "1",
+            "value": 0,
+            "sampled_at": 1,
+            "received_at": 1,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "2",
+            "value": 1,
+            "sampled_at": 2,
+            "received_at": 2,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "3",
+            "value": 0,
+            "sampled_at": 3,
+            "received_at": 3,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "4",
+            "value": 1,
+            "sampled_at": 4,
+            "received_at": 4,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "5",
+            "value": 0,
+            "sampled_at": 5,
+            "received_at": 5,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0
+          ],
+          "C_states": [
+            [
+              0,
+              2
+            ]
+          ],
+          "B0_fact": "not_locked",
+          "C_fact": "not_locked",
+          "truth_retained": true,
+          "equal": true
+        }
+      ],
+      "first_decision_acquisitions": {
+        "B0": 5,
+        "C": 5
+      },
+      "passed": true
+    },
+    {
+      "truth": 0,
+      "k": 2,
+      "word": [
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "trace": [
+        {
+          "report": {
+            "acquisition_id": "1",
+            "value": 0,
+            "sampled_at": 1,
+            "received_at": 1,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "2",
+            "value": 1,
+            "sampled_at": 2,
+            "received_at": 2,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "3",
+            "value": 1,
+            "sampled_at": 3,
+            "received_at": 3,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "4",
+            "value": 0,
+            "sampled_at": 4,
+            "received_at": 4,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "5",
+            "value": 0,
+            "sampled_at": 5,
+            "received_at": 5,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0
+          ],
+          "C_states": [
+            [
+              0,
+              2
+            ]
+          ],
+          "B0_fact": "not_locked",
+          "C_fact": "not_locked",
+          "truth_retained": true,
+          "equal": true
+        }
+      ],
+      "first_decision_acquisitions": {
+        "B0": 5,
+        "C": 5
+      },
+      "passed": true
+    },
+    {
+      "truth": 0,
+      "k": 2,
+      "word": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trace": [
+        {
+          "report": {
+            "acquisition_id": "1",
+            "value": 1,
+            "sampled_at": 1,
+            "received_at": 1,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "2",
+            "value": 0,
+            "sampled_at": 2,
+            "received_at": 2,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "3",
+            "value": 0,
+            "sampled_at": 3,
+            "received_at": 3,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "4",
+            "value": 0,
+            "sampled_at": 4,
+            "received_at": 4,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0
+          ],
+          "C_states": [
+            [
+              0,
+              1
+            ]
+          ],
+          "B0_fact": "not_locked",
+          "C_fact": "not_locked",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "5",
+            "value": 0,
+            "sampled_at": 5,
+            "received_at": 5,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0
+          ],
+          "C_states": [
+            [
+              0,
+              1
+            ]
+          ],
+          "B0_fact": "not_locked",
+          "C_fact": "not_locked",
+          "truth_retained": true,
+          "equal": true
+        }
+      ],
+      "first_decision_acquisitions": {
+        "B0": 4,
+        "C": 4
+      },
+      "passed": true
+    },
+    {
+      "truth": 0,
+      "k": 2,
+      "word": [
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "trace": [
+        {
+          "report": {
+            "acquisition_id": "1",
+            "value": 1,
+            "sampled_at": 1,
+            "received_at": 1,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "2",
+            "value": 0,
+            "sampled_at": 2,
+            "received_at": 2,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "3",
+            "value": 0,
+            "sampled_at": 3,
+            "received_at": 3,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "4",
+            "value": 0,
+            "sampled_at": 4,
+            "received_at": 4,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0
+          ],
+          "C_states": [
+            [
+              0,
+              1
+            ]
+          ],
+          "B0_fact": "not_locked",
+          "C_fact": "not_locked",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "5",
+            "value": 1,
+            "sampled_at": 5,
+            "received_at": 5,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0
+          ],
+          "C_states": [
+            [
+              0,
+              2
+            ]
+          ],
+          "B0_fact": "not_locked",
+          "C_fact": "not_locked",
+          "truth_retained": true,
+          "equal": true
+        }
+      ],
+      "first_decision_acquisitions": {
+        "B0": 4,
+        "C": 4
+      },
+      "passed": true
+    },
+    {
+      "truth": 0,
+      "k": 2,
+      "word": [
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "trace": [
+        {
+          "report": {
+            "acquisition_id": "1",
+            "value": 1,
+            "sampled_at": 1,
+            "received_at": 1,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "2",
+            "value": 0,
+            "sampled_at": 2,
+            "received_at": 2,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "3",
+            "value": 0,
+            "sampled_at": 3,
+            "received_at": 3,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "4",
+            "value": 1,
+            "sampled_at": 4,
+            "received_at": 4,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "5",
+            "value": 0,
+            "sampled_at": 5,
+            "received_at": 5,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0
+          ],
+          "C_states": [
+            [
+              0,
+              2
+            ]
+          ],
+          "B0_fact": "not_locked",
+          "C_fact": "not_locked",
+          "truth_retained": true,
+          "equal": true
+        }
+      ],
+      "first_decision_acquisitions": {
+        "B0": 5,
+        "C": 5
+      },
+      "passed": true
+    },
+    {
+      "truth": 0,
+      "k": 2,
+      "word": [
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "trace": [
+        {
+          "report": {
+            "acquisition_id": "1",
+            "value": 1,
+            "sampled_at": 1,
+            "received_at": 1,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "2",
+            "value": 0,
+            "sampled_at": 2,
+            "received_at": 2,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "3",
+            "value": 1,
+            "sampled_at": 3,
+            "received_at": 3,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "4",
+            "value": 0,
+            "sampled_at": 4,
+            "received_at": 4,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "5",
+            "value": 0,
+            "sampled_at": 5,
+            "received_at": 5,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0
+          ],
+          "C_states": [
+            [
+              0,
+              2
+            ]
+          ],
+          "B0_fact": "not_locked",
+          "C_fact": "not_locked",
+          "truth_retained": true,
+          "equal": true
+        }
+      ],
+      "first_decision_acquisitions": {
+        "B0": 5,
+        "C": 5
+      },
+      "passed": true
+    },
+    {
+      "truth": 0,
+      "k": 2,
+      "word": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "trace": [
+        {
+          "report": {
+            "acquisition_id": "1",
+            "value": 1,
+            "sampled_at": 1,
+            "received_at": 1,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "2",
+            "value": 1,
+            "sampled_at": 2,
+            "received_at": 2,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "3",
+            "value": 0,
+            "sampled_at": 3,
+            "received_at": 3,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "4",
+            "value": 0,
+            "sampled_at": 4,
+            "received_at": 4,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "5",
+            "value": 0,
+            "sampled_at": 5,
+            "received_at": 5,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0
+          ],
+          "C_states": [
+            [
+              0,
+              2
+            ]
+          ],
+          "B0_fact": "not_locked",
+          "C_fact": "not_locked",
+          "truth_retained": true,
+          "equal": true
+        }
+      ],
+      "first_decision_acquisitions": {
+        "B0": 5,
+        "C": 5
+      },
+      "passed": true
+    },
+    {
+      "truth": 1,
+      "k": 2,
+      "word": [
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "trace": [
+        {
+          "report": {
+            "acquisition_id": "1",
+            "value": 0,
+            "sampled_at": 1,
+            "received_at": 1,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "2",
+            "value": 0,
+            "sampled_at": 2,
+            "received_at": 2,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "3",
+            "value": 1,
+            "sampled_at": 3,
+            "received_at": 3,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "4",
+            "value": 1,
+            "sampled_at": 4,
+            "received_at": 4,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "5",
+            "value": 1,
+            "sampled_at": 5,
+            "received_at": 5,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            1
+          ],
+          "C_states": [
+            [
+              1,
+              2
+            ]
+          ],
+          "B0_fact": "locked",
+          "C_fact": "locked",
+          "truth_retained": true,
+          "equal": true
+        }
+      ],
+      "first_decision_acquisitions": {
+        "B0": 5,
+        "C": 5
+      },
+      "passed": true
+    },
+    {
+      "truth": 1,
+      "k": 2,
+      "word": [
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "trace": [
+        {
+          "report": {
+            "acquisition_id": "1",
+            "value": 0,
+            "sampled_at": 1,
+            "received_at": 1,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "2",
+            "value": 1,
+            "sampled_at": 2,
+            "received_at": 2,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "3",
+            "value": 0,
+            "sampled_at": 3,
+            "received_at": 3,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "4",
+            "value": 1,
+            "sampled_at": 4,
+            "received_at": 4,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "5",
+            "value": 1,
+            "sampled_at": 5,
+            "received_at": 5,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            1
+          ],
+          "C_states": [
+            [
+              1,
+              2
+            ]
+          ],
+          "B0_fact": "locked",
+          "C_fact": "locked",
+          "truth_retained": true,
+          "equal": true
+        }
+      ],
+      "first_decision_acquisitions": {
+        "B0": 5,
+        "C": 5
+      },
+      "passed": true
+    },
+    {
+      "truth": 1,
+      "k": 2,
+      "word": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "trace": [
+        {
+          "report": {
+            "acquisition_id": "1",
+            "value": 0,
+            "sampled_at": 1,
+            "received_at": 1,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "2",
+            "value": 1,
+            "sampled_at": 2,
+            "received_at": 2,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "3",
+            "value": 1,
+            "sampled_at": 3,
+            "received_at": 3,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "4",
+            "value": 0,
+            "sampled_at": 4,
+            "received_at": 4,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "5",
+            "value": 1,
+            "sampled_at": 5,
+            "received_at": 5,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            1
+          ],
+          "C_states": [
+            [
+              1,
+              2
+            ]
+          ],
+          "B0_fact": "locked",
+          "C_fact": "locked",
+          "truth_retained": true,
+          "equal": true
+        }
+      ],
+      "first_decision_acquisitions": {
+        "B0": 5,
+        "C": 5
+      },
+      "passed": true
+    },
+    {
+      "truth": 1,
+      "k": 2,
+      "word": [
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "trace": [
+        {
+          "report": {
+            "acquisition_id": "1",
+            "value": 0,
+            "sampled_at": 1,
+            "received_at": 1,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "2",
+            "value": 1,
+            "sampled_at": 2,
+            "received_at": 2,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "3",
+            "value": 1,
+            "sampled_at": 3,
+            "received_at": 3,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "4",
+            "value": 1,
+            "sampled_at": 4,
+            "received_at": 4,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            1
+          ],
+          "C_states": [
+            [
+              1,
+              1
+            ]
+          ],
+          "B0_fact": "locked",
+          "C_fact": "locked",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "5",
+            "value": 0,
+            "sampled_at": 5,
+            "received_at": 5,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            1
+          ],
+          "C_states": [
+            [
+              1,
+              2
+            ]
+          ],
+          "B0_fact": "locked",
+          "C_fact": "locked",
+          "truth_retained": true,
+          "equal": true
+        }
+      ],
+      "first_decision_acquisitions": {
+        "B0": 4,
+        "C": 4
+      },
+      "passed": true
+    },
+    {
+      "truth": 1,
+      "k": 2,
+      "word": [
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "trace": [
+        {
+          "report": {
+            "acquisition_id": "1",
+            "value": 0,
+            "sampled_at": 1,
+            "received_at": 1,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "2",
+            "value": 1,
+            "sampled_at": 2,
+            "received_at": 2,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "3",
+            "value": 1,
+            "sampled_at": 3,
+            "received_at": 3,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "4",
+            "value": 1,
+            "sampled_at": 4,
+            "received_at": 4,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            1
+          ],
+          "C_states": [
+            [
+              1,
+              1
+            ]
+          ],
+          "B0_fact": "locked",
+          "C_fact": "locked",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "5",
+            "value": 1,
+            "sampled_at": 5,
+            "received_at": 5,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            1
+          ],
+          "C_states": [
+            [
+              1,
+              1
+            ]
+          ],
+          "B0_fact": "locked",
+          "C_fact": "locked",
+          "truth_retained": true,
+          "equal": true
+        }
+      ],
+      "first_decision_acquisitions": {
+        "B0": 4,
+        "C": 4
+      },
+      "passed": true
+    },
+    {
+      "truth": 1,
+      "k": 2,
+      "word": [
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "trace": [
+        {
+          "report": {
+            "acquisition_id": "1",
+            "value": 1,
+            "sampled_at": 1,
+            "received_at": 1,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "2",
+            "value": 0,
+            "sampled_at": 2,
+            "received_at": 2,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "3",
+            "value": 0,
+            "sampled_at": 3,
+            "received_at": 3,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "4",
+            "value": 1,
+            "sampled_at": 4,
+            "received_at": 4,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "5",
+            "value": 1,
+            "sampled_at": 5,
+            "received_at": 5,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            1
+          ],
+          "C_states": [
+            [
+              1,
+              2
+            ]
+          ],
+          "B0_fact": "locked",
+          "C_fact": "locked",
+          "truth_retained": true,
+          "equal": true
+        }
+      ],
+      "first_decision_acquisitions": {
+        "B0": 5,
+        "C": 5
+      },
+      "passed": true
+    },
+    {
+      "truth": 1,
+      "k": 2,
+      "word": [
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "trace": [
+        {
+          "report": {
+            "acquisition_id": "1",
+            "value": 1,
+            "sampled_at": 1,
+            "received_at": 1,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "2",
+            "value": 0,
+            "sampled_at": 2,
+            "received_at": 2,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "3",
+            "value": 1,
+            "sampled_at": 3,
+            "received_at": 3,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "4",
+            "value": 0,
+            "sampled_at": 4,
+            "received_at": 4,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "5",
+            "value": 1,
+            "sampled_at": 5,
+            "received_at": 5,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            1
+          ],
+          "C_states": [
+            [
+              1,
+              2
+            ]
+          ],
+          "B0_fact": "locked",
+          "C_fact": "locked",
+          "truth_retained": true,
+          "equal": true
+        }
+      ],
+      "first_decision_acquisitions": {
+        "B0": 5,
+        "C": 5
+      },
+      "passed": true
+    },
+    {
+      "truth": 1,
+      "k": 2,
+      "word": [
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "trace": [
+        {
+          "report": {
+            "acquisition_id": "1",
+            "value": 1,
+            "sampled_at": 1,
+            "received_at": 1,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "2",
+            "value": 0,
+            "sampled_at": 2,
+            "received_at": 2,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "3",
+            "value": 1,
+            "sampled_at": 3,
+            "received_at": 3,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "4",
+            "value": 1,
+            "sampled_at": 4,
+            "received_at": 4,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            1
+          ],
+          "C_states": [
+            [
+              1,
+              1
+            ]
+          ],
+          "B0_fact": "locked",
+          "C_fact": "locked",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "5",
+            "value": 0,
+            "sampled_at": 5,
+            "received_at": 5,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            1
+          ],
+          "C_states": [
+            [
+              1,
+              2
+            ]
+          ],
+          "B0_fact": "locked",
+          "C_fact": "locked",
+          "truth_retained": true,
+          "equal": true
+        }
+      ],
+      "first_decision_acquisitions": {
+        "B0": 4,
+        "C": 4
+      },
+      "passed": true
+    },
+    {
+      "truth": 1,
+      "k": 2,
+      "word": [
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "trace": [
+        {
+          "report": {
+            "acquisition_id": "1",
+            "value": 1,
+            "sampled_at": 1,
+            "received_at": 1,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "2",
+            "value": 0,
+            "sampled_at": 2,
+            "received_at": 2,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "3",
+            "value": 1,
+            "sampled_at": 3,
+            "received_at": 3,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "4",
+            "value": 1,
+            "sampled_at": 4,
+            "received_at": 4,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            1
+          ],
+          "C_states": [
+            [
+              1,
+              1
+            ]
+          ],
+          "B0_fact": "locked",
+          "C_fact": "locked",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "5",
+            "value": 1,
+            "sampled_at": 5,
+            "received_at": 5,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            1
+          ],
+          "C_states": [
+            [
+              1,
+              1
+            ]
+          ],
+          "B0_fact": "locked",
+          "C_fact": "locked",
+          "truth_retained": true,
+          "equal": true
+        }
+      ],
+      "first_decision_acquisitions": {
+        "B0": 4,
+        "C": 4
+      },
+      "passed": true
+    },
+    {
+      "truth": 1,
+      "k": 2,
+      "word": [
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "trace": [
+        {
+          "report": {
+            "acquisition_id": "1",
+            "value": 1,
+            "sampled_at": 1,
+            "received_at": 1,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "2",
+            "value": 1,
+            "sampled_at": 2,
+            "received_at": 2,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "3",
+            "value": 0,
+            "sampled_at": 3,
+            "received_at": 3,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "4",
+            "value": 0,
+            "sampled_at": 4,
+            "received_at": 4,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "5",
+            "value": 1,
+            "sampled_at": 5,
+            "received_at": 5,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            1
+          ],
+          "C_states": [
+            [
+              1,
+              2
+            ]
+          ],
+          "B0_fact": "locked",
+          "C_fact": "locked",
+          "truth_retained": true,
+          "equal": true
+        }
+      ],
+      "first_decision_acquisitions": {
+        "B0": 5,
+        "C": 5
+      },
+      "passed": true
+    },
+    {
+      "truth": 1,
+      "k": 2,
+      "word": [
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "trace": [
+        {
+          "report": {
+            "acquisition_id": "1",
+            "value": 1,
+            "sampled_at": 1,
+            "received_at": 1,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "2",
+            "value": 1,
+            "sampled_at": 2,
+            "received_at": 2,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "3",
+            "value": 0,
+            "sampled_at": 3,
+            "received_at": 3,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "4",
+            "value": 1,
+            "sampled_at": 4,
+            "received_at": 4,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            1
+          ],
+          "C_states": [
+            [
+              1,
+              1
+            ]
+          ],
+          "B0_fact": "locked",
+          "C_fact": "locked",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "5",
+            "value": 0,
+            "sampled_at": 5,
+            "received_at": 5,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            1
+          ],
+          "C_states": [
+            [
+              1,
+              2
+            ]
+          ],
+          "B0_fact": "locked",
+          "C_fact": "locked",
+          "truth_retained": true,
+          "equal": true
+        }
+      ],
+      "first_decision_acquisitions": {
+        "B0": 4,
+        "C": 4
+      },
+      "passed": true
+    },
+    {
+      "truth": 1,
+      "k": 2,
+      "word": [
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "trace": [
+        {
+          "report": {
+            "acquisition_id": "1",
+            "value": 1,
+            "sampled_at": 1,
+            "received_at": 1,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "2",
+            "value": 1,
+            "sampled_at": 2,
+            "received_at": 2,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "3",
+            "value": 0,
+            "sampled_at": 3,
+            "received_at": 3,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "4",
+            "value": 1,
+            "sampled_at": 4,
+            "received_at": 4,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            1
+          ],
+          "C_states": [
+            [
+              1,
+              1
+            ]
+          ],
+          "B0_fact": "locked",
+          "C_fact": "locked",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "5",
+            "value": 1,
+            "sampled_at": 5,
+            "received_at": 5,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            1
+          ],
+          "C_states": [
+            [
+              1,
+              1
+            ]
+          ],
+          "B0_fact": "locked",
+          "C_fact": "locked",
+          "truth_retained": true,
+          "equal": true
+        }
+      ],
+      "first_decision_acquisitions": {
+        "B0": 4,
+        "C": 4
+      },
+      "passed": true
+    },
+    {
+      "truth": 1,
+      "k": 2,
+      "word": [
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "trace": [
+        {
+          "report": {
+            "acquisition_id": "1",
+            "value": 1,
+            "sampled_at": 1,
+            "received_at": 1,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "2",
+            "value": 1,
+            "sampled_at": 2,
+            "received_at": 2,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "3",
+            "value": 1,
+            "sampled_at": 3,
+            "received_at": 3,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            1
+          ],
+          "C_states": [
+            [
+              1,
+              0
+            ]
+          ],
+          "B0_fact": "locked",
+          "C_fact": "locked",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "4",
+            "value": 0,
+            "sampled_at": 4,
+            "received_at": 4,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            1
+          ],
+          "C_states": [
+            [
+              1,
+              1
+            ]
+          ],
+          "B0_fact": "locked",
+          "C_fact": "locked",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "5",
+            "value": 0,
+            "sampled_at": 5,
+            "received_at": 5,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            1
+          ],
+          "C_states": [
+            [
+              1,
+              2
+            ]
+          ],
+          "B0_fact": "locked",
+          "C_fact": "locked",
+          "truth_retained": true,
+          "equal": true
+        }
+      ],
+      "first_decision_acquisitions": {
+        "B0": 3,
+        "C": 3
+      },
+      "passed": true
+    },
+    {
+      "truth": 1,
+      "k": 2,
+      "word": [
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "trace": [
+        {
+          "report": {
+            "acquisition_id": "1",
+            "value": 1,
+            "sampled_at": 1,
+            "received_at": 1,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "2",
+            "value": 1,
+            "sampled_at": 2,
+            "received_at": 2,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "3",
+            "value": 1,
+            "sampled_at": 3,
+            "received_at": 3,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            1
+          ],
+          "C_states": [
+            [
+              1,
+              0
+            ]
+          ],
+          "B0_fact": "locked",
+          "C_fact": "locked",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "4",
+            "value": 0,
+            "sampled_at": 4,
+            "received_at": 4,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            1
+          ],
+          "C_states": [
+            [
+              1,
+              1
+            ]
+          ],
+          "B0_fact": "locked",
+          "C_fact": "locked",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "5",
+            "value": 1,
+            "sampled_at": 5,
+            "received_at": 5,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            1
+          ],
+          "C_states": [
+            [
+              1,
+              1
+            ]
+          ],
+          "B0_fact": "locked",
+          "C_fact": "locked",
+          "truth_retained": true,
+          "equal": true
+        }
+      ],
+      "first_decision_acquisitions": {
+        "B0": 3,
+        "C": 3
+      },
+      "passed": true
+    },
+    {
+      "truth": 1,
+      "k": 2,
+      "word": [
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "trace": [
+        {
+          "report": {
+            "acquisition_id": "1",
+            "value": 1,
+            "sampled_at": 1,
+            "received_at": 1,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "2",
+            "value": 1,
+            "sampled_at": 2,
+            "received_at": 2,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "3",
+            "value": 1,
+            "sampled_at": 3,
+            "received_at": 3,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            1
+          ],
+          "C_states": [
+            [
+              1,
+              0
+            ]
+          ],
+          "B0_fact": "locked",
+          "C_fact": "locked",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "4",
+            "value": 1,
+            "sampled_at": 4,
+            "received_at": 4,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            1
+          ],
+          "C_states": [
+            [
+              1,
+              0
+            ]
+          ],
+          "B0_fact": "locked",
+          "C_fact": "locked",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "5",
+            "value": 0,
+            "sampled_at": 5,
+            "received_at": 5,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            1
+          ],
+          "C_states": [
+            [
+              1,
+              1
+            ]
+          ],
+          "B0_fact": "locked",
+          "C_fact": "locked",
+          "truth_retained": true,
+          "equal": true
+        }
+      ],
+      "first_decision_acquisitions": {
+        "B0": 3,
+        "C": 3
+      },
+      "passed": true
+    },
+    {
+      "truth": 1,
+      "k": 2,
+      "word": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "trace": [
+        {
+          "report": {
+            "acquisition_id": "1",
+            "value": 1,
+            "sampled_at": 1,
+            "received_at": 1,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "2",
+            "value": 1,
+            "sampled_at": 2,
+            "received_at": 2,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            0,
+            1
+          ],
+          "C_states": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "B0_fact": "unresolved",
+          "C_fact": "unresolved",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "3",
+            "value": 1,
+            "sampled_at": 3,
+            "received_at": 3,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            1
+          ],
+          "C_states": [
+            [
+              1,
+              0
+            ]
+          ],
+          "B0_fact": "locked",
+          "C_fact": "locked",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "4",
+            "value": 1,
+            "sampled_at": 4,
+            "received_at": 4,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            1
+          ],
+          "C_states": [
+            [
+              1,
+              0
+            ]
+          ],
+          "B0_fact": "locked",
+          "C_fact": "locked",
+          "truth_retained": true,
+          "equal": true
+        },
+        {
+          "report": {
+            "acquisition_id": "5",
+            "value": 1,
+            "sampled_at": 5,
+            "received_at": 5,
+            "epoch": 0,
+            "source": "ordinary-sensor",
+            "validity": "valid"
+          },
+          "B0_admission": "accepted",
+          "C_admission": "accepted",
+          "B0_candidates": [
+            1
+          ],
+          "C_states": [
+            [
+              1,
+              0
+            ]
+          ],
+          "B0_fact": "locked",
+          "C_fact": "locked",
+          "truth_retained": true,
+          "equal": true
+        }
+      ],
+      "first_decision_acquisitions": {
+        "B0": 3,
+        "C": 3
+      },
+      "passed": true
+    }
+  ],
+  "attempted": [
+    {
+      "truth": 0,
+      "k": 0,
+      "word": [
+        0
+      ]
+    },
+    {
+      "truth": 1,
+      "k": 0,
+      "word": [
+        1
+      ]
+    },
+    {
+      "truth": 0,
+      "k": 1,
+      "word": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "truth": 0,
+      "k": 1,
+      "word": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "truth": 0,
+      "k": 1,
+      "word": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "truth": 0,
+      "k": 1,
+      "word": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "truth": 1,
+      "k": 1,
+      "word": [
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "truth": 1,
+      "k": 1,
+      "word": [
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "truth": 1,
+      "k": 1,
+      "word": [
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "truth": 1,
+      "k": 1,
+      "word": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "truth": 0,
+      "k": 2,
+      "word": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "truth": 0,
+      "k": 2,
+      "word": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "truth": 0,
+      "k": 2,
+      "word": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "truth": 0,
+      "k": 2,
+      "word": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "truth": 0,
+      "k": 2,
+      "word": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "truth": 0,
+      "k": 2,
+      "word": [
+        0,
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "truth": 0,
+      "k": 2,
+      "word": [
+        0,
+        0,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "truth": 0,
+      "k": 2,
+      "word": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "truth": 0,
+      "k": 2,
+      "word": [
+        0,
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "truth": 0,
+      "k": 2,
+      "word": [
+        0,
+        1,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "truth": 0,
+      "k": 2,
+      "word": [
+        0,
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "truth": 0,
+      "k": 2,
+      "word": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "truth": 0,
+      "k": 2,
+      "word": [
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "truth": 0,
+      "k": 2,
+      "word": [
+        1,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "truth": 0,
+      "k": 2,
+      "word": [
+        1,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "truth": 0,
+      "k": 2,
+      "word": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "truth": 1,
+      "k": 2,
+      "word": [
+        0,
+        0,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "truth": 1,
+      "k": 2,
+      "word": [
+        0,
+        1,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "truth": 1,
+      "k": 2,
+      "word": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "truth": 1,
+      "k": 2,
+      "word": [
+        0,
+        1,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "truth": 1,
+      "k": 2,
+      "word": [
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "truth": 1,
+      "k": 2,
+      "word": [
+        1,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "truth": 1,
+      "k": 2,
+      "word": [
+        1,
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "truth": 1,
+      "k": 2,
+      "word": [
+        1,
+        0,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "truth": 1,
+      "k": 2,
+      "word": [
+        1,
+        0,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "truth": 1,
+      "k": 2,
+      "word": [
+        1,
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "truth": 1,
+      "k": 2,
+      "word": [
+        1,
+        1,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "truth": 1,
+      "k": 2,
+      "word": [
+        1,
+        1,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "truth": 1,
+      "k": 2,
+      "word": [
+        1,
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "truth": 1,
+      "k": 2,
+      "word": [
+        1,
+        1,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "truth": 1,
+      "k": 2,
+      "word": [
+        1,
+        1,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "truth": 1,
+      "k": 2,
+      "word": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    }
+  ],
+  "exclusions": [],
+  "controls": {
+    "lower_bound_witnesses": [
+      {
+        "k": 0,
+        "word": [],
+        "possible_truths": [
+          0,
+          1
+        ],
+        "needed_worst_case_valid_acquisitions": 1
+      },
+      {
+        "k": 1,
+        "word": [
+          0,
+          1
+        ],
+        "possible_truths": [
+          0,
+          1
+        ],
+        "needed_worst_case_valid_acquisitions": 3
+      },
+      {
+        "k": 2,
+        "word": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "possible_truths": [
+          0,
+          1
+        ],
+        "needed_worst_case_valid_acquisitions": 5
+      }
+    ],
+    "duplicate": {
+      "first": [
+        "accepted",
+        "unresolved"
+      ],
+      "second": [
+        "duplicate",
+        "unresolved"
+      ],
+      "wrong_fact_if_naively_counted_twice": "locked",
+      "generating_truth_can_be": 0
+    },
+    "violated_error_budget": {
+      "generating_truth": 0,
+      "reports": [
+        1,
+        1
+      ],
+      "assumed_k": 1,
+      "actual_errors": 2,
+      "fact": "locked",
+      "consistent_but_wrong": true
+    },
+    "unbounded_corruption": {
+      "word": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "possible_truths": [
+        0,
+        1
+      ],
+      "infinite_witness": "The same all-one word is allowed under either constant truth with arbitrary corruption."
+    },
+    "B2_ideal": [
+      {
+        "truth": 0,
+        "extra_observation": 0,
+        "inferred": 0,
+        "acquisitions": 1,
+        "assumption": "A correct additional measurement; unvalidated hardware"
+      },
+      {
+        "truth": 1,
+        "extra_observation": 1,
+        "inferred": 1,
+        "acquisitions": 1,
+        "assumption": "A correct additional measurement; unvalidated hardware"
+      }
+    ],
+    "B2_common_cause": {
+      "observed_pair": [
+        1,
+        1
+      ],
+      "compatible_truths": [
+        0,
+        1
+      ],
+      "claim": "Channel duplication does not establish independent information."
+    },
+    "passive_interlock": [
+      {
+        "truth": 0,
+        "release_request": true,
+        "allowed_by_ideal_interlock": false
+      },
+      {
+        "truth": 1,
+        "release_request": true,
+        "allowed_by_ideal_interlock": true
+      }
+    ],
+    "B1": {
+      "status": "not_run",
+      "workload": null,
+      "response_time": null,
+      "information_bound": "Same-history indistinguishability also limits an operator without extra information."
+    },
+    "N": {
+      "status": "no_observation",
+      "possible_truths": [
+        0,
+        1
+      ],
+      "service_completion": "not_measured"
+    },
+    "preconditions": {
+      "retention_alone_authorizes_release": false,
+      "all_declared_facts_true": true,
+      "physical_facts_verified": false
+    },
+    "closed_boxes": [
+      {
+        "id": "gap",
+        "inputs": {
+          "a": [
+            [
+              "0",
+              "1"
+            ]
+          ],
+          "b": [
+            [
+              "2",
+              "3"
+            ]
+          ]
+        },
+        "disjoint": true,
+        "overlap_volume": "0",
+        "overlap_witness": null,
+        "zero_volume_would_be_false_certificate": false
+      },
+      {
+        "id": "positive-overlap",
+        "inputs": {
+          "a": [
+            [
+              "0",
+              "2"
+            ]
+          ],
+          "b": [
+            [
+              "1",
+              "3"
+            ]
+          ]
+        },
+        "disjoint": false,
+        "overlap_volume": "1",
+        "overlap_witness": [
+          "1"
+        ],
+        "zero_volume_would_be_false_certificate": false
+      },
+      {
+        "id": "touching-point",
+        "inputs": {
+          "a": [
+            [
+              "0",
+              "1"
+            ]
+          ],
+          "b": [
+            [
+              "1",
+              "2"
+            ]
+          ]
+        },
+        "disjoint": false,
+        "overlap_volume": "0",
+        "overlap_witness": [
+          "1"
+        ],
+        "zero_volume_would_be_false_certificate": true
+      },
+      {
+        "id": "touching-edge",
+        "inputs": {
+          "a": [
+            [
+              "0",
+              "1"
+            ],
+            [
+              "0",
+              "1"
+            ]
+          ],
+          "b": [
+            [
+              "1",
+              "2"
+            ],
+            [
+              "0",
+              "1"
+            ]
+          ]
+        },
+        "disjoint": false,
+        "overlap_volume": "0",
+        "overlap_witness": [
+          "1",
+          "0"
+        ],
+        "zero_volume_would_be_false_certificate": true
+      },
+      {
+        "id": "coincident-points",
+        "inputs": {
+          "a": [
+            [
+              "1",
+              "1"
+            ]
+          ],
+          "b": [
+            [
+              "1",
+              "1"
+            ]
+          ]
+        },
+        "disjoint": false,
+        "overlap_volume": "0",
+        "overlap_witness": [
+          "1"
+        ],
+        "zero_volume_would_be_false_certificate": true
+      },
+      {
+        "id": "tiny-gap",
+        "inputs": {
+          "a": [
+            [
+              "0",
+              "1"
+            ]
+          ],
+          "b": [
+            [
+              "1.00000000000000000000000000000000000000000000000001",
+              "2"
+            ]
+          ]
+        },
+        "disjoint": true,
+        "overlap_volume": "0",
+        "overlap_witness": null,
+        "zero_volume_would_be_false_certificate": false
+      }
+    ]
+  },
+  "voltage": [
+    {
+      "tau_upper_s": 1,
+      "floor_upper": "0",
+      "voltage_limit": "1/10",
+      "initial_upper": "1",
+      "status": "conditional_bound",
+      "wait_s": 3,
+      "search": [
+        {
+          "t_s": 0,
+          "upper": "1",
+          "condition_established": false
+        },
+        {
+          "t_s": 1,
+          "upper": "16019531/43545600",
+          "condition_established": false
+        },
+        {
+          "t_s": 2,
+          "upper": "256625373459961/1896219279360000",
+          "condition_established": false
+        },
+        {
+          "t_s": 3,
+          "upper": "59555092015021504133779903570465742532019002647312881/1196195999594879356460500957340785263980943769600000000",
+          "condition_established": true
+        }
+      ]
+    },
+    {
+      "tau_upper_s": 1,
+      "floor_upper": "1/20",
+      "voltage_limit": "1/10",
+      "initial_upper": "1",
+      "status": "conditional_bound",
+      "wait_s": 3,
+      "search": [
+        {
+          "t_s": 0,
+          "upper": "1",
+          "condition_established": false
+        },
+        {
+          "t_s": 1,
+          "upper": "347916689/870912000",
+          "condition_established": false
+        },
+        {
+          "t_s": 2,
+          "upper": "6772101375099259/37924385587200000",
+          "condition_established": false
+        },
+        {
+          "t_s": 3,
+          "upper": "2327742747880287935002319125179634372089304819898944739/23923919991897587129210019146815705279618875392000000000",
+          "condition_established": true
+        }
+      ]
+    },
+    {
+      "tau_upper_s": 1,
+      "floor_upper": "1/10",
+      "voltage_limit": "1/10",
+      "initial_upper": "1",
+      "status": "no_finite_passive_wait_certificate",
+      "wait_s": null,
+      "reason": "An allowed worst-case constant-floor trajectory never reaches the limit.",
+      "search": []
+    },
+    {
+      "tau_upper_s": 2,
+      "floor_upper": "0",
+      "voltage_limit": "1/10",
+      "initial_upper": "1",
+      "status": "conditional_bound",
+      "wait_s": 5,
+      "search": [
+        {
+          "t_s": 0,
+          "upper": "1",
+          "condition_established": false
+        },
+        {
+          "t_s": 1,
+          "upper": "47600296993/78479622144",
+          "condition_established": false
+        },
+        {
+          "t_s": 2,
+          "upper": "16019531/43545600",
+          "condition_established": false
+        },
+        {
+          "t_s": 3,
+          "upper": "244039119845613080619911641/1093707456130239315312640000",
+          "condition_established": false
+        },
+        {
+          "t_s": 4,
+          "upper": "256625373459961/1896219279360000",
+          "condition_established": false
+        },
+        {
+          "t_s": 5,
+          "upper": "246701046919299421948339674020845904296018135543602976099875346246364641/3005434014185923959803174181317472534998242901597748637622302143053561856",
+          "condition_established": true
+        }
+      ]
+    },
+    {
+      "tau_upper_s": 2,
+      "floor_upper": "1/20",
+      "voltage_limit": "1/10",
+      "initial_upper": "1",
+      "status": "conditional_bound",
+      "wait_s": 6,
+      "search": [
+        {
+          "t_s": 0,
+          "upper": "1",
+          "condition_established": false
+        },
+        {
+          "t_s": 1,
+          "upper": "982885265011/1569592442880",
+          "condition_established": false
+        },
+        {
+          "t_s": 2,
+          "upper": "347916689/870912000",
+          "condition_established": false
+        },
+        {
+          "t_s": 3,
+          "upper": "5730450733196887847090961179/21874149122604786306252800000",
+          "condition_established": false
+        },
+        {
+          "t_s": 4,
+          "upper": "6772101375099259/37924385587200000",
+          "condition_established": false
+        },
+        {
+          "t_s": 5,
+          "upper": "1538550781130522595364325597542708943324517495385241036703986744346898007/12021736056743695839212696725269890139992971606390994550489208572214247424",
+          "condition_established": false
+        },
+        {
+          "t_s": 6,
+          "upper": "2327742747880287935002319125179634372089304819898944739/23923919991897587129210019146815705279618875392000000000",
+          "condition_established": true
+        }
+      ]
+    },
+    {
+      "tau_upper_s": 2,
+      "floor_upper": "1/10",
+      "voltage_limit": "1/10",
+      "initial_upper": "1",
+      "status": "no_finite_passive_wait_certificate",
+      "wait_s": null,
+      "reason": "An allowed worst-case constant-floor trajectory never reaches the limit.",
+      "search": []
+    },
+    {
+      "tau_upper_s": 4,
+      "floor_upper": "0",
+      "voltage_limit": "1/10",
+      "initial_upper": "1",
+      "status": "conditional_bound",
+      "wait_s": 10,
+      "search": [
+        {
+          "t_s": 0,
+          "upper": "1",
+          "condition_established": false
+        },
+        {
+          "t_s": 1,
+          "upper": "1251737419384733/1607262661509120",
+          "condition_established": false
+        },
+        {
+          "t_s": 2,
+          "upper": "47600296993/78479622144",
+          "condition_established": false
+        },
+        {
+          "t_s": 3,
+          "upper": "15621751497371/33071248179200",
+          "condition_established": false
+        },
+        {
+          "t_s": 4,
+          "upper": "16019531/43545600",
+          "condition_established": false
+        },
+        {
+          "t_s": 5,
+          "upper": "496690091424521395141061168349675121/1733618762642445549222326049561378816",
+          "condition_established": false
+        },
+        {
+          "t_s": 6,
+          "upper": "244039119845613080619911641/1093707456130239315312640000",
+          "condition_established": false
+        },
+        {
+          "t_s": 7,
+          "upper": "6148117731888794252713903762943329/35379974747805011208618898970640384",
+          "condition_established": false
+        },
+        {
+          "t_s": 8,
+          "upper": "256625373459961/1896219279360000",
+          "condition_established": false
+        },
+        {
+          "t_s": 9,
+          "upper": "15982301816067157486867073158666344390955626652418072551400401956641336899662721/151635857687705567020505786032259143180035865121358410974673109814193642536960000",
+          "condition_established": false
+        },
+        {
+          "t_s": 10,
+          "upper": "246701046919299421948339674020845904296018135543602976099875346246364641/3005434014185923959803174181317472534998242901597748637622302143053561856",
+          "condition_established": true
+        }
+      ]
+    },
+    {
+      "tau_upper_s": 4,
+      "floor_upper": "1/20",
+      "voltage_limit": "1/10",
+      "initial_upper": "1",
+      "status": "conditional_bound",
+      "wait_s": 12,
+      "search": [
+        {
+          "t_s": 0,
+          "upper": "1",
+          "condition_established": false
+        },
+        {
+          "t_s": 1,
+          "upper": "25390273629819047/32145253230182400",
+          "condition_established": false
+        },
+        {
+          "t_s": 2,
+          "upper": "982885265011/1569592442880",
+          "condition_established": false
+        },
+        {
+          "t_s": 3,
+          "upper": "329884526629249/661424963584000",
+          "condition_established": false
+        },
+        {
+          "t_s": 4,
+          "upper": "347916689/870912000",
+          "condition_established": false
+        },
+        {
+          "t_s": 5,
+          "upper": "2234146099941670411380497649641041223/6934475050569782196889304198245515264",
+          "condition_established": false
+        },
+        {
+          "t_s": 6,
+          "upper": "5730450733196887847090961179/21874149122604786306252800000",
+          "condition_established": false
+        },
+        {
+          "t_s": 7,
+          "upper": "30438842330738420402036614093312727/141519898991220044834475595882561536",
+          "condition_established": false
+        },
+        {
+          "t_s": 8,
+          "upper": "6772101375099259/37924385587200000",
+          "condition_established": false
+        },
+        {
+          "t_s": 9,
+          "upper": "455299592192981559270980176046919686608192771517301789451280746990379043630551699/3032717153754111340410115720645182863600717302427168219493462196283872850739200000",
+          "condition_established": false
+        },
+        {
+          "t_s": 10,
+          "upper": "1538550781130522595364325597542708943324517495385241036703986744346898007/12021736056743695839212696725269890139992971606390994550489208572214247424",
+          "condition_established": false
+        },
+        {
+          "t_s": 11,
+          "upper": "49984728435059473182191660383052484734403674891875950055910350487419468889553157745766979/451404910198883017355337427316717491316999000346366777642098734183363842284716032000000000",
+          "condition_established": false
+        },
+        {
+          "t_s": 12,
+          "upper": "2327742747880287935002319125179634372089304819898944739/23923919991897587129210019146815705279618875392000000000",
+          "condition_established": true
+        }
+      ]
+    },
+    {
+      "tau_upper_s": 4,
+      "floor_upper": "1/10",
+      "voltage_limit": "1/10",
+      "initial_upper": "1",
+      "status": "no_finite_passive_wait_certificate",
+      "wait_s": null,
+      "reason": "An allowed worst-case constant-floor trajectory never reaches the limit.",
+      "search": []
+    }
+  ]
+}

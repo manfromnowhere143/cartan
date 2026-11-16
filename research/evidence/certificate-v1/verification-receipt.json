@@ -1,0 +1,73 @@
+{
+  "recorded_at": "2026-11-16T11:51:58.889545+00:00",
+  "owner": "research",
+  "design_commit": "22e725b",
+  "code_commit": "7c37511",
+  "model_version": "recovery-evidence/0.1.0",
+  "commands": [
+    {
+      "command": "python3 backend/certificates/run_study.py --output research/evidence/certificate-v1/attempt-01",
+      "exit_code": 0
+    },
+    {
+      "command": "python3 -c 'import sys, unittest; sys.path.insert(0, \"backend/certificates\"); from run_study import limits; print(limits()); suite = unittest.defaultTestLoader.discover(\"backend/certificates\", pattern=\"test_*.py\"); result = unittest.TextTestRunner(verbosity=2).run(suite); sys.exit(not result.wasSuccessful())'",
+      "exit_code": 0,
+      "unit_tests_passed": 12,
+      "reported_seconds": 0.003,
+      "test_sha256": "face5829174d16424c828f89aadce87aecd38c276dfe3c759eb56d34c8cd770d"
+    },
+    {
+      "command": "python3 backend/certificates/run_study.py --output research/evidence/certificate-v1/replay-02",
+      "exit_code": 0
+    },
+    {
+      "command": "python3 backend/certificates/run_study.py --verify research/evidence/certificate-v1/attempt-01",
+      "exit_code": 0
+    },
+    {
+      "command": "python3 backend/certificates/run_study.py --verify research/evidence/certificate-v1/replay-02",
+      "exit_code": 0
+    }
+  ],
+  "replay": {
+    "byte_identical_core": true,
+    "identical_input_hashes": true,
+    "core_sha256": "264ae9a10b2063d48be280a2dcb228e57d2e200b9a0dd488ae2f406a011b8a2e"
+  },
+  "frozen_artifacts": {
+    "packet_files_hash_and_size_matched": 12,
+    "block1_backend_unchanged": {
+      "README.md": "4198b971a28b25073d7fac84f0af04a62b7d009b991ffd0fc17aa442f3e43f81",
+      "cartan_model.py": "c5c22f704871c12e134786dd0b3c6ec3283ef6343702930fde9569fe9228612a",
+      "oracle.py": "56d80b435d15d380d8d243f1c23d090164ea101eb2571893c1ee86d9ee5c0d7b",
+      "pyproject.toml": "1d87c7010bf0e8d7d3902a7605a5e9c2053b6b50ca7ed72ce6b9dec4c191b1b4",
+      "run_verification.py": "63e21a3b6e7b8012026b556960f2f81defd68cf0301baa0d8413a7f330f7e5d8",
+      "test_model.py": "b19b5871852c88f3b774761c527334568c84c4c12c9c889d2da6017f7189f7b0"
+    },
+    "contract_v1_and_UI_vendor_identical": {
+      "README.md": "6b1846d07fb98bbdbc48dc344eec10eeec4770f39cb9ddd76bdac23726beda7b",
+      "schema.json": "a3b80883a7ce92bea4dcac44ff50103b8acdd66018f9cbe2105237c9ff7e01fd",
+      "fixture.json": "b231fa24f057ce647dbf282ed8233fc88d0bbbed579995213306edac30e65d44",
+      "validate.py": "76cad93c36725d8358d2b9373702d29f1fcc175178ddb2ca78125691f85ba7a2",
+      "SHA256SUMS.json": "6a20a83c78b8f763a4bc83d7f01e819191b1af162f8a484683841962dcf63697"
+    }
+  },
+  "UI_consumption": {
+    "commit": "8c34d1ce842d7edebf9dd8546db85a43f3c122b0",
+    "static_payloads_independently_verified": true,
+    "browser_and_runtime_reverified": false,
+    "UI_worktree_edited": false
+  },
+  "resource_notes": {
+    "reading_scratch_allocated_kib": 3188,
+    "initial_two_outputs_file_bytes": 316496,
+    "memory_limit_supported": false,
+    "cpu_cap_set": true
+  },
+  "limitations": [
+    "No actual interface fault mapping or sensor error budget validated",
+    "Only a measurement-verification subproblem compared",
+    "B1 not run; B2 and interlock idealizations only",
+    "No physical, mission or economic superiority established"
+  ]
+}
