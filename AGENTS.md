@@ -51,8 +51,12 @@ evidence. Shared vision does not merge CARTAN with Nisayon or its budget.
   shell startup, user config, hooks, credentials or launchers in parallel.
 - Research owns scientific contracts and evidence; UI consumes versioned
   contracts and proposes changes. Follow `docs/COORDINATION.md`.
-- Never bypass approvals, sandboxing, hook trust or network controls to pass a
-  check. Do not auto-trust a project or hook. Report unmet prerequisites.
+- Daniel explicitly requires full-access/YOLO launches as of 16 November 2026.
+  This supersedes the original setup packet's restrictive launch defaults.
+  Codex uses approval/sandbox and hook-trust bypass with live search; Claude uses
+  permission bypass with its sandbox disabled. The installed launcher supplies
+  the runtime policy; retained lane settings are older snapshots. Do not revert
+  these launch modes or add permission prompts without Daniel's instruction.
 - Use the CARTAN launcher. Direct generic client commands inherit broader machine
   defaults. Never treat cwd or prose as a complete filesystem security boundary.
 - Credentials remain in the client's existing credential store. Do not print,

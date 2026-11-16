@@ -79,7 +79,28 @@ class EnvironmentTests(unittest.TestCase):
                     self.assertEqual(plan["cwd"], str(getattr(self, lane)))
                     self.assertIn("CARTAN-01" if lane == "research" else "CARTAN-02", plan["prompt_file"])
                     self.assertFalse(plan["model_started"])
-                    self.assertFalse(any("dangerously" in arg or "bypassPermissions" in arg for arg in plan["argv"]))
+                    self.assert_full_access(plan)
+
+    def assert_full_access(self, plan):
+        argv = plan["argv"]
+        if plan["client"] == "codex":
+            self.assertIn("--dangerously-bypass-approvals-and-sandbox", argv)
+            self.assertIn("--dangerously-bypass-hook-trust", argv)
+            self.assertIn("--search", argv)
+            self.assertIn('approval_policy="never"', argv)
+            self.assertIn('sandbox_mode="danger-full-access"', argv)
+            self.assertIn('web_search="live"', argv)
+            self.assertNotIn("--sandbox", argv)
+            self.assertNotIn("--ask-for-approval", argv)
+            self.assertNotIn("sandbox_workspace_write.network_access=false", argv)
+        else:
+            self.assertIn("--dangerously-skip-permissions", argv)
+            self.assertEqual(argv[argv.index("--permission-mode") + 1], "bypassPermissions")
+            settings = Path(argv[argv.index("--settings") + 1])
+            self.assertEqual(settings, self.root / "config/claude-full-access.json")
+            configuration = json.loads(settings.read_text())
+            self.assertEqual(configuration["permissions"], {"defaultMode": "bypassPermissions"})
+            self.assertEqual(configuration["sandbox"], {"enabled": False})
 
     def test_default_and_aliases(self):
         for name, client in launch.CLIENT_NAMES.items():
@@ -98,14 +119,12 @@ class EnvironmentTests(unittest.TestCase):
                     self.assertEqual(plan["action"], "resume")
                     self.assertFalse(any("CARTAN-01" in arg or "CARTAN-02" in arg for arg in argv))
                     self.assertFalse(any(arg in ("--last", "--all", "--continue") for arg in argv))
+                    self.assert_full_access(plan)
                     if client == "codex":
                         self.assertEqual(argv[1], "resume")
                         self.assertEqual(argv[argv.index("-C") + 1], plan["cwd"])
-                        self.assertEqual(argv[argv.index("--sandbox") + 1], "workspace-write")
-                        self.assertEqual(argv[argv.index("--ask-for-approval") + 1], "on-request")
                     else:
                         self.assertEqual(argv[-1], "--resume")
-                        self.assertEqual(argv[argv.index("--permission-mode") + 1], "manual")
                         self.assertIn("--strict-mcp-config", argv)
 
     def test_start_reads_current_canonical_setup_without_changing_lane(self):
@@ -240,9 +259,25 @@ class EnvironmentTests(unittest.TestCase):
                 launch.load_json(path)
             self.assertNotIn("SECRET_CANARY", str(error.exception))
 
-    def test_security_policy_drift_rejected(self):
+    def test_retained_project_snapshot_drift_rejected(self):
         path = self.root / ".codex/config.toml"
         with changed(path, path.read_bytes().replace(b'"on-request"', b'"never"')):
+            with self.assertRaises(launch.PreflightError):
+                launch.validate_identity(self.root, self.config, "research")
+
+    def test_full_access_does_not_modify_settings_used_by_existing_sessions(self):
+        paths = [self.root / ".codex/config.toml", self.root / ".claude/settings.json",
+                 self.research / ".codex/config.toml", self.research / ".claude/settings.json",
+                 self.ui / ".codex/config.toml", self.ui / ".claude/settings.json"]
+        before = {p: p.read_bytes() for p in paths}
+        for client in ("codex", "claude"):
+            for lane in ("research", "ui"):
+                self.assert_full_access(launch.make_plan(client, lane, self.root))
+        self.assertEqual({p: p.read_bytes() for p in paths}, before)
+
+    def test_claude_full_access_profile_rejects_restricted_mode(self):
+        path = self.root / "config/claude-full-access.json"
+        with changed(path, path.read_bytes().replace(b'"bypassPermissions"', b'"manual"')):
             with self.assertRaises(launch.PreflightError):
                 launch.validate_settings(self.root)
 

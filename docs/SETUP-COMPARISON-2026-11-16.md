@@ -1,5 +1,14 @@
 # CARTAN setup comparison and capability acceptance
 
+**Subsequent operator correction:** Daniel explicitly required full-access/YOLO
+launches. The launcher now uses the same approval/sandbox/hook-trust bypass flags
+and live search as the inspected Sentinel/Nisayon Codex paths; Claude uses
+permission bypass and disables its sandbox. See current `SESSION_HANDOFF.md`.
+Statements below about retained approvals, shell sandbox network denial and
+cached-search configuration describe the earlier comparison and are superseded.
+Actual scientific retrieval, browser operation and inference remain separate
+runtime observations; full permissions do not prove those outcomes.
+
 Reviewed 16 November 2026 by the existing setup session, against the actual local
 launchers described in `ENVIRONMENT-AUDIT.md` and the two retained CARTAN prompts.
 

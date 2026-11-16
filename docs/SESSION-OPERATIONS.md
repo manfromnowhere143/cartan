@@ -4,6 +4,18 @@ Owner: the existing setup session. Reviewed 16 November 2026. This canonical
 file describes launch behavior and continuity; it does not supersede a lane's
 scientific findings, current task, or Daniel's latest instructions.
 
+Current operator-selected mode is **full access / YOLO** for every installed name,
+lane and start/resume path. Codex bypasses approval/sandbox and hook-trust prompts
+and enables live search. Claude uses permission bypass and a disabled sandbox.
+This explicit 16 November correction supersedes the original restrictive setup
+defaults. Already-running clients are not changed by updating the launcher.
+
+Runtime authority is the installed canonical launcher: explicit Codex CLI flags
+and `-c` values, and Claude's `config/claude-full-access.json` plus bypass flags.
+The older `.codex/config.toml` / `.claude/settings.json` snapshots are retained
+unchanged to preserve active sessions. Do not infer the runtime mode from those
+snapshots alone. The `permissions` section of `--check` shows the launch policy.
+
 ## Start or resume from any ordinary terminal
 
 ```sh
@@ -25,7 +37,7 @@ Resume delegates to the installed client's picker. Codex's default picker filter
 by working directory; this launcher does not request `--all` or `--last`. Select
 the intended conversation and check its displayed project. Claude uses its own
 `--resume` picker. No new research prompt is injected into a resumed conversation.
-Current sandbox/approval/MCP arguments are still supplied. Actual restoration of
+Current full-access and MCP arguments are still supplied. Actual restoration of
 a conversation has not been exercised by setup because that starts a model
 session. Check the live session's status before continuing work.
 

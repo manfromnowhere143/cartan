@@ -1,5 +1,45 @@
 # Environment verification
 
+## Current full-access correction
+
+Daniel explicitly required full-access/YOLO launches on 16 November 2026. This
+supersedes the earlier restricted permission policy recorded below. The installed
+canonical launcher now supplies these modes to both start and resume commands:
+
+| Client | Runtime permission settings |
+|---|---|
+| Codex | `--dangerously-bypass-approvals-and-sandbox`, `--dangerously-bypass-hook-trust`, `--search`; explicit `approval_policy="never"`, `sandbox_mode="danger-full-access"`, `web_search="live"` overrides |
+| Claude | `--dangerously-skip-permissions --permission-mode bypassPermissions`; canonical `config/claude-full-access.json` sets `sandbox.enabled=false` and has no ask rules |
+
+The original project settings files remain unchanged snapshots; CLI/runtime
+configuration takes precedence. Using a new Claude settings file avoids rewriting
+the settings path supplied to older sessions. No active worktree or running
+session was edited, stopped or relaunched. Starting or resuming through an updated
+alias selects the new mode. New-session context explicitly carries Daniel's
+permission correction so older setup prose does not silently restore restrictions.
+
+The updated regression suite passed **32 tests in 11.733 seconds**. It asserts
+full-access flags for both clients and both lanes, including resume, and verifies
+that earlier settings snapshots are preserved. Actual installed CLI help parsers
+accepted the complete start/resume options with network denied for inspection.
+`cartancodes --check` from `/private/tmp` returned 0 and reported YOLO mode; its
+native Codex MCP check still passed. No inference was launched by these checks.
+The retained test log is `full-access-tests.log` in the private receipt directory.
+Claude's local authentication remains missing; bypass mode does not supply login.
+
+All **16 installed name × lane × start/resume combinations** were subsequently
+checked from `/private/tmp` in fresh interactive login zsh processes. The eight
+Codex combinations returned 0 with the full-access policy. The eight Claude
+combinations reported the bypass policy and returned 2 solely for missing local
+login. `full-access-entrypoints.json` retains these results without credentials.
+
+The older results below are historical. Their statements about retained approval
+prompts, workspace sandboxing and hook-trust prompts no longer describe new or
+resumed CARTAN launches. Other evidence/authorization boundaries remain separate
+from the client's execution permission mode.
+
+## Earlier comparison record
+
 Latest comparison review, 16 November 2026: **30 tests passed in 5.646 seconds**.
 All four installed command names were checked in fresh interactive login shells
 from `/private/tmp`, for both start and resume plans. Codex returned 0 and the

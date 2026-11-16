@@ -4,6 +4,16 @@ Environment foundation for spacecraft serviceability research and its visual
 laboratory. This repository currently contains setup and coordination, not a
 product or validated engineering result.
 
+**Current launch mode: full access / YOLO**, explicitly requested by Daniel on
+16 November 2026. Both Codex aliases bypass approvals, sandboxing and hook-trust
+prompts, with live search. Both Claude aliases use `bypassPermissions` and disable
+the sandbox. This applies to new and resumed launches, in either lane.
+
+The launcher supplies explicit runtime overrides. `.codex/config.toml` and
+`.claude/settings.json` remain historical snapshots so existing sessions and
+worktrees are not rewritten. New Claude launches use
+`config/claude-full-access.json`. `--check` reports the actual launch policy.
+
 Start with [the handoff](docs/SESSION_HANDOFF.md),
 [environment audit](docs/ENVIRONMENT-AUDIT.md), and
 [verification record](docs/VERIFICATION.md). The

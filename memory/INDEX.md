@@ -18,3 +18,5 @@ its lifecycle, privacy and maintenance cost.
 - `notes/2026-11-16-environment-decisions.md`: setup boundaries and architecture.
 - `notes/2026-11-16-setup-comparison.md`: comparative review, native resume,
   current setup discovery and limits of automation/tool verification.
+- `notes/2026-11-16-full-access-correction.md`: Daniel's explicit YOLO/full-access
+  requirement, effective launch options and supersession of restricted defaults.

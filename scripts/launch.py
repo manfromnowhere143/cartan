@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """CARTAN launcher. --check is local/read-only and never executes a model.
 
-No shell evaluation, installation, auth mutation, trust mutation, or background
-server startup. Only known client/role arguments are accepted. Exit 2 means a
-local prerequisite failed, never a request to weaken a safeguard.
+Daniel explicitly selected full-access/YOLO launches on 16 November 2026.
+The retained lane configuration is a historical snapshot; explicit runtime
+options below take precedence. --check never starts inference or changes auth.
 """
 
 import hashlib
@@ -148,18 +148,15 @@ def validate_inputs(root):
 
 
 def validate_settings(root):
+    # Preserve the original snapshots used by existing sessions. New launches
+    # use explicit Codex CLI overrides and a separate Claude settings file.
     codex = tomllib.loads((root / ".codex/config.toml").read_text())
-    claude = load_json(root / ".claude/settings.json")
+    claude = load_json(root / "config/claude-full-access.json")
     mcp = load_json(root / "config/claude-mcp.json")
-    if codex.get("approval_policy") != "on-request" or codex.get("sandbox_mode") != "workspace-write":
-        raise PreflightError("CARTAN Codex approval/sandbox policy changed.")
-    if codex["sandbox_workspace_write"] != {"network_access": False, "writable_roots": []}:
-        raise PreflightError("CARTAN Codex write/network scope changed.")
-    if claude["permissions"]["defaultMode"] != "manual" or claude["permissions"].get("allow"):
-        raise PreflightError("CARTAN Claude permission policy changed.")
-    if claude["sandbox"] != {"enabled": True, "failIfUnavailable": True,
-                            "autoAllowBashIfSandboxed": False, "allowUnsandboxedCommands": False}:
-        raise PreflightError("CARTAN Claude sandbox policy changed.")
+    if claude["permissions"] != {"defaultMode": "bypassPermissions"}:
+        raise PreflightError("CARTAN Claude full-access policy changed.")
+    if claude["sandbox"] != {"enabled": False}:
+        raise PreflightError("CARTAN Claude full-access sandbox setting changed.")
     if mcp != {"mcpServers": {"openaiDeveloperDocs": {
             "type": "http", "url": "https://developers.openai.com/mcp"}}}:
         raise PreflightError("CARTAN MCP scope changed; review before use.")
@@ -174,8 +171,9 @@ def codex_overrides(root, project):
     system = tomllib.loads(system_path.read_text()) if system_path.exists() else {}
     names = set().union(*(d.get("mcp_servers", {}) for d in (system, user, project)))
     overrides = {
-        "sandbox_workspace_write.network_access": "false",
-        "sandbox_workspace_write.writable_roots": "[]",
+        "approval_policy": '"never"',
+        "sandbox_mode": '"danger-full-access"',
+        "web_search": '"live"',
         "shell_environment_policy.inherit": '"core"',
         "apps._default.enabled": "false",
     }
@@ -191,7 +189,7 @@ def codex_overrides(root, project):
         if not re.fullmatch(r"[A-Za-z0-9_-]+", name):
             raise PreflightError("An MCP identifier needs explicit configuration review.")
         # Installed Chrome/browser cleanup hooks call node_repl.turn_ended.
-        # Preserve their adapter and trust flow rather than disable a hook's server.
+        # Preserve their adapter; full-access launches bypass the trust prompt.
         overrides[f"mcp_servers.{name}.enabled"] = "true" if name == "node_repl" else "false"
     # The allowed endpoint was checked above; no command or headers are inherited.
     overrides['mcp_servers.openaiDeveloperDocs.enabled'] = "true"
@@ -257,19 +255,23 @@ def make_plan(client, lane, root=ROOT, action="start"):
                "docs/COORDINATION.md and memory/INDEX.md first. For current launch behavior "
                f"and setup status, also read {setup_context[0]} and {setup_context[1]}; "
                "these setup records supersede older setup notes in this worktree, not "
-               "lane research findings or current operator instructions. Then read and follow "
+               "lane research findings or current operator instructions. Daniel explicitly "
+               "selected full-access/YOLO launches on 16 November 2026; this supersedes "
+               "the older sandbox/approval defaults in retained setup instructions. Then read and follow "
                f"the exact assigned prompt at {prompt}. Research and explicit architecture "
                "decisions precede implementation. Setup owns launch configuration; do not "
                "edit global shell/MCP settings or start another model session.")
     if client == "codex":
         base_argv = [str(executable), "--no-daemon", "--strict-config", "-C", str(workspace),
-                "--sandbox", "workspace-write", "--ask-for-approval", "on-request",
+                "--dangerously-bypass-approvals-and-sandbox",
+                "--dangerously-bypass-hook-trust", "--search",
                 *codex_overrides(root, project)]
         argv = ([base_argv[0], "resume", *base_argv[1:]] if action == "resume"
                 else [*base_argv, initial])
     else:
-        base_argv = [str(executable), "--permission-mode", "manual", "--no-chrome",
-                "--settings", str(root / ".claude/settings.json"),
+        base_argv = [str(executable), "--dangerously-skip-permissions",
+                "--permission-mode", "bypassPermissions", "--no-chrome",
+                "--settings", str(root / "config/claude-full-access.json"),
                 "--mcp-config", str(root / "config/claude-mcp.json"),
                 "--strict-mcp-config"]
         argv = [*base_argv, "--resume"] if action == "resume" else [*base_argv, initial]
@@ -284,6 +286,12 @@ def make_plan(client, lane, root=ROOT, action="start"):
             "instructions": [str(workspace / n) for n in REQUIRED[:7]],
             "current_setup_context": [str(path) for path in setup_context],
             "resume_behavior": "native picker; no new task prompt or automatic session selection",
+            "permissions": ({"mode": "full-access / YOLO", "approval_policy": "never",
+                             "sandbox_mode": "danger-full-access", "hook_trust": "bypassed",
+                             "web_search": "live"} if client == "codex" else
+                            {"mode": "bypassPermissions", "skip_permissions": True,
+                             "sandbox_enabled": False}),
+            "permission_configuration": "explicit runtime overrides; retained project snapshots are superseded",
             "worktree_state": "dirty (preserved)" if git(workspace, "status", "--porcelain=v1") else "clean",
             "configured_mcp_allowlist": (config["mcp_allowlist"] if client == "codex"
                                          else ["openaiDeveloperDocs"]),
@@ -292,7 +300,8 @@ def make_plan(client, lane, root=ROOT, action="start"):
             "authentication": auth, "native_configuration_check": native,
             "launch_prerequisites_met": auth["local_login_detected"],
             "remote_connectivity": "not checked by dry-run",
-            "hooks": "inherited; no hook-trust bypass or disable flags",
+            "hooks": ("inherited; trust prompt bypassed at Daniel's explicit request"
+                      if client == "codex" else "inherited; no hooks disabled"),
             "model_started": False}
 
 
@@ -302,7 +311,7 @@ def launch_interactive(plan):
     if not sys.stdin.isatty() or not sys.stdout.isatty():
         raise PreflightError("Interactive terminal required; unattended model launches are not supported.")
     print(f"CARTAN {plan['lane']} | {plan['client']} | {plan['cwd']}\n"
-          "Approvals retained. No setup command authorizes spend or publication.", flush=True)
+          "Full-access / YOLO permissions. No setup command authorizes spend or publication.", flush=True)
     if plan.get("action") == "resume":
         print("Select the intended existing session; current setup notes: "
               f"{ROOT / 'docs/SESSION_HANDOFF.md'}", flush=True)

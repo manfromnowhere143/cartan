@@ -1,5 +1,11 @@
 # CARTAN environment architecture and local audit
 
+**Permission update:** Daniel subsequently explicitly required full-access/YOLO
+launches. `SESSION_HANDOFF.md` records the current flags. Restrictive permission,
+network and hook-trust statements below describe the original audited setup and
+are superseded for new/resumed CARTAN launches. The project inventory and
+preservation evidence remain historical records.
+
 Date: 16 November 2026. Owner: the existing setup session. Scope: read-only
 inspection of established launch architecture, followed by additive CARTAN setup.
 No existing project launchers, credentials, active sessions or research originals
