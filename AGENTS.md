@@ -2,15 +2,18 @@
 
 CARTAN investigates spacecraft serviceability, beginning with interrupted exchange
 of a prepared module under uncertain mechanical retention and electrical isolation.
-This checkout contains environment preparation only. It establishes no prototype,
-customer, novelty, comparative advantage, physical safety or flight qualification.
+This checkout contains research models, retained software studies and an integrated
+visual laboratory. It establishes no physical prototype, customer, novelty,
+comparative advantage, physical safety or flight qualification.
 
 ## Identity and authority
 
 - Canonical local repository: `/Users/danielwahnich/workspace/cartan`.
 - Approved lanes: `../cartan-worktrees/research` on `research/architecture` and
   `../cartan-worktrees/ui` on `ui/visual-laboratory`. They must share this Git
-  common directory. No remote is configured or presumed.
+  common directory. The authorized GitHub publication target is
+  `https://github.com/manfromnowhere143/cartan.git`; verify the actual remote and
+  branch before network writes. See `docs/PUBLICATION-2026-11-16.md`.
 - Daniel's 16 November 2026 request explicitly authorizes this environment setup
   from the existing portfolio-rooted setup session. This narrow exception does
   not authorize portfolio edits or sibling-project bootstrap.

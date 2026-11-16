@@ -1,0 +1,10 @@
+CARTAN
+Copyright 2026 Daniel Wahnich
+
+Original CARTAN code, documentation, synthetic fixtures and research output are
+licensed under the Apache License, Version 2.0. See LICENSE and LICENSING.md.
+
+Supplied concept media, brand assets and third-party material retain their
+separate rights and attribution. Their inclusion does not extend the software
+license to those works. Provenance is recorded in frontend/docs/asset-registry.json
+and the research source ledgers.

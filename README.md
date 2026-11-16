@@ -248,10 +248,17 @@ Architecture decisions [001](research/decisions/ADR-001.md),
 input/output hashes and execution receipts. Memory helps locate those records;
 it is not independent evidence.
 
-The visual laboratory consumes the [frozen v1 contract](contracts/cartan/v1/README.md).
+The [visual laboratory](frontend/README.md) consumes the [frozen v1 contract](contracts/cartan/v1/README.md).
 Its imagery illustrates a concept and its canonical fixture is synthetic. Newer
 analytical studies require a reviewed adapter. Research and UI use separate
 worktrees, and setup owns launch configuration. The [handoff](docs/SESSION_HANDOFF.md)
 and [coordination record](docs/COORDINATION.md) identify current ownership and
 continuation rules. The [diagram review](docs/qa/readme-20261116/revision-02/REVIEW.md) retains
 rendered copies for readers whose Markdown viewer does not support Mermaid.
+
+## License
+
+Original CARTAN code, documentation, synthetic fixtures and research output are
+available under [Apache-2.0](LICENSE), copyright 2026 Daniel Wahnich. Supplied
+concept media, brand assets and third-party works retain separate rights.
+[Licensing scope and attribution](LICENSING.md) explains the boundary.

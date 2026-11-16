@@ -72,10 +72,11 @@ in space. No physical study has been performed by CARTAN.
 
 ## Seventh priority: publish an inspectable record
 
-Daniel has authorized GitHub publication when the repository is ready. License
-and visibility choices remain pending. Prepare the complete candidate, preserve
-third-party attribution and media rights, and verify the exact contents before
-publishing. Publication does not supply independent review or replication.
+Daniel has delegated the publication choices. The selected release is public
+with Apache-2.0 for original CARTAN material and separate media rights. Preserve
+third-party attribution and verify the exact contents and remote readback. See
+[the publication record](../docs/PUBLICATION-2026-11-16.md). Publication does not
+supply independent review or replication.
 UI deployment remains owned by the UI lane; research does not change its DNS or
 hosting configuration.
 

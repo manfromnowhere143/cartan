@@ -1,5 +1,9 @@
 # CARTAN repository publication candidate
 
+Historical preparation record. Daniel subsequently delegated the remaining
+choices and instructed publication. [Publication decision and readback](PUBLICATION-2026-11-16.md)
+supersedes the pending license and visibility statements below.
+
 16 November 2026. Research and the reviewed visual laboratory are integrated
 locally at `1bd9ef2a7c240efee51f130023a3d1afc8404fd7`. The research evidence and
 README revision are at `6fc507d`; the preserved UI parent is `0afc064`.

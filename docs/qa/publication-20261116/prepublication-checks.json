@@ -1,0 +1,226 @@
+{
+  "recorded_at": "2026-11-16T13:31:11.164774+00:00",
+  "preservation_base": "f99da7a3241c3052980303eec2f0ba9bed0da64d",
+  "protected_files_identical": 140,
+  "paths_checked": [
+    "backend",
+    "contracts",
+    "research/evidence",
+    "frontend",
+    "scripts",
+    "config",
+    ".codex",
+    ".claude"
+  ],
+  "README_sha256": "4ffca2dfdb124f7168acc90d9017d1bddbc1c9946c37954efc6860de007fe875",
+  "Mermaid_blocks_identical_to_rendered_revision_02": 3,
+  "local_links_checked": 51,
+  "local_links": [
+    {
+      "source": "README.md",
+      "target": "research/block-4/results.md"
+    },
+    {
+      "source": "README.md",
+      "target": "research/block-4/specification.md"
+    },
+    {
+      "source": "README.md",
+      "target": "research/block-4/sources.md"
+    },
+    {
+      "source": "README.md",
+      "target": "research/block-4/source-followup.md"
+    },
+    {
+      "source": "README.md",
+      "target": "research/experiments/first-study.md"
+    },
+    {
+      "source": "README.md",
+      "target": "backend/observation_model/interface-profile.json"
+    },
+    {
+      "source": "README.md",
+      "target": "research/block-4/sources.md"
+    },
+    {
+      "source": "README.md",
+      "target": "research/results.md"
+    },
+    {
+      "source": "README.md",
+      "target": "research/block-2/results.md"
+    },
+    {
+      "source": "README.md",
+      "target": "research/block-2/mathematics.md"
+    },
+    {
+      "source": "README.md",
+      "target": "research/block-3/results.md"
+    },
+    {
+      "source": "README.md",
+      "target": "research/block-4/results.md"
+    },
+    {
+      "source": "README.md",
+      "target": "research/experiments/first-study.md"
+    },
+    {
+      "source": "README.md",
+      "target": "research/block-4/specification.md"
+    },
+    {
+      "source": "README.md",
+      "target": "research/block-4/source-followup.md"
+    },
+    {
+      "source": "README.md",
+      "target": "research/ROADMAP.md"
+    },
+    {
+      "source": "README.md",
+      "target": "backend/README.md"
+    },
+    {
+      "source": "README.md",
+      "target": "backend/certificates/README.md"
+    },
+    {
+      "source": "README.md",
+      "target": "backend/interface_evidence/README.md"
+    },
+    {
+      "source": "README.md",
+      "target": "research/current-state.md"
+    },
+    {
+      "source": "README.md",
+      "target": "research/sources.md"
+    },
+    {
+      "source": "README.md",
+      "target": "research/block-2/sources.md"
+    },
+    {
+      "source": "README.md",
+      "target": "research/block-4/sources.md"
+    },
+    {
+      "source": "README.md",
+      "target": "research/decisions/ADR-001.md"
+    },
+    {
+      "source": "README.md",
+      "target": "research/decisions/ADR-002.md"
+    },
+    {
+      "source": "README.md",
+      "target": "research/decisions/ADR-003.md"
+    },
+    {
+      "source": "README.md",
+      "target": "research/decisions/ADR-004.md"
+    },
+    {
+      "source": "README.md",
+      "target": "research/evidence/"
+    },
+    {
+      "source": "README.md",
+      "target": "frontend/README.md"
+    },
+    {
+      "source": "README.md",
+      "target": "contracts/cartan/v1/README.md"
+    },
+    {
+      "source": "README.md",
+      "target": "docs/SESSION_HANDOFF.md"
+    },
+    {
+      "source": "README.md",
+      "target": "docs/COORDINATION.md"
+    },
+    {
+      "source": "README.md",
+      "target": "docs/qa/readme-20261116/revision-02/REVIEW.md"
+    },
+    {
+      "source": "README.md",
+      "target": "LICENSE"
+    },
+    {
+      "source": "README.md",
+      "target": "LICENSING.md"
+    },
+    {
+      "source": "LICENSING.md",
+      "target": "LICENSE"
+    },
+    {
+      "source": "LICENSING.md",
+      "target": "NOTICE"
+    },
+    {
+      "source": "LICENSING.md",
+      "target": "frontend/docs/asset-registry.json"
+    },
+    {
+      "source": "LICENSING.md",
+      "target": "README.md"
+    },
+    {
+      "source": "docs/PUBLICATION-2026-11-16.md",
+      "target": "RELEASE-PREPARATION.md"
+    },
+    {
+      "source": "docs/PUBLICATION-2026-11-16.md",
+      "target": "../research/decisions/ADR-005.md"
+    },
+    {
+      "source": "docs/PUBLICATION-2026-11-16.md",
+      "target": "../LICENSING.md"
+    },
+    {
+      "source": "docs/PUBLICATION-2026-11-16.md",
+      "target": "qa/integration-20261116/REVIEW.md"
+    },
+    {
+      "source": "docs/RELEASE-PREPARATION.md",
+      "target": "PUBLICATION-2026-11-16.md"
+    },
+    {
+      "source": "docs/RELEASE-PREPARATION.md",
+      "target": "qa/integration-20261116/integration-receipt.json"
+    },
+    {
+      "source": "docs/RELEASE-PREPARATION.md",
+      "target": "../research/block-4/results.md"
+    },
+    {
+      "source": "docs/RELEASE-PREPARATION.md",
+      "target": "../frontend/docs/asset-registry.json"
+    },
+    {
+      "source": "research/ROADMAP.md",
+      "target": "block-4/results.md"
+    },
+    {
+      "source": "research/ROADMAP.md",
+      "target": "block-4/source-followup.md"
+    },
+    {
+      "source": "research/ROADMAP.md",
+      "target": "experiments/first-study.md"
+    },
+    {
+      "source": "research/ROADMAP.md",
+      "target": "../docs/PUBLICATION-2026-11-16.md"
+    }
+  ],
+  "new_unit_tests": "Not added or rerun: this change only adds licensing and documentation; prior relevant checks retained",
+  "scope": "Local publication checks, not remote readback or scientific validation"
+}
