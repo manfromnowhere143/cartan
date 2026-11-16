@@ -23,11 +23,22 @@ match; all original packet hashes match. New analytical studies still have no UI
 adapter. Root README and three Mermaid diagrams have retained presentation QA.
 Live GitHub rendering and current public-site status were not verified here.
 
-GitHub publication is authorized in principle. License and visibility choices
-remain pending; no remote or license was installed. Complete those choices and
-read back the exact publication before claiming release. Media rights are separate
-from a software grant. UI retains hosting ownership; setup retains launch/MCP and
-shared configuration. No new model session, cloud job or physical action occurred.
+CARTAN is now public at `https://github.com/manfromnowhere143/cartan`, with `main`
+as its default branch and Apache-2.0 for original CARTAN material. Daniel delegated
+these choices and required publication. First published commit: `c69b677`.
+GitHub license/README bytes and public HTTP access were verified; see the
+[publication record](PUBLICATION-2026-11-16.md). Supplied media retains separate
+rights. No live browser-rendering acceptance was possible; the three diagrams
+retain local render checks. This supersedes earlier pending-choice records.
+
+The [publication checkpoint](../memory/checkpoints/research-20261116T134432Z-github-publication.md) records
+remote verification and continuation.
+
+The local branch remains `research/architecture`; use the verified `origin` and
+an explicit `HEAD:main` destination for authorized future publication. UI retains
+hosting ownership; setup retains launch/MCP and shared configuration. Their
+checkouts were not edited. No new model session, cloud job or physical action
+occurred.
 
 Continue with one identified interface's observation chain and reviewed limits.
 Preserve the simpler baseline when it suffices. Hardware and comparative benefit

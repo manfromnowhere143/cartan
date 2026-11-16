@@ -1,0 +1,15 @@
+{
+  "recorded_at": "2026-11-16T13:41:42.733528+00:00",
+  "repository": "manfromnowhere143/cartan",
+  "html_url": "https://github.com/manfromnowhere143/cartan",
+  "visibility": "public",
+  "default_branch": "main",
+  "published_commit": "c69b677cb120f2173e6b1a6af60e4f67b68783fe",
+  "github_branch_commit": "c69b677cb120f2173e6b1a6af60e4f67b68783fe",
+  "license_spdx": "Apache-2.0",
+  "license_bytes_match": true,
+  "README_bytes_match": true,
+  "LICENSE_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+  "README_sha256": "4ffca2dfdb124f7168acc90d9017d1bddbc1c9946c37954efc6860de007fe875",
+  "scope": "Authenticated GitHub API readback; browser and anonymous accessibility checked separately"
+}

@@ -32,3 +32,7 @@ its lifecycle, privacy and maintenance cost.
 block 4, the expanded prior-art review, README revision, verified UI merge and
 pending GitHub license/visibility choices. It supersedes the block 3 current-state
 summary while preserving its evidence.
+
+[Verified GitHub publication](checkpoints/research-20261116T134432Z-github-publication.md) records the public
+repository, Apache-2.0 scope, immutable first publication commit, remote readback
+and browser-review limitation. It resolves the prior pending publication choices.

@@ -1,0 +1,40 @@
+{
+  "checked_at": "2026-11-16T13:43:55.594458+00:00",
+  "url": "https://github.com/manfromnowhere143/cartan",
+  "authentication": "None; curl request used no credential or cookie arguments",
+  "final_HTTP_status": 200,
+  "response_bytes": 306473,
+  "response_sha256": "2a10736ba1efd44634a5a037f86f3eef74abfae7b15dfbfd1f7926eac13a2027",
+  "title": "GitHub - manfromnowhere143/cartan: Research on evidence and recovery for interrupted spacecraft module exchange. \u00b7 GitHub",
+  "served_README_headings": [
+    "CARTAN",
+    "The interrupted exchange",
+    "Architecture",
+    "Findings",
+    "The next experiment",
+    "Reproduction",
+    "Research record",
+    "License"
+  ],
+  "served_Mermaid_blocks_match_local": 3,
+  "license_links": [
+    "/manfromnowhere143/cartan/blob/main/LICENSE",
+    "/manfromnowhere143/cartan/blob/main/LICENSING.md"
+  ],
+  "browser_attempts": [
+    {
+      "entry": "in-app browser",
+      "result": "browser access host unavailable"
+    },
+    {
+      "entry": "native Google Chrome",
+      "result": "CUA request timed out after 30 seconds; no successful page observation"
+    }
+  ],
+  "limitations": [
+    "Served HTML was checked; client-side Mermaid rendering on GitHub was not visually inspected",
+    "All three diagram sources match locally rendered and previously inspected sources",
+    "No new mobile or screen-reader acceptance claim"
+  ],
+  "retention": "Only hashes and selected non-sensitive HTTP facts retained; raw page and headers remain temporary"
+}
