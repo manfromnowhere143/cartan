@@ -27,3 +27,8 @@ its lifecycle, privacy and maintenance cost.
   six distinct propositions, witnesses and report gates; frozen study/replay;
   root README, rendered Mermaid diagrams and immutable UI handoff. Earlier models
   and their evidence remain unchanged.
+
+[Physical observation and local integration](checkpoints/research-20261116T130843Z-observation-integration.md) records
+block 4, the expanded prior-art review, README revision, verified UI merge and
+pending GitHub license/visibility choices. It supersedes the block 3 current-state
+summary while preserving its evidence.

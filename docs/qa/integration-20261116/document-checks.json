@@ -1,0 +1,46 @@
+{
+  "scope": "Local link existence and current prose conventions; historical handoff excluded from style check",
+  "checks": [
+    {
+      "path": "README.md",
+      "local_links_checked": 32,
+      "missing": []
+    },
+    {
+      "path": "docs/RELEASE-PREPARATION.md",
+      "local_links_checked": 3,
+      "missing": []
+    },
+    {
+      "path": "docs/SESSION_HANDOFF.md",
+      "local_links_checked": 12,
+      "missing": []
+    },
+    {
+      "path": "research/ROADMAP.md",
+      "local_links_checked": 3,
+      "missing": []
+    },
+    {
+      "path": "research/block-4/source-followup.md",
+      "local_links_checked": 1,
+      "missing": []
+    },
+    {
+      "path": "research/block-4/results.md",
+      "local_links_checked": 8,
+      "missing": []
+    },
+    {
+      "path": "docs/qa/integration-20261116/REVIEW.md",
+      "local_links_checked": 5,
+      "missing": []
+    },
+    {
+      "path": "docs/qa/readme-20261116/revision-02/REVIEW.md",
+      "local_links_checked": 3,
+      "missing": []
+    }
+  ],
+  "README_hash_matches_presentation_receipt": true
+}

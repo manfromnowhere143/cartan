@@ -1,0 +1,6 @@
+{
+  "package": "/private/tmp/cartan-release-20261116/package-01",
+  "pages": 8,
+  "files": 28,
+  "bytes": 25058750
+}

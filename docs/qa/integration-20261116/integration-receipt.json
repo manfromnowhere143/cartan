@@ -1,0 +1,23 @@
+{
+  "recorded_at": "2026-11-16T13:06:44.095333+00:00",
+  "integration_commit": "1bd9ef2a7c240efee51f130023a3d1afc8404fd7",
+  "UI_commit": "0afc064f145641d472f063fc4c66d07dd584ba80",
+  "frontend_files_identical": 61,
+  "vendored_contract_files": {
+    "README.md": "6b1846d07fb98bbdbc48dc344eec10eeec4770f39cb9ddd76bdac23726beda7b",
+    "SHA256SUMS.json": "6a20a83c78b8f763a4bc83d7f01e819191b1af162f8a484683841962dcf63697",
+    "fixture.json": "b231fa24f057ce647dbf282ed8233fc88d0bbbed579995213306edac30e65d44",
+    "schema.json": "a3b80883a7ce92bea4dcac44ff50103b8acdd66018f9cbe2105237c9ff7e01fd",
+    "validate.py": "76cad93c36725d8358d2b9373702d29f1fcc175178ddb2ca78125691f85ba7a2"
+  },
+  "original_packet_files_verified": 12,
+  "package_total_bytes": 25091440,
+  "package_limit_bytes": 104857600,
+  "commands_completed": 5,
+  "new_cloud_jobs": 0,
+  "limitations": [
+    "No live deployment, DNS or browser acceptance was repeated",
+    "Physical studies and new analytical UI adapters remain unimplemented",
+    "Static package validation does not establish a public website"
+  ]
+}

@@ -1,0 +1,1 @@
+{"valid": true, "negative_controls_rejected": 16, "scientific_validation": false}

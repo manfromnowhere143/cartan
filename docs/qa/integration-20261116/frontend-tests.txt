@@ -1,0 +1,105 @@
+TAP version 13
+# Subtest: fixture survives without evidence promotion
+ok 1 - fixture survives without evidence promotion
+  ---
+  duration_ms: 0.872083
+  ...
+# Subtest: unknown, absence, null, zero and false remain distinct
+ok 2 - unknown, absence, null, zero and false remain distinct
+  ---
+  duration_ms: 0.120292
+  ...
+# Subtest: fabricated outcomes and incomplete provenance are rejected
+ok 3 - fabricated outcomes and incomplete provenance are rejected
+  ---
+  duration_ms: 0.117333
+  ...
+# Subtest: missing and inconclusive views cannot imply success
+ok 4 - missing and inconclusive views cannot imply success
+  ---
+  duration_ms: 0.273042
+  ...
+# Subtest: canonical fixture preserves four series and source IDs
+ok 5 - canonical fixture preserves four series and source IDs
+  ---
+  duration_ms: 1.141125
+  ...
+# Subtest: canonical absent tags retain units and zero/false
+ok 6 - canonical absent tags retain units and zero/false
+  ---
+  duration_ms: 0.582042
+  ...
+# Subtest: immutable fixture bytes are checked before consumption
+ok 7 - immutable fixture bytes are checked before consumption
+  ---
+  duration_ms: 4.799
+  ...
+# Subtest: unsupported evidence, missing references and inconsistent belief fail closed
+ok 8 - unsupported evidence, missing references and inconsistent belief fail closed
+  ---
+  duration_ms: 0.358458
+  ...
+# Subtest: mobile, reduced motion, Save-Data and portrait framing never attach media
+ok 9 - mobile, reduced motion, Save-Data and portrait framing never attach media
+  ---
+  duration_ms: 0.960167
+  ...
+# Subtest: eligible desktop starts muted once; ended stays at the end until explicit Replay
+ok 10 - eligible desktop starts muted once; ended stays at the end until explicit Replay
+  ---
+  duration_ms: 2.861417
+  ...
+# Subtest: explicit pause survives visibility, viewport updates and film close without resetting time
+ok 11 - explicit pause survives visibility, viewport updates and film close without resetting time
+  ---
+  duration_ms: 0.491291
+  ...
+# Subtest: tab hiding and leaving hero pause without automatic resumption
+ok 12 - tab hiding and leaving hero pause without automatic resumption
+  ---
+  duration_ms: 1.2925
+  ...
+# Subtest: pending play cannot override Pause or eligibility loss
+ok 13 - pending play cannot override Pause or eligibility loss
+  ---
+  duration_ms: 0.421959
+  ...
+# Subtest: autoplay rejection unloads source, exposes poster and does not retry itself
+ok 14 - autoplay rejection unloads source, exposes poster and does not retry itself
+  ---
+  duration_ms: 0.355958
+  ...
+# Subtest: media failure unloads and eligibility changes never force a mid-action restart
+ok 15 - media failure unloads and eligibility changes never force a mid-action restart
+  ---
+  duration_ms: 0.464041
+  ...
+# Subtest: hidden initial route defers video until the hero is entered
+ok 16 - hidden initial route defers video until the hero is entered
+  ---
+  duration_ms: 0.090167
+  ...
+# Subtest: every public route has a stable identity independent of query tracking
+ok 17 - every public route has a stable identity independent of query tracking
+  ---
+  duration_ms: 0.805084
+  ...
+# Subtest: legacy deep links remain meaningful
+ok 18 - legacy deep links remain meaningful
+  ---
+  duration_ms: 0.137917
+  ...
+# Subtest: skip links and unknown destinations are not intercepted
+ok 19 - skip links and unknown destinations are not intercepted
+  ---
+  duration_ms: 0.093208
+  ...
+1..19
+# tests 19
+# suites 0
+# pass 19
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 52.726875

@@ -1,0 +1,73 @@
+{
+  "recorded_at": "2026-11-16T13:06:44.093719+00:00",
+  "records": [
+    {
+      "name": "frontend-tests",
+      "command": [
+        "/Users/danielwahnich/.nvm/versions/node/v20.18.3/bin/node",
+        "--test",
+        "frontend/tests/adapter.test.mjs",
+        "frontend/tests/contract.test.mjs",
+        "frontend/tests/hero-controller.test.mjs",
+        "frontend/tests/routes.test.mjs"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "timeout_s": 60,
+      "wall_s": 0.08622091700090095
+    },
+    {
+      "name": "app-syntax",
+      "command": [
+        "/Users/danielwahnich/.nvm/versions/node/v20.18.3/bin/node",
+        "--check",
+        "frontend/app.mjs"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "timeout_s": 60,
+      "wall_s": 0.02585341699887067
+    },
+    {
+      "name": "contract-validator",
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "-B",
+        "contracts/cartan/v1/validate.py",
+        "contracts/cartan/v1/fixture.json",
+        "--self-test",
+        "--manifest"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "timeout_s": 60,
+      "wall_s": 0.6928262089786585
+    },
+    {
+      "name": "package-build",
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "-B",
+        "frontend/release/build_site.py",
+        "/private/tmp/cartan-release-20261116/package-01"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "timeout_s": 60,
+      "wall_s": 0.1690484999853652
+    },
+    {
+      "name": "package-verification",
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "-B",
+        "frontend/release/verify_package.py",
+        "/private/tmp/cartan-release-20261116/package-01"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "timeout_s": 60,
+      "wall_s": 0.10790237499168143
+    }
+  ]
+}

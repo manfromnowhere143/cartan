@@ -1,6 +1,39 @@
 # CARTAN session handoff
 
-## Current research state — block 3, 16 November 2026
+## Current research state: block 4 and local integration
+
+Read [block 4 results](../research/block-4/results.md),
+[recovery prior art](../research/block-4/source-followup.md),
+[release preparation](RELEASE-PREPARATION.md) and
+[the checkpoint](../memory/checkpoints/research-20261116T130843Z-observation-integration.md).
+Design: `f08f288`; frozen code: `198f7fe`; evidence and README: `6fc507d`;
+UI integration: `1bd9ef2`, preserving `0afc064` without editing the UI checkout.
+
+The conditional voltage/connectivity study retained 34 cases and passed 11 tests,
+eight exact voltage comparisons and 269 topology comparisons. Replay bytes and
+input hashes match. The physical dossier still lacks current calibration,
+qualified retention relationships and operational limits. Later public design
+material partly closes the earlier access gap. The 2022 and 2026 recovery and
+interoperability papers strengthen the ordinary baseline; no novelty or measured
+advantage is established.
+
+Research independently verified the integrated UI: 19 tests, 16 contract negative
+controls and 301 package assertions passed. Frozen v1 and its five vendor files
+match; all original packet hashes match. New analytical studies still have no UI
+adapter. Root README and three Mermaid diagrams have retained presentation QA.
+Live GitHub rendering and current public-site status were not verified here.
+
+GitHub publication is authorized in principle. License and visibility choices
+remain pending; no remote or license was installed. Complete those choices and
+read back the exact publication before claiming release. Media rights are separate
+from a software grant. UI retains hosting ownership; setup retains launch/MCP and
+shared configuration. No new model session, cloud job or physical action occurred.
+
+Continue with one identified interface's observation chain and reviewed limits.
+Preserve the simpler baseline when it suffices. Hardware and comparative benefit
+remain unproven.
+
+## Previous research state — block 3, 16 November 2026
 
 Read the [research front page](../README.md), [block 3 results](../research/block-3/results.md)
 and [checkpoint](../memory/checkpoints/research-20261116T122500Z-interface-readme.md).
