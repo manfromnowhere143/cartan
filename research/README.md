@@ -19,7 +19,8 @@ Read in this order:
 3. [Architecture decision](decisions/ADR-001.md).
 4. [Mission assumptions and physical model](specification.md).
 5. [Exploratory protocol and baselines](protocol.md).
-6. [Results and next decision](results.md), after execution.
+6. [Results and next decision](results.md).
+7. [First discriminating study](experiments/first-study.md), proposed and unexecuted.
 
 The immutable UI handoff is under `contracts/cartan/v1/`; its checkpoint names
 the commit and hashes. A synthetic fixture is presentation data, never evidence.

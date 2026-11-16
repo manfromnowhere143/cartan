@@ -1,0 +1,59 @@
+{
+  "verification_passed": true,
+  "scientific_validation": false,
+  "comparison_executed": false,
+  "cases_attempted": 15,
+  "cases_recorded": 15,
+  "cases_passed": 15,
+  "sensitivity_points": 27,
+  "core_sha256": "360c9a79c92c3996a775b3d54f51699b0bb33af28711c14ae6554c15561d4237",
+  "limits": {
+    "workers": 1,
+    "cpu_seconds_limit": 5,
+    "address_space_requested_bytes": 268435456,
+    "address_space_limit_set": false,
+    "address_space_note": "current limit exceeds maximum limit"
+  },
+  "wall_seconds": 0.007372374995611608,
+  "cpu_seconds": 0.007123000000000004,
+  "peak_rss_bytes": 22462464,
+  "platform": "macOS-14.4-arm64-arm-64bit-Mach-O",
+  "python": "3.14.2",
+  "outcome_scope": "three abstract hazards only; loads unmeasured; unrecoverability unknown",
+  "inputs": [
+    {
+      "path": "research/specification.md",
+      "sha256": "6c6807f3003140564a6011e4b31c57c55d10610c7d076e32836ea5f3cdceb3e9"
+    },
+    {
+      "path": "backend/cartan_model.py",
+      "sha256": "c5c22f704871c12e134786dd0b3c6ec3283ef6343702930fde9569fe9228612a"
+    },
+    {
+      "path": "backend/oracle.py",
+      "sha256": "56d80b435d15d380d8d243f1c23d090164ea101eb2571893c1ee86d9ee5c0d7b"
+    },
+    {
+      "path": "backend/run_verification.py",
+      "sha256": "63e21a3b6e7b8012026b556960f2f81defd68cf0301baa0d8413a7f330f7e5d8"
+    },
+    {
+      "path": "contracts/cartan/v1/schema.json",
+      "sha256": "a3b80883a7ce92bea4dcac44ff50103b8acdd66018f9cbe2105237c9ff7e01fd"
+    },
+    {
+      "path": "contracts/cartan/v1/fixture.json",
+      "sha256": "b231fa24f057ce647dbf282ed8233fc88d0bbbed579995213306edac30e65d44"
+    }
+  ],
+  "configuration": [
+    {
+      "path": "research/protocol.md",
+      "sha256": "f9b34f06e9e266360abf381174f9b6093b9f2ad2305dc1dbbe922c751a066864"
+    },
+    {
+      "path": "backend/cases/verification-v1.json",
+      "sha256": "c6c9d851c0d807a952d0a8179efb7ca904a7f3916eb68cbca136f01abbdf27ae"
+    }
+  ]
+}

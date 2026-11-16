@@ -1,0 +1,242 @@
+[
+  {
+    "id": "nominal",
+    "passed": true,
+    "checks": {
+      "retention_loss": true,
+      "unsafe_energization": true,
+      "unsafe_connector_transition": true,
+      "task_completed": true,
+      "acceptable_completion": true,
+      "safe_abort": true,
+      "command_acceptance": true,
+      "load_unmeasured": true,
+      "unrecoverable_unknown": true,
+      "no_fabricated_operator": true
+    }
+  },
+  {
+    "id": "impossible-separation",
+    "passed": true,
+    "checks": {
+      "retention_loss": true,
+      "unsafe_energization": true,
+      "unsafe_connector_transition": true,
+      "task_completed": true,
+      "acceptable_completion": true,
+      "safe_abort": true,
+      "command_acceptance": true,
+      "load_unmeasured": true,
+      "unrecoverable_unknown": true,
+      "no_fabricated_operator": true
+    }
+  },
+  {
+    "id": "residual-energy",
+    "passed": true,
+    "checks": {
+      "retention_loss": true,
+      "unsafe_energization": true,
+      "unsafe_connector_transition": true,
+      "task_completed": true,
+      "acceptable_completion": true,
+      "safe_abort": true,
+      "command_acceptance": true,
+      "load_unmeasured": true,
+      "unrecoverable_unknown": true,
+      "no_fabricated_operator": true
+    }
+  },
+  {
+    "id": "unsafe-energization",
+    "passed": true,
+    "checks": {
+      "retention_loss": true,
+      "unsafe_energization": true,
+      "unsafe_connector_transition": true,
+      "task_completed": true,
+      "acceptable_completion": true,
+      "safe_abort": true,
+      "command_acceptance": true,
+      "load_unmeasured": true,
+      "unrecoverable_unknown": true,
+      "no_fabricated_operator": true
+    }
+  },
+  {
+    "id": "retention-loss",
+    "passed": true,
+    "checks": {
+      "retention_loss": true,
+      "unsafe_energization": true,
+      "unsafe_connector_transition": true,
+      "task_completed": true,
+      "acceptable_completion": true,
+      "safe_abort": true,
+      "command_acceptance": true,
+      "load_unmeasured": true,
+      "unrecoverable_unknown": true,
+      "no_fabricated_operator": true
+    }
+  },
+  {
+    "id": "false-report",
+    "passed": true,
+    "checks": {
+      "retention_loss": true,
+      "unsafe_energization": true,
+      "unsafe_connector_transition": true,
+      "task_completed": true,
+      "acceptable_completion": true,
+      "safe_abort": true,
+      "command_acceptance": true,
+      "load_unmeasured": true,
+      "unrecoverable_unknown": true,
+      "no_fabricated_operator": true
+    }
+  },
+  {
+    "id": "stale-ack",
+    "passed": true,
+    "checks": {
+      "retention_loss": true,
+      "unsafe_energization": true,
+      "unsafe_connector_transition": true,
+      "task_completed": true,
+      "acceptable_completion": true,
+      "safe_abort": true,
+      "command_acceptance": true,
+      "load_unmeasured": true,
+      "unrecoverable_unknown": true,
+      "no_fabricated_operator": true
+    }
+  },
+  {
+    "id": "communication-loss",
+    "passed": true,
+    "checks": {
+      "retention_loss": true,
+      "unsafe_energization": true,
+      "unsafe_connector_transition": true,
+      "task_completed": true,
+      "acceptable_completion": true,
+      "safe_abort": true,
+      "command_acceptance": true,
+      "load_unmeasured": true,
+      "unrecoverable_unknown": true,
+      "no_fabricated_operator": true
+    }
+  },
+  {
+    "id": "restart",
+    "passed": true,
+    "checks": {
+      "retention_loss": true,
+      "unsafe_energization": true,
+      "unsafe_connector_transition": true,
+      "task_completed": true,
+      "acceptable_completion": true,
+      "safe_abort": true,
+      "command_acceptance": true,
+      "load_unmeasured": true,
+      "unrecoverable_unknown": true,
+      "no_fabricated_operator": true
+    }
+  },
+  {
+    "id": "partial-latch",
+    "passed": true,
+    "checks": {
+      "retention_loss": true,
+      "unsafe_energization": true,
+      "unsafe_connector_transition": true,
+      "task_completed": true,
+      "acceptable_completion": true,
+      "safe_abort": true,
+      "command_acceptance": true,
+      "load_unmeasured": true,
+      "unrecoverable_unknown": true,
+      "no_fabricated_operator": true
+    }
+  },
+  {
+    "id": "unexpected-contact",
+    "passed": true,
+    "checks": {
+      "retention_loss": true,
+      "unsafe_energization": true,
+      "unsafe_connector_transition": true,
+      "task_completed": true,
+      "acceptable_completion": true,
+      "safe_abort": true,
+      "command_acceptance": true,
+      "load_unmeasured": true,
+      "unrecoverable_unknown": true,
+      "no_fabricated_operator": true
+    }
+  },
+  {
+    "id": "adversarial-false-positive",
+    "passed": true,
+    "checks": {
+      "retention_loss": true,
+      "unsafe_energization": true,
+      "unsafe_connector_transition": true,
+      "task_completed": true,
+      "acceptable_completion": true,
+      "safe_abort": true,
+      "command_acceptance": true,
+      "load_unmeasured": true,
+      "unrecoverable_unknown": true,
+      "no_fabricated_operator": true
+    }
+  },
+  {
+    "id": "completion-after-hazard",
+    "passed": true,
+    "checks": {
+      "retention_loss": true,
+      "unsafe_energization": true,
+      "unsafe_connector_transition": true,
+      "task_completed": true,
+      "acceptable_completion": true,
+      "safe_abort": true,
+      "command_acceptance": true,
+      "load_unmeasured": true,
+      "unrecoverable_unknown": true,
+      "no_fabricated_operator": true
+    }
+  },
+  {
+    "id": "inconsistent-evidence",
+    "passed": true,
+    "checks": {
+      "retention_loss": true,
+      "unsafe_energization": true,
+      "unsafe_connector_transition": true,
+      "task_completed": true,
+      "acceptable_completion": true,
+      "safe_abort": true,
+      "command_acceptance": true,
+      "load_unmeasured": true,
+      "unrecoverable_unknown": true,
+      "no_fabricated_operator": true
+    }
+  },
+  {
+    "id": "null-control",
+    "passed": true,
+    "checks": {
+      "retention_loss": true,
+      "unsafe_energization": true,
+      "unsafe_connector_transition": true,
+      "task_completed": true,
+      "acceptable_completion": true,
+      "safe_abort": true,
+      "command_acceptance": true,
+      "load_unmeasured": true,
+      "unrecoverable_unknown": true,
+      "no_fabricated_operator": true
+    }
+  }
+]

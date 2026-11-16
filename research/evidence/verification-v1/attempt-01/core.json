@@ -1,0 +1,6440 @@
+{
+  "records": [
+    {
+      "id": "run-nominal",
+      "truth_series": [
+        {
+          "t_s": 0.0,
+          "state": {
+            "host": "locked",
+            "support": "released",
+            "connector": "mated",
+            "source": "connected",
+            "energy_fraction": 1.0,
+            "contact": "clear"
+          }
+        },
+        {
+          "t_s": 0.0,
+          "state": {
+            "host": "locked",
+            "support": "released",
+            "connector": "mated",
+            "source": "isolated",
+            "energy_fraction": 1.0,
+            "contact": "clear"
+          }
+        },
+        {
+          "t_s": 10.0,
+          "state": {
+            "host": "locked",
+            "support": "released",
+            "connector": "mated",
+            "source": "isolated",
+            "energy_fraction": 0.006737946999085467,
+            "contact": "clear"
+          }
+        },
+        {
+          "t_s": 10.0,
+          "state": {
+            "host": "locked",
+            "support": "secured",
+            "connector": "mated",
+            "source": "isolated",
+            "energy_fraction": 0.006737946999085467,
+            "contact": "clear"
+          }
+        },
+        {
+          "t_s": 10.0,
+          "state": {
+            "host": "open",
+            "support": "secured",
+            "connector": "mated",
+            "source": "isolated",
+            "energy_fraction": 0.006737946999085467,
+            "contact": "clear"
+          }
+        },
+        {
+          "t_s": 10.0,
+          "state": {
+            "host": "open",
+            "support": "secured",
+            "connector": "separated",
+            "source": "isolated",
+            "energy_fraction": 0.006737946999085467,
+            "contact": "clear"
+          }
+        },
+        {
+          "t_s": 10.0,
+          "state": {
+            "host": "open",
+            "support": "secured",
+            "connector": "mated",
+            "source": "isolated",
+            "energy_fraction": 0.006737946999085467,
+            "contact": "clear"
+          }
+        },
+        {
+          "t_s": 10.0,
+          "state": {
+            "host": "locked",
+            "support": "secured",
+            "connector": "mated",
+            "source": "isolated",
+            "energy_fraction": 0.006737946999085467,
+            "contact": "clear"
+          }
+        },
+        {
+          "t_s": 10.0,
+          "state": {
+            "host": "locked",
+            "support": "released",
+            "connector": "mated",
+            "source": "isolated",
+            "energy_fraction": 0.006737946999085467,
+            "contact": "clear"
+          }
+        },
+        {
+          "t_s": 10.0,
+          "state": {
+            "host": "locked",
+            "support": "released",
+            "connector": "mated",
+            "source": "connected",
+            "energy_fraction": 1.0,
+            "contact": "clear"
+          }
+        }
+      ],
+      "observation_series": [
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "host",
+          "reading": {
+            "status": "known",
+            "value": "locked",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "support",
+          "reading": {
+            "status": "known",
+            "value": "released",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "connector",
+          "reading": {
+            "status": "known",
+            "value": "mated",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "source",
+          "reading": {
+            "status": "known",
+            "value": "connected",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "energy_fraction",
+          "reading": {
+            "status": "known",
+            "value": 1.0,
+            "unit": "1",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "contact",
+          "reading": {
+            "status": "known",
+            "value": "clear",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "host",
+          "reading": {
+            "status": "known",
+            "value": "locked",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "support",
+          "reading": {
+            "status": "known",
+            "value": "released",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "connector",
+          "reading": {
+            "status": "known",
+            "value": "mated",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "source",
+          "reading": {
+            "status": "known",
+            "value": "isolated",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "energy_fraction",
+          "reading": {
+            "status": "known",
+            "value": 1.0,
+            "unit": "1",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "contact",
+          "reading": {
+            "status": "known",
+            "value": "clear",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 10.0,
+          "sampled_at_s": 10.0,
+          "received_at_s": 10.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "host",
+          "reading": {
+            "status": "known",
+            "value": "locked",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 10.0,
+          "sampled_at_s": 10.0,
+          "received_at_s": 10.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "support",
+          "reading": {
+            "status": "known",
+            "value": "released",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 10.0,
+          "sampled_at_s": 10.0,
+          "received_at_s": 10.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "connector",
+          "reading": {
+            "status": "known",
+            "value": "mated",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 10.0,
+          "sampled_at_s": 10.0,
+          "received_at_s": 10.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "source",
+          "reading": {
+            "status": "known",
+            "value": "isolated",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 10.0,
+          "sampled_at_s": 10.0,
+          "received_at_s": 10.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "energy_fraction",
+          "reading": {
+            "status": "known",
+            "value": 0.006737946999085467,
+            "unit": "1",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 10.0,
+          "sampled_at_s": 10.0,
+          "received_at_s": 10.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "contact",
+          "reading": {
+            "status": "known",
+            "value": "clear",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 10.0,
+          "sampled_at_s": 10.0,
+          "received_at_s": 10.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "host",
+          "reading": {
+            "status": "known",
+            "value": "locked",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 10.0,
+          "sampled_at_s": 10.0,
+          "received_at_s": 10.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "support",
+          "reading": {
+            "status": "known",
+            "value": "secured",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 10.0,
+          "sampled_at_s": 10.0,
+          "received_at_s": 10.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "connector",
+          "reading": {
+            "status": "known",
+            "value": "mated",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 10.0,
+          "sampled_at_s": 10.0,
+          "received_at_s": 10.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "source",
+          "reading": {
+            "status": "known",
+            "value": "isolated",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 10.0,
+          "sampled_at_s": 10.0,
+          "received_at_s": 10.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "energy_fraction",
+          "reading": {
+            "status": "known",
+            "value": 0.006737946999085467,
+            "unit": "1",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 10.0,
+          "sampled_at_s": 10.0,
+          "received_at_s": 10.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "contact",
+          "reading": {
+            "status": "known",
+            "value": "clear",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 10.0,
+          "sampled_at_s": 10.0,
+          "received_at_s": 10.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "host",
+          "reading": {
+            "status": "known",
+            "value": "open",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 10.0,
+          "sampled_at_s": 10.0,
+          "received_at_s": 10.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "support",
+          "reading": {
+            "status": "known",
+            "value": "secured",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 10.0,
+          "sampled_at_s": 10.0,
+          "received_at_s": 10.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "connector",
+          "reading": {
+            "status": "known",
+            "value": "mated",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 10.0,
+          "sampled_at_s": 10.0,
+          "received_at_s": 10.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "source",
+          "reading": {
+            "status": "known",
+            "value": "isolated",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 10.0,
+          "sampled_at_s": 10.0,
+          "received_at_s": 10.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "energy_fraction",
+          "reading": {
+            "status": "known",
+            "value": 0.006737946999085467,
+            "unit": "1",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 10.0,
+          "sampled_at_s": 10.0,
+          "received_at_s": 10.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "contact",
+          "reading": {
+            "status": "known",
+            "value": "clear",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 10.0,
+          "sampled_at_s": 10.0,
+          "received_at_s": 10.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "host",
+          "reading": {
+            "status": "known",
+            "value": "open",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 10.0,
+          "sampled_at_s": 10.0,
+          "received_at_s": 10.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "support",
+          "reading": {
+            "status": "known",
+            "value": "secured",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 10.0,
+          "sampled_at_s": 10.0,
+          "received_at_s": 10.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "connector",
+          "reading": {
+            "status": "known",
+            "value": "separated",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 10.0,
+          "sampled_at_s": 10.0,
+          "received_at_s": 10.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "source",
+          "reading": {
+            "status": "known",
+            "value": "isolated",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 10.0,
+          "sampled_at_s": 10.0,
+          "received_at_s": 10.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "energy_fraction",
+          "reading": {
+            "status": "known",
+            "value": 0.006737946999085467,
+            "unit": "1",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 10.0,
+          "sampled_at_s": 10.0,
+          "received_at_s": 10.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "contact",
+          "reading": {
+            "status": "known",
+            "value": "clear",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 10.0,
+          "sampled_at_s": 10.0,
+          "received_at_s": 10.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "host",
+          "reading": {
+            "status": "known",
+            "value": "open",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 10.0,
+          "sampled_at_s": 10.0,
+          "received_at_s": 10.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "support",
+          "reading": {
+            "status": "known",
+            "value": "secured",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 10.0,
+          "sampled_at_s": 10.0,
+          "received_at_s": 10.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "connector",
+          "reading": {
+            "status": "known",
+            "value": "mated",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 10.0,
+          "sampled_at_s": 10.0,
+          "received_at_s": 10.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "source",
+          "reading": {
+            "status": "known",
+            "value": "isolated",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 10.0,
+          "sampled_at_s": 10.0,
+          "received_at_s": 10.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "energy_fraction",
+          "reading": {
+            "status": "known",
+            "value": 0.006737946999085467,
+            "unit": "1",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 10.0,
+          "sampled_at_s": 10.0,
+          "received_at_s": 10.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "contact",
+          "reading": {
+            "status": "known",
+            "value": "clear",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 10.0,
+          "sampled_at_s": 10.0,
+          "received_at_s": 10.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "host",
+          "reading": {
+            "status": "known",
+            "value": "locked",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 10.0,
+          "sampled_at_s": 10.0,
+          "received_at_s": 10.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "support",
+          "reading": {
+            "status": "known",
+            "value": "secured",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 10.0,
+          "sampled_at_s": 10.0,
+          "received_at_s": 10.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "connector",
+          "reading": {
+            "status": "known",
+            "value": "mated",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 10.0,
+          "sampled_at_s": 10.0,
+          "received_at_s": 10.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "source",
+          "reading": {
+            "status": "known",
+            "value": "isolated",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 10.0,
+          "sampled_at_s": 10.0,
+          "received_at_s": 10.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "energy_fraction",
+          "reading": {
+            "status": "known",
+            "value": 0.006737946999085467,
+            "unit": "1",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 10.0,
+          "sampled_at_s": 10.0,
+          "received_at_s": 10.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "contact",
+          "reading": {
+            "status": "known",
+            "value": "clear",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 10.0,
+          "sampled_at_s": 10.0,
+          "received_at_s": 10.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "host",
+          "reading": {
+            "status": "known",
+            "value": "locked",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 10.0,
+          "sampled_at_s": 10.0,
+          "received_at_s": 10.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "support",
+          "reading": {
+            "status": "known",
+            "value": "released",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 10.0,
+          "sampled_at_s": 10.0,
+          "received_at_s": 10.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "connector",
+          "reading": {
+            "status": "known",
+            "value": "mated",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 10.0,
+          "sampled_at_s": 10.0,
+          "received_at_s": 10.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "source",
+          "reading": {
+            "status": "known",
+            "value": "isolated",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 10.0,
+          "sampled_at_s": 10.0,
+          "received_at_s": 10.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "energy_fraction",
+          "reading": {
+            "status": "known",
+            "value": 0.006737946999085467,
+            "unit": "1",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 10.0,
+          "sampled_at_s": 10.0,
+          "received_at_s": 10.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "contact",
+          "reading": {
+            "status": "known",
+            "value": "clear",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        }
+      ],
+      "command_series": [
+        {
+          "t_s": 0.0,
+          "name": "isolate",
+          "duration_s": 0,
+          "accepted": true,
+          "reason": "abstract guard passed"
+        },
+        {
+          "t_s": 0.0,
+          "name": "wait",
+          "duration_s": 10,
+          "accepted": true,
+          "reason": "abstract guard passed"
+        },
+        {
+          "t_s": 10.0,
+          "name": "secure",
+          "duration_s": 0,
+          "accepted": true,
+          "reason": "abstract guard passed"
+        },
+        {
+          "t_s": 10.0,
+          "name": "unlock",
+          "duration_s": 0,
+          "accepted": true,
+          "reason": "abstract guard passed"
+        },
+        {
+          "t_s": 10.0,
+          "name": "separate",
+          "duration_s": 0,
+          "accepted": true,
+          "reason": "abstract guard passed"
+        },
+        {
+          "t_s": 10.0,
+          "name": "mate",
+          "duration_s": 0,
+          "accepted": true,
+          "reason": "abstract guard passed"
+        },
+        {
+          "t_s": 10.0,
+          "name": "lock",
+          "duration_s": 0,
+          "accepted": true,
+          "reason": "abstract guard passed"
+        },
+        {
+          "t_s": 10.0,
+          "name": "release_support",
+          "duration_s": 0,
+          "accepted": true,
+          "reason": "abstract guard passed"
+        },
+        {
+          "t_s": 10.0,
+          "name": "energize",
+          "duration_s": 0,
+          "accepted": true,
+          "reason": "abstract guard passed"
+        }
+      ],
+      "belief_series": [
+        {
+          "t_s": 0.0,
+          "candidates": [
+            {
+              "host": "locked",
+              "support": "released",
+              "connector": "mated",
+              "source": "connected",
+              "energy_fraction": 1.0,
+              "contact": "clear"
+            }
+          ],
+          "status": "consistent"
+        },
+        {
+          "t_s": 0.0,
+          "candidates": [
+            {
+              "host": "locked",
+              "support": "released",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 1.0,
+              "contact": "clear"
+            }
+          ],
+          "status": "consistent"
+        },
+        {
+          "t_s": 10.0,
+          "candidates": [
+            {
+              "host": "locked",
+              "support": "released",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 0.006737946999085467,
+              "contact": "clear"
+            }
+          ],
+          "status": "consistent"
+        },
+        {
+          "t_s": 10.0,
+          "candidates": [
+            {
+              "host": "locked",
+              "support": "secured",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 0.006737946999085467,
+              "contact": "clear"
+            }
+          ],
+          "status": "consistent"
+        },
+        {
+          "t_s": 10.0,
+          "candidates": [
+            {
+              "host": "open",
+              "support": "secured",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 0.006737946999085467,
+              "contact": "clear"
+            }
+          ],
+          "status": "consistent"
+        },
+        {
+          "t_s": 10.0,
+          "candidates": [
+            {
+              "host": "open",
+              "support": "secured",
+              "connector": "separated",
+              "source": "isolated",
+              "energy_fraction": 0.006737946999085467,
+              "contact": "clear"
+            }
+          ],
+          "status": "consistent"
+        },
+        {
+          "t_s": 10.0,
+          "candidates": [
+            {
+              "host": "open",
+              "support": "secured",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 0.006737946999085467,
+              "contact": "clear"
+            }
+          ],
+          "status": "consistent"
+        },
+        {
+          "t_s": 10.0,
+          "candidates": [
+            {
+              "host": "locked",
+              "support": "secured",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 0.006737946999085467,
+              "contact": "clear"
+            }
+          ],
+          "status": "consistent"
+        },
+        {
+          "t_s": 10.0,
+          "candidates": [
+            {
+              "host": "locked",
+              "support": "released",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 0.006737946999085467,
+              "contact": "clear"
+            }
+          ],
+          "status": "consistent"
+        }
+      ],
+      "outcomes": {
+        "retention_loss": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "unsafe_energization": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "unsafe_connector_transition": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "task_completed": {
+          "status": "known",
+          "value": true,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "acceptable_completion": {
+          "status": "known",
+          "value": true,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "safe_abort": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "interventions": {
+          "status": "known",
+          "value": 0,
+          "unit": "count",
+          "basis": "computed"
+        },
+        "elapsed_s": {
+          "status": "known",
+          "value": 10.0,
+          "unit": "s",
+          "basis": "computed"
+        },
+        "exceeded_load_limits": {
+          "status": "unmeasured",
+          "value": null,
+          "unit": "category",
+          "basis": "unknown"
+        },
+        "unrecoverable": {
+          "status": "unknown",
+          "value": null,
+          "unit": "category",
+          "basis": "unknown"
+        }
+      }
+    },
+    {
+      "id": "run-impossible-separation",
+      "truth_series": [
+        {
+          "t_s": 0.0,
+          "state": {
+            "host": "locked",
+            "support": "released",
+            "connector": "mated",
+            "source": "connected",
+            "energy_fraction": 1.0,
+            "contact": "clear"
+          }
+        },
+        {
+          "t_s": 0.0,
+          "state": {
+            "host": "locked",
+            "support": "released",
+            "connector": "mated",
+            "source": "connected",
+            "energy_fraction": 1.0,
+            "contact": "clear"
+          }
+        }
+      ],
+      "observation_series": [
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "host",
+          "reading": {
+            "status": "known",
+            "value": "locked",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "support",
+          "reading": {
+            "status": "known",
+            "value": "released",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "connector",
+          "reading": {
+            "status": "known",
+            "value": "mated",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "source",
+          "reading": {
+            "status": "known",
+            "value": "connected",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "energy_fraction",
+          "reading": {
+            "status": "known",
+            "value": 1.0,
+            "unit": "1",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "contact",
+          "reading": {
+            "status": "known",
+            "value": "clear",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        }
+      ],
+      "command_series": [
+        {
+          "t_s": 0.0,
+          "name": "separate",
+          "duration_s": 0,
+          "accepted": false,
+          "reason": "structurally impossible command"
+        }
+      ],
+      "belief_series": [
+        {
+          "t_s": 0.0,
+          "candidates": [
+            {
+              "host": "locked",
+              "support": "released",
+              "connector": "mated",
+              "source": "connected",
+              "energy_fraction": 1.0,
+              "contact": "clear"
+            }
+          ],
+          "status": "consistent"
+        }
+      ],
+      "outcomes": {
+        "retention_loss": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "unsafe_energization": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "unsafe_connector_transition": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "task_completed": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "acceptable_completion": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "safe_abort": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "interventions": {
+          "status": "known",
+          "value": 0,
+          "unit": "count",
+          "basis": "computed"
+        },
+        "elapsed_s": {
+          "status": "known",
+          "value": 0.0,
+          "unit": "s",
+          "basis": "computed"
+        },
+        "exceeded_load_limits": {
+          "status": "unmeasured",
+          "value": null,
+          "unit": "category",
+          "basis": "unknown"
+        },
+        "unrecoverable": {
+          "status": "unknown",
+          "value": null,
+          "unit": "category",
+          "basis": "unknown"
+        }
+      }
+    },
+    {
+      "id": "run-residual-energy",
+      "truth_series": [
+        {
+          "t_s": 0.0,
+          "state": {
+            "host": "open",
+            "support": "secured",
+            "connector": "mated",
+            "source": "isolated",
+            "energy_fraction": 1,
+            "contact": "clear"
+          }
+        },
+        {
+          "t_s": 0.0,
+          "state": {
+            "host": "open",
+            "support": "secured",
+            "connector": "separated",
+            "source": "isolated",
+            "energy_fraction": 1.0,
+            "contact": "clear"
+          }
+        }
+      ],
+      "observation_series": [
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "host",
+          "reading": {
+            "status": "known",
+            "value": "open",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "support",
+          "reading": {
+            "status": "known",
+            "value": "secured",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "connector",
+          "reading": {
+            "status": "known",
+            "value": "mated",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "source",
+          "reading": {
+            "status": "known",
+            "value": "isolated",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "energy_fraction",
+          "reading": {
+            "status": "known",
+            "value": 1,
+            "unit": "1",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "contact",
+          "reading": {
+            "status": "known",
+            "value": "clear",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        }
+      ],
+      "command_series": [
+        {
+          "t_s": 0.0,
+          "name": "separate",
+          "duration_s": 0,
+          "accepted": true,
+          "reason": "intentional unguarded negative control"
+        }
+      ],
+      "belief_series": [
+        {
+          "t_s": 0.0,
+          "candidates": [
+            {
+              "host": "open",
+              "support": "secured",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 1,
+              "contact": "clear"
+            }
+          ],
+          "status": "consistent"
+        }
+      ],
+      "outcomes": {
+        "retention_loss": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "unsafe_energization": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "unsafe_connector_transition": {
+          "status": "known",
+          "value": true,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "task_completed": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "acceptable_completion": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "safe_abort": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "interventions": {
+          "status": "known",
+          "value": 0,
+          "unit": "count",
+          "basis": "computed"
+        },
+        "elapsed_s": {
+          "status": "known",
+          "value": 0.0,
+          "unit": "s",
+          "basis": "computed"
+        },
+        "exceeded_load_limits": {
+          "status": "unmeasured",
+          "value": null,
+          "unit": "category",
+          "basis": "unknown"
+        },
+        "unrecoverable": {
+          "status": "unknown",
+          "value": null,
+          "unit": "category",
+          "basis": "unknown"
+        }
+      }
+    },
+    {
+      "id": "run-unsafe-energization",
+      "truth_series": [
+        {
+          "t_s": 0.0,
+          "state": {
+            "host": "partial",
+            "support": "secured",
+            "connector": "mated",
+            "source": "isolated",
+            "energy_fraction": 0,
+            "contact": "clear"
+          }
+        },
+        {
+          "t_s": 0.0,
+          "state": {
+            "host": "partial",
+            "support": "secured",
+            "connector": "mated",
+            "source": "connected",
+            "energy_fraction": 1.0,
+            "contact": "clear"
+          }
+        }
+      ],
+      "observation_series": [
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "host",
+          "reading": {
+            "status": "known",
+            "value": "partial",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "support",
+          "reading": {
+            "status": "known",
+            "value": "secured",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "connector",
+          "reading": {
+            "status": "known",
+            "value": "mated",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "source",
+          "reading": {
+            "status": "known",
+            "value": "isolated",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "energy_fraction",
+          "reading": {
+            "status": "known",
+            "value": 0,
+            "unit": "1",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "contact",
+          "reading": {
+            "status": "known",
+            "value": "clear",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        }
+      ],
+      "command_series": [
+        {
+          "t_s": 0.0,
+          "name": "energize",
+          "duration_s": 0,
+          "accepted": true,
+          "reason": "intentional unguarded negative control"
+        }
+      ],
+      "belief_series": [
+        {
+          "t_s": 0.0,
+          "candidates": [
+            {
+              "host": "partial",
+              "support": "secured",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 0,
+              "contact": "clear"
+            }
+          ],
+          "status": "consistent"
+        }
+      ],
+      "outcomes": {
+        "retention_loss": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "unsafe_energization": {
+          "status": "known",
+          "value": true,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "unsafe_connector_transition": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "task_completed": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "acceptable_completion": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "safe_abort": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "interventions": {
+          "status": "known",
+          "value": 0,
+          "unit": "count",
+          "basis": "computed"
+        },
+        "elapsed_s": {
+          "status": "known",
+          "value": 0.0,
+          "unit": "s",
+          "basis": "computed"
+        },
+        "exceeded_load_limits": {
+          "status": "unmeasured",
+          "value": null,
+          "unit": "category",
+          "basis": "unknown"
+        },
+        "unrecoverable": {
+          "status": "unknown",
+          "value": null,
+          "unit": "category",
+          "basis": "unknown"
+        }
+      }
+    },
+    {
+      "id": "run-retention-loss",
+      "truth_series": [
+        {
+          "t_s": 0.0,
+          "state": {
+            "host": "open",
+            "support": "secured",
+            "connector": "separated",
+            "source": "isolated",
+            "energy_fraction": 0,
+            "contact": "clear"
+          }
+        },
+        {
+          "t_s": 0.0,
+          "state": {
+            "host": "open",
+            "support": "released",
+            "connector": "separated",
+            "source": "isolated",
+            "energy_fraction": 0.0,
+            "contact": "clear"
+          }
+        }
+      ],
+      "observation_series": [
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "host",
+          "reading": {
+            "status": "known",
+            "value": "open",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "support",
+          "reading": {
+            "status": "known",
+            "value": "secured",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "connector",
+          "reading": {
+            "status": "known",
+            "value": "separated",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "source",
+          "reading": {
+            "status": "known",
+            "value": "isolated",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "energy_fraction",
+          "reading": {
+            "status": "known",
+            "value": 0,
+            "unit": "1",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "contact",
+          "reading": {
+            "status": "known",
+            "value": "clear",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        }
+      ],
+      "command_series": [
+        {
+          "t_s": 0.0,
+          "name": "release_support",
+          "duration_s": 0,
+          "accepted": true,
+          "reason": "intentional unguarded negative control"
+        }
+      ],
+      "belief_series": [
+        {
+          "t_s": 0.0,
+          "candidates": [
+            {
+              "host": "open",
+              "support": "secured",
+              "connector": "separated",
+              "source": "isolated",
+              "energy_fraction": 0,
+              "contact": "clear"
+            }
+          ],
+          "status": "consistent"
+        }
+      ],
+      "outcomes": {
+        "retention_loss": {
+          "status": "known",
+          "value": true,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "unsafe_energization": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "unsafe_connector_transition": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "task_completed": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "acceptable_completion": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "safe_abort": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "interventions": {
+          "status": "known",
+          "value": 0,
+          "unit": "count",
+          "basis": "computed"
+        },
+        "elapsed_s": {
+          "status": "known",
+          "value": 0.0,
+          "unit": "s",
+          "basis": "computed"
+        },
+        "exceeded_load_limits": {
+          "status": "unmeasured",
+          "value": null,
+          "unit": "category",
+          "basis": "unknown"
+        },
+        "unrecoverable": {
+          "status": "unknown",
+          "value": null,
+          "unit": "category",
+          "basis": "unknown"
+        }
+      }
+    },
+    {
+      "id": "run-false-report",
+      "truth_series": [
+        {
+          "t_s": 0.0,
+          "state": {
+            "host": "locked",
+            "support": "secured",
+            "connector": "mated",
+            "source": "isolated",
+            "energy_fraction": 0,
+            "contact": "clear"
+          }
+        },
+        {
+          "t_s": 0.0,
+          "state": {
+            "host": "locked",
+            "support": "secured",
+            "connector": "mated",
+            "source": "isolated",
+            "energy_fraction": 0,
+            "contact": "clear"
+          }
+        }
+      ],
+      "observation_series": [
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "host",
+          "reading": {
+            "status": "known",
+            "value": "partial",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "support",
+          "reading": {
+            "status": "known",
+            "value": "secured",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "connector",
+          "reading": {
+            "status": "known",
+            "value": "mated",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "source",
+          "reading": {
+            "status": "known",
+            "value": "isolated",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "energy_fraction",
+          "reading": {
+            "status": "known",
+            "value": 0,
+            "unit": "1",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "contact",
+          "reading": {
+            "status": "known",
+            "value": "clear",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        }
+      ],
+      "command_series": [
+        {
+          "t_s": 0.0,
+          "name": "release_support",
+          "duration_s": 0,
+          "accepted": false,
+          "reason": "guard rejected supplied belief"
+        }
+      ],
+      "belief_series": [
+        {
+          "t_s": 0.0,
+          "candidates": [
+            {
+              "host": "partial",
+              "support": "secured",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 0,
+              "contact": "clear"
+            }
+          ],
+          "status": "consistent"
+        }
+      ],
+      "outcomes": {
+        "retention_loss": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "unsafe_energization": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "unsafe_connector_transition": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "task_completed": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "acceptable_completion": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "safe_abort": {
+          "status": "known",
+          "value": true,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "interventions": {
+          "status": "known",
+          "value": 0,
+          "unit": "count",
+          "basis": "computed"
+        },
+        "elapsed_s": {
+          "status": "known",
+          "value": 0.0,
+          "unit": "s",
+          "basis": "computed"
+        },
+        "exceeded_load_limits": {
+          "status": "unmeasured",
+          "value": null,
+          "unit": "category",
+          "basis": "unknown"
+        },
+        "unrecoverable": {
+          "status": "unknown",
+          "value": null,
+          "unit": "category",
+          "basis": "unknown"
+        }
+      }
+    },
+    {
+      "id": "run-stale-ack",
+      "truth_series": [
+        {
+          "t_s": 0.0,
+          "state": {
+            "host": "locked",
+            "support": "secured",
+            "connector": "mated",
+            "source": "isolated",
+            "energy_fraction": 0,
+            "contact": "clear"
+          }
+        },
+        {
+          "t_s": 0.0,
+          "state": {
+            "host": "locked",
+            "support": "secured",
+            "connector": "mated",
+            "source": "isolated",
+            "energy_fraction": 0,
+            "contact": "clear"
+          }
+        }
+      ],
+      "observation_series": [
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "host",
+          "reading": {
+            "status": "known",
+            "value": "locked",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "stale"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "support",
+          "reading": {
+            "status": "known",
+            "value": "secured",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "stale"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "connector",
+          "reading": {
+            "status": "known",
+            "value": "mated",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "stale"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "source",
+          "reading": {
+            "status": "known",
+            "value": "isolated",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "stale"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "energy_fraction",
+          "reading": {
+            "status": "known",
+            "value": 0,
+            "unit": "1",
+            "basis": "computed"
+          },
+          "validity": "stale"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "contact",
+          "reading": {
+            "status": "known",
+            "value": "clear",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "stale"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "lock_ack",
+          "reading": {
+            "status": "known",
+            "value": "received",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "stale"
+        }
+      ],
+      "command_series": [
+        {
+          "t_s": 0.0,
+          "name": "release_support",
+          "duration_s": 0,
+          "accepted": false,
+          "reason": "guard rejected supplied belief"
+        }
+      ],
+      "belief_series": [
+        {
+          "t_s": 0.0,
+          "candidates": [
+            {
+              "host": "open",
+              "support": "secured",
+              "connector": "mated",
+              "source": "connected",
+              "energy_fraction": 1.0,
+              "contact": "clear"
+            },
+            {
+              "host": "open",
+              "support": "secured",
+              "connector": "mated",
+              "source": "connected",
+              "energy_fraction": 1.0,
+              "contact": "unexpected"
+            },
+            {
+              "host": "open",
+              "support": "secured",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 0.0,
+              "contact": "clear"
+            },
+            {
+              "host": "open",
+              "support": "secured",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 0.0,
+              "contact": "unexpected"
+            },
+            {
+              "host": "open",
+              "support": "secured",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 1.0,
+              "contact": "clear"
+            },
+            {
+              "host": "open",
+              "support": "secured",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 1.0,
+              "contact": "unexpected"
+            },
+            {
+              "host": "open",
+              "support": "secured",
+              "connector": "separated",
+              "source": "connected",
+              "energy_fraction": 1.0,
+              "contact": "clear"
+            },
+            {
+              "host": "open",
+              "support": "secured",
+              "connector": "separated",
+              "source": "connected",
+              "energy_fraction": 1.0,
+              "contact": "unexpected"
+            },
+            {
+              "host": "open",
+              "support": "secured",
+              "connector": "separated",
+              "source": "isolated",
+              "energy_fraction": 0.0,
+              "contact": "clear"
+            },
+            {
+              "host": "open",
+              "support": "secured",
+              "connector": "separated",
+              "source": "isolated",
+              "energy_fraction": 0.0,
+              "contact": "unexpected"
+            },
+            {
+              "host": "open",
+              "support": "secured",
+              "connector": "separated",
+              "source": "isolated",
+              "energy_fraction": 1.0,
+              "contact": "clear"
+            },
+            {
+              "host": "open",
+              "support": "secured",
+              "connector": "separated",
+              "source": "isolated",
+              "energy_fraction": 1.0,
+              "contact": "unexpected"
+            },
+            {
+              "host": "open",
+              "support": "released",
+              "connector": "mated",
+              "source": "connected",
+              "energy_fraction": 1.0,
+              "contact": "clear"
+            },
+            {
+              "host": "open",
+              "support": "released",
+              "connector": "mated",
+              "source": "connected",
+              "energy_fraction": 1.0,
+              "contact": "unexpected"
+            },
+            {
+              "host": "open",
+              "support": "released",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 0.0,
+              "contact": "clear"
+            },
+            {
+              "host": "open",
+              "support": "released",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 0.0,
+              "contact": "unexpected"
+            },
+            {
+              "host": "open",
+              "support": "released",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 1.0,
+              "contact": "clear"
+            },
+            {
+              "host": "open",
+              "support": "released",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 1.0,
+              "contact": "unexpected"
+            },
+            {
+              "host": "open",
+              "support": "released",
+              "connector": "separated",
+              "source": "connected",
+              "energy_fraction": 1.0,
+              "contact": "clear"
+            },
+            {
+              "host": "open",
+              "support": "released",
+              "connector": "separated",
+              "source": "connected",
+              "energy_fraction": 1.0,
+              "contact": "unexpected"
+            },
+            {
+              "host": "open",
+              "support": "released",
+              "connector": "separated",
+              "source": "isolated",
+              "energy_fraction": 0.0,
+              "contact": "clear"
+            },
+            {
+              "host": "open",
+              "support": "released",
+              "connector": "separated",
+              "source": "isolated",
+              "energy_fraction": 0.0,
+              "contact": "unexpected"
+            },
+            {
+              "host": "open",
+              "support": "released",
+              "connector": "separated",
+              "source": "isolated",
+              "energy_fraction": 1.0,
+              "contact": "clear"
+            },
+            {
+              "host": "open",
+              "support": "released",
+              "connector": "separated",
+              "source": "isolated",
+              "energy_fraction": 1.0,
+              "contact": "unexpected"
+            },
+            {
+              "host": "partial",
+              "support": "secured",
+              "connector": "mated",
+              "source": "connected",
+              "energy_fraction": 1.0,
+              "contact": "clear"
+            },
+            {
+              "host": "partial",
+              "support": "secured",
+              "connector": "mated",
+              "source": "connected",
+              "energy_fraction": 1.0,
+              "contact": "unexpected"
+            },
+            {
+              "host": "partial",
+              "support": "secured",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 0.0,
+              "contact": "clear"
+            },
+            {
+              "host": "partial",
+              "support": "secured",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 0.0,
+              "contact": "unexpected"
+            },
+            {
+              "host": "partial",
+              "support": "secured",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 1.0,
+              "contact": "clear"
+            },
+            {
+              "host": "partial",
+              "support": "secured",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 1.0,
+              "contact": "unexpected"
+            },
+            {
+              "host": "partial",
+              "support": "released",
+              "connector": "mated",
+              "source": "connected",
+              "energy_fraction": 1.0,
+              "contact": "clear"
+            },
+            {
+              "host": "partial",
+              "support": "released",
+              "connector": "mated",
+              "source": "connected",
+              "energy_fraction": 1.0,
+              "contact": "unexpected"
+            },
+            {
+              "host": "partial",
+              "support": "released",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 0.0,
+              "contact": "clear"
+            },
+            {
+              "host": "partial",
+              "support": "released",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 0.0,
+              "contact": "unexpected"
+            },
+            {
+              "host": "partial",
+              "support": "released",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 1.0,
+              "contact": "clear"
+            },
+            {
+              "host": "partial",
+              "support": "released",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 1.0,
+              "contact": "unexpected"
+            },
+            {
+              "host": "locked",
+              "support": "secured",
+              "connector": "mated",
+              "source": "connected",
+              "energy_fraction": 1.0,
+              "contact": "clear"
+            },
+            {
+              "host": "locked",
+              "support": "secured",
+              "connector": "mated",
+              "source": "connected",
+              "energy_fraction": 1.0,
+              "contact": "unexpected"
+            },
+            {
+              "host": "locked",
+              "support": "secured",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 0.0,
+              "contact": "clear"
+            },
+            {
+              "host": "locked",
+              "support": "secured",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 0.0,
+              "contact": "unexpected"
+            },
+            {
+              "host": "locked",
+              "support": "secured",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 1.0,
+              "contact": "clear"
+            },
+            {
+              "host": "locked",
+              "support": "secured",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 1.0,
+              "contact": "unexpected"
+            },
+            {
+              "host": "locked",
+              "support": "released",
+              "connector": "mated",
+              "source": "connected",
+              "energy_fraction": 1.0,
+              "contact": "clear"
+            },
+            {
+              "host": "locked",
+              "support": "released",
+              "connector": "mated",
+              "source": "connected",
+              "energy_fraction": 1.0,
+              "contact": "unexpected"
+            },
+            {
+              "host": "locked",
+              "support": "released",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 0.0,
+              "contact": "clear"
+            },
+            {
+              "host": "locked",
+              "support": "released",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 0.0,
+              "contact": "unexpected"
+            },
+            {
+              "host": "locked",
+              "support": "released",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 1.0,
+              "contact": "clear"
+            },
+            {
+              "host": "locked",
+              "support": "released",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 1.0,
+              "contact": "unexpected"
+            }
+          ],
+          "status": "consistent"
+        }
+      ],
+      "outcomes": {
+        "retention_loss": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "unsafe_energization": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "unsafe_connector_transition": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "task_completed": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "acceptable_completion": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "safe_abort": {
+          "status": "known",
+          "value": true,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "interventions": {
+          "status": "known",
+          "value": 0,
+          "unit": "count",
+          "basis": "computed"
+        },
+        "elapsed_s": {
+          "status": "known",
+          "value": 0.0,
+          "unit": "s",
+          "basis": "computed"
+        },
+        "exceeded_load_limits": {
+          "status": "unmeasured",
+          "value": null,
+          "unit": "category",
+          "basis": "unknown"
+        },
+        "unrecoverable": {
+          "status": "unknown",
+          "value": null,
+          "unit": "category",
+          "basis": "unknown"
+        }
+      }
+    },
+    {
+      "id": "run-communication-loss",
+      "truth_series": [
+        {
+          "t_s": 0.0,
+          "state": {
+            "host": "open",
+            "support": "secured",
+            "connector": "separated",
+            "source": "isolated",
+            "energy_fraction": 0,
+            "contact": "clear"
+          }
+        },
+        {
+          "t_s": 0.0,
+          "state": {
+            "host": "open",
+            "support": "secured",
+            "connector": "separated",
+            "source": "isolated",
+            "energy_fraction": 0,
+            "contact": "clear"
+          }
+        }
+      ],
+      "observation_series": [
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "host",
+          "reading": {
+            "status": "missing",
+            "value": null,
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "missing"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "support",
+          "reading": {
+            "status": "missing",
+            "value": null,
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "missing"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "connector",
+          "reading": {
+            "status": "missing",
+            "value": null,
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "missing"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "source",
+          "reading": {
+            "status": "missing",
+            "value": null,
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "missing"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "energy_fraction",
+          "reading": {
+            "status": "missing",
+            "value": null,
+            "unit": "1",
+            "basis": "computed"
+          },
+          "validity": "missing"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "contact",
+          "reading": {
+            "status": "missing",
+            "value": null,
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "missing"
+        }
+      ],
+      "command_series": [
+        {
+          "t_s": 0.0,
+          "name": "mate",
+          "duration_s": 0,
+          "accepted": false,
+          "reason": "guard rejected supplied belief"
+        }
+      ],
+      "belief_series": [
+        {
+          "t_s": 0.0,
+          "candidates": [
+            {
+              "host": "open",
+              "support": "secured",
+              "connector": "mated",
+              "source": "connected",
+              "energy_fraction": 1.0,
+              "contact": "clear"
+            },
+            {
+              "host": "open",
+              "support": "secured",
+              "connector": "mated",
+              "source": "connected",
+              "energy_fraction": 1.0,
+              "contact": "unexpected"
+            },
+            {
+              "host": "open",
+              "support": "secured",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 0.0,
+              "contact": "clear"
+            },
+            {
+              "host": "open",
+              "support": "secured",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 0.0,
+              "contact": "unexpected"
+            },
+            {
+              "host": "open",
+              "support": "secured",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 1.0,
+              "contact": "clear"
+            },
+            {
+              "host": "open",
+              "support": "secured",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 1.0,
+              "contact": "unexpected"
+            },
+            {
+              "host": "open",
+              "support": "secured",
+              "connector": "separated",
+              "source": "connected",
+              "energy_fraction": 1.0,
+              "contact": "clear"
+            },
+            {
+              "host": "open",
+              "support": "secured",
+              "connector": "separated",
+              "source": "connected",
+              "energy_fraction": 1.0,
+              "contact": "unexpected"
+            },
+            {
+              "host": "open",
+              "support": "secured",
+              "connector": "separated",
+              "source": "isolated",
+              "energy_fraction": 0.0,
+              "contact": "clear"
+            },
+            {
+              "host": "open",
+              "support": "secured",
+              "connector": "separated",
+              "source": "isolated",
+              "energy_fraction": 0.0,
+              "contact": "unexpected"
+            },
+            {
+              "host": "open",
+              "support": "secured",
+              "connector": "separated",
+              "source": "isolated",
+              "energy_fraction": 1.0,
+              "contact": "clear"
+            },
+            {
+              "host": "open",
+              "support": "secured",
+              "connector": "separated",
+              "source": "isolated",
+              "energy_fraction": 1.0,
+              "contact": "unexpected"
+            },
+            {
+              "host": "open",
+              "support": "released",
+              "connector": "mated",
+              "source": "connected",
+              "energy_fraction": 1.0,
+              "contact": "clear"
+            },
+            {
+              "host": "open",
+              "support": "released",
+              "connector": "mated",
+              "source": "connected",
+              "energy_fraction": 1.0,
+              "contact": "unexpected"
+            },
+            {
+              "host": "open",
+              "support": "released",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 0.0,
+              "contact": "clear"
+            },
+            {
+              "host": "open",
+              "support": "released",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 0.0,
+              "contact": "unexpected"
+            },
+            {
+              "host": "open",
+              "support": "released",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 1.0,
+              "contact": "clear"
+            },
+            {
+              "host": "open",
+              "support": "released",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 1.0,
+              "contact": "unexpected"
+            },
+            {
+              "host": "open",
+              "support": "released",
+              "connector": "separated",
+              "source": "connected",
+              "energy_fraction": 1.0,
+              "contact": "clear"
+            },
+            {
+              "host": "open",
+              "support": "released",
+              "connector": "separated",
+              "source": "connected",
+              "energy_fraction": 1.0,
+              "contact": "unexpected"
+            },
+            {
+              "host": "open",
+              "support": "released",
+              "connector": "separated",
+              "source": "isolated",
+              "energy_fraction": 0.0,
+              "contact": "clear"
+            },
+            {
+              "host": "open",
+              "support": "released",
+              "connector": "separated",
+              "source": "isolated",
+              "energy_fraction": 0.0,
+              "contact": "unexpected"
+            },
+            {
+              "host": "open",
+              "support": "released",
+              "connector": "separated",
+              "source": "isolated",
+              "energy_fraction": 1.0,
+              "contact": "clear"
+            },
+            {
+              "host": "open",
+              "support": "released",
+              "connector": "separated",
+              "source": "isolated",
+              "energy_fraction": 1.0,
+              "contact": "unexpected"
+            },
+            {
+              "host": "partial",
+              "support": "secured",
+              "connector": "mated",
+              "source": "connected",
+              "energy_fraction": 1.0,
+              "contact": "clear"
+            },
+            {
+              "host": "partial",
+              "support": "secured",
+              "connector": "mated",
+              "source": "connected",
+              "energy_fraction": 1.0,
+              "contact": "unexpected"
+            },
+            {
+              "host": "partial",
+              "support": "secured",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 0.0,
+              "contact": "clear"
+            },
+            {
+              "host": "partial",
+              "support": "secured",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 0.0,
+              "contact": "unexpected"
+            },
+            {
+              "host": "partial",
+              "support": "secured",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 1.0,
+              "contact": "clear"
+            },
+            {
+              "host": "partial",
+              "support": "secured",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 1.0,
+              "contact": "unexpected"
+            },
+            {
+              "host": "partial",
+              "support": "released",
+              "connector": "mated",
+              "source": "connected",
+              "energy_fraction": 1.0,
+              "contact": "clear"
+            },
+            {
+              "host": "partial",
+              "support": "released",
+              "connector": "mated",
+              "source": "connected",
+              "energy_fraction": 1.0,
+              "contact": "unexpected"
+            },
+            {
+              "host": "partial",
+              "support": "released",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 0.0,
+              "contact": "clear"
+            },
+            {
+              "host": "partial",
+              "support": "released",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 0.0,
+              "contact": "unexpected"
+            },
+            {
+              "host": "partial",
+              "support": "released",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 1.0,
+              "contact": "clear"
+            },
+            {
+              "host": "partial",
+              "support": "released",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 1.0,
+              "contact": "unexpected"
+            },
+            {
+              "host": "locked",
+              "support": "secured",
+              "connector": "mated",
+              "source": "connected",
+              "energy_fraction": 1.0,
+              "contact": "clear"
+            },
+            {
+              "host": "locked",
+              "support": "secured",
+              "connector": "mated",
+              "source": "connected",
+              "energy_fraction": 1.0,
+              "contact": "unexpected"
+            },
+            {
+              "host": "locked",
+              "support": "secured",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 0.0,
+              "contact": "clear"
+            },
+            {
+              "host": "locked",
+              "support": "secured",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 0.0,
+              "contact": "unexpected"
+            },
+            {
+              "host": "locked",
+              "support": "secured",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 1.0,
+              "contact": "clear"
+            },
+            {
+              "host": "locked",
+              "support": "secured",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 1.0,
+              "contact": "unexpected"
+            },
+            {
+              "host": "locked",
+              "support": "released",
+              "connector": "mated",
+              "source": "connected",
+              "energy_fraction": 1.0,
+              "contact": "clear"
+            },
+            {
+              "host": "locked",
+              "support": "released",
+              "connector": "mated",
+              "source": "connected",
+              "energy_fraction": 1.0,
+              "contact": "unexpected"
+            },
+            {
+              "host": "locked",
+              "support": "released",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 0.0,
+              "contact": "clear"
+            },
+            {
+              "host": "locked",
+              "support": "released",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 0.0,
+              "contact": "unexpected"
+            },
+            {
+              "host": "locked",
+              "support": "released",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 1.0,
+              "contact": "clear"
+            },
+            {
+              "host": "locked",
+              "support": "released",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 1.0,
+              "contact": "unexpected"
+            }
+          ],
+          "status": "consistent"
+        }
+      ],
+      "outcomes": {
+        "retention_loss": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "unsafe_energization": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "unsafe_connector_transition": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "task_completed": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "acceptable_completion": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "safe_abort": {
+          "status": "known",
+          "value": true,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "interventions": {
+          "status": "known",
+          "value": 0,
+          "unit": "count",
+          "basis": "computed"
+        },
+        "elapsed_s": {
+          "status": "known",
+          "value": 0.0,
+          "unit": "s",
+          "basis": "computed"
+        },
+        "exceeded_load_limits": {
+          "status": "unmeasured",
+          "value": null,
+          "unit": "category",
+          "basis": "unknown"
+        },
+        "unrecoverable": {
+          "status": "unknown",
+          "value": null,
+          "unit": "category",
+          "basis": "unknown"
+        }
+      }
+    },
+    {
+      "id": "run-restart",
+      "truth_series": [
+        {
+          "t_s": 0.0,
+          "state": {
+            "host": "locked",
+            "support": "secured",
+            "connector": "mated",
+            "source": "isolated",
+            "energy_fraction": 0,
+            "contact": "clear"
+          }
+        },
+        {
+          "t_s": 0.0,
+          "state": {
+            "host": "locked",
+            "support": "secured",
+            "connector": "mated",
+            "source": "isolated",
+            "energy_fraction": 0.0,
+            "contact": "clear"
+          }
+        },
+        {
+          "t_s": 0.0,
+          "state": {
+            "host": "locked",
+            "support": "secured",
+            "connector": "mated",
+            "source": "isolated",
+            "energy_fraction": 0.0,
+            "contact": "clear"
+          }
+        }
+      ],
+      "observation_series": [
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "host",
+          "reading": {
+            "status": "known",
+            "value": "locked",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "support",
+          "reading": {
+            "status": "known",
+            "value": "secured",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "connector",
+          "reading": {
+            "status": "known",
+            "value": "mated",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "source",
+          "reading": {
+            "status": "known",
+            "value": "isolated",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "energy_fraction",
+          "reading": {
+            "status": "known",
+            "value": 0,
+            "unit": "1",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "contact",
+          "reading": {
+            "status": "known",
+            "value": "clear",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "host",
+          "reading": {
+            "status": "known",
+            "value": "locked",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "support",
+          "reading": {
+            "status": "known",
+            "value": "secured",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "connector",
+          "reading": {
+            "status": "known",
+            "value": "mated",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "source",
+          "reading": {
+            "status": "known",
+            "value": "isolated",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "energy_fraction",
+          "reading": {
+            "status": "known",
+            "value": 0.0,
+            "unit": "1",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "contact",
+          "reading": {
+            "status": "known",
+            "value": "clear",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        }
+      ],
+      "command_series": [
+        {
+          "t_s": 0.0,
+          "name": "hold",
+          "duration_s": 0,
+          "accepted": true,
+          "reason": "abstract guard passed"
+        },
+        {
+          "t_s": 0.0,
+          "name": "release_support",
+          "duration_s": 0,
+          "accepted": false,
+          "reason": "guard rejected supplied belief"
+        }
+      ],
+      "belief_series": [
+        {
+          "t_s": 0.0,
+          "candidates": [
+            {
+              "host": "locked",
+              "support": "secured",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 0,
+              "contact": "clear"
+            }
+          ],
+          "status": "consistent"
+        },
+        {
+          "t_s": 0.0,
+          "candidates": [
+            {
+              "host": "open",
+              "support": "secured",
+              "connector": "mated",
+              "source": "connected",
+              "energy_fraction": 1.0,
+              "contact": "clear"
+            },
+            {
+              "host": "open",
+              "support": "secured",
+              "connector": "mated",
+              "source": "connected",
+              "energy_fraction": 1.0,
+              "contact": "unexpected"
+            },
+            {
+              "host": "open",
+              "support": "secured",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 0.0,
+              "contact": "clear"
+            },
+            {
+              "host": "open",
+              "support": "secured",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 0.0,
+              "contact": "unexpected"
+            },
+            {
+              "host": "open",
+              "support": "secured",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 1.0,
+              "contact": "clear"
+            },
+            {
+              "host": "open",
+              "support": "secured",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 1.0,
+              "contact": "unexpected"
+            },
+            {
+              "host": "open",
+              "support": "secured",
+              "connector": "separated",
+              "source": "connected",
+              "energy_fraction": 1.0,
+              "contact": "clear"
+            },
+            {
+              "host": "open",
+              "support": "secured",
+              "connector": "separated",
+              "source": "connected",
+              "energy_fraction": 1.0,
+              "contact": "unexpected"
+            },
+            {
+              "host": "open",
+              "support": "secured",
+              "connector": "separated",
+              "source": "isolated",
+              "energy_fraction": 0.0,
+              "contact": "clear"
+            },
+            {
+              "host": "open",
+              "support": "secured",
+              "connector": "separated",
+              "source": "isolated",
+              "energy_fraction": 0.0,
+              "contact": "unexpected"
+            },
+            {
+              "host": "open",
+              "support": "secured",
+              "connector": "separated",
+              "source": "isolated",
+              "energy_fraction": 1.0,
+              "contact": "clear"
+            },
+            {
+              "host": "open",
+              "support": "secured",
+              "connector": "separated",
+              "source": "isolated",
+              "energy_fraction": 1.0,
+              "contact": "unexpected"
+            },
+            {
+              "host": "open",
+              "support": "released",
+              "connector": "mated",
+              "source": "connected",
+              "energy_fraction": 1.0,
+              "contact": "clear"
+            },
+            {
+              "host": "open",
+              "support": "released",
+              "connector": "mated",
+              "source": "connected",
+              "energy_fraction": 1.0,
+              "contact": "unexpected"
+            },
+            {
+              "host": "open",
+              "support": "released",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 0.0,
+              "contact": "clear"
+            },
+            {
+              "host": "open",
+              "support": "released",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 0.0,
+              "contact": "unexpected"
+            },
+            {
+              "host": "open",
+              "support": "released",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 1.0,
+              "contact": "clear"
+            },
+            {
+              "host": "open",
+              "support": "released",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 1.0,
+              "contact": "unexpected"
+            },
+            {
+              "host": "open",
+              "support": "released",
+              "connector": "separated",
+              "source": "connected",
+              "energy_fraction": 1.0,
+              "contact": "clear"
+            },
+            {
+              "host": "open",
+              "support": "released",
+              "connector": "separated",
+              "source": "connected",
+              "energy_fraction": 1.0,
+              "contact": "unexpected"
+            },
+            {
+              "host": "open",
+              "support": "released",
+              "connector": "separated",
+              "source": "isolated",
+              "energy_fraction": 0.0,
+              "contact": "clear"
+            },
+            {
+              "host": "open",
+              "support": "released",
+              "connector": "separated",
+              "source": "isolated",
+              "energy_fraction": 0.0,
+              "contact": "unexpected"
+            },
+            {
+              "host": "open",
+              "support": "released",
+              "connector": "separated",
+              "source": "isolated",
+              "energy_fraction": 1.0,
+              "contact": "clear"
+            },
+            {
+              "host": "open",
+              "support": "released",
+              "connector": "separated",
+              "source": "isolated",
+              "energy_fraction": 1.0,
+              "contact": "unexpected"
+            },
+            {
+              "host": "partial",
+              "support": "secured",
+              "connector": "mated",
+              "source": "connected",
+              "energy_fraction": 1.0,
+              "contact": "clear"
+            },
+            {
+              "host": "partial",
+              "support": "secured",
+              "connector": "mated",
+              "source": "connected",
+              "energy_fraction": 1.0,
+              "contact": "unexpected"
+            },
+            {
+              "host": "partial",
+              "support": "secured",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 0.0,
+              "contact": "clear"
+            },
+            {
+              "host": "partial",
+              "support": "secured",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 0.0,
+              "contact": "unexpected"
+            },
+            {
+              "host": "partial",
+              "support": "secured",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 1.0,
+              "contact": "clear"
+            },
+            {
+              "host": "partial",
+              "support": "secured",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 1.0,
+              "contact": "unexpected"
+            },
+            {
+              "host": "partial",
+              "support": "released",
+              "connector": "mated",
+              "source": "connected",
+              "energy_fraction": 1.0,
+              "contact": "clear"
+            },
+            {
+              "host": "partial",
+              "support": "released",
+              "connector": "mated",
+              "source": "connected",
+              "energy_fraction": 1.0,
+              "contact": "unexpected"
+            },
+            {
+              "host": "partial",
+              "support": "released",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 0.0,
+              "contact": "clear"
+            },
+            {
+              "host": "partial",
+              "support": "released",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 0.0,
+              "contact": "unexpected"
+            },
+            {
+              "host": "partial",
+              "support": "released",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 1.0,
+              "contact": "clear"
+            },
+            {
+              "host": "partial",
+              "support": "released",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 1.0,
+              "contact": "unexpected"
+            },
+            {
+              "host": "locked",
+              "support": "secured",
+              "connector": "mated",
+              "source": "connected",
+              "energy_fraction": 1.0,
+              "contact": "clear"
+            },
+            {
+              "host": "locked",
+              "support": "secured",
+              "connector": "mated",
+              "source": "connected",
+              "energy_fraction": 1.0,
+              "contact": "unexpected"
+            },
+            {
+              "host": "locked",
+              "support": "secured",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 0.0,
+              "contact": "clear"
+            },
+            {
+              "host": "locked",
+              "support": "secured",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 0.0,
+              "contact": "unexpected"
+            },
+            {
+              "host": "locked",
+              "support": "secured",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 1.0,
+              "contact": "clear"
+            },
+            {
+              "host": "locked",
+              "support": "secured",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 1.0,
+              "contact": "unexpected"
+            },
+            {
+              "host": "locked",
+              "support": "released",
+              "connector": "mated",
+              "source": "connected",
+              "energy_fraction": 1.0,
+              "contact": "clear"
+            },
+            {
+              "host": "locked",
+              "support": "released",
+              "connector": "mated",
+              "source": "connected",
+              "energy_fraction": 1.0,
+              "contact": "unexpected"
+            },
+            {
+              "host": "locked",
+              "support": "released",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 0.0,
+              "contact": "clear"
+            },
+            {
+              "host": "locked",
+              "support": "released",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 0.0,
+              "contact": "unexpected"
+            },
+            {
+              "host": "locked",
+              "support": "released",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 1.0,
+              "contact": "clear"
+            },
+            {
+              "host": "locked",
+              "support": "released",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 1.0,
+              "contact": "unexpected"
+            }
+          ],
+          "status": "consistent"
+        }
+      ],
+      "outcomes": {
+        "retention_loss": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "unsafe_energization": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "unsafe_connector_transition": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "task_completed": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "acceptable_completion": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "safe_abort": {
+          "status": "known",
+          "value": true,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "interventions": {
+          "status": "known",
+          "value": 0,
+          "unit": "count",
+          "basis": "computed"
+        },
+        "elapsed_s": {
+          "status": "known",
+          "value": 0.0,
+          "unit": "s",
+          "basis": "computed"
+        },
+        "exceeded_load_limits": {
+          "status": "unmeasured",
+          "value": null,
+          "unit": "category",
+          "basis": "unknown"
+        },
+        "unrecoverable": {
+          "status": "unknown",
+          "value": null,
+          "unit": "category",
+          "basis": "unknown"
+        }
+      }
+    },
+    {
+      "id": "run-partial-latch",
+      "truth_series": [
+        {
+          "t_s": 0.0,
+          "state": {
+            "host": "open",
+            "support": "secured",
+            "connector": "mated",
+            "source": "isolated",
+            "energy_fraction": 0,
+            "contact": "clear"
+          }
+        },
+        {
+          "t_s": 0.0,
+          "state": {
+            "host": "partial",
+            "support": "secured",
+            "connector": "mated",
+            "source": "isolated",
+            "energy_fraction": 0.0,
+            "contact": "clear"
+          }
+        },
+        {
+          "t_s": 0.0,
+          "state": {
+            "host": "partial",
+            "support": "secured",
+            "connector": "mated",
+            "source": "isolated",
+            "energy_fraction": 0.0,
+            "contact": "clear"
+          }
+        }
+      ],
+      "observation_series": [
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "host",
+          "reading": {
+            "status": "known",
+            "value": "open",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "support",
+          "reading": {
+            "status": "known",
+            "value": "secured",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "connector",
+          "reading": {
+            "status": "known",
+            "value": "mated",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "source",
+          "reading": {
+            "status": "known",
+            "value": "isolated",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "energy_fraction",
+          "reading": {
+            "status": "known",
+            "value": 0,
+            "unit": "1",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "contact",
+          "reading": {
+            "status": "known",
+            "value": "clear",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "host",
+          "reading": {
+            "status": "known",
+            "value": "partial",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "support",
+          "reading": {
+            "status": "known",
+            "value": "secured",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "connector",
+          "reading": {
+            "status": "known",
+            "value": "mated",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "source",
+          "reading": {
+            "status": "known",
+            "value": "isolated",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "energy_fraction",
+          "reading": {
+            "status": "known",
+            "value": 0.0,
+            "unit": "1",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "contact",
+          "reading": {
+            "status": "known",
+            "value": "clear",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        }
+      ],
+      "command_series": [
+        {
+          "t_s": 0.0,
+          "name": "lock",
+          "duration_s": 0,
+          "accepted": true,
+          "reason": "abstract guard passed"
+        },
+        {
+          "t_s": 0.0,
+          "name": "release_support",
+          "duration_s": 0,
+          "accepted": false,
+          "reason": "guard rejected supplied belief"
+        }
+      ],
+      "belief_series": [
+        {
+          "t_s": 0.0,
+          "candidates": [
+            {
+              "host": "open",
+              "support": "secured",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 0,
+              "contact": "clear"
+            }
+          ],
+          "status": "consistent"
+        },
+        {
+          "t_s": 0.0,
+          "candidates": [
+            {
+              "host": "partial",
+              "support": "secured",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 0.0,
+              "contact": "clear"
+            }
+          ],
+          "status": "consistent"
+        }
+      ],
+      "outcomes": {
+        "retention_loss": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "unsafe_energization": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "unsafe_connector_transition": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "task_completed": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "acceptable_completion": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "safe_abort": {
+          "status": "known",
+          "value": true,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "interventions": {
+          "status": "known",
+          "value": 0,
+          "unit": "count",
+          "basis": "computed"
+        },
+        "elapsed_s": {
+          "status": "known",
+          "value": 0.0,
+          "unit": "s",
+          "basis": "computed"
+        },
+        "exceeded_load_limits": {
+          "status": "unmeasured",
+          "value": null,
+          "unit": "category",
+          "basis": "unknown"
+        },
+        "unrecoverable": {
+          "status": "unknown",
+          "value": null,
+          "unit": "category",
+          "basis": "unknown"
+        }
+      }
+    },
+    {
+      "id": "run-unexpected-contact",
+      "truth_series": [
+        {
+          "t_s": 0.0,
+          "state": {
+            "host": "locked",
+            "support": "secured",
+            "connector": "mated",
+            "source": "isolated",
+            "energy_fraction": 0,
+            "contact": "unexpected"
+          }
+        },
+        {
+          "t_s": 0.0,
+          "state": {
+            "host": "locked",
+            "support": "secured",
+            "connector": "mated",
+            "source": "isolated",
+            "energy_fraction": 0,
+            "contact": "unexpected"
+          }
+        }
+      ],
+      "observation_series": [
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "host",
+          "reading": {
+            "status": "known",
+            "value": "locked",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "support",
+          "reading": {
+            "status": "known",
+            "value": "secured",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "connector",
+          "reading": {
+            "status": "known",
+            "value": "mated",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "source",
+          "reading": {
+            "status": "known",
+            "value": "isolated",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "energy_fraction",
+          "reading": {
+            "status": "known",
+            "value": 0,
+            "unit": "1",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "contact",
+          "reading": {
+            "status": "known",
+            "value": "unexpected",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        }
+      ],
+      "command_series": [
+        {
+          "t_s": 0.0,
+          "name": "unlock",
+          "duration_s": 0,
+          "accepted": false,
+          "reason": "guard rejected supplied belief"
+        }
+      ],
+      "belief_series": [
+        {
+          "t_s": 0.0,
+          "candidates": [
+            {
+              "host": "locked",
+              "support": "secured",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 0,
+              "contact": "unexpected"
+            }
+          ],
+          "status": "consistent"
+        }
+      ],
+      "outcomes": {
+        "retention_loss": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "unsafe_energization": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "unsafe_connector_transition": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "task_completed": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "acceptable_completion": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "safe_abort": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "interventions": {
+          "status": "known",
+          "value": 0,
+          "unit": "count",
+          "basis": "computed"
+        },
+        "elapsed_s": {
+          "status": "known",
+          "value": 0.0,
+          "unit": "s",
+          "basis": "computed"
+        },
+        "exceeded_load_limits": {
+          "status": "unmeasured",
+          "value": null,
+          "unit": "category",
+          "basis": "unknown"
+        },
+        "unrecoverable": {
+          "status": "unknown",
+          "value": null,
+          "unit": "category",
+          "basis": "unknown"
+        }
+      }
+    },
+    {
+      "id": "run-adversarial-false-positive",
+      "truth_series": [
+        {
+          "t_s": 0.0,
+          "state": {
+            "host": "open",
+            "support": "secured",
+            "connector": "mated",
+            "source": "isolated",
+            "energy_fraction": 0,
+            "contact": "clear"
+          }
+        },
+        {
+          "t_s": 0.0,
+          "state": {
+            "host": "partial",
+            "support": "secured",
+            "connector": "mated",
+            "source": "isolated",
+            "energy_fraction": 0.0,
+            "contact": "clear"
+          }
+        },
+        {
+          "t_s": 0.0,
+          "state": {
+            "host": "partial",
+            "support": "released",
+            "connector": "mated",
+            "source": "isolated",
+            "energy_fraction": 0.0,
+            "contact": "clear"
+          }
+        }
+      ],
+      "observation_series": [
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "host",
+          "reading": {
+            "status": "known",
+            "value": "open",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "support",
+          "reading": {
+            "status": "known",
+            "value": "secured",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "connector",
+          "reading": {
+            "status": "known",
+            "value": "mated",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "source",
+          "reading": {
+            "status": "known",
+            "value": "isolated",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "energy_fraction",
+          "reading": {
+            "status": "known",
+            "value": 0,
+            "unit": "1",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "contact",
+          "reading": {
+            "status": "known",
+            "value": "clear",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "host",
+          "reading": {
+            "status": "known",
+            "value": "locked",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "support",
+          "reading": {
+            "status": "known",
+            "value": "secured",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "connector",
+          "reading": {
+            "status": "known",
+            "value": "mated",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "source",
+          "reading": {
+            "status": "known",
+            "value": "isolated",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "energy_fraction",
+          "reading": {
+            "status": "known",
+            "value": 0.0,
+            "unit": "1",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "contact",
+          "reading": {
+            "status": "known",
+            "value": "clear",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        }
+      ],
+      "command_series": [
+        {
+          "t_s": 0.0,
+          "name": "lock",
+          "duration_s": 0,
+          "accepted": true,
+          "reason": "abstract guard passed"
+        },
+        {
+          "t_s": 0.0,
+          "name": "release_support",
+          "duration_s": 0,
+          "accepted": true,
+          "reason": "abstract guard passed"
+        }
+      ],
+      "belief_series": [
+        {
+          "t_s": 0.0,
+          "candidates": [
+            {
+              "host": "open",
+              "support": "secured",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 0,
+              "contact": "clear"
+            }
+          ],
+          "status": "consistent"
+        },
+        {
+          "t_s": 0.0,
+          "candidates": [
+            {
+              "host": "locked",
+              "support": "secured",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 0.0,
+              "contact": "clear"
+            }
+          ],
+          "status": "consistent"
+        }
+      ],
+      "outcomes": {
+        "retention_loss": {
+          "status": "known",
+          "value": true,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "unsafe_energization": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "unsafe_connector_transition": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "task_completed": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "acceptable_completion": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "safe_abort": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "interventions": {
+          "status": "known",
+          "value": 0,
+          "unit": "count",
+          "basis": "computed"
+        },
+        "elapsed_s": {
+          "status": "known",
+          "value": 0.0,
+          "unit": "s",
+          "basis": "computed"
+        },
+        "exceeded_load_limits": {
+          "status": "unmeasured",
+          "value": null,
+          "unit": "category",
+          "basis": "unknown"
+        },
+        "unrecoverable": {
+          "status": "unknown",
+          "value": null,
+          "unit": "category",
+          "basis": "unknown"
+        }
+      }
+    },
+    {
+      "id": "run-completion-after-hazard",
+      "truth_series": [
+        {
+          "t_s": 0.0,
+          "state": {
+            "host": "open",
+            "support": "secured",
+            "connector": "mated",
+            "source": "isolated",
+            "energy_fraction": 1,
+            "contact": "clear"
+          }
+        },
+        {
+          "t_s": 0.0,
+          "state": {
+            "host": "open",
+            "support": "secured",
+            "connector": "separated",
+            "source": "isolated",
+            "energy_fraction": 1.0,
+            "contact": "clear"
+          }
+        },
+        {
+          "t_s": 10.0,
+          "state": {
+            "host": "open",
+            "support": "secured",
+            "connector": "separated",
+            "source": "isolated",
+            "energy_fraction": 0.006737946999085467,
+            "contact": "clear"
+          }
+        },
+        {
+          "t_s": 10.0,
+          "state": {
+            "host": "open",
+            "support": "secured",
+            "connector": "mated",
+            "source": "isolated",
+            "energy_fraction": 0.006737946999085467,
+            "contact": "clear"
+          }
+        },
+        {
+          "t_s": 10.0,
+          "state": {
+            "host": "locked",
+            "support": "secured",
+            "connector": "mated",
+            "source": "isolated",
+            "energy_fraction": 0.006737946999085467,
+            "contact": "clear"
+          }
+        },
+        {
+          "t_s": 10.0,
+          "state": {
+            "host": "locked",
+            "support": "released",
+            "connector": "mated",
+            "source": "isolated",
+            "energy_fraction": 0.006737946999085467,
+            "contact": "clear"
+          }
+        },
+        {
+          "t_s": 10.0,
+          "state": {
+            "host": "locked",
+            "support": "released",
+            "connector": "mated",
+            "source": "connected",
+            "energy_fraction": 1.0,
+            "contact": "clear"
+          }
+        }
+      ],
+      "observation_series": [
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "host",
+          "reading": {
+            "status": "known",
+            "value": "open",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "support",
+          "reading": {
+            "status": "known",
+            "value": "secured",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "connector",
+          "reading": {
+            "status": "known",
+            "value": "mated",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "source",
+          "reading": {
+            "status": "known",
+            "value": "isolated",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "energy_fraction",
+          "reading": {
+            "status": "known",
+            "value": 1,
+            "unit": "1",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "contact",
+          "reading": {
+            "status": "known",
+            "value": "clear",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "host",
+          "reading": {
+            "status": "known",
+            "value": "open",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "support",
+          "reading": {
+            "status": "known",
+            "value": "secured",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "connector",
+          "reading": {
+            "status": "known",
+            "value": "separated",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "source",
+          "reading": {
+            "status": "known",
+            "value": "isolated",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "energy_fraction",
+          "reading": {
+            "status": "known",
+            "value": 1.0,
+            "unit": "1",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "contact",
+          "reading": {
+            "status": "known",
+            "value": "clear",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 10.0,
+          "sampled_at_s": 10.0,
+          "received_at_s": 10.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "host",
+          "reading": {
+            "status": "known",
+            "value": "open",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 10.0,
+          "sampled_at_s": 10.0,
+          "received_at_s": 10.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "support",
+          "reading": {
+            "status": "known",
+            "value": "secured",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 10.0,
+          "sampled_at_s": 10.0,
+          "received_at_s": 10.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "connector",
+          "reading": {
+            "status": "known",
+            "value": "separated",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 10.0,
+          "sampled_at_s": 10.0,
+          "received_at_s": 10.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "source",
+          "reading": {
+            "status": "known",
+            "value": "isolated",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 10.0,
+          "sampled_at_s": 10.0,
+          "received_at_s": 10.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "energy_fraction",
+          "reading": {
+            "status": "known",
+            "value": 0.006737946999085467,
+            "unit": "1",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 10.0,
+          "sampled_at_s": 10.0,
+          "received_at_s": 10.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "contact",
+          "reading": {
+            "status": "known",
+            "value": "clear",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 10.0,
+          "sampled_at_s": 10.0,
+          "received_at_s": 10.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "host",
+          "reading": {
+            "status": "known",
+            "value": "open",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 10.0,
+          "sampled_at_s": 10.0,
+          "received_at_s": 10.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "support",
+          "reading": {
+            "status": "known",
+            "value": "secured",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 10.0,
+          "sampled_at_s": 10.0,
+          "received_at_s": 10.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "connector",
+          "reading": {
+            "status": "known",
+            "value": "mated",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 10.0,
+          "sampled_at_s": 10.0,
+          "received_at_s": 10.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "source",
+          "reading": {
+            "status": "known",
+            "value": "isolated",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 10.0,
+          "sampled_at_s": 10.0,
+          "received_at_s": 10.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "energy_fraction",
+          "reading": {
+            "status": "known",
+            "value": 0.006737946999085467,
+            "unit": "1",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 10.0,
+          "sampled_at_s": 10.0,
+          "received_at_s": 10.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "contact",
+          "reading": {
+            "status": "known",
+            "value": "clear",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 10.0,
+          "sampled_at_s": 10.0,
+          "received_at_s": 10.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "host",
+          "reading": {
+            "status": "known",
+            "value": "locked",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 10.0,
+          "sampled_at_s": 10.0,
+          "received_at_s": 10.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "support",
+          "reading": {
+            "status": "known",
+            "value": "secured",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 10.0,
+          "sampled_at_s": 10.0,
+          "received_at_s": 10.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "connector",
+          "reading": {
+            "status": "known",
+            "value": "mated",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 10.0,
+          "sampled_at_s": 10.0,
+          "received_at_s": 10.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "source",
+          "reading": {
+            "status": "known",
+            "value": "isolated",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 10.0,
+          "sampled_at_s": 10.0,
+          "received_at_s": 10.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "energy_fraction",
+          "reading": {
+            "status": "known",
+            "value": 0.006737946999085467,
+            "unit": "1",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 10.0,
+          "sampled_at_s": 10.0,
+          "received_at_s": 10.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "contact",
+          "reading": {
+            "status": "known",
+            "value": "clear",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 10.0,
+          "sampled_at_s": 10.0,
+          "received_at_s": 10.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "host",
+          "reading": {
+            "status": "known",
+            "value": "locked",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 10.0,
+          "sampled_at_s": 10.0,
+          "received_at_s": 10.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "support",
+          "reading": {
+            "status": "known",
+            "value": "released",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 10.0,
+          "sampled_at_s": 10.0,
+          "received_at_s": 10.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "connector",
+          "reading": {
+            "status": "known",
+            "value": "mated",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 10.0,
+          "sampled_at_s": 10.0,
+          "received_at_s": 10.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "source",
+          "reading": {
+            "status": "known",
+            "value": "isolated",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 10.0,
+          "sampled_at_s": 10.0,
+          "received_at_s": 10.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "energy_fraction",
+          "reading": {
+            "status": "known",
+            "value": 0.006737946999085467,
+            "unit": "1",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 10.0,
+          "sampled_at_s": 10.0,
+          "received_at_s": 10.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "contact",
+          "reading": {
+            "status": "known",
+            "value": "clear",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        }
+      ],
+      "command_series": [
+        {
+          "t_s": 0.0,
+          "name": "separate",
+          "duration_s": 0,
+          "accepted": true,
+          "reason": "intentional unguarded negative control"
+        },
+        {
+          "t_s": 0.0,
+          "name": "wait",
+          "duration_s": 10,
+          "accepted": true,
+          "reason": "abstract guard passed"
+        },
+        {
+          "t_s": 10.0,
+          "name": "mate",
+          "duration_s": 0,
+          "accepted": true,
+          "reason": "abstract guard passed"
+        },
+        {
+          "t_s": 10.0,
+          "name": "lock",
+          "duration_s": 0,
+          "accepted": true,
+          "reason": "abstract guard passed"
+        },
+        {
+          "t_s": 10.0,
+          "name": "release_support",
+          "duration_s": 0,
+          "accepted": true,
+          "reason": "abstract guard passed"
+        },
+        {
+          "t_s": 10.0,
+          "name": "energize",
+          "duration_s": 0,
+          "accepted": true,
+          "reason": "abstract guard passed"
+        }
+      ],
+      "belief_series": [
+        {
+          "t_s": 0.0,
+          "candidates": [
+            {
+              "host": "open",
+              "support": "secured",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 1,
+              "contact": "clear"
+            }
+          ],
+          "status": "consistent"
+        },
+        {
+          "t_s": 0.0,
+          "candidates": [
+            {
+              "host": "open",
+              "support": "secured",
+              "connector": "separated",
+              "source": "isolated",
+              "energy_fraction": 1.0,
+              "contact": "clear"
+            }
+          ],
+          "status": "consistent"
+        },
+        {
+          "t_s": 10.0,
+          "candidates": [
+            {
+              "host": "open",
+              "support": "secured",
+              "connector": "separated",
+              "source": "isolated",
+              "energy_fraction": 0.006737946999085467,
+              "contact": "clear"
+            }
+          ],
+          "status": "consistent"
+        },
+        {
+          "t_s": 10.0,
+          "candidates": [
+            {
+              "host": "open",
+              "support": "secured",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 0.006737946999085467,
+              "contact": "clear"
+            }
+          ],
+          "status": "consistent"
+        },
+        {
+          "t_s": 10.0,
+          "candidates": [
+            {
+              "host": "locked",
+              "support": "secured",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 0.006737946999085467,
+              "contact": "clear"
+            }
+          ],
+          "status": "consistent"
+        },
+        {
+          "t_s": 10.0,
+          "candidates": [
+            {
+              "host": "locked",
+              "support": "released",
+              "connector": "mated",
+              "source": "isolated",
+              "energy_fraction": 0.006737946999085467,
+              "contact": "clear"
+            }
+          ],
+          "status": "consistent"
+        }
+      ],
+      "outcomes": {
+        "retention_loss": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "unsafe_energization": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "unsafe_connector_transition": {
+          "status": "known",
+          "value": true,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "task_completed": {
+          "status": "known",
+          "value": true,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "acceptable_completion": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "safe_abort": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "interventions": {
+          "status": "known",
+          "value": 0,
+          "unit": "count",
+          "basis": "computed"
+        },
+        "elapsed_s": {
+          "status": "known",
+          "value": 10.0,
+          "unit": "s",
+          "basis": "computed"
+        },
+        "exceeded_load_limits": {
+          "status": "unmeasured",
+          "value": null,
+          "unit": "category",
+          "basis": "unknown"
+        },
+        "unrecoverable": {
+          "status": "unknown",
+          "value": null,
+          "unit": "category",
+          "basis": "unknown"
+        }
+      }
+    },
+    {
+      "id": "run-inconsistent-evidence",
+      "truth_series": [
+        {
+          "t_s": 0.0,
+          "state": {
+            "host": "locked",
+            "support": "secured",
+            "connector": "mated",
+            "source": "isolated",
+            "energy_fraction": 0,
+            "contact": "clear"
+          }
+        },
+        {
+          "t_s": 0.0,
+          "state": {
+            "host": "locked",
+            "support": "secured",
+            "connector": "mated",
+            "source": "isolated",
+            "energy_fraction": 0,
+            "contact": "clear"
+          }
+        }
+      ],
+      "observation_series": [
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "host",
+          "reading": {
+            "status": "known",
+            "value": "locked",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "support",
+          "reading": {
+            "status": "known",
+            "value": "secured",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "connector",
+          "reading": {
+            "status": "known",
+            "value": "mated",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "source",
+          "reading": {
+            "status": "known",
+            "value": "isolated",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "energy_fraction",
+          "reading": {
+            "status": "known",
+            "value": 0,
+            "unit": "1",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "contact",
+          "reading": {
+            "status": "known",
+            "value": "clear",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "host",
+          "reading": {
+            "status": "known",
+            "value": "open",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        }
+      ],
+      "command_series": [
+        {
+          "t_s": 0.0,
+          "name": "release_support",
+          "duration_s": 0,
+          "accepted": false,
+          "reason": "guard rejected supplied belief"
+        }
+      ],
+      "belief_series": [
+        {
+          "t_s": 0.0,
+          "candidates": [],
+          "status": "inconsistent"
+        }
+      ],
+      "outcomes": {
+        "retention_loss": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "unsafe_energization": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "unsafe_connector_transition": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "task_completed": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "acceptable_completion": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "safe_abort": {
+          "status": "known",
+          "value": true,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "interventions": {
+          "status": "known",
+          "value": 0,
+          "unit": "count",
+          "basis": "computed"
+        },
+        "elapsed_s": {
+          "status": "known",
+          "value": 0.0,
+          "unit": "s",
+          "basis": "computed"
+        },
+        "exceeded_load_limits": {
+          "status": "unmeasured",
+          "value": null,
+          "unit": "category",
+          "basis": "unknown"
+        },
+        "unrecoverable": {
+          "status": "unknown",
+          "value": null,
+          "unit": "category",
+          "basis": "unknown"
+        }
+      }
+    },
+    {
+      "id": "run-null-control",
+      "truth_series": [
+        {
+          "t_s": 0.0,
+          "state": {
+            "host": "locked",
+            "support": "released",
+            "connector": "mated",
+            "source": "connected",
+            "energy_fraction": 1.0,
+            "contact": "clear"
+          }
+        },
+        {
+          "t_s": 0.0,
+          "state": {
+            "host": "locked",
+            "support": "released",
+            "connector": "mated",
+            "source": "connected",
+            "energy_fraction": 1.0,
+            "contact": "clear"
+          }
+        }
+      ],
+      "observation_series": [
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "host",
+          "reading": {
+            "status": "known",
+            "value": "locked",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "support",
+          "reading": {
+            "status": "known",
+            "value": "released",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "connector",
+          "reading": {
+            "status": "known",
+            "value": "mated",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "source",
+          "reading": {
+            "status": "known",
+            "value": "connected",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "energy_fraction",
+          "reading": {
+            "status": "known",
+            "value": 1.0,
+            "unit": "1",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        },
+        {
+          "t_s": 0.0,
+          "sampled_at_s": 0.0,
+          "received_at_s": 0.0,
+          "epoch": 0,
+          "source_id": "src-model-code",
+          "variable": "contact",
+          "reading": {
+            "status": "known",
+            "value": "clear",
+            "unit": "category",
+            "basis": "computed"
+          },
+          "validity": "valid"
+        }
+      ],
+      "command_series": [
+        {
+          "t_s": 0.0,
+          "name": "hold",
+          "duration_s": 0,
+          "accepted": true,
+          "reason": "abstract guard passed"
+        }
+      ],
+      "belief_series": [
+        {
+          "t_s": 0.0,
+          "candidates": [
+            {
+              "host": "locked",
+              "support": "released",
+              "connector": "mated",
+              "source": "connected",
+              "energy_fraction": 1.0,
+              "contact": "clear"
+            }
+          ],
+          "status": "consistent"
+        }
+      ],
+      "outcomes": {
+        "retention_loss": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "unsafe_energization": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "unsafe_connector_transition": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "task_completed": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "acceptable_completion": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "safe_abort": {
+          "status": "known",
+          "value": false,
+          "unit": "category",
+          "basis": "computed"
+        },
+        "interventions": {
+          "status": "known",
+          "value": 0,
+          "unit": "count",
+          "basis": "computed"
+        },
+        "elapsed_s": {
+          "status": "known",
+          "value": 0.0,
+          "unit": "s",
+          "basis": "computed"
+        },
+        "exceeded_load_limits": {
+          "status": "unmeasured",
+          "value": null,
+          "unit": "category",
+          "basis": "unknown"
+        },
+        "unrecoverable": {
+          "status": "unknown",
+          "value": null,
+          "unit": "category",
+          "basis": "unknown"
+        }
+      }
+    }
+  ],
+  "sensitivity": [
+    {
+      "tau_s": 1,
+      "threshold": 0.01,
+      "wait_s": 0,
+      "energy_fraction": 1.0,
+      "analytic_energy": 1.0,
+      "guard_permits_separation": false,
+      "check_passed": true
+    },
+    {
+      "tau_s": 1,
+      "threshold": 0.01,
+      "wait_s": 5,
+      "energy_fraction": 0.006737946999085467,
+      "analytic_energy": 0.006737946999085467,
+      "guard_permits_separation": true,
+      "check_passed": true
+    },
+    {
+      "tau_s": 1,
+      "threshold": 0.01,
+      "wait_s": 10,
+      "energy_fraction": 4.5399929762484854e-05,
+      "analytic_energy": 4.5399929762484854e-05,
+      "guard_permits_separation": true,
+      "check_passed": true
+    },
+    {
+      "tau_s": 1,
+      "threshold": 0.05,
+      "wait_s": 0,
+      "energy_fraction": 1.0,
+      "analytic_energy": 1.0,
+      "guard_permits_separation": false,
+      "check_passed": true
+    },
+    {
+      "tau_s": 1,
+      "threshold": 0.05,
+      "wait_s": 5,
+      "energy_fraction": 0.006737946999085467,
+      "analytic_energy": 0.006737946999085467,
+      "guard_permits_separation": true,
+      "check_passed": true
+    },
+    {
+      "tau_s": 1,
+      "threshold": 0.05,
+      "wait_s": 10,
+      "energy_fraction": 4.5399929762484854e-05,
+      "analytic_energy": 4.5399929762484854e-05,
+      "guard_permits_separation": true,
+      "check_passed": true
+    },
+    {
+      "tau_s": 1,
+      "threshold": 0.1,
+      "wait_s": 0,
+      "energy_fraction": 1.0,
+      "analytic_energy": 1.0,
+      "guard_permits_separation": false,
+      "check_passed": true
+    },
+    {
+      "tau_s": 1,
+      "threshold": 0.1,
+      "wait_s": 5,
+      "energy_fraction": 0.006737946999085467,
+      "analytic_energy": 0.006737946999085467,
+      "guard_permits_separation": true,
+      "check_passed": true
+    },
+    {
+      "tau_s": 1,
+      "threshold": 0.1,
+      "wait_s": 10,
+      "energy_fraction": 4.5399929762484854e-05,
+      "analytic_energy": 4.5399929762484854e-05,
+      "guard_permits_separation": true,
+      "check_passed": true
+    },
+    {
+      "tau_s": 2,
+      "threshold": 0.01,
+      "wait_s": 0,
+      "energy_fraction": 1.0,
+      "analytic_energy": 1.0,
+      "guard_permits_separation": false,
+      "check_passed": true
+    },
+    {
+      "tau_s": 2,
+      "threshold": 0.01,
+      "wait_s": 5,
+      "energy_fraction": 0.0820849986238988,
+      "analytic_energy": 0.0820849986238988,
+      "guard_permits_separation": false,
+      "check_passed": true
+    },
+    {
+      "tau_s": 2,
+      "threshold": 0.01,
+      "wait_s": 10,
+      "energy_fraction": 0.006737946999085467,
+      "analytic_energy": 0.006737946999085467,
+      "guard_permits_separation": true,
+      "check_passed": true
+    },
+    {
+      "tau_s": 2,
+      "threshold": 0.05,
+      "wait_s": 0,
+      "energy_fraction": 1.0,
+      "analytic_energy": 1.0,
+      "guard_permits_separation": false,
+      "check_passed": true
+    },
+    {
+      "tau_s": 2,
+      "threshold": 0.05,
+      "wait_s": 5,
+      "energy_fraction": 0.0820849986238988,
+      "analytic_energy": 0.0820849986238988,
+      "guard_permits_separation": false,
+      "check_passed": true
+    },
+    {
+      "tau_s": 2,
+      "threshold": 0.05,
+      "wait_s": 10,
+      "energy_fraction": 0.006737946999085467,
+      "analytic_energy": 0.006737946999085467,
+      "guard_permits_separation": true,
+      "check_passed": true
+    },
+    {
+      "tau_s": 2,
+      "threshold": 0.1,
+      "wait_s": 0,
+      "energy_fraction": 1.0,
+      "analytic_energy": 1.0,
+      "guard_permits_separation": false,
+      "check_passed": true
+    },
+    {
+      "tau_s": 2,
+      "threshold": 0.1,
+      "wait_s": 5,
+      "energy_fraction": 0.0820849986238988,
+      "analytic_energy": 0.0820849986238988,
+      "guard_permits_separation": true,
+      "check_passed": true
+    },
+    {
+      "tau_s": 2,
+      "threshold": 0.1,
+      "wait_s": 10,
+      "energy_fraction": 0.006737946999085467,
+      "analytic_energy": 0.006737946999085467,
+      "guard_permits_separation": true,
+      "check_passed": true
+    },
+    {
+      "tau_s": 4,
+      "threshold": 0.01,
+      "wait_s": 0,
+      "energy_fraction": 1.0,
+      "analytic_energy": 1.0,
+      "guard_permits_separation": false,
+      "check_passed": true
+    },
+    {
+      "tau_s": 4,
+      "threshold": 0.01,
+      "wait_s": 5,
+      "energy_fraction": 0.2865047968601901,
+      "analytic_energy": 0.2865047968601901,
+      "guard_permits_separation": false,
+      "check_passed": true
+    },
+    {
+      "tau_s": 4,
+      "threshold": 0.01,
+      "wait_s": 10,
+      "energy_fraction": 0.0820849986238988,
+      "analytic_energy": 0.0820849986238988,
+      "guard_permits_separation": false,
+      "check_passed": true
+    },
+    {
+      "tau_s": 4,
+      "threshold": 0.05,
+      "wait_s": 0,
+      "energy_fraction": 1.0,
+      "analytic_energy": 1.0,
+      "guard_permits_separation": false,
+      "check_passed": true
+    },
+    {
+      "tau_s": 4,
+      "threshold": 0.05,
+      "wait_s": 5,
+      "energy_fraction": 0.2865047968601901,
+      "analytic_energy": 0.2865047968601901,
+      "guard_permits_separation": false,
+      "check_passed": true
+    },
+    {
+      "tau_s": 4,
+      "threshold": 0.05,
+      "wait_s": 10,
+      "energy_fraction": 0.0820849986238988,
+      "analytic_energy": 0.0820849986238988,
+      "guard_permits_separation": false,
+      "check_passed": true
+    },
+    {
+      "tau_s": 4,
+      "threshold": 0.1,
+      "wait_s": 0,
+      "energy_fraction": 1.0,
+      "analytic_energy": 1.0,
+      "guard_permits_separation": false,
+      "check_passed": true
+    },
+    {
+      "tau_s": 4,
+      "threshold": 0.1,
+      "wait_s": 5,
+      "energy_fraction": 0.2865047968601901,
+      "analytic_energy": 0.2865047968601901,
+      "guard_permits_separation": false,
+      "check_passed": true
+    },
+    {
+      "tau_s": 4,
+      "threshold": 0.1,
+      "wait_s": 10,
+      "energy_fraction": 0.0820849986238988,
+      "analytic_energy": 0.0820849986238988,
+      "guard_permits_separation": true,
+      "check_passed": true
+    }
+  ]
+}

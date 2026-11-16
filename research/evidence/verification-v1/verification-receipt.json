@@ -1,0 +1,61 @@
+{
+  "recorded_at": "2026-11-16T10:06:10.813401+00:00",
+  "owner": "research",
+  "code_commit": "aee96ea",
+  "contract_commit": "2a4083ac15e64fbf3f6f57355827efd5d2ff0a7a",
+  "scope": "Software verification; no scientific, physical or comparative validation",
+  "commands": [
+    {
+      "command": "python3 backend/run_verification.py --output research/evidence/verification-v1/attempt-01",
+      "exit_code": 0,
+      "cases_passed": 15,
+      "sensitivity_points_passed": 27
+    },
+    {
+      "command": "python3 contracts/cartan/v1/validate.py research/evidence/verification-v1/attempt-01/bundle.json --manifest",
+      "exit_code": 0,
+      "valid": true
+    },
+    {
+      "command": "python3 -c 'import sys, unittest; sys.path.insert(0, \"backend\"); from run_verification import resource_limits; print(resource_limits()); suite = unittest.defaultTestLoader.discover(\"backend\", pattern=\"test_*.py\"); result = unittest.TextTestRunner(verbosity=2).run(suite); sys.exit(not result.wasSuccessful())'",
+      "exit_code": 0,
+      "tests_passed": 12,
+      "reported_seconds": 0.002,
+      "test_file_sha256": "b19b5871852c88f3b774761c527334568c84c4c12c9c889d2da6017f7189f7b0"
+    },
+    {
+      "command": "python3 backend/run_verification.py --output research/evidence/verification-v1/replay-02",
+      "exit_code": 0,
+      "cases_passed": 15,
+      "sensitivity_points_passed": 27
+    },
+    {
+      "command": "python3 contracts/cartan/v1/validate.py contracts/cartan/v1/fixture.json --self-test --manifest",
+      "exit_code": 0,
+      "negative_controls_rejected": 16,
+      "when": "Contract freeze block; not repeated here"
+    }
+  ],
+  "replay": {
+    "byte_identical_core": true,
+    "identical_input_and_configuration_hashes": true,
+    "core_sha256": "360c9a79c92c3996a775b3d54f51699b0bb33af28711c14ae6554c15561d4237",
+    "both_output_manifests_valid": true
+  },
+  "final_integrity": {
+    "original_inputs_matched": 12,
+    "frozen_contract_unchanged": true,
+    "recorded_model_inputs_unchanged": true
+  },
+  "limitations": [
+    "Known verification fixtures, no held-out test",
+    "Requested address-space cap refused by macOS in runner and unit process; CPU cap set",
+    "No independent physical truth instrumentation",
+    "No comparator, trained operator or economic evaluation executed"
+  ],
+  "resource_observation": {
+    "scratch_allocated_kib": 22176,
+    "evidence_allocated_kib_before_final_docs": 876,
+    "method": "du -sk; allocated blocks, distinct from file-byte sums"
+  }
+}
