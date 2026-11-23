@@ -1,265 +1,287 @@
 TAP version 13
-# (node:97096) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+# (node:11835) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
 # (Use `node --trace-warnings ...` to show where the warning was created)
 # Subtest: record is lazy and uses the same verified request as the evidence view
 ok 1 - record is lazy and uses the same verified request as the evidence view
   ---
-  duration_ms: 386.185208
+  duration_ms: 368.343958
   ...
 # Subtest: Escape closes the receipt without navigating the laboratory
 ok 2 - Escape closes the receipt without navigating the laboratory
   ---
-  duration_ms: 192.411125
+  duration_ms: 184.788042
   ...
 # Subtest: late verification cannot reopen a dismissed record or expose states
 ok 3 - late verification cannot reopen a dismissed record or expose states
   ---
-  duration_ms: 246.774416
+  duration_ms: 238.014917
   ...
 # Subtest: a corrupt fixture presents unavailable, with no visible possibilities
 ok 4 - a corrupt fixture presents unavailable, with no visible possibilities
   ---
-  duration_ms: 172.453542
+  duration_ms: 169.47725
   ...
 # Subtest: rapid reopening owns the latest context and tolerates queued native close
 ok 5 - rapid reopening owns the latest context and tolerates queued native close
   ---
-  duration_ms: 332.75625
+  duration_ms: 325.853792
   ...
 # Subtest: history navigation dismisses the modal instead of stranding an inert page
 ok 6 - history navigation dismisses the modal instead of stranding an inert page
   ---
-  duration_ms: 252.021916
+  duration_ms: 233.049709
   ...
 # Subtest: Tab wraps the visible controls in both directions
 ok 7 - Tab wraps the visible controls in both directions
   ---
-  duration_ms: 184.458583
+  duration_ms: 154.714666
   ...
 # Subtest: Escape while the lazy code loads cancels the opening intent
 ok 8 - Escape while the lazy code loads cancels the opening intent
   ---
-  duration_ms: 158.57675
+  duration_ms: 156.206459
   ...
-# (node:97120) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+# (node:11847) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
 # (Use `node --trace-warnings ...` to show where the warning was created)
 # Subtest: touch-open and touch-close preserve focus without pointer-outline eligibility
 ok 9 - touch-open and touch-close preserve focus without pointer-outline eligibility
   ---
-  duration_ms: 157.222875
+  duration_ms: 154.704292
   ...
 # Subtest: a typed zero-count touch click does not become keyboard focus
 ok 10 - a typed zero-count touch click does not become keyboard focus
   ---
-  duration_ms: 91.937292
+  duration_ms: 87.166333
   ...
 # Subtest: a webview zero-count MouseEvent after a completed touch stays pointer-originated
 ok 11 - a webview zero-count MouseEvent after a completed touch stays pointer-originated
   ---
-  duration_ms: 88.114292
+  duration_ms: 83.751542
   ...
 # Subtest: cancelled gestures do not mask a later assistive activation
 ok 12 - cancelled gestures do not mask a later assistive activation
   ---
-  duration_ms: 78.439791
+  duration_ms: 78.911542
   ...
 # Subtest: keyboard and assistive opening retain visible-focus eligibility
 ok 13 - keyboard and assistive opening retain visible-focus eligibility
   ---
-  duration_ms: 151.928
+  duration_ms: 151.9705
   ...
 # Subtest: Safari Option+Tab restores keyboard indication synchronously
 ok 14 - Safari Option+Tab restores keyboard indication synchronously
   ---
-  duration_ms: 69.270083
+  duration_ms: 67.099125
   ...
 # Subtest: pointer presentation covers routes, component/evidence controls and restored focus
 ok 15 - pointer presentation covers routes, component/evidence controls and restored focus
   ---
-  duration_ms: 251.1915
+  duration_ms: 242.427292
   ...
 # Subtest: native media controls and text inputs are not subject to pointer-outline suppression
 ok 16 - native media controls and text inputs are not subject to pointer-outline suppression
   ---
-  duration_ms: 73.62125
+  duration_ms: 73.736
   ...
 # Subtest: real app selects mobile looping media and resumes temporary navigation suspension
 ok 17 - real app selects mobile looping media and resumes temporary navigation suspension
   ---
-  duration_ms: 130.00425
+  duration_ms: 123.4385
   ...
 # Subtest: real app respects reduced motion and Save-Data without attaching a source
 ok 18 - real app respects reduced motion and Save-Data without attaching a source
   ---
-  duration_ms: 132.013459
+  duration_ms: 125.859625
   ...
-# (node:97132) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+# (node:11850) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: nested drawing and canvas clicks share the pointer-focus policy in both themes
+ok 19 - nested drawing and canvas clicks share the pointer-focus policy in both themes
+  ---
+  duration_ms: 390.446917
+  ...
+# Subtest: cancelled scene input and later assistive activation retain visible focus eligibility
+ok 20 - cancelled scene input and later assistive activation retain visible focus eligibility
+  ---
+  duration_ms: 114.081708
+  ...
+# Subtest: capture loss abandons the transient orbit; normal release commits once
+ok 21 - capture loss abandons the transient orbit; normal release commits once
+  ---
+  duration_ms: 132.131291
+  ...
+# Subtest: all custom tab stops declare a shared focus policy and native editing/media are excluded
+ok 22 - all custom tab stops declare a shared focus policy and native editing/media are excluded
+  ---
+  duration_ms: 111.61825
+  ...
+# (node:11851) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
 # (Use `node --trace-warnings ...` to show where the warning was created)
 # Subtest: complete lab / part / interface / interruption / evidence / return sequence
-ok 19 - complete lab / part / interface / interruption / evidence / return sequence
+ok 23 - complete lab / part / interface / interruption / evidence / return sequence
   ---
-  duration_ms: 390.546334
+  duration_ms: 366.228292
   ...
 # Subtest: Back and Forward restore selection, disclosure and focus
-ok 20 - Back and Forward restore selection, disclosure and focus
+ok 24 - Back and Forward restore selection, disclosure and focus
   ---
-  duration_ms: 379.36025
+  duration_ms: 348.570042
   ...
 # Subtest: rapid object reselection and Escape are synchronous, without stale reveal
-ok 21 - rapid object reselection and Escape are synchronous, without stale reveal
+ok 25 - rapid object reselection and Escape are synchronous, without stale reveal
   ---
-  duration_ms: 2573.49225
+  duration_ms: 1554.295792
   ...
 # Subtest: direct URLs and legacy aliases reach the same state without creating history
-ok 22 - direct URLs and legacy aliases reach the same state without creating history
+ok 26 - direct URLs and legacy aliases reach the same state without creating history
   ---
-  duration_ms: 615.61325
+  duration_ms: 404.344708
   ...
 # Subtest: corrupt or missing fixture never exposes invented candidate states
-ok 23 - corrupt or missing fixture never exposes invented candidate states
+ok 27 - corrupt or missing fixture never exposes invented candidate states
   ---
-  duration_ms: 158.677792
+  duration_ms: 128.425458
   ...
 # Subtest: late fixture arrival cannot change a newer route, part or focused control
-ok 24 - late fixture arrival cannot change a newer route, part or focused control
+ok 28 - late fixture arrival cannot change a newer route, part or focused control
   ---
-  duration_ms: 197.210916
+  duration_ms: 176.52325
   ...
 # Subtest: reduced motion and data saving preserve the complete sequence without hero source
-ok 25 - reduced motion and data saving preserve the complete sequence without hero source
+ok 29 - reduced motion and data saving preserve the complete sequence without hero source
   ---
-  duration_ms: 431.956666
+  duration_ms: 381.256583
   ...
 # Subtest: film Escape stays native and does not navigate the underlying workspace
-ok 26 - film Escape stays native and does not navigate the underlying workspace
+ok 30 - film Escape stays native and does not navigate the underlying workspace
   ---
-  duration_ms: 105.911375
+  duration_ms: 95.80825
   ...
 # Subtest: research, sources, comparisons and vision retain a meaningful exit and object identity
-ok 27 - research, sources, comparisons and vision retain a meaningful exit and object identity
+ok 31 - research, sources, comparisons and vision retain a meaningful exit and object identity
   ---
-  duration_ms: 240.781833
+  duration_ms: 232.468708
   ...
-# (node:97797) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+# (node:11858) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
 # (Use `node --trace-warnings ...` to show where the warning was created)
 # Subtest: hero loads no scene module; first interior import mounts one persistent fallback
-ok 28 - hero loads no scene module; first interior import mounts one persistent fallback
+ok 32 - hero loads no scene module; first interior import mounts one persistent fallback
   ---
-  duration_ms: 344.423458
+  duration_ms: 324.961875
   ...
 # Subtest: notes, camera and fallback preferences survive deep links, Back and object-context reading
-ok 29 - notes, camera and fallback preferences survive deep links, Back and object-context reading
+ok 33 - notes, camera and fallback preferences survive deep links, Back and object-context reading
   ---
-  duration_ms: 254.812042
+  duration_ms: 284.323333
   ...
 # Subtest: missing optional scene module leaves static geometry, native selection and verified evidence
-ok 30 - missing optional scene module leaves static geometry, native selection and verified evidence
+ok 34 - missing optional scene module leaves static geometry, native selection and verified evidence
   ---
-  duration_ms: 205.600542
+  duration_ms: 235.030875
   ...
 # Subtest: GPU enhancement does no idle work and only the newest camera can finish
-ok 31 - GPU enhancement does no idle work and only the newest camera can finish
+ok 35 - GPU enhancement does no idle work and only the newest camera can finish
   ---
-  duration_ms: 49.693959
+  duration_ms: 72.359875
   ...
 # Subtest: late renderer import cannot allocate after route exit or disposal
-ok 32 - late renderer import cannot allocate after route exit or disposal
+ok 36 - late renderer import cannot allocate after route exit or disposal
   ---
-  duration_ms: 101.2515
+  duration_ms: 95.668625
   ...
 # Subtest: reduced motion retains spatial selection with zero animation frames
-ok 33 - reduced motion retains spatial selection with zero animation frames
+ok 37 - reduced motion retains spatial selection with zero animation frames
   ---
-  duration_ms: 60.490292
+  duration_ms: 51.366042
   ...
 # Subtest: data-saving, forced colors, missing graphics and explicit drawing use the same mesh without loading GPU code
-ok 34 - data-saving, forced colors, missing graphics and explicit drawing use the same mesh without loading GPU code
+ok 38 - data-saving, forced colors, missing graphics and explicit drawing use the same mesh without loading GPU code
   ---
-  duration_ms: 184.033917
+  duration_ms: 241.996959
   ...
 # Subtest: context loss falls back immediately and only context restoration can request a new renderer
-ok 35 - context loss falls back immediately and only context restoration can request a new renderer
+ok 39 - context loss falls back immediately and only context restoration can request a new renderer
   ---
-  duration_ms: 124.048833
+  duration_ms: 123.020583
   ...
 # Subtest: pointer orbit commits only viewing angles; vertical intent and cancelled input cannot select a part
-ok 36 - pointer orbit commits only viewing angles; vertical intent and cancelled input cannot select a part
+ok 40 - pointer orbit commits only viewing angles; vertical intent and cancelled input cannot select a part
   ---
-  duration_ms: 17.7745
+  duration_ms: 21.02
   ...
 # Subtest: preference changes cancel a reveal and restore a complete readable drawing
-ok 37 - preference changes cancel a reveal and restore a complete readable drawing
+ok 41 - preference changes cancel a reveal and restore a complete readable drawing
   ---
-  duration_ms: 48.706833
+  duration_ms: 51.786375
   ...
 # Subtest: preferences, visibility and context restoration cannot revive a suspended scene
-ok 38 - preferences, visibility and context restoration cannot revive a suspended scene
+ok 42 - preferences, visibility and context restoration cannot revive a suspended scene
   ---
-  duration_ms: 78.343667
+  duration_ms: 79.547209
   ...
 # Subtest: unavailable graphics are attempted once, not reallocated on every selection
-ok 39 - unavailable graphics are attempted once, not reallocated on every selection
+ok 43 - unavailable graphics are attempted once, not reallocated on every selection
   ---
-  duration_ms: 213.3735
+  duration_ms: 210.5055
   ...
-# (node:97826) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+# (node:11876) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
 # (Use `node --trace-warnings ...` to show where the warning was created)
 # Subtest: default light exposes one native switch without starting scene or evidence loading
-ok 40 - default light exposes one native switch without starting scene or evidence loading
+ok 44 - default light exposes one native switch without starting scene or evidence loading
   ---
-  duration_ms: 180.778208
+  duration_ms: 175.08775
   ...
 # Subtest: saved dark is present across all eight direct URLs
-ok 41 - saved dark is present across all eight direct URLs
+ok 45 - saved dark is present across all eight direct URLs
   ---
-  duration_ms: 847.540917
+  duration_ms: 812.068417
   ...
 # Subtest: repeated toggling preserves selection, history, focus, reading position and scene identity
-ok 42 - repeated toggling preserves selection, history, focus, reading position and scene identity
+ok 46 - repeated toggling preserves selection, history, focus, reading position and scene identity
   ---
-  duration_ms: 173.738417
+  duration_ms: 172.940459
   ...
 # Subtest: appearance stays independent of route navigation and native Back state
-ok 43 - appearance stays independent of route navigation and native Back state
+ok 47 - appearance stays independent of route navigation and native Back state
   ---
-  duration_ms: 161.382167
+  duration_ms: 163.090417
   ...
 # Subtest: theme changes preserve the approved media source, time and user pause
-ok 44 - theme changes preserve the approved media source, time and user pause
+ok 48 - theme changes preserve the approved media source, time and user pause
   ---
-  duration_ms: 96.646333
+  duration_ms: 96.337208
   ...
 # Subtest: blocked storage preserves a working session choice and navigation
-ok 45 - blocked storage preserves a working session choice and navigation
+ok 49 - blocked storage preserves a working session choice and navigation
   ---
-  duration_ms: 147.756458
+  duration_ms: 144.402666
   ...
 # Subtest: write-only storage failure cannot undo the current choice on page restoration
-ok 46 - write-only storage failure cannot undo the current choice on page restoration
+ok 50 - write-only storage failure cannot undo the current choice on page restoration
   ---
-  duration_ms: 90.99725
+  duration_ms: 99.776125
   ...
 # Subtest: cross-tab storage sync accepts only the appearance key and explicit dark state
-ok 47 - cross-tab storage sync accepts only the appearance key and explicit dark state
+ok 51 - cross-tab storage sync accepts only the appearance key and explicit dark state
   ---
-  duration_ms: 115.35625
+  duration_ms: 113.510833
   ...
 # Subtest: non-pointer activation retains focus eligibility and stable switch semantics
-ok 48 - non-pointer activation retains focus eligibility and stable switch semantics
+ok 52 - non-pointer activation retains focus eligibility and stable switch semantics
   ---
-  duration_ms: 94.713667
+  duration_ms: 97.0765
   ...
 # Subtest: theme changes cannot revive a scene after returning to the opening
-ok 49 - theme changes cannot revive a scene after returning to the opening
+ok 53 - theme changes cannot revive a scene after returning to the opening
   ---
-  duration_ms: 200.657375
+  duration_ms: 204.009167
   ...
-1..49
-# tests 49
+1..53
+# tests 53
 # suites 0
-# pass 49
+# pass 53
 # fail 0
 # cancelled 0
 # skipped 0
 # todo 0
-# duration_ms 13388.900084
+# duration_ms 12801.938792

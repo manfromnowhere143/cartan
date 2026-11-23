@@ -59,6 +59,10 @@ test('only actual pointer-marked focus suppresses an outline, with forced colors
   assert.ok(suppress[0].parents.includes('@media(forced-colors:none)'));
   assert.match(read('focus-presentation.mjs'),/pointerdown/);assert.doesNotMatch(read('focus-presentation.mjs'),/\.blur\s*\(/);
   assert.match(app,/installFocusPresentation\(document\)/);
+  assert.match(html,/id="spatial-viewport" data-focus-surface/,'the custom scene participates in the shared policy');
+  const sceneFocus=parsed.find(r=>r.selector.includes('.scene-viewport:focus-visible'));
+  assert.match(sceneFocus.selector,/:root\[data-focus-modality="keyboard"\] \.scene-viewport:focus/);
+  assert.match(sceneFocus.body,/outline:2px solid var\(--focus/);
 });
 test('mobile cinema cannot be hidden by a width rule or crop the supplied action',()=>{
   for(const r of parsed.filter(r=>r.selector.includes('video')&&r.body.includes('display:none'))){

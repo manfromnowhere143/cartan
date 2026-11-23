@@ -1,0 +1,77 @@
+TAP version 13
+# (node:87522) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: nested drawing and canvas clicks share the pointer-focus policy in both themes
+not ok 1 - nested drawing and canvas clicks share the pointer-focus policy in both themes
+  ---
+  duration_ms: 207.006917
+  location: '/Users/danielwahnich/workspace/cartan-worktrees/ui/frontend/qa/focus-surfaces-dom.test.mjs:14:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    pointer scene must use the shared suppression rule
+    + actual - expected
+    
+    + undefined
+    - 'true'
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'true'
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///Users/danielwahnich/workspace/cartan-worktrees/ui/frontend/qa/focus-surfaces-dom.test.mjs:23:16)
+    async Test.run (node:internal/test_runner/test:797:9)
+    async Test.processPendingSubtests (node:internal/test_runner/test:526:7)
+  ...
+# Subtest: cancelled scene input and later assistive activation retain visible focus eligibility
+ok 2 - cancelled scene input and later assistive activation retain visible focus eligibility
+  ---
+  duration_ms: 128.869375
+  ...
+# Subtest: capture loss abandons the transient orbit; normal release commits once
+not ok 3 - capture loss abandons the transient orbit; normal release commits once
+  ---
+  duration_ms: 172.133584
+  location: '/Users/danielwahnich/workspace/cartan-worktrees/ui/frontend/qa/focus-surfaces-dom.test.mjs:51:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    interrupted drag cannot commit an abandoned camera
+    + actual - expected
+    
+    + 'https://cartan.danielwahnich.dev/laboratory/?camera=interface&az=175&el=15'
+    - 'https://cartan.danielwahnich.dev/laboratory/?camera=interface'
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'https://cartan.danielwahnich.dev/laboratory/?camera=interface'
+  actual: 'https://cartan.danielwahnich.dev/laboratory/?camera=interface&az=175&el=15'
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///Users/danielwahnich/workspace/cartan-worktrees/ui/frontend/qa/focus-surfaces-dom.test.mjs:61:12)
+    async Test.run (node:internal/test_runner/test:797:9)
+    async Test.processPendingSubtests (node:internal/test_runner/test:526:7)
+  ...
+# Subtest: all custom tab stops declare a shared focus policy and native editing/media are excluded
+not ok 4 - all custom tab stops declare a shared focus policy and native editing/media are excluded
+  ---
+  duration_ms: 108.704458
+  location: '/Users/danielwahnich/workspace/cartan-worktrees/ui/frontend/qa/focus-surfaces-dom.test.mjs:71:1'
+  failureType: 'testCodeFailure'
+  error: 'spatial-viewport has a focus contract'
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  actual: false
+  operator: '=='
+  stack: |-
+    TestContext.<anonymous> (file:///Users/danielwahnich/workspace/cartan-worktrees/ui/frontend/qa/focus-surfaces-dom.test.mjs:76:34)
+    async Test.run (node:internal/test_runner/test:797:9)
+    async Test.processPendingSubtests (node:internal/test_runner/test:526:7)
+  ...
+1..4
+# tests 4
+# suites 0
+# pass 1
+# fail 3
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1263.255167

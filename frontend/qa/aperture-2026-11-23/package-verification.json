@@ -44,6 +44,10 @@
     "pass": true
   },
   {
+    "name": "home scene uses shared focus policy",
+    "pass": true
+  },
+  {
     "name": "home theme resolves before styles",
     "pass": true
   },
@@ -253,6 +257,10 @@
   },
   {
     "name": "question stable native appearance switch",
+    "pass": true
+  },
+  {
+    "name": "question scene uses shared focus policy",
     "pass": true
   },
   {
@@ -468,6 +476,10 @@
     "pass": true
   },
   {
+    "name": "laboratory scene uses shared focus policy",
+    "pass": true
+  },
+  {
     "name": "laboratory theme resolves before styles",
     "pass": true
   },
@@ -677,6 +689,10 @@
   },
   {
     "name": "interruption stable native appearance switch",
+    "pass": true
+  },
+  {
+    "name": "interruption scene uses shared focus policy",
     "pass": true
   },
   {
@@ -892,6 +908,10 @@
     "pass": true
   },
   {
+    "name": "evidence scene uses shared focus policy",
+    "pass": true
+  },
+  {
     "name": "evidence theme resolves before styles",
     "pass": true
   },
@@ -1101,6 +1121,10 @@
   },
   {
     "name": "comparison stable native appearance switch",
+    "pass": true
+  },
+  {
+    "name": "comparison scene uses shared focus policy",
     "pass": true
   },
   {
@@ -1316,6 +1340,10 @@
     "pass": true
   },
   {
+    "name": "sources scene uses shared focus policy",
+    "pass": true
+  },
+  {
     "name": "sources theme resolves before styles",
     "pass": true
   },
@@ -1525,6 +1553,10 @@
   },
   {
     "name": "vision stable native appearance switch",
+    "pass": true
+  },
+  {
+    "name": "vision scene uses shared focus policy",
     "pass": true
   },
   {

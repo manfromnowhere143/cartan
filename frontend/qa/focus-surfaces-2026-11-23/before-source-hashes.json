@@ -1,0 +1,9 @@
+{
+  "frontend/focus-presentation.mjs": "4486d51388bf097fe2359f305bb30f5e79b9e7dfb8276692623485383bc84bc7",
+  "frontend/spatial-scene.mjs": "00717837787a1138399fa16b55c200cc06e8ff9b7cd7570bf107d9884b2d7ab0",
+  "frontend/index.html": "a0af17a3672e4024af32ff87f727b55729e2225deed78299d1bdc98011568179",
+  "frontend/style.css": "bacbc8986d023ff2ddfdb5ef510258bbd03d5f50277bdbe1a81175fd365cd80a",
+  "frontend/interior.css": "8a433326e8ee7646840fa977d3adb6d470422181c6fcce51cd80efe263f49c42",
+  "frontend/theme.css": "4841794be68cfdae149ddf671179131ec9c15337f24f23fc363e35c6ef0c6ca0",
+  "config/environment.json": "f14595ffd2f9fb435094f780dbbb9b2625c6ad47eface83ce3d838f70a6d647b"
+}

@@ -100,7 +100,9 @@ record actual source revision, commands, images, failures and remaining acceptan
 
 Implementation follow-up: UI 008 completed during this block and was preserved
 as `e88fb83`, parent `c5657e7`, without editing its original checkout. It is now
-integrated with the aperture. The final browser review and limitations are in
+integrated with the aperture. Completed UI 009 focus work was subsequently frozen
+as `9c8d24d`, parent `e88fb83`, and included in the final checked package. The
+original sibling checkout remains untouched. The final browser review and limitations are in
 [REVIEW-APERTURE-2026-11-23](../qa/REVIEW-APERTURE-2026-11-23.md).
 
 Decision identity: initially numbered UI 009 in `13b7965`; renumbered UI 010

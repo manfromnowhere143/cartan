@@ -6,6 +6,7 @@ const open=async()=>{await p.click('#open-record');await p.waitForSelector('.ape
 const reading=async r=>{await p.click(`[data-reading="${r}"]`);await settle();};
 const capture=async name=>{await p.screenshot({path:`${out}/${name}.png`});};
 const response=await p.goto('http://127.0.0.1:4191/laboratory/?part=retention&camera=interface',{waitUntil:'networkidle0'});assert.ok(response.headers()['content-security-policy']);assert.equal(await p.$eval('html',e=>e.dataset.theme),'light');
+await p.click('#spatial-viewport');assert.equal(await p.$eval('#spatial-viewport',e=>e.dataset.pointerFocus),'true');await p.keyboard.press('ArrowRight');assert.equal(await p.$eval('#spatial-viewport',e=>e.dataset.pointerFocus??null),null);records.push({check:'shared-scene-pointer-to-keyboard-focus',pass:true});
 const path=p.url();await capture('light-laboratory-1440');assert.equal(await p.$('#evidence-aperture'),null);
 const initial=await p.evaluate(()=>performance.getEntriesByType('resource').filter(r=>r.name.includes('evidence-aperture.mjs')).length);assert.equal(initial,0);
 await p.focus('#open-record');await p.keyboard.press('Enter');await p.waitForSelector('.aperture-content:not([hidden])');assert.equal(await p.evaluate(()=>document.activeElement.id),'aperture-title');await settle();

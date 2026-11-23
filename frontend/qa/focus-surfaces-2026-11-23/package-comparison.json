@@ -1,0 +1,10 @@
+{
+  "kind": "Source/package bytes, not browser transfer or timing",
+  "beforePackage": 29522415,
+  "afterPackage": 29523093,
+  "delta": 678,
+  "homeHTML": 43842,
+  "deltaHomeHTML": 19,
+  "sceneCode": 18486,
+  "newAssets": 0
+}

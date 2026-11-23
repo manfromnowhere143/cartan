@@ -4,6 +4,10 @@
   "csp": "Exact packaged policy served",
   "records": [
     {
+      "check": "shared-scene-pointer-to-keyboard-focus",
+      "pass": true
+    },
+    {
       "check": "keyboard-contained-focus-and-Escape-context",
       "pass": true
     },

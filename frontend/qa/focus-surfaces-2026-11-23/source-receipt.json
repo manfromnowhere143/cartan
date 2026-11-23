@@ -1,0 +1,19 @@
+{
+  "baseline": "dcc8d8e7b6af3df797eea32fc27dc5bba187eb5e",
+  "package": "/private/tmp/cartan-focus-theme-candidate-20261123",
+  "preview": "http://127.0.0.1:4182/",
+  "sourceHashes": {
+    "index.html": "b6a42a5c98f7bfdc26fb9496469985cf5220858820a4db26c887615ea37c3aad",
+    "app.mjs": "3bc85922dc8be4e85f7e71e76372fb9089c3bdda70b40d5029cc5c92ab7f504b",
+    "focus-presentation.mjs": "3e36b95d1d3900d1b2c9ed09ddd6c4e57c8e40f0cdb66d0d9a162f46122f86a1",
+    "style.css": "bacbc8986d023ff2ddfdb5ef510258bbd03d5f50277bdbe1a81175fd365cd80a",
+    "interior.css": "fd5aeae4735235143e94a8ec070d790b86e6f93968ca69da8b80823acb0f3501",
+    "theme.css": "4841794be68cfdae149ddf671179131ec9c15337f24f23fc363e35c6ef0c6ca0",
+    "theme.mjs": "a922938ca497323ff0ad95435777acfc12564bb8f5b49b5c015221db80dae4f9",
+    "scene-geometry.mjs": "d53e6c61fc4f20ecd967cecf9fa332d738e6be46acbe0813befd290d790b1e98",
+    "spatial-scene.mjs": "42f93715d4594a808738ed48c0c5e65f6e31d8bdc7839ad0fa5dab1b24d552b5",
+    "webgl-scene.mjs": "7398e7e851ee48ff1e4c6e6da6dc5cbc783286c0c8c1a631adaf88b693939647"
+  },
+  "published": false,
+  "browserAccepted": false
+}

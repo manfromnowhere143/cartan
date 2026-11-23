@@ -1,7 +1,7 @@
 from pathlib import Path
 import http.server,json,mimetypes
 from urllib.parse import urlsplit,unquote
-root=Path(Path('/private/tmp/cartan-aperture-current-path').read_text())/'package-final/.vercel/output'
+root=Path(Path('/private/tmp/cartan-aperture-current-path').read_text())/'package-reviewed/.vercel/output'
 headers=json.loads((root/'config.json').read_text())['routes'][0]['headers'];static=(root/'static').resolve()
 class Handler(http.server.BaseHTTPRequestHandler):
  def do_GET(self):

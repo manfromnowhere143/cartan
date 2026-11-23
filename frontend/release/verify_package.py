@@ -31,6 +31,7 @@ def verify(package):
   check(view+' CSP covers theme without unsafe-inline',theme_hash in config['routes'][0]['headers']['Content-Security-Policy'] and 'unsafe-inline' not in config['routes'][0]['headers']['Content-Security-Policy'])
   check(view+' light default before scripts',any(t=='html' and a.get('data-theme')=='light' for t,a in d.tags))
   check(view+' stable native appearance switch',any(t=='button' and a.get('id')=='theme-toggle' and a.get('role')=='switch' and a.get('aria-label')=='Dark appearance' and a.get('aria-checked')=='false' and 'hidden' in a for t,a in d.tags))
+  check(view+' scene uses shared focus policy',any(a.get('id')=='spatial-viewport' and 'data-focus-surface' in a for t,a in d.tags))
   check(view+' theme resolves before styles',raw.index('id="theme-init"')<raw.index('rel="stylesheet"'))
   check(view+' one theme-color metadata',sum(t=='meta' and a.get('name')=='theme-color' for t,a in d.tags)==1)
   check(view+' no filesystem URLs','/Users/' not in raw and 'file://' not in raw)

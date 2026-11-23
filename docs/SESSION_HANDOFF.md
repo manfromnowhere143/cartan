@@ -51,13 +51,14 @@ procedures remain outside the current case. Retention is not release permission.
 Latest presentation successor: UI 010's evidence aperture, following Daniel's
 explicit request for a distinct CARTAN reveal informed by Reiyah's receipt design.
 Base `382f3a0`, initial aperture `13b7965`, completed UI 008 appearance snapshot
-`e88fb83` (parent `c5657e7`), followed by integrated review fixes. See the
+`e88fb83` (parent `c5657e7`) and completed UI 009 scene-focus snapshot `9c8d24d`,
+followed by integrated review fixes. See the
 [decision](../frontend/docs/ADR-UI-010-evidence-aperture.md),
 [review](../frontend/qa/REVIEW-APERTURE-2026-11-23.md) and
 [checkpoint](../memory/checkpoints/ui-20261123-evidence-aperture.md).
 The source and package now contain the white default/dark preference, a verified
-record inspector and compact-footer correction. Checks pass: 52 core, 49 DOM,
-485 package assertions and 11 grouped actual Chrome checks under the package CSP.
+record inspector and compact-footer correction. Checks pass: 52 core, 53 DOM,
+493 package assertions and 12 grouped actual Chrome checks under the package CSP.
 The owner UI checkout remains untouched. No new adapter/model, scientific result,
 media generation, setup change or website deployment. Current local review is
 http://127.0.0.1:4191/laboratory/ → Open the record while the preview runs.

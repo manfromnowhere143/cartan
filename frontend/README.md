@@ -11,9 +11,11 @@ Read [the aperture decision](docs/ADR-UI-010-evidence-aperture.md),
 [appearance decision](docs/ADR-UI-008-light-and-legibility.md), and the historical
 [UI 008 review](qa/REVIEW-THEME-2026-11-23.md). The
 [aperture review](qa/REVIEW-APERTURE-2026-11-23.md) records fresh combined browser
-checks: 52 core tests, 49 DOM checks, 485 package assertions, actual Chrome rendering
+checks: 52 core tests, 53 DOM checks, 493 package assertions, actual Chrome rendering
 and scoped interaction samples. The approved media and all frozen contract bytes
-remain unchanged. No website deployment is performed by this block.
+remain unchanged. No website deployment is performed by this block. The completed
+[UI 009 scene-focus correction](docs/ADR-UI-009-scene-focus.md), snapshot `9c8d24d`,
+also preserves keyboard indication and cancels drags after capture loss.
 
 The interactive module, deliberate camera views and reading surface retain their
 single workspace. WebGL2 and its SVG fallback share the same unverified geometry.

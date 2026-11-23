@@ -9,6 +9,9 @@ during this block and was frozen as `e88fb83`, parent `c5657e7`, under
 `integration/ui-theme-20261123`. Its file hashes, release binding and unchanged
 sibling state are retained in the aperture theme-snapshot receipt. The integrated
 candidate combines that white/dark workspace with the new evidence aperture.
+Completed UI 009 scene-focus work was subsequently frozen as `9c8d24d`, parent
+`e88fb83`, and included before the final combined browser/test pass. Its pointer
+focus and lost-capture fixes are preserved; the owner checkout remains untouched.
 
 New `evidence-aperture.mjs/css` expose report, possibilities and provenance from
 the existing verified v1 projection. The app retains its one fixture request,
@@ -24,25 +27,25 @@ inspected read-only. Adopted computed identity and cancellation, not its organis
 tree, assets or scientific claims. W3C/WAI primary methods informed modal focus,
 animation cancellation and obscured-focus review. No new dependency or generation.
 
-Tests: 52 core Node; 49 application/lifecycle DOM; 485 package assertions; frozen
+Tests: 52 core Node; 53 application/lifecycle DOM; 493 package assertions; frozen
 v1 validator and 16 negative controls. Actual Chrome 158 headless under the exact
-packaged CSP passes 11 grouped checks. White/dark, keyboard return, corrupt fixture,
+packaged CSP passes 12 grouped checks. White/dark, keyboard return, corrupt fixture,
 rapid use, compact/landscape, forced-color/reduced-motion and no-JS captures retained.
 Browser review found and corrected Tab-wrap escape and overlapping narrow labels;
 before captures stay in `initial/`. A wrong expected context label in the first
 DOM test was corrected against the actual selected title. Canceled imports no
 longer leave a stale loading announcement.
 
-Ten synthetic local opens: 49.3–53.1 ms to ready content plus two rAF callbacks;
+Ten synthetic local opens: 48.9–59.2 ms to ready content plus two rAF callbacks;
 one dialog/canvas and no running animations afterward. Not INP, physical-device
 performance or comparative advantage. Full AT, Safari, physical touch/phone,
 zoom and sustained-use acceptance remain open. CUA could not open a visible tab
 because its browser host is unavailable; independent Chrome tests succeeded.
 
 The final package is
-`/var/folders/fl/_txhnxc90xl00n3xtq0r4nq40000gn/T/cartan-aperture-20261123-u98say2y/package-final`.
+`/var/folders/fl/_txhnxc90xl00n3xtq0r4nq40000gn/T/cartan-aperture-20261123-u98say2y/package-reviewed`.
 Current owned preview: http://127.0.0.1:4191/laboratory/ → Open the record.
-The package is 29,548,171 bytes / 40 files; aperture style/code is about 20 kB.
+The package is 29,548,849 bytes / 40 files; aperture style/code is about 20 kB.
 The preview serves the actual packaged CSP; it is loopback-only. Previous UI-owned
 previews remain untouched. Retain this server for Daniel's review while available.
 
@@ -53,5 +56,8 @@ approved media and setup/runtime configuration remain unchanged. Setup still
 owns its Codex version mismatch. No website deployment, hardware or outreach.
 
 Next: Daniel reviews the actual interaction; continue device/AT/comprehension QA
-from this package. Compare subsequent sibling changes with `e88fb83` before another
-integration. Repository publication is recorded after actual remote readback.
+from this package. Compare subsequent sibling changes with `9c8d24d` before another
+integration. At the final preservation check, the owner had begun additional
+share/crawl metadata assertions in `frontend/release/verify_package.py`. Those
+later changes remain pending in its checkout and are outside this UI snapshot.
+Repository publication is recorded after actual remote readback.

@@ -32,8 +32,8 @@ export function mountSpatialScene({root,commit,window:w=window,loadRenderer=()=>
   }
   function cancel(){
     revision++;if(raf)w.cancelAnimationFrame(raf);raf=0;
-    if(drag&&viewport.hasPointerCapture?.(drag.id))viewport.releasePointerCapture(drag.id);
-    drag=null;
+    const abandoned=drag;drag=null;
+    if(abandoned&&viewport.hasPointerCapture?.(abandoned.id))viewport.releasePointerCapture(abandoned.id);
   }
   async function enhance(){
     if(renderer||load||disposed||contextLost||unavailable||state.render==='drawing'||forced.matches||w.navigator.connection?.saveData||typeof w.WebGL2RenderingContext!=='function')return;
@@ -85,6 +85,9 @@ export function mountSpatialScene({root,commit,window:w=window,loadRenderer=()=>
     if(part)commit({part,view:'laboratory',detail:null});
   });
   on(viewport,'pointercancel',()=>{cancel();camera=cameraFor(state);draw();});
+  on(viewport,'lostpointercapture',e=>{
+    if(drag?.id===e.pointerId){cancel();camera=cameraFor(state);draw();}
+  });
   on(viewport,'keydown',e=>{
     if(!active||!['ArrowLeft','ArrowRight','ArrowUp','ArrowDown','Home'].includes(e.key))return;
     e.preventDefault();e.stopPropagation();

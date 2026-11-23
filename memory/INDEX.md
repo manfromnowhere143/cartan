@@ -75,8 +75,12 @@ Mermaid diagrams, preserved evidence, and the pending UI and client-version gate
 - [Spatial instrument candidate](checkpoints/ui-20261123-spatial-instrument.md):
   earlier UI 007, following Daniel's explicit 3D direction; same-mesh optional
   renderer, canonical camera/selection, exact checks and still-open browser/GPU
-  acceptance. Local preview 4182; not published.
+  acceptance. Former preview 4182 replaced by UI 009; package retained, not published.
 - [White workspace and contrast](checkpoints/ui-20261123-white-workspace.md):
-  latest UI 008; default light, saved native switch, no muted text, clearer
+  UI 008; default light, saved native switch, no muted text, clearer
   selection; user screenshot reviewed, browser bridge still unavailable. Preview
   4183 and exact checks; not published or device-accepted.
+- [Shared scene focus](checkpoints/ui-20261123-scene-focus.md): latest UI 009,
+  integrates the custom viewport into shared pointer/keyboard focus and fixes
+  interrupted capture. Includes UI 008 appearance; combined preview now on 4182.
+  Exact automated receipts; browser/device acceptance still open. Not published.

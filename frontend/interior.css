@@ -133,7 +133,7 @@ html:not([data-view="home"]) .workspace-footer{background:var(--bg)}
 .scene-viewport{position:relative;min-width:0;min-height:200px;overflow:hidden;touch-action:pan-y;cursor:auto;background:radial-gradient(ellipse at 48% 46%,#17212955,transparent 65%)}
 .module-scene:is([data-renderer="drawing"],[data-renderer="spatial"]) .scene-viewport{cursor:grab}
 .module-scene:is([data-renderer="drawing"],[data-renderer="spatial"]) .scene-viewport:active{cursor:grabbing}
-.scene-viewport:focus-visible{outline:2px solid var(--focus,#b7cbd7);outline-offset:-3px}
+.scene-viewport:focus-visible,:root[data-focus-modality="keyboard"] .scene-viewport:focus{outline:2px solid var(--focus,#b7cbd7);outline-offset:-3px}
 .scene-viewport .module-drawing,.spatial-canvas{display:block;width:100%;height:100%;max-height:none;margin:0;position:absolute;inset:0}
 .scene-function{position:absolute;bottom:10px;left:10px;pointer-events:none;font:10px/1.7 var(--mono);letter-spacing:.12em;color:var(--ink)}
 .camera-controls{display:flex;align-items:center;gap:0 20px;flex-wrap:wrap;padding:8px 10px 0}

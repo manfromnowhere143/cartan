@@ -416,7 +416,7 @@ The [evidence aperture](frontend/docs/ADR-UI-010-evidence-aperture.md) opens a
 verified synthetic report into its timing, authored possibilities and exact source
 identity. The white-default workspace and saved dark appearance retain the same
 selection and camera. Its [review](frontend/qa/REVIEW-APERTURE-2026-11-23.md)
-records 52 core tests, 49 DOM tests, 485 package assertions and actual Chrome
+records 52 core tests, 53 DOM tests, 493 package assertions and actual Chrome
 interaction/rendering checks. The [earlier integration review](docs/qa/integration-20261123/REVIEW.md)
 preserves the preceding candidate's results.
 Device, accessibility and performance acceptance remain open; repository
