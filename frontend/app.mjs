@@ -1,4 +1,5 @@
 import {SITE,pathFor,viewFromURL,linkedView,updateMetadata} from './routes.mjs';
+import {workspaceFromURL,workspaceURL,parentState,inspectionFacts} from './workspace-state.mjs';
 import {evidenceState} from './adapter.mjs';
 import {loadPinnedV1, formatV1, CONTRACT_COMMIT} from './contract-adapter.mjs';
 
@@ -15,30 +16,94 @@ const components = {
   isolation: ['More than a power command', 'Source isolation, connection integrity and stored energy need separate definitions. An acknowledgement does not establish that a circuit is electrically safe.', 'Source isolation and residual energy', 'Voltage, current and energy limits not established'],
   support: ['An independent holding path', 'A transfer support is distinct from the host latch. A later physical fixture needs reviewed containment and independent observation of the holding state.', 'Module held during exchange', 'Support capacity and grasp geometry not established'],
 };
-for (const button of document.querySelectorAll('[data-component]')) {
-  button.addEventListener('click', () => {
-    const id = button.dataset.component, [title,description,definition,measurement] = components[id];
-    for (const other of document.querySelectorAll('[data-component]')) other.setAttribute('aria-pressed', String(other === button));
-    $('#component-id').textContent = `UI CONCEPT / ${id.toUpperCase()}`;
-    $('#component-title').textContent = title;
-    $('#component-description').textContent = description;
-    $('#component-definition').textContent = definition;
-    $('#component-measurement').textContent = measurement;
-  });
+function renderSelection(state) {
+  const [title,description,definition,measurement]=components[state.part];
+  for(const button of document.querySelectorAll('[data-component]')) {
+    button.id='part-'+button.dataset.component;
+    button.setAttribute('aria-pressed',String(button.dataset.component===state.part));
+  }
+  for(const group of document.querySelectorAll('[data-geometry]')) group.classList.toggle('selected',group.dataset.geometry===state.part);
+  $('#component-id').textContent='EXPLANATORY SCHEMATIC / '+state.part.toUpperCase();
+  $('#component-title').textContent=title;$('#component-description').textContent=description;
+  $('#component-definition').textContent=definition;$('#component-measurement').textContent=measurement;
+  $('#interface-detail').hidden=state.detail!=='interface';
+  $('#interface-open').hidden=state.detail==='interface';
+  $('#interface-description').textContent=state.part==='isolation'
+    ? 'This relationship diagram does not specify a circuit. Source isolation, connector state and residual energy need separate evidence. A voltage readback alone is not proof of isolation.'
+    : state.part==='support'
+    ? 'The independent transfer support and the host are distinct holding relationships. Neither its capacity nor the way it grasps the module is established by this diagram.'
+    : 'A report of capture does not establish a load-bearing attachment. Latch geometry, engagement depth and retention limits remain unknown.';
+  for(const [id,next] of [
+    ['interface-open',{...state,view:'laboratory',detail:'interface',layout:'separated',camera:'interface',az:undefined,el:undefined}],
+    ['interface-close',{...state,view:'laboratory',detail:null}],
+    ['inspect-transfer',{...state,view:'interruption',detail:null}],
+    ['inspect-evidence',{...state,view:'evidence',from:'interruption'}],
+    ['return-transfer',{...state,view:'interruption'}],
+  ])$('#'+id).href=workspaceURL(next);
+  for(const [id,view]of [['rail-object','laboratory'],['rail-state','interruption'],['rail-evidence','evidence']]){
+    const link=$('#'+id);link.href=workspaceURL({...state,view,detail:null,notes:undefined,from:view==='evidence'?'interruption':null});
+    if(state.view===view)link.setAttribute('aria-current','step');else link.removeAttribute('aria-current');
+  }
+  // Reading another research view retains the selected object and camera. The
+  // explicit sequence/return links above carry their own complete target state.
+  const contextual=new Set(['interface-open','interface-close','inspect-transfer','inspect-evidence','return-transfer']);
+  for(const link of document.querySelectorAll('.site-header nav a,.interior-shell .surface a[href],.edition')){
+    if(contextual.has(link.id))continue;
+    const url=new URL(link.href);if(url.origin!==location.origin||url.hash)continue;
+    const view=linkedView(url);if(!view||view==='home')continue;
+    link.href=workspaceURL({...state,view,detail:null,notes:undefined,
+      from:['evidence','comparison','sources'].includes(view)&&(state.view==='interruption'||state.from==='interruption')?'interruption':null});
+  }
+  for(const button of document.querySelectorAll('[data-camera]'))button.setAttribute('aria-pressed',String(state.az===undefined&&state.el===undefined&&button.dataset.camera===(state.camera??'overview')));
+  $('#diagram-layout').setAttribute('aria-pressed',String(state.layout==='separated'));
+  $('#diagram-layout').textContent='Separate relationships';
+  $('#drawing-mode').setAttribute('aria-pressed',String(state.render==='drawing'));
+  $('#drawing-mode').textContent='Drawing view';
+  $('#inspector-toggle').setAttribute('aria-expanded',String(state.notes!=='closed'));
+  $('#inspector-toggle').setAttribute('aria-controls',document.querySelector(`.surface[data-view="${state.view}"]`).id);
+  $('#inspector-toggle').textContent=state.notes==='closed'?'Show notes':'Hide notes';
+  $('.interior-shell').dataset.notes=state.notes??'open';
+  $('#scene-function').textContent={module:'01 / MODULE ENVELOPE',retention:'02 / HOST RETENTION',isolation:'03 / ELECTRICAL BOUNDARY',support:'04 / TRANSFER SUPPORT'}[state.part];
+  $('.scene-caption span').textContent=state.layout==='separated'?'Diagram separation, not a physical operation. Geometry unverified.':'Not to scale. Geometry and physical reachability unverified.';
+  const [recordTitle,recordDescription]=evidenceState(state.record);
+  for(const button of document.querySelectorAll('[data-evidence]')) {
+    button.id='record-'+button.dataset.evidence;
+    button.setAttribute('aria-pressed',String(button.dataset.evidence===state.record));
+  }
+  $('#evidence-kind').textContent=state.record==='inconclusive'?'PRESENTATION EXAMPLE / NOT A RESULT':state.record==='planned'?'PLAN / NO OUTCOME CLAIM':'NO RECORD LOADED';
+  $('#evidence-state').textContent=recordTitle;$('#evidence-description').textContent=recordDescription;
 }
-for (const button of document.querySelectorAll('[data-evidence]')) {
-  button.addEventListener('click', () => {
-    const mode = button.dataset.evidence, [title,description] = evidenceState(mode);
-    for (const other of document.querySelectorAll('[data-evidence]')) other.setAttribute('aria-pressed', String(other === button));
-    $('#evidence-kind').textContent = mode === 'inconclusive' ? 'PRESENTATION EXAMPLE / NOT A RESULT' : mode === 'planned' ? 'PLAN / NO OUTCOME CLAIM' : 'NO RECORD LOADED';
-    $('#evidence-state').textContent = title; $('#evidence-description').textContent = description;
-  });
-}
+for(const button of document.querySelectorAll('[data-component]'))button.addEventListener('click',()=>{
+  const part=button.dataset.component;
+  navigate({...currentState,view:'laboratory',part,detail:null,
+    camera:part==='isolation'?'interface':part==='support'?'profile':'overview',az:undefined,el:undefined},{focus:false});
+});
+for(const button of document.querySelectorAll('[data-evidence]'))button.addEventListener('click',()=>{
+  navigate({...currentState,record:button.dataset.evidence},{focus:false});
+});
+for(const button of document.querySelectorAll('[data-camera]'))button.addEventListener('click',()=>navigate({...currentState,camera:button.dataset.camera,az:undefined,el:undefined},{focus:false}));
+$('#diagram-layout').addEventListener('click',()=>navigate({...currentState,layout:currentState.layout==='separated'?undefined:'separated'},{focus:false}));
+$('#drawing-mode').addEventListener('click',()=>navigate({...currentState,render:currentState.render==='drawing'?undefined:'drawing'},{focus:false}));
+$('#inspector-toggle').addEventListener('click',()=>navigate({...currentState,notes:currentState.notes==='closed'?undefined:'closed'},{focus:false}));
 
+let fixtureRequest;
+function ensureFixture(){return fixtureRequest??=loadFixture();}
 async function loadFixture() {
   try {
-    const {bundle,run,truth,observation,command,belief}=await loadPinnedV1();
+    const projection=await loadPinnedV1();
+    const {bundle,run,truth,observation,command,belief}=projection;
+    const facts=inspectionFacts(projection);
+    $('#observation-source').textContent=`Source: ${facts.source} / run ${run.id}. Sampled ${facts.sampled} s; received ${facts.received} s; epoch ${facts.epoch}. All times synthetic.`;
+    $('#candidate-list').replaceChildren(...facts.candidates.map((candidate,index)=>{
+      const item=document.createElement('div');item.className='candidate-state';
+      const label=document.createElement('p');label.className='eyebrow';label.textContent='POSSIBILITY '+(index+1);
+      const title=document.createElement('h3');title.textContent=candidate.host;
+      const note=document.createElement('p');note.textContent='Host retention in the authored fixture';
+      item.append(label,title,note);return item;
+    }));
+    $('#possible-states').hidden=false;
     $('#fixture-state').textContent = run.display_notice;
+    $('#receipt-verification').textContent='Exact fixture bytes verified in this browser. Synthetic fixture — not evidence.';
     $('#example-command').textContent = `${command.name} · illustrative, not executed`;
     $('#example-observation').textContent = `${observation.variable}: ${formatV1(observation.reading)} · ${observation.validity}`;
     $('#example-truth').textContent = `Host: ${truth.state.host} · author-assigned fixture truth`;
@@ -65,10 +130,14 @@ async function loadFixture() {
     }
   } catch {
     $('#fixture-state').textContent = 'Engineering fixture unavailable, incompatible or changed. The static explanation remains a UI illustration; no record was loaded.';
-    $('#fixture-banner').textContent='UI ILLUSTRATION / CONTRACT UNAVAILABLE';
+    $('#fixture-banner').textContent='MISSING EVIDENCE / CONTRACT UNAVAILABLE';
+    $('#possible-states').hidden=true;
+    $('#example-observation').textContent='Unavailable';
+    $('#observation-source').textContent='Pinned bytes could not be verified. No candidate states are shown.';
+    $('#receipt-verification').textContent='Fixture unavailable or changed. Browser verification failed; no result is loaded.';
   }
 }
-void loadFixture();
+// The fixture is requested only when an inspection/evidence view is entered.
 
 const hero = $('#hero-video'), dialog = $('#film-dialog'), film = $('#film-video');
 const motionButton=$('#motion-toggle'), motionPreference=matchMedia('(prefers-reduced-motion: reduce)');
@@ -142,78 +211,127 @@ for (const img of document.images) {
   if (img.complete && img.naturalWidth===0) handle();
 }
 
-// One document, one active surface. Native links remain meaningful without JS.
+// One document, one persistent scene, one URL-derived selection.
 const surfaces = new Map([...document.querySelectorAll('.surface')].map(node=>[node.dataset.view,node]));
 const routes = {
-  home:{label:'SPACE SYSTEMS RESEARCH',parent:'home',section:null},
-  question:{label:'RESEARCH / THE QUESTION',parent:'home',section:'question'},
-  laboratory:{label:'LABORATORY / COMPONENTS',parent:'home',section:'laboratory'},
-  interruption:{label:'LABORATORY / STATE INSPECTION',parent:'laboratory',section:'laboratory'},
-  evidence:{label:'RESEARCH / EVIDENCE',parent:'home',section:'evidence'},
-  comparison:{label:'RESEARCH / COMPARISON',parent:'evidence',section:'evidence'},
-  sources:{label:'RESEARCH / PRIMARY SOURCES',parent:'question',section:'question'},
-  vision:{label:'LONG-TERM CONCEPT',parent:'home',section:null},
+  home:{label:'SPACE SYSTEMS RESEARCH',section:null},
+  question:{label:'RESEARCH / THE QUESTION',section:'question'},
+  laboratory:{label:'LABORATORY / COMPONENTS',section:'laboratory'},
+  interruption:{label:'LABORATORY / STATE INSPECTION',section:'laboratory'},
+  evidence:{label:'RESEARCH / EVIDENCE',section:'evidence'},
+  comparison:{label:'RESEARCH / COMPARISON',section:'evidence'},
+  sources:{label:'RESEARCH / PRIMARY SOURCES',section:'question'},
+  vision:{label:'LONG-TERM CONCEPT',section:null},
 };
-let currentView='home';
-const hashFor=pathFor;
-
-function showView(view,{focus=true}={}) {
-  if (!routes[view]) view='home';
-  // Stop decoding before the outgoing view is hidden, not after animation.
-  activeHero=view==='home';
-  if(!activeHero) heroMedia.sync();
-  const update=()=>{
-    currentView=view;
-    document.documentElement.dataset.view=view;
-    for (const [name,node] of surfaces) {
-      const active=name===view;
-      node.classList.toggle('active',active);
-      node.hidden=!active;
-      node.inert=!active;
-    }
-    heroMedia.sync();
-    for (const link of document.querySelectorAll('.site-header nav a')) {
-      if (routes[view].section&&linkedView(new URL(link.href))===routes[view].section) link.setAttribute('aria-current','page');
-      else link.removeAttribute('aria-current');
-    }
-    const back=$('#view-back');
-    back.hidden=view==='home';
-    back.href=hashFor(routes[view].parent);
-    back.querySelector('.control-label').textContent=routes[view].parent==='home' ? 'Overview' : routes[view].parent==='laboratory' ? 'Laboratory' : routes[view].parent==='question' ? 'Research' : 'Evidence';
-    $('#view-context').textContent=routes[view].label;
-    const heading=surfaces.get(view).querySelector('h1,h2');
-    updateMetadata(view);
-    window.scrollTo({top:0,left:0,behavior:'instant'});
-    if (focus) {heading.tabIndex=-1;heading.focus({preventScroll:true});}
-  };
-  update();
+let currentState=workspaceFromURL(new URL(location.href));
+let spatialScene=null,spatialLoad=null;
+function updateSpatial(animate=false){
+  if(['home','vision'].includes(currentState.view)){spatialScene?.suspend();return;}
+  if(spatialScene){spatialScene.update(currentState,{animate});return;}
+  const root=$('#module-scene');
+  if(!spatialLoad)spatialLoad=import('./spatial-scene.mjs').then(({mountSpatialScene})=>{
+    if(!root.isConnected)return;
+    spatialScene=mountSpatialScene({root,commit:(patch,options={})=>navigate({...currentState,...patch},{focus:false,...options})});
+    spatialScene.update(currentState);
+  }).catch(()=>{
+    root.dataset.renderer='static';
+    for(const button of root.querySelectorAll('.camera-controls button'))button.disabled=true;
+    root.querySelector('#spatial-viewport').tabIndex=-1;
+    root.querySelector('#spatial-status').textContent='Static schematic. Spatial controls are unavailable; function selection and evidence remain available.';
+  });
 }
-function navigate(view) {
-  if (!routes[view]) return;
-  if (view!==currentView) history.pushState({cartanView:view},'',hashFor(view));
-  showView(view);
+window.addEventListener('pagehide',()=>spatialScene?.suspend());
+window.addEventListener('pageshow',()=>updateSpatial());
+// Stable ids let history restore the actual control rather than a guessed heading.
+for(const [index,node] of [...document.querySelectorAll('a,button,summary')].entries())if(!node.id)node.id='control-'+index;
+
+function rememberEntry() {
+  history.replaceState({...history.state,cartanFocus:document.activeElement?.id,cartanScroll:window.scrollY,cartanReading:surfaces.get(currentState.view)?.scrollTop??0},'',location.href);
+}
+function showState(state,{focus=true,focusTarget=null,restore=null}={}) {
+  const previous=currentState;
+  currentState=state;
+  const view=state.view;
+  activeHero=view==='home';
+  if(!activeHero)heroMedia.sync();
+  document.documentElement.dataset.view=view;
+  for(const [name,node] of surfaces) {
+    const active=name===view;
+    node.classList.toggle('active',active);node.hidden=!active||(state.notes==='closed'&&!['home','vision'].includes(view));node.inert=node.hidden;
+  }
+  $('.interior-shell').hidden=view==='home';
+  $('#module-scene').hidden=view==='home'||view==='vision';
+  renderSelection(state);
+  updateSpatial(previous.camera!==state.camera||previous.az!==state.az||previous.el!==state.el);
+  heroMedia.sync();
+  if(view==='interruption'||view==='evidence')void ensureFixture();
+  for(const link of document.querySelectorAll('.site-header nav a')) {
+    if(routes[view].section&&linkedView(new URL(link.href))===routes[view].section)link.setAttribute('aria-current','page');
+    else link.removeAttribute('aria-current');
+  }
+  const parent=parentState(state),back=$('#view-back');
+  back.hidden=view==='home';back.href=workspaceURL(parent);
+  back.querySelector('.control-label').textContent=parent.view==='home'?'Overview':parent.view==='laboratory'?'Laboratory':parent.view==='interruption'?'Paused transfer':parent.view==='question'?'Research':'Evidence';
+  $('#view-context').textContent=routes[view].label;
+  updateMetadata(view);
+  const heading=state.notes==='closed'?$('#inspector-toggle'):state.detail==='interface'?$('#interface-title'):surfaces.get(view).querySelector('h1,h2');
+  const restoreNode=restore?.cartanFocus?document.getElementById(restore.cartanFocus):null;
+  const requested=focusTarget?document.getElementById(focusTarget):null;
+  const eligible=node=>node&&!node.closest('[hidden],[inert]');
+  if(focus) {
+    const target=eligible(restoreNode)?restoreNode:eligible(requested)?requested:heading;
+    if(/^H[1-6]$/.test(target.tagName))target.tabIndex=-1;
+    target.focus({preventScroll:true});
+  }
+  if(restore)window.scrollTo({top:restore.cartanScroll??0,left:0,behavior:'instant'});
+  else if(previous.view!==view)window.scrollTo({top:0,left:0,behavior:'instant'});
+  if(restore)surfaces.get(view).scrollTop=restore.cartanReading??0;
+  else if(previous.view!==view)surfaces.get(view).scrollTop=0;
+  if(focus&&innerWidth>860&&state.detail==='interface'&&!restore)$('#interface-title').scrollIntoView?.({block:'nearest',behavior:'instant'});
+  // On narrow layouts the reading surface follows the object. Reveal its focused
+  // heading only when it is outside the viewport; no scroll animation or snapping.
+  if(focus&&!restore&&innerWidth<=700&&view!=='home'&&view!=='vision') {
+    const target=document.activeElement,rect=target.getBoundingClientRect();
+    if(rect.bottom>innerHeight-70||rect.top<90)target.scrollIntoView?.({block:'center',behavior:'instant'});
+  }
+}
+function navigate(next,options={}) {
+  if(!routes[next.view])return;
+  const url=workspaceURL(next);
+  if(url!==location.pathname+location.search||location.hash) {
+    rememberEntry();if(options.replace)history.replaceState(history.state,'',url);else history.pushState({},'',url);
+  }
+  showState(workspaceFromURL(new URL(location.href)),options);
 }
 document.addEventListener('click',event=>{
-  if (event.defaultPrevented||event.button!==0||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey) return;
+  if(event.defaultPrevented||event.button!==0||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;
   const link=event.target.closest('a[href]');
-  if (!link||link.target||link.hasAttribute('download')) return;
+  if(!link||link.target||link.hasAttribute('download'))return;
   const url=new URL(link.href);if(url.origin!==location.origin)return;
-  const view=linkedView(url);
-  if (!routes[view]) return;
+  const view=linkedView(url);if(!routes[view])return;
   event.preventDefault();
-  navigate(view);
+  const next=workspaceFromURL(url);
+  if(['comparison','sources'].includes(view)&&currentState.from==='interruption') {
+    next.from=currentState.from;next.part=currentState.part;
+  }
+  const returnTarget=link.id==='return-transfer'?'inspect-evidence':link.id==='interface-close'?'interface-open':null;
+  navigate(next,{focusTarget:returnTarget});
 });
-window.addEventListener('popstate',()=>showView(viewFromURL(location)));
+window.addEventListener('popstate',()=>showState(workspaceFromURL(new URL(location.href)),{restore:history.state??{}}));
 window.addEventListener('hashchange',()=>{
-  const view=viewFromURL(location);
-  if(location.hash==='#top'||Object.hasOwn(SITE.pages,location.hash.slice(1)))history.replaceState({cartanView:view},'',pathFor(view));
-  if (view!==currentView) showView(view);
+  if(location.hash!=='#top'&&!Object.hasOwn(SITE.pages,location.hash.slice(1)))return;
+  const state=workspaceFromURL(new URL(location.href));
+  history.replaceState({},'',workspaceURL(state));showState(state);
 });
 document.addEventListener('keydown',event=>{
-  if (event.key!=='Escape'||dialog.open||currentView==='home') return;
-  event.preventDefault();navigate(routes[currentView].parent);
+  if(event.defaultPrevented||event.key!=='Escape'||dialog.open||currentState.view==='home')return;
+  if(event.target.closest?.('input,textarea,select,[contenteditable="true"]'))return;
+  event.preventDefault();
+  const targets={interruption:'inspect-transfer',evidence:'inspect-evidence',comparison:'evidence-title',sources:'question-title'};
+  const focusTarget=currentState.detail?'interface-open':targets[currentState.view]??null;
+  navigate(parentState(currentState),{focusTarget});
 });
 document.documentElement.classList.add('has-router');
-const initialView=viewFromURL(location);
-if(location.hash==='#top'||Object.hasOwn(SITE.pages,location.hash.slice(1)))history.replaceState({cartanView:initialView},'',pathFor(initialView));
-showView(initialView,{focus:false});
+document.documentElement.classList.add('has-interaction');
+if(location.hash==='#top'||Object.hasOwn(SITE.pages,location.hash.slice(1)))history.replaceState({},'',workspaceURL(currentState));
+showState(currentState,{focus:false});

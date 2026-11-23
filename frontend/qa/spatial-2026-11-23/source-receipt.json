@@ -1,0 +1,19 @@
+{
+  "head": "dcc8d8e7b6af3df797eea32fc27dc5bba187eb5e",
+  "branch": "ui/visual-laboratory",
+  "package": "/private/tmp/cartan-spatial-candidate-20261123-acceptance",
+  "preview": "http://127.0.0.1:4182/",
+  "sources": {
+    "frontend/app.mjs": "17c85988cf080b6019298b9d9818d627acb756f82d084ae0786de2a52b27f20f",
+    "frontend/index.html": "c99f5c7e0ab888b6eb94371d6378cacbaea99505fb5351857b5a243e38854549",
+    "frontend/interior.css": "ce36b7ea952ce80eaaa0ee02a573a7487d8cec14bece97194d1c07d5db28058d",
+    "frontend/workspace-state.mjs": "1398701fdced4e28681c26227ee539056889b08039fdee24141d9f8fec70cf7b",
+    "frontend/scene-geometry.mjs": "737e062167a21f55760376f11d65db89ad3e4825fa484448fc669995a44b2201",
+    "frontend/spatial-scene.mjs": "099038151d93c22ac0fe1ef96e43fa6f9398924f08667541170d4d361002a34a",
+    "frontend/webgl-scene.mjs": "0cdf065288527b0d76d61191048ef6487e9b02c6fc09c622ae084c08b8f39698"
+  },
+  "sceneCodeBytes": 17573,
+  "browserAccepted": false,
+  "gpuAccepted": false,
+  "published": false
+}

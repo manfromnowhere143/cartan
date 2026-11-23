@@ -1,0 +1,41 @@
+{
+  "url": "https://github.com/manfromnowhere143/cartan",
+  "http_status": 200,
+  "current_readme_seen": true,
+  "mermaid_iframes": 4,
+  "diagrams": [
+    {
+      "id": 1,
+      "host": "viewscreen.githubusercontent.com",
+      "path": "/markdown/mermaid",
+      "svg": true,
+      "title": "Evidence separates six physical propositions",
+      "error": null
+    },
+    {
+      "id": 2,
+      "host": "viewscreen.githubusercontent.com",
+      "path": "/markdown/mermaid",
+      "svg": true,
+      "title": "Five offline research paths and a separate presentation contract",
+      "error": null
+    },
+    {
+      "id": 3,
+      "host": "viewscreen.githubusercontent.com",
+      "path": "/markdown/mermaid",
+      "svg": true,
+      "title": "The synthetic ambiguity survives but ordinary recovery succeeds",
+      "error": null
+    },
+    {
+      "id": 4,
+      "host": "viewscreen.githubusercontent.com",
+      "path": "/markdown/mermaid",
+      "svg": true,
+      "title": "Progress from reproducible software to an admissible physical question",
+      "error": null
+    }
+  ],
+  "scope": "Anonymous installed Chrome headless session; native GitHub view, not Safari/phone/AT acceptance"
+}

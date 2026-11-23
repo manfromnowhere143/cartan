@@ -1,0 +1,407 @@
+TAP version 13
+# Subtest: touch-open and touch-close preserve focus without pointer-outline eligibility
+not ok 1 - touch-open and touch-close preserve focus without pointer-outline eligibility
+  ---
+  duration_ms: 64.423833
+  location: '/Users/danielwahnich/workspace/cartan-worktrees/research/frontend/qa/focus-dom.test.mjs:54:1'
+  failureType: 'testCodeFailure'
+  error: 'Object.defineProperty called on non-object'
+  code: 'ERR_TEST_FAILURE'
+  name: 'TypeError'
+  stack: |-
+    Function.defineProperty (<anonymous>)
+    fixture (file:///Users/danielwahnich/workspace/cartan-worktrees/research/frontend/qa/focus-dom.test.mjs:23:10)
+    async TestContext.<anonymous> (file:///Users/danielwahnich/workspace/cartan-worktrees/research/frontend/qa/focus-dom.test.mjs:55:11)
+    async Test.run (node:internal/test_runner/test:797:9)
+    async Test.processPendingSubtests (node:internal/test_runner/test:526:7)
+  ...
+# Subtest: a typed zero-count touch click does not become keyboard focus
+not ok 2 - a typed zero-count touch click does not become keyboard focus
+  ---
+  duration_ms: 26.146416
+  location: '/Users/danielwahnich/workspace/cartan-worktrees/research/frontend/qa/focus-dom.test.mjs:61:1'
+  failureType: 'testCodeFailure'
+  error: 'Object.defineProperty called on non-object'
+  code: 'ERR_TEST_FAILURE'
+  name: 'TypeError'
+  stack: |-
+    Function.defineProperty (<anonymous>)
+    fixture (file:///Users/danielwahnich/workspace/cartan-worktrees/research/frontend/qa/focus-dom.test.mjs:23:10)
+    async TestContext.<anonymous> (file:///Users/danielwahnich/workspace/cartan-worktrees/research/frontend/qa/focus-dom.test.mjs:62:11)
+    async Test.run (node:internal/test_runner/test:797:9)
+    async Test.processPendingSubtests (node:internal/test_runner/test:526:7)
+  ...
+# Subtest: a webview zero-count MouseEvent after a completed touch stays pointer-originated
+not ok 3 - a webview zero-count MouseEvent after a completed touch stays pointer-originated
+  ---
+  duration_ms: 22.502167
+  location: '/Users/danielwahnich/workspace/cartan-worktrees/research/frontend/qa/focus-dom.test.mjs:65:1'
+  failureType: 'testCodeFailure'
+  error: 'Object.defineProperty called on non-object'
+  code: 'ERR_TEST_FAILURE'
+  name: 'TypeError'
+  stack: |-
+    Function.defineProperty (<anonymous>)
+    fixture (file:///Users/danielwahnich/workspace/cartan-worktrees/research/frontend/qa/focus-dom.test.mjs:23:10)
+    async TestContext.<anonymous> (file:///Users/danielwahnich/workspace/cartan-worktrees/research/frontend/qa/focus-dom.test.mjs:66:11)
+    async Test.run (node:internal/test_runner/test:797:9)
+    async Test.processPendingSubtests (node:internal/test_runner/test:526:7)
+  ...
+# Subtest: cancelled gestures do not mask a later assistive activation
+not ok 4 - cancelled gestures do not mask a later assistive activation
+  ---
+  duration_ms: 18.56425
+  location: '/Users/danielwahnich/workspace/cartan-worktrees/research/frontend/qa/focus-dom.test.mjs:72:1'
+  failureType: 'testCodeFailure'
+  error: 'Object.defineProperty called on non-object'
+  code: 'ERR_TEST_FAILURE'
+  name: 'TypeError'
+  stack: |-
+    Function.defineProperty (<anonymous>)
+    fixture (file:///Users/danielwahnich/workspace/cartan-worktrees/research/frontend/qa/focus-dom.test.mjs:23:10)
+    async TestContext.<anonymous> (file:///Users/danielwahnich/workspace/cartan-worktrees/research/frontend/qa/focus-dom.test.mjs:73:11)
+    async Test.run (node:internal/test_runner/test:797:9)
+    async Test.processPendingSubtests (node:internal/test_runner/test:526:7)
+  ...
+# Subtest: keyboard and assistive opening retain visible-focus eligibility
+not ok 5 - keyboard and assistive opening retain visible-focus eligibility
+  ---
+  duration_ms: 17.886042
+  location: '/Users/danielwahnich/workspace/cartan-worktrees/research/frontend/qa/focus-dom.test.mjs:77:1'
+  failureType: 'testCodeFailure'
+  error: 'Object.defineProperty called on non-object'
+  code: 'ERR_TEST_FAILURE'
+  name: 'TypeError'
+  stack: |-
+    Function.defineProperty (<anonymous>)
+    fixture (file:///Users/danielwahnich/workspace/cartan-worktrees/research/frontend/qa/focus-dom.test.mjs:23:10)
+    async TestContext.<anonymous> (file:///Users/danielwahnich/workspace/cartan-worktrees/research/frontend/qa/focus-dom.test.mjs:79:13)
+    async Test.run (node:internal/test_runner/test:797:9)
+    async Test.processPendingSubtests (node:internal/test_runner/test:526:7)
+  ...
+# Subtest: Safari Option+Tab restores keyboard indication synchronously
+not ok 6 - Safari Option+Tab restores keyboard indication synchronously
+  ---
+  duration_ms: 16.486458
+  location: '/Users/danielwahnich/workspace/cartan-worktrees/research/frontend/qa/focus-dom.test.mjs:86:1'
+  failureType: 'testCodeFailure'
+  error: 'Object.defineProperty called on non-object'
+  code: 'ERR_TEST_FAILURE'
+  name: 'TypeError'
+  stack: |-
+    Function.defineProperty (<anonymous>)
+    fixture (file:///Users/danielwahnich/workspace/cartan-worktrees/research/frontend/qa/focus-dom.test.mjs:23:10)
+    async TestContext.<anonymous> (file:///Users/danielwahnich/workspace/cartan-worktrees/research/frontend/qa/focus-dom.test.mjs:87:11)
+    async Test.run (node:internal/test_runner/test:797:9)
+    async Test.processPendingSubtests (node:internal/test_runner/test:526:7)
+  ...
+# Subtest: pointer presentation covers routes, component/evidence controls and restored focus
+not ok 7 - pointer presentation covers routes, component/evidence controls and restored focus
+  ---
+  duration_ms: 16.849791
+  location: '/Users/danielwahnich/workspace/cartan-worktrees/research/frontend/qa/focus-dom.test.mjs:91:1'
+  failureType: 'testCodeFailure'
+  error: 'Object.defineProperty called on non-object'
+  code: 'ERR_TEST_FAILURE'
+  name: 'TypeError'
+  stack: |-
+    Function.defineProperty (<anonymous>)
+    fixture (file:///Users/danielwahnich/workspace/cartan-worktrees/research/frontend/qa/focus-dom.test.mjs:23:10)
+    async TestContext.<anonymous> (file:///Users/danielwahnich/workspace/cartan-worktrees/research/frontend/qa/focus-dom.test.mjs:92:11)
+    async Test.run (node:internal/test_runner/test:797:9)
+    async Test.processPendingSubtests (node:internal/test_runner/test:526:7)
+  ...
+# Subtest: native media controls and text inputs are not subject to pointer-outline suppression
+not ok 8 - native media controls and text inputs are not subject to pointer-outline suppression
+  ---
+  duration_ms: 15.956917
+  location: '/Users/danielwahnich/workspace/cartan-worktrees/research/frontend/qa/focus-dom.test.mjs:101:1'
+  failureType: 'testCodeFailure'
+  error: 'Object.defineProperty called on non-object'
+  code: 'ERR_TEST_FAILURE'
+  name: 'TypeError'
+  stack: |-
+    Function.defineProperty (<anonymous>)
+    fixture (file:///Users/danielwahnich/workspace/cartan-worktrees/research/frontend/qa/focus-dom.test.mjs:23:10)
+    async TestContext.<anonymous> (file:///Users/danielwahnich/workspace/cartan-worktrees/research/frontend/qa/focus-dom.test.mjs:102:11)
+    async Test.run (node:internal/test_runner/test:797:9)
+    async Test.processPendingSubtests (node:internal/test_runner/test:526:7)
+  ...
+# Subtest: real app selects mobile looping media and resumes temporary navigation suspension
+not ok 9 - real app selects mobile looping media and resumes temporary navigation suspension
+  ---
+  duration_ms: 25.50125
+  location: '/Users/danielwahnich/workspace/cartan-worktrees/research/frontend/qa/focus-dom.test.mjs:107:1'
+  failureType: 'testCodeFailure'
+  error: 'Object.defineProperty called on non-object'
+  code: 'ERR_TEST_FAILURE'
+  name: 'TypeError'
+  stack: |-
+    Function.defineProperty (<anonymous>)
+    fixture (file:///Users/danielwahnich/workspace/cartan-worktrees/research/frontend/qa/focus-dom.test.mjs:23:10)
+    async TestContext.<anonymous> (file:///Users/danielwahnich/workspace/cartan-worktrees/research/frontend/qa/focus-dom.test.mjs:108:11)
+    async Test.run (node:internal/test_runner/test:797:9)
+    async Test.processPendingSubtests (node:internal/test_runner/test:526:7)
+  ...
+# Subtest: real app respects reduced motion and Save-Data without attaching a source
+not ok 10 - real app respects reduced motion and Save-Data without attaching a source
+  ---
+  duration_ms: 20.556083
+  location: '/Users/danielwahnich/workspace/cartan-worktrees/research/frontend/qa/focus-dom.test.mjs:115:1'
+  failureType: 'testCodeFailure'
+  error: 'Object.defineProperty called on non-object'
+  code: 'ERR_TEST_FAILURE'
+  name: 'TypeError'
+  stack: |-
+    Function.defineProperty (<anonymous>)
+    fixture (file:///Users/danielwahnich/workspace/cartan-worktrees/research/frontend/qa/focus-dom.test.mjs:23:10)
+    async TestContext.<anonymous> (file:///Users/danielwahnich/workspace/cartan-worktrees/research/frontend/qa/focus-dom.test.mjs:117:13)
+    async Test.run (node:internal/test_runner/test:797:9)
+    async Test.processPendingSubtests (node:internal/test_runner/test:526:7)
+  ...
+# Subtest: complete lab / part / interface / interruption / evidence / return sequence
+not ok 11 - complete lab / part / interface / interruption / evidence / return sequence
+  ---
+  duration_ms: 66.396917
+  location: '/Users/danielwahnich/workspace/cartan-worktrees/research/frontend/qa/interior-dom.test.mjs:8:1'
+  failureType: 'testCodeFailure'
+  error: 'Object.defineProperty called on non-object'
+  code: 'ERR_TEST_FAILURE'
+  name: 'TypeError'
+  stack: |-
+    Function.defineProperty (<anonymous>)
+    fixture (file:///Users/danielwahnich/workspace/cartan-worktrees/research/frontend/qa/interior-dom-fixture.mjs:23:10)
+    async TestContext.<anonymous> (file:///Users/danielwahnich/workspace/cartan-worktrees/research/frontend/qa/interior-dom.test.mjs:9:11)
+    async Test.run (node:internal/test_runner/test:797:9)
+    async Test.processPendingSubtests (node:internal/test_runner/test:526:7)
+  ...
+# Subtest: Back and Forward restore selection, disclosure and focus
+not ok 12 - Back and Forward restore selection, disclosure and focus
+  ---
+  duration_ms: 26.219292
+  location: '/Users/danielwahnich/workspace/cartan-worktrees/research/frontend/qa/interior-dom.test.mjs:27:1'
+  failureType: 'testCodeFailure'
+  error: 'Object.defineProperty called on non-object'
+  code: 'ERR_TEST_FAILURE'
+  name: 'TypeError'
+  stack: |-
+    Function.defineProperty (<anonymous>)
+    fixture (file:///Users/danielwahnich/workspace/cartan-worktrees/research/frontend/qa/interior-dom-fixture.mjs:23:10)
+    async TestContext.<anonymous> (file:///Users/danielwahnich/workspace/cartan-worktrees/research/frontend/qa/interior-dom.test.mjs:28:11)
+    async Test.run (node:internal/test_runner/test:797:9)
+    async Test.processPendingSubtests (node:internal/test_runner/test:526:7)
+  ...
+# Subtest: rapid object reselection and Escape are synchronous, without stale reveal
+not ok 13 - rapid object reselection and Escape are synchronous, without stale reveal
+  ---
+  duration_ms: 22.002584
+  location: '/Users/danielwahnich/workspace/cartan-worktrees/research/frontend/qa/interior-dom.test.mjs:38:1'
+  failureType: 'testCodeFailure'
+  error: 'Object.defineProperty called on non-object'
+  code: 'ERR_TEST_FAILURE'
+  name: 'TypeError'
+  stack: |-
+    Function.defineProperty (<anonymous>)
+    fixture (file:///Users/danielwahnich/workspace/cartan-worktrees/research/frontend/qa/interior-dom-fixture.mjs:23:10)
+    async TestContext.<anonymous> (file:///Users/danielwahnich/workspace/cartan-worktrees/research/frontend/qa/interior-dom.test.mjs:39:11)
+    async Test.run (node:internal/test_runner/test:797:9)
+    async Test.processPendingSubtests (node:internal/test_runner/test:526:7)
+  ...
+# Subtest: direct URLs and legacy aliases reach the same state without creating history
+not ok 14 - direct URLs and legacy aliases reach the same state without creating history
+  ---
+  duration_ms: 18.361333
+  location: '/Users/danielwahnich/workspace/cartan-worktrees/research/frontend/qa/interior-dom.test.mjs:48:1'
+  failureType: 'testCodeFailure'
+  error: 'Object.defineProperty called on non-object'
+  code: 'ERR_TEST_FAILURE'
+  name: 'TypeError'
+  stack: |-
+    Function.defineProperty (<anonymous>)
+    fixture (file:///Users/danielwahnich/workspace/cartan-worktrees/research/frontend/qa/interior-dom-fixture.mjs:23:10)
+    async TestContext.<anonymous> (file:///Users/danielwahnich/workspace/cartan-worktrees/research/frontend/qa/interior-dom.test.mjs:50:13)
+    async Test.run (node:internal/test_runner/test:797:9)
+    async Test.processPendingSubtests (node:internal/test_runner/test:526:7)
+  ...
+# Subtest: corrupt or missing fixture never exposes invented candidate states
+not ok 15 - corrupt or missing fixture never exposes invented candidate states
+  ---
+  duration_ms: 22.0395
+  location: '/Users/danielwahnich/workspace/cartan-worktrees/research/frontend/qa/interior-dom.test.mjs:57:1'
+  failureType: 'testCodeFailure'
+  error: 'Object.defineProperty called on non-object'
+  code: 'ERR_TEST_FAILURE'
+  name: 'TypeError'
+  stack: |-
+    Function.defineProperty (<anonymous>)
+    fixture (file:///Users/danielwahnich/workspace/cartan-worktrees/research/frontend/qa/interior-dom-fixture.mjs:23:10)
+    async TestContext.<anonymous> (file:///Users/danielwahnich/workspace/cartan-worktrees/research/frontend/qa/interior-dom.test.mjs:58:11)
+    async Test.run (node:internal/test_runner/test:797:9)
+    async Test.processPendingSubtests (node:internal/test_runner/test:526:7)
+  ...
+# Subtest: late fixture arrival cannot change a newer route, part or focused control
+not ok 16 - late fixture arrival cannot change a newer route, part or focused control
+  ---
+  duration_ms: 17.4905
+  location: '/Users/danielwahnich/workspace/cartan-worktrees/research/frontend/qa/interior-dom.test.mjs:64:1'
+  failureType: 'testCodeFailure'
+  error: 'Object.defineProperty called on non-object'
+  code: 'ERR_TEST_FAILURE'
+  name: 'TypeError'
+  stack: |-
+    Function.defineProperty (<anonymous>)
+    fixture (file:///Users/danielwahnich/workspace/cartan-worktrees/research/frontend/qa/interior-dom-fixture.mjs:23:10)
+    async TestContext.<anonymous> (file:///Users/danielwahnich/workspace/cartan-worktrees/research/frontend/qa/interior-dom.test.mjs:65:11)
+    async Test.run (node:internal/test_runner/test:797:9)
+    async Test.processPendingSubtests (node:internal/test_runner/test:526:7)
+  ...
+# Subtest: reduced motion and data saving preserve the complete sequence without hero source
+not ok 17 - reduced motion and data saving preserve the complete sequence without hero source
+  ---
+  duration_ms: 15.258583
+  location: '/Users/danielwahnich/workspace/cartan-worktrees/research/frontend/qa/interior-dom.test.mjs:71:1'
+  failureType: 'testCodeFailure'
+  error: 'Object.defineProperty called on non-object'
+  code: 'ERR_TEST_FAILURE'
+  name: 'TypeError'
+  stack: |-
+    Function.defineProperty (<anonymous>)
+    fixture (file:///Users/danielwahnich/workspace/cartan-worktrees/research/frontend/qa/interior-dom-fixture.mjs:23:10)
+    async TestContext.<anonymous> (file:///Users/danielwahnich/workspace/cartan-worktrees/research/frontend/qa/interior-dom.test.mjs:73:13)
+    async Test.run (node:internal/test_runner/test:797:9)
+    async Test.processPendingSubtests (node:internal/test_runner/test:526:7)
+  ...
+# Subtest: film Escape stays native and does not navigate the underlying workspace
+not ok 18 - film Escape stays native and does not navigate the underlying workspace
+  ---
+  duration_ms: 23.4355
+  location: '/Users/danielwahnich/workspace/cartan-worktrees/research/frontend/qa/interior-dom.test.mjs:77:1'
+  failureType: 'testCodeFailure'
+  error: 'Object.defineProperty called on non-object'
+  code: 'ERR_TEST_FAILURE'
+  name: 'TypeError'
+  stack: |-
+    Function.defineProperty (<anonymous>)
+    fixture (file:///Users/danielwahnich/workspace/cartan-worktrees/research/frontend/qa/interior-dom-fixture.mjs:23:10)
+    async TestContext.<anonymous> (file:///Users/danielwahnich/workspace/cartan-worktrees/research/frontend/qa/interior-dom.test.mjs:78:11)
+    async Test.run (node:internal/test_runner/test:797:9)
+    async Test.processPendingSubtests (node:internal/test_runner/test:526:7)
+  ...
+# Subtest: research, sources, comparisons and vision retain a meaningful exit and object identity
+not ok 19 - research, sources, comparisons and vision retain a meaningful exit and object identity
+  ---
+  duration_ms: 26.853875
+  location: '/Users/danielwahnich/workspace/cartan-worktrees/research/frontend/qa/interior-dom.test.mjs:82:1'
+  failureType: 'testCodeFailure'
+  error: 'Object.defineProperty called on non-object'
+  code: 'ERR_TEST_FAILURE'
+  name: 'TypeError'
+  stack: |-
+    Function.defineProperty (<anonymous>)
+    fixture (file:///Users/danielwahnich/workspace/cartan-worktrees/research/frontend/qa/interior-dom-fixture.mjs:23:10)
+    async TestContext.<anonymous> (file:///Users/danielwahnich/workspace/cartan-worktrees/research/frontend/qa/interior-dom.test.mjs:83:11)
+    async Test.run (node:internal/test_runner/test:797:9)
+    async Test.processPendingSubtests (node:internal/test_runner/test:526:7)
+  ...
+# Subtest: hero loads no scene module; first interior import mounts one persistent fallback
+not ok 20 - hero loads no scene module; first interior import mounts one persistent fallback
+  ---
+  duration_ms: 67.615584
+  location: '/Users/danielwahnich/workspace/cartan-worktrees/research/frontend/qa/spatial-dom.test.mjs:28:1'
+  failureType: 'testCodeFailure'
+  error: 'Object.defineProperty called on non-object'
+  code: 'ERR_TEST_FAILURE'
+  name: 'TypeError'
+  stack: |-
+    Function.defineProperty (<anonymous>)
+    fixture (file:///Users/danielwahnich/workspace/cartan-worktrees/research/frontend/qa/interior-dom-fixture.mjs:23:10)
+    async TestContext.<anonymous> (file:///Users/danielwahnich/workspace/cartan-worktrees/research/frontend/qa/spatial-dom.test.mjs:29:11)
+    async Test.run (node:internal/test_runner/test:797:9)
+    async Test.processPendingSubtests (node:internal/test_runner/test:526:7)
+  ...
+# Subtest: notes, camera and fallback preferences survive deep links, Back and object-context reading
+not ok 21 - notes, camera and fallback preferences survive deep links, Back and object-context reading
+  ---
+  duration_ms: 26.588041
+  location: '/Users/danielwahnich/workspace/cartan-worktrees/research/frontend/qa/spatial-dom.test.mjs:38:1'
+  failureType: 'testCodeFailure'
+  error: 'Object.defineProperty called on non-object'
+  code: 'ERR_TEST_FAILURE'
+  name: 'TypeError'
+  stack: |-
+    Function.defineProperty (<anonymous>)
+    fixture (file:///Users/danielwahnich/workspace/cartan-worktrees/research/frontend/qa/interior-dom-fixture.mjs:23:10)
+    async TestContext.<anonymous> (file:///Users/danielwahnich/workspace/cartan-worktrees/research/frontend/qa/spatial-dom.test.mjs:39:11)
+    async Test.run (node:internal/test_runner/test:797:9)
+    async Test.processPendingSubtests (node:internal/test_runner/test:526:7)
+  ...
+# Subtest: missing optional scene module leaves static geometry, native selection and verified evidence
+not ok 22 - missing optional scene module leaves static geometry, native selection and verified evidence
+  ---
+  duration_ms: 22.579958
+  location: '/Users/danielwahnich/workspace/cartan-worktrees/research/frontend/qa/spatial-dom.test.mjs:48:1'
+  failureType: 'testCodeFailure'
+  error: 'Object.defineProperty called on non-object'
+  code: 'ERR_TEST_FAILURE'
+  name: 'TypeError'
+  stack: |-
+    Function.defineProperty (<anonymous>)
+    fixture (file:///Users/danielwahnich/workspace/cartan-worktrees/research/frontend/qa/interior-dom-fixture.mjs:23:10)
+    async TestContext.<anonymous> (file:///Users/danielwahnich/workspace/cartan-worktrees/research/frontend/qa/spatial-dom.test.mjs:49:11)
+    async Test.run (node:internal/test_runner/test:797:9)
+    async Test.processPendingSubtests (node:internal/test_runner/test:526:7)
+  ...
+# Subtest: GPU enhancement does no idle work and only the newest camera can finish
+ok 23 - GPU enhancement does no idle work and only the newest camera can finish
+  ---
+  duration_ms: 54.97525
+  ...
+# Subtest: late renderer import cannot allocate after route exit or disposal
+ok 24 - late renderer import cannot allocate after route exit or disposal
+  ---
+  duration_ms: 93.715708
+  ...
+# Subtest: reduced motion retains spatial selection with zero animation frames
+ok 25 - reduced motion retains spatial selection with zero animation frames
+  ---
+  duration_ms: 46.812375
+  ...
+# Subtest: data-saving, forced colors, missing graphics and explicit drawing use the same mesh without loading GPU code
+ok 26 - data-saving, forced colors, missing graphics and explicit drawing use the same mesh without loading GPU code
+  ---
+  duration_ms: 190.987084
+  ...
+# Subtest: context loss falls back immediately and only context restoration can request a new renderer
+ok 27 - context loss falls back immediately and only context restoration can request a new renderer
+  ---
+  duration_ms: 128.510666
+  ...
+# Subtest: pointer orbit commits only viewing angles; vertical intent and cancelled input cannot select a part
+ok 28 - pointer orbit commits only viewing angles; vertical intent and cancelled input cannot select a part
+  ---
+  duration_ms: 18.89325
+  ...
+# Subtest: preference changes cancel a reveal and restore a complete readable drawing
+ok 29 - preference changes cancel a reveal and restore a complete readable drawing
+  ---
+  duration_ms: 49.076542
+  ...
+# Subtest: preferences, visibility and context restoration cannot revive a suspended scene
+ok 30 - preferences, visibility and context restoration cannot revive a suspended scene
+  ---
+  duration_ms: 78.612917
+  ...
+# Subtest: unavailable graphics are attempted once, not reallocated on every selection
+ok 31 - unavailable graphics are attempted once, not reallocated on every selection
+  ---
+  duration_ms: 199.503875
+  ...
+1..31
+# tests 31
+# suites 0
+# pass 9
+# fail 22
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 2350.633667

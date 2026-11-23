@@ -1,0 +1,54 @@
+{
+  "kind": "Declared sRGB arithmetic; not rendered pixels or complete non-text contrast acceptance",
+  "pairs": [
+    {
+      "name": "primary",
+      "foreground": "#f7f8f7",
+      "background": "#07090b",
+      "ratio": 18.73,
+      "passed": true
+    },
+    {
+      "name": "object-title",
+      "foreground": "#edf1f3",
+      "background": "#07090b",
+      "ratio": 17.55,
+      "passed": true
+    },
+    {
+      "name": "edition",
+      "foreground": "#bac5cd",
+      "background": "#07090b",
+      "ratio": 11.35,
+      "passed": true
+    },
+    {
+      "name": "muted-controls",
+      "foreground": "#b6bec3",
+      "background": "#07090b",
+      "ratio": 10.58,
+      "passed": true
+    },
+    {
+      "name": "selected-function",
+      "foreground": "#d0dae0",
+      "background": "#07090b",
+      "ratio": 14.04,
+      "passed": true
+    },
+    {
+      "name": "focus",
+      "foreground": "#b7cbd7",
+      "background": "#07090b",
+      "ratio": 11.91,
+      "passed": true
+    },
+    {
+      "name": "disabled-control",
+      "foreground": "#a0a9b0",
+      "background": "#07090b",
+      "ratio": 8.35,
+      "passed": true
+    }
+  ]
+}

@@ -1,5 +1,9 @@
 # CARTAN memory
 
+Latest continuation: [completed repository integration](checkpoints/research-20261123-integration-complete.md)
+records the merged research/setup/UI snapshot, published README/diagrams,
+browser checks and remaining setup/physical-evidence gates.
+
 Read `../docs/SESSION_HANDOFF.md` and `../docs/COORDINATION.md` first. Search notes
 with `rg` before repeating work. Native client memory may help discovery but is
 not the project's source of truth.
@@ -60,3 +64,11 @@ physical records needed before another model is justified. No physical study beg
 [Repository and README integration](checkpoints/research-20261123T101533Z-readme-integration.md)
 records merged research/published/setup history, current navigation, four reviewed
 Mermaid diagrams, preserved evidence, and the pending UI and client-version gates.
+
+- [Continuous interior candidate](checkpoints/ui-20261123-continuous-interior.md):
+  earlier UI 006 state, preservation, local preview, exact automated results and the
+  unresolved browser/phone/accessibility/performance acceptance. Not published.
+- [Spatial instrument candidate](checkpoints/ui-20261123-spatial-instrument.md):
+  latest UI 007, following Daniel's explicit 3D direction; same-mesh optional
+  renderer, canonical camera/selection, exact checks and still-open browser/GPU
+  acceptance. Local preview 4182; not published.

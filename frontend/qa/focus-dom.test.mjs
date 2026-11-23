@@ -19,6 +19,7 @@ async function fixture({width=390,reduced=false,saveData=false}={}){
   w.matchMedia=q=>Object.assign(new w.EventTarget(),{matches:q.includes('prefers-reduced-motion')&&reduced,media:q});
   w.scrollTo=()=>{};d.getAnimations=()=>[];
   w.TextEncoder=TextEncoder;w.TextDecoder=TextDecoder;
+  w.structuredClone=structuredClone;
   Object.defineProperty(w.crypto,'subtle',{value:webcrypto.subtle});
   w.fetch=async()=>new Response(await readFile(new URL('vendor/cartan/v1/fixture.json',root)));
   Object.defineProperty(w.HTMLMediaElement.prototype,'paused',{get(){return states.get(this)?.paused??true;}});
@@ -33,7 +34,11 @@ async function fixture({width=390,reduced=false,saveData=false}={}){
   async function module(url){
     if(cache.has(url.href))return cache.get(url.href);
     assert.ok(url.href.startsWith(root.href));
-    const m=new vm.SourceTextModule(await readFile(url,'utf8'),{context,identifier:url.href});cache.set(url.href,m);
+    const m=new vm.SourceTextModule(await readFile(url,'utf8'),{context,identifier:url.href,
+      importModuleDynamically:async(specifier,ref)=>{
+        const imported=await module(new URL(specifier,ref.identifier));
+        if(imported.status==='linked')await imported.evaluate();return imported;
+      }});cache.set(url.href,m);
     await m.link((specifier,ref)=>module(new URL(specifier,ref.identifier)));return m;
   }
   await (await module(new URL('app.mjs',root))).evaluate();
@@ -87,9 +92,11 @@ test('pointer presentation covers routes, component/evidence controls and restor
   const f=await fixture(),{w,d,click}=f;
   click(d.querySelector('.primary'));assert.equal(d.querySelector('.surface.active').dataset.view,'laboratory');assert.equal(d.activeElement.id,'lab-title');assert.equal(d.activeElement.dataset.pointerFocus,'true');
   for(const b of d.querySelectorAll('[data-component]')){click(b);assert.equal(d.activeElement,b);assert.equal(b.dataset.pointerFocus,'true');assert.equal(b.getAttribute('aria-pressed'),'true');}
-  click(d.querySelector('nav a[href="/evidence/"]'));
+  click(d.querySelector('nav a[href^="/evidence/"]'));
   for(const b of d.querySelectorAll('[data-evidence]')){click(b);assert.equal(d.activeElement,b);assert.equal(b.dataset.pointerFocus,'true');}
-  d.dispatchEvent(new w.KeyboardEvent('keydown',{key:'Tab',bubbles:true}));assert.equal(d.querySelectorAll('[data-pointer-focus]').length,0);f.close();
+  d.dispatchEvent(new w.KeyboardEvent('keydown',{key:'Tab',bubbles:true}));assert.equal(d.querySelectorAll('[data-pointer-focus]').length,0);
+  // Evidence now loads on entry; let its verified read settle before DOM teardown.
+  await new Promise(r=>setTimeout(r,25));f.close();
 });
 test('native media controls and text inputs are not subject to pointer-outline suppression',async()=>{
   const f=await fixture(),{w,d}=f;

@@ -1,0 +1,104 @@
+{
+  "browser": "Chrome/158.0.8127.36",
+  "source_snapshot": "c5657e77fd60dcaa90b26ed0c20455d4a0672549",
+  "origin": "http://127.0.0.1:4185",
+  "results": [
+    {
+      "check": "laboratory-entry",
+      "view": "laboratory",
+      "url": "/laboratory/",
+      "renderer": "spatial",
+      "draws": "3",
+      "width": 1440,
+      "scrollWidth": 1440
+    },
+    {
+      "check": "part-interface-interruption-evidence-return-Escape",
+      "pass": true,
+      "view": "laboratory",
+      "url": "/laboratory/?part=retention&detail=interface&camera=interface&layout=separated",
+      "renderer": "spatial",
+      "draws": "9",
+      "width": 1440,
+      "scrollWidth": 1440
+    },
+    {
+      "check": "explicit-SVG-fallback",
+      "pass": true,
+      "view": "laboratory",
+      "url": "/laboratory/?part=retention&detail=interface&camera=interface&layout=separated&render=drawing",
+      "renderer": "drawing",
+      "draws": "10",
+      "width": 1440,
+      "scrollWidth": 1440
+    },
+    {
+      "check": "diagram-layout-and-keyboard-orbit-URL",
+      "pass": true
+    },
+    {
+      "check": "drawing-layout",
+      "view": "laboratory",
+      "url": "/laboratory/?render=drawing",
+      "renderer": "drawing",
+      "draws": "2",
+      "width": 1280,
+      "scrollWidth": 1280,
+      "height": 720
+    },
+    {
+      "check": "drawing-layout",
+      "view": "laboratory",
+      "url": "/laboratory/?render=drawing",
+      "renderer": "drawing",
+      "draws": "2",
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 844
+    },
+    {
+      "check": "drawing-layout",
+      "view": "laboratory",
+      "url": "/laboratory/?render=drawing",
+      "renderer": "drawing",
+      "draws": "2",
+      "width": 320,
+      "scrollWidth": 320,
+      "height": 740
+    },
+    {
+      "check": "drawing-layout",
+      "view": "laboratory",
+      "url": "/laboratory/?render=drawing",
+      "renderer": "drawing",
+      "draws": "2",
+      "width": 844,
+      "scrollWidth": 844,
+      "height": 390
+    },
+    {
+      "check": "reduced-motion-profile-idle-500ms",
+      "pass": true,
+      "view": "laboratory",
+      "url": "/laboratory/?camera=profile",
+      "renderer": "spatial",
+      "draws": "4",
+      "width": 1440,
+      "scrollWidth": 1440
+    },
+    {
+      "check": "static-no-JavaScript",
+      "visibleSVG": true,
+      "width": 390
+    }
+  ],
+  "gl": {
+    "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+    "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1 Pro, Unspecified Version)",
+    "error": 0,
+    "canvasWidth": 990,
+    "canvasHeight": 400
+  },
+  "pageerrors": [],
+  "scope": "Installed Chrome headless, default graphics configuration, unthrottled CPU, synthetic mouse/keyboard, no hosting headers. Not Safari, physical phone/touch, AT, full accessibility or performance acceptance."
+}

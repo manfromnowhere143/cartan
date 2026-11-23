@@ -41,3 +41,20 @@ small when fitted to a phone column. This preview approximates a Markdown host;
 it is not GitHub's renderer, a physical phone test or a screen-reader session.
 The [layout receipt](local-layout.json) and
 [presentation checks](presentation-checks.json) retain scope and hashes.
+
+## Published-host readback
+
+After publishing `9a4a2ee`, GitHub returned the exact committed README bytes.
+All four native Mermaid frames rendered their expected accessible titles without
+a reported diagram error: [host receipt](github-render.json). The anonymous
+installed-Chrome captures retain the real GitHub UI. Its sticky navigation and
+interactive diagram viewport obscure portions of the second/fourth captures;
+these are not clean exports or proof of every host zoom state. The adjacent
+full-size local SVG/PNG exports remain the complete figures.
+
+The first browser attempt captured toolbar SVGs before diagram layout completed;
+those premature captures are retained under `initial/`. The repeat waits for the
+actual diagram SVG and title. Opening the host's embedded diagram URLs directly
+did not settle within the 30-second wait, so no direct-view acceptance is claimed.
+The corrected local phone-opening capture resets scroll before capture.
+No Markdown-host screenshot establishes screen-reader or physical-phone acceptance.

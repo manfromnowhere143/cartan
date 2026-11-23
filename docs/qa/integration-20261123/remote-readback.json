@@ -1,0 +1,11 @@
+{
+  "verified_at_utc": "2026-11-23T10:19:22.553802+00:00",
+  "head": "9a4a2ee092f4983562a0a69deb288f45e25f95f0",
+  "remote_main": "9a4a2ee092f4983562a0a69deb288f45e25f95f0",
+  "readme_sha256": "f5dd6c7a360046374044dc27ee8a4bc108f7e1b8e5ba7a9977a9f2c95ec0f8d9",
+  "readme_bytes_match": true,
+  "remote": "https://github.com/manfromnowhere143/cartan.git",
+  "branch": "main",
+  "push_mode": "normal fast-forward; no history rewrite",
+  "website_deployment": "not performed"
+}

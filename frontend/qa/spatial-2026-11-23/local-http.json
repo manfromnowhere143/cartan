@@ -1,0 +1,93 @@
+[
+  {
+    "path": "/",
+    "status": 200,
+    "bytes": 43021
+  },
+  {
+    "path": "/research/",
+    "status": 200,
+    "bytes": 42878
+  },
+  {
+    "path": "/laboratory/",
+    "status": 200,
+    "bytes": 42998
+  },
+  {
+    "path": "/interruption/",
+    "status": 200,
+    "bytes": 43097
+  },
+  {
+    "path": "/evidence/",
+    "status": 200,
+    "bytes": 42978
+  },
+  {
+    "path": "/comparison/",
+    "status": 200,
+    "bytes": 42959
+  },
+  {
+    "path": "/sources/",
+    "status": 200,
+    "bytes": 42981
+  },
+  {
+    "path": "/vision/",
+    "status": 200,
+    "bytes": 43006
+  },
+  {
+    "path": "/laboratory/?part=isolation&camera=interface&layout=separated&render=drawing",
+    "status": 200,
+    "bytes": 42998
+  },
+  {
+    "path": "/qa/interior-review.html",
+    "status": 200,
+    "bytes": 1906
+  },
+  {
+    "path": "/qa/profile",
+    "status": 200,
+    "bytes": 163
+  },
+  {
+    "path": "scene-geometry.mjs",
+    "status": 200,
+    "hashVerified": true
+  },
+  {
+    "path": "spatial-scene.mjs",
+    "status": 200,
+    "hashVerified": true
+  },
+  {
+    "path": "webgl-scene.mjs",
+    "status": 200,
+    "hashVerified": true
+  },
+  {
+    "path": "/does-not-exist",
+    "status": 404
+  },
+  {
+    "path": "/AGENTS.md",
+    "status": 404
+  },
+  {
+    "path": "/config/environment.json",
+    "status": 404
+  },
+  {
+    "path": "/qa/REVIEW-SPATIAL-2026-11-23.md",
+    "status": 404
+  },
+  {
+    "path": "hero-media",
+    "status": 206,
+    "rangeBytes": 1024
+  }
+]

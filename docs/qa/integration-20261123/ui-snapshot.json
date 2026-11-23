@@ -1,0 +1,358 @@
+{
+  "source_head": "dcc8d8e7b6af3df797eea32fc27dc5bba187eb5e",
+  "snapshot_commit": "c5657e77fd60dcaa90b26ed0c20455d4a0672549",
+  "snapshot_branch": "integration/ui-spatial-20261123",
+  "source_index_unchanged": true,
+  "source_status_unchanged": true,
+  "config_excluded_sha256": "f14595ffd2f9fb435094f780dbbb9b2625c6ad47eface83ce3d838f70a6d647b",
+  "matched_shipped_source_files": [
+    "app.mjs",
+    "interior.css",
+    "scene-geometry.mjs",
+    "spatial-scene.mjs",
+    "webgl-scene.mjs",
+    "workspace-state.mjs"
+  ],
+  "files": [
+    {
+      "path": "frontend/README.md",
+      "bytes": 6703,
+      "sha256": "70326da4a5ab0b434d1104fd6d57653cf121dca4f902d6fe69c890ef96404774"
+    },
+    {
+      "path": "frontend/app.mjs",
+      "bytes": 23762,
+      "sha256": "17c85988cf080b6019298b9d9818d627acb756f82d084ae0786de2a52b27f20f"
+    },
+    {
+      "path": "frontend/docs/ADR-UI-006-continuous-interior.md",
+      "bytes": 4084,
+      "sha256": "f8882b01edb5123edc16a571ba2c1b4fd279ca59ef50eca1f4e9ea07acd5b478"
+    },
+    {
+      "path": "frontend/docs/ADR-UI-007-spatial-instrument.md",
+      "bytes": 4907,
+      "sha256": "517b040ddde7cc17246173f2068af1c4ea1586703390e9f38bed7b58a48fc985"
+    },
+    {
+      "path": "frontend/docs/interior-provenance-2026-11-23.md",
+      "bytes": 2963,
+      "sha256": "e4d5f9429641ec2fb809d61bfb3e6c4a77e5e4a923085d80d5e0a77b07500b79"
+    },
+    {
+      "path": "frontend/docs/interior-reference-review-2026-11-23.md",
+      "bytes": 4113,
+      "sha256": "0eaedda812a28f5cae47d43463723f3fb7c386e130ce73806441929f13d910c3"
+    },
+    {
+      "path": "frontend/docs/interior-route-state-map.md",
+      "bytes": 3547,
+      "sha256": "59ad277bafd8c372c17f546ceaf669451d8fbf01e58316a0af8fe3e324da0c14"
+    },
+    {
+      "path": "frontend/docs/interior-schematic-v1.json",
+      "bytes": 1270,
+      "sha256": "f1b31362ee645d60930dadf794d5f9169f70a325b0639aad43ea487f2ce6a181"
+    },
+    {
+      "path": "frontend/docs/spatial-instrument-map.md",
+      "bytes": 5937,
+      "sha256": "b84acb366ad5cb56795f960dfa35244fcec9904659dab959dcd851769f05ddfe"
+    },
+    {
+      "path": "frontend/index.html",
+      "bytes": 39673,
+      "sha256": "c99f5c7e0ab888b6eb94371d6378cacbaea99505fb5351857b5a243e38854549"
+    },
+    {
+      "path": "frontend/interior.css",
+      "bytes": 15437,
+      "sha256": "ce36b7ea952ce80eaaa0ee02a573a7487d8cec14bece97194d1c07d5db28058d"
+    },
+    {
+      "path": "frontend/qa/REVIEW-INTERIOR-2026-11-23.md",
+      "bytes": 7946,
+      "sha256": "e7f768410ac91a62fe3636aa5f791efd3175ca6ba764e6745129bee69337fff5"
+    },
+    {
+      "path": "frontend/qa/REVIEW-SPATIAL-2026-11-23.md",
+      "bytes": 9400,
+      "sha256": "5f5bd1c1b75d78edbf2bd283f719bee7c319973c9f96a6acfebbd3ee3ccd63ce"
+    },
+    {
+      "path": "frontend/qa/focus-dom.test.mjs",
+      "bytes": 9120,
+      "sha256": "c02e6ab0d47deeb2ab19219d4093f80ab9cc1a629e145d3eefe557e435d9048e"
+    },
+    {
+      "path": "frontend/qa/interior-2026-11-23/contract-verification.json",
+      "bytes": 82,
+      "sha256": "87ff7150a41ed082956878aee6c46423619a7c2cbce8b34e47e9fd56680020c1"
+    },
+    {
+      "path": "frontend/qa/interior-2026-11-23/core-tests.tap",
+      "bytes": 7209,
+      "sha256": "08d30d4b95bef7f94153847f30ec5ae755fbcd18750326e30fca57a794943f65"
+    },
+    {
+      "path": "frontend/qa/interior-2026-11-23/declared-color-contrast.json",
+      "bytes": 866,
+      "sha256": "14973d24564bca921afc1b9827e9908bb9269d4e39cb6e340b478cbf53881019"
+    },
+    {
+      "path": "frontend/qa/interior-2026-11-23/dom-tests.tap",
+      "bytes": 4328,
+      "sha256": "e7277c51f36e012ed593bddbfb38fdda19fb65919e411328bb0babb816b38473"
+    },
+    {
+      "path": "frontend/qa/interior-2026-11-23/implementation.patch",
+      "bytes": 120425,
+      "sha256": "f8a539b8124969e87e03e5d15485f436b04063a295d00c976ae55550a45335d0"
+    },
+    {
+      "path": "frontend/qa/interior-2026-11-23/local-http.json",
+      "bytes": 2391,
+      "sha256": "22505cc8f65ea8ddb9348987b730ef003a769455b3e3358dbfbc27ab6aeafff8"
+    },
+    {
+      "path": "frontend/qa/interior-2026-11-23/package-comparison.json",
+      "bytes": 1360,
+      "sha256": "c3ce24bbda4ad138fe858b9d020f063a01549d9709992a27885b9106501fb545"
+    },
+    {
+      "path": "frontend/qa/interior-2026-11-23/package-verification.json",
+      "bytes": 33607,
+      "sha256": "94578881b4d43c93debbe9a145519e6c37aaf87e0f5fd910191e94c30e404dbb"
+    },
+    {
+      "path": "frontend/qa/interior-2026-11-23/preservation.json",
+      "bytes": 4650,
+      "sha256": "a7483a10a2b23034d5fea521bf8f5219e94ed6fb97177afc1a26355c7d52f8bb"
+    },
+    {
+      "path": "frontend/qa/interior-2026-11-23/release-manifest.json",
+      "bytes": 5098,
+      "sha256": "81fbfad9de161238546ffdaaad602479a4a793009076b3b5e058b1284cd482d8"
+    },
+    {
+      "path": "frontend/qa/interior-2026-11-23/schematic-review.png",
+      "bytes": 86575,
+      "sha256": "510814b66c190003e88e031dd6c60d46b48c0c861ffa8210690e0884543741d9"
+    },
+    {
+      "path": "frontend/qa/interior-2026-11-23/schematic-review.svg",
+      "bytes": 2558,
+      "sha256": "2305774804494b02dc8a255ea642f45f5be94f1f26e022cb89c3146c146eb0ba"
+    },
+    {
+      "path": "frontend/qa/interior-dom-fixture.mjs",
+      "bytes": 4060,
+      "sha256": "5288963ac4c8b610d50b3c00fbd6e5be935e744343ae1ce659955c9bcb38ec97"
+    },
+    {
+      "path": "frontend/qa/interior-dom.test.mjs",
+      "bytes": 6869,
+      "sha256": "f4cd6067320b876626f8277439612efd49c0fb79a6264b7ee5c9101baeae16b7"
+    },
+    {
+      "path": "frontend/qa/interior-probe.mjs",
+      "bytes": 4225,
+      "sha256": "e61107856bda23f083b7678db46ee68aa00e7e58eab26fd9cafcbc1f623abe15"
+    },
+    {
+      "path": "frontend/qa/interior-review.html",
+      "bytes": 1906,
+      "sha256": "5f37834c17c43c8778b24f0c630a115a72569454be39792af6e71841c5b1f2c8"
+    },
+    {
+      "path": "frontend/qa/interior_server.py",
+      "bytes": 4225,
+      "sha256": "d2ecaa84aba35fb6a8b078667fb3be2df5837c0e761e01710dcc7cea7f1f8421"
+    },
+    {
+      "path": "frontend/qa/render-spatial.mjs",
+      "bytes": 1822,
+      "sha256": "3041de1e0dedc11f82ee09399fd1786e59816afad368d39fd4f33319e002e9bd"
+    },
+    {
+      "path": "frontend/qa/spatial-2026-11-23/before-index.html",
+      "bytes": 26558,
+      "sha256": "525df761821a6dc1354acd8b513e2723c9230fc8a2269536af6548daa0090ebe"
+    },
+    {
+      "path": "frontend/qa/spatial-2026-11-23/before-interior.css",
+      "bytes": 8394,
+      "sha256": "4a6b8fac634e40d4a8bbc35d20374d8b33fd8c585e59452a35976f93c9030981"
+    },
+    {
+      "path": "frontend/qa/spatial-2026-11-23/contract-verification.json",
+      "bytes": 82,
+      "sha256": "87ff7150a41ed082956878aee6c46423619a7c2cbce8b34e47e9fd56680020c1"
+    },
+    {
+      "path": "frontend/qa/spatial-2026-11-23/core-tests.tap",
+      "bytes": 9003,
+      "sha256": "33adb0053c2e722f727ae4bca0b15fd4d2d3633c890da248734bee5bb6b87ba7"
+    },
+    {
+      "path": "frontend/qa/spatial-2026-11-23/declared-color-contrast.json",
+      "bytes": 1149,
+      "sha256": "522599426b412599a4a88cfffc48d2a930c11665b90a892cdd69ae50da933dcc"
+    },
+    {
+      "path": "frontend/qa/spatial-2026-11-23/diff-receipt.json",
+      "bytes": 1494,
+      "sha256": "242f1ded67da5cf4a4c91e9286f4b778a8e54c2fc5ccd9a32430dcbc2bb68815"
+    },
+    {
+      "path": "frontend/qa/spatial-2026-11-23/dom-tests.tap",
+      "bytes": 7184,
+      "sha256": "457e83b8abcf85bcbeeadd655fb7130a9b6c80ead0d528c55eb97fe557ab5106"
+    },
+    {
+      "path": "frontend/qa/spatial-2026-11-23/geometry-manifest.json",
+      "bytes": 764,
+      "sha256": "d0480e7d2a8fd6de780defc9f3353813d80b57f1516abbebd7643f38048e0eb1"
+    },
+    {
+      "path": "frontend/qa/spatial-2026-11-23/implementation.patch",
+      "bytes": 218017,
+      "sha256": "55f8c6e59a59bd648d8f700d87161cbb4ff3602e56a3490d173d2c1db3f39a1a"
+    },
+    {
+      "path": "frontend/qa/spatial-2026-11-23/joined.png",
+      "bytes": 61053,
+      "sha256": "f69b9f352853cd5e4a7787118318208b2e43d624f86a682b2bef0ca0f01ed8b3"
+    },
+    {
+      "path": "frontend/qa/spatial-2026-11-23/joined.svg",
+      "bytes": 14497,
+      "sha256": "089bb3e576eaa548c14b6a40b457e45214f06184987eb8e987e2f068979cb4bc"
+    },
+    {
+      "path": "frontend/qa/spatial-2026-11-23/local-http.json",
+      "bytes": 1467,
+      "sha256": "66b17ea8921853c030f517cf8fc693266e18f381648248d7b0baf53d570162d4"
+    },
+    {
+      "path": "frontend/qa/spatial-2026-11-23/package-comparison.json",
+      "bytes": 1831,
+      "sha256": "e8e532c1145c62c6b6cfd73f837da99ac01e18e0b8fac2735e1da563059033f4"
+    },
+    {
+      "path": "frontend/qa/spatial-2026-11-23/package-verification.json",
+      "bytes": 30,
+      "sha256": "abc607d5fc25417069c748a5cde9ba4efa8822d68195a388f506df83d0d60495"
+    },
+    {
+      "path": "frontend/qa/spatial-2026-11-23/phone.png",
+      "bytes": 21305,
+      "sha256": "e756e072d226417af1de0def05d9db62a9d09d91b1a8aea8b8d47f88a78398fb"
+    },
+    {
+      "path": "frontend/qa/spatial-2026-11-23/phone.svg",
+      "bytes": 15032,
+      "sha256": "e55988f34c3f2d989266fa7822aa87aeb61430785212d437c10b0b14b0e69a60"
+    },
+    {
+      "path": "frontend/qa/spatial-2026-11-23/preservation.json",
+      "bytes": 4650,
+      "sha256": "a7483a10a2b23034d5fea521bf8f5219e94ed6fb97177afc1a26355c7d52f8bb"
+    },
+    {
+      "path": "frontend/qa/spatial-2026-11-23/profile.svg",
+      "bytes": 14781,
+      "sha256": "58a4e9fddfe1ea9969c6221f2be4511c0aad209241c6494b61a54c64e6c1cfd9"
+    },
+    {
+      "path": "frontend/qa/spatial-2026-11-23/release-manifest.json",
+      "bytes": 5512,
+      "sha256": "b6cfc00e36bbdd55bd49a9ea72b830e33001e1df0b258da312e52a807cf58acc"
+    },
+    {
+      "path": "frontend/qa/spatial-2026-11-23/separated.png",
+      "bytes": 61911,
+      "sha256": "2e6a3ae7d13b15c9ecccc6293595a9ccea56898c4d5d98d2c3c9dc0c33c1a5c4"
+    },
+    {
+      "path": "frontend/qa/spatial-2026-11-23/separated.svg",
+      "bytes": 14904,
+      "sha256": "031866df016937cd7b9e2ec2a92052649e7f3de72c2d15b4a7501a91abd80b66"
+    },
+    {
+      "path": "frontend/qa/spatial-2026-11-23/source-receipt.json",
+      "bytes": 1019,
+      "sha256": "978ae5e6842f5e4698496716e9fc470798fc2ed568bbfd0efebdf2d71743e780"
+    },
+    {
+      "path": "frontend/qa/spatial-dom.test.mjs",
+      "bytes": 10442,
+      "sha256": "7bf1a050f2ee1dbdc91bfc4dc5dc0789bcb467678e15606465c90dd0a9806751"
+    },
+    {
+      "path": "frontend/release/build_site.py",
+      "bytes": 9208,
+      "sha256": "305b4a466f6c99b7dd2d90dde7bd84eb2a5e457ee6e7f6cc13742b141ebb0060"
+    },
+    {
+      "path": "frontend/release/verify_package.py",
+      "bytes": 4374,
+      "sha256": "47bda879341a5af6fa7716ca3e0ae9aeab6c47f767bc807e955fe8106f790886"
+    },
+    {
+      "path": "frontend/scene-geometry.mjs",
+      "bytes": 6080,
+      "sha256": "737e062167a21f55760376f11d65db89ad3e4825fa484448fc669995a44b2201"
+    },
+    {
+      "path": "frontend/spatial-scene.mjs",
+      "bytes": 7197,
+      "sha256": "099038151d93c22ac0fe1ef96e43fa6f9398924f08667541170d4d361002a34a"
+    },
+    {
+      "path": "frontend/tests/presentation.test.mjs",
+      "bytes": 4395,
+      "sha256": "af3b6a661af4b5aa9053dee6e763d6f6723b06fea4de458b012dd45e78efe990"
+    },
+    {
+      "path": "frontend/tests/spatial-geometry.test.mjs",
+      "bytes": 3208,
+      "sha256": "92a696d7b5e54ce34e61532c0ba483af9cc736a04ec62b525bc38f524970b9c3"
+    },
+    {
+      "path": "frontend/tests/webgl-lifecycle.test.mjs",
+      "bytes": 2701,
+      "sha256": "f59a50adaf1884fc5ddc18596639e7051864bcf840973065888339d06cef9b20"
+    },
+    {
+      "path": "frontend/tests/workspace-state.test.mjs",
+      "bytes": 3167,
+      "sha256": "9dddb0c3e0312a3ce2c3567f38e8e661cd70c26bf31b3c83cacd214b24498591"
+    },
+    {
+      "path": "frontend/webgl-scene.mjs",
+      "bytes": 4296,
+      "sha256": "0cdf065288527b0d76d61191048ef6487e9b02c6fc09c622ae084c08b8f39698"
+    },
+    {
+      "path": "frontend/workspace-state.mjs",
+      "bytes": 3563,
+      "sha256": "1398701fdced4e28681c26227ee539056889b08039fdee24141d9f8fec70cf7b"
+    },
+    {
+      "path": "memory/INDEX.md",
+      "bytes": 1485,
+      "sha256": "5e834e834b8a45de25b903878110f0f9caff7336e55decc66053a9912d1ef691"
+    },
+    {
+      "path": "memory/checkpoints/ui-20261123-continuous-interior.md",
+      "bytes": 3985,
+      "sha256": "31dc470f6dc5f284dc3ace48519449303fcd12c0d68b5abdb6fe20fd88d44075"
+    },
+    {
+      "path": "memory/checkpoints/ui-20261123-spatial-instrument.md",
+      "bytes": 3505,
+      "sha256": "60b04686e599849ea1633fe8d997029ee369dc163c8aee2cd8f070c2f9d22423"
+    }
+  ]
+}

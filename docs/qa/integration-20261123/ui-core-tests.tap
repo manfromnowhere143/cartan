@@ -1,0 +1,235 @@
+TAP version 13
+# Subtest: fixture survives without evidence promotion
+ok 1 - fixture survives without evidence promotion
+  ---
+  duration_ms: 0.878083
+  ...
+# Subtest: unknown, absence, null, zero and false remain distinct
+ok 2 - unknown, absence, null, zero and false remain distinct
+  ---
+  duration_ms: 0.141375
+  ...
+# Subtest: fabricated outcomes and incomplete provenance are rejected
+ok 3 - fabricated outcomes and incomplete provenance are rejected
+  ---
+  duration_ms: 0.326792
+  ...
+# Subtest: missing and inconclusive views cannot imply success
+ok 4 - missing and inconclusive views cannot imply success
+  ---
+  duration_ms: 0.179334
+  ...
+# Subtest: canonical fixture preserves four series and source IDs
+ok 5 - canonical fixture preserves four series and source IDs
+  ---
+  duration_ms: 1.111333
+  ...
+# Subtest: canonical absent tags retain units and zero/false
+ok 6 - canonical absent tags retain units and zero/false
+  ---
+  duration_ms: 0.648334
+  ...
+# Subtest: immutable fixture bytes are checked before consumption
+ok 7 - immutable fixture bytes are checked before consumption
+  ---
+  duration_ms: 4.936875
+  ...
+# Subtest: unsupported evidence, missing references and inconsistent belief fail closed
+ok 8 - unsupported evidence, missing references and inconsistent belief fail closed
+  ---
+  duration_ms: 0.553916
+  ...
+# Subtest: reduced motion, Save-Data and 2G never attach background media
+ok 9 - reduced motion, Save-Data and 2G never attach background media
+  ---
+  duration_ms: 0.980709
+  ...
+# Subtest: mobile, portrait and landscape windows remain eligible for inline playback
+ok 10 - mobile, portrait and landscape windows remain eligible for inline playback
+  ---
+  duration_ms: 0.334541
+  ...
+# Subtest: poster remains visible until a decoded video frame, with one pending callback
+ok 11 - poster remains visible until a decoded video frame, with one pending callback
+  ---
+  duration_ms: 3.832375
+  ...
+# Subtest: late decoded frames cannot reveal video after pause, route exit or reduced motion
+ok 12 - late decoded frames cannot reveal video after pause, route exit or reduced motion
+  ---
+  duration_ms: 0.551833
+  ...
+# Subtest: desktop and mobile loop forward without unloading or flashing the poster
+ok 13 - desktop and mobile loop forward without unloading or flashing the poster
+  ---
+  duration_ms: 0.655625
+  ...
+# Subtest: rendition selection stays fixed during a cycle and selects small media for 3G
+ok 14 - rendition selection stays fixed during a cycle and selects small media for 3G
+  ---
+  duration_ms: 0.22075
+  ...
+# Subtest: explicit pause survives visibility, viewport updates and film close without resetting time
+ok 15 - explicit pause survives visibility, viewport updates and film close without resetting time
+  ---
+  duration_ms: 0.445583
+  ...
+# Subtest: temporary visibility, view and dialog suspension resumes without losing position
+ok 16 - temporary visibility, view and dialog suspension resumes without losing position
+  ---
+  duration_ms: 0.57225
+  ...
+# Subtest: pending play cannot override Pause or eligibility loss
+ok 17 - pending play cannot override Pause or eligibility loss
+  ---
+  duration_ms: 0.609292
+  ...
+# Subtest: autoplay rejection unloads source, exposes poster and does not retry itself
+ok 18 - autoplay rejection unloads source, exposes poster and does not retry itself
+  ---
+  duration_ms: 0.574167
+  ...
+# Subtest: media failure remains blocked; preference exclusions unload and allow later resumption
+ok 19 - media failure remains blocked; preference exclusions unload and allow later resumption
+  ---
+  duration_ms: 1.091875
+  ...
+# Subtest: hidden initial route defers video until the hero is entered
+ok 20 - hidden initial route defers video until the hero is entered
+  ---
+  duration_ms: 0.117958
+  ...
+# Subtest: queued native pause from suspension cannot cancel a resumed play
+ok 21 - queued native pause from suspension cannot cancel a resumed play
+  ---
+  duration_ms: 0.6625
+  ...
+# Subtest: manual Pause wins over a pending loop or page suspension
+ok 22 - manual Pause wins over a pending loop or page suspension
+  ---
+  duration_ms: 0.44775
+  ...
+# Subtest: disposal cancels queued frames and prevents any further playback
+ok 23 - disposal cancels queued frames and prevents any further playback
+  ---
+  duration_ms: 0.3925
+  ...
+# Subtest: route and component changes cannot blank, translate or animate a surface
+ok 24 - route and component changes cannot blank, translate or animate a surface
+  ---
+  duration_ms: 0.979417
+  ...
+# Subtest: keyboard focus stays visible without a white fill, shadow or geometry change
+ok 25 - keyboard focus stays visible without a white fill, shadow or geometry change
+  ---
+  duration_ms: 0.211167
+  ...
+# Subtest: hover is restricted to fine pointers and never moves or fills controls
+ok 26 - hover is restricted to fine pointers and never moves or fills controls
+  ---
+  duration_ms: 0.208875
+  ...
+# Subtest: public controls use bounded decorative SVGs, with no glyph pictograms
+ok 27 - public controls use bounded decorative SVGs, with no glyph pictograms
+  ---
+  duration_ms: 0.857333
+  ...
+# Subtest: explorer is an explicitly explanatory schematic; concept film is not geometry
+ok 28 - explorer is an explicitly explanatory schematic; concept film is not geometry
+  ---
+  duration_ms: 0.33675
+  ...
+# Subtest: only actual pointer-marked focus suppresses an outline, with forced colors preserved
+ok 29 - only actual pointer-marked focus suppresses an outline, with forced colors preserved
+  ---
+  duration_ms: 0.493084
+  ...
+# Subtest: mobile cinema cannot be hidden by a width rule or crop the supplied action
+ok 30 - mobile cinema cannot be hidden by a width rule or crop the supplied action
+  ---
+  duration_ms: 0.26825
+  ...
+# Subtest: every public route has a stable identity independent of query tracking
+ok 31 - every public route has a stable identity independent of query tracking
+  ---
+  duration_ms: 0.84475
+  ...
+# Subtest: legacy deep links remain meaningful
+ok 32 - legacy deep links remain meaningful
+  ---
+  duration_ms: 0.14175
+  ...
+# Subtest: skip links and unknown destinations are not intercepted
+ok 33 - skip links and unknown destinations are not intercepted
+  ---
+  duration_ms: 0.103417
+  ...
+# Subtest: both diagram layouts have finite outward geometry within the resource bound
+ok 34 - both diagram layouts have finite outward geometry within the resource bound
+  ---
+  duration_ms: 6.986125
+  ...
+# Subtest: all preset and orbit extremes retain the whole object at narrow and wide aspect ratios
+ok 35 - all preset and orbit extremes retain the whole object at narrow and wide aspect ratios
+  ---
+  duration_ms: 44.835166
+  ...
+# Subtest: picking reaches every relationship in the separated interface view and misses empty space
+ok 36 - picking reaches every relationship in the separated interface view and misses empty space
+  ---
+  duration_ms: 1873.67525
+  ...
+# Subtest: static no-JS drawing is exactly the same versioned mesh and default camera
+ok 37 - static no-JS drawing is exactly the same versioned mesh and default camera
+  ---
+  duration_ms: 2.809458
+  ...
+# Subtest: selection changes only light and outline, never mesh positions or authored scientific states
+ok 38 - selection changes only light and outline, never mesh positions or authored scientific states
+  ---
+  duration_ms: 4.370458
+  ...
+# Subtest: context absence and partial allocation failure preserve a clean fallback
+ok 39 - context absence and partial allocation failure preserve a clean fallback
+  ---
+  duration_ms: 1.447
+  ...
+# Subtest: mesh upload is reused, pixels stay bounded and resources are disposed exactly once
+ok 40 - mesh upload is reused, pixels stay bounded and resources are disposed exactly once
+  ---
+  duration_ms: 8.700125
+  ...
+# Subtest: every selection round-trips without hidden state, including evidence context
+ok 41 - every selection round-trips without hidden state, including evidence context
+  ---
+  duration_ms: 4.466083
+  ...
+# Subtest: unknown query states cannot become a selected part or evidence category
+ok 42 - unknown query states cannot become a selected part or evidence category
+  ---
+  duration_ms: 0.410125
+  ...
+# Subtest: Escape follows interface, part and containing view while preserving the object
+ok 43 - Escape follows interface, part and containing view while preserving the object
+  ---
+  duration_ms: 0.194875
+  ...
+# Subtest: comparison is exactly the pinned candidates, without derived geometry or probability
+ok 44 - comparison is exactly the pinned candidates, without derived geometry or probability
+  ---
+  duration_ms: 1.000708
+  ...
+# Subtest: camera, orbit, diagram layout and reading surface round-trip without changing research selection
+ok 45 - camera, orbit, diagram layout and reading surface round-trip without changing research selection
+  ---
+  duration_ms: 0.227125
+  ...
+1..45
+# tests 45
+# suites 0
+# pass 45
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 2349.5415

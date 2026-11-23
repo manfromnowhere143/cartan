@@ -12,11 +12,15 @@ Read `AGENTS.md`, this file, [coordination](COORDINATION.md),
 Git root/common directory, branch, HEAD and dirty/untracked state. Worktrees share
 history, not permission to overwrite another lane's pending work.
 
-The research branch is `research/architecture`. The integrated candidate contains
-research `41ff839`, published main `940d8f1` and setup `70456b0`; setup integration
-is `75509aa`. The GitHub publication target remains
+The research branch is `research/architecture`. Integrated history contains
+research `41ff839`, earlier main `940d8f1`, setup `70456b0` (merge `75509aa`),
+README/research update `9a4a2ee` and completed UI snapshot `c5657e7`.
+`9a4a2ee` was pushed and read back before the final UI integration. The latest
+integration checkpoint records the subsequent publication boundary.
+The GitHub publication target remains
 `https://github.com/manfromnowhere143/cartan.git`, branch `main`. Verify live refs
-before any authorized push. This candidate has not yet been published.
+before any authorized push. Resolve current HEAD and `origin/main`; do not infer
+live publication state from this dated note.
 
 ## Scientific state and next decision
 
@@ -48,14 +52,19 @@ reproduction and four accessible Mermaid diagrams. Current render/source review
 is under [README QA](qa/readme-20261123/REVIEW.md); integration checks are under
 [23 November QA](qa/integration-20261123/REVIEW.md).
 
-The committed UI baseline is `dcc8d8e`, already included in historical main.
-The UI worktree also contains an uncommitted continuous-interior candidate and
-an actively changing spatial-instrument successor. The latter is not covered by
-its predecessor's passing receipts. Await an immutable ready UI revision before
-integrating that work. Do not reset, stash, commit in, or change the UI checkout.
-The current UI candidate's browser/device/accessibility/performance acceptance
-remains open; a Node/jsdom result does not close it. No site release is performed
-by this integration block.
+The UI owner completed UI 007 after the interim checkpoint. Its 68-file snapshot
+is retained as `c5657e7` on `integration/ui-spatial-20261123`, parent `dcc8d8e`,
+and merged here. The original UI checkout/index/branch remain untouched and dirty;
+those pending source bytes are already included, not lost or silently cleaned.
+Compare against the snapshot receipt before treating later UI edits as integrated.
+Fresh checks pass: 45 core tests, 31 DOM tests with existing jsdom 26.1.0, 424
+package assertions; rebuilt release manifest matches the owner's exactly.
+Actual Chrome 158 headless exercises WebGL2 on ANGLE/Metal, the full inspection
+sequence, keyboard orbit, drawing fallback and reduced motion. Captures cover
+1440, 1280, 390, 320 and 844 widths plus no-JavaScript fallback. Narrow/landscape
+captures expose fixed-footer overlap to assess in UI acceptance. Safari, physical
+touch/phone, AT, full accessibility and performance acceptance remain open.
+No site release is performed by this integration block.
 
 UI continues to consume frozen synthetic contract v1 at `2a4083a`. New research
 outputs have no production adapter. Concept geometry, imagery and fixture states

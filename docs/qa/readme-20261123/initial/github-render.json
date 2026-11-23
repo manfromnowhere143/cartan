@@ -1,0 +1,41 @@
+{
+  "url": "https://github.com/manfromnowhere143/cartan",
+  "http_status": 200,
+  "current_readme_seen": true,
+  "mermaid_iframes": 4,
+  "diagrams": [
+    {
+      "id": 1,
+      "host": "viewscreen.githubusercontent.com",
+      "path": "/markdown/mermaid",
+      "svg": true,
+      "title": null,
+      "error": null
+    },
+    {
+      "id": 2,
+      "host": "viewscreen.githubusercontent.com",
+      "path": "/markdown/mermaid",
+      "svg": true,
+      "title": null,
+      "error": null
+    },
+    {
+      "id": 3,
+      "host": "viewscreen.githubusercontent.com",
+      "path": "/markdown/mermaid",
+      "svg": true,
+      "title": null,
+      "error": null
+    },
+    {
+      "id": 4,
+      "host": "viewscreen.githubusercontent.com",
+      "path": "/markdown/mermaid",
+      "svg": true,
+      "title": null,
+      "error": null
+    }
+  ],
+  "scope": "Anonymous installed Chrome headless session; native GitHub view, not Safari/phone/AT acceptance"
+}

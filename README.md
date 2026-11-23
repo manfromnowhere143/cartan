@@ -408,7 +408,14 @@ it is not independent evidence.
 
 The [visual laboratory](frontend/README.md) consumes the [frozen v1 contract](contracts/cartan/v1/README.md).
 Its imagery illustrates a concept and its canonical fixture is synthetic. Newer
-analytical studies require a reviewed adapter. Research and UI use separate
+analytical studies require a reviewed adapter. The integrated
+[spatial instrument](frontend/docs/ADR-UI-007-spatial-instrument.md) keeps the
+prepared module, selected relationship and evidence context in one workspace.
+Optional WebGL2 and a drawing fallback share the same unverified geometry.
+The [integration review](docs/qa/integration-20261123/REVIEW.md) records 45 core
+tests, 31 DOM tests, 424 package assertions and a bounded Chrome browser check.
+Device, accessibility and performance acceptance remain open; repository
+integration does not deploy the site. Research and UI use separate
 worktrees, and setup owns launch configuration. The [handoff](docs/SESSION_HANDOFF.md)
 and [coordination record](docs/COORDINATION.md) identify current ownership and
 continuation rules. The [current diagram review](docs/qa/readme-20261123/REVIEW.md) retains
@@ -421,6 +428,10 @@ resume and continuity behavior. Daniel selected full access / YOLO on 16 Novembe
 2026. The installed canonical launcher supplies runtime overrides; historical
 client snapshots do not describe that effective mode. Setup retains ownership of
 launchers, MCP and global configuration.
+
+**Current launch gate:** installed Codex 0.171.0 differs from setup's pinned
+0.169.0. The version guard is retained. Setup must review compatibility before
+a new Codex launch can be called ready; see the [handoff](docs/SESSION_HANDOFF.md).
 
 ```sh
 cartancodes --check            # local preflight; starts no model

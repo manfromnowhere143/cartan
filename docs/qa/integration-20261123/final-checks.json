@@ -1,0 +1,58 @@
+{
+  "checked_at_utc": "2026-11-23T10:31:32.827447+00:00",
+  "parent_integration": "9a4a2ee",
+  "ui_snapshot": "c5657e77fd60dcaa90b26ed0c20455d4a0672549",
+  "protected_files": 67,
+  "protected_changed": [],
+  "frozen_contract_files": [
+    "fixture.json",
+    "README.md",
+    "validate.py",
+    "SHA256SUMS.json",
+    "schema.json"
+  ],
+  "launcher_matches_setup_70456b0": true,
+  "ui_source_still_matches_snapshot": true,
+  "integrated_snapshot_document_changes": [
+    "frontend/README.md",
+    "memory/INDEX.md"
+  ],
+  "core_tests": {
+    "command": "node --test --test-concurrency=1 frontend/tests/*.test.mjs",
+    "passed": 45
+  },
+  "dom_tests": {
+    "command": "CARTAN_JSDOM_MODULE=/Users/danielwahnich/workspace/nisayon-sdk-ui-audit-2026-10-25/apps/instrument/node_modules/jsdom node --experimental-vm-modules --test --test-concurrency=1 frontend/qa/focus-dom.test.mjs frontend/qa/interior-dom.test.mjs frontend/qa/spatial-dom.test.mjs",
+    "jsdom": "26.1.0",
+    "passed": 31,
+    "prior_16_7_0_attempt": {
+      "passed": 9,
+      "failed": 22
+    }
+  },
+  "package": {
+    "build_command": "python3 frontend/release/build_site.py /private/tmp/cartan-integration-20261123-oyam36cb/ui-package",
+    "verify_command": "python3 frontend/release/verify_package.py /private/tmp/cartan-integration-20261123-oyam36cb/ui-package",
+    "assertions_passed": 424,
+    "matches_owner_manifest": true,
+    "files": 36,
+    "bytes": 29508412
+  },
+  "markdown_files": 97,
+  "missing_local_destinations": [],
+  "credential_pattern_scan": {
+    "text_files": 131,
+    "binary_files_not_text_scanned": 35,
+    "patterns": [
+      "private_key",
+      "openai_key",
+      "github_token"
+    ],
+    "findings": []
+  },
+  "diff_hygiene": {
+    "source_passed": true,
+    "excluded": "Two retained implementation.patch receipts contain diff-format blank context lines reported as trailing whitespace; raw receipts are preserved"
+  },
+  "scope": "Local source integrity, scoped tests and relative Markdown file links. Not physical evidence, full device acceptance, every fragment/link, all secrets or setup compatibility."
+}

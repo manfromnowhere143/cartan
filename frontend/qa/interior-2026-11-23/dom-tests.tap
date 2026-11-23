@@ -1,0 +1,109 @@
+TAP version 13
+# (node:47333) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: touch-open and touch-close preserve focus without pointer-outline eligibility
+ok 1 - touch-open and touch-close preserve focus without pointer-outline eligibility
+  ---
+  duration_ms: 153.505375
+  ...
+# Subtest: a typed zero-count touch click does not become keyboard focus
+ok 2 - a typed zero-count touch click does not become keyboard focus
+  ---
+  duration_ms: 70.54025
+  ...
+# Subtest: a webview zero-count MouseEvent after a completed touch stays pointer-originated
+ok 3 - a webview zero-count MouseEvent after a completed touch stays pointer-originated
+  ---
+  duration_ms: 66.937
+  ...
+# Subtest: cancelled gestures do not mask a later assistive activation
+ok 4 - cancelled gestures do not mask a later assistive activation
+  ---
+  duration_ms: 58.76225
+  ...
+# Subtest: keyboard and assistive opening retain visible-focus eligibility
+ok 5 - keyboard and assistive opening retain visible-focus eligibility
+  ---
+  duration_ms: 124.684875
+  ...
+# Subtest: Safari Option+Tab restores keyboard indication synchronously
+ok 6 - Safari Option+Tab restores keyboard indication synchronously
+  ---
+  duration_ms: 62.086458
+  ...
+# Subtest: pointer presentation covers routes, component/evidence controls and restored focus
+ok 7 - pointer presentation covers routes, component/evidence controls and restored focus
+  ---
+  duration_ms: 164.41575
+  ...
+# Subtest: native media controls and text inputs are not subject to pointer-outline suppression
+ok 8 - native media controls and text inputs are not subject to pointer-outline suppression
+  ---
+  duration_ms: 59.553417
+  ...
+# Subtest: real app selects mobile looping media and resumes temporary navigation suspension
+ok 9 - real app selects mobile looping media and resumes temporary navigation suspension
+  ---
+  duration_ms: 92.023958
+  ...
+# Subtest: real app respects reduced motion and Save-Data without attaching a source
+ok 10 - real app respects reduced motion and Save-Data without attaching a source
+  ---
+  duration_ms: 107.707959
+  ...
+# (node:47354) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: complete lab / part / interface / interruption / evidence / return sequence
+ok 11 - complete lab / part / interface / interruption / evidence / return sequence
+  ---
+  duration_ms: 272.010625
+  ...
+# Subtest: Back and Forward restore selection, disclosure and focus
+ok 12 - Back and Forward restore selection, disclosure and focus
+  ---
+  duration_ms: 306.458916
+  ...
+# Subtest: rapid object reselection and Escape are synchronous, without stale reveal
+ok 13 - rapid object reselection and Escape are synchronous, without stale reveal
+  ---
+  duration_ms: 621.344208
+  ...
+# Subtest: direct URLs and legacy aliases reach the same state without creating history
+ok 14 - direct URLs and legacy aliases reach the same state without creating history
+  ---
+  duration_ms: 376.083417
+  ...
+# Subtest: corrupt or missing fixture never exposes invented candidate states
+ok 15 - corrupt or missing fixture never exposes invented candidate states
+  ---
+  duration_ms: 119.164875
+  ...
+# Subtest: late fixture arrival cannot change a newer route, part or focused control
+ok 16 - late fixture arrival cannot change a newer route, part or focused control
+  ---
+  duration_ms: 133.195084
+  ...
+# Subtest: reduced motion and data saving preserve the complete sequence without hero source
+ok 17 - reduced motion and data saving preserve the complete sequence without hero source
+  ---
+  duration_ms: 322.0325
+  ...
+# Subtest: film Escape stays native and does not navigate the underlying workspace
+ok 18 - film Escape stays native and does not navigate the underlying workspace
+  ---
+  duration_ms: 82.723542
+  ...
+# Subtest: research, sources, comparisons and vision retain a meaningful exit and object identity
+ok 19 - research, sources, comparisons and vision retain a meaningful exit and object identity
+  ---
+  duration_ms: 194.705958
+  ...
+1..19
+# tests 19
+# suites 0
+# pass 19
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 3995.234125

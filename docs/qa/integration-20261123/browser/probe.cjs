@@ -1,0 +1,30 @@
+const fs=require('fs'),assert=require('assert/strict'),{createRequire}=require('module');
+const req=createRequire('/Users/danielwahnich/.nvm/versions/node/v20.18.3/lib/node_modules/@mermaid-js/mermaid-cli/package.json');
+const out='docs/qa/integration-20261123/browser';fs.mkdirSync(out,{recursive:true});
+(async()=>{const browser=await req('puppeteer').launch({executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',headless:true,timeout:20000});const results=[],errors=[];
+try{const p=await browser.newPage();p.on('pageerror',e=>errors.push(e.message));await p.setViewport({width:1440,height:900});
+const wait=()=>p.evaluate(()=>new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r))));
+const state=()=>p.evaluate(()=>({view:document.documentElement.dataset.view,url:location.pathname+location.search,renderer:document.querySelector('#module-scene').dataset.renderer,draws:document.querySelector('#module-scene').dataset.draws,width:innerWidth,scrollWidth:document.documentElement.scrollWidth}));
+await p.goto('http://127.0.0.1:4185/',{waitUntil:'networkidle0'});await p.screenshot({path:out+'/opening-1440.png'});
+await p.click('.primary');await p.waitForFunction(()=>['drawing','spatial'].includes(document.querySelector('#module-scene').dataset.renderer));await wait();
+await p.evaluate(()=>window.reviewScene=document.querySelector('#module-scene'));
+await p.screenshot({path:out+'/laboratory-1440.png'});results.push({check:'laboratory-entry',...await state()});
+await p.click('[data-component="retention"]');await p.click('#interface-open');await p.waitForFunction(()=>document.activeElement.id==='interface-title');
+await p.click('#inspect-transfer');await p.waitForFunction(()=>!document.querySelector('#possible-states').hidden);
+assert.deepEqual(await p.$$eval('.candidate-state h3',es=>es.map(e=>e.textContent)),['partial','locked']);
+await p.screenshot({path:out+'/interruption-1440.png'});await p.click('#inspect-evidence');assert.equal((await state()).view,'evidence');
+await p.click('#return-transfer');await p.keyboard.press('Escape');assert.equal((await state()).view,'laboratory');assert.equal(await p.evaluate(()=>document.querySelector('#module-scene')===window.reviewScene),true);
+results.push({check:'part-interface-interruption-evidence-return-Escape',pass:true,...await state()});
+await p.click('#drawing-mode');await p.waitForFunction(()=>document.querySelector('#module-scene').dataset.renderer==='drawing');results.push({check:'explicit-SVG-fallback',pass:true,...await state()});
+assert.equal(new URL(p.url()).searchParams.get('layout'),'separated');await p.click('#diagram-layout');assert.equal(new URL(p.url()).searchParams.get('layout'),null);await p.click('#diagram-layout');assert.equal(new URL(p.url()).searchParams.get('layout'),'separated');
+await p.focus('#spatial-viewport');await p.keyboard.press('ArrowRight');assert.ok(new URL(p.url()).searchParams.has('az'));results.push({check:'diagram-layout-and-keyboard-orbit-URL',pass:true});
+for(const [width,height] of [[1280,720],[390,844],[320,740],[844,390]]){
+ await p.setViewport({width,height});await p.goto('http://127.0.0.1:4185/laboratory/?render=drawing',{waitUntil:'networkidle0'});await wait();const s=await state();assert.ok(s.scrollWidth<=width,JSON.stringify(s));
+ await p.screenshot({path:out+`/laboratory-${width}.png`,fullPage:true});results.push({check:'drawing-layout',...s,height});
+}
+await p.setViewport({width:1440,height:900});await p.emulateMediaFeatures([{name:'prefers-reduced-motion',value:'reduce'}]);
+await p.goto('http://127.0.0.1:4185/laboratory/',{waitUntil:'networkidle0'});await p.click('[data-camera="profile"]');await wait();const before=await state();await new Promise(r=>setTimeout(r,500));const after=await state();assert.equal(before.draws,after.draws);results.push({check:'reduced-motion-profile-idle-500ms',pass:true,...after});
+const gl=await p.evaluate(()=>{const c=document.querySelector('.spatial-canvas');const g=c?.getContext('webgl2');if(!g)return null;const e=g.getExtension('WEBGL_debug_renderer_info');return {version:g.getParameter(g.VERSION),renderer:e?g.getParameter(e.UNMASKED_RENDERER_WEBGL):g.getParameter(g.RENDERER),error:g.getError(),canvasWidth:c.width,canvasHeight:c.height};});
+const nojs=await browser.newPage();await nojs.setViewport({width:390,height:844});await nojs.setJavaScriptEnabled(false);await nojs.goto('http://127.0.0.1:4185/laboratory/',{waitUntil:'networkidle0'});await nojs.screenshot({path:out+'/nojs-390.png',fullPage:true});results.push({check:'static-no-JavaScript',visibleSVG:await nojs.$eval('.module-drawing',e=>e.getBoundingClientRect().width>0),width:await nojs.evaluate(()=>document.documentElement.scrollWidth)});
+assert.equal(errors.length,0);fs.writeFileSync(out+'/results.json',JSON.stringify({browser:await browser.version(),source_snapshot:'c5657e77fd60dcaa90b26ed0c20455d4a0672549',origin:'http://127.0.0.1:4185',results,gl,pageerrors:errors,scope:'Installed Chrome headless, default graphics configuration, unthrottled CPU, synthetic mouse/keyboard, no hosting headers. Not Safari, physical phone/touch, AT, full accessibility or performance acceptance.'},null,2)+'\n');console.log(JSON.stringify({checks:results.length,gl,pageerrors:errors}));
+}finally{await browser.close();}})().catch(e=>{console.error(e.stack);process.exitCode=1;});
