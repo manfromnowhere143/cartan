@@ -11,9 +11,12 @@ const require=createRequire(import.meta.url);
 assert.ok(process.env.CARTAN_JSDOM_MODULE,'Set CARTAN_JSDOM_MODULE to an existing jsdom installation');
 const {JSDOM}=require(process.env.CARTAN_JSDOM_MODULE);
 const root=new URL('../',import.meta.url);
-export async function fixture({width=390,reduced=false,forced=false,saveData=false,url="/",broken=false,slow=false,sceneFailure=false}={}){
+export async function fixture({width=390,reduced=false,forced=false,saveData=false,url="/",broken=false,slow=false,sceneFailure=false,storedTheme=null,storageBlocked=false}={}){
   const dom=new JSDOM(await readFile(new URL('index.html',root),'utf8'),{url:new URL(url,'https://cartan.danielwahnich.dev').href,runScripts:'outside-only',pretendToBeVisual:true});
   const w=dom.window,d=w.document,states=new WeakMap();
+  if(storedTheme!==null)w.localStorage.setItem('cartan.appearance',storedTheme);
+  if(storageBlocked)Object.defineProperty(w,'localStorage',{get(){throw new w.DOMException('Storage blocked','SecurityError');}});
+  w.eval(d.querySelector('#theme-init').textContent);
   Object.defineProperty(w,'innerWidth',{value:width,writable:true});
   Object.defineProperty(w.navigator,'connection',{value:Object.assign(new w.EventTarget(),{saveData,effectiveType:'4g'})});
   w.matchMedia=q=>Object.assign(new w.EventTarget(),{matches:q.includes('prefers-reduced-motion')&&reduced||q.includes('forced-colors')&&forced,media:q});

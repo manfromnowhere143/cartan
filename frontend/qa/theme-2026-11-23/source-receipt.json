@@ -1,0 +1,18 @@
+{
+  "baseline": "dcc8d8e7b6af3df797eea32fc27dc5bba187eb5e",
+  "package": "/private/tmp/cartan-theme-candidate-20261123-final",
+  "preview": "http://127.0.0.1:4183/",
+  "sourceHashes": {
+    "index.html": "a0af17a3672e4024af32ff87f727b55729e2225deed78299d1bdc98011568179",
+    "style.css": "bacbc8986d023ff2ddfdb5ef510258bbd03d5f50277bdbe1a81175fd365cd80a",
+    "interior.css": "8a433326e8ee7646840fa977d3adb6d470422181c6fcce51cd80efe263f49c42",
+    "theme.css": "4841794be68cfdae149ddf671179131ec9c15337f24f23fc363e35c6ef0c6ca0",
+    "theme.mjs": "a922938ca497323ff0ad95435777acfc12564bb8f5b49b5c015221db80dae4f9",
+    "app.mjs": "3bc85922dc8be4e85f7e71e76372fb9089c3bdda70b40d5029cc5c92ab7f504b",
+    "scene-geometry.mjs": "d53e6c61fc4f20ecd967cecf9fa332d738e6be46acbe0813befd290d790b1e98",
+    "spatial-scene.mjs": "00717837787a1138399fa16b55c200cc06e8ff9b7cd7570bf107d9884b2d7ab0",
+    "webgl-scene.mjs": "7398e7e851ee48ff1e4c6e6da6dc5cbc783286c0c8c1a631adaf88b693939647"
+  },
+  "published": false,
+  "browserAccepted": false
+}

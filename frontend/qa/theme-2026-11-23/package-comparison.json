@@ -1,0 +1,14 @@
+{
+  "kind": "Source/package bytes, not browser transferred bytes or timing",
+  "beforePackage": 29508412,
+  "afterPackage": 29522415,
+  "delta": 14003,
+  "percent": 0.04745426490588514,
+  "beforeHomeHTML": 43021,
+  "afterHomeHTML": 43823,
+  "themeCSS": 3869,
+  "themeModule": 1723,
+  "inlineBootstrap": 347,
+  "sceneCode": 18331,
+  "newImageModelFontTextureFiles": 0
+}

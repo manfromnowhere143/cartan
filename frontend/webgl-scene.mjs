@@ -10,8 +10,11 @@ vec3 turn(vec3 p){float cy=cos(angles.x),sy=sin(angles.x),ct=cos(angles.y),st=si
 void main(){vec3 p=turn(position-target);float d=cameraDistance-p.z;n=turn(normal);material=tone;group=part;gl_Position=vec4(p.x*2.46/aspect,p.y*2.46,1.004008*d-.2004008,d);}`;
 const FRAG=`#version 300 es
 precision highp float;
-in vec3 n; in float material; flat in float group; uniform float selected; out vec4 color;
-void main(){vec3 N=normalize(n),L=normalize(vec3(-.5,.85,1.));float diffuse=max(dot(N,L),0.);float rim=max(dot(N,normalize(vec3(1.,.2,-.4))),0.);float spec=pow(max(dot(N,normalize(L+vec3(0.,0.,1.))),0.),55.)*.25;float v=material*(.45+diffuse*.8)+rim*.1+spec+(abs(group-selected)<.1?.09:0.);color=vec4(clamp(vec3(v*.88,v*.94,v),.0,1.),1.);}`;
+in vec3 n; in float material; flat in float group; uniform float selected; uniform bool lightTheme; out vec4 color;
+void main(){vec3 N=normalize(n),L=normalize(vec3(-.5,.85,1.));float diffuse=max(dot(N,L),0.);float rim=max(dot(N,normalize(vec3(1.,.2,-.4))),0.);float spec=pow(max(dot(N,normalize(L+vec3(0.,0.,1.))),0.),55.);float v;
+if(abs(group-selected)<.1){v=lightTheme?.10+.16*diffuse+.06*spec:.72+.18*diffuse+.08*spec;}
+else{v=lightTheme?.33+.22*diffuse+material*.10+.04*rim+.04*spec:material*(.55+.75*diffuse)+.08*rim+.15*spec;}
+v=clamp(v,.06,.98);color=vec4(vec3(v*.93,v*.97,v),1.);}`;
 export function createGLScene(canvas){
   const gl=canvas.getContext('webgl2',{alpha:true,antialias:true,powerPreference:'low-power',preserveDrawingBuffer:false});
   if(!gl)return null;
@@ -28,10 +31,10 @@ export function createGLScene(canvas){
     if(!buffer||!vao)throw new Error('Geometry allocation failed');
     gl.bindVertexArray(vao);gl.bindBuffer(gl.ARRAY_BUFFER,buffer);
     for(const [location,size,offset]of [[0,3,0],[1,3,3],[2,1,6],[3,1,7]]){gl.enableVertexAttribArray(location);gl.vertexAttribPointer(location,size,gl.FLOAT,false,32,offset*4);}
-    for(const name of ['angles','cameraDistance','aspect','target','selected'])uniforms[name]=gl.getUniformLocation(program,name);
+    for(const name of ['angles','cameraDistance','aspect','target','selected','lightTheme'])uniforms[name]=gl.getUniformLocation(program,name);
   }catch{dispose();return null;}
   return {
-    draw(mesh,camera,part,width,height,dpr){
+    draw(mesh,camera,part,width,height,dpr,theme='light'){
       camera=fitCamera(mesh,camera,width,height);
       const ratio=Math.min(dpr,1.5,Math.sqrt(1800000/(width*height)));
       const w=Math.max(1,Math.floor(width*ratio)),h=Math.max(1,Math.floor(height*ratio));
@@ -42,6 +45,7 @@ export function createGLScene(canvas){
       if(mesh!==lastMesh){const vertices=triangleBuffer(mesh);gl.bindBuffer(gl.ARRAY_BUFFER,buffer);gl.bufferData(gl.ARRAY_BUFFER,vertices,gl.STATIC_DRAW);count=vertices.length/8;lastMesh=mesh;}
       gl.uniform2f(uniforms.angles,camera.yaw*Math.PI/180,camera.pitch*Math.PI/180);gl.uniform1f(uniforms.cameraDistance,camera.distance);
       gl.uniform1f(uniforms.aspect,width/height);gl.uniform3fv(uniforms.target,camera.target);gl.uniform1f(uniforms.selected,['module','retention','isolation','support'].indexOf(part));
+      gl.uniform1i(uniforms.lightTheme,theme==='dark'?0:1);
       gl.drawArrays(gl.TRIANGLES,0,count);return gl.getError()===gl.NO_ERROR;
     },dispose,
   };

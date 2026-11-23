@@ -14,7 +14,7 @@ function api({fail=null}={}){
     bufferData:(_,data)=>uploads.push(data.length),drawArrays:(_,first,count)=>draws.push(count),
     isContextLost:()=>lost,getError:()=>0,NO_ERROR:0,
   };
-  for(const fn of ['compileShader','attachShader','linkProgram','bindVertexArray','bindBuffer','enableVertexAttribArray','vertexAttribPointer','viewport','clearColor','clear','enable','useProgram','uniform2f','uniform1f','uniform3fv'])gl[fn]=()=>{};
+  for(const fn of ['compileShader','attachShader','linkProgram','bindVertexArray','bindBuffer','enableVertexAttribArray','vertexAttribPointer','viewport','clearColor','clear','enable','useProgram','uniform2f','uniform1f','uniform1i','uniform3fv'])gl[fn]=()=>{};
   const canvas={width:0,height:0,getContext:()=>gl};
   return {canvas,gl,allocated,deleted,uploads,draws,shaderSources,lose:()=>{lost=true;}};
 }
@@ -34,4 +34,11 @@ test('mesh upload is reused, pixels stay bounded and resources are disposed exac
   assert.equal(f.canvas.width,480);assert.equal(f.canvas.height,375);
   f.lose();assert.equal(renderer.draw(mesh,cameraFor(),'module',320,250,1),false);
   renderer.dispose();renderer.dispose();assert.deepEqual(new Set(f.deleted),new Set(f.allocated));assert.equal(f.deleted.length,f.allocated.length);
+});
+test('appearance changes update the palette uniform without a second geometry upload',()=>{
+  const f=api(),uniforms=[];f.gl.uniform1i=(name,value)=>uniforms.push([name,value]);
+  const renderer=createGLScene(f.canvas),mesh=sceneMesh(),allocated=f.allocated.length;
+  for(const theme of ['light','dark'])assert.equal(renderer.draw(mesh,cameraFor(),'isolation',960,720,1,theme),true);
+  assert.deepEqual(uniforms,[['lightTheme',1],['lightTheme',0]]);
+  assert.equal(f.uploads.length,1);assert.equal(f.allocated.length,allocated);renderer.dispose();
 });

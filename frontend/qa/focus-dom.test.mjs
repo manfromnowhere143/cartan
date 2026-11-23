@@ -14,6 +14,7 @@ const root=new URL('../',import.meta.url);
 async function fixture({width=390,reduced=false,saveData=false}={}){
   const dom=new JSDOM(await readFile(new URL('index.html',root),'utf8'),{url:'https://cartan.danielwahnich.dev/',runScripts:'outside-only',pretendToBeVisual:true});
   const w=dom.window,d=w.document,states=new WeakMap();
+  w.eval(d.querySelector('#theme-init').textContent);
   Object.defineProperty(w,'innerWidth',{value:width,writable:true});
   Object.defineProperty(w.navigator,'connection',{value:Object.assign(new w.EventTarget(),{saveData,effectiveType:'4g'})});
   w.matchMedia=q=>Object.assign(new w.EventTarget(),{matches:q.includes('prefers-reduced-motion')&&reduced,media:q});

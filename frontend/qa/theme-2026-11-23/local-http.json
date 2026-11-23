@@ -1,0 +1,88 @@
+[
+  {
+    "path": "/",
+    "status": 200,
+    "bytes": 43823
+  },
+  {
+    "path": "/research/",
+    "status": 200,
+    "bytes": 43680
+  },
+  {
+    "path": "/laboratory/",
+    "status": 200,
+    "bytes": 43800
+  },
+  {
+    "path": "/interruption/",
+    "status": 200,
+    "bytes": 43899
+  },
+  {
+    "path": "/evidence/",
+    "status": 200,
+    "bytes": 43780
+  },
+  {
+    "path": "/comparison/",
+    "status": 200,
+    "bytes": 43761
+  },
+  {
+    "path": "/sources/",
+    "status": 200,
+    "bytes": 43783
+  },
+  {
+    "path": "/vision/",
+    "status": 200,
+    "bytes": 43808
+  },
+  {
+    "path": "/laboratory/?part=isolation&camera=interface&layout=separated",
+    "status": 200,
+    "bytes": 43800
+  },
+  {
+    "path": "/qa/interior-review.html",
+    "status": 200,
+    "bytes": 1906
+  },
+  {
+    "path": "/qa/profile",
+    "status": 200,
+    "bytes": 154
+  },
+  {
+    "path": "/theme.mjs",
+    "status": 200,
+    "bytes": 1723
+  },
+  {
+    "path": "/theme.css",
+    "status": 200,
+    "bytes": 3869
+  },
+  {
+    "path": "/missing-page",
+    "status": 404
+  },
+  {
+    "path": "/AGENTS.md",
+    "status": 404
+  },
+  {
+    "path": "/config/environment.json",
+    "status": 404
+  },
+  {
+    "path": "/docs/",
+    "status": 404
+  },
+  {
+    "path": "hero video range",
+    "status": 206,
+    "bytes": 1024
+  }
+]

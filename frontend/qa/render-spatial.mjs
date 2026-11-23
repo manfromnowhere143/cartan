@@ -3,6 +3,7 @@ import {readFile,writeFile,mkdir} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
 import {sceneMesh,cameraFor,svgScene,GEOMETRY_VERSION} from '../scene-geometry.mjs';
 const root=new URL('../',import.meta.url),out=new URL('spatial-2026-11-23/',import.meta.url);
+if(GEOMETRY_VERSION!=='spatial-schematic/1.0.0')throw new Error('Historical UI 007 renderer. Use render-theme.mjs for the current schematic; preserve the older receipts.');
 await mkdir(out,{recursive:true});
 const defaultDrawing=svgScene(sceneMesh(),cameraFor());
 if(process.argv.includes('--update-static')){

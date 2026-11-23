@@ -1,0 +1,12 @@
+[
+  {
+    "layout": "joined",
+    "positionsNormalsAndPartsUnchanged": true,
+    "sha256": "b62d33f666d701f2acc96352df4a788855e806c8b481e0acde5af3a9fec09a0b"
+  },
+  {
+    "layout": "separated",
+    "positionsNormalsAndPartsUnchanged": true,
+    "sha256": "571ce8cb7c57a94b87326fa94ab911d0157bc22541541a36169549a2de017aba"
+  }
+]

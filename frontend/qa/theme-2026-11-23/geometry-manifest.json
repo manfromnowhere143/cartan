@@ -1,0 +1,14 @@
+{
+  "version": "spatial-schematic/1.1.0",
+  "kind": "Explanatory drawing; not a page screenshot or CAD",
+  "geometrySHA256": "d53e6c61fc4f20ecd967cecf9fa332d738e6be46acbe0813befd290d790b1e98",
+  "meshSHA256": "04dae9c15251321ed9ab370c600eb1937667c21bfec9e2af14ffeeb32e6f7803",
+  "pictures": {
+    "light-module": "8c61dbce9dc1f7d3b900440abd75e11f7a14321e792f9bc9ad3e83120cf5a5ef",
+    "light-interface": "656b3dc5afcdb5ee2f5fb6b59db61f69d3b54705ab0cfe893ffb6a128b16dc5d",
+    "light-narrow": "ab78f04639405094fe3df9741eac98afd32077212fb6063385d7886832cfbfe9",
+    "dark-module": "049840173cc6c7b35770f400a83f6f687e0ec0fd6d35df1103d561adcfce2048",
+    "dark-interface": "91081159b9df53f4de82df7cbb027e88fe1d8ffe1b4ea3fa82bf841f8fc5d1aa",
+    "dark-narrow": "675838b4228dd154de0796a3dfc98ec965d9956172352e8e411382e93651a3f4"
+  }
+}

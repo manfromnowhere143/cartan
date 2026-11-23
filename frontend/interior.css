@@ -128,18 +128,18 @@ html:not([data-view="home"]) .workspace-footer{background:var(--bg)}
 
 /* UI 007: a persistent instrument field. No document transition or idle loop. */
 .scene-heading{display:flex;justify-content:space-between;align-items:start;gap:20px;padding-inline:10px}
-.scene-name{font-size:22px;letter-spacing:-.025em;margin-top:8px;color:#edf1f3}
-.scene-edition{font:10px/1.8 var(--mono);color:#bac5cd;letter-spacing:.13em}
+.scene-name{font-size:22px;letter-spacing:-.025em;margin-top:8px;color:var(--ink)}
+.scene-edition{font:10px/1.8 var(--mono);color:var(--ink);letter-spacing:.13em}
 .scene-viewport{position:relative;min-width:0;min-height:200px;overflow:hidden;touch-action:pan-y;cursor:auto;background:radial-gradient(ellipse at 48% 46%,#17212955,transparent 65%)}
 .module-scene:is([data-renderer="drawing"],[data-renderer="spatial"]) .scene-viewport{cursor:grab}
 .module-scene:is([data-renderer="drawing"],[data-renderer="spatial"]) .scene-viewport:active{cursor:grabbing}
-.scene-viewport:focus-visible{outline:2px solid #b7cbd7;outline-offset:-3px}
+.scene-viewport:focus-visible{outline:2px solid var(--focus,#b7cbd7);outline-offset:-3px}
 .scene-viewport .module-drawing,.spatial-canvas{display:block;width:100%;height:100%;max-height:none;margin:0;position:absolute;inset:0}
-.scene-function{position:absolute;bottom:10px;left:10px;pointer-events:none;font:10px/1.7 var(--mono);letter-spacing:.12em;color:#d0dae0}
+.scene-function{position:absolute;bottom:10px;left:10px;pointer-events:none;font:10px/1.7 var(--mono);letter-spacing:.12em;color:var(--ink)}
 .camera-controls{display:flex;align-items:center;gap:0 20px;flex-wrap:wrap;padding:8px 10px 0}
-.camera-controls button{min-height:44px;font-size:12px;padding:6px 0;color:#b6bec3}
-.camera-controls button[aria-pressed="true"]{color:#fff;text-decoration:underline;text-underline-offset:6px}
-.camera-controls button:disabled{color:#a0a9b0;text-decoration:none}
+.camera-controls button{min-height:44px;font-size:12px;padding:6px 0;color:var(--ink)}
+.camera-controls button[aria-pressed="true"]{color:var(--ink);text-decoration:underline;text-underline-offset:6px}
+.camera-controls button:disabled{color:var(--ink);text-decoration:none}
 .module-scene>.scene-caption{padding:0 10px;font-size:11px}
 .module-scene>.scene-caption span{display:inline;margin-left:12px;font-size:11px}
 .module-scene>.part-selector{padding:8px 10px;margin-top:12px;gap:0 32px}
@@ -147,17 +147,17 @@ html:not([data-view="home"]) .workspace-footer{background:var(--bg)}
 .module-scene>.scene-source{padding-inline:10px;margin-top:0;font-size:10px}
 .inspector-toggle{position:absolute;right:8px;top:0;z-index:2;font:11px/1.7 var(--mono);color:var(--muted);min-height:44px;padding:0 8px}
 .instrument-rail{display:flex;gap:36px;align-items:center;position:absolute;bottom:0;left:10px;right:10px;min-height:54px}
-.instrument-rail a{display:flex;gap:12px;align-items:center;min-height:44px;font-size:13px;color:#b6bec3}
-.instrument-rail a span{font:10px var(--mono);color:#b6bec3}
-.instrument-rail a[aria-current]{color:#fff;text-decoration:underline;text-underline-offset:7px}
-.instrument-rail p{margin-left:auto;font:9px/1.7 var(--mono);color:#b6bec3;letter-spacing:.06em}
+.instrument-rail a{display:flex;gap:12px;align-items:center;min-height:44px;font-size:13px;color:var(--ink)}
+.instrument-rail a span{font:10px var(--mono);color:var(--ink)}
+.instrument-rail a[aria-current]{color:var(--ink);text-decoration:underline;text-underline-offset:7px}
+.instrument-rail p{margin-left:auto;font:9px/1.7 var(--mono);color:var(--ink);letter-spacing:.06em}
 html:not(.has-interaction) .camera-controls,html:not(.has-interaction) .inspector-toggle{display:none}
 html[data-view="vision"] .instrument-rail,html[data-view="vision"] .inspector-toggle{display:none}
 @media(min-width:861px) and (min-height:601px){
   html:not([data-view="home"]):not([data-view="vision"]) .interior-shell{display:block;position:relative;height:calc(100svh - 184px);max-width:1800px;margin:104px auto 80px;padding:0 40px}
   .interior-shell .module-scene{position:absolute;inset:4px 410px 70px 40px;display:flex;flex-direction:column;min-height:0}
   .scene-viewport{flex:1;min-height:180px}
-  .interior-shell .surface:not(.vision){position:absolute;inset:52px 40px 76px auto;width:320px;overflow-y:auto;overflow-x:hidden;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:#5f6d77 #07090b;background:#07090b;padding:0 12px 28px 0;scroll-padding-top:12px}
+  .interior-shell .surface:not(.vision){position:absolute;inset:52px 40px 76px auto;width:320px;overflow-y:auto;overflow-x:hidden;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:var(--ink) var(--bg);background:var(--bg);padding:0 12px 28px 0;scroll-padding-top:12px}
   .interior-shell h2,.interior-shell .workspace h1{font-size:27px;line-height:1.16;letter-spacing:-.035em}
   .interior-shell h3{font-size:21px}
   .interior-shell .section-index,.interior-shell .section-top{margin-bottom:21px}

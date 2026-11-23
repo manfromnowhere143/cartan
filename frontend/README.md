@@ -1,17 +1,23 @@
 # CARTAN visual laboratory
 
-Current local candidate (23 November, UI 007): an interactive spatial module study
+Current local candidate (23 November, UI 008): a white workspace by default, a
+saved light/dark switch, full-contrast text and clearer spatial selection. The
+cinematic opening retains its framing/media with white live text. Read
+[the current review](qa/REVIEW-THEME-2026-11-23.md) and
+[UI 008](docs/ADR-UI-008-light-and-legibility.md). Browser/device acceptance is open.
+
+The interactive spatial module study
 anchors one workspace, with deliberate camera views, selectable relationships,
 an in-place reading surface, paused-transfer inspection and evidence. Optional
 WebGL2 and an SVG fallback use the same original, unverified schematic geometry.
 The approved opening and media remain byte-identical. This is **not published,
-browser-accepted or GPU-accepted**. Read [the current review](qa/REVIEW-SPATIAL-2026-11-23.md),
+browser-accepted or GPU-accepted**. Read [the earlier spatial review](qa/REVIEW-SPATIAL-2026-11-23.md),
 [UI 007](docs/ADR-UI-007-spatial-instrument.md) and
 [state/provenance map](docs/spatial-instrument-map.md).
 
 The retained baseline is `dcc8d8e`; the local candidate is served at
-http://127.0.0.1:4182/ while its owned preview process is running. The baseline
-is at http://127.0.0.1:4180/; the earlier UI 006 candidate remains at 4181. Each offers
+http://127.0.0.1:4183/ while its owned preview process is running. The baseline
+is at http://127.0.0.1:4180/; earlier candidates remain at 4181 and 4182. Each offers
 `/qa/interior-review.html`; this review
 harness is never in the public package. The current review lists exact test
 results and unavailable browser, phone, screen-reader and performance checks.
