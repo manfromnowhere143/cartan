@@ -1,5 +1,9 @@
 # CARTAN memory
 
+Resume here: [engine handoff](checkpoints/research-20261123-engine-handoff.md)
+records Daniel's accepted next step, the first deliverable, missing input,
+stop/advance conditions and current repository/sibling boundaries.
+
 Latest engine direction: [evidence that changes an outcome](checkpoints/research-20261123-engine-direction.md)
 records the next milestone, current primary-method checks and the unchanged REA-1
 physical-evidence gate. No new engine implementation or comparative result.
@@ -8,7 +12,7 @@ Latest UI: [evidence aperture](checkpoints/ui-20261123-evidence-aperture.md) rec
 the distinct record reveal, completed light/dark integration, real browser fixes,
 source-bound checks and local review link. It preserves the research conclusions.
 
-Latest continuation: [completed repository integration](checkpoints/research-20261123-integration-complete.md)
+Earlier integration: [completed repository integration](checkpoints/research-20261123-integration-complete.md)
 records the merged research/setup/UI snapshot, published README/diagrams,
 browser checks and remaining setup/physical-evidence gates.
 
@@ -73,18 +77,27 @@ physical records needed before another model is justified. No physical study beg
 records merged research/published/setup history, current navigation, four reviewed
 Mermaid diagrams, preserved evidence, and the pending UI and client-version gates.
 
+The following UI checkpoints retain their original pre-integration observations.
+Their completed source snapshots are now integrated through `ccd8c47`; use the
+evidence-aperture checkpoint above for combined browser results. These source
+commits do not establish a website deployment or device acceptance. Later UI-owner
+production/SEO work is outside the integrated snapshot.
+
 - [Continuous interior candidate](checkpoints/ui-20261123-continuous-interior.md):
   earlier UI 006 state, preservation, local preview, exact automated results and the
-  unresolved browser/phone/accessibility/performance acceptance. Not published.
+  unresolved browser/phone/accessibility/performance acceptance. Unpublished
+  at that checkpoint.
 - [Spatial instrument candidate](checkpoints/ui-20261123-spatial-instrument.md):
   earlier UI 007, following Daniel's explicit 3D direction; same-mesh optional
   renderer, canonical camera/selection, exact checks and still-open browser/GPU
-  acceptance. Former preview 4182 replaced by UI 009; package retained, not published.
+  acceptance. Former preview 4182 replaced by UI 009; package retained and
+  unpublished at that checkpoint.
 - [White workspace and contrast](checkpoints/ui-20261123-white-workspace.md):
   UI 008; default light, saved native switch, no muted text, clearer
   selection; user screenshot reviewed, browser bridge still unavailable. Preview
-  4183 and exact checks; not published or device-accepted.
-- [Shared scene focus](checkpoints/ui-20261123-scene-focus.md): latest UI 009,
+  4183 and exact checks; unpublished and not device-accepted at that checkpoint.
+- [Shared scene focus](checkpoints/ui-20261123-scene-focus.md): then-latest UI 009,
   integrates the custom viewport into shared pointer/keyboard focus and fixes
   interrupted capture. Includes UI 008 appearance; combined preview now on 4182.
-  Exact automated receipts; browser/device acceptance still open. Not published.
+  Exact automated receipts; browser/device acceptance open and source unpublished
+  at that checkpoint.

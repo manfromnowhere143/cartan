@@ -12,12 +12,14 @@ Read `AGENTS.md`, this file, [coordination](COORDINATION.md),
 Git root/common directory, branch, HEAD and dirty/untracked state. Worktrees share
 history, not permission to overwrite another lane's pending work.
 
-The research branch is `research/architecture`. Integrated history contains
-research `41ff839`, earlier main `940d8f1`, setup `70456b0` (merge `75509aa`),
-README/research update `9a4a2ee` and completed UI snapshot `c5657e7`.
-The UI merge is `b879dbc`; it was pushed normally to main and read back with
-the exact committed README on 23 November at 10:32 UTC. A subsequent documentation
-commit retains that receipt and this continuation update.
+The research branch is `research/architecture` in
+`/Users/danielwahnich/workspace/cartan-worktrees/research`. This continuity block
+starts at published `bc6787df80045d4c0dc641bfdd0da52619f11421`, which records the
+engine direction. Completed UI integration is `ccd8c47`, with publication receipt
+at `99b0307`; earlier integrated history is recorded in the
+[integration checkpoint](../memory/checkpoints/research-20261123-integration-complete.md).
+Use the [current continuation checkpoint](../memory/checkpoints/research-20261123-engine-handoff.md)
+for the exact next action and preserved sibling state.
 The GitHub publication target remains
 `https://github.com/manfromnowhere143/cartan.git`, branch `main`. Verify live refs
 before any authorized push. Resolve current HEAD and `origin/main`; do not infer
@@ -45,6 +47,39 @@ that evidence. Review an existing admissible archive before implementing an
 importer or a new abstraction. No hardware or outreach follows from this handoff.
 Keep support present; orbital approach, electrical separation and real release
 procedures remain outside the current case. Retention is not release permission.
+
+## Resume engine research here
+
+Daniel accepted the next-step direction and requested this continuity update.
+The long-term goal remains maintainable, upgradeable spacecraft. The immediate
+milestone is one reproducible assessment of whether real observations change a
+useful supported-capture recovery outcome. The
+[engine direction](../memory/checkpoints/research-20261123-engine-direction.md)
+records the reasoning and exact primary-method versions. It is a research/product
+hypothesis, not a demonstrated advantage or an order to build a larger planner.
+
+1. Read REA-1's **Public data triage**, **Required evidence record**, and
+   **Adjudication and falsification** before searching or coding. Its public leads
+   are not admitted retention datasets; preserve the recorded access limitations.
+2. Review one existing, legitimately accessible candidate packet for an identified
+   revision. First inspect methods, documentation and file inventory. The required
+   independent reference, complete ordinary history, restart/interlock behavior
+   and owner-backed limits must be established from the packet, not filled in.
+3. Produce one source-linked admission card: source/revision and hashes; inspected
+   files; each required field's evidence or UNKNOWN; applicability; exact blocked
+   claims; and the next document or measurement needed. No qualifying record has
+   been admitted in these sessions. If none is available, retain **BLOCKED ON
+   PHYSICAL EVIDENCE** and name the missing items; do not manufacture a replay.
+4. Only for admitted evidence, construct a jointly feasible history pair or its
+   refutation and compare complete continuations under equal information, actions
+   and time. Keep ordinary retry/abort and sensing/interlock alternatives. Separate
+   completion, terminal supported abort, intermediate hold and unresolved outcome.
+5. Review the physical-to-finite abstraction in a separate decision before any
+   importer/checker extension. `backend/retention_case/` intentionally accepts only
+   SYN-RC-1. Preserve that fixture, block 4, all null results and frozen contract v1.
+
+No hardware, outreach, paid work, new model session or deployment is authorized
+by this handoff. Setup owns launch compatibility; UI owns its pending work.
 
 ## Presentation and integration status
 
@@ -94,11 +129,12 @@ remain illustrations, not physical evidence. Preserve every vendor hash.
 
 ## Launch-readiness exception
 
-The installed Codex reports `codex-cli 0.171.0`; setup still pins
-`codex-cli 0.169.0`. Claude remains at the pinned `2.1.302 (Claude Code)`.
-After correcting the temporary-origin test fixture, 34 environment tests execute
-with seven Codex version-guard errors. This is an unresolved compatibility gate,
-not a reason to update a pin solely to pass. Setup must review the new client and
+At the last recorded compatibility check, installed Codex reported
+`codex-cli 0.171.0`; setup pinned `codex-cli 0.169.0`. Claude reported the then-pinned
+`2.1.302 (Claude Code)`. After correcting the temporary-origin test fixture,
+34 environment tests ran with seven Codex version-guard errors. This remains an
+unresolved recorded compatibility gate until setup supplies a successor; do not
+update a pin solely to pass. Setup must review the new client and
 update its canonical records/pin. Existing sessions were not restarted. Do not
 claim a new Codex launch is ready while this mismatch remains.
 
