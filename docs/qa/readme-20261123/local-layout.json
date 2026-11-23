@@ -1,0 +1,72 @@
+{
+  "scope": "Local Markdown approximation; not native GitHub or physical-device acceptance",
+  "browser": "installed Chrome, temporary headless profile",
+  "rows": [
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "documentWidth": 1280,
+      "figures": [
+        {
+          "width": 850,
+          "height": 514.21875,
+          "title": "Evidence separates six physical propositions",
+          "description": true
+        },
+        {
+          "width": 812,
+          "height": 858,
+          "title": "Five offline research paths and a separate presentation contract",
+          "description": true
+        },
+        {
+          "width": 498.9375,
+          "height": 608,
+          "title": "The synthetic ambiguity survives but ordinary recovery succeeds",
+          "description": true
+        },
+        {
+          "width": 524.46875,
+          "height": 937.125,
+          "title": "Progress from reproducible software to an admissible physical question",
+          "description": true
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "documentWidth": 390,
+      "figures": [
+        {
+          "width": 354,
+          "height": 214.15625,
+          "title": "Evidence separates six physical propositions",
+          "description": true
+        },
+        {
+          "width": 354,
+          "height": 374.046875,
+          "title": "Five offline research paths and a separate presentation contract",
+          "description": true
+        },
+        {
+          "width": 354,
+          "height": 431.375,
+          "title": "The synthetic ambiguity survives but ordinary recovery succeeds",
+          "description": true
+        },
+        {
+          "width": 354,
+          "height": 632.53125,
+          "title": "Progress from reproducible software to an admissible physical question",
+          "description": true
+        }
+      ]
+    }
+  ]
+}

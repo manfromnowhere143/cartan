@@ -11,7 +11,7 @@ or safely abandon an interrupted external electronics-cartridge exchange without
 losing retention or making/breaking a hazardous electrical connection. Service
 time, intervention and integration burden must meet that owner's limits. No
 specific operator has supplied or accepted R1. NASA FFR's ORU task is a public
-analogue ([S09](sources.md)), not a customer commitment or chosen flight envelope.
+analogue ([S09](../../../research/sources.md)), not a customer commitment or chosen flight envelope.
 
 | Assumption | Current status | Needed evidence / owner |
 |---|---|---|

@@ -1,0 +1,42 @@
+---
+config:
+  theme: base
+  look: classic
+  themeVariables:
+    fontFamily: Arial, sans-serif
+    fontSize: 16px
+    primaryColor: "#eef3f7"
+    primaryTextColor: "#172b3a"
+    primaryBorderColor: "#607787"
+    lineColor: "#607787"
+    clusterBkg: "#f8fafc"
+    clusterBorder: "#c6d1da"
+    edgeLabelBackground: "#ffffff"
+  flowchart:
+    curve: linear
+    nodeSpacing: 26
+    rankSpacing: 42
+    htmlLabels: true
+---
+flowchart TB
+    accTitle: Evidence separates six physical propositions
+    accDescr: Mechanical retention and support, contact and controller state, isolation and voltage remain distinct. Reports constrain possible states only through justified observation mappings. Action assessment is separate from bounded recovery.
+    subgraph FACTS["PHYSICAL QUESTIONS"]
+      M["Retention · support"]
+      C["Contact · controller"]
+      E["Isolation · voltage"]
+    end
+    M --> B["Possible states<br/>under declared assumptions"]
+    C --> B
+    E --> B
+    R["Reports and commands<br/>Identity · acquisition time · reset epoch"] --> I["Justified observation mapping<br/>ACK alone binds no physical fact"]
+    I --> B
+    B --> A["Action assessment<br/>Admissible · refuted · unresolved"]
+    B --> X["Empty consistency<br/>Inconsistent; no permission"]
+    classDef model fill:#eef3f7,stroke:#607787,color:#172b3a,stroke-width:1.4px;
+    classDef evidence fill:#e9f4ef,stroke:#417563,color:#183e32,stroke-width:1.6px;
+    classDef open fill:#fff4e5,stroke:#a67532,color:#5f3d13,stroke-width:1.4px;
+    classDef future fill:#f6f8fa,stroke:#788894,color:#334b5b,stroke-dasharray:5 4;
+    class M,C,E,I model;
+    class R,B,A evidence;
+    class X open;

@@ -56,3 +56,7 @@ physical records needed before another model is justified. No physical study beg
   current setup discovery and limits of automation/tool verification.
 - `notes/2026-11-16-full-access-correction.md`: Daniel's explicit YOLO/full-access
   requirement, effective launch options and supersession of restricted defaults.
+
+[Repository and README integration](checkpoints/research-20261123T101533Z-readme-integration.md)
+records merged research/published/setup history, current navigation, four reviewed
+Mermaid diagrams, preserved evidence, and the pending UI and client-version gates.

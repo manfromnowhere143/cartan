@@ -1,0 +1,12 @@
+{
+  "protected_files": 67,
+  "changed": [],
+  "frozen_contract_files": [
+    "fixture.json",
+    "README.md",
+    "validate.py",
+    "SHA256SUMS.json",
+    "schema.json"
+  ],
+  "launcher_matches_setup_70456b0": true
+}

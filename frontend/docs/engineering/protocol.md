@@ -3,7 +3,7 @@
 Frozen before code execution on 16 November 2026. Owner/reviewer: this research
 session only. This is a desk review, not independent engineering or safety review.
 Authority: active user request for safe bounded work after architecture decisions.
-Read [ADR 001](decisions/ADR-001.md) and [the model specification](specification.md).
+Read [ADR 001](../../../research/decisions/ADR-001.md) and [the model specification](specification.md).
 
 ## Stage V executed scope
 

@@ -1,0 +1,38 @@
+---
+config:
+  theme: base
+  look: classic
+  themeVariables:
+    fontFamily: Arial, sans-serif
+    fontSize: 16px
+    primaryColor: "#eef3f7"
+    primaryTextColor: "#172b3a"
+    primaryBorderColor: "#607787"
+    lineColor: "#607787"
+    clusterBkg: "#f8fafc"
+    clusterBorder: "#c6d1da"
+    edgeLabelBackground: "#ffffff"
+  flowchart:
+    curve: linear
+    nodeSpacing: 26
+    rankSpacing: 42
+    htmlLabels: true
+---
+flowchart TB
+    accTitle: The synthetic ambiguity survives but ordinary recovery succeeds
+    accDescr: After interrupted capture and controller restart, two feasible complete histories share the same operator observations. One retains the payload and one does not. External support remains secured. The same retry completes capture in three modeled ticks including attestation; supported park completes abort in two. Neither permits real disconnection.
+    H["ONE COMMON OBSERVED HISTORY<br/>Capture · motion · interruption · reset · reread"]
+    H --> R["History A<br/>Retained"]
+    H --> N["History B<br/>Not retained"]
+    R --> S["Same information · same action<br/>External support stays secured"]
+    N --> S
+    S --> C["Ordinary retry + attestation<br/>Captured with support · 3 ticks"]
+    S --> P["Supported park<br/>Terminal abort · 2 ticks"]
+    C --> B["BASELINE SUFFICIENT<br/>Constructed result in SYN-RC-1"]
+    P --> B
+    classDef model fill:#eef3f7,stroke:#607787,color:#172b3a,stroke-width:1.4px;
+    classDef evidence fill:#e9f4ef,stroke:#417563,color:#183e32,stroke-width:1.6px;
+    classDef open fill:#fff4e5,stroke:#a67532,color:#5f3d13,stroke-width:1.4px;
+    classDef future fill:#f6f8fa,stroke:#788894,color:#334b5b,stroke-dasharray:5 4;
+    class H,R,N,S model;
+    class C,P,B evidence;

@@ -1,0 +1,165 @@
+[
+  {
+    "id": "backend",
+    "command": [
+      "/opt/homebrew/opt/python@3.14/bin/python3.14",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "backend",
+      "-p",
+      "test_*.py",
+      "-v"
+    ],
+    "cwd": "/Users/danielwahnich/workspace/cartan-worktrees/research",
+    "exit": 0,
+    "wall_s": 0.09,
+    "log_sha256": "40f3da8337356814ca2861d7026f3c4a2f4ad0ce5429d6c0d6ccbf54054e856e",
+    "tail": "fication.test_rejects_impossible_separation_without_mutation) ... ok\ntest_restart_stale_future_and_missing_evidence_never_establish_lock (test_model.ModelVerification.test_restart_stale_future_and_missing_evidence_never_establish_lock) ... ok\ntest_threshold_boundary_and_monotonic_direction (test_model.ModelVerification.test_threshold_boundary_and_monotonic_direction) ... ok\ntest_unsafe_completion_cannot_be_laundered (test_model.ModelVerification.test_unsafe_completion_cannot_be_laundered) ... ok\n\n----------------------------------------------------------------------\nRan 12 tests in 0.002s\n\nOK\n"
+  },
+  {
+    "id": "backend-certificates",
+    "command": [
+      "/opt/homebrew/opt/python@3.14/bin/python3.14",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "backend/certificates",
+      "-p",
+      "test_*.py",
+      "-v"
+    ],
+    "cwd": "/Users/danielwahnich/workspace/cartan-worktrees/research",
+    "exit": 0,
+    "wall_s": 0.075,
+    "log_sha256": "b4836bd0da8f86bd3018543fbbb79197353bfd698beee61f6be3df6a80e4264e",
+    "tail": "ertificates.CertificateTests.test_restart_revokes_old_certificate_and_requires_new_epoch) ... ok\ntest_tiny_gap_and_invalid_intervals (test_certificates.CertificateTests.test_tiny_gap_and_invalid_intervals) ... ok\ntest_waiting_uses_worst_tau_and_backfeed (test_certificates.CertificateTests.test_waiting_uses_worst_tau_and_backfeed) ... ok\ntest_wrong_fault_bound_can_give_wrong_nonempty_certificate (test_certificates.CertificateTests.test_wrong_fault_bound_can_give_wrong_nonempty_certificate) ... ok\n\n----------------------------------------------------------------------\nRan 12 tests in 0.002s\n\nOK\n"
+  },
+  {
+    "id": "backend-interface_evidence",
+    "command": [
+      "/opt/homebrew/opt/python@3.14/bin/python3.14",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "backend/interface_evidence",
+      "-p",
+      "test_*.py",
+      "-v"
+    ],
+    "cwd": "/Users/danielwahnich/workspace/cartan-worktrees/research",
+    "exit": 0,
+    "wall_s": 0.063,
+    "log_sha256": "37a09e34c71f42ab90d92dd81267359a2eac05a2122049af61b0ecea22487049",
+    "tail": "_unvalidated_mapping (test_engine.EvidenceBoundaryTests.test_raw_telemetry_has_no_unvalidated_mapping) ... ok\ntest_rejects_scope_and_malformed_reports (test_engine.EvidenceBoundaryTests.test_rejects_scope_and_malformed_reports) ... ok\ntest_witnesses_explain_unresolved_and_empty_domains (test_engine.EvidenceBoundaryTests.test_witnesses_explain_unresolved_and_empty_domains) ... ok\ntest_zero_false_and_null_are_distinct (test_engine.EvidenceBoundaryTests.test_zero_false_and_null_are_distinct) ... ok\n\n----------------------------------------------------------------------\nRan 11 tests in 0.008s\n\nOK\n"
+  },
+  {
+    "id": "backend-observation_model",
+    "command": [
+      "/opt/homebrew/opt/python@3.14/bin/python3.14",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "backend/observation_model",
+      "-p",
+      "test_*.py",
+      "-v"
+    ],
+    "cwd": "/Users/danielwahnich/workspace/cartan-worktrees/research",
+    "exit": 0,
+    "wall_s": 0.053,
+    "log_sha256": "7133aa5e6ba0122382884c73fa8a006414ee2276b0e34b4e34e823996190e4fd",
+    "tail": "rvationBoundaries.test_no_state_aliasing_or_physical_clearance) ... ok\ntest_topology_caps_and_boolean_domains (test_model.ObservationBoundaries.test_topology_caps_and_boolean_domains) ... ok\ntest_unknown_rate_coverage_and_fault_never_become_zero_error (test_model.ObservationBoundaries.test_unknown_rate_coverage_and_fault_never_become_zero_error) ... ok\ntest_zero_is_known_and_has_no_isolation_implication (test_model.ObservationBoundaries.test_zero_is_known_and_has_no_isolation_implication) ... ok\n\n----------------------------------------------------------------------\nRan 11 tests in 0.002s\n\nOK\n"
+  },
+  {
+    "id": "contract",
+    "command": [
+      "/opt/homebrew/opt/python@3.14/bin/python3.14",
+      "-B",
+      "contracts/cartan/v1/validate.py",
+      "contracts/cartan/v1/fixture.json",
+      "--self-test",
+      "--manifest"
+    ],
+    "cwd": "/Users/danielwahnich/workspace/cartan-worktrees/research",
+    "exit": 0,
+    "wall_s": 0.674,
+    "log_sha256": "87ff7150a41ed082956878aee6c46423619a7c2cbce8b34e47e9fd56680020c1",
+    "tail": "{\"valid\": true, \"negative_controls_rejected\": 16, \"scientific_validation\": false}\n"
+  },
+  {
+    "id": "retention-producer",
+    "command": [
+      "/opt/homebrew/opt/python@3.14/bin/python3.14",
+      "-B",
+      "backend/retention_case/enumerate_case.py"
+    ],
+    "cwd": "/Users/danielwahnich/workspace/cartan-worktrees/research",
+    "exit": 0,
+    "wall_s": 0.031,
+    "log_sha256": "f32db1581a8d0e335a75870b6f943058b92ca021e29ef1d4a776b5c6a0850c72",
+    "tail": "\"UNKNOWN\",\n            \"support_secured\": true\n          }\n        }\n      ]\n    }\n  ],\n  \"mode\": \"synthetic_fixture\",\n  \"notice\": \"SYNTHETIC BENCH MODEL - NOT PHYSICAL EVIDENCE\",\n  \"physical_authorization\": \"not_assessed\",\n  \"scenario_id\": \"SYN-RC-1\",\n  \"schema_version\": \"cartan-retention-case/1.0.0\",\n  \"source_hashes\": {\n    \"check_case.py\": \"681cc782eca4dbbf237c28c5d03f36425eef4a72f6a13ef75ca6a166f056251e\",\n    \"enumerate_case.py\": \"06716de5963f7f1fcca7cef32cdb60927d2d9a48f0c354ef55314913759e9710\",\n    \"fixture.json\": \"aca1dc8c228a304b82381c6f9c59de409c42b3880a8781bd8d432f9891b059d7\"\n  }\n}\n"
+  },
+  {
+    "id": "retention-checker",
+    "command": [
+      "/opt/homebrew/opt/python@3.14/bin/python3.14",
+      "-B",
+      "backend/retention_case/check_case.py",
+      "/private/tmp/cartan-integration-20261123-oyam36cb/retention-result.json"
+    ],
+    "cwd": "/Users/danielwahnich/workspace/cartan-worktrees/research",
+    "exit": 0,
+    "wall_s": 0.031,
+    "log_sha256": "f8e99c90eddd7f6190c383dd110247452a9ac9aa5efbb1a801f5a4577518a5ae",
+    "tail": "al_traces\": 90, \"safe_terminal_paths_per_initial_state\": [5, 18]}, \"C01\": {\"action_words_per_initial_state\": 6, \"paired_terminal_traces\": 1, \"safe_terminal_paths_per_initial_state\": [1]}, \"C04\": {\"action_words_per_initial_state\": 258, \"paired_terminal_traces\": 14, \"safe_terminal_paths_per_initial_state\": [1, 14]}, \"C05\": {\"action_words_per_initial_state\": 399, \"paired_terminal_traces\": 162, \"safe_terminal_paths_per_initial_state\": [6, 27]}, \"C06\": {\"action_words_per_initial_state\": 7, \"paired_terminal_traces\": 0, \"safe_terminal_paths_per_initial_state\": [0, 1]}}, \"physical_validation\": false}\n"
+  },
+  {
+    "id": "retention-replay",
+    "command": [
+      "/opt/homebrew/opt/python@3.14/bin/python3.14",
+      "-B",
+      "backend/retention_case/enumerate_case.py"
+    ],
+    "cwd": "/Users/danielwahnich/workspace/cartan-worktrees/research",
+    "exit": 0,
+    "wall_s": 0.029,
+    "log_sha256": "f32db1581a8d0e335a75870b6f943058b92ca021e29ef1d4a776b5c6a0850c72",
+    "tail": "\"UNKNOWN\",\n            \"support_secured\": true\n          }\n        }\n      ]\n    }\n  ],\n  \"mode\": \"synthetic_fixture\",\n  \"notice\": \"SYNTHETIC BENCH MODEL - NOT PHYSICAL EVIDENCE\",\n  \"physical_authorization\": \"not_assessed\",\n  \"scenario_id\": \"SYN-RC-1\",\n  \"schema_version\": \"cartan-retention-case/1.0.0\",\n  \"source_hashes\": {\n    \"check_case.py\": \"681cc782eca4dbbf237c28c5d03f36425eef4a72f6a13ef75ca6a166f056251e\",\n    \"enumerate_case.py\": \"06716de5963f7f1fcca7cef32cdb60927d2d9a48f0c354ef55314913759e9710\",\n    \"fixture.json\": \"aca1dc8c228a304b82381c6f9c59de409c42b3880a8781bd8d432f9891b059d7\"\n  }\n}\n"
+  },
+  {
+    "id": "setup-environment",
+    "command": [
+      "/opt/homebrew/opt/python@3.14/bin/python3.14",
+      "-B",
+      "scripts/test_environment.py"
+    ],
+    "cwd": "/private/tmp/cartan-integration-20261123-oyam36cb/setup-source",
+    "exit": 1,
+    "wall_s": 2.508,
+    "log_sha256": "bae886df0daf7db6647558224157b652295904d014e49f9bc2ebf8a4239c4a96",
+    "tail": "b/setup-source/scripts/test_environment.py\", line 72, in setUp\n    launch.validate_identity(self.root, self.config, \"research\")\n    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/private/tmp/cartan-integration-20261123-oyam36cb/setup-source/scripts/launch.py\", line 121, in validate_identity\n    raise PreflightError(\"Remote names changed; setup owner must review identity.\")\ncartan_launch.PreflightError: Remote names changed; setup owner must review identity.\n\n----------------------------------------------------------------------\nRan 32 tests in 2.416s\n\nFAILED (errors=32)\n"
+  },
+  {
+    "id": "setup-environment-fixed",
+    "command": [
+      "/opt/homebrew/opt/python@3.14/bin/python3.14",
+      "-B",
+      "scripts/test_environment.py"
+    ],
+    "export_source": "75509aa with current test fixture correction",
+    "test_source_sha256": "6fec1911ed0279ccc4e1dcd275767591cb47816f38672103d734643878c6d940",
+    "exit": 1,
+    "wall_s": 10.63,
+    "log_sha256": "2a69c4866842c4d65e50103b432f9095db4408d7db89ced77a985ac7f3710c50",
+    "tail": "= launch.make_plan(client, lane, self.root, action=\"resume\")\n  File \"/private/tmp/cartan-integration-20261123-oyam36cb/setup-source/scripts/launch.py\", line 249, in make_plan\n    raise PreflightError(\"Client version changed; rerun compatibility checks before updating its pin.\")\ncartan_launch.PreflightError: Client version changed; rerun compatibility checks before updating its pin.\n\n======================================================================\nERROR: test_start_reads_current_canonical_setup_without_changing_lane (__main__.EnvironmentTests.test_start_reads_current_canonical_setup_without_changing_lane)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/private/tmp/cartan-integration-20261123-oyam36cb/setup-source/scripts/test_environment.py\", line 134, in test_start_reads_current_canonical_setup_without_changing_lane\n    plan = launch.make_plan(\"codex\", \"research\", self.root)\n  File \"/private/tmp/cartan-integration-20261123-oyam36cb/setup-source/scripts/launch.py\", line 249, in make_plan\n    raise PreflightError(\"Client version changed; rerun compatibility checks before updating its pin.\")\ncartan_launch.PreflightError: Client version changed; rerun compatibility checks before updating its pin.\n\n----------------------------------------------------------------------\nRan 34 tests in 10.532s\n\nFAILED (errors=7)\n"
+  }
+]

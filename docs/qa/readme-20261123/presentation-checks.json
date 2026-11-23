@@ -1,0 +1,60 @@
+{
+  "diagram_count": 4,
+  "source_and_svg": [
+    {
+      "id": 1,
+      "source_sha256": "6bd131becf33c39b1880dec08da6ac7581a849dee01891ccb2fff3cb5dbf6cde",
+      "svg_sha256": "49db3197dda1b2fc390625bcc2ea5fd700253b292c8bc0f25c32195d9ff95af7",
+      "viewBox": "0 0 925.65625 560",
+      "accessible_title": "Evidence separates six physical propositions"
+    },
+    {
+      "id": 2,
+      "source_sha256": "e4f8e8346b7d573a4364310e60ffa201ee980b0f72facae20d76f690cac79721",
+      "svg_sha256": "f7ab033dcbeea8ff536f676617cab49dbab0494b5ad75bc23fd804571f3a9191",
+      "viewBox": "0 0 812 858",
+      "accessible_title": "Five offline research paths and a separate presentation contract"
+    },
+    {
+      "id": 3,
+      "source_sha256": "a94189d2cff2369366cf6d913ceb38119f67fa6262d5a05bf2f27e2c6398bf25",
+      "svg_sha256": "4ce18bacdf045d91490307cff71a4d6f9e26286f05a3ab36f14525e435874a77",
+      "viewBox": "0 0 498.9375 608",
+      "accessible_title": "The synthetic ambiguity survives but ordinary recovery succeeds"
+    },
+    {
+      "id": 4,
+      "source_sha256": "34c161ca22d53ff593267ec9add2cc3e1f4c64bab4ebc5585f6d282d9634f2d9",
+      "svg_sha256": "488e64314ccb0b54e168b4a2f0deb698da84d14b74a0fd6df42e76bd57125e80",
+      "viewBox": "0 0 524.484375 937.15625",
+      "accessible_title": "Progress from reproducible software to an admissible physical question"
+    }
+  ],
+  "declared_text_contrast": [
+    {
+      "role": "model",
+      "text": "#172b3a",
+      "background": "#eef3f7",
+      "ratio": 13.03
+    },
+    {
+      "role": "evidence",
+      "text": "#183e32",
+      "background": "#e9f4ef",
+      "ratio": 10.51
+    },
+    {
+      "role": "open",
+      "text": "#5f3d13",
+      "background": "#fff4e5",
+      "ratio": 8.93
+    },
+    {
+      "role": "future",
+      "text": "#334b5b",
+      "background": "#f6f8fa",
+      "ratio": 8.58
+    }
+  ],
+  "limits": "Color arithmetic and structural checks; not screen-reader or GitHub-renderer acceptance"
+}

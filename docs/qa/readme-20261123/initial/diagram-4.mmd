@@ -1,0 +1,36 @@
+---
+config:
+  theme: base
+  look: classic
+  themeVariables:
+    fontFamily: Arial, sans-serif
+    fontSize: 16px
+    primaryColor: "#eef3f7"
+    primaryTextColor: "#172b3a"
+    primaryBorderColor: "#607787"
+    lineColor: "#607787"
+    clusterBkg: "#f8fafc"
+    clusterBorder: "#c6d1da"
+    edgeLabelBackground: "#ffffff"
+  flowchart:
+    curve: linear
+    nodeSpacing: 26
+    rankSpacing: 42
+    htmlLabels: true
+---
+flowchart TB
+    accTitle: Progress from reproducible software to an admissible physical question
+    accDescr: Completed software and source reviews lead to REA-1 evidence admission. Missing unit records currently block physical conclusions. Ordinary recovery is tested before a new model. A baseline-sufficient result is retained. A surviving useful gap could justify a reviewed finite abstraction and later physical validation; mission qualification remains separate.
+    S["COMPLETED<br/>Offline studies · independent checks · null results"] --> R["COMPLETED / REA-1<br/>Evidence-admission protocol"]
+    R --> E["MISSING INPUT<br/>Unit revision · independent retention reference<br/>Ordinary history · procedures · owner limits"]
+    E -. "Admissible record becomes available" .-> Q{"Does ordinary recovery<br/>meet the declared task?"}
+    Q -->|Yes| N["RETAIN THE NEGATIVE RESULT<br/>Prefer the sufficient baseline"]
+    Q -->|No, with a checked useful gap| A["NEXT CONDITIONAL STEP<br/>Reviewed finite abstraction and equal-information test"]
+    A -. "Separate authority and physical evidence" .-> P["LATER<br/>Contained validation · mission qualification"]
+    classDef model fill:#eef3f7,stroke:#607787,color:#172b3a,stroke-width:1.4px;
+    classDef evidence fill:#e9f4ef,stroke:#417563,color:#183e32,stroke-width:1.6px;
+    classDef open fill:#fff4e5,stroke:#a67532,color:#5f3d13,stroke-width:1.4px;
+    classDef future fill:#f6f8fa,stroke:#788894,color:#334b5b,stroke-dasharray:5 4;
+    class S,R,N evidence;
+    class E,Q open;
+    class A,P future;

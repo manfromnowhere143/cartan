@@ -6,9 +6,9 @@ use separate worktrees for concurrent edits; opening a session is not itself a
 write conflict. The canonical launcher can be updated by setup without rewriting
 the launcher snapshot inside an active worktree.
 
-The current environment-setup session owns launch configuration until an explicit
-handoff. Daniel alone starts the two future sessions. Neither session may launch
-the other, attach to it, interrupt it, or edit its checkout.
+Setup retains launch-configuration ownership until an explicit handoff. Daniel
+starts or resumes lane sessions. Neither lane may launch the other, attach to it,
+interrupt it, or edit its checkout.
 
 | Area | Owner | Working location |
 |---|---|---|
@@ -18,7 +18,7 @@ the other, attach to it, interrupt it, or edit its checkout.
 | `contracts/cartan/v1/` and canonical fixture | Research session | Research branch; publish a commit and hash manifest before consumption |
 | Root manifests, root lockfiles, shared routing/configuration | Research session as integration owner after setup handoff | Changes proposed in the owning branch; one writer |
 
-Both lanes begin at the same environment commit. They share Git objects, not
+Both lanes began at the same environment commit. They share Git objects, not
 working files. Do not reset, stash, clean, checkout or install dependencies in
 another lane. Worktree separation prevents accidental shared-file edits; it is
 not a security boundary against a process with broad OS access.

@@ -1,25 +1,28 @@
-# CARTAN research priorities after block 4
+# CARTAN research priorities
 
-16 November 2026. The destination is spacecraft and orbital infrastructure that
-can be maintained, upgraded and reconfigured robotically. Current evidence covers
-source reviews, explicit models and reproducible software studies. Physical
-recovery, comparative value and flight capability remain unproven.
+Updated 23 November 2026. The destination remains maintainable, upgradeable
+spacecraft. The latest [synthetic retention result](decisions/RETENTION-2026-11-23.md)
+finds ordinary recovery sufficient. [REA-1](experiments/retention-evidence-admission.md)
+is the immediate admission gate for a physical claim; it follows the newer-method
+review and public archive triage. No new planner is justified by the current case.
 
-The [observation study](block-4/results.md) now separates sensor inversion from
-source connectivity. The [additional primary-source review](block-4/source-followup.md)
-shows that interface interruption tests and counterpart recovery already have
-substantial prior art. This supersedes the block 3 roadmap's description of public
-material as only preliminary. It does not close the current-unit evidence gap.
+The next milestone is review of an existing record for one identified interface:
+independent retention reference, complete ordinary history, restart/interlock
+behavior and owner-backed support/load/time limits. Those inputs are missing.
+The current mechanical scope keeps external support present and excludes orbital
+motion, approach, electrical separation and an operational release procedure.
+Broader electrical and physical-study items below remain later, separate gates.
 
 ## First priority: establish what observations mean
 
-Identify one mechanical, circuit and firmware revision. Map each channel to its
+First identify one mechanical, support and firmware revision under REA-1.
+A circuit revision is needed only when the separate electrical question is resumed. Map each channel to its
 physical sensing location, acquisition time, operating domain and uncertainty.
 Establish which faults break the relationship between motor position, engagement
 and load capacity. Inventory source and return paths, including module-side
 supplies and stored energy. Unknown bounds remain unknown.
 
-Current documentation, credible calibration, qualified load/electrical limits and
+Current documentation, credible calibration, qualified limits and
 restart traces are the next useful inputs. No supplied numerical fixture is a
 measured vendor parameter. If ordinary sensing, interlocks and reviewed procedures
 already justify the decision, retain the simpler system.

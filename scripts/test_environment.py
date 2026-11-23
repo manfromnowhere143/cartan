@@ -46,6 +46,8 @@ class EnvironmentTests(unittest.TestCase):
         cls.root_patch = patch.object(launch, "ROOT", cls.root)
         cls.root_patch.start()
         cls.git(cls.root, "init", "--initial-branch=setup/environment")
+        for name, url in cls.config["expected_remotes"].items():
+            cls.git(cls.root, "remote", "add", name, url)
         cls.git(cls.root, "add", ".")
         cls.git(cls.root, "commit", "-m", "Prepare temporary CARTAN guard fixture")
         for lane, entry in cls.config["lanes"].items():
@@ -226,6 +228,32 @@ class EnvironmentTests(unittest.TestCase):
             self.assertNotIn("SECRET_CANARY", str(error.exception))
         finally:
             self.git(self.root, "remote", "remove", "unexpected")
+
+    def test_missing_expected_remote_rejected(self):
+        expected = self.config["expected_remotes"]
+        if not expected:
+            self.skipTest("No remote is pinned in this environment revision")
+        name = next(iter(expected))
+        self.git(self.root, "remote", "remove", name)
+        try:
+            with self.assertRaises(launch.PreflightError):
+                launch.validate_identity(self.root, self.config, "research")
+        finally:
+            self.git(self.root, "remote", "add", name, expected[name])
+
+    def test_wrong_expected_remote_rejected_without_url_leak(self):
+        expected = self.config["expected_remotes"]
+        if not expected:
+            self.skipTest("No remote is pinned in this environment revision")
+        name = next(iter(expected))
+        self.git(self.root, "remote", "set-url", name,
+                 "https://SECRET_CANARY@example.invalid/wrong")
+        try:
+            with self.assertRaises(launch.PreflightError) as error:
+                launch.validate_identity(self.root, self.config, "research")
+            self.assertNotIn("SECRET_CANARY", str(error.exception))
+        finally:
+            self.git(self.root, "remote", "set-url", name, expected[name])
 
     def test_foreign_worktree_rejected(self):
         foreign = Path(self.tmp.name) / "foreign"

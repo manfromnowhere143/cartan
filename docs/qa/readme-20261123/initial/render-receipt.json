@@ -1,0 +1,170 @@
+[
+  {
+    "command": [
+      "mmdc",
+      "-p",
+      "/private/tmp/cartan-integration-20261123-oyam36cb/puppeteer.json",
+      "-i",
+      "docs/qa/readme-20261123/diagram-1.mmd",
+      "-o",
+      "docs/qa/readme-20261123/diagram-1.svg",
+      "-w",
+      "1180",
+      "-b",
+      "white"
+    ],
+    "exit": 0,
+    "wall_s": 3.045,
+    "stdout": "Generating single mermaid chart\n",
+    "stderr": "",
+    "sha256": "438de6b62c1001bc119877fe0f1c15cf5e4f265be93083ad5fdd04f3a8c2138a",
+    "bytes": 17168
+  },
+  {
+    "command": [
+      "mmdc",
+      "-p",
+      "/private/tmp/cartan-integration-20261123-oyam36cb/puppeteer.json",
+      "-i",
+      "docs/qa/readme-20261123/diagram-1.mmd",
+      "-o",
+      "docs/qa/readme-20261123/diagram-1.png",
+      "-w",
+      "1180",
+      "-b",
+      "white"
+    ],
+    "exit": 0,
+    "wall_s": 1.456,
+    "stdout": "Generating single mermaid chart\n",
+    "stderr": "",
+    "sha256": "681c4a4d4f208bfdb4899f3c29272e0532decd61dca4a50aa531e6928a92f46b",
+    "bytes": 48981
+  },
+  {
+    "command": [
+      "mmdc",
+      "-p",
+      "/private/tmp/cartan-integration-20261123-oyam36cb/puppeteer.json",
+      "-i",
+      "docs/qa/readme-20261123/diagram-2.mmd",
+      "-o",
+      "docs/qa/readme-20261123/diagram-2.svg",
+      "-w",
+      "1180",
+      "-b",
+      "white"
+    ],
+    "exit": 0,
+    "wall_s": 1.392,
+    "stdout": "Generating single mermaid chart\n",
+    "stderr": "",
+    "sha256": "e34ecaa5d67a6c18e89a628c2724ac283be623eeecaa48e08b610b05eed11161",
+    "bytes": 19721
+  },
+  {
+    "command": [
+      "mmdc",
+      "-p",
+      "/private/tmp/cartan-integration-20261123-oyam36cb/puppeteer.json",
+      "-i",
+      "docs/qa/readme-20261123/diagram-2.mmd",
+      "-o",
+      "docs/qa/readme-20261123/diagram-2.png",
+      "-w",
+      "1180",
+      "-b",
+      "white"
+    ],
+    "exit": 0,
+    "wall_s": 1.499,
+    "stdout": "Generating single mermaid chart\n",
+    "stderr": "",
+    "sha256": "8df777a592d1f15535d34aaa2d4fe94bf0a29323d853d9bf46563fb355e2fee6",
+    "bytes": 81289
+  },
+  {
+    "command": [
+      "mmdc",
+      "-p",
+      "/private/tmp/cartan-integration-20261123-oyam36cb/puppeteer.json",
+      "-i",
+      "docs/qa/readme-20261123/diagram-3.mmd",
+      "-o",
+      "docs/qa/readme-20261123/diagram-3.svg",
+      "-w",
+      "1180",
+      "-b",
+      "white"
+    ],
+    "exit": 0,
+    "wall_s": 1.366,
+    "stdout": "Generating single mermaid chart\n",
+    "stderr": "",
+    "sha256": "5da55bc31ca7a56d5304851ec86b386468c9408209aafb6717dc6597af8c120c",
+    "bytes": 16633
+  },
+  {
+    "command": [
+      "mmdc",
+      "-p",
+      "/private/tmp/cartan-integration-20261123-oyam36cb/puppeteer.json",
+      "-i",
+      "docs/qa/readme-20261123/diagram-3.mmd",
+      "-o",
+      "docs/qa/readme-20261123/diagram-3.png",
+      "-w",
+      "1180",
+      "-b",
+      "white"
+    ],
+    "exit": 0,
+    "wall_s": 1.488,
+    "stdout": "Generating single mermaid chart\n",
+    "stderr": "",
+    "sha256": "bcdc07aa8d4c2e38e46a1c25e61f0aad83b1e8ebc4c44dd42e14dabda9a5c9ca",
+    "bytes": 45606
+  },
+  {
+    "command": [
+      "mmdc",
+      "-p",
+      "/private/tmp/cartan-integration-20261123-oyam36cb/puppeteer.json",
+      "-i",
+      "docs/qa/readme-20261123/diagram-4.mmd",
+      "-o",
+      "docs/qa/readme-20261123/diagram-4.svg",
+      "-w",
+      "1180",
+      "-b",
+      "white"
+    ],
+    "exit": 0,
+    "wall_s": 1.365,
+    "stdout": "Generating single mermaid chart\n",
+    "stderr": "",
+    "sha256": "59143a861d0ca6d769456a4732cf1791d00684204a07e7911c863f60246795b1",
+    "bytes": 16066
+  },
+  {
+    "command": [
+      "mmdc",
+      "-p",
+      "/private/tmp/cartan-integration-20261123-oyam36cb/puppeteer.json",
+      "-i",
+      "docs/qa/readme-20261123/diagram-4.mmd",
+      "-o",
+      "docs/qa/readme-20261123/diagram-4.png",
+      "-w",
+      "1180",
+      "-b",
+      "white"
+    ],
+    "exit": 0,
+    "wall_s": 1.467,
+    "stdout": "Generating single mermaid chart\n",
+    "stderr": "",
+    "sha256": "2e6cb08a34c8e33b1f967ee253953eb659ae10c0364c4d6a3d98285e6420a2ae",
+    "bytes": 77339
+  }
+]

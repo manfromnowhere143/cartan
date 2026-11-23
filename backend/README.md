@@ -1,4 +1,14 @@
-# Bounded abstract verification
+# CARTAN offline research
+
+Five independent research paths share explicit assumptions and separate checks:
+[abstract exchange](#bounded-abstract-verification),
+[report certificates](certificates/README.md),
+[interface evidence](interface_evidence/README.md),
+[physical observation calculations](../research/block-4/specification.md) and
+[synthetic retention](retention_case/README.md). They do not form an operational
+controller. Read the [current research index](../research/README.md) for results.
+
+## Bounded abstract verification
 
 This is an offline research model. It controls no hardware and starts no service.
 Read [the decision](../research/decisions/ADR-001.md),
