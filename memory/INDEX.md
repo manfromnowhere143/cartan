@@ -1,5 +1,9 @@
 # CARTAN memory
 
+Latest engine direction: [evidence that changes an outcome](checkpoints/research-20261123-engine-direction.md)
+records the next milestone, current primary-method checks and the unchanged REA-1
+physical-evidence gate. No new engine implementation or comparative result.
+
 Latest UI: [evidence aperture](checkpoints/ui-20261123-evidence-aperture.md) records
 the distinct record reveal, completed light/dark integration, real browser fixes,
 source-bound checks and local review link. It preserves the research conclusions.
