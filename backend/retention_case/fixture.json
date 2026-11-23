@@ -1,0 +1,46 @@
+{
+  "schema_version": "cartan-retention-case/1.0.0",
+  "scenario_id": "SYN-RC-1",
+  "mode": "synthetic_fixture",
+  "notice": "SYNTHETIC BENCH MODEL - NOT PHYSICAL EVIDENCE",
+  "decision_record": "research/decisions/RETENTION-2026-11-23.md",
+  "due_ticks": [2, 3],
+  "persistent_biases": [0, 1],
+  "interruption_tick": 2,
+  "reset_tick": 3,
+  "query_tick": 4,
+  "ordinary_drive_history": [0, 1, 1, 1, 1],
+  "interlock_drive_history": [0, 0, 1, 1, 1],
+  "controller_history": ["idle", "moving", "stopped", "ready", "ready"],
+  "command_history": ["capture_received", "drive", "interrupt", "restart", "reread"],
+  "state_boundary": {
+    "support_secured": true,
+    "contact": "aligned",
+    "source_isolation": "UNKNOWN",
+    "measured_voltage": "UNMEASURED",
+    "owner_approved_limits": "UNKNOWN",
+    "retained_equals_engaged": "synthetic capacity assumption only",
+    "retry": "One interruption only; two ticks complete seating for either initial branch",
+    "park": "Two ticks inhibit drive and enter a passive supported terminal abort",
+    "direct_sensor": "Ideal downstream engagement observation, independent of drive bias only by assumption"
+  },
+  "actions": {
+    "hold": 1,
+    "reread": 1,
+    "restart": 1,
+    "inspect": 1,
+    "retry": 2,
+    "park": 2,
+    "attest_capture": 1
+  },
+  "horizon_ticks": 3,
+  "controls": [
+    {"id": "C00", "purpose": "Feasible common complete history, different retention"},
+    {"id": "C01", "purpose": "Passive sequencing constraint rules out unretained endpoint branch"},
+    {"id": "C02", "purpose": "Old-epoch duplicate delivery is not a new acquisition"},
+    {"id": "C03", "purpose": "Overlapping marginals lack a joint persistent-bias witness"},
+    {"id": "C04", "purpose": "Equal-information retry and supported park suffice"},
+    {"id": "C05", "purpose": "Independent engagement observation changes admissibility"},
+    {"id": "C06", "purpose": "Deadline one has no certified terminal continuation"}
+  ]
+}

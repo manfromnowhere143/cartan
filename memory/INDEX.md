@@ -40,3 +40,14 @@ and browser-review limitation. It resolves the prior pending publication choices
 [Post-publication continuity check](checkpoints/research-20261116T134817Z-continuity-check.md) confirms
 research/GitHub synchronization and clean worktrees, and records the newer UI
 commit that still needs review and integration into the public main branch.
+
+[Interrupted capture decision, 23 November](checkpoints/research-20261123T094107Z-retention-decision.md)
+records the reconstructed architecture, fresh checks of retained results and a
+small independent synthetic-history check. Ordinary retry and supported park
+suffice within that fixture; physical decision relevance remains unestablished.
+Its local-ref audit supersedes the earlier pending UI integration statement.
+
+[Evidence admission continuation](checkpoints/research-20261123T095702Z-evidence-admission.md)
+records the targeted newer-method review, public archive triage and REA-1 offline
+admission protocol. It preserves the synthetic baseline result and identifies the
+physical records needed before another model is justified. No physical study began.
