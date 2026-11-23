@@ -1,0 +1,66 @@
+{
+  "kind": "static package accounting, not measured network or device performance",
+  "before": 29312533,
+  "after": 29372996,
+  "delta": 60463,
+  "percent": 0.206,
+  "changed": {
+    "app.mjs": {
+      "before": 13605,
+      "after": 18862,
+      "delta": 5257
+    },
+    "comparison/index.html": {
+      "before": 24316,
+      "after": 29844,
+      "delta": 5528
+    },
+    "evidence/index.html": {
+      "before": 24346,
+      "after": 29863,
+      "delta": 5517
+    },
+    "index.html": {
+      "before": 24366,
+      "after": 29906,
+      "delta": 5540
+    },
+    "interior.css": {
+      "before": 0,
+      "after": 8394,
+      "delta": 8394
+    },
+    "interruption/index.html": {
+      "before": 24414,
+      "after": 29982,
+      "delta": 5568
+    },
+    "laboratory/index.html": {
+      "before": 24364,
+      "after": 29883,
+      "delta": 5519
+    },
+    "research/index.html": {
+      "before": 24246,
+      "after": 29763,
+      "delta": 5517
+    },
+    "sources/index.html": {
+      "before": 24341,
+      "after": 29866,
+      "delta": 5525
+    },
+    "vision/index.html": {
+      "before": 24376,
+      "after": 29891,
+      "delta": 5515
+    },
+    "workspace-state.mjs": {
+      "before": 0,
+      "after": 2583,
+      "delta": 2583
+    }
+  },
+  "removed_preload": "assets/cartan/cartan-hero-poster.jpg",
+  "deferred_fixture_bytes": 10094
+}

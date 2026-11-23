@@ -1,0 +1,152 @@
+[
+  {
+    "port": 4180,
+    "path": "/",
+    "status": 200,
+    "bytes": 24366
+  },
+  {
+    "port": 4180,
+    "path": "/research/",
+    "status": 200,
+    "bytes": 24246
+  },
+  {
+    "port": 4180,
+    "path": "/laboratory/",
+    "status": 200,
+    "bytes": 24364
+  },
+  {
+    "port": 4180,
+    "path": "/laboratory/?part=retention&detail=interface",
+    "status": 200,
+    "bytes": 24364
+  },
+  {
+    "port": 4180,
+    "path": "/interruption/",
+    "status": 200,
+    "bytes": 24414
+  },
+  {
+    "port": 4180,
+    "path": "/evidence/",
+    "status": 200,
+    "bytes": 24346
+  },
+  {
+    "port": 4180,
+    "path": "/comparison/",
+    "status": 200,
+    "bytes": 24316
+  },
+  {
+    "port": 4180,
+    "path": "/sources/",
+    "status": 200,
+    "bytes": 24341
+  },
+  {
+    "port": 4180,
+    "path": "/vision/",
+    "status": 200,
+    "bytes": 24376
+  },
+  {
+    "port": 4180,
+    "path": "/does-not-exist",
+    "status": 404,
+    "bytes": 423
+  },
+  {
+    "port": 4180,
+    "path": "/memory/INDEX.md",
+    "status": 404,
+    "bytes": 423
+  },
+  {
+    "port": 4180,
+    "path": "/qa/interior-review.html",
+    "status": 200,
+    "bytes": 1906
+  },
+  {
+    "port": 4181,
+    "path": "/",
+    "status": 200,
+    "bytes": 29906
+  },
+  {
+    "port": 4181,
+    "path": "/research/",
+    "status": 200,
+    "bytes": 29763
+  },
+  {
+    "port": 4181,
+    "path": "/laboratory/",
+    "status": 200,
+    "bytes": 29883
+  },
+  {
+    "port": 4181,
+    "path": "/laboratory/?part=retention&detail=interface",
+    "status": 200,
+    "bytes": 29883
+  },
+  {
+    "port": 4181,
+    "path": "/interruption/",
+    "status": 200,
+    "bytes": 29982
+  },
+  {
+    "port": 4181,
+    "path": "/evidence/",
+    "status": 200,
+    "bytes": 29863
+  },
+  {
+    "port": 4181,
+    "path": "/comparison/",
+    "status": 200,
+    "bytes": 29844
+  },
+  {
+    "port": 4181,
+    "path": "/sources/",
+    "status": 200,
+    "bytes": 29866
+  },
+  {
+    "port": 4181,
+    "path": "/vision/",
+    "status": 200,
+    "bytes": 29891
+  },
+  {
+    "port": 4181,
+    "path": "/does-not-exist",
+    "status": 404,
+    "bytes": 423
+  },
+  {
+    "port": 4181,
+    "path": "/memory/INDEX.md",
+    "status": 404,
+    "bytes": 423
+  },
+  {
+    "port": 4181,
+    "path": "/qa/interior-review.html",
+    "status": 200,
+    "bytes": 1906
+  },
+  {
+    "port": 4181,
+    "range": "bytes=0-1023",
+    "status": 206,
+    "matches_original": true
+  }
+]

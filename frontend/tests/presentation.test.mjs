@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 const read=p=>readFileSync(new URL('../'+p,import.meta.url),'utf8');
-const css=read('style.css'),app=read('app.mjs'),html=read('index.html');
+const css=read('style.css')+read('interior.css'),app=read('app.mjs'),html=read('index.html');
 // Parse nested CSS blocks so a hover rule outside a capability query fails.
 function rules(text,parents=[]){
   text=text.replace(/\/\*[\s\S]*?\*\//g,'');const out=[];let start=0;
@@ -38,14 +38,17 @@ test('hover is restricted to fine pointers and never moves or fills controls',()
 });
 test('public controls use bounded decorative SVGs, with no glyph pictograms',()=>{
   assert.doesNotMatch(html+app,/[↗↻▷Ⅱ×←]/);
-  const icons=[...html.matchAll(/<svg\b[^>]*>/g)];assert.ok(icons.length>=20);
+  const icons=[...html.matchAll(/<svg\b[^>]*class="icon"[^>]*>/g)];assert.ok(icons.length>=10);
   for(const [tag] of icons){assert.match(tag,/aria-hidden="true"/);assert.match(tag,/focusable="false"/);assert.match(tag,/width="16" height="16"/);}
   assert.match(html,/class="control-label">Play motion/);
   assert.match(app,/motionButton\.setAttribute\('aria-label',label\)/);
 });
-test('explorer and horizon avoid the rejected imagery without removing concept labels',()=>{
-  const explorer=html.match(/<div class="study-art">([\s\S]*?)<\/div>/)[1];
-  assert.match(explorer,/cartan-hero-poster\.jpg/);assert.doesNotMatch(explorer,/module\.jpg|loading="lazy"/);
+test('explorer is an explicitly explanatory schematic; concept film is not geometry',()=>{
+  const explorer=html.match(/<aside class="module-scene"([\s\S]*?)<\/aside>/)[1];
+  assert.match(explorer,/Explanatory spatial schematic/);assert.match(explorer,/Geometry and physical reachability unverified/);
+  assert.doesNotMatch(explorer,/<img|<video|<canvas/);
+  const drawings=[...html.matchAll(/<svg\b[^>]*role="img"[^>]*>/g)];assert.equal(drawings.length,2);
+  for(const [tag] of drawings)assert.match(tag,/aria-labelledby=/);
   assert.match(html,/assets\/scenes\/assembly\.png/);assert.doesNotMatch(html,/assets\/vision\.jpg/);
   assert.match(html,/GENERATED ASSEMBLY CONCEPT \/ UNVALIDATED/);
 });

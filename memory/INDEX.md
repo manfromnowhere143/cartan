@@ -16,3 +16,10 @@ index is installed. Add infrastructure only after an actual requirement justifie
 its lifecycle, privacy and maintenance cost.
 
 - `notes/2026-11-16-environment-decisions.md`: setup boundaries and architecture.
+- [Continuous interior candidate](checkpoints/ui-20261123-continuous-interior.md):
+  earlier UI 006 state, preservation, local preview, exact automated results and the
+  unresolved browser/phone/accessibility/performance acceptance. Not published.
+- [Spatial instrument candidate](checkpoints/ui-20261123-spatial-instrument.md):
+  latest UI 007, following Daniel's explicit 3D direction; same-mesh optional
+  renderer, canonical camera/selection, exact checks and still-open browser/GPU
+  acceptance. Local preview 4182; not published.

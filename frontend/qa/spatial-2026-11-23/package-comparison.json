@@ -1,0 +1,91 @@
+{
+  "kind": "Static package accounting, not network or browser performance",
+  "packages": {
+    "dcc8d8e": {
+      "bytes": 29312533,
+      "files": 31,
+      "home_html_bytes": 24366
+    },
+    "UI006": {
+      "bytes": 29372996,
+      "files": 33,
+      "home_html_bytes": 29906
+    },
+    "UI007": {
+      "bytes": 29508412,
+      "files": 36,
+      "home_html_bytes": 43021
+    }
+  },
+  "lazySceneBytes": {
+    "scene-geometry.mjs": 6080,
+    "spatial-scene.mjs": 7197,
+    "webgl-scene.mjs": 4296
+  },
+  "triangles": 484,
+  "pixelCap": 1800000,
+  "dprCap": 1.5,
+  "runtimeDependenciesAdded": 0,
+  "newImageModelTextureFontFiles": 0,
+  "lazySceneTotal": 17573,
+  "deltaFromBaseline": 195879,
+  "deltaFromUI006": 135416,
+  "changedFilesFromUI006": {
+    "app.mjs": {
+      "before": 18862,
+      "after": 23762
+    },
+    "comparison/index.html": {
+      "before": 29844,
+      "after": 42959
+    },
+    "evidence/index.html": {
+      "before": 29863,
+      "after": 42978
+    },
+    "index.html": {
+      "before": 29906,
+      "after": 43021
+    },
+    "interior.css": {
+      "before": 8394,
+      "after": 15437
+    },
+    "interruption/index.html": {
+      "before": 29982,
+      "after": 43097
+    },
+    "laboratory/index.html": {
+      "before": 29883,
+      "after": 42998
+    },
+    "research/index.html": {
+      "before": 29763,
+      "after": 42878
+    },
+    "scene-geometry.mjs": {
+      "before": 0,
+      "after": 6080
+    },
+    "sources/index.html": {
+      "before": 29866,
+      "after": 42981
+    },
+    "spatial-scene.mjs": {
+      "before": 0,
+      "after": 7197
+    },
+    "vision/index.html": {
+      "before": 29891,
+      "after": 43006
+    },
+    "webgl-scene.mjs": {
+      "before": 0,
+      "after": 4296
+    },
+    "workspace-state.mjs": {
+      "before": 2583,
+      "after": 3563
+    }
+  }
+}

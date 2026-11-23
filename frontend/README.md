@@ -1,5 +1,21 @@
 # CARTAN visual laboratory
 
+Current local candidate (23 November, UI 007): an interactive spatial module study
+anchors one workspace, with deliberate camera views, selectable relationships,
+an in-place reading surface, paused-transfer inspection and evidence. Optional
+WebGL2 and an SVG fallback use the same original, unverified schematic geometry.
+The approved opening and media remain byte-identical. This is **not published,
+browser-accepted or GPU-accepted**. Read [the current review](qa/REVIEW-SPATIAL-2026-11-23.md),
+[UI 007](docs/ADR-UI-007-spatial-instrument.md) and
+[state/provenance map](docs/spatial-instrument-map.md).
+
+The retained baseline is `dcc8d8e`; the local candidate is served at
+http://127.0.0.1:4182/ while its owned preview process is running. The baseline
+is at http://127.0.0.1:4180/; the earlier UI 006 candidate remains at 4181. Each offers
+`/qa/interior-review.html`; this review
+harness is never in the public package. The current review lists exact test
+results and unavailable browser, phone, screen-reader and performance checks.
+
 Dependency-free HTML/CSS/JavaScript with a static publication package. For the
 existing source-level hero QA, from the UI worktree root:
 
@@ -48,8 +64,9 @@ working area. The 21.5s full film remains independent and paused on opening.
 No audio is added; Daniel selects any future soundtrack.
 
 Page and component changes apply immediately without opacity or transform
-animations. A consistent dark canvas and stable dark explorer artwork avoid
-large luminance changes. Custom line icons and restrained keyboard indicators
+animations. A consistent dark canvas and persistent original SVG explain component
+relationships without asserting validated geometry. The old explorer artwork
+is retained but no longer used in the interior. Custom line icons and restrained keyboard indicators
 replace glyph controls and the former filled focus state. Missing media retains text and navigation. This is a concept presentation,
 not one continuous validated mechanism. The engineering contract is unchanged.
 
@@ -81,7 +98,8 @@ any depicted hardware. No generation, soundtrack, analytics or backend is added.
 
 Current refinement: `docs/ADR-UI-004-stable-surface.md` and
 `qa/REVIEW-STABILITY-2026-11-16.md`. The local browser matrix is
-`http://127.0.0.1:4178/qa/stability-review.html` using the preview server above.
+`http://127.0.0.1:4178/qa/stability-review.html` using the preview server above
+(historical hero/stability coverage; use the interior harness for this candidate).
 No browser results are implied merely by providing this harness.
 
 Current focus/media policy: `docs/ADR-UI-005-pointer-focus-and-responsive-motion.md`

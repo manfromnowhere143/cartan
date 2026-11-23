@@ -1,6 +1,7 @@
 from pathlib import Path
 from html.parser import HTMLParser
 import argparse,base64,hashlib,json,re,xml.etree.ElementTree as ET
+from urllib.parse import urlsplit
 ROOT=Path(__file__).resolve().parents[1]
 class Document(HTMLParser):
  def __init__(self,text):
@@ -20,6 +21,7 @@ def verify(package):
   check(view+' canonical',[(a.get('href')) for t,a in d.tags if t=='link' and a.get('rel')=='canonical']==[url])
   check(view+' active static content',[a.get('data-view') for t,a in d.tags if t=='section' and 'surface' in a.get('class','') and 'hidden' not in a]==[view])
   check(view+' semantic heading',bool(re.search(r'<section[^>]*data-view="'+view+r'"[^>]*>.*?<h1\b',raw,re.S)))
+  if view!='home':check(view+' static return path',any(t=='a' and a.get('id')=='view-back' and 'hidden' not in a for t,a in d.tags))
   graph=re.search(r'<script id="structured-data" type="application/ld\+json">(.*?)</script>',raw,re.S)[1]
   check(view+' graph identity',json.loads(graph)['@graph'][-1]['url']==url)
   digest="sha256-"+base64.b64encode(hashlib.sha256(graph.encode()).digest()).decode()
@@ -30,8 +32,8 @@ def verify(package):
    for key in ('src','href','srcset','poster'):
     value=a.get(key,'')
     if value.startswith('/'):
-     resolved=static/value.lstrip('/')
-     check(view+' local reference '+value,resolved.exists() or value in [p['path'] for p in meta['pages'].values()])
+     path=urlsplit(value).path;resolved=static/path.lstrip('/')
+     check(view+' local reference '+value,resolved.exists() or path in [p['path'] for p in meta['pages'].values()])
  check('unique titles/descriptions',len(set(titles))==8 and len(set(descs))==8)
  sitemap=ET.parse(static/'sitemap.xml');locs=[n.text for n in sitemap.findall('.//{*}loc')]
  check('exact sitemap scope',set(locs)=={meta['origin']+p['path'] for p in meta['pages'].values()})

@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-23",
+  "assets": [
+    {
+      "id": "module-drawing",
+      "version": "explanatory-schematic/1.0.0",
+      "source": "frontend/index.html",
+      "source_svg_sha256": "7f12e5d7253ab231e7c43d92e0c466e12209d6b3adc0d0410f12270da2c301f7",
+      "basis": "Original UI code; generic relationship geometry only",
+      "units": "SVG drawing coordinates, not physical dimensions",
+      "scientific_status": "explanatory schematic; physical geometry and reachability unverified",
+      "source_contract": "2a4083ac15e64fbf3f6f57355827efd5d2ff0a7a",
+      "approval": "Local candidate; browser and operator visual review pending"
+    },
+    {
+      "id": "interface-drawing",
+      "version": "explanatory-schematic/1.0.0",
+      "source": "frontend/index.html",
+      "source_svg_sha256": "9033e3f3a059e4f3cd70a82209752073e83fd7144b93f482c4f5ec708baba9c5",
+      "basis": "Original UI code; generic relationship geometry only",
+      "units": "SVG drawing coordinates, not physical dimensions",
+      "scientific_status": "explanatory schematic; physical geometry and reachability unverified",
+      "source_contract": "2a4083ac15e64fbf3f6f57355827efd5d2ff0a7a",
+      "approval": "Local candidate; browser and operator visual review pending"
+    }
+  ]
+}

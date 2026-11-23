@@ -1,0 +1,15 @@
+{
+  "version": "spatial-schematic/1.0.0",
+  "units": "arbitrary drawing units",
+  "physicalGeometry": "unverified",
+  "kind": "explanatory spatial schematic",
+  "triangles": 484,
+  "geometrySHA256": "737e062167a21f55760376f11d65db89ad3e4825fa484448fc669995a44b2201",
+  "pictures": {
+    "joined": "089bb3e576eaa548c14b6a40b457e45214f06184987eb8e987e2f068979cb4bc",
+    "separated": "031866df016937cd7b9e2ec2a92052649e7f3de72c2d15b4a7501a91abd80b66",
+    "profile": "58a4e9fddfe1ea9969c6221f2be4511c0aad209241c6494b61a54c64e6c1cfd9",
+    "phone": "e55988f34c3f2d989266fa7822aa87aeb61430785212d437c10b0b14b0e69a60"
+  },
+  "limitations": "Original relationship drawing. No qualified CAD, material, trajectory, sensing, simulation or physical-state reconstruction."
+}

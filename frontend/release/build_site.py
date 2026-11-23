@@ -9,6 +9,7 @@ def build(target):
  meta=json.loads((ROOT/'seo.json').read_text());origin=meta['origin'];pages=meta['pages']
  runtime=json.loads(subprocess.check_output(['node','--input-type=module','-e',"import {SITE,graphFor} from "+json.dumps((ROOT/'routes.mjs').as_uri())+";console.log(JSON.stringify({site:SITE,graphs:Object.fromEntries(Object.keys(SITE.pages).map(v=>[v,graphFor(v)]))}))"],text=True))
  assert runtime['site']==meta,'Source/runtime metadata drift'
+ parents=json.loads(subprocess.check_output(['node','--input-type=module','-e',"import {workspaceFromURL,workspaceURL,parentState} from "+json.dumps((ROOT/'workspace-state.mjs').as_uri())+";const pages="+json.dumps(pages)+";console.log(JSON.stringify(Object.fromEntries(Object.entries(pages).map(([v,p])=>[v,workspaceURL(parentState(workspaceFromURL(new URL(p.path,'https://cartan.danielwahnich.dev'))))]))))"],text=True))
  source=(ROOT/'index.html').read_text();hashes=[]
  for view,p in pages.items():
   text=source.replace('data-view="home"','data-view="'+view+'"',1).replace('<html lang="en"','<html class="has-router" lang="en"',1)
@@ -22,6 +23,9 @@ def build(target):
   if view!='home':
    pattern=r'(<section[^>]*data-view="'+view+r'".*?)(</section>)'
    text=re.sub(pattern,lambda m:re.sub(r'<h2(\b[^>]*>)(.*?)</h2>',r'<h1\1\2</h1>',m[1],count=1,flags=re.S)+m[2],text,flags=re.S)
+   text=text.replace('<a href="/" id="view-back" hidden>', '<a href="'+html.escape(parents[view],quote=True)+'" id="view-back">')
+   text=text.replace('<span class="control-label">Overview</span>','<span class="control-label">Return</span>')
+   text=text.replace('<span id="view-context">SPACE SYSTEMS RESEARCH</span>','<span id="view-context">'+view.upper()+'</span>')
   url=origin+p['path'];esc=lambda v:html.escape(v,quote=True)
   graph=json.dumps(runtime['graphs'][view],ensure_ascii=False,separators=(',',':')).replace('<','\\u003c')
   hashes.append("'sha256-"+base64.b64encode(hashlib.sha256(graph.encode()).digest()).decode()+"'")
@@ -41,7 +45,7 @@ def build(target):
   text=re.sub(r'<title>.*?</title>|<meta name="description"[^>]*>|<link rel="icon"[^>]*>','',text)
   text=text.replace('</head>',metadata+'\n</head>')
   path=static/p['path'].lstrip('/')/'index.html';path.parent.mkdir(parents=True,exist_ok=True);path.write_text(text)
- assets=['style.css','app.mjs','adapter.mjs','contract-adapter.mjs','hero-controller.mjs','focus-presentation.mjs','routes.mjs','assets/cartan-logo.png','assets/scenes/assembly.png','assets/icons/favicon.svg','vendor/cartan/v1/fixture.json']
+ assets=['style.css','interior.css','workspace-state.mjs','scene-geometry.mjs','spatial-scene.mjs','webgl-scene.mjs','app.mjs','adapter.mjs','contract-adapter.mjs','hero-controller.mjs','focus-presentation.mjs','routes.mjs','assets/cartan-logo.png','assets/scenes/assembly.png','assets/icons/favicon.svg','vendor/cartan/v1/fixture.json']
  assets += ['assets/cartan/'+n for n in ['cartan-hero-desktop-720p.mp4','cartan-hero-mobile-540p.mp4','cartan-hero-poster.jpg','cartan-hero-poster-mobile.jpg','cartan-hero-opening-720p.webp','cartan-hero-opening-540p.webp','CARTAN-Built-to-Change-Revised-Silent-21s-1080p.mp4']]
  for rel in assets:
   dest=static/rel;dest.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(ROOT/rel,dest)

@@ -1,0 +1,40 @@
+{
+  "scope": "WCAG sRGB calculation on declared opaque colors, not browser pixel testing or whole-site conformance",
+  "checks": [
+    {
+      "name": "text",
+      "foreground": "#f7f8f7",
+      "background": "#07090b",
+      "ratio": 18.73,
+      "minimum": 4.5
+    },
+    {
+      "name": "muted text",
+      "foreground": "#b6bec3",
+      "background": "#07090b",
+      "ratio": 10.58,
+      "minimum": 4.5
+    },
+    {
+      "name": "keyboard outline",
+      "foreground": "#b7cbd7",
+      "background": "#07090b",
+      "ratio": 11.91,
+      "minimum": 3
+    },
+    {
+      "name": "host outline",
+      "foreground": "#5f6d77",
+      "background": "#10161b",
+      "ratio": 3.42,
+      "minimum": 3
+    },
+    {
+      "name": "geometry outline",
+      "foreground": "#71838e",
+      "background": "#273038",
+      "ratio": 3.41,
+      "minimum": 3
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+/* Interior only. The approved opening and its media composition are untouched. */
+html[data-view="home"] .interior-shell{display:none}
+.interior-shell{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(320px,.85fr);gap:clamp(36px,6vw,108px);max-width:1580px;margin:auto;padding:140px clamp(24px,5vw,80px) 120px;align-items:start}
+.interior-shell .surface{min-height:0;padding:0;width:100%;min-width:0;grid-column:2;grid-row:1}
+.module-scene{position:sticky;top:130px;min-width:0;grid-column:1;grid-row:1}
+.scene-kicker{color:var(--muted);font-size:9px;letter-spacing:.16em}
+.module-drawing{display:block;width:100%;height:auto;max-height:520px;margin:16px 0 12px;overflow:visible}
+.geometry{stroke:#71838e}
+.geometry.selected{stroke:#ecf0f2;stroke-width:2}
+.diagram-labels path{fill:none;stroke:#8a9ca8;stroke-width:1}
+.scene-caption{font-size:11px;color:var(--ink);line-height:1.6}
+.scene-caption span{display:block;font-size:10px;color:var(--muted);max-width:340px;margin-top:3px}
+.part-selector{display:flex;flex-wrap:wrap;gap:4px 20px;margin-top:22px}
+html:not(.has-interaction) .part-selector,html:not(.has-interaction) .evidence-controls,html:not(.has-interaction) #interface-open{display:none}
+.part-selector button{display:flex;align-items:center;gap:8px;min-height:44px;padding:6px 0;font-size:12px;color:var(--muted)}
+.part-selector button>span{font:9px var(--mono)}
+.part-selector button[aria-pressed="true"]{color:var(--ink);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:6px}
+.scene-source{font:9px/1.8 var(--mono);color:var(--muted);margin-top:12px;max-width:400px}
+.scene-source a{display:inline-flex;align-items:center;min-height:44px}
+.interior-shell h2,.interior-shell .workspace h1{font-size:clamp(28px,3vw,42px);line-height:1.12;letter-spacing:-.04em}
+.interior-shell h3{font-size:22px;line-height:1.25}
+.interior-shell .section-index,.interior-shell .section-top{margin-bottom:26px}
+.interior-shell .section-top{display:block}
+.interior-shell .section-top .tag{margin-top:10px;font-size:9px}
+.interior-intro{font-size:14px;line-height:1.75;color:var(--muted);max-width:450px;margin:24px 0 30px}
+.interior-shell .component-detail{margin:32px 0 20px;min-height:200px}
+.interior-shell .component-detail h3{margin-bottom:14px}
+.interior-shell .component-detail dl>div{grid-template-columns:80px 1fr;font-size:12px}
+.interior-shell .text-action{font-size:12px;line-height:1.5;min-height:46px;gap:24px}
+.interior-shell .text-action>span{font:10px var(--mono);color:var(--muted)}
+.subtle{color:var(--muted)}
+.interface-detail{margin-top:30px;max-width:480px}
+.interface-detail .eyebrow{font-size:9px;color:var(--muted);margin-bottom:14px}
+.interface-drawing{display:block;width:100%;height:auto;margin:24px 0}
+.interface-detail>p:not(.eyebrow){font-size:13px;line-height:1.75;color:var(--muted)}
+.missing-note{font-size:11px;line-height:1.75;color:var(--muted);margin:16px 0}
+.component-notes{margin-top:28px}
+.interior-shell summary{min-height:44px;padding:12px 0;cursor:pointer;font-size:12px;list-style-position:inside}
+.interior-shell details p{font-size:12px;color:var(--muted);line-height:1.75;margin:12px 0}
+.interior-shell details dl>div{font-size:12px;grid-template-columns:85px 1fr}
+.observation-reading{margin:28px 0 32px}
+.observation-reading .eyebrow,.possible-states>.eyebrow{font-size:9px;color:var(--muted);margin-bottom:12px}
+.observation-reading h3{font:18px/1.5 var(--mono);letter-spacing:-.02em}
+.observation-reading>p:last-child{font-size:11px;color:var(--muted);margin-top:12px;line-height:1.8}
+#candidate-list{display:flex;gap:36px;margin:20px 0}
+.candidate-state{flex:1;min-width:0}
+.candidate-state h3{font-size:24px;text-transform:capitalize}
+.candidate-state .eyebrow{font-size:9px;color:var(--muted);margin-bottom:8px}
+.candidate-state p{font-size:12px;color:var(--muted);margin-top:8px}
+.undecided{font-size:13px;line-height:1.8;margin-top:30px;color:var(--muted)}
+.undecided b{display:block;font-weight:400;font-size:15px;margin-bottom:8px;color:var(--ink)}
+.authored-state{margin-top:30px}
+.interior-shell .provenance{margin-top:12px}
+.interior-shell .provenance>div{padding-top:10px}
+.interior-shell .provenance dl>div{grid-template-columns:1fr;gap:4px}
+.interior-shell .provenance dd{color:var(--ink)}
+.evidence-receipt{margin-top:26px;overflow-wrap:anywhere}
+.evidence-receipt>.eyebrow{color:var(--muted);margin-bottom:14px}
+.evidence-receipt>p:not(.eyebrow){font-size:14px;color:var(--muted);line-height:1.75}
+.evidence-receipt code{font:11px/1.6 var(--mono);color:var(--ink);display:block;margin-top:8px}
+.evidence-subheading{margin:36px 0 10px;color:var(--muted);font-size:9px}
+.interior-shell .evidence-controls{gap:0 20px;margin:0}
+.interior-shell .evidence-controls button{font-size:12px}
+.interior-shell .evidence-panel{min-height:0;padding:24px 0 16px}
+.interior-shell .evidence-panel h3{font-size:22px}
+.interior-shell .evidence-panel>p:not(.eyebrow){font-size:13px;line-height:1.8}
+.outcome-list>div{grid-template-columns:1fr 1fr;font-size:12px;padding:8px 0}
+.interior-shell .question-grid{display:block;margin:0}
+.interior-shell .body-copy{font-size:14px;line-height:1.8;margin-top:26px}
+.interior-shell .research-line{display:block;margin-top:36px;font-size:12px}
+.interior-shell .research-line>span{display:block;margin-bottom:12px;color:var(--ink)}
+.interior-shell .source-list{display:block;margin-top:32px}
+.interior-shell .source-list a{margin-bottom:30px;padding:0 20px 0 0}
+.interior-shell .source-list h3{font-size:19px}
+.interior-shell .source-list p{line-height:1.75}
+.interior-shell .sources>h2{margin-top:26px}
+.interior-shell .comparison>p{font-size:13px;line-height:1.8}
+.interior-shell table{min-width:0;font-size:12px}
+.interior-shell th,.interior-shell td{padding:12px 14px 12px 0;overflow-wrap:break-word}
+.interior-shell thead th{font-size:9px;line-height:1.6}
+.interior-shell .protocol{display:block;margin-top:32px}
+.interior-shell .protocol>div{margin-top:18px}
+html[data-view="vision"] .interior-shell{display:block;padding:0;max-width:none}
+html[data-view="vision"] .module-scene{display:none}
+.interior-shell .vision{min-height:100svh}
+.interior-shell .vision-copy{padding:160px clamp(24px,6vw,100px) 110px}
+.no-script-note{margin:0 24px 100px;max-width:640px;font-size:12px;color:var(--muted)}
+.interior-shell noscript p{font-size:13px;line-height:1.8;margin:20px 0;color:var(--muted)}
+html:not([data-view="home"]) .workspace-footer{background:var(--bg)}
+@media(max-width:900px){
+  .interior-shell{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:32px;padding-inline:28px}
+  .module-scene{top:120px}
+  .part-selector{gap:2px 16px}
+}
+@media(max-width:700px){
+  .interior-shell{display:block;padding:110px 24px 105px}
+  .module-scene{position:relative;top:auto;margin:0 0 40px}
+  .module-drawing{max-height:275px;margin:0 auto 8px}
+  .scene-kicker{font-size:8px}
+  .scene-caption{font-size:10px}
+  .scene-caption span{font-size:10px;max-width:none}
+  .part-selector{justify-content:space-between;gap:0 10px;margin-top:12px}
+  .part-selector button{font-size:11px;gap:5px}
+  .scene-source{margin-top:0;font-size:8px}
+  .interior-shell h2,.interior-shell .workspace h1{font-size:30px}
+  .interior-shell .component-detail{min-height:0}
+  .interior-shell .section-top{margin-bottom:24px}
+  .interior-shell .provenance dl>div{grid-template-columns:1fr}
+  .interior-shell th,.interior-shell td{padding-right:10px;font-size:11px}
+  .interior-shell thead th{font-size:9px}
+}
+@media(max-width:370px){
+  .interior-shell{padding-inline:20px}
+  .module-drawing{max-height:235px}
+  .part-selector{gap:0 12px;justify-content:start}
+  .part-selector button{flex-basis:calc(50% - 12px);font-size:12px}
+  .interior-shell details dl>div{grid-template-columns:1fr;gap:3px}
+  .interior-shell h2,.interior-shell .workspace h1{font-size:28px}
+}
+@media(max-height:500px) and (min-width:701px){.interior-shell{padding-top:110px}.module-scene{position:relative;top:auto}}
+@media(forced-colors:active){
+  .interior-shell,.module-scene{background:Canvas;color:CanvasText}
+  .module-drawing path,.module-drawing circle,.interface-drawing path,.interface-drawing rect{fill:Canvas;stroke:CanvasText}
+  .module-drawing text,.interface-drawing text{fill:CanvasText}
+  .geometry.selected{stroke:Highlight;stroke-width:3}
+  .part-selector button[aria-pressed="true"]{outline:2px solid Highlight}
+}
