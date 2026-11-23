@@ -1,0 +1,37 @@
+{
+  "checked_at_utc": "2026-11-23T11:06:41.808075+00:00",
+  "repository": "https://github.com/manfromnowhere143/cartan",
+  "branch": "main",
+  "published_commit": "ccd8c47044b4a41f9479a2370cbeead14b227b0d",
+  "git_remote_matches": true,
+  "github_API_matches": true,
+  "verified_files": [
+    {
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/manfromnowhere143/cartan/ccd8c47044b4a41f9479a2370cbeead14b227b0d/README.md",
+      "sha256": "02ea94b12da6ddbaa47bf7b1752873e71cd0d44cd87e3a882416fbc2a075edaf",
+      "matches_committed_bytes": true
+    },
+    {
+      "path": "frontend/evidence-aperture.mjs",
+      "url": "https://raw.githubusercontent.com/manfromnowhere143/cartan/ccd8c47044b4a41f9479a2370cbeead14b227b0d/frontend/evidence-aperture.mjs",
+      "sha256": "9ce75a70121ed3f53952b4705b8c17522717ccf553a6feb5048e141dc1cc4510",
+      "matches_committed_bytes": true
+    },
+    {
+      "path": "frontend/evidence-aperture.css",
+      "url": "https://raw.githubusercontent.com/manfromnowhere143/cartan/ccd8c47044b4a41f9479a2370cbeead14b227b0d/frontend/evidence-aperture.css",
+      "sha256": "fec76913dc47159906654e9dcb1566455fd13eab7cb0d3184dc1e72bfbb534c2",
+      "matches_committed_bytes": true
+    }
+  ],
+  "source_and_validation": "verification.json",
+  "scope": "Normal repository push and readback only. No website deployment; sibling worktrees remain untouched.",
+  "transport": {
+    "initial_push": "HTTP 408; remote remained at 382f3a0",
+    "buffered_retry": "Stopped after the transfer stalled; no history rewritten",
+    "successful_command": "/usr/bin/git -c http.version=HTTP/1.1 -c http.postBuffer=16777216 push origin HEAD:main",
+    "client": "git version 2.39.3 (Apple Git-146)",
+    "global_configuration_changed": false
+  }
+}

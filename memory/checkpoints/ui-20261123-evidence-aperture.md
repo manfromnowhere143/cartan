@@ -60,4 +60,9 @@ from this package. Compare subsequent sibling changes with `9c8d24d` before anot
 integration. At the final preservation check, the owner had begun additional
 share/crawl metadata assertions in `frontend/release/verify_package.py`. Those
 later changes remain pending in its checkout and are outside this UI snapshot.
-Repository publication is recorded after actual remote readback.
+Checked implementation `ccd8c47044b4a41f9479a2370cbeead14b227b0d` is published
+to GitHub main. Git refs and the GitHub API agree; downloaded README, aperture
+module and CSS exactly match the commit. The [publication receipt](../../frontend/qa/aperture-2026-11-23/publication.json)
+records an initial HTTP 408 and the successful system-Git retry using temporary
+command options; no global configuration changed. A following documentation commit
+retains this receipt. The 4190 source preview was stopped; 4191 remains available.

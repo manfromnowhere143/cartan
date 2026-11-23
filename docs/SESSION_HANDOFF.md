@@ -59,6 +59,10 @@ followed by integrated review fixes. See the
 The source and package now contain the white default/dark preference, a verified
 record inspector and compact-footer correction. Checks pass: 52 core, 53 DOM,
 493 package assertions and 12 grouped actual Chrome checks under the package CSP.
+The checked combined implementation is published as `ccd8c47`;
+[remote readback](../frontend/qa/aperture-2026-11-23/publication.json) confirms GitHub
+main and exact README/module/style bytes. A following documentation commit retains
+the receipt. Later owner share/crawl assertions remain pending outside this snapshot.
 The owner UI checkout remains untouched. No new adapter/model, scientific result,
 media generation, setup change or website deployment. Current local review is
 http://127.0.0.1:4191/laboratory/ → Open the record while the preview runs.

@@ -80,3 +80,8 @@ test process; neither is claimed as a physical-device or assistive-technology ru
 
 No physical mechanism, action recommendation, research result, launch policy,
 global setting, external service, generated media or site deployment changed.
+
+Repository publication: checked implementation `ccd8c47` is on GitHub main.
+The [readback](aperture-2026-11-23/publication.json) binds the remote ref and three
+downloaded source files to that commit. This is source publication, not a site
+release; the local preview remains the review destination.
