@@ -1,0 +1,130 @@
+[
+  {
+    "name": "frontend/assets/cartan-logo.png unchanged from baseline",
+    "passed": true
+  },
+  {
+    "name": "frontend/assets/cartan/CARTAN-Built-to-Change-Revised-Silent-21s-1080p.mp4 unchanged from baseline",
+    "passed": true
+  },
+  {
+    "name": "frontend/assets/cartan/cartan-hero-desktop-720p.mp4 unchanged from baseline",
+    "passed": true
+  },
+  {
+    "name": "frontend/assets/cartan/cartan-hero-mobile-540p.mp4 unchanged from baseline",
+    "passed": true
+  },
+  {
+    "name": "frontend/assets/cartan/cartan-hero-opening-540p.webp unchanged from baseline",
+    "passed": true
+  },
+  {
+    "name": "frontend/assets/cartan/cartan-hero-opening-720p.webp unchanged from baseline",
+    "passed": true
+  },
+  {
+    "name": "frontend/assets/cartan/cartan-hero-poster-mobile.jpg unchanged from baseline",
+    "passed": true
+  },
+  {
+    "name": "frontend/assets/cartan/cartan-hero-poster.jpg unchanged from baseline",
+    "passed": true
+  },
+  {
+    "name": "frontend/assets/film-review.mp4 unchanged from baseline",
+    "passed": true
+  },
+  {
+    "name": "frontend/assets/hero-loop.mp4 unchanged from baseline",
+    "passed": true
+  },
+  {
+    "name": "frontend/assets/hero.jpg unchanged from baseline",
+    "passed": true
+  },
+  {
+    "name": "frontend/assets/icons/favicon.svg unchanged from baseline",
+    "passed": true
+  },
+  {
+    "name": "frontend/assets/module.jpg unchanged from baseline",
+    "passed": true
+  },
+  {
+    "name": "frontend/assets/scenes/assembly.png unchanged from baseline",
+    "passed": true
+  },
+  {
+    "name": "frontend/assets/vision.jpg unchanged from baseline",
+    "passed": true
+  },
+  {
+    "name": "frontend/vendor/cartan/v1/README.md unchanged from baseline",
+    "passed": true
+  },
+  {
+    "name": "frontend/vendor/cartan/v1/SHA256SUMS.json unchanged from baseline",
+    "passed": true
+  },
+  {
+    "name": "frontend/vendor/cartan/v1/fixture.json unchanged from baseline",
+    "passed": true
+  },
+  {
+    "name": "frontend/vendor/cartan/v1/schema.json unchanged from baseline",
+    "passed": true
+  },
+  {
+    "name": "frontend/vendor/cartan/v1/validate.py unchanged from baseline",
+    "passed": true
+  },
+  {
+    "name": "frontend/hero-controller.mjs unchanged from baseline",
+    "passed": true
+  },
+  {
+    "name": "frontend/contract-adapter.mjs unchanged from baseline",
+    "passed": true
+  },
+  {
+    "name": "frontend/data/contract-pin.json unchanged from baseline",
+    "passed": true
+  },
+  {
+    "name": "Approved hero markup unchanged",
+    "passed": true
+  },
+  {
+    "name": "Setup-owned pending file preserved",
+    "passed": true
+  },
+  {
+    "name": "app.mjs unchanged from UI 008",
+    "passed": true
+  },
+  {
+    "name": "style.css unchanged from UI 008",
+    "passed": true
+  },
+  {
+    "name": "theme.css unchanged from UI 008",
+    "passed": true
+  },
+  {
+    "name": "theme.mjs unchanged from UI 008",
+    "passed": true
+  },
+  {
+    "name": "scene-geometry.mjs unchanged from UI 008",
+    "passed": true
+  },
+  {
+    "name": "webgl-scene.mjs unchanged from UI 008",
+    "passed": true
+  },
+  {
+    "name": "UI 009 HTML change is only shared focus surface marker",
+    "passed": true
+  }
+]

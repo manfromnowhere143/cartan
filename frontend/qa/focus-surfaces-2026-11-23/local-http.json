@@ -1,0 +1,128 @@
+[
+  {
+    "path": "/",
+    "status": 200,
+    "bytes": 43842,
+    "sha256": "658c093afd543a08d87b5b33a0826e2c4a310908eebd64f7f846b1d2b6a81a1a"
+  },
+  {
+    "path": "/research/",
+    "status": 200,
+    "bytes": 43699,
+    "sha256": "12bf11dd98c3c96bbbae09c5231449e26596cc00af9e4f83d53f4e535957e739"
+  },
+  {
+    "path": "/laboratory/",
+    "status": 200,
+    "bytes": 43819,
+    "sha256": "62c5bda4607a7d3c06346b617a0f8f1dcf5dd9bfef2d5e1ada58f55f74b3f230"
+  },
+  {
+    "path": "/interruption/",
+    "status": 200,
+    "bytes": 43918,
+    "sha256": "ff76eab4e9a3b145a4f4e491bec07bacb34a5b1cc7b27cec3c3fb1bfe3ae90f9"
+  },
+  {
+    "path": "/evidence/",
+    "status": 200,
+    "bytes": 43799,
+    "sha256": "f3baafd4d83cee65d551880489ec987b991132457b9b5033cbe5561437a1869d"
+  },
+  {
+    "path": "/comparison/",
+    "status": 200,
+    "bytes": 43780,
+    "sha256": "0e6c8776f199379388d2d6b218c4755c2058dcf6847caac60d69e65e556152b3"
+  },
+  {
+    "path": "/sources/",
+    "status": 200,
+    "bytes": 43802,
+    "sha256": "407799af8449ef18bd4baaf51cd4139de948f1bba734cb271ba0634e4f5e9a6a"
+  },
+  {
+    "path": "/vision/",
+    "status": 200,
+    "bytes": 43827,
+    "sha256": "004f360a8876780967a3d1176e2f3918bc7f4571fd230a2fd1e9b288aa6a27cf"
+  },
+  {
+    "path": "/laboratory/?camera=interface&layout=separated",
+    "status": 200,
+    "bytes": 43819,
+    "sha256": "62c5bda4607a7d3c06346b617a0f8f1dcf5dd9bfef2d5e1ada58f55f74b3f230"
+  },
+  {
+    "path": "/theme.mjs",
+    "status": 200,
+    "bytes": 1723,
+    "sha256": "a922938ca497323ff0ad95435777acfc12564bb8f5b49b5c015221db80dae4f9"
+  },
+  {
+    "path": "/theme.css",
+    "status": 200,
+    "bytes": 3869,
+    "sha256": "4841794be68cfdae149ddf671179131ec9c15337f24f23fc363e35c6ef0c6ca0"
+  },
+  {
+    "path": "/focus-presentation.mjs",
+    "status": 200,
+    "bytes": 3946,
+    "sha256": "3e36b95d1d3900d1b2c9ed09ddd6c4e57c8e40f0cdb66d0d9a162f46122f86a1"
+  },
+  {
+    "path": "/spatial-scene.mjs",
+    "status": 200,
+    "bytes": 7526,
+    "sha256": "42f93715d4594a808738ed48c0c5e65f6e31d8bdc7839ad0fa5dab1b24d552b5"
+  },
+  {
+    "path": "/interior.css",
+    "status": 200,
+    "bytes": 15553,
+    "sha256": "fd5aeae4735235143e94a8ec070d790b86e6f93968ca69da8b80823acb0f3501"
+  },
+  {
+    "path": "/qa/interior-review.html",
+    "status": 200,
+    "bytes": 1906,
+    "sha256": "5f37834c17c43c8778b24f0c630a115a72569454be39792af6e71841c5b1f2c8"
+  },
+  {
+    "path": "/qa/profile",
+    "status": 200,
+    "bytes": 163,
+    "sha256": "8ac50da8c32919babfb41162cf2fe63bd689a78a09f75c0b17d5121b4610d956"
+  },
+  {
+    "path": "/does-not-exist",
+    "status": 404,
+    "bytes": 948,
+    "sha256": "acd60d3c4f541106394740f926eacf5249541ef164b275c688fc689b94fdd515"
+  },
+  {
+    "path": "/AGENTS.md",
+    "status": 404,
+    "bytes": 948,
+    "sha256": "acd60d3c4f541106394740f926eacf5249541ef164b275c688fc689b94fdd515"
+  },
+  {
+    "path": "/config/environment.json",
+    "status": 404,
+    "bytes": 948,
+    "sha256": "acd60d3c4f541106394740f926eacf5249541ef164b275c688fc689b94fdd515"
+  },
+  {
+    "path": "/qa/REVIEW-THEME-2026-11-23.md",
+    "status": 404,
+    "bytes": 948,
+    "sha256": "acd60d3c4f541106394740f926eacf5249541ef164b275c688fc689b94fdd515"
+  },
+  {
+    "path": "/assets/cartan/cartan-hero-mobile-540p.mp4",
+    "status": 206,
+    "bytes": 1024,
+    "sha256": "8435c9bf3fd396dad4cd2d47bd186492aa32b53849f92bbf7883354ab32f5eb2"
+  }
+]

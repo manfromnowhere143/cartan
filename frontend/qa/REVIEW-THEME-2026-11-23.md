@@ -1,5 +1,9 @@
 # White workspace and legibility — 23 November 2026
 
+Successor: [UI 009 focus correction](REVIEW-FOCUS-SURFACES-2026-11-23.md) now serves
+the combined candidate on port 4182. The package and results below retain the
+earlier UI 008 state; they are not overwritten by its successor.
+
 **Local candidate; browser/device acceptance remains open.** Daniel explicitly
 requested a white default, a minimal appearance toggle and no gray text after
 supplying a screenshot of UI 007. The screenshot is observed evidence of that
@@ -69,7 +73,7 @@ substituted for the unavailable browser.
 
 Package **29,508,412 → 29,522,415 bytes**, +14,003 (**0.0475%**).
 Home HTML **43,021 → 43,823 bytes** (+802). New theme CSS is 3,869 bytes; its
-controller 1,723; inline bootstrap 347. Scene code totals 18,333 bytes, retaining
+controller 1,723; inline bootstrap 347. Scene code totals 18,331 bytes, retaining
 484 triangles and the existing canvas/DPR/pixel bounds. No new image, model,
 texture, font, framework or scene request on initial hero entry was added.
 These are source/package counts, not transferred bytes or browser timing.

@@ -1,10 +1,13 @@
 # CARTAN visual laboratory
 
-Current local candidate (23 November, UI 008): a white workspace by default, a
+Current local candidate (23 November, UI 009): a white workspace by default, a
 saved light/dark switch, full-contrast text and clearer spatial selection. The
-cinematic opening retains its framing/media with white live text. Read
-[the current review](qa/REVIEW-THEME-2026-11-23.md) and
-[UI 008](docs/ADR-UI-008-light-and-legibility.md). Browser/device acceptance is open.
+scene now uses the shared pointer/keyboard focus policy, fixing its persistent
+pointer outline; interrupted camera drags cancel on capture loss. The cinematic
+opening retains its framing/media with white live text. Read
+[the current review](qa/REVIEW-FOCUS-SURFACES-2026-11-23.md),
+[UI 009](docs/ADR-UI-009-scene-focus.md) and
+[the appearance review](qa/REVIEW-THEME-2026-11-23.md). Browser/device acceptance is open.
 
 The interactive spatial module study
 anchors one workspace, with deliberate camera views, selectable relationships,
@@ -16,8 +19,9 @@ browser-accepted or GPU-accepted**. Read [the earlier spatial review](qa/REVIEW-
 [state/provenance map](docs/spatial-instrument-map.md).
 
 The retained baseline is `dcc8d8e`; the local candidate is served at
-http://127.0.0.1:4183/ while its owned preview process is running. The baseline
-is at http://127.0.0.1:4180/; earlier candidates remain at 4181 and 4182. Each offers
+http://127.0.0.1:4182/ while its owned preview process is running. This replaces
+the earlier spatial candidate at Daniel's existing URL. The baseline is at
+http://127.0.0.1:4180/; earlier candidates remain at 4181 and 4183. Each offers
 `/qa/interior-review.html`; this review
 harness is never in the public package. The current review lists exact test
 results and unavailable browser, phone, screen-reader and performance checks.
@@ -108,10 +112,14 @@ Current refinement: `docs/ADR-UI-004-stable-surface.md` and
 (historical hero/stability coverage; use the interior harness for this candidate).
 No browser results are implied merely by providing this harness.
 
-Current focus/media policy: `docs/ADR-UI-005-pointer-focus-and-responsive-motion.md`
+Focus/media policy: `docs/ADR-UI-005-pointer-focus-and-responsive-motion.md`
 and `qa/REVIEW-FOCUS-MOTION-2026-11-16.md`. These supersede earlier mobile-still
 and single-play instructions per Daniel's current request. `focus-presentation.mjs`
 tracks actual pointer/keyboard/assistive activation without removing native focus.
+UI 009 extends that shared policy to custom non-editing surfaces. Every new custom
+tab stop must opt into `data-focus-surface` and retain keyboard indication; text
+entry/native media stay outside this contract. Run `focus-surfaces-dom.test.mjs`
+with the other four DOM suites for this candidate.
 The optional isolated-DOM checks use an existing jsdom installation, for example:
 
 ```sh

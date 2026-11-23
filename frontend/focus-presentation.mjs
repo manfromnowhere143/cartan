@@ -1,6 +1,8 @@
 // Adapted from Daniel's retained Nisayon pointer-focus finding; see ADR UI 005.
 // Keep real focus and reading order. Only actual pointer focus loses its outline.
-const CONTROL='button,a[href],summary,.table-wrap,:is(h1,h2,h3,h4,h5,h6)[tabindex="-1"]';
+// Non-editing custom surfaces opt into the same policy as native controls.
+// Do not include every [tabindex]: text entry and native media keep UA focus.
+const CONTROL='button,a[href],summary,.table-wrap,[data-focus-surface],:is(h1,h2,h3,h4,h5,h6)[tabindex="-1"]';
 const MODIFIERS=new Set(['Shift','Control','Alt','Meta','CapsLock']);
 export function installFocusPresentation(document) {
   const Element=document.defaultView.Element,marked=new Set();
@@ -30,6 +32,7 @@ export function installFocusPresentation(document) {
   document.addEventListener('pointerup',pointerUp,true);
   document.addEventListener('pointercancel',clearActivation,true);
   document.addEventListener('contextmenu',clearActivation,true);
+  document.defaultView.addEventListener('blur',clearActivation);
   const legacy=!document.defaultView.PointerEvent;
   if(legacy){document.addEventListener('mousedown',pointer,true);document.addEventListener('mouseup',pointerUp,true);document.addEventListener('touchstart',pointer,{capture:true,passive:true});document.addEventListener('touchend',pointerUp,{capture:true,passive:true});document.addEventListener('touchcancel',clearActivation,true);}
   document.addEventListener('keydown',key,true);
@@ -41,6 +44,7 @@ export function installFocusPresentation(document) {
     document.removeEventListener('pointerup',pointerUp,true);
     document.removeEventListener('pointercancel',clearActivation,true);
     document.removeEventListener('contextmenu',clearActivation,true);
+    document.defaultView.removeEventListener('blur',clearActivation);
     if(legacy){document.removeEventListener('mousedown',pointer,true);document.removeEventListener('mouseup',pointerUp,true);document.removeEventListener('touchstart',pointer,true);document.removeEventListener('touchend',pointerUp,true);document.removeEventListener('touchcancel',clearActivation,true);}
     document.removeEventListener('keydown',key,true);
     document.removeEventListener('click',click,true);
