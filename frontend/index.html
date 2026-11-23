@@ -9,6 +9,7 @@
   <link rel="icon" href="data:,">
   <link rel="stylesheet" href="/style.css">
   <link rel="stylesheet" href="/interior.css">
+  <link rel="stylesheet" href="/evidence-aperture.css">
   <link rel="preload" as="image" href="/assets/cartan/cartan-hero-opening-720p.webp" media="(min-width: 768px)" fetchpriority="high">
   <link rel="preload" as="image" href="/assets/cartan/cartan-hero-opening-540p.webp" media="(max-width: 767px)" fetchpriority="high">
   <script type="module" src="/app.mjs"></script>
@@ -49,6 +50,7 @@
     <button data-component="isolation" aria-pressed="false"><span>03</span> Isolation</button>
     <button data-component="support" aria-pressed="false"><span>04</span> Support</button>
   </nav>
+  <button type="button" id="open-record" class="record-entry" aria-haspopup="dialog"><span><small>INSPECT / 01</small> Open the record</span><svg class="icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.35" aria-hidden="true" focusable="false"><path d="M5 19 19 5M7 5h12v12"/></svg></button><p id="record-entry-status" class="sr-only" role="status"></p>
   <p id="spatial-status" class="sr-only" role="status"></p><p class="scene-source"><a href="/vendor/cartan/v1/fixture.json">Contract v1 / relationships and missing geometry</a></p>
 </aside><button id="inspector-toggle" class="inspector-toggle" aria-expanded="true">Hide notes</button><nav class="instrument-rail" aria-label="Inspection sequence"><a id="rail-object" href="/laboratory/"><span>01</span> Object</a><a id="rail-state" href="/interruption/"><span>02</span> State</a><a id="rail-evidence" href="/evidence/"><span>03</span> Evidence</a><p>READ-ONLY RESEARCH / NO PHYSICAL CONTROL</p></nav>
 <section class="surface question workspace" data-view="question" id="question" aria-labelledby="question-title">

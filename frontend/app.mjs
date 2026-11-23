@@ -128,6 +128,7 @@ async function loadFixture() {
       const row=document.createElement('div'), term=document.createElement('dt'), detail=document.createElement('dd');
       term.textContent=name; detail.textContent=value; row.append(term,detail); $('#fixture-details').append(row);
     }
+    return projection;
   } catch {
     $('#fixture-state').textContent = 'Engineering fixture unavailable, incompatible or changed. The static explanation remains a UI illustration; no record was loaded.';
     $('#fixture-banner').textContent='MISSING EVIDENCE / CONTRACT UNAVAILABLE';
@@ -242,6 +243,28 @@ function updateSpatial(animate=false){
 }
 window.addEventListener('pagehide',()=>spatialScene?.suspend());
 window.addEventListener('pageshow',()=>updateSpatial());
+// A temporary verified record inspection; URL/camera state remains owned here.
+let aperture=null,apertureLoad=null,apertureIntent=0,aperturePending=false;
+function cancelAperture(){apertureIntent++;aperturePending=false;$('#open-record').removeAttribute('aria-busy');aperture?.close(false);}
+$('#open-record').addEventListener('click',async event=>{
+  const trigger=event.currentTarget,request=++apertureIntent;aperturePending=true;trigger.setAttribute('aria-busy','true');
+  $('#record-entry-status').textContent='Opening the record';
+  try{
+    apertureLoad??=import('./evidence-aperture.mjs').then(({createEvidenceAperture})=>{
+      aperture=createEvidenceAperture({load:ensureFixture,onActive:active=>{if(active)spatialScene?.suspend();else if(!document.hidden)updateSpatial();}});return aperture;
+    });
+    const reader=await apertureLoad;
+    if(request!==apertureIntent||document.hidden||['home','vision'].includes(currentState.view))return;
+    aperturePending=false;trigger.removeAttribute('aria-busy');$('#record-entry-status').textContent='';
+    void reader.open(trigger,components[currentState.part][0]);
+  }catch{
+    if(request!==apertureIntent)return;aperturePending=false;trigger.removeAttribute('aria-busy');apertureLoad=null;
+    $('#record-entry-status').textContent='The record inspector is unavailable. The Evidence view remains available.';
+  }
+});
+window.addEventListener('pagehide',cancelAperture);
+document.addEventListener('visibilitychange',()=>{if(document.hidden&&aperturePending)cancelAperture();});
+
 // Stable ids let history restore the actual control rather than a guessed heading.
 for(const [index,node] of [...document.querySelectorAll('a,button,summary')].entries())if(!node.id)node.id='control-'+index;
 
@@ -249,6 +272,7 @@ function rememberEntry() {
   history.replaceState({...history.state,cartanFocus:document.activeElement?.id,cartanScroll:window.scrollY,cartanReading:surfaces.get(currentState.view)?.scrollTop??0},'',location.href);
 }
 function showState(state,{focus=true,focusTarget=null,restore=null}={}) {
+  cancelAperture();
   const previous=currentState;
   currentState=state;
   const view=state.view;
@@ -324,7 +348,9 @@ window.addEventListener('hashchange',()=>{
   history.replaceState({},'',workspaceURL(state));showState(state);
 });
 document.addEventListener('keydown',event=>{
-  if(event.defaultPrevented||event.key!=='Escape'||dialog.open||currentState.view==='home')return;
+  if(event.defaultPrevented||event.key!=='Escape')return;
+  if(aperturePending){event.preventDefault();cancelAperture();return;}
+  if(document.querySelector('dialog[open]')||currentState.view==='home')return;
   if(event.target.closest?.('input,textarea,select,[contenteditable="true"]'))return;
   event.preventDefault();
   const targets={interruption:'inspect-transfer',evidence:'inspect-evidence',comparison:'evidence-title',sources:'question-title'};
