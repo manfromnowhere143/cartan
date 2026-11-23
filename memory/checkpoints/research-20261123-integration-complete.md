@@ -49,3 +49,21 @@ See [handoff](../../docs/SESSION_HANDOFF.md),
 [README review](../../docs/qa/readme-20261123/REVIEW.md).
 Scratch outputs are `/private/tmp/cartan-integration-20261123-oyam36cb/`.
 The following publication entry is added only after remote verification.
+
+## Publication verified
+
+Merge `b879dbc45a7fd463e34a5e3e565ae4a8b90d1951` reached GitHub main by normal
+fast-forward push. At 10:32:35 UTC the commit API and exact README bytes matched;
+all six listed research/setup/UI ancestors are included. See
+[remote readback](../../docs/qa/integration-20261123/ui-publication-readback.json).
+This successor documentation commit records the observation; it changes no
+research or UI runtime. The owned integration preview on port 4185 was stopped;
+UI-owned preview processes were not touched. The research checkout was clean
+after the merge and is to be left clean after this continuity commit.
+
+Start the next research task in the existing research lane at its verified HEAD.
+The canonical setup and original UI worktrees retain their own historical branch
+positions and pending files; do not mistake that for missing integrated source,
+or reset them to synchronize appearances. Compare new edits to `c5657e7` before
+another UI integration. New model launches still require setup's compatibility
+review described above.

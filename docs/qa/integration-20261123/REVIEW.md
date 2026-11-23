@@ -47,6 +47,10 @@ integration is authorized; this block performs no website deployment. Setup's
 Codex version mismatch below is still unresolved and visible in README/handoff.
 The [final checkpoint](../../../memory/checkpoints/research-20261123-integration-complete.md)
 and [final checks](final-checks.json) identify the continuation state.
+The merged source reached main as `b879dbc` and passed
+[exact remote readback](ui-publication-readback.json) at 10:32 UTC. Source hygiene
+passes excluding the two raw `implementation.patch` receipts, whose blank diff
+context lines are intentionally preserved rather than reformatted.
 
 ## Earlier integration stage: history and preservation
 

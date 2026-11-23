@@ -1,0 +1,17 @@
+{
+  "verified_at_utc": "2026-11-23T10:32:35.855134+00:00",
+  "remote": "https://github.com/manfromnowhere143/cartan.git",
+  "branch": "main",
+  "commit": "b879dbc45a7fd463e34a5e3e565ae4a8b90d1951",
+  "readme_sha256": "d482c7c5b9701f713451f61ebe5da843f650dc1d5083207a049006f4aee278f9",
+  "readme_bytes_match": true,
+  "included_ancestors": [
+    "41ff839",
+    "940d8f1",
+    "70456b0",
+    "9a4a2ee",
+    "dcc8d8e",
+    "c5657e7"
+  ],
+  "scope": "GitHub commit API and exact README bytes; no website deployment"
+}

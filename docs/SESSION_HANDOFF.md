@@ -15,8 +15,9 @@ history, not permission to overwrite another lane's pending work.
 The research branch is `research/architecture`. Integrated history contains
 research `41ff839`, earlier main `940d8f1`, setup `70456b0` (merge `75509aa`),
 README/research update `9a4a2ee` and completed UI snapshot `c5657e7`.
-`9a4a2ee` was pushed and read back before the final UI integration. The latest
-integration checkpoint records the subsequent publication boundary.
+The UI merge is `b879dbc`; it was pushed normally to main and read back with
+the exact committed README on 23 November at 10:32 UTC. A subsequent documentation
+commit retains that receipt and this continuation update.
 The GitHub publication target remains
 `https://github.com/manfromnowhere143/cartan.git`, branch `main`. Verify live refs
 before any authorized push. Resolve current HEAD and `origin/main`; do not infer
