@@ -48,6 +48,22 @@ procedures remain outside the current case. Retention is not release permission.
 
 ## Presentation and integration status
 
+Latest presentation successor: UI 010's evidence aperture, following Daniel's
+explicit request for a distinct CARTAN reveal informed by Reiyah's receipt design.
+Base `382f3a0`, initial aperture `13b7965`, completed UI 008 appearance snapshot
+`e88fb83` (parent `c5657e7`), followed by integrated review fixes. See the
+[decision](../frontend/docs/ADR-UI-010-evidence-aperture.md),
+[review](../frontend/qa/REVIEW-APERTURE-2026-11-23.md) and
+[checkpoint](../memory/checkpoints/ui-20261123-evidence-aperture.md).
+The source and package now contain the white default/dark preference, a verified
+record inspector and compact-footer correction. Checks pass: 52 core, 49 DOM,
+485 package assertions and 11 grouped actual Chrome checks under the package CSP.
+The owner UI checkout remains untouched. No new adapter/model, scientific result,
+media generation, setup change or website deployment. Current local review is
+http://127.0.0.1:4191/laboratory/ → Open the record while the preview runs.
+The paragraphs below preserve the earlier integrated baseline and its acceptance;
+this successor resolves the observed compact-footer overlap for tested layouts.
+
 The root [README](../README.md) now includes current results, the evidence gate,
 reproduction and four accessible Mermaid diagrams. Current render/source review
 is under [README QA](qa/readme-20261123/REVIEW.md); integration checks are under

@@ -26,6 +26,13 @@ def verify(package):
   check(view+' graph identity',json.loads(graph)['@graph'][-1]['url']==url)
   digest="sha256-"+base64.b64encode(hashlib.sha256(graph.encode()).digest()).decode()
   check(view+' CSP covers structured data',digest in config['routes'][0]['headers']['Content-Security-Policy'])
+  theme=re.search(r'<script id="theme-init">(.*?)</script>',raw,re.S)[1]
+  theme_hash='sha256-'+base64.b64encode(hashlib.sha256(theme.encode()).digest()).decode()
+  check(view+' CSP covers theme without unsafe-inline',theme_hash in config['routes'][0]['headers']['Content-Security-Policy'] and 'unsafe-inline' not in config['routes'][0]['headers']['Content-Security-Policy'])
+  check(view+' light default before scripts',any(t=='html' and a.get('data-theme')=='light' for t,a in d.tags))
+  check(view+' stable native appearance switch',any(t=='button' and a.get('id')=='theme-toggle' and a.get('role')=='switch' and a.get('aria-label')=='Dark appearance' and a.get('aria-checked')=='false' and 'hidden' in a for t,a in d.tags))
+  check(view+' theme resolves before styles',raw.index('id="theme-init"')<raw.index('rel="stylesheet"'))
+  check(view+' one theme-color metadata',sum(t=='meta' and a.get('name')=='theme-color' for t,a in d.tags)==1)
   check(view+' no filesystem URLs','/Users/' not in raw and 'file://' not in raw)
   check(view+' deferred hero source',all('src' not in a and 'loop' in a and 'playsinline' in a and 'muted' in a for t,a in d.tags if t=='video' and a.get('id')=='hero-video'))
   for t,a in d.tags:
@@ -40,6 +47,7 @@ def verify(package):
  check('robots permits render resources','Allow: /' in (static/'robots.txt').read_text())
  check('no fabricated freshness',not sitemap.findall('.//{*}lastmod'))
  check('404 noindex','noindex' in (static/'404.html').read_text() and config['routes'][-1]['status']==404)
+ check('404 shares default and saved appearance','data-theme="light"' in (static/'404.html').read_text() and theme in (static/'404.html').read_text() and '/theme.css' in (static/'404.html').read_text())
  check('preview noindex',any(r.get('missing') and r.get('headers',{}).get('X-Robots-Tag')=='noindex, nofollow' for r in config['routes']))
  check('no private/obsolete artifacts',not any(p in '/'.join(receipt['files']) for p in ['qa/','docs/','.env','memory/','hero-loop','film-review.mp4','validate.py']))
  for rel,value in receipt['files'].items():check('sealed bytes '+rel,hashlib.sha256((static/rel).read_bytes()).hexdigest()==value['sha256'])

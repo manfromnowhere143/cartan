@@ -412,8 +412,13 @@ analytical studies require a reviewed adapter. The integrated
 [spatial instrument](frontend/docs/ADR-UI-007-spatial-instrument.md) keeps the
 prepared module, selected relationship and evidence context in one workspace.
 Optional WebGL2 and a drawing fallback share the same unverified geometry.
-The [integration review](docs/qa/integration-20261123/REVIEW.md) records 45 core
-tests, 31 DOM tests, 424 package assertions and a bounded Chrome browser check.
+The [evidence aperture](frontend/docs/ADR-UI-010-evidence-aperture.md) opens a
+verified synthetic report into its timing, authored possibilities and exact source
+identity. The white-default workspace and saved dark appearance retain the same
+selection and camera. Its [review](frontend/qa/REVIEW-APERTURE-2026-11-23.md)
+records 52 core tests, 49 DOM tests, 485 package assertions and actual Chrome
+interaction/rendering checks. The [earlier integration review](docs/qa/integration-20261123/REVIEW.md)
+preserves the preceding candidate's results.
 Device, accessibility and performance acceptance remain open; repository
 integration does not deploy the site. Research and UI use separate
 worktrees, and setup owns launch configuration. The [handoff](docs/SESSION_HANDOFF.md)

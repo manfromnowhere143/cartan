@@ -1,0 +1,10 @@
+{
+  "frontend/index.html": "c99f5c7e0ab888b6eb94371d6378cacbaea99505fb5351857b5a243e38854549",
+  "frontend/style.css": "4d17809589fe116a88b830b39fc6bd7c3e806b9538f5a13ae3a0326ab00ecf82",
+  "frontend/interior.css": "ce36b7ea952ce80eaaa0ee02a573a7487d8cec14bece97194d1c07d5db28058d",
+  "frontend/app.mjs": "17c85988cf080b6019298b9d9818d627acb756f82d084ae0786de2a52b27f20f",
+  "frontend/scene-geometry.mjs": "737e062167a21f55760376f11d65db89ad3e4825fa484448fc669995a44b2201",
+  "frontend/spatial-scene.mjs": "099038151d93c22ac0fe1ef96e43fa6f9398924f08667541170d4d361002a34a",
+  "frontend/webgl-scene.mjs": "0cdf065288527b0d76d61191048ef6487e9b02c6fc09c622ae084c08b8f39698",
+  "config/environment.json": "f14595ffd2f9fb435094f780dbbb9b2625c6ad47eface83ce3d838f70a6d647b"
+}

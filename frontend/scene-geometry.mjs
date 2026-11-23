@@ -1,7 +1,7 @@
-/** CARTAN spatial-schematic/1.0.0. Graphic units only. No qualified CAD.
+/** CARTAN spatial-schematic/1.1.0. Graphic units only. No qualified CAD.
  * Mesh positions explain relationships. Separation is a diagram layout, never
  * a physical trajectory. This module has no fixture, sensor or command access. */
-export const GEOMETRY_VERSION='spatial-schematic/1.0.0';
+export const GEOMETRY_VERSION='spatial-schematic/1.1.0';
 export const PART_NAMES={module:'Module envelope',retention:'Host retention',isolation:'Electrical boundary',support:'Transfer support'};
 const cross=(a,b)=>[a[1]*b[2]-a[2]*b[1],a[2]*b[0]-a[0]*b[2],a[0]*b[1]-a[1]*b[0]];
 const sub=(a,b)=>a.map((v,i)=>v-b[i]);
@@ -86,16 +86,20 @@ export function hitPart(mesh,camera,width,height,x,y){
   }
   return null;
 }
-export function svgScene(mesh,camera,width=960,height=720,part='module'){
-  const light=unit([-.5,.85,1]),rim=unit([1,.2,-.4]);
+export function svgScene(mesh,camera,width=960,height=720,part='module',theme='light'){
+  const light=unit([-.5,.85,1]),rim=unit([1,.2,-.4]),half=unit([light[0],light[1],light[2]+1]);
+  const lightTheme=theme!=='dark';
   const polygons=projectedFaces(mesh,camera,width,height).map(face=>{
     const n=rotate(face.normal,camera),diff=Math.max(0,dot(n,light)),edge=Math.max(0,dot(n,rim));
-    const v=clamp(face.tone*(.45+diff*.8)+edge*.1+(part===face.part ? .09 : 0),.06,.85);
-    const fill='#'+[v*.88,v*.94,v].map(x=>Math.round(x*255).toString(16).padStart(2,'0')).join('');
+    const spec=Math.pow(Math.max(0,dot(n,half)),55);
+    const selected=part===face.part;
+    const v=clamp(selected?(lightTheme ? .10+.16*diff+.06*spec:.72+.18*diff+.08*spec):
+      lightTheme ? .33+.22*diff+face.tone*.10+.04*edge+.04*spec:face.tone*(.55+.75*diff)+.08*edge+.15*spec,.06,.98);
+    const fill='#'+[v*.93,v*.97,v].map(x=>Math.round(x*255).toString(16).padStart(2,'0')).join('');
     const points=face.projected.map(p=>`${p.x.toFixed(1)},${p.y.toFixed(1)}`).join(' ');
-    return `<polygon data-geometry="${face.part}"${part===face.part?' class="selected" stroke="#9cabb6"':''} points="${points}" fill="${fill}"/>`;
+    return `<polygon data-geometry="${face.part}"${selected?` class="selected" stroke="${lightTheme?'#101419':'#fff'}"`:''} points="${points}" fill="${fill}"/>`;
   }).join('');
-  return `<g stroke="#414c55" stroke-width=".55" stroke-linejoin="round">${polygons}</g>`;
+  return `<g stroke="${lightTheme?'#48515a':'#8394a1'}" stroke-width=".55" stroke-linejoin="round">${polygons}</g>`;
 }
 export function triangleBuffer(mesh){
   const rows=[];const parts=Object.keys(PART_NAMES);

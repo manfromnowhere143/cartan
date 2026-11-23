@@ -1,4 +1,4 @@
-# UI 009 — the evidence aperture
+# UI 010 — the evidence aperture
 
 23 November 2026. Decision before implementation. Daniel explicitly asks this
 session to develop CARTAN's interaction and visual design, learning from Reiyah's
@@ -97,3 +97,12 @@ controls, keeps animating at rest or requires the renderer to understand the rec
 Physical phone, Safari, AT and sustained-use performance remain separately
 unmeasured until actually exercised. The implementation/review checkpoint will
 record actual source revision, commands, images, failures and remaining acceptance.
+
+Implementation follow-up: UI 008 completed during this block and was preserved
+as `e88fb83`, parent `c5657e7`, without editing its original checkout. It is now
+integrated with the aperture. The final browser review and limitations are in
+[REVIEW-APERTURE-2026-11-23](../qa/REVIEW-APERTURE-2026-11-23.md).
+
+Decision identity: initially numbered UI 009 in `13b7965`; renumbered UI 010
+when the parallel lane completed its own UI 009 scene-focus decision. The earlier
+pre-implementation decision remains in Git; filenames and references are distinct.

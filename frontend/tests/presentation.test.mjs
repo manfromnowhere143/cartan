@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 const read=p=>readFileSync(new URL('../'+p,import.meta.url),'utf8');
-const css=read('style.css')+read('interior.css'),app=read('app.mjs'),html=read('index.html');
+const css=read('style.css')+read('interior.css')+read('theme.css'),app=read('app.mjs'),html=read('index.html');
 // Parse nested CSS blocks so a hover rule outside a capability query fails.
 function rules(text,parents=[]){
   text=text.replace(/\/\*[\s\S]*?\*\//g,'');const out=[];let start=0;

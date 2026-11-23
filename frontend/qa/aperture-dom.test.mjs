@@ -41,3 +41,13 @@ test('history navigation dismisses the modal instead of stranding an inert page'
   const f=await fixture(),dialogPromise=(async()=>{f.click(f.d.querySelector('.primary'));return open(f);})();
   const dialog=await dialogPromise;f.w.history.back();await wait();assert.equal(dialog.open,false);assert.equal(f.d.documentElement.dataset.view,'home');await f.close();
 });
+test('Tab wraps the visible controls in both directions',async()=>{
+  const f=await fixture({url:'/laboratory/'}),dialog=await open(f),first=dialog.querySelector('.aperture-close'),last=dialog.querySelector('[data-reading="source"]');
+  last.focus();last.dispatchEvent(new f.w.KeyboardEvent('keydown',{key:'Tab',bubbles:true,cancelable:true}));assert.equal(f.d.activeElement,first);
+  first.dispatchEvent(new f.w.KeyboardEvent('keydown',{key:'Tab',shiftKey:true,bubbles:true,cancelable:true}));assert.equal(f.d.activeElement,last);await f.close();
+});
+test('Escape while the lazy code loads cancels the opening intent',async()=>{
+  const f=await fixture({url:'/laboratory/'}),route=f.w.location.href;
+  f.click(f.d.querySelector('#open-record'));f.d.dispatchEvent(new f.w.KeyboardEvent('keydown',{key:'Escape',bubbles:true,cancelable:true}));await wait();
+  assert.ok(!f.d.querySelector('#evidence-aperture')?.open);assert.equal(f.w.location.href,route);assert.equal(f.d.querySelector('#record-entry-status').textContent,'');assert.equal(f.requests.length,0);await f.close();
+});

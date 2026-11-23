@@ -5,6 +5,7 @@ import {sceneMesh,cameraFor,svgScene,hitPart,clamp} from './scene-geometry.mjs';
 export function mountSpatialScene({root,commit,window:w=window,loadRenderer=()=>import('./webgl-scene.mjs')}){
   const d=root.ownerDocument,viewport=root.querySelector('#spatial-viewport'),svg=root.querySelector('.module-drawing');
   viewport.tabIndex=0;
+  viewport.setAttribute('aria-describedby','scene-function');
   viewport.setAttribute('aria-label','Spatial schematic. Drag horizontally to orbit, or use the view buttons. Arrow keys rotate; Home resets.');
   const canvas=d.createElement('canvas');canvas.className='spatial-canvas';canvas.hidden=true;
   canvas.setAttribute('role','img');canvas.setAttribute('aria-label','Interactive spatial schematic of the module, host and support. Geometry is unverified. The adjacent controls provide every action.');
@@ -16,16 +17,16 @@ export function mountSpatialScene({root,commit,window:w=window,loadRenderer=()=>
   const size=()=>({width:viewport.clientWidth||960,height:viewport.clientHeight||720});
   function draw(){
     if(!active||disposed||d.hidden)return;
-    const {width,height}=size();draws++;
+    const {width,height}=size(),theme=d.documentElement.dataset.theme==='dark'?'dark':'light';draws++;
     let success=false;
     if(renderer&&state.render!=='drawing'&&!forced.matches&&!w.navigator.connection?.saveData){
-      try{success=renderer.draw(mesh,camera,state.part,width,height,w.devicePixelRatio||1);}catch{success=false;}
+      try{success=renderer.draw(mesh,camera,state.part,width,height,w.devicePixelRatio||1,theme);}catch{success=false;}
     }
     if(success){canvas.hidden=false;svg.setAttribute('hidden','');root.dataset.renderer='spatial';}
     else {
       canvas.hidden=true;svg.removeAttribute('hidden');root.dataset.renderer='drawing';
       svg.setAttribute('viewBox',`0 0 ${width} ${height}`);
-      svg.innerHTML='<title id="module-drawing-title">Module, host and independent transfer support</title><desc id="module-drawing-desc">A spatial relationship schematic in arbitrary drawing units. No qualified geometry, physical state or operation is depicted.</desc>'+svgScene(mesh,camera,width,height,state.part);
+      svg.innerHTML='<title id="module-drawing-title">Module, host and independent transfer support</title><desc id="module-drawing-desc">A spatial relationship schematic in arbitrary drawing units. No qualified geometry, physical state or operation is depicted.</desc>'+svgScene(mesh,camera,width,height,state.part,theme);
     }
     root.dataset.draws=String(draws);
   }
@@ -92,6 +93,7 @@ export function mountSpatialScene({root,commit,window:w=window,loadRenderer=()=>
   });
   on(canvas,'webglcontextlost',e=>{e.preventDefault();contextLost=true;renderer?.dispose();renderer=null;cancel();camera=cameraFor(state);draw();});
   const refresh=()=>{if(active&&!disposed)update(state);};
+  on(d,'cartan:themechange',refresh);
   on(canvas,'webglcontextrestored',()=>{contextLost=false;unavailable=false;refresh();});
   on(reduced,'change',refresh);on(forced,'change',refresh);
   if(w.navigator.connection?.addEventListener)on(w.navigator.connection,'change',refresh);

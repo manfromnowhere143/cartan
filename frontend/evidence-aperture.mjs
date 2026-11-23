@@ -15,7 +15,7 @@ export function apertureModel({run,observation,belief}={}){
 
 const markup=`
 <div class="aperture-shell">
- <header class="aperture-header"><span class="aperture-wordmark">CARTAN</span><p>THE EVIDENCE APERTURE <span>/ 01</span></p><button type="button" class="aperture-close" aria-label="Close record">Close <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><path d="m6 6 12 12M6 18 18-12"/></svg></button></header>
+ <header class="aperture-header"><span class="aperture-wordmark">CARTAN</span><p>THE EVIDENCE APERTURE <span>/ 01</span></p><button type="button" class="aperture-close" aria-label="Close record">Close <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><path d="m6 6 12 12M6 18 18 6"/></svg></button></header>
  <div class="aperture-intro"><div><p class="aperture-kicker">INTERRUPTED EXCHANGE / SYNTHETIC STUDY</p><h2 id="aperture-title" tabindex="-1">Between a report<br>and reality.</h2></div><p class="aperture-context">Return context<br><span data-ap="context">Mechanical retention</span></p></div>
  <p class="aperture-status" role="status">Checking the exact fixture bytes…</p>
  <div class="aperture-content" hidden>
@@ -55,7 +55,7 @@ export function createEvidenceAperture({document:d=document,window:w=window,load
     const nodes=[q('.plane-left'),q('.plane-right')];
     for(const [i,node]of nodes.entries()){
       if(typeof node.animate!=='function')continue;
-      try{const a=node.animate([{transform:`translate(${i?'-28':'28'}px,${i?'-14':'14'}px)`},{transform:'translate(0,0)'}],{duration:520,easing:'cubic-bezier(.16,1,.3,1)'});effects.push(a);a.finished.then(()=>{effects=effects.filter(v=>v!==a);},()=>{});}catch{/* Final composition is already readable. */}
+      try{const a=node.animate([{transform:`translate(${i?'-60':'60'}px,${i?'-28':'28'}px)`},{transform:'translate(0,0)'}],{duration:520,easing:'cubic-bezier(.16,1,.3,1)'});effects.push(a);a.finished.then(()=>{effects=effects.filter(v=>v!==a);},()=>{});}catch{/* Final composition is already readable. */}
     }
   }
   function select(next,animate=true){
@@ -70,7 +70,15 @@ export function createEvidenceAperture({document:d=document,window:w=window,load
   }
   on(q('.aperture-close'),'click',()=>close());
   on(dialog,'cancel',e=>{e.preventDefault();close();});
-  on(dialog,'keydown',e=>{if(e.key==='Escape'){e.preventDefault();e.stopPropagation();close();}});
+  on(dialog,'keydown',e=>{
+    if(e.key==='Escape'){e.preventDefault();e.stopPropagation();close();return;}
+    if(e.key==='Tab'){
+      const controls=[...dialog.querySelectorAll('button,a[href],summary')].filter(n=>!n.closest('[hidden]')&&(!n.closest('details')||n.tagName==='SUMMARY'||n.closest('details').open));
+      const first=controls[0],last=controls.at(-1),active=d.activeElement;
+      if(e.shiftKey&&(active===first||active===q('#aperture-title'))){e.preventDefault();last.focus();}
+      else if(!e.shiftKey&&active===last){e.preventDefault();first.focus();}
+    }
+  });
   on(dialog,'close',()=>{if(!dialog.open){token++;settle();onActive(false);}});
   for(const b of dialog.querySelectorAll('[data-reading]'))on(b,'click',()=>select(b.dataset.reading));
   on(reduced,'change',settle);on(forced,'change',settle);on(w,'resize',settle);

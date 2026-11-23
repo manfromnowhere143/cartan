@@ -1,5 +1,9 @@
 # CARTAN memory
 
+Latest UI: [evidence aperture](checkpoints/ui-20261123-evidence-aperture.md) records
+the distinct record reveal, completed light/dark integration, real browser fixes,
+source-bound checks and local review link. It preserves the research conclusions.
+
 Latest continuation: [completed repository integration](checkpoints/research-20261123-integration-complete.md)
 records the merged research/setup/UI snapshot, published README/diagrams,
 browser checks and remaining setup/physical-evidence gates.
@@ -69,6 +73,10 @@ Mermaid diagrams, preserved evidence, and the pending UI and client-version gate
   earlier UI 006 state, preservation, local preview, exact automated results and the
   unresolved browser/phone/accessibility/performance acceptance. Not published.
 - [Spatial instrument candidate](checkpoints/ui-20261123-spatial-instrument.md):
-  latest UI 007, following Daniel's explicit 3D direction; same-mesh optional
+  earlier UI 007, following Daniel's explicit 3D direction; same-mesh optional
   renderer, canonical camera/selection, exact checks and still-open browser/GPU
   acceptance. Local preview 4182; not published.
+- [White workspace and contrast](checkpoints/ui-20261123-white-workspace.md):
+  latest UI 008; default light, saved native switch, no muted text, clearer
+  selection; user screenshot reviewed, browser bridge still unavailable. Preview
+  4183 and exact checks; not published or device-accepted.

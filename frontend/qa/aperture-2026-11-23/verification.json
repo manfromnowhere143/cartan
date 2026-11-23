@@ -1,0 +1,45 @@
+{
+  "at_utc": "2026-11-23T10:58:23.619225+00:00",
+  "base": "382f3a0",
+  "initial_aperture_commit": "13b7965",
+  "theme_snapshot": "e88fb83d5e0ec608f44b7965f69184f0898d1e35",
+  "source_hashes": {
+    "frontend/app.mjs": "d56ec29d9a282f31f19e69410a16e83952b43a18d7d7023b25f9a65ba4e8dac5",
+    "frontend/index.html": "549596ede0754577d9ecb126add3dcd6390e61294f88a9ad5fff1a10c5b5881c",
+    "frontend/evidence-aperture.mjs": "9ce75a70121ed3f53952b4705b8c17522717ccf553a6feb5048e141dc1cc4510",
+    "frontend/evidence-aperture.css": "fec76913dc47159906654e9dcb1566455fd13eab7cb0d3184dc1e72bfbb534c2",
+    "frontend/theme.mjs": "a922938ca497323ff0ad95435777acfc12564bb8f5b49b5c015221db80dae4f9",
+    "frontend/theme.css": "4841794be68cfdae149ddf671179131ec9c15337f24f23fc363e35c6ef0c6ca0",
+    "frontend/release/build_site.py": "49b3e901e386af8fb8a1f45a64da9390b65d7d1e4d818c031c0bb11208f4668c",
+    "frontend/release/verify_package.py": "09ef538b71fd27392ed9f3e94c75de2cfcdd88bdc55d4b7d767182b6c98b46a9"
+  },
+  "aperture_code_style_bytes": 20354,
+  "package_bytes": 29548171,
+  "package_files": 40,
+  "core_command": "node --test --test-concurrency=1 frontend/tests/*.test.mjs",
+  "core_passed": 52,
+  "dom_command": "CARTAN_JSDOM_MODULE=/Users/danielwahnich/workspace/nisayon-sdk-ui-audit-2026-10-25/apps/instrument/node_modules/jsdom node --experimental-vm-modules --test --test-concurrency=1 frontend/qa/focus-dom.test.mjs frontend/qa/interior-dom.test.mjs frontend/qa/spatial-dom.test.mjs frontend/qa/theme-dom.test.mjs frontend/qa/aperture-dom.test.mjs",
+  "dom_passed": 49,
+  "package_command": "python3 frontend/release/build_site.py /var/folders/fl/_txhnxc90xl00n3xtq0r4nq40000gn/T/cartan-aperture-20261123-u98say2y/package-final",
+  "package_check": "python3 frontend/release/verify_package.py /var/folders/fl/_txhnxc90xl00n3xtq0r4nq40000gn/T/cartan-aperture-20261123-u98say2y/package-final",
+  "package_assertions": 485,
+  "contract_command": "python3 frontend/vendor/cartan/v1/validate.py frontend/vendor/cartan/v1/fixture.json --self-test --manifest",
+  "browser_commands": [
+    "node /private/tmp/cartan-aperture-browser.cjs",
+    "node /private/tmp/cartan-aperture-profile.cjs"
+  ],
+  "markdown_files_checked": 103,
+  "missing_local_links": [],
+  "pattern_scan": {
+    "text": 70,
+    "binary_skipped": 56,
+    "patterns": [
+      "private_key",
+      "openai_key",
+      "github_token"
+    ],
+    "findings": []
+  },
+  "hygiene": "Source passes; retained implementation.patch context whitespace excluded",
+  "scope": "Source and software UI checks; no physical, full accessibility or device acceptance. No deployment."
+}

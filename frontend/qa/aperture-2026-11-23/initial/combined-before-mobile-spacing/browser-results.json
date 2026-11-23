@@ -1,0 +1,90 @@
+{
+  "browser": "Chrome/158.0.8127.36",
+  "origin": "http://127.0.0.1:4191",
+  "csp": "Exact packaged policy served",
+  "records": [
+    {
+      "check": "keyboard-contained-focus-and-Escape-context",
+      "pass": true
+    },
+    {
+      "check": "saved-dark-appearance",
+      "pass": true
+    },
+    {
+      "check": "compact-layout",
+      "viewport": [
+        390,
+        844
+      ],
+      "footer": "relative",
+      "dialog": {
+        "width": 390,
+        "scroll": 390,
+        "height": 844,
+        "scrollHeight": 1157
+      }
+    },
+    {
+      "check": "compact-layout",
+      "viewport": [
+        320,
+        740
+      ],
+      "footer": "relative",
+      "dialog": {
+        "width": 320,
+        "scroll": 320,
+        "height": 740,
+        "scrollHeight": 1198
+      }
+    },
+    {
+      "check": "compact-layout",
+      "viewport": [
+        844,
+        390
+      ],
+      "footer": "relative",
+      "dialog": {
+        "width": 844,
+        "scroll": 844,
+        "height": 390,
+        "scrollHeight": 847
+      }
+    },
+    {
+      "check": "compact-layout",
+      "viewport": [
+        1280,
+        720
+      ],
+      "footer": "fixed",
+      "dialog": {
+        "width": 1280,
+        "scroll": 1280,
+        "height": 720,
+        "scrollHeight": 888
+      }
+    },
+    {
+      "check": "reduced-motion-no-running-effect",
+      "pass": true
+    },
+    {
+      "check": "rapid-open-change-close-five-times",
+      "pass": true
+    },
+    {
+      "check": "corrupt-pinned-bytes-fail-closed",
+      "pass": true
+    },
+    {
+      "check": "no-JS-static-path-retained",
+      "pass": true
+    }
+  ],
+  "pageerrors": [],
+  "consoleErrors": [],
+  "scope": "Installed Chrome headless on M1 Pro, default graphics, unthrottled. Browser viewports and synthetic keyboard/mouse; not physical phone, Safari, AT or full usability/performance acceptance."
+}

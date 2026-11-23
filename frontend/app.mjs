@@ -5,9 +5,11 @@ import {loadPinnedV1, formatV1, CONTRACT_COMMIT} from './contract-adapter.mjs';
 
 import {createHeroController,heroSourceFor} from './hero-controller.mjs';
 import {installFocusPresentation} from './focus-presentation.mjs';
+import {installTheme} from './theme.mjs';
 
 // Capture actual input before native dialog autofocus or application focus moves.
 installFocusPresentation(document);
+installTheme();
 
 const $ = selector => document.querySelector(selector);
 const components = {
@@ -63,7 +65,10 @@ function renderSelection(state) {
   $('#inspector-toggle').setAttribute('aria-controls',document.querySelector(`.surface[data-view="${state.view}"]`).id);
   $('#inspector-toggle').textContent=state.notes==='closed'?'Show notes':'Hide notes';
   $('.interior-shell').dataset.notes=state.notes??'open';
-  $('#scene-function').textContent={module:'01 / MODULE ENVELOPE',retention:'02 / HOST RETENTION',isolation:'03 / ELECTRICAL BOUNDARY',support:'04 / TRANSFER SUPPORT'}[state.part];
+  const functionName={module:'Module envelope',retention:'Host retention',isolation:'Electrical boundary',support:'Transfer support'}[state.part];
+  const functionNote={module:'A removable unit; its internal equipment is undefined.',retention:'Attachment to the host; no latch design is established.',isolation:'Connection and isolation require separate evidence.',support:'A separate holding relationship during exchange.'}[state.part];
+  const note=document.createElement('span');note.textContent=functionNote;
+  $('#scene-function').replaceChildren(document.createTextNode(functionName),note);
   $('.scene-caption span').textContent=state.layout==='separated'?'Diagram separation, not a physical operation. Geometry unverified.':'Not to scale. Geometry and physical reachability unverified.';
   const [recordTitle,recordDescription]=evidenceState(state.record);
   for(const button of document.querySelectorAll('[data-evidence]')) {
@@ -237,7 +242,9 @@ function updateSpatial(animate=false){
   }).catch(()=>{
     root.dataset.renderer='static';
     for(const button of root.querySelectorAll('.camera-controls button'))button.disabled=true;
+    root.querySelector('.camera-controls').hidden=true;
     root.querySelector('#spatial-viewport').tabIndex=-1;
+    root.querySelector('#spatial-status').classList.remove('sr-only');
     root.querySelector('#spatial-status').textContent='Static schematic. Spatial controls are unavailable; function selection and evidence remain available.';
   });
 }
@@ -245,7 +252,7 @@ window.addEventListener('pagehide',()=>spatialScene?.suspend());
 window.addEventListener('pageshow',()=>updateSpatial());
 // A temporary verified record inspection; URL/camera state remains owned here.
 let aperture=null,apertureLoad=null,apertureIntent=0,aperturePending=false;
-function cancelAperture(){apertureIntent++;aperturePending=false;$('#open-record').removeAttribute('aria-busy');aperture?.close(false);}
+function cancelAperture(){apertureIntent++;aperturePending=false;$('#open-record').removeAttribute('aria-busy');$('#record-entry-status').textContent='';aperture?.close(false);}
 $('#open-record').addEventListener('click',async event=>{
   const trigger=event.currentTarget,request=++apertureIntent;aperturePending=true;trigger.setAttribute('aria-busy','true');
   $('#record-entry-status').textContent='Opening the record';

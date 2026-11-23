@@ -1,0 +1,9 @@
+{
+  "base": "382f3a0",
+  "layouts": [
+    "joined",
+    "separated"
+  ],
+  "identical_meshes": true,
+  "scope": "Original explanatory geometry only, not physical feasibility"
+}

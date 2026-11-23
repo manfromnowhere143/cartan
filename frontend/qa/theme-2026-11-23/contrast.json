@@ -1,0 +1,26 @@
+{
+  "scope": "Declared solid-color sRGB arithmetic, not pixel/rendered-media or WCAG conformance acceptance",
+  "pairs": [
+    {
+      "pair": "light text and focus",
+      "foreground": "#101419",
+      "background": "#ffffff",
+      "ratio": 18.48,
+      "passedAAAArithmetic": true
+    },
+    {
+      "pair": "dark text and focus",
+      "foreground": "#ffffff",
+      "background": "#07090b",
+      "ratio": 19.94,
+      "passedAAAArithmetic": true
+    },
+    {
+      "pair": "cinematic text on declared opaque background",
+      "foreground": "#ffffff",
+      "background": "#030405",
+      "ratio": 20.52,
+      "passedAAAArithmetic": true
+    }
+  ]
+}

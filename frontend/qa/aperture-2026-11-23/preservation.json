@@ -1,0 +1,18 @@
+{
+  "base": "382f3a0",
+  "protected_files": 133,
+  "changed": [],
+  "all_five_contract_files_match_2a4083a": true,
+  "sibling_UI_later_changed_paths": [
+    "frontend/README.md",
+    "frontend/index.html",
+    "frontend/interior.css",
+    "frontend/qa/REVIEW-THEME-2026-11-23.md",
+    "frontend/release/verify_package.py",
+    "frontend/spatial-scene.mjs",
+    "frontend/tests/presentation.test.mjs",
+    "memory/INDEX.md"
+  ],
+  "geometry": "geometry-preservation.json",
+  "scope": "Byte/mesh preservation, not physical or device validation"
+}

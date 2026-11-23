@@ -1,24 +1,31 @@
 # CARTAN visual laboratory
 
-Current integrated candidate (23 November, UI 007): an interactive spatial module study
-anchors one workspace, with deliberate camera views, selectable relationships,
-an in-place reading surface, paused-transfer inspection and evidence. Optional
-WebGL2 and an SVG fallback use the same original, unverified schematic geometry.
-The approved opening and media remain byte-identical. Source snapshot `c5657e7`
-is integrated into the repository; the website has not been redeployed by this
-integration. [Subsequent integration checks](../docs/qa/integration-20261123/REVIEW.md)
-exercise actual Chrome WebGL2, interaction and fallback rendering. This bounded
-check does not close device, accessibility or performance acceptance. The
-[owner's earlier review](qa/REVIEW-SPATIAL-2026-11-23.md) preserves its original
-pre-browser status. Read also
+Current candidate (23 November, UI 010): the **evidence aperture** opens one
+verified synthetic report into its timing, authored possibilities and exact source
+identity. The prepared-module workspace and camera remain available on return.
+The completed UI 008 snapshot `e88fb83` supplies a white default, saved light/dark
+choice, full-contrast text and clearer object selection. No reference assets or
+scientific claims are imported from Reiyah.
+
+Read [the aperture decision](docs/ADR-UI-010-evidence-aperture.md),
+[appearance decision](docs/ADR-UI-008-light-and-legibility.md), and the historical
+[UI 008 review](qa/REVIEW-THEME-2026-11-23.md). The
+[aperture review](qa/REVIEW-APERTURE-2026-11-23.md) records fresh combined browser
+checks: 52 core tests, 49 DOM checks, 485 package assertions, actual Chrome rendering
+and scoped interaction samples. The approved media and all frozen contract bytes
+remain unchanged. No website deployment is performed by this block.
+
+The interactive module, deliberate camera views and reading surface retain their
+single workspace. WebGL2 and its SVG fallback share the same unverified geometry.
+Earlier browser observations remain in the
+[integration review](../docs/qa/integration-20261123/REVIEW.md). See also
 [UI 007](docs/ADR-UI-007-spatial-instrument.md) and
 [state/provenance map](docs/spatial-instrument-map.md).
 
-The retained baseline is `dcc8d8e`; the local candidate is served at
-http://127.0.0.1:4182/ while its owned preview process is running. The baseline
-is at http://127.0.0.1:4180/; the earlier UI 006 candidate remains at 4181. Each offers
-`/qa/interior-review.html`; this review
-harness is never in the public package. The current review lists exact test
+The current aperture package is served at http://127.0.0.1:4191/laboratory/ while
+its owned preview process is running. Select **Open the record**. Earlier UI-owned
+previews remain on 4180–4183; those processes were not changed. The separate
+`interior_server.py` harness is never in the public package. The current review lists exact test
 results and the acceptance still open at that checkpoint. Preview processes are
 temporary; use a fresh package and free port to resume review.
 
