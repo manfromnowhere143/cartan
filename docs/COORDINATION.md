@@ -1,5 +1,11 @@
 # CARTAN ownership and two-session protocol
 
+Multiple terminal sessions are allowed, including the same lane. The launcher
+does not enforce one-session-per-worktree. Coordinate disjoint file ownership or
+use separate worktrees for concurrent edits; opening a session is not itself a
+write conflict. The canonical launcher can be updated by setup without rewriting
+the launcher snapshot inside an active worktree.
+
 The current environment-setup session owns launch configuration until an explicit
 handoff. Daniel alone starts the two future sessions. Neither session may launch
 the other, attach to it, interrupt it, or edit its checkout.

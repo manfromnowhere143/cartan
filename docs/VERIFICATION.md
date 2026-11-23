@@ -1,5 +1,79 @@
 # Environment verification
 
+## Current full-access correction
+
+Daniel explicitly required full-access/YOLO launches on 16 November 2026. This
+supersedes the earlier restricted permission policy recorded below. The installed
+canonical launcher now supplies these modes to both start and resume commands:
+
+| Client | Runtime permission settings |
+|---|---|
+| Codex | `--dangerously-bypass-approvals-and-sandbox`, `--dangerously-bypass-hook-trust`, `--search`; explicit `approval_policy="never"`, `sandbox_mode="danger-full-access"`, `web_search="live"` overrides |
+| Claude | `--dangerously-skip-permissions --permission-mode bypassPermissions`; canonical `config/claude-full-access.json` sets `sandbox.enabled=false` and has no ask rules |
+
+The original project settings files remain unchanged snapshots; CLI/runtime
+configuration takes precedence. Using a new Claude settings file avoids rewriting
+the settings path supplied to older sessions. No active worktree or running
+session was edited, stopped or relaunched. Starting or resuming through an updated
+alias selects the new mode. New-session context explicitly carries Daniel's
+permission correction so older setup prose does not silently restore restrictions.
+
+The updated regression suite passed **32 tests in 11.733 seconds**. It asserts
+full-access flags for both clients and both lanes, including resume, and verifies
+that earlier settings snapshots are preserved. Actual installed CLI help parsers
+accepted the complete start/resume options with network denied for inspection.
+`cartancodes --check` from `/private/tmp` returned 0 and reported YOLO mode; its
+native Codex MCP check still passed. No inference was launched by these checks.
+The retained test log is `full-access-tests.log` in the private receipt directory.
+Claude's local authentication remains missing; bypass mode does not supply login.
+
+All **16 installed name × lane × start/resume combinations** were subsequently
+checked from `/private/tmp` in fresh interactive login zsh processes. The eight
+Codex combinations returned 0 with the full-access policy. The eight Claude
+combinations reported the bypass policy and returned 2 solely for missing local
+login. `full-access-entrypoints.json` retains these results without credentials.
+
+The older results below are historical. Their statements about retained approval
+prompts, workspace sandboxing and hook-trust prompts no longer describe new or
+resumed CARTAN launches. Other evidence/authorization boundaries remain separate
+from the client's execution permission mode.
+
+## Earlier comparison record
+
+Latest comparison review, 16 November 2026: **30 tests passed in 5.646 seconds**.
+All four installed command names were checked in fresh interactive login shells
+from `/private/tmp`, for both start and resume plans. Codex returned 0 and the
+correct lane; Claude returned 2 with missing local authentication. Both clients'
+installed help parsers accepted the full resume argv with network denied. Native
+conversation restoration remains untested; no model was started.
+
+A separate bounded public HTTP probe from the setup process received 200 for MCP
+initialization and `tools/list` at `https://developers.openai.com/mcp`, protocol
+2025-03-26, listing five documentation tools. No credentials were supplied. This
+proves endpoint reachability from this Mac, not future CLI discovery or UI bridge
+operation. The ordinary launcher `--check` remains offline.
+
+The latest preservation comparison found 36 of 37 recorded pre-existing files
+unchanged; `~/.codex/config.toml` has changed since the original snapshot. No
+manual edit or restoration of that file was performed by this review. The hash-only
+baseline cannot attribute the difference. Its current safe-to-report settings
+and CARTAN's native effective MCP set were rechecked; explicit launch controls
+still pass. Do not overwrite concurrent user/client state to restore an old hash.
+Receipts are `comparison-entrypoints.json`, `comparison-preservation.json` and
+`comparison-review.json` in the private receipt directory listed below.
+
+See `SETUP-COMPARISON-2026-11-16.md` for the assessment and remaining capability
+work, and `SESSION-OPERATIONS.md` for recovery. Existing lanes were not rewritten.
+
+## Earlier setup and lock-correction record
+
+Operator correction, 16 November 2026: removed the one-session-per-lane lock.
+The installed `cartancodes --check` passed from outside the repository, and all
+25 updated tests passed (4.727 seconds), including launching harmless local
+processes while an older lane lock is held. No model was launched, active
+worktree updated, existing session stopped, or permission setting changed.
+The original setup results below are retained with the concurrency correction.
+
 Date: 16 November 2026. **Codex is prepared for Daniel's first interactive
 session. Claude is configured but blocked on authentication.** This is a local
 environment verdict, not an end-to-end model-session or product-readiness claim.
@@ -12,6 +86,8 @@ In an ordinary interactive terminal, from any directory:
 cartancodes --check       # local preflight, no model session
 cartancodes               # research / backend architecture session
 cartancodes ui            # separate UI / visual-laboratory session
+cartancodes resume        # native research conversation picker
+cartancodes ui resume     # native UI conversation picker
 ```
 
 Equivalent Codex name: `cartan-codex`. No shell file needs sourcing; the commands
@@ -19,7 +95,7 @@ are executable symlinks in the already-resolved `~/.local/bin` directory. If an
 older zsh has cached command lookup, `rehash` refreshes it. The absolute fallback
 is `/Users/danielwahnich/.local/bin/cartancodes`.
 
-Claude is an alternative client for a lane, not a third simultaneous writer:
+Claude uses the same lane selection:
 
 ```sh
 claude auth login        # Daniel performs the normal client login himself
@@ -28,8 +104,8 @@ cartanclaudes            # research lane, after login
 cartanclaudes ui          # UI lane, after login
 ```
 
-Equivalent Claude name: `cartan-claude`. Do not run Codex and Claude in the same
-lane concurrently; the launcher lock rejects a second launcher session. Neither
+Equivalent Claude name: `cartan-claude`. Multiple terminal sessions are allowed,
+including the same lane. Coordinate file ownership for shared worktrees. Neither
 client is recursively started by setup or by the other session.
 
 ## Verified local results
@@ -41,7 +117,7 @@ client is recursively started by setup or by the other session.
 | `python3 scripts/test_environment.py` | 24 tests passed; final retained log reports 6.529 seconds |
 | Guard positive/negative controls | Correct client/lane plans; wrong Git family, wrong/detached branch, remote drift, missing/symlinked instructions, config/input drift, corrupt JSON, missing client and version drift rejected |
 | Credential and environment behavior | Synthetic canaries not echoed/forwarded; Git-routing and shell-injection environment variables filtered; existing terminal proxy settings retained |
-| Work preservation and concurrency | Dirty work preserved; second writer refused by OS advisory lock; harmless temporary Python probe ran in selected cwd and lock released at exit |
+| Work preservation and concurrency | Dirty work preserved; the initial exclusive lock was removed following Daniel's correction. Regression checks use harmless local processes with an older lock held; no model is launched |
 | Installer collision | Existing command file preserved; no partial overwrite |
 | Dry-run behavior | No model launch path entered; no MCP adapter started; native config/auth diagnostics run with OS network denied |
 | Native Codex effective config | Parsed successfully in actual research and UI worktrees; enabled `openaiDeveloperDocs`, `node_repl`, `cua_repl`; Aweb, email, research Google, legacy computer-use and codex_app disabled |
@@ -120,8 +196,11 @@ docs/COORDINATION.md
 docs/ENVIRONMENT-AUDIT.md
 docs/SESSION_HANDOFF.md
 docs/VERIFICATION.md
+docs/SESSION-OPERATIONS.md
+docs/SETUP-COMPARISON-2026-11-16.md
 memory/INDEX.md
 memory/notes/2026-11-16-environment-decisions.md
+memory/notes/2026-11-16-setup-comparison.md
 scripts/install_launchers.py
 scripts/launch.py
 scripts/test_environment.py

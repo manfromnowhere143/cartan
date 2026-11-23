@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Non-destructive launcher tests using temporary Git worktrees and local stubs.
 
-Never starts Codex/Claude inference. Real client calls are --version only.
+Never starts Codex/Claude inference. Real client calls inspect versions,
+local auth and effective MCP configuration; auth/MCP checks deny network.
 """
 import contextlib
 import fcntl
@@ -78,16 +79,89 @@ class EnvironmentTests(unittest.TestCase):
                     self.assertEqual(plan["cwd"], str(getattr(self, lane)))
                     self.assertIn("CARTAN-01" if lane == "research" else "CARTAN-02", plan["prompt_file"])
                     self.assertFalse(plan["model_started"])
-                    self.assertFalse(any("dangerously" in arg or "bypassPermissions" in arg for arg in plan["argv"]))
+                    self.assert_full_access(plan)
+
+    def assert_full_access(self, plan):
+        argv = plan["argv"]
+        if plan["client"] == "codex":
+            self.assertIn("--dangerously-bypass-approvals-and-sandbox", argv)
+            self.assertIn("--dangerously-bypass-hook-trust", argv)
+            self.assertIn("--search", argv)
+            self.assertIn('approval_policy="never"', argv)
+            self.assertIn('sandbox_mode="danger-full-access"', argv)
+            self.assertIn('web_search="live"', argv)
+            self.assertNotIn("--sandbox", argv)
+            self.assertNotIn("--ask-for-approval", argv)
+            self.assertNotIn("sandbox_workspace_write.network_access=false", argv)
+        else:
+            self.assertIn("--dangerously-skip-permissions", argv)
+            self.assertEqual(argv[argv.index("--permission-mode") + 1], "bypassPermissions")
+            settings = Path(argv[argv.index("--settings") + 1])
+            self.assertEqual(settings, self.root / "config/claude-full-access.json")
+            configuration = json.loads(settings.read_text())
+            self.assertEqual(configuration["permissions"], {"defaultMode": "bypassPermissions"})
+            self.assertEqual(configuration["sandbox"], {"enabled": False})
 
     def test_default_and_aliases(self):
         for name, client in launch.CLIENT_NAMES.items():
-            self.assertEqual(launch.parse_args(name, []), (client, "research", False))
-            self.assertEqual(launch.parse_args(name, ["ui", "--check"]), (client, "ui", True))
+            self.assertEqual(launch.parse_args(name, []), (client, "research", False, "start"))
+            self.assertEqual(launch.parse_args(name, ["ui", "--check"]), (client, "ui", True, "start"))
+            self.assertEqual(launch.parse_args(name, ["resume"]), (client, "research", False, "resume"))
+            self.assertEqual(launch.parse_args(name, ["ui", "resume", "--check"]), (client, "ui", True, "resume"))
+
+    def test_resume_plans_keep_scope_without_injecting_a_new_task(self):
+        for client in ("codex", "claude"):
+            for lane in ("research", "ui"):
+                with self.subTest(client=client, lane=lane):
+                    plan = launch.make_plan(client, lane, self.root, action="resume")
+                    argv = plan["argv"]
+                    self.assertEqual(plan["cwd"], str(getattr(self, lane)))
+                    self.assertEqual(plan["action"], "resume")
+                    self.assertFalse(any("CARTAN-01" in arg or "CARTAN-02" in arg for arg in argv))
+                    self.assertFalse(any(arg in ("--last", "--all", "--continue") for arg in argv))
+                    self.assert_full_access(plan)
+                    if client == "codex":
+                        self.assertEqual(argv[1], "resume")
+                        self.assertEqual(argv[argv.index("-C") + 1], plan["cwd"])
+                    else:
+                        self.assertEqual(argv[-1], "--resume")
+                        self.assertIn("--strict-mcp-config", argv)
+
+    def test_start_reads_current_canonical_setup_without_changing_lane(self):
+        before = (self.research / "docs/SESSION_HANDOFF.md").read_bytes()
+        plan = launch.make_plan("codex", "research", self.root)
+        for path in plan["current_setup_context"]:
+            self.assertIn(path, plan["argv"][-1])
+        self.assertEqual((self.research / "docs/SESSION_HANDOFF.md").read_bytes(), before)
+
+    def test_missing_current_setup_context_fails(self):
+        path = self.root / "docs/SESSION-OPERATIONS.md"
+        content = path.read_bytes()
+        path.unlink()
+        try:
+            with self.assertRaises(launch.PreflightError):
+                launch.make_plan("codex", "research", self.root)
+        finally:
+            path.write_bytes(content)
+
+    def test_claude_reports_only_its_configured_mcp(self):
+        plan = launch.make_plan("claude", "research", self.root)
+        self.assertEqual(plan["configured_mcp_allowlist"], ["openaiDeveloperDocs"])
+
+    def test_native_inspection_never_invokes_resume_or_an_initial_prompt(self):
+        base = ["codex", "--strict-config", "-C", str(self.research)]
+        servers = [{"name": n, "enabled": True} for n in ("cua_repl", "node_repl", "openaiDeveloperDocs")]
+        with patch.object(launch, "run", return_value=json.dumps(servers)) as run:
+            launch.validate_native_codex(base, self.research)
+        invoked = run.call_args.args[0]
+        self.assertEqual(invoked[-5:], ["-C", str(self.research), "mcp", "list", "--json"])
+        self.assertNotIn("--strict-config", invoked)
+        self.assertNotIn("resume", invoked)
 
     def test_unknown_flags_and_secret_arguments_not_echoed(self):
         for args in [["--dangerously-skip-permissions"], ["--config", "SECRET_CANARY"],
-                     ["--workspace", "/tmp/foreign"], ["ui", "research"], ["--check", "--check"]]:
+                     ["--workspace", "/tmp/foreign"], ["ui", "research"], ["--check", "--check"],
+                     ["resume", "resume"], ["resume", "SECRET_CANARY"], ["resume", "--all"]]:
             with self.assertRaises(launch.PreflightError) as error:
                 launch.parse_args("cartancodes", args)
             self.assertNotIn("SECRET_CANARY", str(error.exception))
@@ -185,9 +259,25 @@ class EnvironmentTests(unittest.TestCase):
                 launch.load_json(path)
             self.assertNotIn("SECRET_CANARY", str(error.exception))
 
-    def test_security_policy_drift_rejected(self):
+    def test_retained_project_snapshot_drift_rejected(self):
         path = self.root / ".codex/config.toml"
         with changed(path, path.read_bytes().replace(b'"on-request"', b'"never"')):
+            with self.assertRaises(launch.PreflightError):
+                launch.validate_identity(self.root, self.config, "research")
+
+    def test_full_access_does_not_modify_settings_used_by_existing_sessions(self):
+        paths = [self.root / ".codex/config.toml", self.root / ".claude/settings.json",
+                 self.research / ".codex/config.toml", self.research / ".claude/settings.json",
+                 self.ui / ".codex/config.toml", self.ui / ".claude/settings.json"]
+        before = {p: p.read_bytes() for p in paths}
+        for client in ("codex", "claude"):
+            for lane in ("research", "ui"):
+                self.assert_full_access(launch.make_plan(client, lane, self.root))
+        self.assertEqual({p: p.read_bytes() for p in paths}, before)
+
+    def test_claude_full_access_profile_rejects_restricted_mode(self):
+        path = self.root / "config/claude-full-access.json"
+        with changed(path, path.read_bytes().replace(b'"bypassPermissions"', b'"manual"')):
             with self.assertRaises(launch.PreflightError):
                 launch.validate_settings(self.root)
 
@@ -210,23 +300,25 @@ class EnvironmentTests(unittest.TestCase):
             with self.assertRaises(launch.PreflightError):
                 launch.launch_interactive({})
 
-    def test_same_lane_lock_refuses_second_writer(self):
+    def test_existing_lane_lock_does_not_block_another_terminal(self):
         runtime = self.research / ".cartan"
         runtime.mkdir(exist_ok=True)
         with (runtime / "launch.lock").open("w") as lock:
             fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
+            plan = {"cwd": str(self.research), "lane": "research", "client": "local-probe",
+                    "argv": ["/usr/bin/true"]}
             with patch.dict(os.environ, {}, clear=True), \
+                 contextlib.redirect_stdout(io.StringIO()), \
                  patch.object(sys.stdin, "isatty", return_value=True), \
-                 patch.object(sys.stdout, "isatty", return_value=True), \
-                 patch.object(launch.subprocess, "Popen", side_effect=AssertionError("must not spawn")):
-                with self.assertRaises(launch.PreflightError):
-                    launch.launch_interactive({"cwd": str(self.research)})
+                 patch.object(sys.stdout, "isatty", return_value=True):
+                self.assertEqual(launch.launch_interactive(plan), 0)
+                self.assertEqual(launch.launch_interactive(plan), 0)
 
-    def test_foreground_supervisor_uses_selected_cwd_and_releases_lock(self):
+    def test_foreground_supervisor_uses_selected_cwd(self):
         # Exercise the real foreground boundary with a harmless local Python
         # process, not a model client. Only a temporary fixture gets a file.
         program = ("import json,os; from pathlib import Path; "
-                   "Path('.cartan/probe.json').write_text(json.dumps({"
+                   "Path('probe.json').write_text(json.dumps({"
                    "'cwd':str(Path.cwd()),'key_present':'OPENAI_API_KEY' in os.environ}))")
         plan = {"cwd": str(self.ui), "lane": "ui", "client": "local-probe",
                 "argv": [sys.executable, "-c", program]}
@@ -235,10 +327,13 @@ class EnvironmentTests(unittest.TestCase):
              patch.object(sys.stdin, "isatty", return_value=True), \
              patch.object(sys.stdout, "isatty", return_value=True):
             self.assertEqual(launch.launch_interactive(plan), 0)
-        result = json.loads((self.ui / ".cartan/probe.json").read_text())
+        result = json.loads((self.ui / "probe.json").read_text())
         self.assertEqual(result, {"cwd": str(self.ui), "key_present": False})
-        with (self.ui / ".cartan/launch.lock").open("w") as lock:
-            fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
+
+    def test_canonical_launcher_does_not_require_rewriting_active_lane_copy(self):
+        path = self.research / "scripts/launch.py"
+        with changed(path, b"# Older branch-local snapshot; installed commands use the canonical script.\n"):
+            launch.validate_identity(self.root, self.config, "research")
 
     def test_installer_refuses_collision_without_overwrite(self):
         spec = importlib.util.spec_from_file_location("cartan_install", SOURCE / "scripts/install_launchers.py")

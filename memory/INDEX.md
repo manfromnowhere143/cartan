@@ -51,3 +51,8 @@ Its local-ref audit supersedes the earlier pending UI integration statement.
 records the targeted newer-method review, public archive triage and REA-1 offline
 admission protocol. It preserves the synthetic baseline result and identifies the
 physical records needed before another model is justified. No physical study began.
+
+- `notes/2026-11-16-setup-comparison.md`: comparative review, native resume,
+  current setup discovery and limits of automation/tool verification.
+- `notes/2026-11-16-full-access-correction.md`: Daniel's explicit YOLO/full-access
+  requirement, effective launch options and supersession of restricted defaults.

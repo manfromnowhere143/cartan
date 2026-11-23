@@ -256,6 +256,24 @@ and [coordination record](docs/COORDINATION.md) identify current ownership and
 continuation rules. The [diagram review](docs/qa/readme-20261116/revision-02/REVIEW.md) retains
 rendered copies for readers whose Markdown viewer does not support Mermaid.
 
+## Local operation
+
+The [operating guide](docs/SESSION-OPERATIONS.md) records setup's approved launch,
+resume and continuity behavior. Daniel selected full access / YOLO on 16 November
+2026. The installed canonical launcher supplies runtime overrides; historical
+client snapshots do not describe that effective mode. Setup retains ownership of
+launchers, MCP and global configuration.
+
+```sh
+cartancodes --check            # local preflight; starts no model
+cartancodes resume --check     # inspect the research resume plan
+```
+
+The canonical `cartan-codex` and `cartan-claude` names and compatibility aliases
+accept lane, resume and check arguments. See the operating guide for actual
+session entry, authentication, version checks and continuity. Integration does
+not restart or reconfigure an existing session.
+
 ## License
 
 Original CARTAN code, documentation, synthetic fixtures and research output are

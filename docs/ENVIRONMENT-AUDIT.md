@@ -1,9 +1,18 @@
 # CARTAN environment architecture and local audit
 
+**Permission update:** Daniel subsequently explicitly required full-access/YOLO
+launches. `SESSION_HANDOFF.md` records the current flags. Restrictive permission,
+network and hook-trust statements below describe the original audited setup and
+are superseded for new/resumed CARTAN launches. The project inventory and
+preservation evidence remain historical records.
+
 Date: 16 November 2026. Owner: the existing setup session. Scope: read-only
 inspection of established launch architecture, followed by additive CARTAN setup.
 No existing project launchers, credentials, active sessions or research originals
 were intentionally changed. See `VERIFICATION.md` for executed checks and limits.
+The subsequent comparison and resume improvement are recorded in
+`SETUP-COMPARISON-2026-11-16.md`. Follow canonical `SESSION-OPERATIONS.md` for
+current launch/resume behavior; active lane setup snapshots can be older.
 
 ## Discovery and provenance
 
@@ -119,7 +128,7 @@ flowchart LR
   N --> L[One canonical Python launcher]
   L --> G[Identity, branch, input and config checks]
   G --> C[Read-only check report]
-  G --> K[Per-lane foreground lock]
+  G --> K[Independent foreground session]
   K --> R[Research worktree]
   K --> U[UI worktree]
   R --> V[Versioned scientific contract]
@@ -140,8 +149,11 @@ Authentication/config diagnostics run with OS network denial; no MCP server,
 model, install, hook or daemon is started. Missing auth returns exit 2 with the
 rest of the local plan still reviewable. Real launches
 require Daniel's interactive terminal, refuse known nested-agent environments,
-and hold an OS advisory lock until the foreground client exits. The lock protects
-CARTAN-launcher users, not people bypassing it with raw client commands.
+and open independent foreground clients. Multiple terminals may select the same
+lane. The initial single-session lock was removed at Daniel's request on
+16 November 2026; no existing process or lock file was touched. Installed command
+symlinks use the canonical launcher, so branch-local launcher snapshots need not
+be rewritten in active worktrees. Other setup configuration equality checks remain.
 
 | Dimension | Configuration / limitation |
 |---|---|

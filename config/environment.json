@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "canonical_root": "/Users/danielwahnich/workspace/cartan",
-  "expected_remotes": {},
+  "expected_remotes": {"origin": "https://github.com/manfromnowhere143/cartan.git"},
   "lanes": {
     "research": {"path": "../cartan-worktrees/research", "branch": "research/architecture", "prompt": "CARTAN-01-Backend-Research-Prompt.txt"},
     "ui": {"path": "../cartan-worktrees/ui", "branch": "ui/visual-laboratory", "prompt": "CARTAN-02-Frontend-Visual-Laboratory-Prompt.txt"}
@@ -12,5 +12,5 @@
   },
   "mcp_allowlist": ["openaiDeveloperDocs", "node_repl", "cua_repl"],
   "setup_owner": "existing CARTAN environment-setup session",
-  "remote_state": "local-only; remote and visibility undecided"
+  "remote_state": "published; exact GitHub origin pinned"
 }
