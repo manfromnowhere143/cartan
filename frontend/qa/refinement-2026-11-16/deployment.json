@@ -1,0 +1,13 @@
+{
+  "project": "cartan",
+  "projectId": "prj_yxSRyqClUe89HnLu7H2oQ39TPV5I",
+  "scope": "daniels-projects-ca65133a",
+  "deployment_url": "https://cartan-6jgayn4j2-daniels-projects-ca65133a.vercel.app",
+  "canonical_url": "https://cartan.danielwahnich.dev/",
+  "alias_cli_result": "Success: canonical alias assigned to this deployment",
+  "public_checks": 212,
+  "public_check_at": "2026-11-16T13:43:54.203213+00:00",
+  "public_manifest_sha256": "68484161ba63b8590f2357fee857b53225a93d66271b62c50dc98770b4b3d5c8",
+  "previous_deployment": "https://cartan-kqu8pmbgq-daniels-projects-ca65133a.vercel.app",
+  "browser_verification": "blocked: browser access host unavailable"
+}

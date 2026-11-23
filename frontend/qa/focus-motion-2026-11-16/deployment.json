@@ -1,0 +1,13 @@
+{
+  "project": "cartan",
+  "projectId": "prj_yxSRyqClUe89HnLu7H2oQ39TPV5I",
+  "scope": "daniels-projects-ca65133a",
+  "canonical_url": "https://cartan.danielwahnich.dev/",
+  "deployment_url": "https://cartan-rh1a4gali-daniels-projects-ca65133a.vercel.app",
+  "alias_cli": "success; canonical origin assigned to this exact deployment",
+  "public_checks": 227,
+  "checked_at": "2026-11-16T14:02:31.327933+00:00",
+  "previous_deployment": "https://cartan-6jgayn4j2-daniels-projects-ca65133a.vercel.app",
+  "manifest_sha256": "6f0a984a643f4f33b26f57cf55812ec8ece9c2c2800760184217ea02d35fd2e7",
+  "real_browser_verification": "pending; browser access host unavailable"
+}

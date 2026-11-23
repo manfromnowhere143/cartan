@@ -1,0 +1,13 @@
+{
+  "origin": "https://cartan.danielwahnich.dev",
+  "deployment": "https://cartan-kh5l1bwtq-daniels-projects-ca65133a.vercel.app",
+  "rollback": "https://cartan-rh1a4gali-daniels-projects-ca65133a.vercel.app",
+  "ui_commit": "dcc8d8e",
+  "integration_commit": "2104ed23dc4400b403b50ad0270ca21a7d2218e8",
+  "core_tests": 33,
+  "dom_tests": 10,
+  "package_checks": 332,
+  "candidate_checks": 156,
+  "public_checks": 239,
+  "browser_rendering": "unavailable; no current real-device visual acceptance claimed"
+}

@@ -1,0 +1,1330 @@
+[
+  {
+    "name": "exact public file allowlist",
+    "pass": true
+  },
+  {
+    "name": "sealed routing configuration",
+    "pass": true
+  },
+  {
+    "name": "eight real routes",
+    "pass": true
+  },
+  {
+    "name": "home canonical",
+    "pass": true
+  },
+  {
+    "name": "home active static content",
+    "pass": true
+  },
+  {
+    "name": "home semantic heading",
+    "pass": true
+  },
+  {
+    "name": "home graph identity",
+    "pass": true
+  },
+  {
+    "name": "home CSP covers structured data",
+    "pass": true
+  },
+  {
+    "name": "home no filesystem URLs",
+    "pass": true
+  },
+  {
+    "name": "home deferred hero source",
+    "pass": true
+  },
+  {
+    "name": "home local reference /style.css",
+    "pass": true
+  },
+  {
+    "name": "home local reference /assets/cartan/cartan-hero-poster.jpg",
+    "pass": true
+  },
+  {
+    "name": "home local reference /assets/cartan/cartan-hero-opening-720p.webp",
+    "pass": true
+  },
+  {
+    "name": "home local reference /assets/cartan/cartan-hero-opening-540p.webp",
+    "pass": true
+  },
+  {
+    "name": "home local reference /app.mjs",
+    "pass": true
+  },
+  {
+    "name": "home local reference /assets/icons/favicon.svg",
+    "pass": true
+  },
+  {
+    "name": "home local reference /site.webmanifest",
+    "pass": true
+  },
+  {
+    "name": "home local reference /",
+    "pass": true
+  },
+  {
+    "name": "home local reference /assets/cartan-logo.png",
+    "pass": true
+  },
+  {
+    "name": "home local reference /research/",
+    "pass": true
+  },
+  {
+    "name": "home local reference /laboratory/",
+    "pass": true
+  },
+  {
+    "name": "home local reference /evidence/",
+    "pass": true
+  },
+  {
+    "name": "home local reference /vision/",
+    "pass": true
+  },
+  {
+    "name": "home local reference /assets/cartan/cartan-hero-opening-540p.webp",
+    "pass": true
+  },
+  {
+    "name": "home local reference /assets/cartan/cartan-hero-opening-720p.webp",
+    "pass": true
+  },
+  {
+    "name": "home local reference /laboratory/",
+    "pass": true
+  },
+  {
+    "name": "home local reference /vision/",
+    "pass": true
+  },
+  {
+    "name": "home local reference /interruption/",
+    "pass": true
+  },
+  {
+    "name": "home local reference /comparison/",
+    "pass": true
+  },
+  {
+    "name": "home local reference /sources/",
+    "pass": true
+  },
+  {
+    "name": "home local reference /assets/cartan/cartan-hero-poster.jpg",
+    "pass": true
+  },
+  {
+    "name": "home local reference /interruption/",
+    "pass": true
+  },
+  {
+    "name": "home local reference /vendor/cartan/v1/fixture.json",
+    "pass": true
+  },
+  {
+    "name": "home local reference /comparison/",
+    "pass": true
+  },
+  {
+    "name": "home local reference /assets/scenes/assembly.png",
+    "pass": true
+  },
+  {
+    "name": "home local reference /research/",
+    "pass": true
+  },
+  {
+    "name": "home local reference /",
+    "pass": true
+  },
+  {
+    "name": "home local reference /assets/cartan/cartan-hero-opening-720p.webp",
+    "pass": true
+  },
+  {
+    "name": "question canonical",
+    "pass": true
+  },
+  {
+    "name": "question active static content",
+    "pass": true
+  },
+  {
+    "name": "question semantic heading",
+    "pass": true
+  },
+  {
+    "name": "question graph identity",
+    "pass": true
+  },
+  {
+    "name": "question CSP covers structured data",
+    "pass": true
+  },
+  {
+    "name": "question no filesystem URLs",
+    "pass": true
+  },
+  {
+    "name": "question deferred hero source",
+    "pass": true
+  },
+  {
+    "name": "question local reference /style.css",
+    "pass": true
+  },
+  {
+    "name": "question local reference /assets/cartan/cartan-hero-poster.jpg",
+    "pass": true
+  },
+  {
+    "name": "question local reference /assets/cartan/cartan-hero-opening-720p.webp",
+    "pass": true
+  },
+  {
+    "name": "question local reference /assets/cartan/cartan-hero-opening-540p.webp",
+    "pass": true
+  },
+  {
+    "name": "question local reference /app.mjs",
+    "pass": true
+  },
+  {
+    "name": "question local reference /assets/icons/favicon.svg",
+    "pass": true
+  },
+  {
+    "name": "question local reference /site.webmanifest",
+    "pass": true
+  },
+  {
+    "name": "question local reference /",
+    "pass": true
+  },
+  {
+    "name": "question local reference /assets/cartan-logo.png",
+    "pass": true
+  },
+  {
+    "name": "question local reference /research/",
+    "pass": true
+  },
+  {
+    "name": "question local reference /laboratory/",
+    "pass": true
+  },
+  {
+    "name": "question local reference /evidence/",
+    "pass": true
+  },
+  {
+    "name": "question local reference /vision/",
+    "pass": true
+  },
+  {
+    "name": "question local reference /assets/cartan/cartan-hero-opening-540p.webp",
+    "pass": true
+  },
+  {
+    "name": "question local reference /assets/cartan/cartan-hero-opening-720p.webp",
+    "pass": true
+  },
+  {
+    "name": "question local reference /laboratory/",
+    "pass": true
+  },
+  {
+    "name": "question local reference /vision/",
+    "pass": true
+  },
+  {
+    "name": "question local reference /interruption/",
+    "pass": true
+  },
+  {
+    "name": "question local reference /comparison/",
+    "pass": true
+  },
+  {
+    "name": "question local reference /sources/",
+    "pass": true
+  },
+  {
+    "name": "question local reference /assets/cartan/cartan-hero-poster.jpg",
+    "pass": true
+  },
+  {
+    "name": "question local reference /interruption/",
+    "pass": true
+  },
+  {
+    "name": "question local reference /vendor/cartan/v1/fixture.json",
+    "pass": true
+  },
+  {
+    "name": "question local reference /comparison/",
+    "pass": true
+  },
+  {
+    "name": "question local reference /assets/scenes/assembly.png",
+    "pass": true
+  },
+  {
+    "name": "question local reference /research/",
+    "pass": true
+  },
+  {
+    "name": "question local reference /",
+    "pass": true
+  },
+  {
+    "name": "question local reference /assets/cartan/cartan-hero-opening-720p.webp",
+    "pass": true
+  },
+  {
+    "name": "laboratory canonical",
+    "pass": true
+  },
+  {
+    "name": "laboratory active static content",
+    "pass": true
+  },
+  {
+    "name": "laboratory semantic heading",
+    "pass": true
+  },
+  {
+    "name": "laboratory graph identity",
+    "pass": true
+  },
+  {
+    "name": "laboratory CSP covers structured data",
+    "pass": true
+  },
+  {
+    "name": "laboratory no filesystem URLs",
+    "pass": true
+  },
+  {
+    "name": "laboratory deferred hero source",
+    "pass": true
+  },
+  {
+    "name": "laboratory local reference /style.css",
+    "pass": true
+  },
+  {
+    "name": "laboratory local reference /assets/cartan/cartan-hero-poster.jpg",
+    "pass": true
+  },
+  {
+    "name": "laboratory local reference /assets/cartan/cartan-hero-opening-720p.webp",
+    "pass": true
+  },
+  {
+    "name": "laboratory local reference /assets/cartan/cartan-hero-opening-540p.webp",
+    "pass": true
+  },
+  {
+    "name": "laboratory local reference /app.mjs",
+    "pass": true
+  },
+  {
+    "name": "laboratory local reference /assets/icons/favicon.svg",
+    "pass": true
+  },
+  {
+    "name": "laboratory local reference /site.webmanifest",
+    "pass": true
+  },
+  {
+    "name": "laboratory local reference /",
+    "pass": true
+  },
+  {
+    "name": "laboratory local reference /assets/cartan-logo.png",
+    "pass": true
+  },
+  {
+    "name": "laboratory local reference /research/",
+    "pass": true
+  },
+  {
+    "name": "laboratory local reference /laboratory/",
+    "pass": true
+  },
+  {
+    "name": "laboratory local reference /evidence/",
+    "pass": true
+  },
+  {
+    "name": "laboratory local reference /vision/",
+    "pass": true
+  },
+  {
+    "name": "laboratory local reference /assets/cartan/cartan-hero-opening-540p.webp",
+    "pass": true
+  },
+  {
+    "name": "laboratory local reference /assets/cartan/cartan-hero-opening-720p.webp",
+    "pass": true
+  },
+  {
+    "name": "laboratory local reference /laboratory/",
+    "pass": true
+  },
+  {
+    "name": "laboratory local reference /vision/",
+    "pass": true
+  },
+  {
+    "name": "laboratory local reference /interruption/",
+    "pass": true
+  },
+  {
+    "name": "laboratory local reference /comparison/",
+    "pass": true
+  },
+  {
+    "name": "laboratory local reference /sources/",
+    "pass": true
+  },
+  {
+    "name": "laboratory local reference /assets/cartan/cartan-hero-poster.jpg",
+    "pass": true
+  },
+  {
+    "name": "laboratory local reference /interruption/",
+    "pass": true
+  },
+  {
+    "name": "laboratory local reference /vendor/cartan/v1/fixture.json",
+    "pass": true
+  },
+  {
+    "name": "laboratory local reference /comparison/",
+    "pass": true
+  },
+  {
+    "name": "laboratory local reference /assets/scenes/assembly.png",
+    "pass": true
+  },
+  {
+    "name": "laboratory local reference /research/",
+    "pass": true
+  },
+  {
+    "name": "laboratory local reference /",
+    "pass": true
+  },
+  {
+    "name": "laboratory local reference /assets/cartan/cartan-hero-opening-720p.webp",
+    "pass": true
+  },
+  {
+    "name": "interruption canonical",
+    "pass": true
+  },
+  {
+    "name": "interruption active static content",
+    "pass": true
+  },
+  {
+    "name": "interruption semantic heading",
+    "pass": true
+  },
+  {
+    "name": "interruption graph identity",
+    "pass": true
+  },
+  {
+    "name": "interruption CSP covers structured data",
+    "pass": true
+  },
+  {
+    "name": "interruption no filesystem URLs",
+    "pass": true
+  },
+  {
+    "name": "interruption deferred hero source",
+    "pass": true
+  },
+  {
+    "name": "interruption local reference /style.css",
+    "pass": true
+  },
+  {
+    "name": "interruption local reference /assets/cartan/cartan-hero-poster.jpg",
+    "pass": true
+  },
+  {
+    "name": "interruption local reference /assets/cartan/cartan-hero-opening-720p.webp",
+    "pass": true
+  },
+  {
+    "name": "interruption local reference /assets/cartan/cartan-hero-opening-540p.webp",
+    "pass": true
+  },
+  {
+    "name": "interruption local reference /app.mjs",
+    "pass": true
+  },
+  {
+    "name": "interruption local reference /assets/icons/favicon.svg",
+    "pass": true
+  },
+  {
+    "name": "interruption local reference /site.webmanifest",
+    "pass": true
+  },
+  {
+    "name": "interruption local reference /",
+    "pass": true
+  },
+  {
+    "name": "interruption local reference /assets/cartan-logo.png",
+    "pass": true
+  },
+  {
+    "name": "interruption local reference /research/",
+    "pass": true
+  },
+  {
+    "name": "interruption local reference /laboratory/",
+    "pass": true
+  },
+  {
+    "name": "interruption local reference /evidence/",
+    "pass": true
+  },
+  {
+    "name": "interruption local reference /vision/",
+    "pass": true
+  },
+  {
+    "name": "interruption local reference /assets/cartan/cartan-hero-opening-540p.webp",
+    "pass": true
+  },
+  {
+    "name": "interruption local reference /assets/cartan/cartan-hero-opening-720p.webp",
+    "pass": true
+  },
+  {
+    "name": "interruption local reference /laboratory/",
+    "pass": true
+  },
+  {
+    "name": "interruption local reference /vision/",
+    "pass": true
+  },
+  {
+    "name": "interruption local reference /interruption/",
+    "pass": true
+  },
+  {
+    "name": "interruption local reference /comparison/",
+    "pass": true
+  },
+  {
+    "name": "interruption local reference /sources/",
+    "pass": true
+  },
+  {
+    "name": "interruption local reference /assets/cartan/cartan-hero-poster.jpg",
+    "pass": true
+  },
+  {
+    "name": "interruption local reference /interruption/",
+    "pass": true
+  },
+  {
+    "name": "interruption local reference /vendor/cartan/v1/fixture.json",
+    "pass": true
+  },
+  {
+    "name": "interruption local reference /comparison/",
+    "pass": true
+  },
+  {
+    "name": "interruption local reference /assets/scenes/assembly.png",
+    "pass": true
+  },
+  {
+    "name": "interruption local reference /research/",
+    "pass": true
+  },
+  {
+    "name": "interruption local reference /",
+    "pass": true
+  },
+  {
+    "name": "interruption local reference /assets/cartan/cartan-hero-opening-720p.webp",
+    "pass": true
+  },
+  {
+    "name": "evidence canonical",
+    "pass": true
+  },
+  {
+    "name": "evidence active static content",
+    "pass": true
+  },
+  {
+    "name": "evidence semantic heading",
+    "pass": true
+  },
+  {
+    "name": "evidence graph identity",
+    "pass": true
+  },
+  {
+    "name": "evidence CSP covers structured data",
+    "pass": true
+  },
+  {
+    "name": "evidence no filesystem URLs",
+    "pass": true
+  },
+  {
+    "name": "evidence deferred hero source",
+    "pass": true
+  },
+  {
+    "name": "evidence local reference /style.css",
+    "pass": true
+  },
+  {
+    "name": "evidence local reference /assets/cartan/cartan-hero-poster.jpg",
+    "pass": true
+  },
+  {
+    "name": "evidence local reference /assets/cartan/cartan-hero-opening-720p.webp",
+    "pass": true
+  },
+  {
+    "name": "evidence local reference /assets/cartan/cartan-hero-opening-540p.webp",
+    "pass": true
+  },
+  {
+    "name": "evidence local reference /app.mjs",
+    "pass": true
+  },
+  {
+    "name": "evidence local reference /assets/icons/favicon.svg",
+    "pass": true
+  },
+  {
+    "name": "evidence local reference /site.webmanifest",
+    "pass": true
+  },
+  {
+    "name": "evidence local reference /",
+    "pass": true
+  },
+  {
+    "name": "evidence local reference /assets/cartan-logo.png",
+    "pass": true
+  },
+  {
+    "name": "evidence local reference /research/",
+    "pass": true
+  },
+  {
+    "name": "evidence local reference /laboratory/",
+    "pass": true
+  },
+  {
+    "name": "evidence local reference /evidence/",
+    "pass": true
+  },
+  {
+    "name": "evidence local reference /vision/",
+    "pass": true
+  },
+  {
+    "name": "evidence local reference /assets/cartan/cartan-hero-opening-540p.webp",
+    "pass": true
+  },
+  {
+    "name": "evidence local reference /assets/cartan/cartan-hero-opening-720p.webp",
+    "pass": true
+  },
+  {
+    "name": "evidence local reference /laboratory/",
+    "pass": true
+  },
+  {
+    "name": "evidence local reference /vision/",
+    "pass": true
+  },
+  {
+    "name": "evidence local reference /interruption/",
+    "pass": true
+  },
+  {
+    "name": "evidence local reference /comparison/",
+    "pass": true
+  },
+  {
+    "name": "evidence local reference /sources/",
+    "pass": true
+  },
+  {
+    "name": "evidence local reference /assets/cartan/cartan-hero-poster.jpg",
+    "pass": true
+  },
+  {
+    "name": "evidence local reference /interruption/",
+    "pass": true
+  },
+  {
+    "name": "evidence local reference /vendor/cartan/v1/fixture.json",
+    "pass": true
+  },
+  {
+    "name": "evidence local reference /comparison/",
+    "pass": true
+  },
+  {
+    "name": "evidence local reference /assets/scenes/assembly.png",
+    "pass": true
+  },
+  {
+    "name": "evidence local reference /research/",
+    "pass": true
+  },
+  {
+    "name": "evidence local reference /",
+    "pass": true
+  },
+  {
+    "name": "evidence local reference /assets/cartan/cartan-hero-opening-720p.webp",
+    "pass": true
+  },
+  {
+    "name": "comparison canonical",
+    "pass": true
+  },
+  {
+    "name": "comparison active static content",
+    "pass": true
+  },
+  {
+    "name": "comparison semantic heading",
+    "pass": true
+  },
+  {
+    "name": "comparison graph identity",
+    "pass": true
+  },
+  {
+    "name": "comparison CSP covers structured data",
+    "pass": true
+  },
+  {
+    "name": "comparison no filesystem URLs",
+    "pass": true
+  },
+  {
+    "name": "comparison deferred hero source",
+    "pass": true
+  },
+  {
+    "name": "comparison local reference /style.css",
+    "pass": true
+  },
+  {
+    "name": "comparison local reference /assets/cartan/cartan-hero-poster.jpg",
+    "pass": true
+  },
+  {
+    "name": "comparison local reference /assets/cartan/cartan-hero-opening-720p.webp",
+    "pass": true
+  },
+  {
+    "name": "comparison local reference /assets/cartan/cartan-hero-opening-540p.webp",
+    "pass": true
+  },
+  {
+    "name": "comparison local reference /app.mjs",
+    "pass": true
+  },
+  {
+    "name": "comparison local reference /assets/icons/favicon.svg",
+    "pass": true
+  },
+  {
+    "name": "comparison local reference /site.webmanifest",
+    "pass": true
+  },
+  {
+    "name": "comparison local reference /",
+    "pass": true
+  },
+  {
+    "name": "comparison local reference /assets/cartan-logo.png",
+    "pass": true
+  },
+  {
+    "name": "comparison local reference /research/",
+    "pass": true
+  },
+  {
+    "name": "comparison local reference /laboratory/",
+    "pass": true
+  },
+  {
+    "name": "comparison local reference /evidence/",
+    "pass": true
+  },
+  {
+    "name": "comparison local reference /vision/",
+    "pass": true
+  },
+  {
+    "name": "comparison local reference /assets/cartan/cartan-hero-opening-540p.webp",
+    "pass": true
+  },
+  {
+    "name": "comparison local reference /assets/cartan/cartan-hero-opening-720p.webp",
+    "pass": true
+  },
+  {
+    "name": "comparison local reference /laboratory/",
+    "pass": true
+  },
+  {
+    "name": "comparison local reference /vision/",
+    "pass": true
+  },
+  {
+    "name": "comparison local reference /interruption/",
+    "pass": true
+  },
+  {
+    "name": "comparison local reference /comparison/",
+    "pass": true
+  },
+  {
+    "name": "comparison local reference /sources/",
+    "pass": true
+  },
+  {
+    "name": "comparison local reference /assets/cartan/cartan-hero-poster.jpg",
+    "pass": true
+  },
+  {
+    "name": "comparison local reference /interruption/",
+    "pass": true
+  },
+  {
+    "name": "comparison local reference /vendor/cartan/v1/fixture.json",
+    "pass": true
+  },
+  {
+    "name": "comparison local reference /comparison/",
+    "pass": true
+  },
+  {
+    "name": "comparison local reference /assets/scenes/assembly.png",
+    "pass": true
+  },
+  {
+    "name": "comparison local reference /research/",
+    "pass": true
+  },
+  {
+    "name": "comparison local reference /",
+    "pass": true
+  },
+  {
+    "name": "comparison local reference /assets/cartan/cartan-hero-opening-720p.webp",
+    "pass": true
+  },
+  {
+    "name": "sources canonical",
+    "pass": true
+  },
+  {
+    "name": "sources active static content",
+    "pass": true
+  },
+  {
+    "name": "sources semantic heading",
+    "pass": true
+  },
+  {
+    "name": "sources graph identity",
+    "pass": true
+  },
+  {
+    "name": "sources CSP covers structured data",
+    "pass": true
+  },
+  {
+    "name": "sources no filesystem URLs",
+    "pass": true
+  },
+  {
+    "name": "sources deferred hero source",
+    "pass": true
+  },
+  {
+    "name": "sources local reference /style.css",
+    "pass": true
+  },
+  {
+    "name": "sources local reference /assets/cartan/cartan-hero-poster.jpg",
+    "pass": true
+  },
+  {
+    "name": "sources local reference /assets/cartan/cartan-hero-opening-720p.webp",
+    "pass": true
+  },
+  {
+    "name": "sources local reference /assets/cartan/cartan-hero-opening-540p.webp",
+    "pass": true
+  },
+  {
+    "name": "sources local reference /app.mjs",
+    "pass": true
+  },
+  {
+    "name": "sources local reference /assets/icons/favicon.svg",
+    "pass": true
+  },
+  {
+    "name": "sources local reference /site.webmanifest",
+    "pass": true
+  },
+  {
+    "name": "sources local reference /",
+    "pass": true
+  },
+  {
+    "name": "sources local reference /assets/cartan-logo.png",
+    "pass": true
+  },
+  {
+    "name": "sources local reference /research/",
+    "pass": true
+  },
+  {
+    "name": "sources local reference /laboratory/",
+    "pass": true
+  },
+  {
+    "name": "sources local reference /evidence/",
+    "pass": true
+  },
+  {
+    "name": "sources local reference /vision/",
+    "pass": true
+  },
+  {
+    "name": "sources local reference /assets/cartan/cartan-hero-opening-540p.webp",
+    "pass": true
+  },
+  {
+    "name": "sources local reference /assets/cartan/cartan-hero-opening-720p.webp",
+    "pass": true
+  },
+  {
+    "name": "sources local reference /laboratory/",
+    "pass": true
+  },
+  {
+    "name": "sources local reference /vision/",
+    "pass": true
+  },
+  {
+    "name": "sources local reference /interruption/",
+    "pass": true
+  },
+  {
+    "name": "sources local reference /comparison/",
+    "pass": true
+  },
+  {
+    "name": "sources local reference /sources/",
+    "pass": true
+  },
+  {
+    "name": "sources local reference /assets/cartan/cartan-hero-poster.jpg",
+    "pass": true
+  },
+  {
+    "name": "sources local reference /interruption/",
+    "pass": true
+  },
+  {
+    "name": "sources local reference /vendor/cartan/v1/fixture.json",
+    "pass": true
+  },
+  {
+    "name": "sources local reference /comparison/",
+    "pass": true
+  },
+  {
+    "name": "sources local reference /assets/scenes/assembly.png",
+    "pass": true
+  },
+  {
+    "name": "sources local reference /research/",
+    "pass": true
+  },
+  {
+    "name": "sources local reference /",
+    "pass": true
+  },
+  {
+    "name": "sources local reference /assets/cartan/cartan-hero-opening-720p.webp",
+    "pass": true
+  },
+  {
+    "name": "vision canonical",
+    "pass": true
+  },
+  {
+    "name": "vision active static content",
+    "pass": true
+  },
+  {
+    "name": "vision semantic heading",
+    "pass": true
+  },
+  {
+    "name": "vision graph identity",
+    "pass": true
+  },
+  {
+    "name": "vision CSP covers structured data",
+    "pass": true
+  },
+  {
+    "name": "vision no filesystem URLs",
+    "pass": true
+  },
+  {
+    "name": "vision deferred hero source",
+    "pass": true
+  },
+  {
+    "name": "vision local reference /style.css",
+    "pass": true
+  },
+  {
+    "name": "vision local reference /assets/cartan/cartan-hero-poster.jpg",
+    "pass": true
+  },
+  {
+    "name": "vision local reference /assets/cartan/cartan-hero-opening-720p.webp",
+    "pass": true
+  },
+  {
+    "name": "vision local reference /assets/cartan/cartan-hero-opening-540p.webp",
+    "pass": true
+  },
+  {
+    "name": "vision local reference /app.mjs",
+    "pass": true
+  },
+  {
+    "name": "vision local reference /assets/icons/favicon.svg",
+    "pass": true
+  },
+  {
+    "name": "vision local reference /site.webmanifest",
+    "pass": true
+  },
+  {
+    "name": "vision local reference /",
+    "pass": true
+  },
+  {
+    "name": "vision local reference /assets/cartan-logo.png",
+    "pass": true
+  },
+  {
+    "name": "vision local reference /research/",
+    "pass": true
+  },
+  {
+    "name": "vision local reference /laboratory/",
+    "pass": true
+  },
+  {
+    "name": "vision local reference /evidence/",
+    "pass": true
+  },
+  {
+    "name": "vision local reference /vision/",
+    "pass": true
+  },
+  {
+    "name": "vision local reference /assets/cartan/cartan-hero-opening-540p.webp",
+    "pass": true
+  },
+  {
+    "name": "vision local reference /assets/cartan/cartan-hero-opening-720p.webp",
+    "pass": true
+  },
+  {
+    "name": "vision local reference /laboratory/",
+    "pass": true
+  },
+  {
+    "name": "vision local reference /vision/",
+    "pass": true
+  },
+  {
+    "name": "vision local reference /interruption/",
+    "pass": true
+  },
+  {
+    "name": "vision local reference /comparison/",
+    "pass": true
+  },
+  {
+    "name": "vision local reference /sources/",
+    "pass": true
+  },
+  {
+    "name": "vision local reference /assets/cartan/cartan-hero-poster.jpg",
+    "pass": true
+  },
+  {
+    "name": "vision local reference /interruption/",
+    "pass": true
+  },
+  {
+    "name": "vision local reference /vendor/cartan/v1/fixture.json",
+    "pass": true
+  },
+  {
+    "name": "vision local reference /comparison/",
+    "pass": true
+  },
+  {
+    "name": "vision local reference /assets/scenes/assembly.png",
+    "pass": true
+  },
+  {
+    "name": "vision local reference /research/",
+    "pass": true
+  },
+  {
+    "name": "vision local reference /",
+    "pass": true
+  },
+  {
+    "name": "vision local reference /assets/cartan/cartan-hero-opening-720p.webp",
+    "pass": true
+  },
+  {
+    "name": "unique titles/descriptions",
+    "pass": true
+  },
+  {
+    "name": "exact sitemap scope",
+    "pass": true
+  },
+  {
+    "name": "robots permits render resources",
+    "pass": true
+  },
+  {
+    "name": "no fabricated freshness",
+    "pass": true
+  },
+  {
+    "name": "404 noindex",
+    "pass": true
+  },
+  {
+    "name": "preview noindex",
+    "pass": true
+  },
+  {
+    "name": "no private/obsolete artifacts",
+    "pass": true
+  },
+  {
+    "name": "sealed bytes 404.html",
+    "pass": true
+  },
+  {
+    "name": "sealed bytes adapter.mjs",
+    "pass": true
+  },
+  {
+    "name": "sealed bytes app.mjs",
+    "pass": true
+  },
+  {
+    "name": "sealed bytes assets/cartan/CARTAN-Built-to-Change-Revised-Silent-21s-1080p.mp4",
+    "pass": true
+  },
+  {
+    "name": "sealed bytes assets/cartan/cartan-hero-desktop-720p.mp4",
+    "pass": true
+  },
+  {
+    "name": "sealed bytes assets/cartan/cartan-hero-mobile-540p.mp4",
+    "pass": true
+  },
+  {
+    "name": "sealed bytes assets/cartan/cartan-hero-opening-540p.webp",
+    "pass": true
+  },
+  {
+    "name": "sealed bytes assets/cartan/cartan-hero-opening-720p.webp",
+    "pass": true
+  },
+  {
+    "name": "sealed bytes assets/cartan/cartan-hero-poster-mobile.jpg",
+    "pass": true
+  },
+  {
+    "name": "sealed bytes assets/cartan/cartan-hero-poster.jpg",
+    "pass": true
+  },
+  {
+    "name": "sealed bytes assets/cartan-logo.png",
+    "pass": true
+  },
+  {
+    "name": "sealed bytes assets/icons/favicon.svg",
+    "pass": true
+  },
+  {
+    "name": "sealed bytes assets/scenes/assembly.png",
+    "pass": true
+  },
+  {
+    "name": "sealed bytes comparison/index.html",
+    "pass": true
+  },
+  {
+    "name": "sealed bytes contract-adapter.mjs",
+    "pass": true
+  },
+  {
+    "name": "sealed bytes evidence/index.html",
+    "pass": true
+  },
+  {
+    "name": "sealed bytes focus-presentation.mjs",
+    "pass": true
+  },
+  {
+    "name": "sealed bytes hero-controller.mjs",
+    "pass": true
+  },
+  {
+    "name": "sealed bytes index.html",
+    "pass": true
+  },
+  {
+    "name": "sealed bytes interruption/index.html",
+    "pass": true
+  },
+  {
+    "name": "sealed bytes laboratory/index.html",
+    "pass": true
+  },
+  {
+    "name": "sealed bytes llms.txt",
+    "pass": true
+  },
+  {
+    "name": "sealed bytes research/index.html",
+    "pass": true
+  },
+  {
+    "name": "sealed bytes robots.txt",
+    "pass": true
+  },
+  {
+    "name": "sealed bytes routes.mjs",
+    "pass": true
+  },
+  {
+    "name": "sealed bytes site.webmanifest",
+    "pass": true
+  },
+  {
+    "name": "sealed bytes sitemap.xml",
+    "pass": true
+  },
+  {
+    "name": "sealed bytes sources/index.html",
+    "pass": true
+  },
+  {
+    "name": "sealed bytes style.css",
+    "pass": true
+  },
+  {
+    "name": "sealed bytes vendor/cartan/v1/fixture.json",
+    "pass": true
+  },
+  {
+    "name": "sealed bytes vision/index.html",
+    "pass": true
+  },
+  {
+    "name": "source asset bytes vendor/cartan/v1/fixture.json",
+    "pass": true
+  },
+  {
+    "name": "source asset bytes assets/cartan-logo.png",
+    "pass": true
+  },
+  {
+    "name": "source asset bytes assets/scenes/assembly.png",
+    "pass": true
+  },
+  {
+    "name": "source asset bytes assets/cartan/cartan-hero-mobile-540p.mp4",
+    "pass": true
+  },
+  {
+    "name": "source asset bytes assets/cartan/cartan-hero-opening-540p.webp",
+    "pass": true
+  },
+  {
+    "name": "source asset bytes assets/cartan/CARTAN-Built-to-Change-Revised-Silent-21s-1080p.mp4",
+    "pass": true
+  },
+  {
+    "name": "source asset bytes assets/cartan/cartan-hero-opening-720p.webp",
+    "pass": true
+  },
+  {
+    "name": "source asset bytes assets/cartan/cartan-hero-poster-mobile.jpg",
+    "pass": true
+  },
+  {
+    "name": "source asset bytes assets/cartan/cartan-hero-poster.jpg",
+    "pass": true
+  },
+  {
+    "name": "source asset bytes assets/cartan/cartan-hero-desktop-720p.mp4",
+    "pass": true
+  },
+  {
+    "name": "artifact bound",
+    "pass": true
+  }
+]

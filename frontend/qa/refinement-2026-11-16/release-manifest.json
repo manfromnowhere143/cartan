@@ -1,0 +1,125 @@
+{
+  "origin": "https://cartan.danielwahnich.dev",
+  "pages": [
+    "/",
+    "/research/",
+    "/laboratory/",
+    "/interruption/",
+    "/evidence/",
+    "/comparison/",
+    "/sources/",
+    "/vision/"
+  ],
+  "files": {
+    "404.html": {
+      "bytes": 423,
+      "sha256": "3b1cfde85aeb4445782398ed687586d2ca3690237e4a0c1311a0e06ed600bd2c"
+    },
+    "adapter.mjs": {
+      "bytes": 2975,
+      "sha256": "bd64a260009b7b453b00a6cf76e8f5ab43e39e1775da7fdaac3270ce7952cc89"
+    },
+    "app.mjs": {
+      "bytes": 13754,
+      "sha256": "e4b3441fd32e11a06ef0a087a805a8002714ac9115e2d1969363816adc79172e"
+    },
+    "assets/cartan/CARTAN-Built-to-Change-Revised-Silent-21s-1080p.mp4": {
+      "bytes": 19481715,
+      "sha256": "d4d00b3a4bd62e166396828d89e9eb9d3fb6056f31ebe960b89b2b2df7030ec0"
+    },
+    "assets/cartan/cartan-hero-desktop-720p.mp4": {
+      "bytes": 4039148,
+      "sha256": "e4d4b16548381a29aa0d6805091a8b43f55d3c9855e3a30a8fe5de7dddc0f113"
+    },
+    "assets/cartan/cartan-hero-poster-mobile.jpg": {
+      "bytes": 137698,
+      "sha256": "2e836745e1c3c5c99fe937dc9e78c7ead8d080e3dd2c160896e6b6f70b0844b0"
+    },
+    "assets/cartan/cartan-hero-poster.jpg": {
+      "bytes": 218870,
+      "sha256": "5b31a39ac5844fc77d649fd3cb74905e1dfe2fd27615091d1907274873afd7d1"
+    },
+    "assets/cartan-logo.png": {
+      "bytes": 603552,
+      "sha256": "7f3b27e6dae623358c0761793d96af5eee1310e9177ab711c4cf3afc1b3ca3ee"
+    },
+    "assets/icons/favicon.svg": {
+      "bytes": 401,
+      "sha256": "10f78a157f8edfa4e0d14a3ba51cfd5fdbbf81987388a275e3457919df526069"
+    },
+    "assets/scenes/assembly.png": {
+      "bytes": 2459429,
+      "sha256": "da669be21c8fbeded42e8b76e4cf7b553f804a1e9228f7d7f7fa832c0ded9246"
+    },
+    "comparison/index.html": {
+      "bytes": 24713,
+      "sha256": "9c056c932c263b475f0c970db94f0c5d2b78ba07b821078247189ffdbf08a91e"
+    },
+    "contract-adapter.mjs": {
+      "bytes": 3300,
+      "sha256": "3efec8a902592de163489726e84f6a560364644f55d8ea84ef41bf6c3f30084d"
+    },
+    "evidence/index.html": {
+      "bytes": 24743,
+      "sha256": "18d3a758b3e71aa89adea82513ff8e82472faad28a72d98b02f7443641950fce"
+    },
+    "hero-controller.mjs": {
+      "bytes": 4203,
+      "sha256": "36a0d66d170a561dea357ec19246abbcccd181c6c837d3d7576d19953c668357"
+    },
+    "index.html": {
+      "bytes": 24763,
+      "sha256": "2c67ed7576611450e4db40aacab42f519fc0456614037e0f44900a8fea82f1d8"
+    },
+    "interruption/index.html": {
+      "bytes": 24811,
+      "sha256": "9fb7461b792c89b34c3069febc844b6495257190ad6bae16f811dbbe31adefa4"
+    },
+    "laboratory/index.html": {
+      "bytes": 24761,
+      "sha256": "cac98cf1f586f6181bef9728288251e8fa76d80ebc05454f8359c47615373c3b"
+    },
+    "llms.txt": {
+      "bytes": 2446,
+      "sha256": "9238641b4cbcf7535bde3cfcd7a5c42555bb7f562ff2aabf8841ced06b198111"
+    },
+    "research/index.html": {
+      "bytes": 24643,
+      "sha256": "977b54e324b4971b002b7162e63dc8d47da086d6de8158958fa7e61bfeaba6ef"
+    },
+    "robots.txt": {
+      "bytes": 78,
+      "sha256": "1914e8e5e0a3eb6ed12ddde084341dcff63526fd8066b8c2e32e9fe732769bf1"
+    },
+    "routes.mjs": {
+      "bytes": 4229,
+      "sha256": "e4befedb477ae7b2d84a7912e846a13b84428bac72491bcf09771876a15f32e3"
+    },
+    "site.webmanifest": {
+      "bytes": 373,
+      "sha256": "8a7951d947a7c03c31b462d453b208582946f83c984cc3db8c4ede4fd7d3bfd1"
+    },
+    "sitemap.xml": {
+      "bytes": 626,
+      "sha256": "ebc9545759a2664bcd0c9a527f94f9d8eed54ed43aa26eb33cbe0f76c4e349d4"
+    },
+    "sources/index.html": {
+      "bytes": 24738,
+      "sha256": "b05c1c2393f058804b4cb50749db95e7f72bf0a9571adf012783f2005bb7d60a"
+    },
+    "style.css": {
+      "bytes": 19359,
+      "sha256": "a37a13bc44b65ab98d611ba7519e7e2fec6d5e2a3c04355099ecea63b293eb76"
+    },
+    "vendor/cartan/v1/fixture.json": {
+      "bytes": 10094,
+      "sha256": "b231fa24f057ce647dbf282ed8233fc88d0bbbed579995213306edac30e65d44"
+    },
+    "vision/index.html": {
+      "bytes": 24773,
+      "sha256": "60bc83554da98b22f028b7a520f3e486b88d053cda03d3e674618b20b10f3110"
+    }
+  },
+  "bytes": 27200618,
+  "config_sha256": "7ccb7004c9af156fb670d2ad8f1536e6814361170d7c8a038fae80e929fff0d6"
+}

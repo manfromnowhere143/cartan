@@ -1,0 +1,540 @@
+{
+  "checked_at": "2026-11-16T13:18:46.487226+00:00",
+  "origin": "https://cartan.danielwahnich.dev",
+  "authentication": "none",
+  "tls": "normal certificate and hostname validation; no bypass",
+  "checks": 201,
+  "pass": true,
+  "requests": [
+    {
+      "path": "/adapter.mjs",
+      "status": 200,
+      "bytes": 2975,
+      "checks": {
+        "public_200": true,
+        "exact_release_bytes": true,
+        "nosniff": true,
+        "https_policy": true,
+        "not_accidentally_noindexed": true,
+        "module_mime": true
+      }
+    },
+    {
+      "path": "/app.mjs",
+      "status": 200,
+      "bytes": 14298,
+      "checks": {
+        "public_200": true,
+        "exact_release_bytes": true,
+        "nosniff": true,
+        "https_policy": true,
+        "not_accidentally_noindexed": true,
+        "module_mime": true
+      }
+    },
+    {
+      "path": "/assets/cartan/CARTAN-Built-to-Change-Revised-Silent-21s-1080p.mp4",
+      "status": 200,
+      "bytes": 19481715,
+      "checks": {
+        "public_200": true,
+        "exact_release_bytes": true,
+        "nosniff": true,
+        "https_policy": true,
+        "not_accidentally_noindexed": true
+      }
+    },
+    {
+      "path": "/assets/cartan/cartan-hero-desktop-720p.mp4",
+      "status": 200,
+      "bytes": 4039148,
+      "checks": {
+        "public_200": true,
+        "exact_release_bytes": true,
+        "nosniff": true,
+        "https_policy": true,
+        "not_accidentally_noindexed": true
+      }
+    },
+    {
+      "path": "/assets/cartan/cartan-hero-poster-mobile.jpg",
+      "status": 200,
+      "bytes": 137698,
+      "checks": {
+        "public_200": true,
+        "exact_release_bytes": true,
+        "nosniff": true,
+        "https_policy": true,
+        "not_accidentally_noindexed": true
+      }
+    },
+    {
+      "path": "/assets/cartan/cartan-hero-poster.jpg",
+      "status": 200,
+      "bytes": 218870,
+      "checks": {
+        "public_200": true,
+        "exact_release_bytes": true,
+        "nosniff": true,
+        "https_policy": true,
+        "not_accidentally_noindexed": true
+      }
+    },
+    {
+      "path": "/assets/cartan-logo.png",
+      "status": 200,
+      "bytes": 603552,
+      "checks": {
+        "public_200": true,
+        "exact_release_bytes": true,
+        "nosniff": true,
+        "https_policy": true,
+        "not_accidentally_noindexed": true
+      }
+    },
+    {
+      "path": "/assets/icons/favicon.svg",
+      "status": 200,
+      "bytes": 401,
+      "checks": {
+        "public_200": true,
+        "exact_release_bytes": true,
+        "nosniff": true,
+        "https_policy": true,
+        "not_accidentally_noindexed": true
+      }
+    },
+    {
+      "path": "/assets/module.jpg",
+      "status": 200,
+      "bytes": 168913,
+      "checks": {
+        "public_200": true,
+        "exact_release_bytes": true,
+        "nosniff": true,
+        "https_policy": true,
+        "not_accidentally_noindexed": true
+      }
+    },
+    {
+      "path": "/assets/vision.jpg",
+      "status": 200,
+      "bytes": 194676,
+      "checks": {
+        "public_200": true,
+        "exact_release_bytes": true,
+        "nosniff": true,
+        "https_policy": true,
+        "not_accidentally_noindexed": true
+      }
+    },
+    {
+      "path": "/comparison/",
+      "status": 200,
+      "bytes": 19138,
+      "checks": {
+        "public_200": true,
+        "exact_release_bytes": true,
+        "nosniff": true,
+        "https_policy": true,
+        "not_accidentally_noindexed": true,
+        "canonical": true,
+        "content_security_policy": true,
+        "html_revalidates": true
+      }
+    },
+    {
+      "path": "/contract-adapter.mjs",
+      "status": 200,
+      "bytes": 3300,
+      "checks": {
+        "public_200": true,
+        "exact_release_bytes": true,
+        "nosniff": true,
+        "https_policy": true,
+        "not_accidentally_noindexed": true,
+        "module_mime": true
+      }
+    },
+    {
+      "path": "/evidence/",
+      "status": 200,
+      "bytes": 19168,
+      "checks": {
+        "public_200": true,
+        "exact_release_bytes": true,
+        "nosniff": true,
+        "https_policy": true,
+        "not_accidentally_noindexed": true,
+        "canonical": true,
+        "content_security_policy": true,
+        "html_revalidates": true
+      }
+    },
+    {
+      "path": "/hero-controller.mjs",
+      "status": 200,
+      "bytes": 3470,
+      "checks": {
+        "public_200": true,
+        "exact_release_bytes": true,
+        "nosniff": true,
+        "https_policy": true,
+        "not_accidentally_noindexed": true,
+        "module_mime": true
+      }
+    },
+    {
+      "path": "/",
+      "status": 200,
+      "bytes": 19188,
+      "checks": {
+        "public_200": true,
+        "exact_release_bytes": true,
+        "nosniff": true,
+        "https_policy": true,
+        "not_accidentally_noindexed": true,
+        "canonical": true,
+        "content_security_policy": true,
+        "html_revalidates": true
+      }
+    },
+    {
+      "path": "/interruption/",
+      "status": 200,
+      "bytes": 19236,
+      "checks": {
+        "public_200": true,
+        "exact_release_bytes": true,
+        "nosniff": true,
+        "https_policy": true,
+        "not_accidentally_noindexed": true,
+        "canonical": true,
+        "content_security_policy": true,
+        "html_revalidates": true
+      }
+    },
+    {
+      "path": "/laboratory/",
+      "status": 200,
+      "bytes": 19186,
+      "checks": {
+        "public_200": true,
+        "exact_release_bytes": true,
+        "nosniff": true,
+        "https_policy": true,
+        "not_accidentally_noindexed": true,
+        "canonical": true,
+        "content_security_policy": true,
+        "html_revalidates": true
+      }
+    },
+    {
+      "path": "/llms.txt",
+      "status": 200,
+      "bytes": 2446,
+      "checks": {
+        "public_200": true,
+        "exact_release_bytes": true,
+        "nosniff": true,
+        "https_policy": true,
+        "not_accidentally_noindexed": true
+      }
+    },
+    {
+      "path": "/research/",
+      "status": 200,
+      "bytes": 19068,
+      "checks": {
+        "public_200": true,
+        "exact_release_bytes": true,
+        "nosniff": true,
+        "https_policy": true,
+        "not_accidentally_noindexed": true,
+        "canonical": true,
+        "content_security_policy": true,
+        "html_revalidates": true
+      }
+    },
+    {
+      "path": "/robots.txt",
+      "status": 200,
+      "bytes": 78,
+      "checks": {
+        "public_200": true,
+        "exact_release_bytes": true,
+        "nosniff": true,
+        "https_policy": true,
+        "not_accidentally_noindexed": true
+      }
+    },
+    {
+      "path": "/routes.mjs",
+      "status": 200,
+      "bytes": 4229,
+      "checks": {
+        "public_200": true,
+        "exact_release_bytes": true,
+        "nosniff": true,
+        "https_policy": true,
+        "not_accidentally_noindexed": true,
+        "module_mime": true
+      }
+    },
+    {
+      "path": "/site.webmanifest",
+      "status": 200,
+      "bytes": 373,
+      "checks": {
+        "public_200": true,
+        "exact_release_bytes": true,
+        "nosniff": true,
+        "https_policy": true,
+        "not_accidentally_noindexed": true
+      }
+    },
+    {
+      "path": "/sitemap.xml",
+      "status": 200,
+      "bytes": 626,
+      "checks": {
+        "public_200": true,
+        "exact_release_bytes": true,
+        "nosniff": true,
+        "https_policy": true,
+        "not_accidentally_noindexed": true
+      }
+    },
+    {
+      "path": "/sources/",
+      "status": 200,
+      "bytes": 19163,
+      "checks": {
+        "public_200": true,
+        "exact_release_bytes": true,
+        "nosniff": true,
+        "https_policy": true,
+        "not_accidentally_noindexed": true,
+        "canonical": true,
+        "content_security_policy": true,
+        "html_revalidates": true
+      }
+    },
+    {
+      "path": "/style.css",
+      "status": 200,
+      "bytes": 18116,
+      "checks": {
+        "public_200": true,
+        "exact_release_bytes": true,
+        "nosniff": true,
+        "https_policy": true,
+        "not_accidentally_noindexed": true
+      }
+    },
+    {
+      "path": "/vendor/cartan/v1/fixture.json",
+      "status": 200,
+      "bytes": 10094,
+      "checks": {
+        "public_200": true,
+        "exact_release_bytes": true,
+        "nosniff": true,
+        "https_policy": true,
+        "fixture_not_indexed": true
+      }
+    },
+    {
+      "path": "/vision/",
+      "status": 200,
+      "bytes": 19198,
+      "checks": {
+        "public_200": true,
+        "exact_release_bytes": true,
+        "nosniff": true,
+        "https_policy": true,
+        "not_accidentally_noindexed": true,
+        "canonical": true,
+        "content_security_policy": true,
+        "html_revalidates": true
+      }
+    },
+    {
+      "path": "/not-a-cartan-page/",
+      "status": 404,
+      "checks": {
+        "real_404": true,
+        "noindex": true,
+        "reviewed_error_page": true
+      }
+    },
+    {
+      "path": "/.env.local",
+      "status": 404,
+      "checks": {
+        "real_404": true,
+        "noindex": true,
+        "reviewed_error_page": true
+      }
+    },
+    {
+      "path": "/qa/hero-review.html",
+      "status": 404,
+      "checks": {
+        "real_404": true,
+        "noindex": true,
+        "reviewed_error_page": true
+      }
+    },
+    {
+      "path": "/release-review.html",
+      "status": 404,
+      "checks": {
+        "real_404": true,
+        "noindex": true,
+        "reviewed_error_page": true
+      }
+    },
+    {
+      "path": "/docs/asset-registry.json",
+      "status": 404,
+      "checks": {
+        "real_404": true,
+        "noindex": true,
+        "reviewed_error_page": true
+      }
+    },
+    {
+      "path": "/index.html",
+      "status": 308,
+      "checks": {
+        "canonical_redirect": true
+      }
+    },
+    {
+      "path": "/research/index.html",
+      "status": 308,
+      "checks": {
+        "canonical_redirect": true
+      }
+    },
+    {
+      "path": "/research",
+      "status": 308,
+      "checks": {
+        "canonical_redirect": true
+      }
+    },
+    {
+      "path": "/laboratory/index.html",
+      "status": 308,
+      "checks": {
+        "canonical_redirect": true
+      }
+    },
+    {
+      "path": "/laboratory",
+      "status": 308,
+      "checks": {
+        "canonical_redirect": true
+      }
+    },
+    {
+      "path": "/interruption/index.html",
+      "status": 308,
+      "checks": {
+        "canonical_redirect": true
+      }
+    },
+    {
+      "path": "/interruption",
+      "status": 308,
+      "checks": {
+        "canonical_redirect": true
+      }
+    },
+    {
+      "path": "/evidence/index.html",
+      "status": 308,
+      "checks": {
+        "canonical_redirect": true
+      }
+    },
+    {
+      "path": "/evidence",
+      "status": 308,
+      "checks": {
+        "canonical_redirect": true
+      }
+    },
+    {
+      "path": "/comparison/index.html",
+      "status": 308,
+      "checks": {
+        "canonical_redirect": true
+      }
+    },
+    {
+      "path": "/comparison",
+      "status": 308,
+      "checks": {
+        "canonical_redirect": true
+      }
+    },
+    {
+      "path": "/sources/index.html",
+      "status": 308,
+      "checks": {
+        "canonical_redirect": true
+      }
+    },
+    {
+      "path": "/sources",
+      "status": 308,
+      "checks": {
+        "canonical_redirect": true
+      }
+    },
+    {
+      "path": "/vision/index.html",
+      "status": 308,
+      "checks": {
+        "canonical_redirect": true
+      }
+    },
+    {
+      "path": "/vision",
+      "status": 308,
+      "checks": {
+        "canonical_redirect": true
+      }
+    },
+    {
+      "path": "http://cartan.danielwahnich.dev/",
+      "status": 308,
+      "checks": {
+        "redirect_to_https": true
+      }
+    },
+    {
+      "path": "/assets/cartan/cartan-hero-desktop-720p.mp4",
+      "range": "bytes=0-1023",
+      "status": 206,
+      "checks": {
+        "partial_content": true,
+        "content_range": true,
+        "original_range_bytes": true
+      }
+    },
+    {
+      "path": "/assets/cartan/CARTAN-Built-to-Change-Revised-Silent-21s-1080p.mp4",
+      "range": "bytes=0-1023",
+      "status": 206,
+      "checks": {
+        "partial_content": true,
+        "content_range": true,
+        "original_range_bytes": true
+      }
+    }
+  ]
+}

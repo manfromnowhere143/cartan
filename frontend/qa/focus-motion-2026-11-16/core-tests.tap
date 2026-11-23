@@ -1,0 +1,175 @@
+TAP version 13
+# Subtest: fixture survives without evidence promotion
+ok 1 - fixture survives without evidence promotion
+  ---
+  duration_ms: 1.89575
+  ...
+# Subtest: unknown, absence, null, zero and false remain distinct
+ok 2 - unknown, absence, null, zero and false remain distinct
+  ---
+  duration_ms: 0.180209
+  ...
+# Subtest: fabricated outcomes and incomplete provenance are rejected
+ok 3 - fabricated outcomes and incomplete provenance are rejected
+  ---
+  duration_ms: 0.126916
+  ...
+# Subtest: missing and inconclusive views cannot imply success
+ok 4 - missing and inconclusive views cannot imply success
+  ---
+  duration_ms: 0.158125
+  ...
+# Subtest: canonical fixture preserves four series and source IDs
+ok 5 - canonical fixture preserves four series and source IDs
+  ---
+  duration_ms: 1.23375
+  ...
+# Subtest: canonical absent tags retain units and zero/false
+ok 6 - canonical absent tags retain units and zero/false
+  ---
+  duration_ms: 1.060875
+  ...
+# Subtest: immutable fixture bytes are checked before consumption
+ok 7 - immutable fixture bytes are checked before consumption
+  ---
+  duration_ms: 4.757917
+  ...
+# Subtest: unsupported evidence, missing references and inconsistent belief fail closed
+ok 8 - unsupported evidence, missing references and inconsistent belief fail closed
+  ---
+  duration_ms: 0.367958
+  ...
+# Subtest: reduced motion, Save-Data and 2G never attach background media
+ok 9 - reduced motion, Save-Data and 2G never attach background media
+  ---
+  duration_ms: 1.069541
+  ...
+# Subtest: mobile, portrait and landscape windows remain eligible for inline playback
+ok 10 - mobile, portrait and landscape windows remain eligible for inline playback
+  ---
+  duration_ms: 1.987625
+  ...
+# Subtest: poster remains visible until a decoded video frame, with one pending callback
+ok 11 - poster remains visible until a decoded video frame, with one pending callback
+  ---
+  duration_ms: 4.328459
+  ...
+# Subtest: late decoded frames cannot reveal video after pause, route exit or reduced motion
+ok 12 - late decoded frames cannot reveal video after pause, route exit or reduced motion
+  ---
+  duration_ms: 0.474916
+  ...
+# Subtest: desktop and mobile loop forward without unloading or flashing the poster
+ok 13 - desktop and mobile loop forward without unloading or flashing the poster
+  ---
+  duration_ms: 0.572
+  ...
+# Subtest: rendition selection stays fixed during a cycle and selects small media for 3G
+ok 14 - rendition selection stays fixed during a cycle and selects small media for 3G
+  ---
+  duration_ms: 0.244125
+  ...
+# Subtest: explicit pause survives visibility, viewport updates and film close without resetting time
+ok 15 - explicit pause survives visibility, viewport updates and film close without resetting time
+  ---
+  duration_ms: 0.4775
+  ...
+# Subtest: temporary visibility, view and dialog suspension resumes without losing position
+ok 16 - temporary visibility, view and dialog suspension resumes without losing position
+  ---
+  duration_ms: 0.483417
+  ...
+# Subtest: pending play cannot override Pause or eligibility loss
+ok 17 - pending play cannot override Pause or eligibility loss
+  ---
+  duration_ms: 0.443083
+  ...
+# Subtest: autoplay rejection unloads source, exposes poster and does not retry itself
+ok 18 - autoplay rejection unloads source, exposes poster and does not retry itself
+  ---
+  duration_ms: 0.550167
+  ...
+# Subtest: media failure remains blocked; preference exclusions unload and allow later resumption
+ok 19 - media failure remains blocked; preference exclusions unload and allow later resumption
+  ---
+  duration_ms: 1.711791
+  ...
+# Subtest: hidden initial route defers video until the hero is entered
+ok 20 - hidden initial route defers video until the hero is entered
+  ---
+  duration_ms: 0.1425
+  ...
+# Subtest: queued native pause from suspension cannot cancel a resumed play
+ok 21 - queued native pause from suspension cannot cancel a resumed play
+  ---
+  duration_ms: 1.155208
+  ...
+# Subtest: manual Pause wins over a pending loop or page suspension
+ok 22 - manual Pause wins over a pending loop or page suspension
+  ---
+  duration_ms: 0.438792
+  ...
+# Subtest: disposal cancels queued frames and prevents any further playback
+ok 23 - disposal cancels queued frames and prevents any further playback
+  ---
+  duration_ms: 0.328625
+  ...
+# Subtest: route and component changes cannot blank, translate or animate a surface
+ok 24 - route and component changes cannot blank, translate or animate a surface
+  ---
+  duration_ms: 0.969042
+  ...
+# Subtest: keyboard focus stays visible without a white fill, shadow or geometry change
+ok 25 - keyboard focus stays visible without a white fill, shadow or geometry change
+  ---
+  duration_ms: 0.208542
+  ...
+# Subtest: hover is restricted to fine pointers and never moves or fills controls
+ok 26 - hover is restricted to fine pointers and never moves or fills controls
+  ---
+  duration_ms: 0.207416
+  ...
+# Subtest: public controls use bounded decorative SVGs, with no glyph pictograms
+ok 27 - public controls use bounded decorative SVGs, with no glyph pictograms
+  ---
+  duration_ms: 0.277333
+  ...
+# Subtest: explorer and horizon avoid the rejected imagery without removing concept labels
+ok 28 - explorer and horizon avoid the rejected imagery without removing concept labels
+  ---
+  duration_ms: 0.1245
+  ...
+# Subtest: only actual pointer-marked focus suppresses an outline, with forced colors preserved
+ok 29 - only actual pointer-marked focus suppresses an outline, with forced colors preserved
+  ---
+  duration_ms: 0.488875
+  ...
+# Subtest: mobile cinema cannot be hidden by a width rule or crop the supplied action
+ok 30 - mobile cinema cannot be hidden by a width rule or crop the supplied action
+  ---
+  duration_ms: 0.173125
+  ...
+# Subtest: every public route has a stable identity independent of query tracking
+ok 31 - every public route has a stable identity independent of query tracking
+  ---
+  duration_ms: 0.925584
+  ...
+# Subtest: legacy deep links remain meaningful
+ok 32 - legacy deep links remain meaningful
+  ---
+  duration_ms: 0.151584
+  ...
+# Subtest: skip links and unknown destinations are not intercepted
+ok 33 - skip links and unknown destinations are not intercepted
+  ---
+  duration_ms: 0.098916
+  ...
+1..33
+# tests 33
+# suites 0
+# pass 33
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 59.510625
